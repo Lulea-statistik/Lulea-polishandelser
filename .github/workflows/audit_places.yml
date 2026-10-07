@@ -4,6 +4,8 @@ on:
   push:
     branches: [main]
     paths:
+      - "data/events.csv"
+      - "scripts/common.py"
       - "scripts/audit_place_matches.py"
       - ".github/workflows/audit_places.yml"
   workflow_dispatch:
