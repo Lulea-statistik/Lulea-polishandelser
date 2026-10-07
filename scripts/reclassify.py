@@ -10,14 +10,21 @@ def main() -> None:
     before = df["geography_group"].value_counts(dropna=False).to_dict()
 
     details = []
-    for m, t, l in zip(
+    sources = df["municipality_source"].fillna("") if "municipality_source" in df.columns else pd.Series([""] * len(df))
+    for m, t, l, source in zip(
         df["municipality"].fillna(""),
         df["title_location"].fillna(""),
         df["location_string"].fillna(""),
+        sources,
     ):
         existing = str(m).strip()
-        if existing:
-            details.append((existing, "existing_pre_source"))
+        source = str(source).strip()
+
+        # Re-evaluate earlier place-name assignments with the current stricter rules.
+        if source == "lulea_place_name":
+            details.append(infer_municipality_detail("", t, l))
+        elif existing:
+            details.append((existing, source or "existing_pre_source"))
         else:
             details.append(infer_municipality_detail("", t, l))
 
