@@ -110,19 +110,34 @@ def infer_lulea_place(title_location: str, location_string: str) -> str:
     title = _ascii_fold((title_location or "").strip())
     loc = _ascii_fold(location_string or "")
 
+    # Exact place in the dedicated title-location field is strong evidence.
     if title in LULEA_PLACE_NAMES:
         return LULEA_PLACE_CANONICAL.get(title, title_location.strip())
 
-    hits = []
+    place_hits = []
     for key in LULEA_PLACE_NAMES:
         if re.search(r"(?<![a-z0-9])" + re.escape(key) + r"(?![a-z0-9])", loc):
-            hits.append(key)
+            place_hits.append(key)
 
-    unique_hits = sorted(set(hits))
-    if len(unique_hits) == 1:
-        key = unique_hits[0]
-        return LULEA_PLACE_CANONICAL.get(key, key)
-    return ""
+    unique_places = sorted(set(place_hits))
+    if len(unique_places) != 1:
+        return ""
+
+    # Free-text/list matching is only accepted when the same location string
+    # does not also name another Norrbotten municipality. This avoids assigning
+    # county-wide summaries to Lulea just because one Lulea place is mentioned.
+    municipality_hits = set()
+    loc_cf = (location_string or "").casefold()
+    for key, canonical in NORRBOTTEN_MUNICIPALITIES.items():
+        if key in loc_cf:
+            municipality_hits.add(canonical)
+
+    other_municipalities = municipality_hits - {"Luleå"}
+    if other_municipalities:
+        return ""
+
+    key = unique_places[0]
+    return LULEA_PLACE_CANONICAL.get(key, key)
 
 def infer_municipality_detail(municipality: str, title_location: str, location_string: str) -> tuple[str, str]:
     """Infer municipality and record why the assignment was made."""
