@@ -37,7 +37,8 @@ def main() -> None:
     after = df["geography_group"].value_counts(dropna=False).to_dict()
     print("before=", before)
     print("after=", after)
-    print("lulea_rows=", int((df["geography_group"] == "Luleå kommun").sum()))\n    print("municipality_source=", df["municipality_source"].value_counts(dropna=False).to_dict())
+    print("lulea_rows=", int((df["geography_group"] == "Luleå kommun").sum()))
+    print("municipality_source=", df["municipality_source"].value_counts(dropna=False).to_dict())
 
 
 if __name__ == "__main__":
