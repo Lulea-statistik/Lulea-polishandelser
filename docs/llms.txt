@@ -1,0 +1,31 @@
+# Luleå polishändelser
+
+> Statistik över offentligt publicerade polishändelser med fokus på Luleå kommun och Norrbotten.
+
+## Viktigt om tolkning
+
+Detta är inte officiell statistik över anmälda brott. Materialet består av ett urval av händelser som Polisen har valt att publicera i sitt offentliga händelseflöde. För officiell brottsstatistik ska BRÅ användas.
+
+## Huvudsidor
+
+- Statistik: https://lulea-statistik.github.io/Lulea-polishandelser/
+- Info och metod: https://lulea-statistik.github.io/Lulea-polishandelser/info-metod.html
+- Månadsdata (CSV): https://lulea-statistik.github.io/Lulea-polishandelser/data/monthly_summary.csv
+
+## Innehåll
+
+Rapporten visar historik och statistik över publicerade polishändelser och kan filtreras på geografi, år och händelsetyp. Fokus ligger på Luleå kommun och övriga Norrbotten.
+
+## Datakällor
+
+- Polisen: offentligt publicerade händelsenotiser och API.
+- Brottsplatskartan: teknisk historikkälla för den historiska serien.
+- BRÅ: rekommenderad källa för officiell statistik över anmälda brott.
+
+## Uppdatering
+
+Rapporten uppdateras automatiskt en gång per dygn och är inte en realtidstjänst.
+
+## Geografisk klassificering
+
+Kommunuppgifter från källdatan används i första hand. När kommun saknas används en försiktig platsbaserad klassificering. Regionala sammanfattningar kan därför ligga kvar som "Norrbotten, okänd kommun" om en säker kommuntillhörighet inte kan bestämmas.
