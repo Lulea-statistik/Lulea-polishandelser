@@ -145,7 +145,7 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
 
     place = infer_lulea_place(title_location, location_string)
     if place:
-        return "Lulea", "lulea_place_name"
+        return "Luleå", "lulea_place_name"
 
     return "", "unknown"
 
