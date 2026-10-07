@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
@@ -22,7 +23,7 @@ SESSION.headers.update({"User-Agent": f"{APP_ID}/1.0 (+GitHub Actions)"})
 EVENT_COLUMNS = [
     "event_id", "published_datetime", "date", "year", "month",
     "type_original", "headline", "description", "content",
-    "title_location", "location_string", "municipality",
+    "title_location", "location_string", "municipality", "municipality_source",
     "administrative_area_level_1", "geography_group",
     "latitude", "longitude", "is_summary", "is_multi_location",
     "external_source_link", "brottsplatskartan_url", "retrieved_at"
@@ -64,27 +65,94 @@ NORRBOTTEN_MUNICIPALITIES = {
     "övertorneå": "Övertorneå",
 }
 
+# Officiella omrades-, by- och stadsdelsnamn publicerade av Lulea kommun.
+# Anvands endast nar API:t saknar kommun. Generiska/otydliga namn ar medvetet
+# exkluderade fran fri textsokning for att minimera felklassning.
+LULEA_PLACE_NAMES = {
+    "ale", "alvik", "antnas", "avan", "balinge", "ersnas", "falltrask",
+    "kallax", "klovertrask", "mattsund", "moron", "vastmark",
+    "bensbyn", "bjorsbyn", "brandon", "orarna", "borjelslandet", "person",
+    "rutvik", "smedsbyn", "sunderbyn", "angesbyn",
+    "hogson", "jamton", "mjofjarden", "niemisel", "orrbyn", "prastholm",
+    "ranea", "vita", "berg-naset", "bergnaset", "bergviken", "bjorkskatan",
+    "gammelstad", "hertson", "kronan", "lerbacken", "lulsundet",
+    "lovskatan", "malmudden", "mjolkudden", "notviken", "porson",
+    "skurholmen", "svartostaden", "ornaset"
+}
 
-def infer_municipality(municipality: str, title_location: str, location_string: str) -> str:
-    """Use API municipality when available, otherwise infer conservatively from location fields."""
+LULEA_PLACE_CANONICAL = {
+    "ale":"Ale","alvik":"Alvik","antnas":"Antnas","avan":"Avan","balinge":"Balinge",
+    "ersnas":"Ersnas","falltrask":"Falltrask","kallax":"Kallax","klovertrask":"Klovertrask",
+    "mattsund":"Mattsund","moron":"Moron","vastmark":"Vastmark","bensbyn":"Bensbyn",
+    "bjorsbyn":"Bjorsbyn","brandon":"Brandon","orarna":"Orarna","borjelslandet":"Borjelslandet",
+    "person":"Person","rutvik":"Rutvik","smedsbyn":"Smedsbyn","sunderbyn":"Sunderbyn",
+    "angesbyn":"Angesbyn","hogson":"Hogson","jamton":"Jamton","mjofjarden":"Mjofjarden",
+    "niemisel":"Niemisel","orrbyn":"Orrbyn","prastholm":"Prastholm","ranea":"Ranea",
+    "vita":"Vita","bergnaset":"Bergnaset","berg-naset":"Bergnaset","bergviken":"Bergviken",
+    "bjorkskatan":"Bjorkskatan","gammelstad":"Gammelstad","hertson":"Hertson","kronan":"Kronan",
+    "lerbacken":"Lerbacken","lulsundet":"Lulsundet","lovskatan":"Lovskatan","malmudden":"Malmudden",
+    "mjolkudden":"Mjolkudden","notviken":"Notviken","porson":"Porson","skurholmen":"Skurholmen",
+    "svartostaden":"Svartostaden","ornaset":"Ornaset"
+}
+
+def _fold_place_text(value: str) -> str:
+    return (value or "").casefold().translate(str.maketrans({
+        "a":"a"
+    }))
+
+def _ascii_fold(value: str) -> str:
+    return (value or "").casefold().translate(str.maketrans({
+        "å":"a","ä":"a","ö":"o","é":"e"
+    }))
+
+def infer_lulea_place(title_location: str, location_string: str) -> str:
+    """Return a high-confidence Lulea place name, otherwise empty string."""
+    title = _ascii_fold((title_location or "").strip())
+    loc = _ascii_fold(location_string or "")
+
+    if title in LULEA_PLACE_NAMES:
+        return LULEA_PLACE_CANONICAL.get(title, title_location.strip())
+
+    hits = []
+    for key in LULEA_PLACE_NAMES:
+        if re.search(r"(?<![a-z0-9])" + re.escape(key) + r"(?![a-z0-9])", loc):
+            hits.append(key)
+
+    unique_hits = sorted(set(hits))
+    if len(unique_hits) == 1:
+        key = unique_hits[0]
+        return LULEA_PLACE_CANONICAL.get(key, key)
+    return ""
+
+def infer_municipality_detail(municipality: str, title_location: str, location_string: str) -> tuple[str, str]:
+    """Infer municipality and record why the assignment was made."""
     raw = (municipality or "").strip()
     if raw:
-        return raw.replace(" kommun", "").replace(" Kommun", "").strip()
+        return raw.replace(" kommun", "").replace(" Kommun", "").strip(), "api"
 
     title_cf = (title_location or "").strip().casefold()
     if title_cf in NORRBOTTEN_MUNICIPALITIES:
-        return NORRBOTTEN_MUNICIPALITIES[title_cf]
+        return NORRBOTTEN_MUNICIPALITIES[title_cf], "municipality_name"
 
     loc_cf = (location_string or "").casefold()
     hits = []
     for key, canonical in NORRBOTTEN_MUNICIPALITIES.items():
         if key in loc_cf:
             hits.append(canonical)
-
-    # Only assign from location_string when exactly one municipality is named.
-    # Multi-municipality summaries remain unknown rather than being assigned incorrectly.
     unique_hits = sorted(set(hits))
-    return unique_hits[0] if len(unique_hits) == 1 else ""
+    if len(unique_hits) == 1:
+        return unique_hits[0], "municipality_name"
+
+    place = infer_lulea_place(title_location, location_string)
+    if place:
+        return "Lulea", "lulea_place_name"
+
+    return "", "unknown"
+
+
+
+def infer_municipality(municipality: str, title_location: str, location_string: str) -> str:
+    return infer_municipality_detail(municipality, title_location, location_string)[0]
 
 
 def geography_group(municipality: str, area: str) -> str:
@@ -113,7 +181,7 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
     municipality_api = (e.get("administrative_area_level_2") or "").strip()
     area = (e.get("administrative_area_level_1") or "").strip()
     title_location = (e.get("title_location") or "").strip()
-    municipality = infer_municipality(municipality_api, title_location, loc)
+    municipality, municipality_source = infer_municipality_detail(municipality_api, title_location, loc)
     is_summary = title_type.casefold().startswith("sammanfattning")
     is_multi = bool(is_summary or loc.count(",") >= 4)
 
@@ -130,6 +198,7 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
         "title_location": title_location,
         "location_string": loc,
         "municipality": municipality,
+        "municipality_source": municipality_source,
         "administrative_area_level_1": area,
         "geography_group": geography_group(municipality, area),
         "latitude": e.get("lat"),
