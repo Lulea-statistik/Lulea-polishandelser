@@ -1,1 +1,230 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Luleå polishändelser</title>
+  <meta name="description" content="Interaktiv statistik över offentligt publicerade polishändelser i Luleå och Norrbotten.">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <style>
+    :root{
+      --bg:#f5f7fa;--panel:#fff;--text:#16202a;--muted:#66717d;--line:#d9e0e7;
+      --blue:#0b5cab;--blue2:#1677c8;--warn:#fff6d8;--warnline:#d9a400
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+    header{background:#fff;border-bottom:1px solid var(--line)}
+    .wrap{max-width:1180px;margin:auto;padding:0 22px}
+    header .wrap{padding-top:28px;padding-bottom:24px}
+    h1{margin:0;font-size:2rem;line-height:1.15}
+    .subtitle{margin-top:7px;color:var(--muted)}
+    main.wrap{padding-top:24px;padding-bottom:50px}
+    .notice{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:13px 15px;margin-bottom:20px}
+    .filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
+    select{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
+    .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .kpi-label{font-size:.8rem;color:var(--muted)}
+    .kpi-value{font-size:1.75rem;font-weight:700;margin-top:5px}
+    .grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:16px}
+    h2{font-size:1.12rem;margin:0 0 14px}
+    .chartbox{height:360px}
+    .foot{font-size:.87rem;color:var(--muted);margin-top:22px;line-height:1.5}
+    .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
+    @media(max-width:850px){
+      .filters{grid-template-columns:1fr}
+      .kpis{grid-template-columns:repeat(2,1fr)}
+      .grid2{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){.kpis{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>Luleå polishändelser</h1>
+    <div class="subtitle">Publicerade polishändelser med fokus på Luleå kommun och Norrbotten</div>
+  </div>
+</header>
 
+<main class="wrap">
+  <div class="notice"><strong>Viktigt:</strong> detta är inte officiell statistik över anmälda brott. Materialet består av händelser som Polisen valt att publicera i sitt händelseflöde. BRÅ ska användas för officiell brottsstatistik.</div>
+
+  <div id="loading" class="status">Läser in månadsdata…</div>
+
+  <section id="dashboard" hidden>
+    <div class="filters">
+      <div>
+        <label for="geo">Geografi</label>
+        <select id="geo"></select>
+      </div>
+      <div>
+        <label for="year">År</label>
+        <select id="year"></select>
+      </div>
+      <div>
+        <label for="type">Händelsetyp</label>
+        <select id="type"></select>
+      </div>
+    </div>
+
+    <div class="kpis">
+      <div class="card"><div class="kpi-label">Antal händelser</div><div class="kpi-value" id="kpiTotal">–</div></div>
+      <div class="card"><div class="kpi-label">Genomsnitt per månad</div><div class="kpi-value" id="kpiAvg">–</div></div>
+      <div class="card"><div class="kpi-label">Första månad</div><div class="kpi-value" id="kpiFirst">–</div></div>
+      <div class="card"><div class="kpi-label">Senaste månad</div><div class="kpi-value" id="kpiLast">–</div></div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Händelser per månad</h2>
+        <div class="chartbox"><canvas id="monthlyChart"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Vanligaste händelsetyper</h2>
+        <div class="chartbox"><canvas id="typeChart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h2>Händelser per år</h2>
+        <div class="chartbox"><canvas id="yearChart"></canvas></div>
+      </div>
+      <div class="card">
+        <h2>Geografisk fördelning</h2>
+        <div class="chartbox"><canvas id="geoChart"></canvas></div>
+      </div>
+    </div>
+
+    <div class="foot">
+      Källa: Brottsplatskartan/Polisens publicerade händelseflöde. Klassificeringen av kommun är preliminär och använder API-fält när det finns samt försiktig platsbaserad fallback när kommunfält saknas. Regionala sammanfattningar kan innehålla flera delhändelser och bör inte tolkas som ett enskilt brott.
+    </div>
+  </section>
+</main>
+
+<script>
+const DATA_URL='../data/monthly_summary.csv';
+const fmt=new Intl.NumberFormat('sv-SE');
+const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
+let rows=[], monthlyChart, typeChart, yearChart, geoChart;
+
+function parseCSV(text){
+  const out=[]; let row=[], field='', quoted=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i], n=text[i+1];
+    if(c==='"'){
+      if(quoted && n==='"'){field+='"'; i++;}
+      else quoted=!quoted;
+    }else if(c===',' && !quoted){
+      row.push(field); field='';
+    }else if((c==='\n'||c==='\r') && !quoted){
+      if(c==='\r'&&n==='\n') i++;
+      row.push(field);
+      if(row.some(v=>v!=='')) out.push(row);
+      row=[]; field='';
+    }else field+=c;
+  }
+  if(field||row.length){row.push(field);out.push(row)}
+  if(!out.length) return [];
+  const head=out.shift();
+  return out.map(r=>Object.fromEntries(head.map((h,i)=>[h,r[i]??''])));
+}
+function sum(a){return a.reduce((s,x)=>s+(+x.event_count||0),0)}
+function groupSum(data,key){
+  const m=new Map();
+  data.forEach(x=>m.set(x[key],(m.get(x[key])||0)+(+x.event_count||0)));
+  return [...m.entries()];
+}
+function selected(id){return document.getElementById(id).value}
+function filt(ignoreGeo=false){
+  const g=selected('geo'), y=selected('year'), t=selected('type');
+  return rows.filter(r=>
+    (ignoreGeo || g==='Alla'||r.geography_group===g) &&
+    (y==='Alla'||r.year===y) &&
+    (t==='Alla'||r.type_original===t)
+  );
+}
+function fillSelect(id,values,preferred='Alla'){
+  const s=document.getElementById(id);
+  s.innerHTML='';
+  ['Alla',...values].forEach(v=>{
+    const o=document.createElement('option');o.value=v;o.textContent=v;s.appendChild(o);
+  });
+  if([...s.options].some(o=>o.value===preferred)) s.value=preferred;
+}
+function chartReplace(oldChart,ctx,config){
+  if(oldChart) oldChart.destroy();
+  return new Chart(ctx,config);
+}
+function update(){
+  const d=filt();
+  const total=sum(d);
+  const months=[...new Set(d.map(x=>x.year+'-'+String(x.month).padStart(2,'0')))].sort();
+  document.getElementById('kpiTotal').textContent=fmt.format(total);
+  document.getElementById('kpiAvg').textContent=months.length?fmt.format(Math.round(total/months.length)):'–';
+  document.getElementById('kpiFirst').textContent=months[0]||'–';
+  document.getElementById('kpiLast').textContent=months.at(-1)||'–';
+
+  const byMonth=new Map();
+  d.forEach(x=>{
+    const k=x.year+'-'+String(x.month).padStart(2,'0');
+    byMonth.set(k,(byMonth.get(k)||0)+(+x.event_count||0));
+  });
+  const ml=[...byMonth.keys()].sort();
+  monthlyChart=chartReplace(monthlyChart,document.getElementById('monthlyChart'),{
+    type:'line',
+    data:{labels:ml,datasets:[{label:'Händelser',data:ml.map(k=>byMonth.get(k)),borderWidth:2,pointRadius:1.5,tension:.18}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}}
+  });
+
+  const types=groupSum(d,'type_original').sort((a,b)=>b[1]-a[1]).slice(0,15);
+  typeChart=chartReplace(typeChart,document.getElementById('typeChart'),{
+    type:'bar',
+    data:{labels:types.map(x=>x[0]),datasets:[{label:'Antal',data:types.map(x=>x[1])}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}
+  });
+
+  const yrs=groupSum(d,'year').sort((a,b)=>+a[0]-+b[0]);
+  yearChart=chartReplace(yearChart,document.getElementById('yearChart'),{
+    type:'bar',
+    data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1])}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
+  });
+
+  const dg=filt(true).filter(r=>{
+    const y=selected('year'),t=selected('type');
+    return (y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t);
+  });
+  const geos=groupSum(dg,'geography_group').sort((a,b)=>b[1]-a[1]);
+  geoChart=chartReplace(geoChart,document.getElementById('geoChart'),{
+    type:'bar',
+    data:{labels:geos.map(x=>x[0]),datasets:[{label:'Antal',data:geos.map(x=>x[1])}]},
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
+  });
+}
+
+fetch(DATA_URL,{cache:'no-store'})
+  .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.text()})
+  .then(text=>{
+    rows=parseCSV(text).map(r=>({...r,event_count:+r.event_count||0}));
+    if(!rows.length) throw new Error('Ingen data');
+    const geos=[...new Set(rows.map(x=>x.geography_group).filter(Boolean))].sort();
+    const years=[...new Set(rows.map(x=>x.year).filter(Boolean))].sort((a,b)=>+a-+b);
+    const types=[...new Set(rows.map(x=>x.type_original).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'sv'));
+    fillSelect('geo',geos,'Luleå kommun');
+    fillSelect('year',years,'Alla');
+    fillSelect('type',types,'Alla');
+    ['geo','year','type'].forEach(id=>document.getElementById(id).addEventListener('change',update));
+    document.getElementById('loading').hidden=true;
+    document.getElementById('dashboard').hidden=false;
+    update();
+  })
+  .catch(err=>{
+    document.getElementById('loading').textContent='Kunde inte läsa data: '+err.message;
+    console.error(err);
+  });
+</script>
+</body>
+</html>
