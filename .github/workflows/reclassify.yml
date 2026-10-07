@@ -30,5 +30,6 @@ jobs:
             echo "No geography changes"
           else
             git commit -m "Korrigera geografisk klassificering"
+            git pull --rebase origin main
             git push
           fi
