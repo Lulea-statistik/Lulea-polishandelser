@@ -204,7 +204,7 @@ function update(){
   const types=groupSum(d,'type_original').sort((a,b)=>b[1]-a[1]).slice(0,15);
   typeChart=chartReplace(typeChart,document.getElementById('typeChart'),{
     type:'bar',
-    data:{labels:types.map(x=>x[0]),datasets:[{label:'Antal',data:types.map(x=>x[1])}]},
+    data:{labels:types.map(x=>x[0]),datasets:[{label:'Antal',data:types.map(x=>x[1]),backgroundColor:'#2f855a',borderColor:'#2f855a'}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}
   });
 
@@ -222,7 +222,7 @@ function update(){
   const geos=groupSum(dg,'geography_group').sort((a,b)=>b[1]-a[1]);
   geoChart=chartReplace(geoChart,document.getElementById('geoChart'),{
     type:'bar',
-    data:{labels:geos.map(x=>x[0]),datasets:[{label:'Antal',data:geos.map(x=>x[1])}]},
+    data:{labels:geos.map(x=>x[0]),datasets:[{label:'Antal',data:geos.map(x=>x[1]),backgroundColor:'#e0b400',borderColor:'#e0b400'}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
   });
 }
