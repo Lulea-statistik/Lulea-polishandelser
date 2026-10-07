@@ -31,7 +31,20 @@
     .notice{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:13px 15px;margin-bottom:20px}
     .filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
-    select,input[type="search"]{width:100%;padding:10px 12px;border:1px solid #b8c2cc;border-radius:9px;background:#fff;font:inherit;transition:border-color .15s,box-shadow .15s} input[type="search"]:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,92,171,.12)} input[type="search"]::placeholder{color:#8793a0}
+    select{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
+    .native-type-select{display:none}
+    .type-picker{position:relative;min-width:220px}
+    .type-button{width:100%;min-height:38px;text-align:left;padding:8px 34px 8px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;color:var(--text);cursor:pointer;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:inherit}
+    .type-button:after{content:"▾";position:absolute;right:10px;top:8px;color:var(--muted)}
+    .type-menu{position:absolute;left:0;top:calc(100% + 5px);z-index:1100;width:max(100%,280px);max-width:min(380px,90vw);background:#fff;border:1px solid var(--line);border-radius:9px;box-shadow:0 12px 30px rgba(23,32,51,.16);padding:7px}
+    .type-menu.hidden{display:none}
+    .type-search{width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid var(--line);border-radius:6px;outline:none;font:inherit;color:var(--text);background:#fff}
+    .type-search:focus{border-color:#2f6fed;box-shadow:0 0 0 2px rgba(47,111,237,.12)}
+    .type-list{max-height:320px;overflow:auto;margin-top:6px}
+    .type-option{display:block;width:100%;text-align:left;border:0;background:transparent;color:var(--text);padding:7px 9px;border-radius:5px;cursor:pointer;font:inherit}
+    .type-option:hover,.type-option.selected{background:#eef3fb}
+    .type-option.selected{font-weight:600}
+    .type-empty{padding:10px;color:var(--muted);font-size:12px}
     .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}
     .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     .kpi-label{font-size:.8rem;color:var(--muted)}
@@ -87,8 +100,7 @@
       </div>
       <div>
         <label for="type">Händelsetyp</label>
-        <input id="type" list="typeList" type="search" placeholder="Sök händelsetyp…" autocomplete="off">
-        <datalist id="typeList"></datalist>
+        <select id="type" class="native-type-select"></select>
       </div>
     </div>
 
@@ -178,15 +190,123 @@ function fillSelect(id,values,preferred='Alla'){
   if([...s.options].some(o=>o.value===preferred)) s.value=preferred;
 }
 function fillTypeSearch(values,preferred='Alla'){
-  const input=document.getElementById('type');
-  const list=document.getElementById('typeList');
-  list.innerHTML='';
+  const s=document.getElementById('type');
+  s.innerHTML='';
   ['Alla',...values].forEach(v=>{
     const o=document.createElement('option');
-    o.value=v;
-    list.appendChild(o);
+    o.value=v;o.textContent=v;
+    s.appendChild(o);
   });
-  input.value=preferred;
+  s.value=preferred;
+  buildTypeSearch();
+}
+function buildTypeSearch(){
+  const select=document.getElementById('type');
+  if(!select)return;
+  select.classList.add('native-type-select');
+
+  const old=select.parentElement.querySelector('.type-picker');
+  if(old)old.remove();
+
+  const picker=document.createElement('div');
+  picker.className='type-picker';
+
+  const button=document.createElement('button');
+  button.type='button';
+  button.className='type-button';
+
+  const menu=document.createElement('div');
+  menu.className='type-menu hidden';
+
+  const search=document.createElement('input');
+  search.type='search';
+  search.className='type-search';
+  search.placeholder='Sök händelsetyp…';
+  search.autocomplete='off';
+  search.setAttribute('aria-label','Sök händelsetyp');
+
+  const list=document.createElement('div');
+  list.className='type-list';
+
+  menu.append(search,list);
+  picker.append(button,menu);
+  select.insertAdjacentElement('afterend',picker);
+
+  const options=()=>[...select.options].map(o=>({value:o.value,text:o.textContent||o.value}));
+
+  const syncButton=()=>{
+    const selected=select.options[select.selectedIndex];
+    button.textContent=selected?.textContent||'Välj händelsetyp';
+  };
+
+  const choose=item=>{
+    select.value=item.value;
+    syncButton();
+    menu.classList.add('hidden');
+    search.value='';
+    select.dispatchEvent(new Event('change',{bubbles:true}));
+  };
+
+  const renderList=()=>{
+    const q=search.value.trim().toLocaleLowerCase('sv-SE');
+    const items=options()
+      .filter(item=>!q || item.text.toLocaleLowerCase('sv-SE').includes(q))
+      .sort((a,b)=>{
+        if(a.value==='Alla')return -1;
+        if(b.value==='Alla')return 1;
+        if(q){
+          const as=a.text.toLocaleLowerCase('sv-SE').startsWith(q);
+          const bs=b.text.toLocaleLowerCase('sv-SE').startsWith(q);
+          if(as!==bs)return as?-1:1;
+        }
+        return a.text.localeCompare(b.text,'sv-SE');
+      });
+
+    list.innerHTML='';
+    if(!items.length){
+      const empty=document.createElement('div');
+      empty.className='type-empty';
+      empty.textContent='Ingen händelsetyp hittades';
+      list.appendChild(empty);
+      return;
+    }
+
+    items.forEach(item=>{
+      const row=document.createElement('button');
+      row.type='button';
+      row.className='type-option';
+      if(String(item.value)===String(select.value))row.classList.add('selected');
+      row.textContent=item.text==='Alla'?'Alla':item.text;
+      row.addEventListener('click',()=>choose(item));
+      list.appendChild(row);
+    });
+  };
+
+  const openMenu=()=>{
+    menu.classList.remove('hidden');
+    renderList();
+    requestAnimationFrame(()=>search.focus());
+  };
+
+  button.addEventListener('click',e=>{
+    e.stopPropagation();
+    if(menu.classList.contains('hidden'))openMenu();
+    else menu.classList.add('hidden');
+  });
+  search.addEventListener('input',renderList);
+  search.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){
+      menu.classList.add('hidden');
+      button.focus();
+    }else if(e.key==='Enter'){
+      const first=list.querySelector('.type-option');
+      if(first){e.preventDefault();first.click();}
+    }
+  });
+  picker.addEventListener('click',e=>e.stopPropagation());
+  document.addEventListener('click',()=>menu.classList.add('hidden'));
+
+  syncButton();
 }
 function chartReplace(oldChart,ctx,config){
   if(oldChart) oldChart.destroy();
@@ -251,10 +371,6 @@ fetch(DATA_URL,{cache:'no-store'})
     fillSelect('year',years,'Alla');
     fillTypeSearch(types,'Alla');
     ['geo','year','type'].forEach(id=>document.getElementById(id).addEventListener('change',update));
-    document.getElementById('type').addEventListener('input',()=>{
-      const v=document.getElementById('type').value;
-      if(v==='Alla' || types.includes(v)) update();
-    });
     document.getElementById('loading').hidden=true;
     document.getElementById('dashboard').hidden=false;
     update();
