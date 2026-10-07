@@ -4,8 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" type="image/png" href="https://lulea-statistik.github.io/BR-brottsstatistik/favicon.png">
-  <title>Luleå polishändelser</title>
-  <meta name="description" content="Interaktiv statistik över offentligt publicerade polishändelser i Luleå och Norrbotten.">
+  <title>Polishändelser i Luleå – statistik och historik | Luleå Statistik</title>
+  <meta name="description" content="Interaktiv statistik och historik över offentligt publicerade polishändelser i Luleå kommun och Norrbotten. Filtrera på år, geografi och händelsetyp.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://lulea-statistik.github.io/Lulea-polishandelser/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:site_name" content="Luleå Statistik">
+  <meta property="og:title" content="Polishändelser i Luleå – statistik och historik">
+  <meta property="og:description" content="Statistik över offentligt publicerade polishändelser i Luleå kommun och Norrbotten. Filtrera på år, geografi och händelsetyp.">
+  <meta property="og:url" content="https://lulea-statistik.github.io/Lulea-polishandelser/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Polishändelser i Luleå – statistik och historik">
+  <meta name="twitter:description" content="Interaktiv statistik över offentligt publicerade polishändelser i Luleå kommun och Norrbotten.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://lulea-statistik.github.io/Lulea-polishandelser/#website",
+        "url": "https://lulea-statistik.github.io/Lulea-polishandelser/",
+        "name": "Luleå polishändelser",
+        "inLanguage": "sv-SE"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://lulea-statistik.github.io/Lulea-polishandelser/#webpage",
+        "url": "https://lulea-statistik.github.io/Lulea-polishandelser/",
+        "name": "Polishändelser i Luleå – statistik och historik",
+        "description": "Interaktiv statistik och historik över offentligt publicerade polishändelser i Luleå kommun och Norrbotten.",
+        "isPartOf": {"@id": "https://lulea-statistik.github.io/Lulea-polishandelser/#website"},
+        "about": {"@id": "https://lulea-statistik.github.io/Lulea-polishandelser/#dataset"},
+        "inLanguage": "sv-SE"
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://lulea-statistik.github.io/Lulea-polishandelser/#dataset",
+        "name": "Publicerade polishändelser – Luleå och Norrbotten",
+        "description": "Historisk och löpande sammanställning av händelser som Polisen har valt att publicera i sitt offentliga händelseflöde. Materialet är inte officiell statistik över anmälda brott.",
+        "url": "https://lulea-statistik.github.io/Lulea-polishandelser/",
+        "inLanguage": "sv-SE",
+        "keywords": ["Luleå", "Norrbotten", "polishändelser", "polis", "händelser", "statistik"],
+        "spatialCoverage": [
+          {"@type": "Place", "name": "Luleå kommun"},
+          {"@type": "AdministrativeArea", "name": "Norrbottens län"}
+        ],
+        "creator": {"@type": "Organization", "name": "Luleå Statistik"},
+        "isBasedOn": [
+          "https://polisen.se/om-polisen/om-webbplatsen/oppna-data/api-over-polisens-handelser/",
+          "https://brottsplatskartan.se/sida/api"
+        ],
+        "distribution": {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://lulea-statistik.github.io/Lulea-polishandelser/data/monthly_summary.csv"
+        }
+      }
+    ]
+  }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
   <style>
     :root{
@@ -29,6 +87,10 @@
     .subtitle{margin-top:7px;color:var(--muted)}
     main.wrap{padding-top:24px;padding-bottom:50px}
     .notice{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:13px 15px;margin-bottom:20px}
+    .intro{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:18px;line-height:1.55}
+    .intro h2{margin:0 0 7px;font-size:1.08rem}
+    .intro p{margin:0;color:#35414d}
+    .intro a{color:var(--blue)}
     .filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
     select{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
@@ -85,6 +147,11 @@
 
 <main class="wrap">
   <div class="notice"><strong>Viktigt:</strong> detta är inte officiell statistik över anmälda brott. Materialet består av händelser som Polisen valt att publicera i sitt händelseflöde. BRÅ ska användas för officiell brottsstatistik.</div>
+
+  <section class="intro" aria-labelledby="intro-title">
+    <h2 id="intro-title">Polishändelser i Luleå och Norrbotten</h2>
+    <p>Här kan du följa historik och statistik över offentligt publicerade polishändelser med fokus på <strong>Luleå kommun</strong> och övriga Norrbotten. Rapporten uppdateras automatiskt en gång per dygn och kan filtreras på geografi, år och händelsetyp. Läs mer om datakällor, geografisk klassificering och begränsningar på sidan <a href="info-metod.html">Info & metod</a>.</p>
+  </section>
 
   <div id="loading" class="status">Läser in månadsdata…</div>
 
