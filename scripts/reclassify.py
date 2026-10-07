@@ -9,14 +9,18 @@ def main() -> None:
     df = pd.read_csv(EVENTS_CSV, dtype={"event_id": "string"})
     before = df["geography_group"].value_counts(dropna=False).to_dict()
 
-    details = [
-        infer_municipality_detail(m, t, l)
-        for m, t, l in zip(
-            df["municipality"].fillna(""),
-            df["title_location"].fillna(""),
-            df["location_string"].fillna(""),
-        )
-    ]
+    details = []
+    for m, t, l in zip(
+        df["municipality"].fillna(""),
+        df["title_location"].fillna(""),
+        df["location_string"].fillna(""),
+    ):
+        existing = str(m).strip()
+        if existing:
+            details.append((existing, "existing_pre_source"))
+        else:
+            details.append(infer_municipality_detail("", t, l))
+
     df["municipality"] = [x[0] for x in details]
     df["municipality_source"] = [x[1] for x in details]
     df["geography_group"] = [
