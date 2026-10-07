@@ -46,6 +46,47 @@ def api_get(path: str, params: dict[str, Any] | None = None, retries: int = 4) -
     raise RuntimeError(f"API request failed: {url} params={params}") from last_error
 
 
+NORRBOTTEN_MUNICIPALITIES = {
+    "arvidsjaur": "Arvidsjaur",
+    "arjeplog": "Arjeplog",
+    "boden": "Boden",
+    "gällivare": "Gällivare",
+    "haparan­da": "Haparanda",
+    "haparanda": "Haparanda",
+    "jokkmokk": "Jokkmokk",
+    "kalix": "Kalix",
+    "kiruna": "Kiruna",
+    "luleå": "Luleå",
+    "pajala": "Pajala",
+    "piteå": "Piteå",
+    "älvsbyn": "Älvsbyn",
+    "överkalix": "Överkalix",
+    "övertorneå": "Övertorneå",
+}
+
+
+def infer_municipality(municipality: str, title_location: str, location_string: str) -> str:
+    """Use API municipality when available, otherwise infer conservatively from location fields."""
+    raw = (municipality or "").strip()
+    if raw:
+        return raw.replace(" kommun", "").replace(" Kommun", "").strip()
+
+    title_cf = (title_location or "").strip().casefold()
+    if title_cf in NORRBOTTEN_MUNICIPALITIES:
+        return NORRBOTTEN_MUNICIPALITIES[title_cf]
+
+    loc_cf = (location_string or "").casefold()
+    hits = []
+    for key, canonical in NORRBOTTEN_MUNICIPALITIES.items():
+        if key in loc_cf:
+            hits.append(canonical)
+
+    # Only assign from location_string when exactly one municipality is named.
+    # Multi-municipality summaries remain unknown rather than being assigned incorrectly.
+    unique_hits = sorted(set(hits))
+    return unique_hits[0] if len(unique_hits) == 1 else ""
+
+
 def geography_group(municipality: str, area: str) -> str:
     municipality_cf = (municipality or "").strip().casefold()
     area_cf = (area or "").strip().casefold()
@@ -69,8 +110,10 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
 
     title_type = (e.get("title_type") or e.get("type") or "").strip()
     loc = (e.get("location_string") or e.get("locations") or "").strip()
-    municipality = (e.get("administrative_area_level_2") or "").strip()
+    municipality_api = (e.get("administrative_area_level_2") or "").strip()
     area = (e.get("administrative_area_level_1") or "").strip()
+    title_location = (e.get("title_location") or "").strip()
+    municipality = infer_municipality(municipality_api, title_location, loc)
     is_summary = title_type.casefold().startswith("sammanfattning")
     is_multi = bool(is_summary or loc.count(",") >= 4)
 
@@ -84,7 +127,7 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
         "headline": e.get("headline") or "",
         "description": e.get("description") or e.get("content_teaser") or "",
         "content": e.get("content") or "",
-        "title_location": e.get("title_location") or "",
+        "title_location": title_location,
         "location_string": loc,
         "municipality": municipality,
         "administrative_area_level_1": area,
