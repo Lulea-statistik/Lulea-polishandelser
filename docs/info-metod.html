@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Info & metod – Luleå polishändelser</title>
+  <meta name="description" content="Information om syfte, tolkning, metod, datakällor och uppdatering för Luleå polishändelser.">
+  <style>
+    :root{
+      --bg:#f5f7fa;--panel:#fff;--text:#16202a;--muted:#66717d;--line:#d9e0e7;
+      --blue:#0b5cab;--warn:#fff6d8;--warnline:#d9a400
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.58}
+    header{background:#fff;border-bottom:1px solid var(--line)}
+    .wrap{max-width:980px;margin:auto;padding:0 22px}
+    header .wrap{padding-top:24px;padding-bottom:20px}
+    .topbar{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}
+    h1{margin:0;font-size:2rem;line-height:1.15}
+    .subtitle{margin-top:7px;color:var(--muted)}
+    nav{display:flex;gap:8px;flex-wrap:wrap}
+    nav a{color:var(--blue);text-decoration:none;font-weight:650;padding:7px 10px;border-radius:8px}
+    nav a:hover{background:#eef4fa}
+    nav a[aria-current="page"]{background:#e7f0f9}
+    main.wrap{padding-top:24px;padding-bottom:50px}
+    .notice{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:13px 15px;margin-bottom:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:16px}
+    h2{font-size:1.22rem;margin:0 0 10px}
+    h3{font-size:1rem;margin:18px 0 6px}
+    p{margin:8px 0}
+    ul{margin:8px 0 4px;padding-left:22px}
+    li{margin:5px 0}
+    a{color:var(--blue)}
+    .muted{color:var(--muted);font-size:.9rem}
+    .twocol{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    @media(max-width:760px){
+      .topbar{display:block}
+      nav{margin-top:14px}
+      .twocol{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <div>
+        <h1>Info & metod</h1>
+        <div class="subtitle">Hur materialet ska förstås, vad det kan visa och hur statistiken tas fram</div>
+      </div>
+      <nav aria-label="Huvudmeny">
+        <a href="./">Statistik</a>
+        <a href="info-metod.html" aria-current="page">Info & metod</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="notice"><strong>Viktigt:</strong> materialet är inte officiell statistik över anmälda brott. För sådan statistik ska BRÅ användas.</div>
+
+  <section class="card">
+    <h2>Varför publicerar Polisen händelser?</h2>
+    <p>Polisen beskriver händelsenotiserna som kortfattad information om ett <strong>urval av de utryckningar som polisen gör</strong>. Uppgifterna är ofta preliminära och bygger på den information som finns tidigt i en händelse.</p>
+    <p>Publiceringen ger allmänhet och medier en aktuell bild av delar av polisens verksamhet. I vissa enskilda notiser kan Polisen också efterfråga iakttagelser eller tips, men det är inte ett generellt syfte med varje publicerad händelse.</p>
+  </section>
+
+  <div class="twocol">
+    <section class="card">
+      <h2>Vad kan materialet säga?</h2>
+      <ul>
+        <li>Vilka typer av händelser Polisen har valt att publicera.</li>
+        <li>Hur publicerade händelser varierar över tid.</li>
+        <li>Vilka händelsetyper som är vanliga i det publicerade flödet.</li>
+        <li>Skillnader mellan Luleå och övriga Norrbotten i just detta material.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Vad kan materialet inte säga?</h2>
+      <ul>
+        <li>Det visar inte alla brott, larm eller polisinsatser.</li>
+        <li>Antalet händelsenotiser är inte samma sak som antalet anmälda brott.</li>
+        <li>Förändringar över tid kan bero på förändrad publiceringspraxis, inte bara på verkliga förändringar.</li>
+        <li>En notis kan innehålla flera delhändelser, och regionala sammanfattningar kan beröra flera kommuner.</li>
+        <li>En tidig brottsrubricering eller beskrivning kan senare ändras.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Metod</h2>
+    <p>Historiska och löpande händelser hämtas från <strong>Brottsplatskartans API</strong>, som bygger på Polisens offentligt publicerade händelseflöde. Varje unik händelse sparas en gång och sammanställs därefter per månad, geografi och händelsetyp.</p>
+    <p>För geografin används de plats- och kommunuppgifter som följer med materialet. När kommunuppgift saknas används en försiktig platsbaserad klassificering. Poster som bara kan knytas till länet kan därför ligga i kategorin <em>Norrbotten, okänd kommun</em>.</p>
+    <p>Koordinater i Polisens API ska inte tolkas som exakt händelseplats. Polisen anger att koordinaten är en mittkoordinat för det område – kommun eller län – där händelsen inträffat.</p>
+  </section>
+
+  <section class="card">
+    <h2>Datakällor</h2>
+    <ul>
+      <li><strong>Primär källa:</strong> Polisens offentliga händelsenotiser och API.</li>
+      <li><strong>Teknisk historikkälla:</strong> Brottsplatskartans API, som används för att bygga och löpande komplettera den historiska serien.</li>
+      <li><strong>Officiell brottsstatistik:</strong> BRÅ, som bör användas när frågan gäller anmälda brott, brottsnivåer eller jämförelser av faktisk registrerad brottslighet.</li>
+    </ul>
+    <p class="muted">
+      Källor:
+      <a href="https://polisen.se/om-polisen/om-webbplatsen/oppna-data/api-over-polisens-handelser/" target="_blank" rel="noopener">Polisens API över händelser</a>
+      ·
+      <a href="https://brottsplatskartan.se/sida/api" target="_blank" rel="noopener">Brottsplatskartan API</a>
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Hur ofta uppdateras uppgifterna?</h2>
+    <p><strong>Hos Polisen:</strong> händelsenotiser publiceras normalt inom de närmaste timmarna efter en händelse. Tidpunkten varierar och notiser kan senare uppdateras.</p>
+    <p><strong>I den här rapporten:</strong> nya och ändrade poster hämtas automatiskt <strong>en gång per dygn</strong>. Rapporten är därför inte en realtidstjänst.</p>
+    <p class="muted">Den automatiska GitHub-körningen är schemalagd till 04:17 UTC, vilket motsvarar cirka 06:17 svensk sommartid och 05:17 svensk normaltid.</p>
+  </section>
+</main>
+</body>
+</html>
