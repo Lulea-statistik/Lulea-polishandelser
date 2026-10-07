@@ -31,7 +31,7 @@
     .notice{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:13px 15px;margin-bottom:20px}
     .filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
-    select{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
+    select,input[type="search"]{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
     .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}
     .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     .kpi-label{font-size:.8rem;color:var(--muted)}
@@ -87,7 +87,8 @@
       </div>
       <div>
         <label for="type">Händelsetyp</label>
-        <select id="type"></select>
+        <input id="type" list="typeList" type="search" placeholder="Sök eller välj händelsetyp" autocomplete="off">
+        <datalist id="typeList"></datalist>
       </div>
     </div>
 
@@ -176,6 +177,17 @@ function fillSelect(id,values,preferred='Alla'){
   });
   if([...s.options].some(o=>o.value===preferred)) s.value=preferred;
 }
+function fillTypeSearch(values,preferred='Alla'){
+  const input=document.getElementById('type');
+  const list=document.getElementById('typeList');
+  list.innerHTML='';
+  ['Alla',...values].forEach(v=>{
+    const o=document.createElement('option');
+    o.value=v;
+    list.appendChild(o);
+  });
+  input.value=preferred;
+}
 function chartReplace(oldChart,ctx,config){
   if(oldChart) oldChart.destroy();
   return new Chart(ctx,config);
@@ -237,8 +249,12 @@ fetch(DATA_URL,{cache:'no-store'})
     const types=[...new Set(rows.map(x=>x.type_original).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'sv'));
     fillSelect('geo',geos,'Luleå kommun');
     fillSelect('year',years,'Alla');
-    fillSelect('type',types,'Alla');
+    fillTypeSearch(types,'Alla');
     ['geo','year','type'].forEach(id=>document.getElementById(id).addEventListener('change',update));
+    document.getElementById('type').addEventListener('input',()=>{
+      const v=document.getElementById('type').value;
+      if(v==='Alla' || types.includes(v)) update();
+    });
     document.getElementById('loading').hidden=true;
     document.getElementById('dashboard').hidden=false;
     update();
