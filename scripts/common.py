@@ -114,18 +114,25 @@ def infer_lulea_place(title_location: str, location_string: str) -> str:
     if title in LULEA_PLACE_NAMES:
         return LULEA_PLACE_CANONICAL.get(title, title_location.strip())
 
+    parts = [p.strip() for p in loc.split(",") if p.strip()]
+    leading_text = ", ".join(parts[:2])
+
     place_hits = []
     for key in LULEA_PLACE_NAMES:
-        if re.search(r"(?<![a-z0-9])" + re.escape(key) + r"(?![a-z0-9])", loc):
+        if re.search(r"(?<![a-z0-9])" + re.escape(key) + r"(?![a-z0-9])", leading_text):
             place_hits.append(key)
 
     unique_places = sorted(set(place_hits))
     if len(unique_places) != 1:
         return ""
 
+    # Do not use county-summary strings that start with Norrbotten as evidence,
+    # even when a Lulea place happens to be the second item.
+    if parts and parts[0] in {"norrbotten", "norrbottens lan"}:
+        return ""
+
     # Free-text/list matching is only accepted when the same location string
-    # does not also name another Norrbotten municipality. This avoids assigning
-    # county-wide summaries to Lulea just because one Lulea place is mentioned.
+    # does not also name another Norrbotten municipality.
     municipality_hits = set()
     loc_cf = (location_string or "").casefold()
     for key, canonical in NORRBOTTEN_MUNICIPALITIES.items():
