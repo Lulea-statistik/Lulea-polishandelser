@@ -31,7 +31,7 @@
     .notice{background:var(--warn);border:1px solid var(--warnline);border-radius:10px;padding:13px 15px;margin-bottom:20px}
     .filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
-    select,input[type="search"]{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
+    select,input[type="search"]{width:100%;padding:10px 12px;border:1px solid #b8c2cc;border-radius:9px;background:#fff;font:inherit;transition:border-color .15s,box-shadow .15s} input[type="search"]:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,92,171,.12)} input[type="search"]::placeholder{color:#8793a0}
     .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}
     .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     .kpi-label{font-size:.8rem;color:var(--muted)}
@@ -87,7 +87,7 @@
       </div>
       <div>
         <label for="type">Händelsetyp</label>
-        <input id="type" list="typeList" type="search" placeholder="Sök eller välj händelsetyp" autocomplete="off">
+        <input id="type" list="typeList" type="search" placeholder="Sök händelsetyp…" autocomplete="off">
         <datalist id="typeList"></datalist>
       </div>
     </div>
