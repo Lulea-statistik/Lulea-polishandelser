@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lulea-statistik.github.io/Lulea-polishandelser/sitemap.xml
