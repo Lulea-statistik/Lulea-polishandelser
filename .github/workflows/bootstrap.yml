@@ -18,11 +18,15 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python scripts/bootstrap.py
+      - name: Sync dashboard data
+        run: |
+          mkdir -p docs/data
+          cp data/monthly_summary.csv docs/data/monthly_summary.csv
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ docs/data/monthly_summary.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
