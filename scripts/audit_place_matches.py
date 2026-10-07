@@ -31,10 +31,22 @@ def main() -> None:
             g["headline"].fillna("").astype(str)
             .replace("", pd.NA).dropna().drop_duplicates().head(3).tolist()
         )
+        title_locations = (
+            g["title_location"].fillna("").astype(str)
+            .replace("", pd.NA).dropna().drop_duplicates().head(3).tolist()
+        )
+        location_strings = (
+            g["location_string"].fillna("").astype(str)
+            .replace("", pd.NA).dropna().drop_duplicates().head(3).tolist()
+        )
         rows.append({
             "matched_place": place,
             "event_count": len(g),
             "share_of_place_matches_pct": round(len(g) / len(x) * 100, 2) if len(x) else 0,
+            "title_location_1": title_locations[0] if len(title_locations) > 0 else "",
+            "title_location_2": title_locations[1] if len(title_locations) > 1 else "",
+            "location_string_1": location_strings[0] if len(location_strings) > 0 else "",
+            "location_string_2": location_strings[1] if len(location_strings) > 1 else "",
             "example_1": examples[0] if len(examples) > 0 else "",
             "example_2": examples[1] if len(examples) > 1 else "",
             "example_3": examples[2] if len(examples) > 2 else "",
