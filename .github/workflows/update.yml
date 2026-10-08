@@ -7,6 +7,7 @@ on:
       - "scripts/update_latest.py"
       - "scripts/common.py"
       - "scripts/extract_summary_details.py"
+      - "scripts/build_summary_validation_sample.py"
       - ".github/workflows/update.yml"
   schedule:
     - cron: "17 4 * * *"
@@ -26,6 +27,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/update_latest.py
       - run: python scripts/extract_summary_details.py
+      - run: python scripts/build_summary_validation_sample.py
       - name: Sync dashboard data
         run: |
           mkdir -p docs/data
