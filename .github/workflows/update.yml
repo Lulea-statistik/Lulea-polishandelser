@@ -9,12 +9,18 @@ on:
       - "scripts/extract_summary_details.py"
       - "scripts/deduplicate_summary_details.py"
       - "scripts/build_summary_validation_sample.py"
+      - "scripts/build_summary_validation_review.py"
+      - "scripts/report_summary_validation.py"
       - ".github/workflows/update.yml"
   schedule:
     - cron: "17 4 * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-polishandelser
+  cancel-in-progress: false
 
 jobs:
   update:
