@@ -31,33 +31,32 @@ MUNICIPALITIES = {
 # Högprecisionsklassning av de typer som återkommer i Polisens länssammanfattningar.
 # Ordningen är viktig: mer specifika mönster ligger före bredare.
 TYPE_PATTERNS = [
-    (r"\b(viltolycka|trafikolycka[^\n,.]{0,30}\bvilt|kolliderat? med (älg|ren|rådjur|hjort))\b", "Trafikolycka,  vilt"),
+    (r"\b(viltolycka|renolycka|rådjursolycka|älgolycka|trafikolycka[^\n,.]{0,30}\bvilt|singelolycka|kollider\w* med (älg|ren|rådjur|hjort)|påkö\w* (älg|ren|rådjur|hjort))\b", "Trafikolycka,  vilt"),
     (r"\b(drograttfylleri|rattfylleri)\b", "Rattfylleri"),
     (r"\b(grov olovlig körning|olovlig körning)\b", "Olovlig körning"),
-    (r"\btrafikkontroll\b", "Trafikkontroll"),
-    (r"\btrafikbrott\b", "Trafikbrott"),
+    (r"\btrafikkontroll\b|\bhastighetskontroll\b|\bnykterhetskontroll\b", "Trafikkontroll"),
+    (r"\btrafikbrott\b|\bvårdslöshet i trafik\b", "Trafikbrott"),
     (r"\btrafikhinder\b", "Trafikhinder"),
-    (r"\btrafikolycka\b|\bkollision\b", "Trafikolycka"),
-    (r"\barbetsplatsolycka\b", "Arbetsplatsolycka"),
-    (r"\bmisshandel\b", "Misshandel"),
-    (r"\bnarkotikabrott\b|\bnarkotika(?:innehav|brott)?\b", "Narkotikabrott"),
-    (r"\bstöld/inbrott\b", "Stöld/inbrott"),
-    (r"\binbrott\b", "Inbrott"),
-    (r"\bringa stöld\b|\bsnatteri\b", "Stöld,  ringa"),
-    (r"\bstöld\b", "Stöld"),
-    (r"\bskadegörelse\b", "Skadegörelse"),
-    (r"\b(fylleri|lob)\b", "Fylleri/LOB"),
+    (r"\btrafik\w*olycka\b|\bkollision\b|\bkrock\w*\b", "Trafikolycka"),
+    (r"\barbetsplatsolycka\b|\bfallolycka\b", "Arbetsplatsolycka"),
+    (r"\bmisshand\w*\b", "Misshandel"),
+    (r"\bnarkotik\w*\b", "Narkotikabrott"),
+    (r"\bstöld/inbrott\b|\bstöld genom inbrott\b", "Inbrott"),
+    (r"\binbrott\w*\b", "Inbrott"),
+    (r"\bringa stöld\b|\bsnatt\w*\b", "Stöld,  ringa"),
+    (r"\bstöld\b|\bstul\w*\b|\btillgrip\w*\b", "Stöld"),
+    (r"\bskadegör\w*\b", "Skadegörelse"),
+    (r"\b(fylleri|lob|tillnyktring)\b", "Fylleri/LOB"),
     (r"\bolaga hot\b", "Olaga hot"),
-    (r"\bofredande\b", "Ofredande/förargelse"),
+    (r"\bofred\w*\b|\bförargelseväckande\b", "Ofredande/förargelse"),
     (r"\bknivlagen\b|\bbrott mot knivlagen\b", "Knivlagen"),
-    (r"\bvapenlagen\b|\bbrott mot vapenlagen\b", "Vapenlagen"),
-    (r"\bbrand\b", "Brand"),
-    (r"\brån\b", "Rån"),
+    (r"\bvapenlagen\b|\bbrott mot vapenlagen\b|\bvapenbrott\b", "Vapenlagen"),
+    (r"\bbrand\w*\b", "Brand"),
+    (r"\brån\w*\b", "Rån"),
     (r"\bfjällräddning\b", "Fjällräddning"),
-    (r"\bförsvunnen person\b", "Försvunnen person"),
-    (r"\b(våld|hot) mot tjänsteman\b|\bvåld/hot mot tjänsteman\b", "Våld/hot mot tjänsteman"),
-    (r"\bvåldsamt motstånd\b", "Våld/hot mot tjänsteman"),
-    (r"\bvåldtäkt\b|\bsexualbrott\b", "Sexualbrott"),
+    (r"\bförsvunn\w*\b", "Försvunnen person"),
+    (r"\b(våld|hot) mot tjänsteman\b|\bvåld/hot mot tjänsteman\b|\bvåldsamt motstånd\b", "Våld/hot mot tjänsteman"),
+    (r"\bvåldtäkt\w*\b|\bsexualbrott\b|\bsexuellt ofred\w*\b", "Sexualbrott"),
     (r"\b(försök till mord|mord|dråp)\b", "Mord/dråp"),
     (r"\b(olaga intrång|hemfridsbrott)\b", "Olaga intrång/hemfridsbrott"),
     (r"\b(bombhot|farligt föremål)\b", "Farligt föremål,  misstänkt"),
@@ -72,10 +71,17 @@ TYPE_PATTERNS = [
 ]
 
 TIME_LINE_RE = re.compile(
-    r"(?im)(?:^|\n)\s*(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
-    r"\s*[,;:-]?\s*(?P<rest>[^\n]{2,240})"
+    r"(?im)(?:^|\n)\s*"
+    r"(?:(?P<prefix>[^\n,]{2,90})\s*,\s*)?"
+    r"(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
+    r"\s*[,;:-]?\s*(?P<rest>[^\n]{0,240})"
 )
-TAG_BREAK_RE = re.compile(r"(?i)<\s*(?:br|/p|/div|/li|/h\d)\s*/?>")
+
+NON_EVENT_RE = re.compile(
+    r"(?i)^(?:lugnt|inget att rapportera|inga händelser att rapportera|"
+    r"uppdatering|norrbotten\s*$|kl\s*[0-2]?\d[:.]\d{2}\s*[-–]\s*[0-2]?\d[:.]\d{2})"
+)
+TAG_BREAK_RE = re.compile(r"(?i)<\s*(?:br\s*/?|/?p|/?div|/?li|/?h\d)\s*>")
 TAG_RE = re.compile(r"<[^>]+>")
 SPACE_RE = re.compile(r"[ \t\xa0]+")
 BLANK_RE = re.compile(r"\n{3,}")
@@ -147,23 +153,36 @@ def extract_row(row: pd.Series) -> list[dict]:
         start = match.end()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
         body = text[start:end].strip(" \n-–—")
-        rest = SPACE_RE.sub(" ", match.group("rest")).strip(" .;:-")
+        prefix = SPACE_RE.sub(" ", match.group("prefix") or "").strip(" .;:-")
+        rest = SPACE_RE.sub(" ", match.group("rest") or "").strip(" .;:-")
         first_line = first_meaningful_line(body)
+        header = ", ".join(x for x in (prefix, rest) if x)
 
-        # Nyare sammanfattningar har ofta "tid, typ, ort".
-        # Äldre har ofta "tid, plats, kommun" och typen på nästa rad eller sist i raden.
-        event_type = classify_type(rest)
+        # Tydliga status-/uppdateringsrader är inte egna händelser.
+        if NON_EVENT_RE.search(header) and not classify_type(body[:250]):
+            continue
+
+        # Klassificera först rubrikdelen, därefter första brödtextraden och
+        # slutligen början av hela segmentet.
+        event_type = classify_type(header)
         if not event_type:
             event_type = classify_type(first_line)
         if not event_type:
-            event_type = classify_type(rest + "\n" + body[:400])
+            event_type = classify_type(header + "\n" + body[:500])
 
-        municipality = municipality_from_text(rest)
+        municipality = municipality_from_text(header)
         if not municipality:
             municipality = municipality_from_text(first_line)
 
-        # Om flera kommuner nämns senare i brödtexten använder vi dem inte för den aktuella delhändelsen.
-        parts = [p.strip() for p in re.split(r"\s*[,;]\s*", rest) if p.strip()]
+        # Behåll även tidsatta händelser där brottstypen inte kan klassas.
+        # De ska räknas i totalen men särredovisas som oklassificerade.
+        if not event_type:
+            substantive = (header + " " + first_line).strip()
+            if len(substantive) < 5:
+                continue
+            event_type = "Övrigt/oklassificerad"
+
+        parts = [p.strip() for p in re.split(r"\s*[,;/]\s*", header) if p.strip()]
         place_parts = []
         for part in parts:
             if municipality and part.casefold() == municipality.casefold():
@@ -175,12 +194,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             place_parts.append(part)
         place = ", ".join(place_parts[:2]).strip()
 
-        # För statistikpanelen kräver vi en identifierad händelsetyp.
-        # Det minskar fel där ett gatunamn annars tolkas som brottstyp.
-        if not event_type:
-            continue
-
-        confidence = "high" if municipality else "medium"
+        confidence = "high" if municipality and event_type != "Övrigt/oklassificerad" else "medium"
         out.append({
             "parent_event_id": row.get("event_id", ""),
             "date": row.get("date", ""),
@@ -197,7 +211,6 @@ def extract_row(row: pd.Series) -> list[dict]:
             "confidence": confidence,
         })
     return out
-
 
 def main() -> None:
     if not EVENTS.exists() or EVENTS.stat().st_size == 0:
