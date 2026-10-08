@@ -28,6 +28,17 @@ MUNICIPALITIES = {
     "övertorneå": "Övertorneå",
 }
 
+
+MUNICIPALITY_GROUP_LABELS = {
+    "Arvidsjaur": "Arvidsjaurs kommun", "Arjeplog": "Arjeplogs kommun",
+    "Boden": "Bodens kommun", "Gällivare": "Gällivare kommun",
+    "Haparanda": "Haparanda kommun", "Jokkmokk": "Jokkmokks kommun",
+    "Kalix": "Kalix kommun", "Kiruna": "Kiruna kommun",
+    "Luleå": "Luleå kommun", "Pajala": "Pajala kommun",
+    "Piteå": "Piteå kommun", "Älvsbyn": "Älvsbyns kommun",
+    "Överkalix": "Överkalix kommun", "Övertorneå": "Övertorneå kommun",
+}
+
 # Högprecisionsklassning av de typer som återkommer i Polisens länssammanfattningar.
 # Ordningen är viktig: mer specifika mönster ligger före bredare.
 TYPE_PATTERNS = [
@@ -127,10 +138,8 @@ def municipality_from_text(value: str) -> str:
 
 
 def geography(municipality: str) -> str:
-    if municipality == "Luleå":
-        return "Luleå kommun"
-    if municipality:
-        return "Övriga Norrbotten"
+    if municipality in MUNICIPALITY_GROUP_LABELS:
+        return MUNICIPALITY_GROUP_LABELS[municipality]
     return "Norrbotten, okänd kommun"
 
 
