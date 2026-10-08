@@ -374,6 +374,49 @@ def extract_row(row: pd.Series) -> list[dict]:
             cleaned.append(x)
         out = cleaned
 
+
+    # Fånga explicit antal vilt-/renolyckor i löptext, t.ex.
+    # "Tre viltolyckor har anmälts". Här är antalet händelser uttryckligt,
+    # till skillnad från personantal som LOB.
+    for line in lines:
+        m = COUNTED_ACCIDENT_RE.search(line)
+        if not m:
+            continue
+        token = m.group("count").casefold()
+        count = int(token) if token.isdigit() else NUMBER_WORDS.get(token, 0)
+        if count <= 0:
+            continue
+
+        # Om samma rad redan gav en otidsatt viltträff, komplettera bara upp
+        # till det uttryckliga antalet i stället för att dubbelräkna.
+        same_line_existing = [
+            x for x in out
+            if not str(x.get("time","")).strip()
+            and str(x.get("event_type_extracted","")).casefold() == "trafikolycka, vilt"
+            and str(x.get("place_text","")).strip() == line.strip()
+        ]
+        missing = max(0, count - len(same_line_existing))
+        if missing == 0:
+            continue
+
+        municipality = municipality_from_text(line)
+        for _ in range(missing):
+            out.append({
+                "parent_event_id": row.get("event_id", ""),
+                "date": row.get("date", ""),
+                "year": row.get("year", ""),
+                "month": row.get("month", ""),
+                "summary_type": row.get("type_original", ""),
+                "time": "",
+                "event_type_extracted": "Trafikolycka, vilt",
+                "place_text": line,
+                "municipality": municipality,
+                "geography_group": geography(municipality),
+                "description": line,
+                "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+                "confidence": "high" if municipality else "medium",
+            })
+
     return out
 
 def main() -> None:
