@@ -116,6 +116,11 @@
     .chartbox{height:360px}
     .chartbox.composition{height:430px}
     .chart-note{margin:10px 0 0;color:var(--muted);font-size:.82rem;line-height:1.45}
+    .summary-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}
+    .summary-metrics div{background:#f7f9fb;border:1px solid var(--line);border-radius:9px;padding:12px}
+    .summary-metrics span{display:block;color:var(--muted);font-size:.78rem;margin-bottom:4px}
+    .summary-metrics strong{font-size:1.2rem}
+    @media(max-width:700px){.summary-metrics{grid-template-columns:1fr}}
     .foot{font-size:.87rem;color:var(--muted);margin-top:22px;line-height:1.5}
     .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
     @media(max-width:850px){
@@ -215,6 +220,17 @@
       <p class="chart-note">100 % staplat diagram. Händelsetyper som utgör mindre än 2 % av samtliga händelser i vald geografi samlas i kategorin Övrigt. Diagrammet följer vald kategorisering men visar alla år och påverkas därför inte av filtren År eller Händelsetyp.</p>
     </div>
 
+    <div class="card" style="margin-top:16px">
+      <h2>Vad innehåller polisens sammanfattningar?</h2>
+      <div class="summary-metrics">
+        <div><span>Extraherade underhändelser</span><strong id="summaryExtractedTotal">–</strong></div>
+        <div><span>Vanligaste underhändelse</span><strong id="summaryTopType">–</strong></div>
+        <div><span>Vald geografi</span><strong id="summaryGeoLabel">–</strong></div>
+      </div>
+      <div class="chartbox"><canvas id="summaryDetailChart"></canvas></div>
+      <p class="chart-note">Underhändelser identifieras i texten i poster som Polisen publicerat som sammanfattningar. Diagrammet följer filtren Geografi och År och använder vald kategorisering. Detta är en separat textutvinning och räknas inte in i huvudstatistiken ovan.</p>
+    </div>
+
     <div class="foot">
       Källa: Brottsplatskartan/Polisens publicerade händelseflöde. Klassificeringen av kommun är preliminär och använder API-fält när det finns samt försiktig platsbaserad fallback när kommunfält saknas. Regionala sammanfattningar kan innehålla flera delhändelser och bör inte tolkas som ett enskilt brott.
     </div>
@@ -223,9 +239,10 @@
 
 <script>
 const DATA_URL='data/monthly_summary.csv';
+const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart;
+let rows=[], summaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -566,6 +583,53 @@ function updateTypeShareChart(){
   });
 }
 
+function updateSummaryDetailChart(){
+  const canvas=document.getElementById('summaryDetailChart');
+  if(!canvas)return;
+  const g=selected('geo'), y=selected('year');
+  const fieldMode=selected('categoryMode');
+
+  const d=summaryRows.filter(r=>
+    (g==='Alla'||r.geography_group===g) &&
+    (y==='Alla'||r.year===y)
+  );
+
+  const mapped=d.map(r=>({
+    ...r,
+    display_type:fieldMode==='police'
+      ? r.event_type_extracted
+      : aggregatedType(r.event_type_extracted)
+  }));
+
+  const totals=groupSum(mapped,'display_type').sort((a,b)=>b[1]-a[1]);
+  const top=totals.slice(0,15);
+  const total=sum(mapped);
+
+  document.getElementById('summaryExtractedTotal').textContent=fmt.format(total);
+  document.getElementById('summaryTopType').textContent=top[0]?.[0]||'–';
+  document.getElementById('summaryGeoLabel').textContent=g;
+
+  summaryDetailChart=chartReplace(summaryDetailChart,canvas,{
+    type:'bar',
+    data:{
+      labels:top.map(x=>x[0]),
+      datasets:[{
+        label:'Extraherade underhändelser',
+        data:top.map(x=>x[1]),
+        backgroundColor:'#0b5cab',
+        borderColor:'#0b5cab'
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{beginAtZero:true,title:{display:true,text:'Antal'}}}
+    }
+  });
+}
+
 function update(){
   const d=filt();
   const modeLabel=typeModeLabel();
@@ -618,16 +682,20 @@ function update(){
   });
 
   updateTypeShareChart();
+  updateSummaryDetailChart();
 }
 
-fetch(DATA_URL,{cache:'no-store'})
-  .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.text()})
-  .then(text=>{
+Promise.all([
+  fetch(DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Huvuddata HTTP '+r.status);return r.text()}),
+  fetch(SUMMARY_DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
+])
+  .then(([text,summaryText])=>{
     rows=parseCSV(text).map(r=>({
       ...r,
       event_count:+r.event_count||0,
       type_aggregated:aggregatedType(r.type_original)
     }));
+    summaryRows=summaryText?parseCSV(summaryText).map(r=>({...r,event_count:+r.event_count||0})) : [];
     if(!rows.length) throw new Error('Ingen data');
     const geos=[...new Set(rows.map(x=>x.geography_group).filter(Boolean))].sort();
     const years=[...new Set(rows.map(x=>x.year).filter(Boolean))].sort((a,b)=>+a-+b);
