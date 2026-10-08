@@ -91,7 +91,7 @@
     .intro h2{margin:0 0 7px;font-size:1.08rem}
     .intro p{margin:0;color:#35414d}
     .intro a{color:var(--blue)}
-    .filters{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .filters{display:grid;grid-template-columns:repeat(4,minmax(170px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
     select{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
     .native-type-select{display:none}
@@ -168,6 +168,13 @@
         <select id="year"></select>
       </div>
       <div>
+        <label for="categoryMode">Kategorisering</label>
+        <select id="categoryMode">
+          <option value="aggregated" selected>Aggregerade kategorier</option>
+          <option value="police">Polisens kategorier</option>
+        </select>
+      </div>
+      <div>
         <label for="type">Händelsetyp</label>
         <select id="type" class="native-type-select"></select>
       </div>
@@ -205,7 +212,7 @@
     <div class="card" style="margin-top:16px">
       <h2>Händelsetyper per år – andel av årets händelser</h2>
       <div class="chartbox composition"><canvas id="typeShareChart"></canvas></div>
-      <p class="chart-note">100 % staplat diagram. Händelsetyper som utgör mindre än 2 % av samtliga händelser i vald geografi samlas i kategorin Övrigt. Diagrammet visar alla år och påverkas därför inte av filtren År eller Händelsetyp.</p>
+      <p class="chart-note">100 % staplat diagram. Händelsetyper som utgör mindre än 2 % av samtliga händelser i vald geografi samlas i kategorin Övrigt. Diagrammet följer vald kategorisering men visar alla år och påverkas därför inte av filtren År eller Händelsetyp.</p>
     </div>
 
     <div class="foot">
@@ -219,6 +226,81 @@ const DATA_URL='data/monthly_summary.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
 let rows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart;
+
+const AGGREGATED_TYPE_MAP={
+  'Trafikolycka':'Trafikolycka',
+  'Trafikolycka,  vilt':'Trafikolycka',
+  'Trafikolycka,  singel':'Trafikolycka',
+  'Trafikolycka,  personskada':'Trafikolycka',
+  'Trafikolycka,  smitning från':'Trafikolycka',
+
+  'Sammanfattning natt':'Sammanfattning',
+  'Sammanfattning kväll':'Sammanfattning',
+  'Sammanfattning förmiddag':'Sammanfattning',
+  'Sammanfattning kväll och natt':'Sammanfattning',
+  'Sammanfattning eftermiddag':'Sammanfattning',
+  'Sammanfattning dag':'Sammanfattning',
+  'Sammanfattning helg':'Sammanfattning',
+  'Sammanfattning vecka':'Sammanfattning',
+  'Sammanfattning dygn':'Sammanfattning',
+
+  'Stöld':'Stöld/inbrott',
+  'Stöld/inbrott':'Stöld/inbrott',
+  'Inbrott':'Stöld/inbrott',
+  'Stöld,  ringa':'Stöld/inbrott',
+  'Stöld,  försök':'Stöld/inbrott',
+  'Inbrott,  försök':'Stöld/inbrott',
+  'Snatteri':'Stöld/inbrott',
+
+  'Fylleri/LOB':'Fylleri/LOB',
+  'Fylleri':'Fylleri/LOB',
+
+  'Misshandel':'Misshandel',
+  'Misshandel,  grov':'Misshandel',
+
+  'Motorfordon,  stöld':'Motorfordonsstöld',
+  'Motorfordon,  anträffat stulet':'Motorfordonsstöld',
+
+  'Rån':'Rån',
+  'Rån övrigt':'Rån',
+  'Rån väpnat':'Rån',
+  'Rån,  försök':'Rån',
+
+  'Olaga intrång':'Olaga intrång/hemfridsbrott',
+  'Olaga intrång/hemfridsbrott':'Olaga intrång/hemfridsbrott',
+  'Hemfridsbrott':'Olaga intrång/hemfridsbrott',
+
+  'Mord/dråp':'Mord/dråp',
+  'Mord/dråp,  försök':'Mord/dråp',
+
+  'Våldtäkt':'Sexualbrott',
+  'Våldtäkt,  försök':'Sexualbrott',
+  'Sexualbrott':'Sexualbrott',
+  'Sedlighetsbrott':'Sexualbrott',
+
+  'Djur skadat/omhändertaget':'Djurrelaterat',
+  'Djur':'Djurrelaterat',
+  'Lagen om hundar och katter':'Djurrelaterat',
+
+  'Olaga frihetsberövande/människorov':'Olaga frihetsberövande',
+  'Olaga frihetsberövande':'Olaga frihetsberövande',
+
+  'Trafikhinder':'Trafikhinder',
+  'trafikhinder':'Trafikhinder',
+
+  'Anträffat gods':'Anträffat/upphittat gods',
+  'Upphittat föremål':'Anträffat/upphittat gods'
+};
+
+function aggregatedType(name){
+  return AGGREGATED_TYPE_MAP[name]||name||'Okänd';
+}
+function typeField(){
+  return selected('categoryMode')==='police'?'type_original':'type_aggregated';
+}
+function typeModeLabel(){
+  return selected('categoryMode')==='police'?'Polisens kategorier':'Aggregerade kategorier';
+}
 
 function parseCSV(text){
   const out=[]; let row=[], field='', quoted=false;
@@ -249,11 +331,11 @@ function groupSum(data,key){
 }
 function selected(id){return document.getElementById(id).value}
 function filt(ignoreGeo=false){
-  const g=selected('geo'), y=selected('year'), t=selected('type');
+  const g=selected('geo'), y=selected('year'), t=selected('type'), field=typeField();
   return rows.filter(r=>
     (ignoreGeo || g==='Alla'||r.geography_group===g) &&
     (y==='Alla'||r.year===y) &&
-    (t==='Alla'||r.type_original===t)
+    (t==='Alla'||r[field]===t)
   );
 }
 function fillSelect(id,values,preferred='Alla'){
@@ -383,6 +465,13 @@ function buildTypeSearch(){
 
   syncButton();
 }
+function refreshTypeSelector(preferred='Alla'){
+  const field=typeField();
+  const values=[...new Set(rows.map(x=>x[field]).filter(Boolean))]
+    .sort((a,b)=>a.localeCompare(b,'sv'));
+  fillTypeSearch(values,preferred);
+}
+
 function chartReplace(oldChart,ctx,config){
   if(oldChart) oldChart.destroy();
   return new Chart(ctx,config);
@@ -391,7 +480,8 @@ function updateTypeShareChart(){
   const g=selected('geo');
   const data=rows.filter(r=>g==='Alla'||r.geography_group===g);
   const grandTotal=sum(data);
-  const allTypeTotals=groupSum(data,'type_original')
+  const field=typeField();
+  const allTypeTotals=groupSum(data,field)
     .sort((a,b)=>b[1]-a[1]);
   const includedTypes=allTypeTotals
     .filter(([name,count])=>name && grandTotal>0 && count/grandTotal>=0.02)
@@ -405,7 +495,7 @@ function updateTypeShareChart(){
   const years=[...new Set(data.map(r=>r.year).filter(Boolean))].sort((a,b)=>+a-+b);
   const byYearType=new Map();
   data.forEach(r=>{
-    const key=r.year+'|'+r.type_original;
+    const key=r.year+'|'+r[field];
     byYearType.set(key,(byYearType.get(key)||0)+(+r.event_count||0));
   });
 
@@ -432,12 +522,12 @@ function updateTypeShareChart(){
       data:years.map(year=>{
         const yearRows=data.filter(r=>r.year===year);
         const denom=yearRows.reduce((acc,r)=>acc+(+r.event_count||0),0);
-        const n=yearRows.reduce((acc,r)=>acc+(minorTypes.has(r.type_original)?(+r.event_count||0):0),0);
+        const n=yearRows.reduce((acc,r)=>acc+(minorTypes.has(r[field])?(+r.event_count||0):0),0);
         return denom?100*n/denom:0;
       }),
       rawCounts:years.map(year=>
         data.filter(r=>r.year===year)
-          .reduce((acc,r)=>acc+(minorTypes.has(r.type_original)?(+r.event_count||0):0),0)
+          .reduce((acc,r)=>acc+(minorTypes.has(r[field])?(+r.event_count||0):0),0)
       ),
       backgroundColor:'#9ca3af',
       borderWidth:0
@@ -472,6 +562,10 @@ function updateTypeShareChart(){
 
 function update(){
   const d=filt();
+  const modeLabel=typeModeLabel();
+  const headings=[...document.querySelectorAll('.card h2')];
+  const topHeading=headings.find(h=>h.textContent.startsWith('Vanligaste '));
+  if(topHeading)topHeading.textContent='Vanligaste händelsetyper – '+modeLabel.toLowerCase();
   const total=sum(d);
   const months=[...new Set(d.map(x=>x.year+'-'+String(x.month).padStart(2,'0')))].sort();
   document.getElementById('kpiTotal').textContent=fmt.format(total);
@@ -491,7 +585,8 @@ function update(){
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}}
   });
 
-  const types=groupSum(d,'type_original').sort((a,b)=>b[1]-a[1]).slice(0,15);
+  const field=typeField();
+  const types=groupSum(d,field).sort((a,b)=>b[1]-a[1]).slice(0,15);
   typeChart=chartReplace(typeChart,document.getElementById('typeChart'),{
     type:'bar',
     data:{labels:types.map(x=>x[0]),datasets:[{label:'Antal',data:types.map(x=>x[1]),backgroundColor:'#2f855a',borderColor:'#2f855a'}]},
@@ -507,7 +602,7 @@ function update(){
 
   const dg=filt(true).filter(r=>{
     const y=selected('year'),t=selected('type');
-    return (y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t);
+    return (y==='Alla'||r.year===y)&&(t==='Alla'||r[typeField()]===t);
   });
   const geos=groupSum(dg,'geography_group').sort((a,b)=>b[1]-a[1]);
   geoChart=chartReplace(geoChart,document.getElementById('geoChart'),{
@@ -522,15 +617,22 @@ function update(){
 fetch(DATA_URL,{cache:'no-store'})
   .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.text()})
   .then(text=>{
-    rows=parseCSV(text).map(r=>({...r,event_count:+r.event_count||0}));
+    rows=parseCSV(text).map(r=>({
+      ...r,
+      event_count:+r.event_count||0,
+      type_aggregated:aggregatedType(r.type_original)
+    }));
     if(!rows.length) throw new Error('Ingen data');
     const geos=[...new Set(rows.map(x=>x.geography_group).filter(Boolean))].sort();
     const years=[...new Set(rows.map(x=>x.year).filter(Boolean))].sort((a,b)=>+a-+b);
-    const types=[...new Set(rows.map(x=>x.type_original).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'sv'));
     fillSelect('geo',geos,'Luleå kommun');
     fillSelect('year',years,'Alla');
-    fillTypeSearch(types,'Alla');
+    refreshTypeSelector('Alla');
     ['geo','year','type'].forEach(id=>document.getElementById(id).addEventListener('change',update));
+    document.getElementById('categoryMode').addEventListener('change',()=>{
+      refreshTypeSelector('Alla');
+      update();
+    });
     document.getElementById('loading').hidden=true;
     document.getElementById('dashboard').hidden=false;
     update();
