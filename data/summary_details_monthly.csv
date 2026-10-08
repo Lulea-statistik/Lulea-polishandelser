@@ -1,0 +1,369 @@
+year,month,geography_group,event_type_extracted,event_count
+2017,2,"Norrbotten, okänd kommun",Bensbyvägen,1
+2017,2,Övriga Norrbotten,Mörtbergsvägen,1
+2017,4,"Norrbotten, okänd kommun",Luleå,1
+2017,4,Övriga Norrbotten,E10 Räktforsen,1
+2017,4,Övriga Norrbotten,Luleå,1
+2017,5,"Norrbotten, okänd kommun",fylleri. En person omhändertas enligt LOB,1
+2017,6,"Norrbotten, okänd kommun",Gammelstadsvägen,1
+2017,6,"Norrbotten, okänd kommun",Luleå,1
+2017,7,"Norrbotten, okänd kommun",Pajala,2
+2017,7,"Norrbotten, okänd kommun",Luleå,1
+2017,8,Övriga Norrbotten,stöld/inbrott,2
+2017,9,"Norrbotten, okänd kommun",Luleå,4
+2017,11,"Norrbotten, okänd kommun",Väderleden,1
+2017,11,Övriga Norrbotten,Gamla Lulevägen,1
+2017,12,Luleå kommun,trafikbrott samt narkotikabrott,1
+2017,12,"Norrbotten, okänd kommun",fylleri,1
+2017,12,Övriga Norrbotten,fylleri,1
+2017,12,Övriga Norrbotten,riksväg 97 Sanden,1
+2017,12,Övriga Norrbotten,skadegörelse,1
+2017,12,Övriga Norrbotten,Öjebyn,1
+2018,2,Luleå kommun,hödljuddd fest,1
+2018,2,Övriga Norrbotten,stökig gäst,1
+2018,3,Luleå kommun,trafikolycka två bilar,1
+2018,3,Övriga Norrbotten,trafikbrott,1
+2018,7,Övriga Norrbotten,trafikolycka flera fordon,1
+2018,8,"Norrbotten, okänd kommun",fjällräddning,1
+2018,8,Övriga Norrbotten,narkotikabrott,1
+2018,8,Övriga Norrbotten,rattfylleri,1
+2018,8,Övriga Norrbotten,ringa stöld,1
+2018,8,Övriga Norrbotten,trafikbrott,1
+2018,10,"Norrbotten, okänd kommun",Västermalm,1
+2018,12,"Norrbotten, okänd kommun",Trafikbrott,1
+2018,12,Övriga Norrbotten,Trafikolycka vilt,3
+2018,12,Övriga Norrbotten,Fylleri,1
+2018,12,Övriga Norrbotten,Trafikbrott,1
+2018,12,Övriga Norrbotten,Trafikkontroll,1
+2018,12,Övriga Norrbotten,Trafikkontroll Nuolajärvivägen,1
+2019,2,"Norrbotten, okänd kommun",Innerstaden,1
+2019,5,"Norrbotten, okänd kommun",Stöld,1
+2019,6,Luleå kommun,LOB,2
+2019,6,"Norrbotten, okänd kommun",Viltolycka,1
+2019,6,Övriga Norrbotten,Ratfylleri och grov olovlig körning,1
+2019,6,Övriga Norrbotten,Rattfylleri,1
+2019,7,"Norrbotten, okänd kommun",Luleå,1
+2019,9,Luleå kommun,Misshandel,1
+2019,9,Övriga Norrbotten,Malmberget,1
+2019,10,Övriga Norrbotten,centrum,1
+2020,1,Övriga Norrbotten,skadegörelse,1
+2020,5,Luleå kommun,Lerbäcken,1
+2020,5,Luleå kommun,Notviken,1
+2020,10,Övriga Norrbotten,Ringa Stöld och Olaga hot,1
+2020,12,"Norrbotten, okänd kommun",Trafikbrott,1
+2021,2,Luleå kommun,Notviken,1
+2022,7,"Norrbotten, okänd kommun",Luleå,2
+2023,9,Luleå kommun,Lerbäcken,1
+2023,9,Luleå kommun,Trafikolycka,1
+2023,9,Övriga Norrbotten,Trafikhinder,1
+2023,10,Luleå kommun,Rattfylleri,1
+2023,10,Luleå kommun,Viltolycka,1
+2023,10,Luleå kommun,fylleri/våldsamt motstånd,1
+2023,10,Luleå kommun,skadegörelse,1
+2023,10,"Norrbotten, okänd kommun",Gällivare,2
+2023,10,"Norrbotten, okänd kommun",07:00,1
+2023,10,"Norrbotten, okänd kommun",Centrala Boden,1
+2023,10,"Norrbotten, okänd kommun",Centrala Kiruna,1
+2023,10,"Norrbotten, okänd kommun",Luleå,1
+2023,10,Övriga Norrbotten,E10 Hakkas,1
+2023,10,Övriga Norrbotten,Nybyn,1
+2023,10,Övriga Norrbotten,Saarisuanto,1
+2023,10,Övriga Norrbotten,fylleri,1
+2023,10,Övriga Norrbotten,Öjebyn,1
+2023,11,Luleå kommun,Fylleri,2
+2023,11,Luleå kommun,Olovlig körning,2
+2023,11,Luleå kommun,Rattfylleri,1
+2023,11,Övriga Norrbotten,Misshandel,2
+2023,11,Övriga Norrbotten,E10,1
+2023,11,Övriga Norrbotten,Hemfridsbrott,1
+2023,11,Övriga Norrbotten,Knivlagen,1
+2023,11,Övriga Norrbotten,Narkotikabrott,1
+2023,11,Övriga Norrbotten,Olaga hot,1
+2023,11,Övriga Norrbotten,Rattfylleri,1
+2023,11,Övriga Norrbotten,Viltolycka,1
+2024,2,"Norrbotten, okänd kommun",Kiruna,1
+2024,2,"Norrbotten, okänd kommun",Älvsbyn,1
+2024,2,Övriga Norrbotten,E45,1
+2024,2,Övriga Norrbotten,Riksväg 99. Kitkiöjärvi,1
+2024,3,Övriga Norrbotten,Sveavägen,1
+2024,4,"Norrbotten, okänd kommun",Kiruna,1
+2024,5,Övriga Norrbotten,Misshandel,1
+2024,5,Övriga Norrbotten,Olaga hot,1
+2024,5,Övriga Norrbotten,Viltolycka,1
+2024,6,Luleå kommun,Innerstaden,2
+2024,6,Luleå kommun,E4 Norra Gäddvik,1
+2024,6,Luleå kommun,Överkalix,1
+2024,6,Övriga Norrbotten,Centrum,1
+2024,6,Övriga Norrbotten,E10 Skröven,1
+2024,6,Övriga Norrbotten,E4 Norra ringen,1
+2024,6,Övriga Norrbotten,E4 Vånafjärden,1
+2024,6,Övriga Norrbotten,Kebnekaise,1
+2024,6,Övriga Norrbotten,Länsväg 870,1
+2024,7,Övriga Norrbotten,Lövheden,1
+2024,7,Övriga Norrbotten,Riksväg 94,1
+2024,8,Luleå kommun,Innerstaden,2
+2024,8,Luleå kommun,Riksväg 97,1
+2024,8,Luleå kommun,Örnäset,1
+2024,8,"Norrbotten, okänd kommun",Gällivare,2
+2024,8,"Norrbotten, okänd kommun",Bodenvägen,1
+2024,8,"Norrbotten, okänd kommun",E4 Antnäs,1
+2024,8,Övriga Norrbotten,Centrum,2
+2024,8,Övriga Norrbotten,Riksväg 95,2
+2024,8,Övriga Norrbotten,Björklandsvägen,1
+2024,8,Övriga Norrbotten,E4,1
+2024,8,Övriga Norrbotten,Kebnekaise,1
+2024,8,Övriga Norrbotten,Länsväg 796,1
+2024,8,Övriga Norrbotten,Nakerijärvi,1
+2024,8,Övriga Norrbotten,Näsbyn,1
+2024,8,Övriga Norrbotten,Sanden,1
+2024,8,Övriga Norrbotten,Trollsjön,1
+2024,8,Övriga Norrbotten,Zonområdet,1
+2024,9,Luleå kommun,E4 Börjeslandet,1
+2024,9,Luleå kommun,Innerstaden,1
+2024,9,Luleå kommun,Notviken,1
+2024,9,Övriga Norrbotten,Centrum,2
+2024,9,Övriga Norrbotten,Karhakka,2
+2024,9,Övriga Norrbotten,Länsväg 744,1
+2024,9,Övriga Norrbotten,Marielund,1
+2024,9,Övriga Norrbotten,Riksväg 97,1
+2024,9,Övriga Norrbotten,Sanden,1
+2024,10,Luleå kommun,Innerstaden,3
+2024,10,Luleå kommun,Bredviken,1
+2024,10,Luleå kommun,Porsön,1
+2024,10,Övriga Norrbotten,Centrum,3
+2024,10,Övriga Norrbotten,Bredviken,1
+2024,10,Övriga Norrbotten,E4 Bergsviken,1
+2024,10,Övriga Norrbotten,Hallgrensvägen,1
+2024,10,Övriga Norrbotten,Länsväg 356 Fagervik,1
+2024,10,Övriga Norrbotten,Länsväg 506 Munksund,1
+2024,10,Övriga Norrbotten,Påläng,1
+2024,10,Övriga Norrbotten,Riksväg 99,1
+2024,10,Övriga Norrbotten,Riksväg 99 Juoksengi,1
+2024,10,Övriga Norrbotten,Sanden,1
+2024,10,Övriga Norrbotten,centrum,1
+2024,11,Luleå kommun,Misshandel,2
+2024,11,Luleå kommun,Gamla riksvägen,1
+2024,11,Luleå kommun,Innerstaden,1
+2024,11,Luleå kommun,Narkotikabrott,1
+2024,11,Luleå kommun,Rattfylleri,1
+2024,11,Luleå kommun,Våld mot tjänsteman,1
+2024,11,Övriga Norrbotten,Narkotikabrott,2
+2024,11,Övriga Norrbotten,Centrum,1
+2024,11,Övriga Norrbotten,Misshandel,1
+2024,11,Övriga Norrbotten,Olaga hot,1
+2024,11,Övriga Norrbotten,Sanden,1
+2024,11,Övriga Norrbotten,Trafikkontroll,1
+2024,11,Övriga Norrbotten,Viltolycka,1
+2024,12,Luleå kommun,Bergnäset,1
+2024,12,Luleå kommun,Misshandel,1
+2024,12,Övriga Norrbotten,Misshandel,4
+2024,12,Övriga Norrbotten,Narkotikabrott,4
+2024,12,Övriga Norrbotten,E45 Porjus,1
+2024,12,Övriga Norrbotten,Länsväg 711 Lantjärv,1
+2024,12,Övriga Norrbotten,Rattfylleri,1
+2024,12,Övriga Norrbotten,Trafikkontroll,1
+2024,12,Övriga Norrbotten,Våld mot tjänsteman,1
+2025,1,Luleå kommun,Rattfylleri,2
+2025,1,Luleå kommun,Narkotikabrott,1
+2025,1,Övriga Norrbotten,Viltolycka,5
+2025,1,Övriga Norrbotten,Misshandel,2
+2025,1,Övriga Norrbotten,Narkotikabrott,2
+2025,1,Övriga Norrbotten,Rattfylleri,2
+2025,1,Övriga Norrbotten,Brand,1
+2025,1,Övriga Norrbotten,Försök till misshandel,1
+2025,1,Övriga Norrbotten,Trafikbrott,1
+2025,1,Övriga Norrbotten,Trafikolycka,1
+2025,1,Övriga Norrbotten,Våld mot tjänsteman,1
+2025,2,Luleå kommun,Länsväg 616,1
+2025,2,Luleå kommun,Misshandel,1
+2025,2,Luleå kommun,Rattfylleri,1
+2025,2,Luleå kommun,Stöld/Inbrott,1
+2025,2,Övriga Norrbotten,Rattfylleri,4
+2025,2,Övriga Norrbotten,Brand,1
+2025,2,Övriga Norrbotten,Fylleri,1
+2025,2,Övriga Norrbotten,Knivlagen,1
+2025,2,Övriga Norrbotten,Misshandel,1
+2025,2,Övriga Norrbotten,Trafikbrott,1
+2025,2,Övriga Norrbotten,Trafikolycka,1
+2025,3,Luleå kommun,Fylleri,1
+2025,3,Luleå kommun,Misshandel,1
+2025,3,Luleå kommun,Narkotikabrott,1
+2025,3,Luleå kommun,Trafikbrott,1
+2025,3,Luleå kommun,Våld mot tjänsteman,1
+2025,3,Övriga Norrbotten,Rattfylleri,2
+2025,3,Övriga Norrbotten,Trafikolycka,2
+2025,3,Övriga Norrbotten,Skadegörelse,1
+2025,3,Övriga Norrbotten,Viltolycka,1
+2025,4,Luleå kommun,Trafikbrott,1
+2025,4,Luleå kommun,Viltolycka,1
+2025,4,Övriga Norrbotten,Narkotikabrott,2
+2025,4,Övriga Norrbotten,Ofredande,1
+2025,4,Övriga Norrbotten,Rattfylleri,1
+2025,4,Övriga Norrbotten,Skadegörelse,1
+2025,5,Luleå kommun,Kontroll person,1
+2025,5,Luleå kommun,Narkotikabrott,1
+2025,5,Luleå kommun,Skadegörelse,1
+2025,5,Luleå kommun,Trafikbrott,1
+2025,5,Övriga Norrbotten,Ofredande,3
+2025,5,Övriga Norrbotten,Viltolycka,3
+2025,5,Övriga Norrbotten,Rattfylleri,2
+2025,5,Övriga Norrbotten,Brand,1
+2025,5,Övriga Norrbotten,Egenmäktigt förfarande,1
+2025,5,Övriga Norrbotten,Misshandel,1
+2025,5,Övriga Norrbotten,Olaga intrång,1
+2025,5,Övriga Norrbotten,Rattfylleri m.m,1
+2025,5,Övriga Norrbotten,Skadegörelse,1
+2025,5,Övriga Norrbotten,Trafikbrott,1
+2025,5,Övriga Norrbotten,Trafikkontroll,1
+2025,5,Övriga Norrbotten,Trafikolycka,1
+2025,6,Luleå kommun,Narkotikabrott,2
+2025,6,Luleå kommun,Brott mot vapenlagen,1
+2025,6,Luleå kommun,Ofredande,1
+2025,6,Luleå kommun,Viltolycka,1
+2025,6,Luleå kommun,Våld/hot mot tjänsteman,1
+2025,6,Övriga Norrbotten,Trafikbrott,4
+2025,6,Övriga Norrbotten,Misshandel,3
+2025,6,Övriga Norrbotten,Narkotikabrott,3
+2025,6,Övriga Norrbotten,Rattfylleri,3
+2025,6,Övriga Norrbotten,Skadegörelse,3
+2025,6,Övriga Norrbotten,Ofredande,2
+2025,6,Övriga Norrbotten,Trafikkontroll,2
+2025,6,Övriga Norrbotten,Fylleri,1
+2025,6,Övriga Norrbotten,Förargelseväckande beteende,1
+2025,6,Övriga Norrbotten,Stöld ur fordon,1
+2025,6,Övriga Norrbotten,Viltolycka,1
+2025,7,Luleå kommun,Misshandel,1
+2025,7,Luleå kommun,Trafikbrott,1
+2025,7,Övriga Norrbotten,Fjällräddning,1
+2025,7,Övriga Norrbotten,Narkotikabrott,1
+2025,7,Övriga Norrbotten,Olaga hot,1
+2025,7,Övriga Norrbotten,Trafikbrott,1
+2025,7,Övriga Norrbotten,Trafikolycka,1
+2025,8,Luleå kommun,Ofredande,1
+2025,8,Luleå kommun,Stöld,1
+2025,8,Luleå kommun,Trafikkontroll,1
+2025,8,Luleå kommun,Trafikolycka,1
+2025,8,Luleå kommun,Våld/hot mot tjänsteman,1
+2025,8,Övriga Norrbotten,Trafikbrott,2
+2025,8,Övriga Norrbotten,Förargelseväckande beteende,1
+2025,8,Övriga Norrbotten,Olaga hot,1
+2025,8,Övriga Norrbotten,Viltolycka,1
+2025,9,Luleå kommun,Misshandel,1
+2025,9,Luleå kommun,Rattfylleri,1
+2025,9,Luleå kommun,Skadegörelse,1
+2025,9,Luleå kommun,Trafikbrott,1
+2025,9,Luleå kommun,Trafikolycka,1
+2025,9,Övriga Norrbotten,Förargelseväckande beteende,2
+2025,9,Övriga Norrbotten,Misshandel,2
+2025,9,Övriga Norrbotten,Brott mot tjänsteman,1
+2025,9,Övriga Norrbotten,Försök till mord,1
+2025,9,Övriga Norrbotten,Olaga hot,1
+2025,9,Övriga Norrbotten,Stöld av fordon,1
+2025,9,Övriga Norrbotten,Viltolycka,1
+2025,9,Övriga Norrbotten,Våldsamt motstånd,1
+2025,10,Luleå kommun,Arbetsplatsolycka,1
+2025,10,Övriga Norrbotten,Narkotikabrott,1
+2025,10,Övriga Norrbotten,Rattfylleri,1
+2025,10,Övriga Norrbotten,Rån,1
+2025,10,Övriga Norrbotten,Trafikolycka,1
+2025,10,Övriga Norrbotten,Viltolycka,1
+2025,11,Luleå kommun,Misshandel,2
+2025,11,Luleå kommun,Rattfylleri,1
+2025,11,Luleå kommun,Skadegörelse,1
+2025,11,Luleå kommun,Stöld,1
+2025,11,Övriga Norrbotten,Viltolycka,7
+2025,11,Övriga Norrbotten,Narkotikabrott,3
+2025,11,Övriga Norrbotten,Rattfylleri,2
+2025,11,Övriga Norrbotten,Hets mot folkgrupp,1
+2025,11,Övriga Norrbotten,Misshandel,1
+2025,11,Övriga Norrbotten,Trafikkontroll,1
+2025,11,Övriga Norrbotten,Trafikolycka,1
+2025,12,Luleå kommun,Fylleri,1
+2025,12,Övriga Norrbotten,Olaga hot,2
+2025,12,Övriga Norrbotten,Rattfylleri,2
+2025,12,Övriga Norrbotten,E45,1
+2025,12,Övriga Norrbotten,Fylleri,1
+2025,12,Övriga Norrbotten,Länsväg 394,1
+2025,12,Övriga Norrbotten,Länsväg 395/Voustojokivägen,1
+2025,12,Övriga Norrbotten,Länsväg 631,1
+2025,12,Övriga Norrbotten,Riksväg 97/Länsväg 673,1
+2025,12,Övriga Norrbotten,Skadegörelse,1
+2026,1,Luleå kommun,Rattfylleri,1
+2026,1,Övriga Norrbotten,Viltolycka,4
+2026,1,Övriga Norrbotten,Rattfylleri,2
+2026,1,Övriga Norrbotten,Fjällräddning,1
+2026,1,Övriga Norrbotten,Trafikbrott,1
+2026,1,Övriga Norrbotten,Trafikolycka,1
+2026,2,Luleå kommun,Viltolycka,2
+2026,2,Luleå kommun,Skadegörelse,1
+2026,2,Luleå kommun,Trafikbrott,1
+2026,2,Övriga Norrbotten,Fylleri,1
+2026,2,Övriga Norrbotten,Knivlagen,1
+2026,2,Övriga Norrbotten,Misshandel,1
+2026,2,Övriga Norrbotten,Olaga intrång,1
+2026,3,Luleå kommun,Fylleri,2
+2026,3,Luleå kommun,Stöld/Inbrott,1
+2026,3,Övriga Norrbotten,Renpåkörning,2
+2026,3,Övriga Norrbotten,Trafikkontroll,1
+2026,4,Luleå kommun,Misshandel,2
+2026,4,Luleå kommun,Narkotikabrott,2
+2026,4,Luleå kommun,Fylleri,1
+2026,4,Luleå kommun,Trafikbrott,1
+2026,4,Övriga Norrbotten,Viltolycka,2
+2026,4,Övriga Norrbotten,Fjällräddning,1
+2026,4,Övriga Norrbotten,Försök till mord,1
+2026,4,Övriga Norrbotten,Rattfylleri,1
+2026,4,Övriga Norrbotten,Skadegörelse,1
+2026,4,Övriga Norrbotten,Trafikbrott,1
+2026,4,Övriga Norrbotten,Trafikkontroll,1
+2026,5,Luleå kommun,Brand,1
+2026,5,Luleå kommun,Misshandel,1
+2026,5,Luleå kommun,Ofredande,1
+2026,5,Luleå kommun,Trafikolycka,1
+2026,5,Övriga Norrbotten,Ofredande,2
+2026,5,Övriga Norrbotten,Stöld,2
+2026,5,Övriga Norrbotten,Bedrägeri,1
+2026,5,Övriga Norrbotten,Brand,1
+2026,5,Övriga Norrbotten,Skadegörelse,1
+2026,5,Övriga Norrbotten,Trafikkontroll,1
+2026,6,Luleå kommun,Misshandel,3
+2026,6,Luleå kommun,Bedrägeri,1
+2026,6,Luleå kommun,Fylleri,1
+2026,6,Luleå kommun,Försök till inbrott,1
+2026,6,Luleå kommun,Narkotikabrott,1
+2026,6,Luleå kommun,Skadegörelse,1
+2026,6,Luleå kommun,Trafikkontroll,1
+2026,6,Övriga Norrbotten,Misshandel,8
+2026,6,Övriga Norrbotten,Rattfylleri,3
+2026,6,Övriga Norrbotten,Skadegörelse,2
+2026,6,Övriga Norrbotten,Trafikbrott,2
+2026,6,Övriga Norrbotten,Narkotikabrott,1
+2026,6,Övriga Norrbotten,Ofredande,1
+2026,6,Övriga Norrbotten,Olovlig körning,1
+2026,6,Övriga Norrbotten,Trafikolycka,1
+2026,8,Luleå kommun,Misshandel,1
+2026,8,Övriga Norrbotten,Förargelseväckande beteende,2
+2026,8,Övriga Norrbotten,Rattfylleri,2
+2026,8,Övriga Norrbotten,Bedrägeri,1
+2026,8,Övriga Norrbotten,Fylleri,1
+2026,8,Övriga Norrbotten,Försök till mordbrand,1
+2026,8,Övriga Norrbotten,Misshandel,1
+2026,8,Övriga Norrbotten,Narkotikabrott,1
+2026,8,Övriga Norrbotten,Trafikolycka,1
+2026,8,Övriga Norrbotten,Våldsamt motstånd,1
+2026,9,Luleå kommun,Misshandel,2
+2026,9,Luleå kommun,Narkotikabrott,1
+2026,9,Luleå kommun,Rattfylleri,1
+2026,9,Luleå kommun,Skadegörelse,1
+2026,9,Luleå kommun,Stöld genom inbrott,1
+2026,9,Luleå kommun,Trafikkontroll,1
+2026,9,"Norrbotten, okänd kommun",Trafikkontroll,1
+2026,9,Övriga Norrbotten,Rattfylleri,3
+2026,9,Övriga Norrbotten,Narkotikabrott,2
+2026,9,Övriga Norrbotten,Brand,1
+2026,9,Övriga Norrbotten,Fylleri,1
+2026,9,Övriga Norrbotten,Förargelseväckande beteende,1
+2026,9,Övriga Norrbotten,Hot mot tjänsteman,1
+2026,9,Övriga Norrbotten,Misshandel,1
+2026,9,Övriga Norrbotten,Rattfylleri/misshandel,1
+2026,9,Övriga Norrbotten,Trafikolycka,1
