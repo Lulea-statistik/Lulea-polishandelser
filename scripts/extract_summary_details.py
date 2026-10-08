@@ -328,6 +328,23 @@ def extract_row(row: pd.Series) -> list[dict]:
             "confidence": "medium",
         })
 
+    # Sekundär rubrikextraktion kan ibland återfånga samma händelse utan
+    # klockslag, t.ex. "Hastighetskontroll, Boden Kl. 17.30". Om en tidsatt
+    # träff med samma typ och kommun redan finns behålls den tidsatta posten.
+    timed_pairs = {
+        (str(x.get("event_type_extracted","")).casefold(), str(x.get("municipality","")).casefold())
+        for x in out if str(x.get("time","")).strip()
+    }
+    if timed_pairs:
+        out = [
+            x for x in out
+            if str(x.get("time","")).strip()
+            or (
+                str(x.get("event_type_extracted","")).casefold(),
+                str(x.get("municipality","")).casefold(),
+            ) not in timed_pairs
+        ]
+
     return out
 
 def main() -> None:
