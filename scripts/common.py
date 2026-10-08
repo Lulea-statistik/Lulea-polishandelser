@@ -47,6 +47,24 @@ def api_get(path: str, params: dict[str, Any] | None = None, retries: int = 4) -
     raise RuntimeError(f"API request failed: {url} params={params}") from last_error
 
 
+
+MUNICIPALITY_GROUP_LABELS = {
+    "Arvidsjaur": "Arvidsjaurs kommun",
+    "Arjeplog": "Arjeplogs kommun",
+    "Boden": "Bodens kommun",
+    "Gällivare": "Gällivare kommun",
+    "Haparanda": "Haparanda kommun",
+    "Jokkmokk": "Jokkmokks kommun",
+    "Kalix": "Kalix kommun",
+    "Kiruna": "Kiruna kommun",
+    "Luleå": "Luleå kommun",
+    "Pajala": "Pajala kommun",
+    "Piteå": "Piteå kommun",
+    "Älvsbyn": "Älvsbyns kommun",
+    "Överkalix": "Överkalix kommun",
+    "Övertorneå": "Övertorneå kommun",
+}
+
 NORRBOTTEN_MUNICIPALITIES = {
     "arvidsjaur": "Arvidsjaur",
     "arjeplog": "Arjeplog",
@@ -178,13 +196,11 @@ def infer_municipality(municipality: str, title_location: str, location_string: 
 
 
 def geography_group(municipality: str, area: str) -> str:
-    municipality_cf = (municipality or "").strip().casefold()
+    municipality_clean = (municipality or "").strip()
     area_cf = (area or "").strip().casefold()
-    if municipality_cf == "luleå":
-        return "Luleå kommun"
+    if municipality_clean in MUNICIPALITY_GROUP_LABELS:
+        return MUNICIPALITY_GROUP_LABELS[municipality_clean]
     if area_cf == "norrbottens län":
-        if municipality_cf:
-            return "Övriga Norrbotten"
         return "Norrbotten, okänd kommun"
     return "Utanför Norrbotten"
 
@@ -248,6 +264,15 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
     all_df = pd.concat([existing, new], ignore_index=True)
     if not all_df.empty:
         all_df = all_df.drop_duplicates(subset=["event_id"], keep="last")
+        # Räkna om geografisk grupp för hela historiken så att äldre rader
+        # också delas upp på enskilda Norrbottenskommuner.
+        all_df["geography_group"] = all_df.apply(
+            lambda r: geography_group(
+                str(r.get("municipality", "") or ""),
+                str(r.get("administrative_area_level_1", "") or ""),
+            ),
+            axis=1,
+        )
         all_df = all_df.sort_values(["published_datetime", "event_id"], na_position="last")
     all_df.to_csv(EVENTS_CSV, index=False, encoding="utf-8")
 
