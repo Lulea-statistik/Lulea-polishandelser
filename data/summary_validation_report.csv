@@ -13,10 +13,10 @@ recall_95_high,
 correction_factor,
 correction_factor_95_low,
 correction_factor_95_high,
-all_extracted_subevents,10515.0
-lulea_extracted_subevents,2819.0
-all_extra_after_dedup,10210.0
-lulea_extra_after_dedup,2688.0
+all_extracted_subevents,10324.0
+lulea_extracted_subevents,2869.0
+all_extra_after_dedup,9936.0
+lulea_extra_after_dedup,2708.0
 lulea_checked_rows,0.0
 lulea_manual_events,0.0
 lulea_parser_events,0.0
