@@ -3,34 +3,34 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 
 <p>Här följer ett urval av nattens händelser:</p>
 <p><strong>01.25 Rattfylleri, Luleå</strong><br />Patrull stoppade och kontrollerade en bilist, en man i 20-årsåldern, i Hertsölandet. Då misstanke om att han var påverkad av narkotika uppstod medtogs han för provtagning. En anmälan om misstänkt drograttfylleri upprättas.</p>
-<p>Sex viltolyckor har anmälts till polisen under natten och morgonen. Ingen person skadades i samband med olyckorna.</p>"	1	1	7.0	1.0	1.0	0.0	6.0	En tidsatt Luleå-rattfylla plus sex viltolyckor.
+<p>Sex viltolyckor har anmälts till polisen under natten och morgonen. Ingen person skadades i samband med olyckorna.</p>"	7	1	7.0	1.0	1.0	0.0	6.0	En tidsatt Luleå-rattfylla plus sex viltolyckor.
 143126	2019-12-09	"<p>Uppdaterad 07:03 (Elisabeth Glaas, kommunikatör)<br />Det har varit en natt med låg arbetsbelastning. Polisen har utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-<p>Tre viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga uppgifter om personskador.</p>"	0	0	3.0	0.0	0.0	0.0	3.0	Tre explicit angivna viltolyckor.
+<p>Tre viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga uppgifter om personskador.</p>"	3	0	3.0	0.0	0.0	0.0	3.0	Tre explicit angivna viltolyckor.
 157182	2020-04-12	"<p>Klockan 22-07, det har varit en natt med normal arbetsbelastning. Polisen har utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke. </p>
 <p>Här följer ett urval av nattens händelser:</p>
 <p><strong>00:37 Skadegörelse, Luleå</strong><br />Polis kallas till en adress i Skurholmen. Dörrar till ett flerfamiljshus har utsatts för skadegörelse av en okänd person. En anmälan gällande skadegörelse upprättas.</p>
 <p><strong>02:10 Fjällräddning, Jokkmokk</strong><br />Vakthavande befäl beslutade om LSO för att undsätta en person som åkt skoter i Njavve och skadat foten. Fjällräddarna kallades ut. Personen fördes till sjukvård och en anmälan gällande trafikolycka utan misstanke om brott upprättas.</p>
-<p>En viltolycka har anmälts till polisen under natten och morgonen. Ingen person skadades i samband med olyckan.</p>"	2	1	3.0	1.0	2.0	0.0	1.0	Två tidsatta händelser plus en ej tidsatt viltolycka.
+<p>En viltolycka har anmälts till polisen under natten och morgonen. Ingen person skadades i samband med olyckan.</p>"	3	1	3.0	1.0	2.0	0.0	1.0	Två tidsatta händelser plus en ej tidsatt viltolycka.
 174531	2020-10-01	"<p>Det ar varit en lugn natt i Norrbottens län. En person har medtagits för provtagning efter misstanke om narkotikabrott.</p>
 <p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>En viltolycka har inträffat under tidig morgon, i Vinnäset, Överkalix kommun. Ingen person kom till skada.</p>
-<p>I övrigt finns inga ärenden att rapportera om. </p>"	1	0	2.0	0.0	1.0	0.0	1.0	Ett narkotikaärende samt en viltolycka; parsern fångar bara viltolyckan.
+<p>I övrigt finns inga ärenden att rapportera om. </p>"	2	0	2.0	0.0	1.0	0.0	1.0	Ett narkotikaärende samt en viltolycka; parsern fångar bara viltolyckan.
 181192	2020-12-02	"<p>Det har varit en natt med normal arbetsbelastning. Polisen har utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Här följer ett urval av nattens händelser:</p>
 <p>22:45 Trafikkontroll, Haparanda<br />Nio parkeringsanmärkningar utfärdas.</p>
 <p>02:45 Trafikkontroll, Luleå<br />Alla kontrollerade i Lerbäcken var utan anmärkning.</p>
 <p>03:33 Trafikkontroll, Luleå<br />Inga anmärkningar noterade vid kontrollen på Malmudden.</p>
 <p>06:21 Trafikbrott, Boden<br />På riksväg 87 vid Vittjärv stoppar och kontrollerar polis en personbil som det råder brukandeförbud för. En ordningsbot (böter) utfärdas.</p>
-<p>Tre viltolyckor har anmälts till polisen under natten och morgonen. Vid två av olyckorna finns det inga uppgifter om personskador. Vid den tredje uppges det att personskador uppstått, men inte vilka.</p>"	4	2	7.0	2.0	4.0	0.0	3.0	Fyra tidsatta händelser plus tre uttryckligen angivna viltolyckor.
+<p>Tre viltolyckor har anmälts till polisen under natten och morgonen. Vid två av olyckorna finns det inga uppgifter om personskador. Vid den tredje uppges det att personskador uppstått, men inte vilka.</p>"	7	2	7.0	2.0	4.0	0.0	3.0	Fyra tidsatta händelser plus tre uttryckligen angivna viltolyckor.
 184797	2021-01-07	"<p>Kl 00:00-07:00, det har varit en natt med relativt låg arbetsbelastning. Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke. </p>
-<p>Tre viltolyckor har anmälts till polisen under natten. På riksväg 94 i Pålsträsk (Älvsbyn), i Holmfors (Boden) och på E45 strax norr om Jokkmokk. Inga personskador har rapporterats.</p>"	1	0	3.0	0.0	0.0	1.0	3.0	00:00 är rapportperiod; tre viltolyckor anges explicit och missas.
+<p>Tre viltolyckor har anmälts till polisen under natten. På riksväg 94 i Pålsträsk (Älvsbyn), i Holmfors (Boden) och på E45 strax norr om Jokkmokk. Inga personskador har rapporterats.</p>"	4	0	3.0	0.0	0.0	1.0	3.0	00:00 är rapportperiod; tre viltolyckor anges explicit och missas.
 190002	2021-02-25	"<p>Kl 00:00-07:00, det har varit en natt med normal arbetsbelastning. Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke. En förare har fått böter på grund av trafikbrott.</p>
 <p>Polisen har även hanterat ärenden kopplade till psykisk ohälsa.</p>
-<p>Tre viltolyckor har anmälts till polisen under natten. Inga personskador har rapporterats.</p>"	1	0	4.0	0.0	1.0	0.0	3.0	Ett trafikbrott samt tre explicit angivna viltolyckor.
+<p>Tre viltolyckor har anmälts till polisen under natten. Inga personskador har rapporterats.</p>"	4	0	4.0	0.0	1.0	0.0	3.0	Ett trafikbrott samt tre explicit angivna viltolyckor.
 204291	2021-07-08	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Här följer ett urval av nattens händelser:</p>
 <p>03:48 Misshandel, Piteå<br />Samtal inkommer från en person, en man, i Piteå som uppger att han blivit misshandlad av en man tidigare. Polis beordras till adressen inringaren befinner sig på, förhör hålls och anmälan ska upprättas.</p>
-<p>Två viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	1	0	4.0	0.0	1.0	0.0	3.0	Ett LOB, en misshandel och två viltolyckor.
+<p>Två viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	3	0	4.0	0.0	1.0	0.0	3.0	Ett LOB, en misshandel och två viltolyckor.
 210596	2021-09-13	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri.</p>
 <p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Här följer ett urval av nattens händelser:</p>
@@ -54,14 +54,14 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p><strong>01:06 Skadegörelse, Luleå</strong><br />Polisen kontaktas gällande en pågående skadegörelse på en fastighet på Östermalm i Luleå. Polisen åker dit och påträffar en person, en man. Han omhändertas enligt LOB, lagen om omhändertagande av berusade personer. Anmälan upprättas gällande skadegörelse samt brott mot knivlagen. </p>
 <p><strong>06:08 Trafikkontroll, Boden</strong><br />Polisen har haft en trafikkontroll på Garnisonsgatan i centrala Boden. Samtliga trafikanter var utan anmärkning.</p>
 <p><strong>06:29 Trafikkontroll, Boden</strong><br />Polisen har haft en trafikkontroll på Moråsleden, Boden. 15 bilar kontrollerades och samtliga var utan anmärkning. </p>
-<p><strong>Övrigt:</strong> Tre viltolyckor har inrapporterats till polisens ledningscentral under sen kväll och morgon. En skedde på länsväg 573/Fallbrovägen, Norrfjärden, Piteå kommun, en på riksväg 97/Sjukhusvägen i Södra Sunderbyn, Luleå kommun samt en på länsväg 383 Vibbyn, Bodens kommun. Inga personskador har uppstått. </p>"	4	1	7.0	2.0	4.0	0.0	3.0	Fyra tidsatta händelser plus tre viltolyckor, varav en i Luleå.
+<p><strong>Övrigt:</strong> Tre viltolyckor har inrapporterats till polisens ledningscentral under sen kväll och morgon. En skedde på länsväg 573/Fallbrovägen, Norrfjärden, Piteå kommun, en på riksväg 97/Sjukhusvägen i Södra Sunderbyn, Luleå kommun samt en på länsväg 383 Vibbyn, Bodens kommun. Inga personskador har uppstått. </p>"	7	1	7.0	2.0	4.0	0.0	3.0	Fyra tidsatta händelser plus tre viltolyckor, varav en i Luleå.
 218309	2021-11-23	"<p><strong>Nedan följer ett urval av nattens ärenden i länet:</strong></p>
 <p><strong>23:25 Trafikbrott, Gällivare</strong><br />Polisen stoppar och kontrollerar en personbil i centrum. Föraren, en man, saknar behörighet att köra. Förhör hålls och anmälan upprättas gällande grov olovlig körning. </p>
 <p><strong>00:03 Rattfylleri, Kiruna</strong><br />Polisen stoppar och kontrollerar en personbil i Kiruna. Föraren, en man, blåser positivt i sållningsinstrumentet och medtas för vidare provtagning. Anmälan upprättas gällande grovt rattfylleri och grov olovlig körning då han saknar behörighet att köra.</p>
 <p>Mannen omhändertas enligt LOB, lagen om omhändertagande av berusade personer. </p>
 <p><strong>05:24 Trafikkontroll, Kalix</strong><br />Tidig morgon hade polisen en trafikkontroll på länsväg 709 Karlsborg, Kalix. Tre ordningsbot utfärdades för hastighetsöverträdelser.</p>
 <p><strong>Övrigt:</strong> Tre renpåkörningar har inrapporterats under natten och morgonen. En skedde på E10 Sakajärvi, Gällivare kommun, en på E4 Seskarö, Haparanda kommun, en på länsväg 395 Lovikka, Pajala kommun. Inga personskador har rapporterats. </p>
-"	3	0	6.0	0.0	3.0	0.0	3.0	Tre tidsatta händelser plus tre renpåkörningar.
+"	6	0	6.0	0.0	3.0	0.0	3.0	Tre tidsatta händelser plus tre renpåkörningar.
 218587	2021-11-25	"<p>En person har mellan 22:00 och 07:00 medtagits för provtagning efter misstanke om narkotikabrott.</p>
 <p><strong>22:15 Trafikkontroll, Luleå:</strong> Samtliga som kontrolleras vid en trafikkontroll på Hertsövägen, Örnäset, är utan anmärkning.</p>
 <p><strong>22:15 Viltolycka, Kalix:</strong> Polisen får in en anmälan om att en personbil kolliderat med en ren på länsväg 712, Lappbäcken. Inga personskador rapporteras.</p>
@@ -97,7 +97,7 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>22:17 Trafikkontroll, Boden<br /> I Sävastnäs utfärdas en ordningsbot (böter) på grund av hastighetsöverträdelse. Hastigheten uppmäts till 112 kilometer i timmen på en 80-sträcka. Körkortet omhändertas också.</p>
 <p>00:22 Stöld genom inbrott, Gällivare<br /> Polis beordras till centrala Gällivare på grund av uppgifter om att bilrutor slås sönder. Inga personer anträffas men ett inbrott i en lägenhet uppdagas och en bil med trasig bilruta påträffas. En brottsplatsundersökning utförs och anmälan om skadegörelse samt stöld genom inbrott ska upprättas.</p>
 <p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-<p>Två viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	2	0	4.0	0.0	2.0	0.0	2.0	Två tidsatta händelser plus två viltolyckor.
+<p>Två viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	4	0	4.0	0.0	2.0	0.0	2.0	Två tidsatta händelser plus två viltolyckor.
 265553	2023-05-25	"<p>Kl 00:00-07:00, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Kl 01:46, Haparanda</p>
 <p>Polis kontaktas gällande skadegörelse på en fastighet i centrum, en ruta är trasig. En anmälan upprättas.</p>
@@ -107,10 +107,10 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>Trafikkontroll hålls på E45 vid Svappavaara. Två förare får böter på grund av hastighetsöverträdelser.</p>"	3	0	4.0	0.0	2.0	1.0	2.0	Tre separata skadegörelser i Haparanda + en trafikkontroll; 00:00-status är falsk parserträff.
 272321	2023-09-01	<p>Kl 00:00-07:00, inga händelser att rapportera om. En person har omhändertagits för fylleri. </p>	0	0	1.0	0.0	0.0	0.0	1.0	Ett ej tidsatt LOB.
 275853	2023-10-23	"<p><strong>06:37 Trafikolycka, Piteå</strong><br />Polisen kontaktas gällande en trafikolycka på Industrigatan/Sundsgatan i Piteå. Enligt tillgängliga uppgifter har en personbil och en moped kolliderat. Mopedföraren förs till sjukvård, polis har varit på plats och pratat med denne. Skadeläget är okänt. Olycksorsaken ska utredas. </p>
-<p><strong>Övrigt:</strong> Under natten och morgonen har tre viltolyckor inrapporterats till polisen. De inträffade på länsväg 394 Suorra, Gällivare kommun, på riksväg 99 i Haparanda centrum, samt i Svedjan, Unbyn, Bodens kommun. Inga personskador har rapporterats. </p>"	1	0	4.0	0.0	1.0	0.0	3.0	En trafikolycka plus tre viltolyckor.
+<p><strong>Övrigt:</strong> Under natten och morgonen har tre viltolyckor inrapporterats till polisen. De inträffade på länsväg 394 Suorra, Gällivare kommun, på riksväg 99 i Haparanda centrum, samt i Svedjan, Unbyn, Bodens kommun. Inga personskador har rapporterats. </p>"	4	0	4.0	0.0	1.0	0.0	3.0	En trafikolycka plus tre viltolyckor.
 276237	2023-10-26	"<p><strong>22:35 Olovlig körning, Älvsbyn</strong><br />I samband med en trafikkontroll på riksväg 94 stoppar och kontrollerar polisen en personbil. Föraren, en ung man, saknar behörighet att köra. Förhör hålls och anmälan om grov olovlig körning upprättas.</p>
 <p><strong>05:56 Trafikkontroll, Haparanda</strong><br />Polisen har haft en trafikkontroll på riksväg 99 Mattila i Haparanda kommun. En ordningsbot utfärdades för hastighetsöverträdelse. <br /><br /><strong>05:59 Trafikkontroll, Piteå</strong><br />Polisen har haft en nykterhetskontroll på Hembygdsvägen i höjd med LF-arena. Cirka 12 förare kontrollerades och samtliga var nyktra.</p>
-<p><strong>Övrigt:</strong> Under natten har två renpåkörningar/viltolyckor inträffat i länet. Den ena på riksväg 98/riksväg 99 i Övertorneå och den andra på länsväg 705 Nyborg, Kalix. Inga personskador uppstod.</p>"	3	0	5.0	0.0	3.0	0.0	2.0	Tre tidsatta händelser plus två viltolyckor.
+<p><strong>Övrigt:</strong> Under natten har två renpåkörningar/viltolyckor inträffat i länet. Den ena på riksväg 98/riksväg 99 i Övertorneå och den andra på länsväg 705 Nyborg, Kalix. Inga personskador uppstod.</p>"	5	0	5.0	0.0	3.0	0.0	2.0	Tre tidsatta händelser plus två viltolyckor.
 290630	2024-05-26	"<p>Här följer ett urval av nattens händelser:</p>
 <p><strong>00.43 Trafikbrott, Boden:</strong><br /> Bilförare på länsväg 605, Fagernäs, får ordningsbot efter att ha kört åt fel håll i en rondell.</p>
 <p><strong>01.08 Trafikbrott, Gällivare:</strong><br /> A-traktorförare får, efter en flygande inspektion av fordonet, en ordningsbot på grund av otillräcklig profil på bakdäcken. A-traktorn måste genomgå registreringsbesiktning och efterkontroll.</p>
@@ -127,7 +127,7 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>I övrigt har trafikkontroller hållits i Gällivare, vid Vuosko industriområde samt Folkets parkområdet, utan några anmärkningar. En nykterhetskontroll har också hållits på riksväg 99 vid Mattila, Haparanda, utan några anmärkningar. Under tidig morgon har även trafiken kontrollerats vid Strömnäs, Piteå.</p>"	1	0	4.0	0.0	1.0	0.0	3.0	Två böteshändelser och tre separata trafikkontroller; parsern grupperar för mycket.
 292869	2024-06-26	"<p>23:44 Anträffat stulet, Luleå<br />Polisen kontaktas av en person som hittat sin stulna cykel på Örnäset i Luleå. Polisen har varit på plats, cykeln återlämnas till ägaren.</p>
 <p>02:18 Brand, Luleå<br />Polisen larmas om en bilbrand vid riksväg 97 Södra Sunderbyn. Det finns ingen information om att personskador ska ha uppstått. Polisen har varit på plats, anmälan om skadegörelse genom brand upprättas. </p>
-<p>Övrigt: Två renpåkörningar och en viltolycka har rapporterats till polisen under natten, de inträffade på länsväg 609 Mellanström samt i Varasviken i Arjeplog och på Långnäsvägen i Lillpite, Piteå. Inga personskador har uppstått.</p>"	2	2	5.0	2.0	2.0	0.0	3.0	Två tidsatta Luleå-händelser samt två renpåkörningar och en viltolycka.
+<p>Övrigt: Två renpåkörningar och en viltolycka har rapporterats till polisen under natten, de inträffade på länsväg 609 Mellanström samt i Varasviken i Arjeplog och på Långnäsvägen i Lillpite, Piteå. Inga personskador har uppstått.</p>"	4	2	5.0	2.0	2.0	0.0	3.0	Två tidsatta Luleå-händelser samt två renpåkörningar och en viltolycka.
 294247	2024-07-18	"<p>Här följer ett urval av nattens händelser:</p>
 <p><strong>02.45 Knivlagen, Boden:</strong><br /> I samband med en kontroll av en personbil i centrala Boden misstänks två personer för brott mot knivlagen. Anmälningar kommer att upprättas.</p>
 <p>Ärendena hanteras med arbetsmetoden ”Snabbare lagföring”.</p>
@@ -139,7 +139,7 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Här följer ett urval av nattens händelser:</p>
 <p>22:08 Stöld av fordon, Boden<br /> En a-traktor i Boden kontrolleras. Två personer befinner sig i bilen, en kvinna i 30-årsåldern och en man i 35-årsåldern. De misstänks för tillgrepp av fortskaffningsmedel. Förhör hålls och a-traktorn tas i beslag. En anmälan upprättas. Ägaren till a-traktorn kontaktas.</p>
-<p>En viltolycka på riksväg 95 vid Merkenäs, Arjeplog kommun, har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	2	0	3.0	0.0	2.0	0.0	1.0	Ett LOB-ingripande, fordonsstöld och en viltolycka.
+<p>En viltolycka på riksväg 95 vid Merkenäs, Arjeplog kommun, har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	3	0	3.0	0.0	2.0	0.0	1.0	Ett LOB-ingripande, fordonsstöld och en viltolycka.
 300991	2024-10-25	"<p>En person har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Här följer ett urval av nattens händelser:</p>
 <p>22:35 Viltolycka, Haparanda<br /> En olycka på E4 i trakten av Säivis anmäls till polisen. En personbil och ett rådjur är inblandade. Det finns inga uppgifter om personskador. Eftersöksjägare kontaktas för att kontrollera hur det gick med rådjuret.</p>"	1	0	2.0	0.0	1.0	0.0	1.0	En tidsatt viltolycka plus ett ej tidsatt LOB-ingripande.
@@ -155,7 +155,7 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>23:55 Rattfylleri, Boden<br />Polis stoppar och kontrollerar en personbil som framförs vingligt. Misstanke uppstår om att föraren, en man i 30-årsåldern, är påverkad av narkotika och provtagning utförs. Anmälan gällande misstänkt rattfylleri samt ringa narkotikabrott, eget bruk, ska upprättas. Föraren omhändertas med stöd av lagen om omhändertagande av berusade personer (LOB).</p>
 <p>05:52 Trafikbrott, Boden<br />En ordningsbot (böter) utfärdas till en bilförare i Boden på grund av att bilen som körs har körförbud.</p>
 <p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-<p>Tre viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga uppgifter om personskador.</p>"	3	0	6.0	0.0	3.0	0.0	3.0	Tre tidsatta händelser samt tre viltolyckor.
+<p>Tre viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga uppgifter om personskador.</p>"	6	0	6.0	0.0	3.0	0.0	3.0	Tre tidsatta händelser samt tre viltolyckor.
 505703	2026-07-07	"<p>Här följer ett urval av nattens händelser:</p>
 <p>00.52 Narkotikabrott, Piteå:<br />Vid kontroll av en man i centrala Piteå påträffas en mindre mängd misstänkt narkotika som tas i beslag. En anmälan gällande ringa narkotikabrott (innehav) upprättas.</p>
 <p>Övrigt:<br />En person har under natten omhändertagits för fylleri.</p>
