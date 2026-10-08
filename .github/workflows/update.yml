@@ -42,6 +42,7 @@ jobs:
       - run: python scripts/annotate_summary_validation_batch3.py
       - run: python scripts/annotate_summary_validation_batch4.py
       - run: python scripts/annotate_summary_validation_batch5.py
+      - run: python scripts/annotate_summary_validation_batch6.py
       - run: python scripts/build_summary_validation_remaining.py
       - run: python scripts/report_summary_validation.py
       - name: Sync dashboard data
