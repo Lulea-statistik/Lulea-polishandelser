@@ -128,6 +128,17 @@
   </section>
 
   <section class="card">
+    <h2>Hur räknas en händelse i sammanfattningarna?</h2>
+    <p>I den här rapporten definieras en händelse som ett <strong>sammanhängande händelseförlopp eller polisiärt ingripande</strong>. Detta är vår egen praktiska tolkning utifrån Polisens publiceringspraxis och ska inte uppfattas som en officiell definition från Polismyndigheten.</p>
+    <p>Tolkningen bygger på hur vanliga händelsenotiser i praktiken är strukturerade. Separata tider och/eller geografiska platser används som starka indikationer på separata händelser. Om texten uttryckligen anger flera olyckor eller andra separata händelser räknas dessa var för sig, även om exakta tider saknas.</p>
+    <p>Antalet personer, djur, fordon, brottsmisstankar, böter eller anmälningar används däremot inte i sig för att multiplicera antalet händelser. En trafikolycka där tre renar är inblandade räknas därför som <strong>en</strong> händelse, medan formuleringen <em>tre viltolyckor har inträffat</em> räknas som <strong>tre</strong> händelser.</p>
+    <p>När en sammanfattning anger ett personantal utan att visa om personerna hör till ett eller flera separata ingripanden, till exempel <em>fem personer har omhändertagits enligt LOB</em>, används inte personantalet som ett exakt händelseantal.</p>
+    <h3>Validering av sammanfattningsparsern</h3>
+    <p>Ett stratifierat stickprov på 200 sammanfattningsnotiser har granskats manuellt. Av dessa kunde 173 bedömas med ett exakt antal separata händelseförlopp enligt definitionen ovan. I detta material hade parsern en precision på <strong>97,3&nbsp;%</strong> och en täckningsgrad på <strong>84,8&nbsp;%</strong>.</p>
+    <p>För Luleå låg manuellt räknade händelser och parserträffar mycket nära varandra, 103 respektive 101. Den observerade serien bör därför användas som huvudserie. Ett bootstraptest på sammanfattningsnivå gav ett indikativt 95-procentigt intervall motsvarande ungefär <strong>−1,8&nbsp;% till +6,5&nbsp;%</strong> runt parserns Luleå-nivå. Intervallet beskriver osäkerheten i extraktionen av sammanfattningshändelser och omfattar inte alla andra möjliga felkällor, exempelvis deduplicering mot vanliga notiser.</p>
+  </section>
+
+  <section class="card">
     <h2>Datakällor</h2>
     <ul>
       <li><strong>Primär källa:</strong> Polisens offentliga händelsenotiser och API.</li>
