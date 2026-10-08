@@ -46,3 +46,14 @@ API-fältet `administrative_area_level_2` används som preliminär kommunindelni
 Koordinaterna levereras som latitud/longitud. CRS ska verifieras innan geografisk bearbetning; sannolik kandidat är EPSG:4326.
 
 Regionala poster och sammanfattningar markeras preliminärt med `is_summary` och `is_multi_location`. Dessa flaggor är heuristiska och ska granskas innan de används som analytiska filter.
+
+
+## Definition av händelse i sammanfattningar
+
+För sammanfattningsnotiser används en praktisk tolkning av Polisens publiceringspraxis. En händelse räknas som ett sammanhängande händelseförlopp eller polisiärt ingripande. Separata tider och/eller geografiska platser talar för separata händelser. Explicit angivna flera olyckor räknas var för sig.
+
+Antalet personer, djur, fordon, brottsmisstankar, böter eller anmälningar multiplicerar däremot inte automatiskt antalet händelser. Exempel: en kollision med tre renar = en händelse, medan tre uttryckligen angivna viltolyckor = tre händelser.
+
+Formuleringar som `fem personer har omhändertagits enligt LOB` används inte som exakt händelseantal om texten inte visar att personerna hör till separata ingripanden.
+
+Ett manuellt stickprov på 200 sammanfattningar har kvalitetsgranskats. 173 kunde bedömas med exakt antal separata händelseförlopp. I dessa var parserns precision 97,3 % och täckningsgrad 84,8 %. För Luleå var manuellt antal 103 mot 101 parserträffar.
