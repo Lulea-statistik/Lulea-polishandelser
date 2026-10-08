@@ -210,6 +210,68 @@ def extract_row(row: pd.Series) -> list[dict]:
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
             "confidence": confidence,
         })
+    # Fånga tydliga rubrikrader utan klockslag, t.ex. "Misshandel, Luleå".
+    # Dessa förekommer framför allt i nyare sammanfattningar.
+    lines = [ln.strip() for ln in text.split("\n")]
+    timed_line_indexes = {
+        i for i, ln in enumerate(lines)
+        if re.search(r"(?i)(?:^|\s)(?:kl\.?\s*)?[0-2]?\d[:.]\d{2}(?:\s|[,;:-]|$)", ln)
+    }
+    existing_keys = {
+        (str(x["event_type_extracted"]).casefold(), str(x["municipality"]).casefold(), str(x["description"])[:80].casefold())
+        for x in out
+    }
+
+    for i, line in enumerate(lines):
+        if not line or i in timed_line_indexes:
+            continue
+        if i > 0 and (i - 1) in timed_line_indexes:
+            # Vanligt format där typ står på raden efter en tidsatt platsrad;
+            # den är redan del av den tidsatta händelsen.
+            continue
+
+        event_type = classify_type(line)
+        municipality = municipality_from_text(line)
+        if not event_type or not municipality:
+            continue
+        if NON_EVENT_RE.search(line):
+            continue
+
+        body_lines = []
+        for j in range(i + 1, min(len(lines), i + 8)):
+            nxt = lines[j].strip()
+            if not nxt:
+                if body_lines:
+                    break
+                continue
+            if j in timed_line_indexes:
+                break
+            # Ny tydlig typ+kommun-rubrik markerar nästa händelse.
+            if classify_type(nxt) and municipality_from_text(nxt):
+                break
+            body_lines.append(nxt)
+        body = " ".join(body_lines).strip()
+        key = (event_type.casefold(), municipality.casefold(), body[:80].casefold())
+        if key in existing_keys:
+            continue
+        existing_keys.add(key)
+
+        out.append({
+            "parent_event_id": row.get("event_id", ""),
+            "date": row.get("date", ""),
+            "year": row.get("year", ""),
+            "month": row.get("month", ""),
+            "summary_type": row.get("type_original", ""),
+            "time": "",
+            "event_type_extracted": event_type,
+            "place_text": line,
+            "municipality": municipality,
+            "geography_group": geography(municipality),
+            "description": body,
+            "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+            "confidence": "medium",
+        })
+
     return out
 
 def main() -> None:
