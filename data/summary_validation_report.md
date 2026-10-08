@@ -1,11 +1,11 @@
 # Validering av sammanfattningsparser
 
 - Stickprov: **200** sammanfattningar.
-- Fullständigt manuellt kontrollerade rader: **101**.
-- Precision: **98.2 %** (95 % Wilson 95.5 %–99.3 %).
-- Täckningsgrad/recall: **76.0 %** (95 % Wilson 70.8 %–80.6 %).
-- Korrigeringsfaktor för extraherat antal: **1.291** (konservativt intervall 1.184–1.403).
-- Luleå: manuellt räknade underhändelser/parserträffar i kontrollerade rader: **54/51**, faktor **1.059**.
+- Fullständigt manuellt kontrollerade rader: **146**.
+- Precision: **97.5 %** (95 % Wilson 95.1 %–98.7 %).
+- Täckningsgrad/recall: **73.9 %** (95 % Wilson 69.5 %–77.9 %).
+- Korrigeringsfaktor för extraherat antal: **1.319** (konservativt intervall 1.221–1.420).
+- Luleå: manuellt räknade underhändelser/parserträffar i kontrollerade rader: **80/78**, faktor **1.026**.
 
 ## Tolkning
 
