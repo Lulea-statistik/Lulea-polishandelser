@@ -205,7 +205,7 @@
     <div class="card" style="margin-top:16px">
       <h2>Händelsetyper per år – andel av årets händelser</h2>
       <div class="chartbox composition"><canvas id="typeShareChart"></canvas></div>
-      <p class="chart-note">100 % staplat diagram. Endast händelsetyper som utgör minst 2 % av samtliga händelser i vald geografi visas. Diagrammet visar alla år och påverkas därför inte av filtren År eller Händelsetyp.</p>
+      <p class="chart-note">100 % staplat diagram. Händelsetyper som utgör mindre än 2 % av samtliga händelser i vald geografi samlas i kategorin Övrigt. Diagrammet visar alla år och påverkas därför inte av filtren År eller Händelsetyp.</p>
     </div>
 
     <div class="foot">
@@ -391,9 +391,17 @@ function updateTypeShareChart(){
   const g=selected('geo');
   const data=rows.filter(r=>g==='Alla'||r.geography_group===g);
   const grandTotal=sum(data);
-  const typeTotals=groupSum(data,'type_original')
-    .filter(([name,count])=>name && grandTotal>0 && count/grandTotal>=0.02)
+  const allTypeTotals=groupSum(data,'type_original')
+    .filter(([name])=>name)
     .sort((a,b)=>b[1]-a[1]);
+  const includedTypes=allTypeTotals
+    .filter(([,count])=>grandTotal>0 && count/grandTotal>=0.02)
+    .map(([name])=>name);
+  const minorTypes=new Set(
+    allTypeTotals
+      .filter(([,count])=>grandTotal>0 && count/grandTotal<0.02)
+      .map(([name])=>name)
+  );
 
   const years=[...new Set(data.map(r=>r.year).filter(Boolean))].sort((a,b)=>+a-+b);
   const byYearType=new Map();
@@ -401,12 +409,6 @@ function updateTypeShareChart(){
     const key=r.year+'|'+r.type_original;
     byYearType.set(key,(byYearType.get(key)||0)+(+r.event_count||0));
   });
-
-  const includedTypes=typeTotals.map(x=>x[0]);
-  const includedYearTotals=new Map(years.map(year=>[
-    year,
-    includedTypes.reduce((acc,type)=>acc+(byYearType.get(year+'|'+type)||0),0)
-  ]));
 
   const palette=[
     '#0b5cab','#2f855a','#d97706','#7c3aed','#dc2626','#0891b2',
@@ -417,13 +419,31 @@ function updateTypeShareChart(){
     label:type,
     data:years.map(year=>{
       const n=byYearType.get(year+'|'+type)||0;
-      const denom=includedYearTotals.get(year)||0;
+      const denom=data.filter(r=>r.year===year).reduce((acc,r)=>acc+(+r.event_count||0),0);
       return denom?100*n/denom:0;
     }),
     rawCounts:years.map(year=>byYearType.get(year+'|'+type)||0),
     backgroundColor:palette[i%palette.length],
     borderWidth:0
   }));
+
+  if(minorTypes.size){
+    datasets.push({
+      label:'Övrigt',
+      data:years.map(year=>{
+        const yearRows=data.filter(r=>r.year===year);
+        const denom=yearRows.reduce((acc,r)=>acc+(+r.event_count||0),0);
+        const n=yearRows.reduce((acc,r)=>acc+(minorTypes.has(r.type_original)?(+r.event_count||0):0),0);
+        return denom?100*n/denom:0;
+      }),
+      rawCounts:years.map(year=>
+        data.filter(r=>r.year===year)
+          .reduce((acc,r)=>acc+(minorTypes.has(r.type_original)?(+r.event_count||0):0),0)
+      ),
+      backgroundColor:'#9ca3af',
+      borderWidth:0
+    });
+  }
 
   typeShareChart=chartReplace(typeShareChart,document.getElementById('typeShareChart'),{
     type:'bar',
