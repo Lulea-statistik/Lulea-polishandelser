@@ -96,7 +96,7 @@ SPACE_RE = re.compile(r"[ \t\xa0]+")
 BLANK_RE = re.compile(r"\n{3,}")
 
 NUMBER_WORDS = {"en":1,"ett":1,"två":2,"tre":3,"fyra":4,"fem":5,"sex":6,"sju":7,"åtta":8,"nio":9,"tio":10}
-COUNTED_ACCIDENT_RE = re.compile(r"(?i)(?<![:.\\d])\\b(?P<count>\\d{1,2}|en|ett|två|tre|fyra|fem|sex|sju|åtta|nio|tio)\\s+(?P<kind>viltolyck(?:a|or)|renpåkörning(?:ar)?)\\b")
+COUNTED_ACCIDENT_RE = re.compile(r"(?i)(?<![:.\d])\b(?P<count>\d{1,2}|en|ett|två|tre|fyra|fem|sex|sju|åtta|nio|tio)\s+(?P<kind>viltolyck(?:a|or)|renpåkörning(?:ar)?)\b")
 
 
 def clean_text(value: str) -> str:
