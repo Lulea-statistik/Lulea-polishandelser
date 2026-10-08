@@ -30,6 +30,7 @@ jobs:
       - run: python scripts/extract_summary_details.py
       - run: python scripts/deduplicate_summary_details.py
       - run: python scripts/build_summary_validation_sample.py
+      - run: python scripts/report_summary_validation.py
       - name: Sync dashboard data
         run: |
           mkdir -p docs/data
