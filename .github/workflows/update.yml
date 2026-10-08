@@ -10,6 +10,9 @@ on:
       - "scripts/deduplicate_summary_details.py"
       - "scripts/build_summary_validation_sample.py"
       - "scripts/build_summary_validation_review.py"
+      - "scripts/build_summary_validation_misses.py"
+      - "scripts/revise_summary_validation_event_definition.py"
+      - "scripts/annotate_summary_validation_batch6.py"
       - "scripts/report_summary_validation.py"
       - ".github/workflows/update.yml"
   schedule:
@@ -36,7 +39,6 @@ jobs:
       - run: python scripts/extract_summary_details.py
       - run: python scripts/deduplicate_summary_details.py
       - run: python scripts/build_summary_validation_sample.py
-      - run: python scripts/build_summary_validation_review.py
       - run: python scripts/annotate_summary_validation_batch1.py
       - run: python scripts/annotate_summary_validation_batch2.py
       - run: python scripts/annotate_summary_validation_batch3.py
@@ -44,6 +46,7 @@ jobs:
       - run: python scripts/annotate_summary_validation_batch5.py
       - run: python scripts/annotate_summary_validation_batch6.py
       - run: python scripts/revise_summary_validation_event_definition.py
+      - run: python scripts/build_summary_validation_review.py
       - run: python scripts/build_summary_validation_remaining.py
       - run: python scripts/build_summary_validation_misses.py
       - run: python scripts/report_summary_validation.py
