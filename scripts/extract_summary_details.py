@@ -335,15 +335,41 @@ def extract_row(row: pd.Series) -> list[dict]:
         (str(x.get("event_type_extracted","")).casefold(), str(x.get("municipality","")).casefold())
         for x in out if str(x.get("time","")).strip()
     }
+    timed_types = {
+        str(x.get("event_type_extracted","")).casefold()
+        for x in out if str(x.get("time","")).strip()
+    }
     if timed_pairs:
-        out = [
-            x for x in out
-            if str(x.get("time","")).strip()
-            or (
+        cleaned = []
+        for x in out:
+            if str(x.get("time","")).strip():
+                cleaned.append(x)
+                continue
+            pair = (
                 str(x.get("event_type_extracted","")).casefold(),
                 str(x.get("municipality","")).casefold(),
-            ) not in timed_pairs
-        ]
+            )
+            etype = pair[0]
+            # Exakt typ+kommun-match: säkert dubblettfall.
+            if pair in timed_pairs:
+                continue
+            # Om det bara finns en tidsatt händelse av denna typ i texten och
+            # den saknar kommun, behandla en otidsatt rubrik av samma typ som
+            # samma händelse. Detta fångar t.ex. "Hastighetskontroll, Boden
+            # Kl. 17.30" utan att slå ihop flera separata tidsatta händelser.
+            matching_timed = [
+                y for y in out
+                if str(y.get("time","")).strip()
+                and str(y.get("event_type_extracted","")).casefold() == etype
+            ]
+            if (
+                etype in timed_types
+                and len(matching_timed) == 1
+                and not str(matching_timed[0].get("municipality","")).strip()
+            ):
+                continue
+            cleaned.append(x)
+        out = cleaned
 
     return out
 
