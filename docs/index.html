@@ -196,6 +196,7 @@
       <div class="card">
         <h2>Händelser per månad</h2>
         <div class="chartbox"><canvas id="monthlyChart"></canvas></div>
+        <p class="chart-note">Linjen <strong>Inkl. sammanfattningar</strong> adderar de underhändelser som kunnat identifieras i polisens sammanfattningstexter. Tooltipen visar hur många sådana underhändelser som lagts till varje månad.</p>
       </div>
       <div class="card">
         <h2>Vanligaste händelsetyper</h2>
@@ -228,7 +229,9 @@
         <div><span>Vald geografi</span><strong id="summaryGeoLabel">–</strong></div>
       </div>
       <div class="chartbox"><canvas id="summaryDetailChart"></canvas></div>
-      <p class="chart-note">Underhändelser identifieras i texten i poster som Polisen publicerat som sammanfattningar. Diagrammet följer filtren Geografi och År och använder vald kategorisering. Detta är en separat textutvinning och räknas inte in i huvudstatistiken ovan.</p>
+      <h3 style="margin:20px 0 8px">Extraherade sammanfattningshändelser per månad</h3>
+      <div class="chartbox"><canvas id="summaryMonthlyChart"></canvas></div>
+      <p class="chart-note">Underhändelser identifieras i texten i poster som Polisen publicerat som sammanfattningar. Diagrammen följer filtren Geografi och År och använder vald kategorisering. Den separata månadsserien visar hur många underhändelser som kunnat identifieras i sammanfattningarna.</p>
     </div>
 
     <div class="foot">
@@ -242,7 +245,7 @@ const DATA_URL='data/monthly_summary.csv';
 const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], summaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart;
+let rows=[], summaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -583,23 +586,26 @@ function updateTypeShareChart(){
   });
 }
 
+function filteredSummaryRows(){
+  const g=selected('geo'), y=selected('year'), t=selected('type');
+  const policeMode=selected('categoryMode')==='police';
+  return summaryRows
+    .map(r=>({
+      ...r,
+      display_type:policeMode?r.event_type_extracted:aggregatedType(r.event_type_extracted)
+    }))
+    .filter(r=>
+      (g==='Alla'||r.geography_group===g) &&
+      (y==='Alla'||r.year===y) &&
+      (t==='Alla'||r.display_type===t)
+    );
+}
+
 function updateSummaryDetailChart(){
   const canvas=document.getElementById('summaryDetailChart');
   if(!canvas)return;
-  const g=selected('geo'), y=selected('year');
-  const fieldMode=selected('categoryMode');
-
-  const d=summaryRows.filter(r=>
-    (g==='Alla'||r.geography_group===g) &&
-    (y==='Alla'||r.year===y)
-  );
-
-  const mapped=d.map(r=>({
-    ...r,
-    display_type:fieldMode==='police'
-      ? r.event_type_extracted
-      : aggregatedType(r.event_type_extracted)
-  }));
+  const g=selected('geo');
+  const mapped=filteredSummaryRows();
 
   const totals=groupSum(mapped,'display_type').sort((a,b)=>b[1]-a[1]);
   const top=totals.slice(0,15);
@@ -628,6 +634,32 @@ function updateSummaryDetailChart(){
       scales:{x:{beginAtZero:true,title:{display:true,text:'Antal'}}}
     }
   });
+
+  const byMonth=new Map();
+  mapped.forEach(r=>{
+    const k=r.year+'-'+String(r.month).padStart(2,'0');
+    byMonth.set(k,(byMonth.get(k)||0)+(+r.event_count||0));
+  });
+  const months=[...byMonth.keys()].sort();
+  summaryMonthlyChart=chartReplace(summaryMonthlyChart,document.getElementById('summaryMonthlyChart'),{
+    type:'line',
+    data:{
+      labels:months,
+      datasets:[{
+        label:'Extraherade sammanfattningshändelser',
+        data:months.map(k=>byMonth.get(k)||0),
+        borderWidth:2,
+        pointRadius:1.5,
+        tension:.18
+      }]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{legend:{display:true,position:'bottom'}},
+      scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}
+    }
+  });
 }
 
 function update(){
@@ -648,11 +680,54 @@ function update(){
     const k=x.year+'-'+String(x.month).padStart(2,'0');
     byMonth.set(k,(byMonth.get(k)||0)+(+x.event_count||0));
   });
-  const ml=[...byMonth.keys()].sort();
+
+  const summaryFiltered=filteredSummaryRows();
+  const summaryByMonth=new Map();
+  summaryFiltered.forEach(x=>{
+    const k=x.year+'-'+String(x.month).padStart(2,'0');
+    summaryByMonth.set(k,(summaryByMonth.get(k)||0)+(+x.event_count||0));
+  });
+
+  const ml=[...new Set([...byMonth.keys(),...summaryByMonth.keys()])].sort();
   monthlyChart=chartReplace(monthlyChart,document.getElementById('monthlyChart'),{
     type:'line',
-    data:{labels:ml,datasets:[{label:'Händelser',data:ml.map(k=>byMonth.get(k)),borderWidth:2,pointRadius:1.5,tension:.18}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}}
+    data:{
+      labels:ml,
+      datasets:[
+        {
+          label:'Händelser',
+          data:ml.map(k=>byMonth.get(k)||0),
+          borderWidth:2,
+          pointRadius:1.5,
+          tension:.18
+        },
+        {
+          label:'Inkl. sammanfattningar',
+          data:ml.map(k=>(byMonth.get(k)||0)+(summaryByMonth.get(k)||0)),
+          borderWidth:2,
+          pointRadius:1.5,
+          tension:.18
+        }
+      ]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{display:true,position:'bottom'},
+        tooltip:{
+          callbacks:{
+            afterBody(items){
+              if(!items?.length)return '';
+              const k=ml[items[0].dataIndex];
+              const extra=summaryByMonth.get(k)||0;
+              return 'Extraherat ur sammanfattningar: '+fmt.format(extra);
+            }
+          }
+        }
+      },
+      scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}
+    }
   });
 
   const field=typeField();
