@@ -232,6 +232,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             "geography_group": geography(municipality),
             "description": body,
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+            "occurrence_index": "",
             "confidence": confidence,
         })
     # Fånga specialformat med typ + plats före klockslag. Lägg bara till om
@@ -265,6 +266,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             "geography_group": geography(municipality),
             "description": body,
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+            "occurrence_index": "",
             "confidence": "high" if municipality else "medium",
         })
         existing_times.add(t)
@@ -384,7 +386,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             continue
         token = m.group("count").casefold()
         count = int(token) if token.isdigit() else NUMBER_WORDS.get(token, 0)
-        if count <= 0:
+        if count < 2:
             continue
 
         # Om samma rad redan gav en otidsatt viltträff, komplettera bara upp
@@ -393,14 +395,14 @@ def extract_row(row: pd.Series) -> list[dict]:
             x for x in out
             if not str(x.get("time","")).strip()
             and str(x.get("event_type_extracted","")).casefold() == "trafikolycka, vilt"
-            and str(x.get("place_text","")).strip() == line.strip()
+            and (str(x.get("place_text","")).strip() == line.strip() or str(x.get("description","")).strip() == line.strip())
         ]
         missing = max(0, count - len(same_line_existing))
         if missing == 0:
             continue
 
         municipality = municipality_from_text(line)
-        for _ in range(missing):
+        for occurrence_index in range(1, missing + 1):
             out.append({
                 "parent_event_id": row.get("event_id", ""),
                 "date": row.get("date", ""),
@@ -414,6 +416,7 @@ def extract_row(row: pd.Series) -> list[dict]:
                 "geography_group": geography(municipality),
                 "description": line,
                 "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+                "occurrence_index": occurrence_index,
                 "confidence": "high" if municipality else "medium",
             })
 
@@ -435,12 +438,12 @@ def main() -> None:
     cols = [
         "parent_event_id", "date", "year", "month", "summary_type", "time",
         "event_type_extracted", "place_text", "municipality", "geography_group",
-        "description", "source_link", "confidence",
+        "description", "source_link", "occurrence_index", "confidence",
     ]
     out = pd.DataFrame(records, columns=cols)
     if not out.empty:
         out = out.drop_duplicates(
-            subset=["parent_event_id", "time", "event_type_extracted", "place_text"],
+            subset=["parent_event_id", "time", "event_type_extracted", "place_text", "occurrence_index"],
             keep="first",
         ).sort_values(["date", "time", "parent_event_id"])
 
