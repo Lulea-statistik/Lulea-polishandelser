@@ -73,9 +73,17 @@ TYPE_PATTERNS = [
 
 TIME_LINE_RE = re.compile(
     r"(?im)(?:^|\n)\s*"
-    r"(?:(?P<prefix>[^\n]{2,120}?)\s*[,;:-]?\s*)?"
+    r"(?:(?P<prefix>[^\n,]{2,90})\s*,\s*)?"
     r"(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
     r"\s*[,;:-]?\s*(?P<rest>[^\n]{0,240})"
+)
+
+# Specialformat där både typ och plats står före klockslaget:
+# "Ringa stöld (snatteri), Gällivare, Kl 15:15"
+PRE_TIME_HEADER_RE = re.compile(
+    r"(?im)^\s*(?P<label>[^\n]{2,100}?),\s*"
+    r"(?P<place>[^\n,]{2,60}?),\s*(?:kl\.?\s*)"
+    r"(?P<time>[0-2]?\d[:.]\d{2})\b"
 )
 
 NON_EVENT_RE = re.compile(
@@ -223,6 +231,41 @@ def extract_row(row: pd.Series) -> list[dict]:
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
             "confidence": confidence,
         })
+    # Fånga specialformat med typ + plats före klockslag. Lägg bara till om
+    # samma tid inte redan fångats av standardparsern.
+    existing_times = {str(x.get("time", "")) for x in out}
+    for match in PRE_TIME_HEADER_RE.finditer(text):
+        t = match.group("time").replace(".", ":")
+        if t in existing_times:
+            continue
+        label = match.group("label").strip(" .;:-")
+        place_label = match.group("place").strip(" .;:-")
+        event_type = classify_type(label)
+        municipality = municipality_from_text(place_label)
+        if not event_type:
+            continue
+
+        line_end = text.find("\n", match.end())
+        if line_end < 0:
+            line_end = len(text)
+        body = text[match.end():line_end].strip(" .;:-")
+        out.append({
+            "parent_event_id": row.get("event_id", ""),
+            "date": row.get("date", ""),
+            "year": row.get("year", ""),
+            "month": row.get("month", ""),
+            "summary_type": row.get("type_original", ""),
+            "time": t,
+            "event_type_extracted": event_type,
+            "place_text": place_label,
+            "municipality": municipality,
+            "geography_group": geography(municipality),
+            "description": body,
+            "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+            "confidence": "high" if municipality else "medium",
+        })
+        existing_times.add(t)
+
     # Fånga tydliga rubrikrader utan klockslag, t.ex. "Misshandel, Luleå".
     # Dessa förekommer framför allt i nyare sammanfattningar.
     lines = [ln.strip() for ln in text.split("\n")]
