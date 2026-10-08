@@ -227,7 +227,7 @@ def extract_row(row: pd.Series) -> list[dict]:
     lines = [ln.strip() for ln in text.split("\n")]
     timed_line_indexes = {
         i for i, ln in enumerate(lines)
-        if re.search(r"(?i)(?:^|\s)(?:kl\.?\s*)?[0-2]?\d[:.]\d{2}(?:\s|[,;:-]|$)", ln)
+        if re.search(r"(?i)(?:^|[\s,;/\-–—])(?:kl\.?\s*)?[0-2]?\d[:.]\d{2}(?:\s|[,;:/\-–—]|$)", ln)
     }
     existing_keys = {
         (str(x["event_type_extracted"]).casefold(), str(x["municipality"]).casefold(), str(x["description"])[:80].casefold())
