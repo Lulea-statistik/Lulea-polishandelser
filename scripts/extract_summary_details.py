@@ -125,12 +125,15 @@ def classify_type(value: str) -> str:
 
 
 def source_text(row: pd.Series) -> str:
-    pieces = []
+    # content är den fullständiga sammanfattningstexten i normalfallet.
+    # description/headline är ofta utdrag eller kopior av samma text. Att
+    # konkatenera alla tre skapade därför dubbla tidsstämplar och falska
+    # underhändelser. Använd i stället första tillgängliga fullvärdiga källa.
     for col in ("content", "description", "headline"):
         v = row.get(col, "")
         if pd.notna(v) and str(v).strip():
-            pieces.append(str(v))
-    return clean_text("\n".join(pieces))
+            return clean_text(str(v))
+    return ""
 
 
 def first_meaningful_line(body: str) -> str:
@@ -161,6 +164,15 @@ def extract_row(row: pd.Series) -> list[dict]:
         # Tydliga status-/uppdateringsrader är inte egna händelser.
         if NON_EVENT_RE.search(header) and not classify_type(body[:250]):
             continue
+
+        # Tidsintervall som beskriver rapportperioden, t.ex. "04:00 - 06:30
+        # Inget att rapportera", är inte två underhändelser.
+        before = text[max(0, match.start() - 8):match.start()]
+        after = text[match.end():match.end() + 18]
+        range_context = (before + match.group(0) + after).casefold()
+        if re.search(r"\b[0-2]?\d[:.]\d{2}\s*[-–—]\s*[0-2]?\d[:.]\d{2}\b", range_context):
+            if re.search(r"inget att rapportera|lugnt|inga händelser", header + " " + body[:180], re.I):
+                continue
 
         # Klassificera först rubrikdelen, därefter första brödtextraden och
         # slutligen början av hela segmentet.
