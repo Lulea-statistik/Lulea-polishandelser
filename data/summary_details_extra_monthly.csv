@@ -1217,7 +1217,7 @@ year,month,geography_group,event_type_extracted,event_count
 2020,1,Luleå kommun,Trafikolycka,1
 2020,1,Luleå kommun,"Trafikolycka,  vilt",1
 2020,1,Luleå kommun,"Trafikolycka, vilt",1
-2020,1,"Norrbotten, okänd kommun","Trafikolycka, vilt",46
+2020,1,"Norrbotten, okänd kommun","Trafikolycka, vilt",48
 2020,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,6
 2020,1,"Norrbotten, okänd kommun",Narkotikabrott,4
 2020,1,"Norrbotten, okänd kommun",Inbrott,1
@@ -1650,7 +1650,7 @@ year,month,geography_group,event_type_extracted,event_count
 2021,3,Luleå kommun,"Trafikolycka,  vilt",1
 2021,3,Luleå kommun,"Trafikolycka, vilt",1
 2021,3,Luleå kommun,Övrigt/oklassificerad,1
-2021,3,"Norrbotten, okänd kommun","Trafikolycka, vilt",9
+2021,3,"Norrbotten, okänd kommun","Trafikolycka, vilt",11
 2021,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2021,3,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,3,"Norrbotten, okänd kommun",Narkotikabrott,1
@@ -2648,7 +2648,7 @@ year,month,geography_group,event_type_extracted,event_count
 2024,1,Luleå kommun,Olaga hot,1
 2024,1,Luleå kommun,Rån,1
 2024,1,Luleå kommun,Skadegörelse,1
-2024,1,"Norrbotten, okänd kommun","Trafikolycka, vilt",32
+2024,1,"Norrbotten, okänd kommun","Trafikolycka, vilt",33
 2024,1,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2024,1,Övriga Norrbotten,Misshandel,10
 2024,1,Övriga Norrbotten,"Trafikolycka,  vilt",10
@@ -2675,7 +2675,7 @@ year,month,geography_group,event_type_extracted,event_count
 2024,2,Luleå kommun,Trafikbrott,1
 2024,2,Luleå kommun,Trafikolycka,1
 2024,2,Luleå kommun,Våld/hot mot tjänsteman,1
-2024,2,"Norrbotten, okänd kommun","Trafikolycka, vilt",12
+2024,2,"Norrbotten, okänd kommun","Trafikolycka, vilt",13
 2024,2,"Norrbotten, okänd kommun",Narkotikabrott,2
 2024,2,Övriga Norrbotten,"Trafikolycka,  vilt",12
 2024,2,Övriga Norrbotten,Misshandel,6
@@ -2796,7 +2796,7 @@ year,month,geography_group,event_type_extracted,event_count
 2024,6,Luleå kommun,Sexualbrott,1
 2024,6,Luleå kommun,Stöld,1
 2024,6,Luleå kommun,Trafikkontroll,1
-2024,6,"Norrbotten, okänd kommun","Trafikolycka, vilt",6
+2024,6,"Norrbotten, okänd kommun","Trafikolycka, vilt",8
 2024,6,"Norrbotten, okänd kommun",Misshandel,1
 2024,6,Övriga Norrbotten,Övrigt/oklassificerad,10
 2024,6,Övriga Norrbotten,Misshandel,8
@@ -3142,7 +3142,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,6,Luleå kommun,"Trafikolycka,  vilt",1
 2025,6,Luleå kommun,Vapenlagen,1
 2025,6,Luleå kommun,Våld/hot mot tjänsteman,1
-2025,6,"Norrbotten, okänd kommun","Trafikolycka, vilt",2
+2025,6,"Norrbotten, okänd kommun","Trafikolycka, vilt",3
 2025,6,"Norrbotten, okänd kommun",Misshandel,1
 2025,6,Övriga Norrbotten,Misshandel,19
 2025,6,Övriga Norrbotten,Rattfylleri,11
@@ -3215,7 +3215,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,8,Luleå kommun,"Trafikolycka,  vilt",1
 2025,8,Luleå kommun,"Trafikolycka, vilt",1
 2025,8,Luleå kommun,Våld/hot mot tjänsteman,1
-2025,8,"Norrbotten, okänd kommun","Trafikolycka, vilt",6
+2025,8,"Norrbotten, okänd kommun","Trafikolycka, vilt",8
 2025,8,Övriga Norrbotten,"Trafikolycka,  vilt",16
 2025,8,Övriga Norrbotten,Misshandel,10
 2025,8,Övriga Norrbotten,Trafikbrott,9
@@ -3247,7 +3247,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,9,Luleå kommun,Trafikbrott,1
 2025,9,Luleå kommun,Trafikolycka,1
 2025,9,Luleå kommun,"Trafikolycka, vilt",1
-2025,9,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
+2025,9,"Norrbotten, okänd kommun","Trafikolycka, vilt",6
 2025,9,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2025,9,"Norrbotten, okänd kommun",Misshandel,1
 2025,9,Övriga Norrbotten,"Trafikolycka,  vilt",11
@@ -3371,7 +3371,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,1,Luleå kommun,"Trafikolycka,  vilt",1
 2026,1,Luleå kommun,"Trafikolycka, vilt",1
 2026,1,Luleå kommun,Vapenlagen,1
-2026,1,"Norrbotten, okänd kommun","Trafikolycka, vilt",44
+2026,1,"Norrbotten, okänd kommun","Trafikolycka, vilt",48
 2026,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2026,1,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2026,1,Övriga Norrbotten,"Trafikolycka,  vilt",16
