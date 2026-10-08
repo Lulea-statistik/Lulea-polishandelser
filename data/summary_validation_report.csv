@@ -13,6 +13,8 @@ recall_95_high,0.7558865942644017
 correction_factor,1.3546910755148742
 correction_factor_95_low,1.2679079402710403
 correction_factor_95_high,1.4441118626880627
+correction_factor_bootstrap_95_low,1.2472406181015452
+correction_factor_bootstrap_95_high,1.4782608695652173
 all_extracted_subevents,10119.0
 lulea_extracted_subevents,2810.0
 all_extra_after_dedup,9734.0
@@ -21,3 +23,11 @@ lulea_checked_rows,198.0
 lulea_manual_events,116.0
 lulea_parser_events,111.0
 lulea_manual_parser_factor,1.045045045045045
+lulea_factor_bootstrap_95_low,1.0
+lulea_factor_bootstrap_95_high,1.099009900990099
+lulea_extracted_estimated_true,2936.5765765765764
+lulea_extracted_estimated_95_low,2810.0
+lulea_extracted_estimated_95_high,3088.2178217821784
+lulea_extra_after_dedup_estimated_true,2769.3693693693695
+lulea_extra_after_dedup_estimated_95_low,2650.0
+lulea_extra_after_dedup_estimated_95_high,2912.376237623763
