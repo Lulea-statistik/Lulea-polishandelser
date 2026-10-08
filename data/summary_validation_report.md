@@ -1,9 +1,11 @@
 # Validering av sammanfattningsparser
 
 - Stickprov: **200** sammanfattningar.
-- Fullständigt manuellt kontrollerade rader: **0**.
-- Precision och täckningsgrad beräknas när manuella QA-fält är ifyllda.
-- Rapporten publicerar inte ett påhittat felintervall innan kontrollen är gjord.
+- Fullständigt manuellt kontrollerade rader: **31**.
+- Precision: **100.0 %** (95 % Wilson 93.5 %–100.0 %).
+- Täckningsgrad/recall: **100.0 %** (95 % Wilson 93.5 %–100.0 %).
+- Korrigeringsfaktor för extraherat antal: **1.000** (konservativt intervall 0.935–1.070).
+- Luleå: manuellt räknade underhändelser/parserträffar i kontrollerade rader: **11/11**, faktor **1.000**.
 
 ## Tolkning
 
