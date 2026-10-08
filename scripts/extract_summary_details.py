@@ -127,6 +127,20 @@ def clean_text(value: str) -> str:
     return s.strip()
 
 
+def municipality_mentions(value: str) -> list[str]:
+    """Return unique Norrbotten municipalities mentioned, in text order."""
+    p = (value or "").casefold()
+    hits = []
+    for key, canonical in MUNICIPALITIES.items():
+        for m in re.finditer(r"(?<![a-zåäö])" + re.escape(key) + r"(?![a-zåäö])", p):
+            hits.append((m.start(), canonical))
+    out = []
+    for _, canonical in sorted(hits):
+        if canonical not in out:
+            out.append(canonical)
+    return out
+
+
 def municipality_from_text(value: str) -> str:
     p = (value or "").casefold()
     hits = []
@@ -418,8 +432,14 @@ def extract_row(row: pd.Series) -> list[dict]:
         if missing == 0:
             continue
 
-        municipality = municipality_from_text(line)
+        municipalities = municipality_mentions(line)
+        exact_municipality_split = len(municipalities) == count
+        single_municipality = municipality_from_text(line)
         for occurrence_index in range(1, missing + 1):
+            if exact_municipality_split and occurrence_index <= len(municipalities):
+                municipality = municipalities[occurrence_index - 1]
+            else:
+                municipality = single_municipality
             out.append({
                 "parent_event_id": row.get("event_id", ""),
                 "date": row.get("date", ""),
