@@ -386,7 +386,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             continue
         token = m.group("count").casefold()
         count = int(token) if token.isdigit() else NUMBER_WORDS.get(token, 0)
-        if count < 2:
+        if count <= 0:
             continue
 
         # Om samma rad redan gav en otidsatt viltträff, komplettera bara upp
