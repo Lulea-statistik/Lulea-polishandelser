@@ -27,9 +27,8 @@ API-anrop använder `app=lulea-statistik-polishandelser`.
 ## Geografier
 
 Insamlingen börjar med Norrbottens län och klassificerar poster i:
-- `Luleå kommun`
-- `Övriga Norrbotten`
-- `Norrbotten, okänd kommun`
+- en separat grupp för varje identifierad Norrbottenskommun
+- `Norrbotten, okänd kommun` när kommunen inte kan bestämmas säkert
 
 Polisregion Nord kan därefter byggas ut med Västerbottens, Jämtlands och Västernorrlands län. Detta görs separat så att första bootstrapen kan kvalitetsgranskas innan datamängden utökas.
 
