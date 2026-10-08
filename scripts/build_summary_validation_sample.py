@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EVENTS = ROOT / "data" / "events.csv"
 DETAILS = ROOT / "data" / "summary_details.csv"
 OUT = ROOT / "data" / "summary_validation_sample.csv"
+OUT_COMPACT = ROOT / "data" / "summary_validation_compact.tsv"
 
 SAMPLE_N = 200
 
@@ -80,7 +81,19 @@ def main() -> None:
         "parser_false_positive_count","parser_missed_count","qa_note"
     ]
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    sample[out_cols].sort_values(["year","date","event_id"]).to_csv(OUT, index=False, encoding="utf-8")
+    ordered = sample[out_cols].sort_values(["year","date","event_id"]).copy()
+    ordered.to_csv(OUT, index=False, encoding="utf-8")
+
+    compact = ordered[["event_id","date","year","type_original","content","extracted_count"]].copy()
+    compact["content"] = (
+        compact["content"].fillna("").astype(str)
+        .str.replace("\r", " ", regex=False)
+        .str.replace("\n", " ", regex=False)
+        .str.replace("\t", " ", regex=False)
+        .str.replace(r"\s+", " ", regex=True)
+        .str.slice(0, 3200)
+    )
+    compact.to_csv(OUT_COMPACT, sep="\t", index=False, encoding="utf-8")
 
     print(
         f"validation_sample={len(sample)} "
