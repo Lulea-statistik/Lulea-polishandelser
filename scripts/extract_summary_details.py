@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import csv
 import html
 import re
 from pathlib import Path
@@ -29,12 +28,53 @@ MUNICIPALITIES = {
     "övertorneå": "Övertorneå",
 }
 
-HEADER_RE = re.compile(
-    r"(?im)(?:^|\n)\s*(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
-    r"\s*,\s*(?P<etype>[^,\n]{2,90}?)"
-    r"\s*,\s*(?P<place>[^\n]{2,140}?)(?=\n|$)"
-)
+# Högprecisionsklassning av de typer som återkommer i Polisens länssammanfattningar.
+# Ordningen är viktig: mer specifika mönster ligger före bredare.
+TYPE_PATTERNS = [
+    (r"\b(viltolycka|trafikolycka[^\n,.]{0,30}\bvilt|kolliderat? med (älg|ren|rådjur|hjort))\b", "Trafikolycka,  vilt"),
+    (r"\b(drograttfylleri|rattfylleri)\b", "Rattfylleri"),
+    (r"\b(grov olovlig körning|olovlig körning)\b", "Olovlig körning"),
+    (r"\btrafikkontroll\b", "Trafikkontroll"),
+    (r"\btrafikbrott\b", "Trafikbrott"),
+    (r"\btrafikhinder\b", "Trafikhinder"),
+    (r"\btrafikolycka\b|\bkollision\b", "Trafikolycka"),
+    (r"\barbetsplatsolycka\b", "Arbetsplatsolycka"),
+    (r"\bmisshandel\b", "Misshandel"),
+    (r"\bnarkotikabrott\b|\bnarkotika(?:innehav|brott)?\b", "Narkotikabrott"),
+    (r"\bstöld/inbrott\b", "Stöld/inbrott"),
+    (r"\binbrott\b", "Inbrott"),
+    (r"\bringa stöld\b|\bsnatteri\b", "Stöld,  ringa"),
+    (r"\bstöld\b", "Stöld"),
+    (r"\bskadegörelse\b", "Skadegörelse"),
+    (r"\b(fylleri|lob)\b", "Fylleri/LOB"),
+    (r"\bolaga hot\b", "Olaga hot"),
+    (r"\bofredande\b", "Ofredande/förargelse"),
+    (r"\bknivlagen\b|\bbrott mot knivlagen\b", "Knivlagen"),
+    (r"\bvapenlagen\b|\bbrott mot vapenlagen\b", "Vapenlagen"),
+    (r"\bbrand\b", "Brand"),
+    (r"\brån\b", "Rån"),
+    (r"\bfjällräddning\b", "Fjällräddning"),
+    (r"\bförsvunnen person\b", "Försvunnen person"),
+    (r"\b(våld|hot) mot tjänsteman\b|\bvåld/hot mot tjänsteman\b", "Våld/hot mot tjänsteman"),
+    (r"\bvåldsamt motstånd\b", "Våld/hot mot tjänsteman"),
+    (r"\bvåldtäkt\b|\bsexualbrott\b", "Sexualbrott"),
+    (r"\b(försök till mord|mord|dråp)\b", "Mord/dråp"),
+    (r"\b(olaga intrång|hemfridsbrott)\b", "Olaga intrång/hemfridsbrott"),
+    (r"\b(bombhot|farligt föremål)\b", "Farligt föremål,  misstänkt"),
+    (r"\b(skottlossning|detonation|explosion)\b", "Skottlossning/explosion"),
+    (r"\bbedrägeri\b", "Bedrägeri"),
+    (r"\bhäleri\b", "Häleri"),
+    (r"\banträffat gods\b|\bupphittat föremål\b", "Anträffat gods"),
+    (r"\bkontroll (?:av )?(?:person|fordon|person/fordon)\b", "Kontroll person/fordon"),
+    (r"\bräddningsinsats\b", "Räddningsinsats"),
+    (r"\bsjukdom/olycksfall\b", "Sjukdom/olycksfall"),
+    (r"\bdjur\b", "Djur"),
+]
 
+TIME_LINE_RE = re.compile(
+    r"(?im)(?:^|\n)\s*(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
+    r"\s*[,;:-]?\s*(?P<rest>[^\n]{2,240})"
+)
 TAG_BREAK_RE = re.compile(r"(?i)<\s*(?:br|/p|/div|/li|/h\d)\s*/?>")
 TAG_RE = re.compile(r"<[^>]+>")
 SPACE_RE = re.compile(r"[ \t\xa0]+")
@@ -52,8 +92,8 @@ def clean_text(value: str) -> str:
     return s.strip()
 
 
-def municipality_from_place(place: str) -> str:
-    p = (place or "").casefold()
+def municipality_from_text(value: str) -> str:
+    p = (value or "").casefold()
     hits = []
     for key, canonical in MUNICIPALITIES.items():
         if re.search(r"(?<![a-zåäö])" + re.escape(key) + r"(?![a-zåäö])", p):
@@ -70,6 +110,14 @@ def geography(municipality: str) -> str:
     return "Norrbotten, okänd kommun"
 
 
+def classify_type(value: str) -> str:
+    text = (value or "").casefold()
+    for pattern, label in TYPE_PATTERNS:
+        if re.search(pattern, text, flags=re.I):
+            return label
+    return ""
+
+
 def source_text(row: pd.Series) -> str:
     pieces = []
     for col in ("content", "description", "headline"):
@@ -79,32 +127,74 @@ def source_text(row: pd.Series) -> str:
     return clean_text("\n".join(pieces))
 
 
+def first_meaningful_line(body: str) -> str:
+    for line in (body or "").split("\n"):
+        line = line.strip(" -–—.;:")
+        if not line:
+            continue
+        if line.casefold().startswith(("polisen ", "uppdatering", "text av")):
+            continue
+        return line
+    return ""
+
+
 def extract_row(row: pd.Series) -> list[dict]:
     text = source_text(row)
-    matches = list(HEADER_RE.finditer(text))
+    matches = list(TIME_LINE_RE.finditer(text))
     out = []
+
     for i, match in enumerate(matches):
         start = match.end()
         end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
         body = text[start:end].strip(" \n-–—")
-        etype = SPACE_RE.sub(" ", match.group("etype")).strip(" .;:-")
-        place = SPACE_RE.sub(" ", match.group("place")).strip(" .;:-")
-        time = match.group("time").replace(".", ":")
-        municipality = municipality_from_place(place + "\n" + body[:250])
+        rest = SPACE_RE.sub(" ", match.group("rest")).strip(" .;:-")
+        first_line = first_meaningful_line(body)
+
+        # Nyare sammanfattningar har ofta "tid, typ, ort".
+        # Äldre har ofta "tid, plats, kommun" och typen på nästa rad eller sist i raden.
+        event_type = classify_type(rest)
+        if not event_type:
+            event_type = classify_type(first_line)
+        if not event_type:
+            event_type = classify_type(rest + "\n" + body[:400])
+
+        municipality = municipality_from_text(rest)
+        if not municipality:
+            municipality = municipality_from_text(first_line)
+
+        # Om flera kommuner nämns senare i brödtexten använder vi dem inte för den aktuella delhändelsen.
+        parts = [p.strip() for p in re.split(r"\s*[,;]\s*", rest) if p.strip()]
+        place_parts = []
+        for part in parts:
+            if municipality and part.casefold() == municipality.casefold():
+                continue
+            if classify_type(part):
+                continue
+            if re.fullmatch(r"(?:kl\.?\s*)?[0-2]?\d[:.]\d{2}", part, flags=re.I):
+                continue
+            place_parts.append(part)
+        place = ", ".join(place_parts[:2]).strip()
+
+        # För statistikpanelen kräver vi en identifierad händelsetyp.
+        # Det minskar fel där ett gatunamn annars tolkas som brottstyp.
+        if not event_type:
+            continue
+
+        confidence = "high" if municipality else "medium"
         out.append({
             "parent_event_id": row.get("event_id", ""),
             "date": row.get("date", ""),
             "year": row.get("year", ""),
             "month": row.get("month", ""),
             "summary_type": row.get("type_original", ""),
-            "time": time,
-            "event_type_extracted": etype,
+            "time": match.group("time").replace(".", ":"),
+            "event_type_extracted": event_type,
             "place_text": place,
             "municipality": municipality,
             "geography_group": geography(municipality),
             "description": body,
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
-            "confidence": "high" if municipality and etype else "medium",
+            "confidence": confidence,
         })
     return out
 
@@ -114,10 +204,9 @@ def main() -> None:
         raise SystemExit("data/events.csv saknas eller är tom")
 
     df = pd.read_csv(EVENTS, dtype={"event_id": "string"}, low_memory=False)
-    summaries = df[
-        df.get("is_summary", False).astype(str).str.casefold().isin(["true", "1"])
-        | df.get("type_original", "").fillna("").str.casefold().str.startswith("sammanfattning")
-    ].copy()
+    is_summary = df.get("is_summary", pd.Series(False, index=df.index)).astype(str).str.casefold().isin(["true", "1"])
+    type_summary = df.get("type_original", pd.Series("", index=df.index)).fillna("").str.casefold().str.startswith("sammanfattning")
+    summaries = df[is_summary | type_summary].copy()
 
     records = []
     for _, row in summaries.iterrows():
