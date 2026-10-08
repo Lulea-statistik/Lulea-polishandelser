@@ -196,7 +196,7 @@
       <div class="card">
         <h2>Händelser per månad</h2>
         <div class="chartbox"><canvas id="monthlyChart"></canvas></div>
-        <p class="chart-note">Linjen <strong>Inkl. sammanfattningar</strong> adderar de underhändelser som kunnat identifieras i polisens sammanfattningstexter. Tooltipen visar hur många sådana underhändelser som lagts till varje månad.</p>
+        <p class="chart-note">Linjen <strong>Inkl. sammanfattningar</strong> adderar identifierade underhändelser från polisens sammanfattningstexter efter en konservativ kontroll mot vanliga polisnotiser för att minska dubbelräkning. Tooltipen visar hur många extra sammanfattningshändelser som lagts till varje månad.</p>
       </div>
       <div class="card">
         <h2>Vanligaste händelsetyper</h2>
@@ -243,9 +243,10 @@
 <script>
 const DATA_URL='data/monthly_summary.csv';
 const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
+const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], summaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart;
+let rows=[], summaryRows=[], summaryExtraRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -586,10 +587,10 @@ function updateTypeShareChart(){
   });
 }
 
-function filteredSummaryRows(){
+function filteredSummaryRows(source=summaryRows){
   const g=selected('geo'), y=selected('year'), t=selected('type');
   const policeMode=selected('categoryMode')==='police';
-  return summaryRows
+  return source
     .map(r=>({
       ...r,
       display_type:policeMode?r.event_type_extracted:aggregatedType(r.event_type_extracted)
@@ -681,7 +682,7 @@ function update(){
     byMonth.set(k,(byMonth.get(k)||0)+(+x.event_count||0));
   });
 
-  const summaryFiltered=filteredSummaryRows();
+  const summaryFiltered=filteredSummaryRows(summaryExtraRows);
   const summaryByMonth=new Map();
   summaryFiltered.forEach(x=>{
     const k=x.year+'-'+String(x.month).padStart(2,'0');
@@ -762,15 +763,17 @@ function update(){
 
 Promise.all([
   fetch(DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Huvuddata HTTP '+r.status);return r.text()}),
-  fetch(SUMMARY_DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
+  fetch(SUMMARY_DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
+  fetch(SUMMARY_EXTRA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
-  .then(([text,summaryText])=>{
+  .then(([text,summaryText,summaryExtraText])=>{
     rows=parseCSV(text).map(r=>({
       ...r,
       event_count:+r.event_count||0,
       type_aggregated:aggregatedType(r.type_original)
     }));
     summaryRows=summaryText?parseCSV(summaryText).map(r=>({...r,event_count:+r.event_count||0})) : [];
+    summaryExtraRows=summaryExtraText?parseCSV(summaryExtraText).map(r=>({...r,event_count:+r.event_count||0})) : summaryRows;
     if(!rows.length) throw new Error('Ingen data');
     const geos=[...new Set(rows.map(x=>x.geography_group).filter(Boolean))].sort();
     const years=[...new Set(rows.map(x=>x.year).filter(Boolean))].sort((a,b)=>+a-+b);
