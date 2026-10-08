@@ -114,6 +114,8 @@
     .grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:16px}
     h2{font-size:1.12rem;margin:0 0 14px}
     .chartbox{height:360px}
+    .chartbox.composition{height:430px}
+    .chart-note{margin:10px 0 0;color:var(--muted);font-size:.82rem;line-height:1.45}
     .foot{font-size:.87rem;color:var(--muted);margin-top:22px;line-height:1.5}
     .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
     @media(max-width:850px){
@@ -200,6 +202,12 @@
       </div>
     </div>
 
+    <div class="card" style="margin-top:16px">
+      <h2>Händelsetyper per år – andel av årets händelser</h2>
+      <div class="chartbox composition"><canvas id="typeShareChart"></canvas></div>
+      <p class="chart-note">100 % staplat diagram. Endast händelsetyper som utgör minst 2 % av samtliga händelser i vald geografi visas. Diagrammet visar alla år och påverkas därför inte av filtren År eller Händelsetyp.</p>
+    </div>
+
     <div class="foot">
       Källa: Brottsplatskartan/Polisens publicerade händelseflöde. Klassificeringen av kommun är preliminär och använder API-fält när det finns samt försiktig platsbaserad fallback när kommunfält saknas. Regionala sammanfattningar kan innehålla flera delhändelser och bör inte tolkas som ett enskilt brott.
     </div>
@@ -210,7 +218,7 @@
 const DATA_URL='data/monthly_summary.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], monthlyChart, typeChart, yearChart, geoChart;
+let rows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart;
 
 function parseCSV(text){
   const out=[]; let row=[], field='', quoted=false;
@@ -379,6 +387,70 @@ function chartReplace(oldChart,ctx,config){
   if(oldChart) oldChart.destroy();
   return new Chart(ctx,config);
 }
+function updateTypeShareChart(){
+  const g=selected('geo');
+  const data=rows.filter(r=>g==='Alla'||r.geography_group===g);
+  const grandTotal=sum(data);
+  const typeTotals=groupSum(data,'type_original')
+    .filter(([name,count])=>name && grandTotal>0 && count/grandTotal>=0.02)
+    .sort((a,b)=>b[1]-a[1]);
+
+  const years=[...new Set(data.map(r=>r.year).filter(Boolean))].sort((a,b)=>+a-+b);
+  const byYearType=new Map();
+  data.forEach(r=>{
+    const key=r.year+'|'+r.type_original;
+    byYearType.set(key,(byYearType.get(key)||0)+(+r.event_count||0));
+  });
+
+  const includedTypes=typeTotals.map(x=>x[0]);
+  const includedYearTotals=new Map(years.map(year=>[
+    year,
+    includedTypes.reduce((acc,type)=>acc+(byYearType.get(year+'|'+type)||0),0)
+  ]));
+
+  const palette=[
+    '#0b5cab','#2f855a','#d97706','#7c3aed','#dc2626','#0891b2',
+    '#4f46e5','#65a30d','#c2410c','#be185d','#0f766e','#6b7280'
+  ];
+
+  const datasets=includedTypes.map((type,i)=>({
+    label:type,
+    data:years.map(year=>{
+      const n=byYearType.get(year+'|'+type)||0;
+      const denom=includedYearTotals.get(year)||0;
+      return denom?100*n/denom:0;
+    }),
+    rawCounts:years.map(year=>byYearType.get(year+'|'+type)||0),
+    backgroundColor:palette[i%palette.length],
+    borderWidth:0
+  }));
+
+  typeShareChart=chartReplace(typeShareChart,document.getElementById('typeShareChart'),{
+    type:'bar',
+    data:{labels:years,datasets},
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{position:'bottom',labels:{boxWidth:12,usePointStyle:true}},
+        tooltip:{
+          callbacks:{
+            label(ctx){
+              const count=ctx.dataset.rawCounts?.[ctx.dataIndex]||0;
+              return ctx.dataset.label+': '+ctx.parsed.y.toLocaleString('sv-SE',{maximumFractionDigits:1})+' % ('+fmt.format(count)+')';
+            }
+          }
+        }
+      },
+      scales:{
+        x:{stacked:true,title:{display:true,text:'År'}},
+        y:{stacked:true,min:0,max:100,title:{display:true,text:'Andel (%)'},ticks:{callback:v=>v+' %'}}
+      }
+    }
+  });
+}
+
 function update(){
   const d=filt();
   const total=sum(d);
@@ -424,6 +496,8 @@ function update(){
     data:{labels:geos.map(x=>x[0]),datasets:[{label:'Antal',data:geos.map(x=>x[1]),backgroundColor:'#e0b400',borderColor:'#e0b400'}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
   });
+
+  updateTypeShareChart();
 }
 
 fetch(DATA_URL,{cache:'no-store'})
