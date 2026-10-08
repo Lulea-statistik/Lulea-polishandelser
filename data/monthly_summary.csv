@@ -5931,9 +5931,10 @@ year,month,geography_group,type_original,event_count
 2026,10,Luleå kommun,Häleri,1
 2026,10,Luleå kommun,Trafikkontroll,1
 2026,10,"Norrbotten, okänd kommun",Sammanfattning natt,5
-2026,10,"Norrbotten, okänd kommun",Trafikkontroll,4
+2026,10,"Norrbotten, okänd kommun",Trafikkontroll,5
 2026,10,Övriga Norrbotten,Rattfylleri,4
-2026,10,Övriga Norrbotten,Sammanfattning natt,2
+2026,10,Övriga Norrbotten,Sammanfattning natt,3
+2026,10,Övriga Norrbotten,Trafikolycka,2
 2026,10,Övriga Norrbotten,Arbetsplatsolycka,1
 2026,10,Övriga Norrbotten,Fylleri,1
 2026,10,Övriga Norrbotten,Misshandel,1
@@ -5945,4 +5946,3 @@ year,month,geography_group,type_original,event_count
 2026,10,Övriga Norrbotten,Stöld,1
 2026,10,Övriga Norrbotten,Trafikbrott,1
 2026,10,Övriga Norrbotten,Trafikkontroll,1
-2026,10,Övriga Norrbotten,Trafikolycka,1
