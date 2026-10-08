@@ -73,9 +73,26 @@ def main() -> None:
         .notna().all(axis=1)
     ].copy()
 
-    correct = checked["parser_correct_count"].sum()
-    false_pos = checked["parser_false_positive_count"].sum()
-    missed = checked["parser_missed_count"].sum()
+    # Justera de manuella QA-utfallen mot dagens parserantal utan att ändra
+    # själva manuella facitvärdena. Nya parserträffar får först fylla tidigare
+    # dokumenterade missar; först eventuellt överskott blir nya falska positiva.
+    old_parser_total = checked["parser_correct_count"] + checked["parser_false_positive_count"]
+    delta = checked["extracted_count"] - old_parser_total
+    add = delta.clip(lower=0)
+    recovered = pd.concat([add, checked["parser_missed_count"]], axis=1).min(axis=1)
+    extra_fp = (add - recovered).clip(lower=0)
+
+    removed = (-delta).clip(lower=0)
+    removed_fp = pd.concat([removed, checked["parser_false_positive_count"]], axis=1).min(axis=1)
+    removed_correct = (removed - removed_fp).clip(lower=0)
+
+    checked["current_correct_count"] = checked["parser_correct_count"] + recovered - removed_correct
+    checked["current_false_positive_count"] = checked["parser_false_positive_count"] + extra_fp - removed_fp
+    checked["current_missed_count"] = checked["parser_missed_count"] - recovered + removed_correct
+
+    correct = checked["current_correct_count"].sum()
+    false_pos = checked["current_false_positive_count"].sum()
+    missed = checked["current_missed_count"].sum()
 
     precision_den = correct + false_pos
     recall_den = correct + missed
@@ -93,8 +110,8 @@ def main() -> None:
 
     # Bootstrap på sammanfattningsnivå bevarar klustringen inom varje
     # sammanfattning och är därför bättre som praktiskt osäkerhetsintervall.
-    checked["manual_events_for_ratio"] = checked["parser_correct_count"] + checked["parser_missed_count"]
-    checked["parser_events_for_ratio"] = checked["parser_correct_count"] + checked["parser_false_positive_count"]
+    checked["manual_events_for_ratio"] = checked["current_correct_count"] + checked["current_missed_count"]
+    checked["parser_events_for_ratio"] = checked["current_correct_count"] + checked["current_false_positive_count"]
     boot_lo, boot_hi = bootstrap_ratio(
         checked, "manual_events_for_ratio", "parser_events_for_ratio"
     )
