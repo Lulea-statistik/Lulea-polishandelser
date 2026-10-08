@@ -98,6 +98,12 @@ BLANK_RE = re.compile(r"\n{3,}")
 NUMBER_WORDS = {"en":1,"ett":1,"två":2,"tre":3,"fyra":4,"fem":5,"sex":6,"sju":7,"åtta":8,"nio":9,"tio":10}
 COUNTED_ACCIDENT_RE = re.compile(r"(?i)(?<![:.\d])\b(?P<count>\d{1,2}|en|ett|två|tre|fyra|fem|sex|sju|åtta|nio|tio)\s+(?P<kind>viltolyck(?:a|or)|renpåkörning(?:ar)?)\b")
 
+UNTIMED_SINGLE_PATTERNS = [
+    (re.compile(r"(?i)^en person har(?:[^.]{0,80})?omhändertagits för fylleri\\b"), "Fylleri/LOB"),
+    (re.compile(r"(?i)^en person har(?:[^.]{0,100})?medtagits för provtagning efter misstanke om narkotikabrott\\b"), "Narkotikabrott"),
+    (re.compile(r"(?i)^en man(?:[^.]{0,120})?har under natten gripits misstänkt för att ha misshandlat\\b"), "Misshandel"),
+]
+
 
 def clean_text(value: str) -> str:
     s = html.unescape(value or "")
@@ -381,16 +387,18 @@ def extract_row(row: pd.Series) -> list[dict]:
     # "Tre viltolyckor har anmälts". Här är antalet händelser uttryckligt,
     # till skillnad från personantal som LOB.
     for line in lines:
-        m = COUNTED_ACCIDENT_RE.search(line)
-        if not m:
+        matches = list(COUNTED_ACCIDENT_RE.finditer(line))
+        if not matches:
             continue
-        token = m.group("count").casefold()
-        count = int(token) if token.isdigit() else NUMBER_WORDS.get(token, 0)
+        count = 0
+        for m in matches:
+            token = m.group("count").casefold()
+            count += int(token) if token.isdigit() else NUMBER_WORDS.get(token, 0)
         if count <= 0:
             continue
 
         # Om samma rad redan gav en otidsatt viltträff, komplettera bara upp
-        # till det uttryckliga antalet i stället för att dubbelräkna.
+        # till det uttryckliga totalantalet i stället för att dubbelräkna.
         same_line_existing = [
             x for x in out
             if not str(x.get("time","")).strip()
@@ -419,6 +427,35 @@ def extract_row(row: pd.Series) -> list[dict]:
                 "occurrence_index": occurrence_index,
                 "confidence": "high" if municipality else "medium",
             })
+
+    # Försiktiga, otidsatta singularfall. Endast exakt igenkända formuleringar
+    # används; personantal större än ett expanderas aldrig.
+    for line in lines:
+        if not line:
+            continue
+        for pattern, event_type in UNTIMED_SINGLE_PATTERNS:
+            if not pattern.search(line):
+                continue
+            if any(str(x.get("description","")).strip() == line.strip() for x in out):
+                break
+            municipality = municipality_from_text(line)
+            out.append({
+                "parent_event_id": row.get("event_id", ""),
+                "date": row.get("date", ""),
+                "year": row.get("year", ""),
+                "month": row.get("month", ""),
+                "summary_type": row.get("type_original", ""),
+                "time": "",
+                "event_type_extracted": event_type,
+                "place_text": line,
+                "municipality": municipality,
+                "geography_group": geography(municipality),
+                "description": line,
+                "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
+                "occurrence_index": "",
+                "confidence": "medium",
+            })
+            break
 
     return out
 
