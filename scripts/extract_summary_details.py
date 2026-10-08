@@ -31,7 +31,8 @@ MUNICIPALITIES = {
 # Högprecisionsklassning av de typer som återkommer i Polisens länssammanfattningar.
 # Ordningen är viktig: mer specifika mönster ligger före bredare.
 TYPE_PATTERNS = [
-    (r"\b(viltolycka|renolycka|rådjursolycka|älgolycka|trafikolycka[^\n,.]{0,30}\bvilt|singelolycka|kollider\w* med (älg|ren|rådjur|hjort)|påkö\w* (älg|ren|rådjur|hjort))\b", "Trafikolycka,  vilt"),
+    (r"\b(viltolycka|renolycka|rådjursolycka|älgolycka|trafikolycka[^\n,.]{0,30}\bvilt|kollider\w* med (älg|ren|rådjur|hjort)|påkö\w* (älg|ren|rådjur|hjort))\b", "Trafikolycka,  vilt"),
+    (r"\bsingelolycka\b", "Trafikolycka"),
     (r"\b(drograttfylleri|rattfylleri)\b", "Rattfylleri"),
     (r"\b(grov olovlig körning|olovlig körning)\b", "Olovlig körning"),
     (r"\btrafikkontroll\b|\bhastighetskontroll\b|\bnykterhetskontroll\b", "Trafikkontroll"),
@@ -72,7 +73,7 @@ TYPE_PATTERNS = [
 
 TIME_LINE_RE = re.compile(
     r"(?im)(?:^|\n)\s*"
-    r"(?:(?P<prefix>[^\n,]{2,90})\s*,\s*)?"
+    r"(?:(?P<prefix>[^\n]{2,120}?)\s*[,;:-]?\s*)?"
     r"(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
     r"\s*[,;:-]?\s*(?P<rest>[^\n]{0,240})"
 )
