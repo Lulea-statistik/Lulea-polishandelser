@@ -392,14 +392,13 @@ function updateTypeShareChart(){
   const data=rows.filter(r=>g==='Alla'||r.geography_group===g);
   const grandTotal=sum(data);
   const allTypeTotals=groupSum(data,'type_original')
-    .filter(([name])=>name)
     .sort((a,b)=>b[1]-a[1]);
   const includedTypes=allTypeTotals
-    .filter(([,count])=>grandTotal>0 && count/grandTotal>=0.02)
+    .filter(([name,count])=>name && grandTotal>0 && count/grandTotal>=0.02)
     .map(([name])=>name);
   const minorTypes=new Set(
     allTypeTotals
-      .filter(([,count])=>grandTotal>0 && count/grandTotal<0.02)
+      .filter(([name,count])=>!name || (grandTotal>0 && count/grandTotal<0.02))
       .map(([name])=>name)
   );
 
