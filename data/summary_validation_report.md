@@ -2,9 +2,9 @@
 
 - Stickprov: **200** sammanfattningar.
 - Fullständigt manuellt kontrollerade rader: **173**.
-- Precision: **97.3 %** (95 % Wilson 95.0 %–98.5 %).
-- Täckningsgrad/recall: **84.8 %** (95 % Wilson 81.0 %–87.9 %).
-- Korrigeringsfaktor för extraherat antal: **1.148** (konservativt Wilson-baserat intervall 1.081–1.216; bootstrap på sammanfattningsnivå 1.083–1.226).
+- Precision: **95.4 %** (95 % Wilson 93.0 %–97.1 %).
+- Täckningsgrad/recall: **94.5 %** (95 % Wilson 91.9 %–96.3 %).
+- Korrigeringsfaktor för extraherat antal: **1.010** (konservativt Wilson-baserat intervall 0.965–1.056; bootstrap på sammanfattningsnivå 0.977–1.045).
 - Luleå: manuellt räknade underhändelser/parserträffar i kontrollerade rader: **103/103**, faktor **1.000** (bootstrap 95 % 0.954–1.050).
 - Luleå, extra sammanfattningshändelser efter deduplicering: observerat **2744**; indikativt korrigerat **2744** (bootstrap 95 % cirka **2618–2881**).
 
