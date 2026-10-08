@@ -2,7 +2,9 @@ year,month,geography_group,event_type_extracted,event_count
 2016,10,Luleå kommun,Rattfylleri,4
 2016,10,Luleå kommun,Fylleri/LOB,1
 2016,10,Luleå kommun,Narkotikabrott,1
+2016,10,Luleå kommun,"Trafikolycka,  vilt",1
 2016,10,"Norrbotten, okänd kommun",Rattfylleri,1
+2016,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2016,10,Övriga Norrbotten,Inbrott,6
 2016,10,Övriga Norrbotten,Fylleri/LOB,3
 2016,10,Övriga Norrbotten,Misshandel,2
@@ -10,45 +12,58 @@ year,month,geography_group,event_type_extracted,event_count
 2016,10,Övriga Norrbotten,Stöld,2
 2016,10,Övriga Norrbotten,Fjällräddning,1
 2016,10,Övriga Norrbotten,"Stöld,  ringa",1
+2016,10,Övriga Norrbotten,"Trafikolycka,  vilt",1
+2016,10,Övriga Norrbotten,Övrigt/oklassificerad,1
+2016,11,Luleå kommun,Rattfylleri,3
+2016,11,Luleå kommun,Övrigt/oklassificerad,3
 2016,11,Luleå kommun,Brand,1
 2016,11,Luleå kommun,Fylleri/LOB,1
 2016,11,Luleå kommun,Narkotikabrott,1
-2016,11,Luleå kommun,Rattfylleri,1
 2016,11,Luleå kommun,Skadegörelse,1
+2016,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,7
+2016,11,"Norrbotten, okänd kommun",Misshandel,1
 2016,11,"Norrbotten, okänd kommun",Olaga hot,1
-2016,11,"Norrbotten, okänd kommun",Rattfylleri,1
+2016,11,"Norrbotten, okänd kommun",Rån,1
+2016,11,Övriga Norrbotten,Övrigt/oklassificerad,6
 2016,11,Övriga Norrbotten,Trafikolycka,4
 2016,11,Övriga Norrbotten,Rattfylleri,3
+2016,11,Övriga Norrbotten,Trafikbrott,3
 2016,11,Övriga Norrbotten,Brand,1
 2016,11,Övriga Norrbotten,Fylleri/LOB,1
 2016,11,Övriga Norrbotten,Misshandel,1
 2016,11,Övriga Norrbotten,Olaga hot,1
 2016,11,Övriga Norrbotten,Olovlig körning,1
 2016,11,Övriga Norrbotten,Skadegörelse,1
-2016,11,Övriga Norrbotten,Trafikbrott,1
 2016,11,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2016,12,Luleå kommun,Fylleri/LOB,6
+2016,12,Luleå kommun,Misshandel,1
 2016,12,Luleå kommun,Olaga hot,1
 2016,12,Luleå kommun,Rattfylleri,1
 2016,12,Luleå kommun,Trafikbrott,1
+2016,12,Luleå kommun,Övrigt/oklassificerad,1
+2016,12,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
+2016,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2016,12,"Norrbotten, okänd kommun",Misshandel,1
-2016,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
-2016,12,Övriga Norrbotten,Fylleri/LOB,3
+2016,12,Övriga Norrbotten,Fylleri/LOB,4
 2016,12,Övriga Norrbotten,Olovlig körning,2
 2016,12,Övriga Norrbotten,Rattfylleri,2
 2016,12,Övriga Norrbotten,Misshandel,1
 2016,12,Övriga Norrbotten,Olaga hot,1
 2016,12,Övriga Norrbotten,Trafikolycka,1
 2016,12,Övriga Norrbotten,"Trafikolycka,  vilt",1
+2016,12,Övriga Norrbotten,Övrigt/oklassificerad,1
 2017,1,Luleå kommun,Brand,1
 2017,1,Luleå kommun,Rattfylleri,1
 2017,1,Luleå kommun,Rån,1
+2017,1,Luleå kommun,Stöld,1
 2017,1,Luleå kommun,Trafikolycka,1
 2017,1,"Norrbotten, okänd kommun",Brand,4
+2017,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2017,1,"Norrbotten, okänd kommun",Skadegörelse,1
 2017,1,Övriga Norrbotten,Brand,1
 2017,1,Övriga Norrbotten,Misshandel,1
 2017,1,Övriga Norrbotten,Trafikolycka,1
+2017,1,Övriga Norrbotten,Övrigt/oklassificerad,1
 2017,2,Luleå kommun,Fylleri/LOB,2
 2017,2,Luleå kommun,Rattfylleri,2
 2017,2,Luleå kommun,Brand,1
@@ -58,14 +73,17 @@ year,month,geography_group,event_type_extracted,event_count
 2017,2,Luleå kommun,Skadegörelse,1
 2017,2,"Norrbotten, okänd kommun",Narkotikabrott,1
 2017,2,"Norrbotten, okänd kommun",Skadegörelse,1
+2017,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2017,2,Övriga Norrbotten,Narkotikabrott,5
 2017,2,Övriga Norrbotten,Misshandel,3
 2017,2,Övriga Norrbotten,Rattfylleri,3
+2017,2,Övriga Norrbotten,Övrigt/oklassificerad,3
 2017,2,Övriga Norrbotten,Skadegörelse,2
 2017,2,Övriga Norrbotten,Ofredande/förargelse,1
 2017,2,Övriga Norrbotten,Trafikkontroll,1
 2017,2,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2017,3,Luleå kommun,Misshandel,4
+2017,3,Luleå kommun,Övrigt/oklassificerad,4
 2017,3,Luleå kommun,Fylleri/LOB,2
 2017,3,Luleå kommun,Rattfylleri,2
 2017,3,Luleå kommun,Trafikbrott,2
@@ -74,7 +92,12 @@ year,month,geography_group,event_type_extracted,event_count
 2017,3,Luleå kommun,Skadegörelse,1
 2017,3,Luleå kommun,Stöld,1
 2017,3,Luleå kommun,"Trafikolycka,  vilt",1
+2017,3,"Norrbotten, okänd kommun",Brand,1
+2017,3,"Norrbotten, okänd kommun",Misshandel,1
+2017,3,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2017,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2017,3,Övriga Norrbotten,"Trafikolycka,  vilt",5
+2017,3,Övriga Norrbotten,Övrigt/oklassificerad,5
 2017,3,Övriga Norrbotten,Brand,4
 2017,3,Övriga Norrbotten,Misshandel,4
 2017,3,Övriga Norrbotten,Rattfylleri,4
@@ -86,10 +109,11 @@ year,month,geography_group,event_type_extracted,event_count
 2017,3,Övriga Norrbotten,Stöld,2
 2017,3,Övriga Norrbotten,Trafikkontroll,2
 2017,3,Övriga Norrbotten,Djur,1
+2017,3,Övriga Norrbotten,Inbrott,1
 2017,3,Övriga Norrbotten,Ofredande/förargelse,1
 2017,3,Övriga Norrbotten,"Stöld,  ringa",1
-2017,3,Övriga Norrbotten,Stöld/inbrott,1
 2017,4,Luleå kommun,Rattfylleri,4
+2017,4,Luleå kommun,Övrigt/oklassificerad,4
 2017,4,Luleå kommun,Fylleri/LOB,3
 2017,4,Luleå kommun,Narkotikabrott,3
 2017,4,Luleå kommun,Skadegörelse,3
@@ -100,28 +124,32 @@ year,month,geography_group,event_type_extracted,event_count
 2017,4,Luleå kommun,Trafikhinder,1
 2017,4,Luleå kommun,Trafikkontroll,1
 2017,4,Luleå kommun,"Trafikolycka,  vilt",1
+2017,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2017,4,"Norrbotten, okänd kommun",Skadegörelse,2
+2017,4,"Norrbotten, okänd kommun",Trafikkontroll,2
 2017,4,"Norrbotten, okänd kommun",Brand,1
 2017,4,"Norrbotten, okänd kommun",Fjällräddning,1
 2017,4,"Norrbotten, okänd kommun",Misshandel,1
-2017,4,Övriga Norrbotten,Misshandel,14
+2017,4,Övriga Norrbotten,Misshandel,15
 2017,4,Övriga Norrbotten,Rattfylleri,12
-2017,4,Övriga Norrbotten,Fylleri/LOB,8
-2017,4,Övriga Norrbotten,Brand,5
+2017,4,Övriga Norrbotten,Fylleri/LOB,7
+2017,4,Övriga Norrbotten,Brand,6
+2017,4,Övriga Norrbotten,Inbrott,5
 2017,4,Övriga Norrbotten,Skadegörelse,5
-2017,4,Övriga Norrbotten,Inbrott,4
+2017,4,Övriga Norrbotten,Övrigt/oklassificerad,4
 2017,4,Övriga Norrbotten,Trafikkontroll,3
 2017,4,Övriga Norrbotten,Trafikolycka,3
-2017,4,Övriga Norrbotten,Fjällräddning,2
 2017,4,Övriga Norrbotten,Bedrägeri,1
 2017,4,Övriga Norrbotten,Djur,1
+2017,4,Övriga Norrbotten,Fjällräddning,1
+2017,4,Övriga Norrbotten,Försvunnen person,1
 2017,4,Övriga Norrbotten,Narkotikabrott,1
 2017,4,Övriga Norrbotten,Olaga hot,1
 2017,4,Övriga Norrbotten,Olovlig körning,1
 2017,4,Övriga Norrbotten,Räddningsinsats,1
 2017,4,Övriga Norrbotten,Stöld,1
 2017,4,Övriga Norrbotten,"Stöld,  ringa",1
-2017,4,Övriga Norrbotten,Stöld/inbrott,1
+2017,5,Luleå kommun,Övrigt/oklassificerad,4
 2017,5,Luleå kommun,Ofredande/förargelse,2
 2017,5,Luleå kommun,Fylleri/LOB,1
 2017,5,Luleå kommun,Inbrott,1
@@ -130,7 +158,10 @@ year,month,geography_group,event_type_extracted,event_count
 2017,5,Luleå kommun,Rattfylleri,1
 2017,5,Luleå kommun,Trafikolycka,1
 2017,5,Luleå kommun,"Trafikolycka,  vilt",1
+2017,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2017,5,"Norrbotten, okänd kommun",Rattfylleri,1
+2017,5,"Norrbotten, okänd kommun",Rån,1
+2017,5,Övriga Norrbotten,Övrigt/oklassificerad,9
 2017,5,Övriga Norrbotten,Misshandel,5
 2017,5,Övriga Norrbotten,Rattfylleri,4
 2017,5,Övriga Norrbotten,Fylleri/LOB,2
@@ -144,30 +175,36 @@ year,month,geography_group,event_type_extracted,event_count
 2017,5,Övriga Norrbotten,Trafikbrott,1
 2017,5,Övriga Norrbotten,Trafikolycka,1
 2017,5,Övriga Norrbotten,"Trafikolycka,  vilt",1
-2017,6,Luleå kommun,Misshandel,3
+2017,6,Luleå kommun,Övrigt/oklassificerad,6
+2017,6,Luleå kommun,Misshandel,4
 2017,6,Luleå kommun,Fylleri/LOB,2
 2017,6,Luleå kommun,Rattfylleri,2
+2017,6,Luleå kommun,Stöld,2
 2017,6,Luleå kommun,Trafikbrott,2
 2017,6,Luleå kommun,Trafikolycka,2
 2017,6,Luleå kommun,Bedrägeri,1
 2017,6,Luleå kommun,Brand,1
 2017,6,Luleå kommun,Skadegörelse,1
-2017,6,Luleå kommun,Stöld,1
+2017,6,Luleå kommun,Trafikkontroll,1
+2017,6,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2017,6,"Norrbotten, okänd kommun",Rattfylleri,3
 2017,6,"Norrbotten, okänd kommun",Fjällräddning,2
+2017,6,"Norrbotten, okänd kommun",Stöld,2
 2017,6,"Norrbotten, okänd kommun",Trafikbrott,2
 2017,6,"Norrbotten, okänd kommun",Försvunnen person,1
-2017,6,"Norrbotten, okänd kommun",Stöld,1
-2017,6,Övriga Norrbotten,Misshandel,8
+2017,6,"Norrbotten, okänd kommun",Misshandel,1
+2017,6,"Norrbotten, okänd kommun",Rån,1
+2017,6,Övriga Norrbotten,Övrigt/oklassificerad,11
+2017,6,Övriga Norrbotten,Misshandel,9
 2017,6,Övriga Norrbotten,Trafikbrott,7
 2017,6,Övriga Norrbotten,Olaga hot,4
 2017,6,Övriga Norrbotten,Skadegörelse,4
+2017,6,Övriga Norrbotten,Stöld,4
+2017,6,Övriga Norrbotten,"Stöld,  ringa",4
 2017,6,Övriga Norrbotten,Rattfylleri,3
-2017,6,Övriga Norrbotten,Stöld,3
 2017,6,Övriga Norrbotten,Trafikolycka,3
+2017,6,Övriga Norrbotten,"Trafikolycka,  vilt",3
 2017,6,Övriga Norrbotten,Fylleri/LOB,2
-2017,6,Övriga Norrbotten,"Stöld,  ringa",2
-2017,6,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2017,6,Övriga Norrbotten,Brand,1
 2017,6,Övriga Norrbotten,Fjällräddning,1
 2017,6,Övriga Norrbotten,Inbrott,1
@@ -178,47 +215,56 @@ year,month,geography_group,event_type_extracted,event_count
 2017,7,Luleå kommun,Narkotikabrott,3
 2017,7,Luleå kommun,Stöld,2
 2017,7,Luleå kommun,Trafikolycka,2
+2017,7,Luleå kommun,Övrigt/oklassificerad,2
 2017,7,Luleå kommun,Inbrott,1
 2017,7,Luleå kommun,Misshandel,1
 2017,7,Luleå kommun,Rattfylleri,1
 2017,7,Luleå kommun,"Stöld,  ringa",1
 2017,7,Luleå kommun,Våld/hot mot tjänsteman,1
+2017,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,7
 2017,7,"Norrbotten, okänd kommun",Fjällräddning,3
 2017,7,"Norrbotten, okänd kommun",Misshandel,3
 2017,7,"Norrbotten, okänd kommun",Brand,2
+2017,7,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2017,7,"Norrbotten, okänd kommun",Olaga hot,1
+2017,7,Övriga Norrbotten,Övrigt/oklassificerad,11
 2017,7,Övriga Norrbotten,Rattfylleri,7
 2017,7,Övriga Norrbotten,Trafikolycka,5
 2017,7,Övriga Norrbotten,Fylleri/LOB,4
+2017,7,Övriga Norrbotten,Misshandel,4
+2017,7,Övriga Norrbotten,Inbrott,3
 2017,7,Övriga Norrbotten,Narkotikabrott,3
 2017,7,Övriga Norrbotten,Brand,2
-2017,7,Övriga Norrbotten,Inbrott,2
-2017,7,Övriga Norrbotten,Misshandel,2
+2017,7,Övriga Norrbotten,Stöld,2
 2017,7,Övriga Norrbotten,Trafikbrott,2
 2017,7,Övriga Norrbotten,Fjällräddning,1
 2017,7,Övriga Norrbotten,Olaga hot,1
 2017,7,Övriga Norrbotten,Olovlig körning,1
-2017,7,Övriga Norrbotten,Stöld,1
-2017,7,Övriga Norrbotten,Stöld/inbrott,1
+2017,7,Övriga Norrbotten,Trafikkontroll,1
+2017,7,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2017,8,Luleå kommun,Rattfylleri,3
+2017,8,Luleå kommun,Övrigt/oklassificerad,3
+2017,8,Luleå kommun,Stöld,2
 2017,8,Luleå kommun,Fylleri/LOB,1
 2017,8,Luleå kommun,Inbrott,1
 2017,8,Luleå kommun,Kontroll person/fordon,1
 2017,8,Luleå kommun,Misshandel,1
 2017,8,Luleå kommun,Skadegörelse,1
+2017,8,Luleå kommun,Trafikolycka,1
+2017,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,10
 2017,8,"Norrbotten, okänd kommun",Inbrott,1
 2017,8,"Norrbotten, okänd kommun",Rattfylleri,1
+2017,8,Övriga Norrbotten,Övrigt/oklassificerad,8
 2017,8,Övriga Norrbotten,Fylleri/LOB,4
+2017,8,Övriga Norrbotten,Inbrott,3
 2017,8,Övriga Norrbotten,Misshandel,3
 2017,8,Övriga Norrbotten,Rattfylleri,3
 2017,8,Övriga Norrbotten,Olovlig körning,2
-2017,8,Övriga Norrbotten,Stöld/inbrott,2
 2017,8,Övriga Norrbotten,Trafikolycka,2
 2017,8,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2017,8,Övriga Norrbotten,Arbetsplatsolycka,1
 2017,8,Övriga Norrbotten,Brand,1
 2017,8,Övriga Norrbotten,Fjällräddning,1
-2017,8,Övriga Norrbotten,Inbrott,1
 2017,9,Luleå kommun,Rattfylleri,5
 2017,9,Luleå kommun,Fylleri/LOB,4
 2017,9,Luleå kommun,Misshandel,3
@@ -229,47 +275,53 @@ year,month,geography_group,event_type_extracted,event_count
 2017,9,Luleå kommun,Narkotikabrott,1
 2017,9,Luleå kommun,Olovlig körning,1
 2017,9,Luleå kommun,Stöld,1
+2017,9,Luleå kommun,Övrigt/oklassificerad,1
+2017,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2017,9,"Norrbotten, okänd kommun",Trafikolycka,2
-2017,9,Övriga Norrbotten,Misshandel,5
+2017,9,Övriga Norrbotten,Övrigt/oklassificerad,8
+2017,9,Övriga Norrbotten,Misshandel,6
 2017,9,Övriga Norrbotten,Fylleri/LOB,2
 2017,9,Övriga Norrbotten,Skadegörelse,2
+2017,9,Övriga Norrbotten,Stöld,2
 2017,9,Övriga Norrbotten,Trafikolycka,2
 2017,9,Övriga Norrbotten,Brand,1
 2017,9,Övriga Norrbotten,Försvunnen person,1
 2017,9,Övriga Norrbotten,Narkotikabrott,1
 2017,9,Övriga Norrbotten,Olovlig körning,1
 2017,9,Övriga Norrbotten,Rattfylleri,1
-2017,9,Övriga Norrbotten,Stöld,1
 2017,10,Luleå kommun,Rattfylleri,6
 2017,10,Luleå kommun,Narkotikabrott,2
 2017,10,Luleå kommun,Skadegörelse,2
+2017,10,Luleå kommun,Stöld,2
+2017,10,Luleå kommun,Övrigt/oklassificerad,2
 2017,10,Luleå kommun,Brand,1
 2017,10,Luleå kommun,Fylleri/LOB,1
 2017,10,Luleå kommun,Misshandel,1
 2017,10,Luleå kommun,Ofredande/förargelse,1
 2017,10,Luleå kommun,Olovlig körning,1
-2017,10,Luleå kommun,Stöld,1
 2017,10,Luleå kommun,"Stöld,  ringa",1
 2017,10,Luleå kommun,Trafikkontroll,1
-2017,10,Luleå kommun,Trafikolycka,1
+2017,10,Luleå kommun,"Trafikolycka,  vilt",1
+2017,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2017,10,"Norrbotten, okänd kommun",Rattfylleri,1
+2017,10,Övriga Norrbotten,Övrigt/oklassificerad,9
 2017,10,Övriga Norrbotten,Fylleri/LOB,5
+2017,10,Övriga Norrbotten,Misshandel,5
 2017,10,Övriga Norrbotten,Rattfylleri,5
-2017,10,Övriga Norrbotten,Misshandel,4
 2017,10,Övriga Norrbotten,Narkotikabrott,4
 2017,10,Övriga Norrbotten,Olovlig körning,4
 2017,10,Övriga Norrbotten,Trafikkontroll,4
-2017,10,Övriga Norrbotten,Trafikolycka,4
 2017,10,Övriga Norrbotten,"Stöld,  ringa",3
+2017,10,Övriga Norrbotten,Trafikolycka,3
+2017,10,Övriga Norrbotten,Inbrott,2
 2017,10,Övriga Norrbotten,Brand,1
 2017,10,Övriga Norrbotten,Fjällräddning,1
-2017,10,Övriga Norrbotten,Inbrott,1
 2017,10,Övriga Norrbotten,Ofredande/förargelse,1
 2017,10,Övriga Norrbotten,Olaga hot,1
 2017,10,Övriga Norrbotten,Rån,1
 2017,10,Övriga Norrbotten,Stöld,1
-2017,10,Övriga Norrbotten,Stöld/inbrott,1
 2017,10,Övriga Norrbotten,Trafikbrott,1
+2017,10,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2017,11,Luleå kommun,Rattfylleri,5
 2017,11,Luleå kommun,Misshandel,4
 2017,11,Luleå kommun,Fylleri/LOB,3
@@ -277,26 +329,31 @@ year,month,geography_group,event_type_extracted,event_count
 2017,11,Luleå kommun,Narkotikabrott,2
 2017,11,Luleå kommun,Skadegörelse,2
 2017,11,Luleå kommun,"Stöld,  ringa",2
+2017,11,Luleå kommun,Trafikolycka,2
 2017,11,Luleå kommun,Inbrott,1
 2017,11,Luleå kommun,Olovlig körning,1
-2017,11,Luleå kommun,Trafikolycka,1
+2017,11,Luleå kommun,Övrigt/oklassificerad,1
+2017,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,6
 2017,11,"Norrbotten, okänd kommun",Olaga hot,1
 2017,11,"Norrbotten, okänd kommun",Skadegörelse,1
+2017,11,Övriga Norrbotten,Trafikolycka,9
 2017,11,Övriga Norrbotten,"Stöld,  ringa",8
-2017,11,Övriga Norrbotten,Trafikolycka,8
 2017,11,Övriga Norrbotten,Rattfylleri,7
 2017,11,Övriga Norrbotten,Brand,3
 2017,11,Övriga Norrbotten,Misshandel,3
 2017,11,Övriga Norrbotten,Narkotikabrott,3
 2017,11,Övriga Norrbotten,Stöld,3
 2017,11,Övriga Norrbotten,Våld/hot mot tjänsteman,3
+2017,11,Övriga Norrbotten,Övrigt/oklassificerad,3
 2017,11,Övriga Norrbotten,Arbetsplatsolycka,2
 2017,11,Övriga Norrbotten,Olaga hot,2
 2017,11,Övriga Norrbotten,Olovlig körning,2
 2017,11,Övriga Norrbotten,Djur,1
 2017,11,Övriga Norrbotten,Fylleri/LOB,1
+2017,11,Övriga Norrbotten,Försvunnen person,1
 2017,11,Övriga Norrbotten,Skadegörelse,1
 2017,11,Övriga Norrbotten,Trafikbrott,1
+2017,11,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2017,12,Luleå kommun,Misshandel,6
 2017,12,Luleå kommun,Rattfylleri,5
 2017,12,Luleå kommun,"Stöld,  ringa",4
@@ -305,14 +362,18 @@ year,month,geography_group,event_type_extracted,event_count
 2017,12,Luleå kommun,Skadegörelse,1
 2017,12,Luleå kommun,Trafikbrott,1
 2017,12,Luleå kommun,Trafikolycka,1
+2017,12,Luleå kommun,"Trafikolycka,  vilt",1
 2017,12,Luleå kommun,Våld/hot mot tjänsteman,1
+2017,12,"Norrbotten, okänd kommun",Övrigt/oklassificerad,15
 2017,12,"Norrbotten, okänd kommun",Fylleri/LOB,2
 2017,12,"Norrbotten, okänd kommun",Fjällräddning,1
 2017,12,"Norrbotten, okänd kommun",Narkotikabrott,1
 2017,12,"Norrbotten, okänd kommun",Olovlig körning,1
 2017,12,"Norrbotten, okänd kommun",Rattfylleri,1
+2017,12,"Norrbotten, okänd kommun",Rån,1
 2017,12,"Norrbotten, okänd kommun",Trafikolycka,1
 2017,12,Övriga Norrbotten,Misshandel,14
+2017,12,Övriga Norrbotten,Övrigt/oklassificerad,12
 2017,12,Övriga Norrbotten,Rattfylleri,10
 2017,12,Övriga Norrbotten,Narkotikabrott,3
 2017,12,Övriga Norrbotten,Olovlig körning,3
@@ -320,13 +381,14 @@ year,month,geography_group,event_type_extracted,event_count
 2017,12,Övriga Norrbotten,Fylleri/LOB,2
 2017,12,Övriga Norrbotten,Ofredande/förargelse,2
 2017,12,Övriga Norrbotten,Olaga hot,2
+2017,12,Övriga Norrbotten,Stöld,2
 2017,12,Övriga Norrbotten,Trafikolycka,2
 2017,12,Övriga Norrbotten,Brand,1
 2017,12,Övriga Norrbotten,Inbrott,1
 2017,12,Övriga Norrbotten,Knivlagen,1
 2017,12,Övriga Norrbotten,Rån,1
-2017,12,Övriga Norrbotten,Stöld,1
 2017,12,Övriga Norrbotten,"Stöld,  ringa",1
+2017,12,Övriga Norrbotten,Trafikbrott,1
 2017,12,Övriga Norrbotten,Trafikkontroll,1
 2017,12,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2018,1,Luleå kommun,Rattfylleri,7
@@ -334,18 +396,25 @@ year,month,geography_group,event_type_extracted,event_count
 2018,1,Luleå kommun,Misshandel,4
 2018,1,Luleå kommun,Olovlig körning,2
 2018,1,Luleå kommun,Brand,1
-2018,1,Luleå kommun,Trafikolycka,1
+2018,1,Luleå kommun,Ofredande/förargelse,1
+2018,1,Luleå kommun,Trafikbrott,1
 2018,1,Luleå kommun,Våld/hot mot tjänsteman,1
+2018,1,Luleå kommun,Övrigt/oklassificerad,1
+2018,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
+2018,1,"Norrbotten, okänd kommun",Trafikolycka,2
 2018,1,"Norrbotten, okänd kommun",Arbetsplatsolycka,1
 2018,1,"Norrbotten, okänd kommun",Brand,1
-2018,1,"Norrbotten, okänd kommun",Trafikolycka,1
+2018,1,"Norrbotten, okänd kommun",Rån,1
+2018,1,Övriga Norrbotten,Övrigt/oklassificerad,12
 2018,1,Övriga Norrbotten,Rattfylleri,10
 2018,1,Övriga Norrbotten,Misshandel,6
 2018,1,Övriga Norrbotten,Narkotikabrott,6
+2018,1,Övriga Norrbotten,Trafikolycka,4
 2018,1,Övriga Norrbotten,Skadegörelse,3
-2018,1,Övriga Norrbotten,Trafikolycka,3
 2018,1,Övriga Norrbotten,Fylleri/LOB,2
 2018,1,Övriga Norrbotten,Knivlagen,2
+2018,1,Övriga Norrbotten,Trafikkontroll,2
+2018,1,Övriga Norrbotten,Försvunnen person,1
 2018,1,Övriga Norrbotten,Inbrott,1
 2018,1,Övriga Norrbotten,Ofredande/förargelse,1
 2018,1,Övriga Norrbotten,Olovlig körning,1
@@ -360,6 +429,8 @@ year,month,geography_group,event_type_extracted,event_count
 2018,2,Luleå kommun,Rattfylleri,1
 2018,2,Luleå kommun,Skadegörelse,1
 2018,2,Luleå kommun,Trafikolycka,1
+2018,2,Luleå kommun,Övrigt/oklassificerad,1
+2018,2,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2018,2,"Norrbotten, okänd kommun",Rattfylleri,1
 2018,2,Övriga Norrbotten,Misshandel,9
 2018,2,Övriga Norrbotten,Rattfylleri,9
@@ -374,26 +445,30 @@ year,month,geography_group,event_type_extracted,event_count
 2018,2,Övriga Norrbotten,Skadegörelse,2
 2018,2,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2018,2,Övriga Norrbotten,Våld/hot mot tjänsteman,2
+2018,2,Övriga Norrbotten,Övrigt/oklassificerad,2
 2018,2,Övriga Norrbotten,Fylleri/LOB,1
 2018,2,Övriga Norrbotten,Olovlig körning,1
 2018,2,Övriga Norrbotten,Trafikbrott,1
 2018,3,Luleå kommun,Rattfylleri,6
+2018,3,Luleå kommun,Misshandel,3
 2018,3,Luleå kommun,Brand,2
 2018,3,Luleå kommun,Fylleri/LOB,2
-2018,3,Luleå kommun,Misshandel,2
-2018,3,Luleå kommun,Olaga hot,2
 2018,3,Luleå kommun,Narkotikabrott,1
+2018,3,Luleå kommun,Olaga hot,1
 2018,3,Luleå kommun,Rån,1
 2018,3,Luleå kommun,Skadegörelse,1
 2018,3,Luleå kommun,"Stöld,  ringa",1
 2018,3,Luleå kommun,Trafikolycka,1
+2018,3,Luleå kommun,"Trafikolycka,  vilt",1
+2018,3,Luleå kommun,Övrigt/oklassificerad,1
+2018,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,10
 2018,3,"Norrbotten, okänd kommun",Brand,1
 2018,3,"Norrbotten, okänd kommun",Försvunnen person,1
 2018,3,"Norrbotten, okänd kommun",Misshandel,1
 2018,3,"Norrbotten, okänd kommun",Olovlig körning,1
 2018,3,"Norrbotten, okänd kommun",Rattfylleri,1
 2018,3,"Norrbotten, okänd kommun",Trafikolycka,1
-2018,3,Övriga Norrbotten,Brand,7
+2018,3,Övriga Norrbotten,Brand,6
 2018,3,Övriga Norrbotten,Rattfylleri,5
 2018,3,Övriga Norrbotten,Fylleri/LOB,3
 2018,3,Övriga Norrbotten,Misshandel,3
@@ -409,49 +484,56 @@ year,month,geography_group,event_type_extracted,event_count
 2018,3,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2018,3,Övriga Norrbotten,Trafikbrott,1
 2018,3,Övriga Norrbotten,"Trafikolycka,  vilt",1
+2018,3,Övriga Norrbotten,Övrigt/oklassificerad,1
 2018,4,Luleå kommun,Rattfylleri,6
 2018,4,Luleå kommun,Fylleri/LOB,3
 2018,4,Luleå kommun,Misshandel,3
 2018,4,Luleå kommun,Brand,2
 2018,4,Luleå kommun,Olovlig körning,2
 2018,4,Luleå kommun,Skadegörelse,2
+2018,4,Luleå kommun,Övrigt/oklassificerad,2
 2018,4,Luleå kommun,Arbetsplatsolycka,1
 2018,4,Luleå kommun,Ofredande/förargelse,1
 2018,4,Luleå kommun,"Stöld,  ringa",1
+2018,4,Luleå kommun,Trafikbrott,1
+2018,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
 2018,4,"Norrbotten, okänd kommun",Rattfylleri,2
 2018,4,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2018,4,"Norrbotten, okänd kommun",Misshandel,1
+2018,4,"Norrbotten, okänd kommun",Stöld,1
 2018,4,Övriga Norrbotten,Rattfylleri,6
 2018,4,Övriga Norrbotten,Skadegörelse,6
 2018,4,Övriga Norrbotten,Fylleri/LOB,4
 2018,4,Övriga Norrbotten,Olovlig körning,4
 2018,4,Övriga Norrbotten,Misshandel,2
+2018,4,Övriga Norrbotten,Stöld,2
+2018,4,Övriga Norrbotten,Övrigt/oklassificerad,2
 2018,4,Övriga Norrbotten,Arbetsplatsolycka,1
 2018,4,Övriga Norrbotten,Inbrott,1
 2018,4,Övriga Norrbotten,Narkotikabrott,1
 2018,4,Övriga Norrbotten,Olaga hot,1
-2018,4,Övriga Norrbotten,Stöld,1
 2018,4,Övriga Norrbotten,"Stöld,  ringa",1
 2018,4,Övriga Norrbotten,Trafikbrott,1
 2018,4,Övriga Norrbotten,Trafikkontroll,1
 2018,4,Övriga Norrbotten,Trafikolycka,1
 2018,4,Övriga Norrbotten,Våld/hot mot tjänsteman,1
-2018,5,Luleå kommun,Misshandel,8
+2018,5,Luleå kommun,Misshandel,10
 2018,5,Luleå kommun,Rattfylleri,8
 2018,5,Luleå kommun,Fylleri/LOB,4
 2018,5,Luleå kommun,Skadegörelse,4
+2018,5,Luleå kommun,Inbrott,2
 2018,5,Luleå kommun,Brand,1
-2018,5,Luleå kommun,Inbrott,1
 2018,5,Luleå kommun,Knivlagen,1
-2018,5,Luleå kommun,Stöld/inbrott,1
 2018,5,Luleå kommun,Trafikbrott,1
 2018,5,Luleå kommun,Trafikkontroll,1
 2018,5,Luleå kommun,Trafikolycka,1
-2018,5,Övriga Norrbotten,Misshandel,13
+2018,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
+2018,5,Övriga Norrbotten,Misshandel,14
 2018,5,Övriga Norrbotten,Rattfylleri,9
 2018,5,Övriga Norrbotten,Fylleri/LOB,5
 2018,5,Övriga Norrbotten,Narkotikabrott,5
 2018,5,Övriga Norrbotten,Skadegörelse,4
+2018,5,Övriga Norrbotten,Övrigt/oklassificerad,4
 2018,5,Övriga Norrbotten,Inbrott,3
 2018,5,Övriga Norrbotten,Brand,2
 2018,5,Övriga Norrbotten,Ofredande/förargelse,2
@@ -460,23 +542,26 @@ year,month,geography_group,event_type_extracted,event_count
 2018,5,Övriga Norrbotten,"Stöld,  ringa",1
 2018,5,Övriga Norrbotten,Trafikbrott,1
 2018,5,Övriga Norrbotten,Trafikolycka,1
+2018,5,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2018,6,Luleå kommun,Rattfylleri,7
+2018,6,Luleå kommun,Brand,3
 2018,6,Luleå kommun,Fylleri/LOB,3
-2018,6,Luleå kommun,Brand,2
+2018,6,Luleå kommun,Inbrott,2
 2018,6,Luleå kommun,Narkotikabrott,2
+2018,6,Luleå kommun,Stöld,2
 2018,6,Luleå kommun,Trafikbrott,2
-2018,6,Luleå kommun,Inbrott,1
+2018,6,Luleå kommun,Övrigt/oklassificerad,2
 2018,6,Luleå kommun,Misshandel,1
 2018,6,Luleå kommun,Olaga hot,1
 2018,6,Luleå kommun,Olaga intrång/hemfridsbrott,1
 2018,6,Luleå kommun,Olovlig körning,1
 2018,6,Luleå kommun,Skadegörelse,1
-2018,6,Luleå kommun,Stöld,1
-2018,6,Luleå kommun,Stöld/inbrott,1
 2018,6,Luleå kommun,"Trafikolycka,  vilt",1
+2018,6,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
 2018,6,"Norrbotten, okänd kommun",Misshandel,2
 2018,6,"Norrbotten, okänd kommun",Räddningsinsats,1
 2018,6,Övriga Norrbotten,Rattfylleri,10
+2018,6,Övriga Norrbotten,Övrigt/oklassificerad,6
 2018,6,Övriga Norrbotten,Misshandel,5
 2018,6,Övriga Norrbotten,Trafikkontroll,4
 2018,6,Övriga Norrbotten,Fylleri/LOB,3
@@ -486,103 +571,115 @@ year,month,geography_group,event_type_extracted,event_count
 2018,6,Övriga Norrbotten,Olovlig körning,2
 2018,6,Övriga Norrbotten,Skadegörelse,2
 2018,6,Övriga Norrbotten,Trafikbrott,2
+2018,6,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2018,6,Övriga Norrbotten,Försvunnen person,1
 2018,6,Övriga Norrbotten,Inbrott,1
 2018,6,Övriga Norrbotten,Ofredande/förargelse,1
 2018,6,Övriga Norrbotten,Skottlossning/explosion,1
-2018,6,Övriga Norrbotten,"Trafikolycka,  vilt",1
+2018,6,Övriga Norrbotten,Stöld,1
+2018,7,Luleå kommun,Misshandel,6
 2018,7,Luleå kommun,Rattfylleri,6
-2018,7,Luleå kommun,Trafikolycka,5
 2018,7,Luleå kommun,Fylleri/LOB,4
-2018,7,Luleå kommun,Misshandel,4
+2018,7,Luleå kommun,"Trafikolycka,  vilt",4
 2018,7,Luleå kommun,Narkotikabrott,3
+2018,7,Luleå kommun,Trafikolycka,3
+2018,7,Luleå kommun,Övrigt/oklassificerad,3
 2018,7,Luleå kommun,Inbrott,2
 2018,7,Luleå kommun,Skadegörelse,2
 2018,7,Luleå kommun,Stöld,2
 2018,7,Luleå kommun,Brand,1
 2018,7,Luleå kommun,Försvunnen person,1
 2018,7,Luleå kommun,Olaga hot,1
-2018,7,Luleå kommun,"Trafikolycka,  vilt",1
+2018,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2018,7,"Norrbotten, okänd kommun",Misshandel,1
 2018,7,"Norrbotten, okänd kommun",Narkotikabrott,1
 2018,7,"Norrbotten, okänd kommun",Trafikolycka,1
 2018,7,Övriga Norrbotten,Rattfylleri,9
-2018,7,Övriga Norrbotten,"Trafikolycka,  vilt",6
+2018,7,Övriga Norrbotten,"Trafikolycka,  vilt",7
+2018,7,Övriga Norrbotten,Brand,6
 2018,7,Övriga Norrbotten,Fjällräddning,5
 2018,7,Övriga Norrbotten,Fylleri/LOB,5
 2018,7,Övriga Norrbotten,Misshandel,5
-2018,7,Övriga Norrbotten,Brand,4
 2018,7,Övriga Norrbotten,Narkotikabrott,4
 2018,7,Övriga Norrbotten,Skadegörelse,4
+2018,7,Övriga Norrbotten,Stöld,4
 2018,7,Övriga Norrbotten,Olovlig körning,3
-2018,7,Övriga Norrbotten,Stöld,3
-2018,7,Övriga Norrbotten,Trafikolycka,3
+2018,7,Övriga Norrbotten,Inbrott,2
 2018,7,Övriga Norrbotten,Olaga hot,2
 2018,7,Övriga Norrbotten,"Stöld,  ringa",2
 2018,7,Övriga Norrbotten,Trafikbrott,2
-2018,7,Övriga Norrbotten,Inbrott,1
-2018,7,Övriga Norrbotten,Stöld/inbrott,1
+2018,7,Övriga Norrbotten,Trafikolycka,2
+2018,7,Övriga Norrbotten,Övrigt/oklassificerad,2
+2018,7,Övriga Norrbotten,Rån,1
+2018,7,Övriga Norrbotten,Trafikkontroll,1
 2018,7,Övriga Norrbotten,Våld/hot mot tjänsteman,1
-2018,8,Luleå kommun,Misshandel,17
+2018,8,Luleå kommun,Misshandel,18
 2018,8,Luleå kommun,Fylleri/LOB,6
+2018,8,Luleå kommun,Inbrott,4
 2018,8,Luleå kommun,Rattfylleri,4
-2018,8,Luleå kommun,Stöld/inbrott,4
-2018,8,Luleå kommun,Trafikolycka,3
 2018,8,Luleå kommun,Narkotikabrott,2
 2018,8,Luleå kommun,Ofredande/förargelse,2
 2018,8,Luleå kommun,Trafikbrott,2
+2018,8,Luleå kommun,Trafikolycka,2
+2018,8,Luleå kommun,"Trafikolycka,  vilt",2
 2018,8,Luleå kommun,Brand,1
 2018,8,Luleå kommun,Räddningsinsats,1
 2018,8,Luleå kommun,Skadegörelse,1
-2018,8,Luleå kommun,"Trafikolycka,  vilt",1
+2018,8,Luleå kommun,Stöld,1
+2018,8,Luleå kommun,Övrigt/oklassificerad,1
+2018,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,6
 2018,8,"Norrbotten, okänd kommun",Fjällräddning,2
 2018,8,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2018,8,"Norrbotten, okänd kommun",Inbrott,1
 2018,8,"Norrbotten, okänd kommun",Trafikbrott,1
 2018,8,Övriga Norrbotten,Rattfylleri,11
-2018,8,Övriga Norrbotten,Trafikolycka,10
-2018,8,Övriga Norrbotten,Misshandel,9
-2018,8,Övriga Norrbotten,Skadegörelse,6
+2018,8,Övriga Norrbotten,Misshandel,10
+2018,8,Övriga Norrbotten,Trafikolycka,9
+2018,8,Övriga Norrbotten,Skadegörelse,5
 2018,8,Övriga Norrbotten,Trafikbrott,5
+2018,8,Övriga Norrbotten,Inbrott,4
+2018,8,Övriga Norrbotten,Stöld,4
+2018,8,Övriga Norrbotten,Övrigt/oklassificerad,4
+2018,8,Övriga Norrbotten,Brand,3
 2018,8,Övriga Norrbotten,Fjällräddning,3
-2018,8,Övriga Norrbotten,Inbrott,3
+2018,8,Övriga Norrbotten,Fylleri/LOB,3
 2018,8,Övriga Norrbotten,Narkotikabrott,3
-2018,8,Övriga Norrbotten,Stöld,3
-2018,8,Övriga Norrbotten,Brand,2
-2018,8,Övriga Norrbotten,Fylleri/LOB,2
 2018,8,Övriga Norrbotten,Olovlig körning,2
+2018,8,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2018,8,Övriga Norrbotten,Arbetsplatsolycka,1
 2018,8,Övriga Norrbotten,Olaga hot,1
 2018,8,Övriga Norrbotten,"Stöld,  ringa",1
-2018,8,Övriga Norrbotten,Stöld/inbrott,1
-2018,8,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2018,8,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2018,9,Luleå kommun,Rattfylleri,5
 2018,9,Luleå kommun,Misshandel,3
 2018,9,Luleå kommun,Narkotikabrott,3
-2018,9,Luleå kommun,Rån,2
+2018,9,Luleå kommun,Rån,3
 2018,9,Luleå kommun,Trafikbrott,2
+2018,9,Luleå kommun,Övrigt/oklassificerad,2
 2018,9,Luleå kommun,Fylleri/LOB,1
+2018,9,Luleå kommun,Inbrott,1
 2018,9,Luleå kommun,Ofredande/förargelse,1
-2018,9,Luleå kommun,Stöld/inbrott,1
 2018,9,Luleå kommun,Trafikolycka,1
+2018,9,Luleå kommun,"Trafikolycka,  vilt",1
 2018,9,Luleå kommun,Våld/hot mot tjänsteman,1
-2018,9,"Norrbotten, okänd kommun",Stöld/inbrott,1
+2018,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,9
+2018,9,"Norrbotten, okänd kommun",Inbrott,1
 2018,9,"Norrbotten, okänd kommun",Trafikolycka,1
+2018,9,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2018,9,Övriga Norrbotten,Övrigt/oklassificerad,7
 2018,9,Övriga Norrbotten,Misshandel,6
 2018,9,Övriga Norrbotten,Rattfylleri,6
 2018,9,Övriga Norrbotten,Skadegörelse,6
 2018,9,Övriga Norrbotten,Trafikbrott,5
 2018,9,Övriga Norrbotten,Fylleri/LOB,4
 2018,9,Övriga Norrbotten,Narkotikabrott,4
-2018,9,Övriga Norrbotten,"Trafikolycka,  vilt",3
-2018,9,Övriga Norrbotten,Inbrott,2
+2018,9,Övriga Norrbotten,"Trafikolycka,  vilt",4
+2018,9,Övriga Norrbotten,Inbrott,3
+2018,9,Övriga Norrbotten,Försvunnen person,2
 2018,9,Övriga Norrbotten,Knivlagen,2
 2018,9,Övriga Norrbotten,Brand,1
 2018,9,Övriga Norrbotten,Djur,1
-2018,9,Övriga Norrbotten,Försvunnen person,1
 2018,9,Övriga Norrbotten,Stöld,1
-2018,9,Övriga Norrbotten,Stöld/inbrott,1
 2018,9,Övriga Norrbotten,Trafikolycka,1
 2018,9,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2018,10,Luleå kommun,Fylleri/LOB,8
@@ -590,25 +687,29 @@ year,month,geography_group,event_type_extracted,event_count
 2018,10,Luleå kommun,Brand,3
 2018,10,Luleå kommun,Misshandel,3
 2018,10,Luleå kommun,Trafikbrott,3
+2018,10,Luleå kommun,Övrigt/oklassificerad,3
 2018,10,Luleå kommun,Rattfylleri,2
 2018,10,Luleå kommun,Skadegörelse,2
+2018,10,Luleå kommun,"Trafikolycka,  vilt",2
 2018,10,Luleå kommun,Bedrägeri,1
 2018,10,Luleå kommun,Försvunnen person,1
+2018,10,Luleå kommun,Inbrott,1
 2018,10,Luleå kommun,Kontroll person/fordon,1
 2018,10,Luleå kommun,Olovlig körning,1
 2018,10,Luleå kommun,Rån,1
-2018,10,Luleå kommun,Stöld/inbrott,1
 2018,10,Luleå kommun,Trafikolycka,1
-2018,10,Luleå kommun,"Trafikolycka,  vilt",1
+2018,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,7
 2018,10,"Norrbotten, okänd kommun",Olovlig körning,1
 2018,10,"Norrbotten, okänd kommun",Rattfylleri,1
+2018,10,"Norrbotten, okänd kommun",Rån,1
+2018,10,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2018,10,Övriga Norrbotten,Fylleri/LOB,18
-2018,10,Övriga Norrbotten,"Trafikolycka,  vilt",12
-2018,10,Övriga Norrbotten,Misshandel,11
+2018,10,Övriga Norrbotten,"Trafikolycka,  vilt",18
+2018,10,Övriga Norrbotten,Övrigt/oklassificerad,13
+2018,10,Övriga Norrbotten,Misshandel,12
+2018,10,Övriga Norrbotten,Inbrott,7
 2018,10,Övriga Norrbotten,Trafikolycka,7
 2018,10,Övriga Norrbotten,Rattfylleri,6
-2018,10,Övriga Norrbotten,Inbrott,4
-2018,10,Övriga Norrbotten,Stöld/inbrott,3
 2018,10,Övriga Norrbotten,Arbetsplatsolycka,2
 2018,10,Övriga Norrbotten,Olovlig körning,2
 2018,10,Övriga Norrbotten,Brand,1
@@ -617,10 +718,11 @@ year,month,geography_group,event_type_extracted,event_count
 2018,10,Övriga Norrbotten,Skadegörelse,1
 2018,10,Övriga Norrbotten,Trafikbrott,1
 2018,10,Övriga Norrbotten,Trafikkontroll,1
-2018,11,Luleå kommun,Misshandel,6
+2018,11,Luleå kommun,Misshandel,7
 2018,11,Luleå kommun,Rattfylleri,5
 2018,11,Luleå kommun,Fylleri/LOB,3
 2018,11,Luleå kommun,Våld/hot mot tjänsteman,3
+2018,11,Luleå kommun,Övrigt/oklassificerad,3
 2018,11,Luleå kommun,Brand,2
 2018,11,Luleå kommun,Rån,2
 2018,11,Luleå kommun,Knivlagen,1
@@ -628,51 +730,57 @@ year,month,geography_group,event_type_extracted,event_count
 2018,11,Luleå kommun,Olovlig körning,1
 2018,11,Luleå kommun,Skadegörelse,1
 2018,11,Luleå kommun,"Trafikolycka,  vilt",1
+2018,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,7
+2018,11,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2018,11,"Norrbotten, okänd kommun",Misshandel,1
-2018,11,"Norrbotten, okänd kommun",Olaga hot,1
 2018,11,Övriga Norrbotten,Rattfylleri,12
-2018,11,Övriga Norrbotten,Misshandel,9
+2018,11,Övriga Norrbotten,Misshandel,10
+2018,11,Övriga Norrbotten,Övrigt/oklassificerad,9
 2018,11,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2018,11,Övriga Norrbotten,Fylleri/LOB,5
-2018,11,Övriga Norrbotten,Narkotikabrott,4
 2018,11,Övriga Norrbotten,Trafikolycka,4
+2018,11,Övriga Norrbotten,Narkotikabrott,3
 2018,11,Övriga Norrbotten,Skadegörelse,3
 2018,11,Övriga Norrbotten,Trafikkontroll,3
 2018,11,Övriga Norrbotten,Våld/hot mot tjänsteman,3
+2018,11,Övriga Norrbotten,Inbrott,2
 2018,11,Övriga Norrbotten,Olaga hot,2
 2018,11,Övriga Norrbotten,Stöld,2
+2018,11,Övriga Norrbotten,Trafikbrott,2
 2018,11,Övriga Norrbotten,Brand,1
-2018,11,Övriga Norrbotten,Inbrott,1
 2018,11,Övriga Norrbotten,Olovlig körning,1
-2018,11,Övriga Norrbotten,Stöld/inbrott,1
-2018,11,Övriga Norrbotten,Trafikbrott,1
 2018,12,Luleå kommun,Fylleri/LOB,9
-2018,12,Luleå kommun,Rattfylleri,5
-2018,12,Luleå kommun,Misshandel,3
-2018,12,Luleå kommun,"Trafikolycka,  vilt",3
-2018,12,Luleå kommun,Skadegörelse,2
-2018,12,Luleå kommun,Trafikolycka,2
+2018,12,Luleå kommun,"Trafikolycka,  vilt",5
+2018,12,Luleå kommun,Misshandel,4
+2018,12,Luleå kommun,Rattfylleri,4
+2018,12,Luleå kommun,Skadegörelse,3
+2018,12,Luleå kommun,Inbrott,1
 2018,12,Luleå kommun,Olaga hot,1
-2018,12,Luleå kommun,Stöld/inbrott,1
 2018,12,Luleå kommun,Trafikbrott,1
+2018,12,Luleå kommun,Trafikolycka,1
+2018,12,Luleå kommun,Övrigt/oklassificerad,1
+2018,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",5
+2018,12,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2018,12,"Norrbotten, okänd kommun",Olovlig körning,1
 2018,12,"Norrbotten, okänd kommun",Trafikbrott,1
-2018,12,Övriga Norrbotten,"Trafikolycka,  vilt",28
-2018,12,Övriga Norrbotten,Fylleri/LOB,17
-2018,12,Övriga Norrbotten,Rattfylleri,9
-2018,12,Övriga Norrbotten,Misshandel,8
+2018,12,Övriga Norrbotten,"Trafikolycka,  vilt",34
+2018,12,Övriga Norrbotten,Fylleri/LOB,18
+2018,12,Övriga Norrbotten,Rattfylleri,10
+2018,12,Övriga Norrbotten,Misshandel,9
 2018,12,Övriga Norrbotten,Trafikbrott,7
-2018,12,Övriga Norrbotten,Trafikolycka,7
 2018,12,Övriga Norrbotten,Narkotikabrott,6
-2018,12,Övriga Norrbotten,Skadegörelse,5
-2018,12,Övriga Norrbotten,Trafikkontroll,5
+2018,12,Övriga Norrbotten,Skadegörelse,6
+2018,12,Övriga Norrbotten,Trafikkontroll,6
+2018,12,Övriga Norrbotten,Trafikolycka,5
 2018,12,Övriga Norrbotten,Våld/hot mot tjänsteman,3
+2018,12,Övriga Norrbotten,Inbrott,2
 2018,12,Övriga Norrbotten,Olaga hot,2
+2018,12,Övriga Norrbotten,Övrigt/oklassificerad,2
 2018,12,Övriga Norrbotten,Arbetsplatsolycka,1
-2018,12,Övriga Norrbotten,Inbrott,1
+2018,12,Övriga Norrbotten,Brand,1
 2018,12,Övriga Norrbotten,Knivlagen,1
 2018,12,Övriga Norrbotten,Ofredande/förargelse,1
-2018,12,Övriga Norrbotten,Stöld/inbrott,1
+2018,12,Övriga Norrbotten,Stöld,1
 2019,1,Luleå kommun,Rattfylleri,9
 2019,1,Luleå kommun,Misshandel,7
 2019,1,Luleå kommun,Skadegörelse,5
@@ -683,9 +791,12 @@ year,month,geography_group,event_type_extracted,event_count
 2019,1,Luleå kommun,Våld/hot mot tjänsteman,2
 2019,1,Luleå kommun,Olaga intrång/hemfridsbrott,1
 2019,1,Luleå kommun,Stöld,1
+2019,1,Luleå kommun,Övrigt/oklassificerad,1
+2019,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2019,1,Övriga Norrbotten,"Trafikolycka,  vilt",14
 2019,1,Övriga Norrbotten,Trafikbrott,13
 2019,1,Övriga Norrbotten,Rattfylleri,12
+2019,1,Övriga Norrbotten,Övrigt/oklassificerad,10
 2019,1,Övriga Norrbotten,Misshandel,9
 2019,1,Övriga Norrbotten,Fylleri/LOB,7
 2019,1,Övriga Norrbotten,Trafikolycka,6
@@ -697,45 +808,47 @@ year,month,geography_group,event_type_extracted,event_count
 2019,1,Övriga Norrbotten,Ofredande/förargelse,1
 2019,1,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2019,2,Luleå kommun,Misshandel,5
-2019,2,Luleå kommun,Inbrott,2
+2019,2,Luleå kommun,Inbrott,4
 2019,2,Luleå kommun,Trafikolycka,2
 2019,2,Luleå kommun,Brand,1
 2019,2,Luleå kommun,Fylleri/LOB,1
 2019,2,Luleå kommun,Narkotikabrott,1
-2019,2,Luleå kommun,Stöld/inbrott,1
 2019,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
+2019,2,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2019,2,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2019,2,"Norrbotten, okänd kommun",Trafikbrott,1
 2019,2,Övriga Norrbotten,Misshandel,5
-2019,2,Övriga Norrbotten,Trafikolycka,4
+2019,2,Övriga Norrbotten,Övrigt/oklassificerad,4
 2019,2,Övriga Norrbotten,Stöld,3
 2019,2,Övriga Norrbotten,Trafikkontroll,3
+2019,2,Övriga Norrbotten,Trafikolycka,3
 2019,2,Övriga Norrbotten,Brand,2
+2019,2,Övriga Norrbotten,Inbrott,2
 2019,2,Övriga Norrbotten,Rattfylleri,2
 2019,2,Övriga Norrbotten,Skadegörelse,2
+2019,2,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2019,2,Övriga Norrbotten,Arbetsplatsolycka,1
 2019,2,Övriga Norrbotten,Fjällräddning,1
 2019,2,Övriga Norrbotten,Fylleri/LOB,1
-2019,2,Övriga Norrbotten,Inbrott,1
-2019,2,Övriga Norrbotten,Stöld/inbrott,1
 2019,2,Övriga Norrbotten,Trafikbrott,1
-2019,2,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2019,2,Övriga Norrbotten,Vapenlagen,1
 2019,2,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2019,3,Luleå kommun,Rattfylleri,7
+2019,3,Luleå kommun,Inbrott,2
 2019,3,Luleå kommun,Knivlagen,2
 2019,3,Luleå kommun,Olaga hot,2
 2019,3,Luleå kommun,Stöld,2
-2019,3,Luleå kommun,Inbrott,1
 2019,3,Luleå kommun,Misshandel,1
 2019,3,Luleå kommun,Räddningsinsats,1
-2019,3,Luleå kommun,Stöld/inbrott,1
-2019,3,Luleå kommun,Trafikolycka,1
+2019,3,Luleå kommun,"Trafikolycka,  vilt",1
+2019,3,Luleå kommun,Övrigt/oklassificerad,1
 2019,3,"Norrbotten, okänd kommun",Fylleri/LOB,3
 2019,3,"Norrbotten, okänd kommun",Narkotikabrott,3
+2019,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2019,3,"Norrbotten, okänd kommun",Rattfylleri,1
 2019,3,"Norrbotten, okänd kommun",Trafikolycka,1
-2019,3,Övriga Norrbotten,Misshandel,10
+2019,3,Övriga Norrbotten,Misshandel,11
+2019,3,Övriga Norrbotten,Övrigt/oklassificerad,6
 2019,3,Övriga Norrbotten,Rattfylleri,4
 2019,3,Övriga Norrbotten,Trafikbrott,4
 2019,3,Övriga Norrbotten,Trafikkontroll,3
@@ -750,57 +863,61 @@ year,month,geography_group,event_type_extracted,event_count
 2019,3,Övriga Norrbotten,Olaga hot,1
 2019,3,Övriga Norrbotten,Olovlig körning,1
 2019,3,Övriga Norrbotten,Våld/hot mot tjänsteman,1
-2019,4,Luleå kommun,Misshandel,7
+2019,4,Luleå kommun,Misshandel,8
+2019,4,Luleå kommun,Trafikkontroll,6
 2019,4,Luleå kommun,Rattfylleri,5
-2019,4,Luleå kommun,Trafikkontroll,5
+2019,4,Luleå kommun,Övrigt/oklassificerad,2
 2019,4,Luleå kommun,Bedrägeri,1
 2019,4,Luleå kommun,Brand,1
 2019,4,Luleå kommun,Olovlig körning,1
 2019,4,Luleå kommun,Skadegörelse,1
-2019,4,Luleå kommun,Trafikolycka,1
+2019,4,Luleå kommun,"Trafikolycka,  vilt",1
 2019,4,Luleå kommun,Våld/hot mot tjänsteman,1
+2019,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
 2019,4,"Norrbotten, okänd kommun",Fylleri/LOB,2
 2019,4,"Norrbotten, okänd kommun",Djur,1
 2019,4,Övriga Norrbotten,Misshandel,9
 2019,4,Övriga Norrbotten,Rattfylleri,6
+2019,4,Övriga Norrbotten,Övrigt/oklassificerad,4
 2019,4,Övriga Norrbotten,Skadegörelse,3
 2019,4,Övriga Norrbotten,"Trafikolycka,  vilt",3
 2019,4,Övriga Norrbotten,Brand,2
 2019,4,Övriga Norrbotten,Fylleri/LOB,2
+2019,4,Övriga Norrbotten,Inbrott,2
 2019,4,Övriga Norrbotten,Narkotikabrott,2
-2019,4,Övriga Norrbotten,Stöld/inbrott,2
+2019,4,Övriga Norrbotten,Stöld,2
 2019,4,Övriga Norrbotten,Trafikbrott,2
 2019,4,Övriga Norrbotten,Trafikkontroll,2
 2019,4,Övriga Norrbotten,Trafikolycka,2
 2019,4,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
-2019,4,Övriga Norrbotten,Stöld,1
 2019,4,Övriga Norrbotten,Vapenlagen,1
-2019,5,Luleå kommun,Misshandel,6
+2019,5,Luleå kommun,Misshandel,7
 2019,5,Luleå kommun,Rattfylleri,4
 2019,5,Luleå kommun,Trafikbrott,4
-2019,5,Luleå kommun,Stöld,2
+2019,5,Luleå kommun,Stöld,3
 2019,5,Luleå kommun,"Trafikolycka,  vilt",2
 2019,5,Luleå kommun,Brand,1
 2019,5,Luleå kommun,Fylleri/LOB,1
-2019,5,Luleå kommun,Kontroll person/fordon,1
+2019,5,Luleå kommun,Inbrott,1
 2019,5,Luleå kommun,Olovlig körning,1
 2019,5,Luleå kommun,Skadegörelse,1
-2019,5,Luleå kommun,Stöld/inbrott,1
 2019,5,Luleå kommun,Trafikkontroll,1
 2019,5,Luleå kommun,Våld/hot mot tjänsteman,1
+2019,5,Luleå kommun,Övrigt/oklassificerad,1
+2019,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
 2019,5,"Norrbotten, okänd kommun",Rattfylleri,2
 2019,5,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2019,5,"Norrbotten, okänd kommun",Misshandel,1
 2019,5,"Norrbotten, okänd kommun",Stöld,1
 2019,5,"Norrbotten, okänd kommun",Trafikolycka,1
-2019,5,Övriga Norrbotten,Rattfylleri,10
-2019,5,Övriga Norrbotten,Misshandel,5
+2019,5,Övriga Norrbotten,Rattfylleri,9
+2019,5,Övriga Norrbotten,Misshandel,6
 2019,5,Övriga Norrbotten,Brand,4
 2019,5,Övriga Norrbotten,Trafikbrott,4
-2019,5,Övriga Norrbotten,Fylleri/LOB,3
+2019,5,Övriga Norrbotten,"Trafikolycka,  vilt",4
 2019,5,Övriga Norrbotten,Olaga hot,3
 2019,5,Övriga Norrbotten,Skadegörelse,3
-2019,5,Övriga Norrbotten,"Trafikolycka,  vilt",2
+2019,5,Övriga Norrbotten,Fylleri/LOB,2
 2019,5,Övriga Norrbotten,Djur,1
 2019,5,Övriga Norrbotten,Försvunnen person,1
 2019,5,Övriga Norrbotten,Inbrott,1
@@ -809,21 +926,24 @@ year,month,geography_group,event_type_extracted,event_count
 2019,5,Övriga Norrbotten,Ofredande/förargelse,1
 2019,5,Övriga Norrbotten,Trafikkontroll,1
 2019,5,Övriga Norrbotten,Trafikolycka,1
+2019,5,Övriga Norrbotten,Övrigt/oklassificerad,1
 2019,6,Luleå kommun,Rattfylleri,8
 2019,6,Luleå kommun,Misshandel,5
-2019,6,Luleå kommun,Trafikolycka,4
 2019,6,Luleå kommun,Olovlig körning,3
 2019,6,Luleå kommun,Skadegörelse,3
 2019,6,Luleå kommun,Trafikbrott,3
+2019,6,Luleå kommun,"Trafikolycka,  vilt",3
 2019,6,Luleå kommun,Fylleri/LOB,2
 2019,6,Luleå kommun,Brand,1
 2019,6,Luleå kommun,Ofredande/förargelse,1
 2019,6,Luleå kommun,"Stöld,  ringa",1
+2019,6,Luleå kommun,Trafikolycka,1
 2019,6,Luleå kommun,Våld/hot mot tjänsteman,1
+2019,6,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
+2019,6,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2019,6,"Norrbotten, okänd kommun",Fjällräddning,1
 2019,6,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2019,6,"Norrbotten, okänd kommun",Räddningsinsats,1
-2019,6,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2019,6,Övriga Norrbotten,Rattfylleri,11
 2019,6,Övriga Norrbotten,Misshandel,8
 2019,6,Övriga Norrbotten,Trafikolycka,7
@@ -831,15 +951,15 @@ year,month,geography_group,event_type_extracted,event_count
 2019,6,Övriga Norrbotten,Trafikbrott,4
 2019,6,Övriga Norrbotten,Narkotikabrott,3
 2019,6,Övriga Norrbotten,Olaga hot,3
+2019,6,Övriga Norrbotten,Inbrott,2
 2019,6,Övriga Norrbotten,Olovlig körning,2
 2019,6,Övriga Norrbotten,Skadegörelse,2
 2019,6,Övriga Norrbotten,Trafikkontroll,2
 2019,6,Övriga Norrbotten,Våld/hot mot tjänsteman,2
+2019,6,Övriga Norrbotten,Övrigt/oklassificerad,2
 2019,6,Övriga Norrbotten,Arbetsplatsolycka,1
 2019,6,Övriga Norrbotten,Fylleri/LOB,1
-2019,6,Övriga Norrbotten,Inbrott,1
 2019,6,Övriga Norrbotten,Knivlagen,1
-2019,6,Övriga Norrbotten,Stöld/inbrott,1
 2019,6,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2019,7,Luleå kommun,Rattfylleri,7
 2019,7,Luleå kommun,Misshandel,3
@@ -847,6 +967,7 @@ year,month,geography_group,event_type_extracted,event_count
 2019,7,Luleå kommun,Trafikkontroll,2
 2019,7,Luleå kommun,Arbetsplatsolycka,1
 2019,7,Luleå kommun,Brand,1
+2019,7,Luleå kommun,Fylleri/LOB,1
 2019,7,Luleå kommun,Ofredande/förargelse,1
 2019,7,Luleå kommun,Olaga hot,1
 2019,7,Luleå kommun,Skadegörelse,1
@@ -854,6 +975,7 @@ year,month,geography_group,event_type_extracted,event_count
 2019,7,Luleå kommun,"Stöld,  ringa",1
 2019,7,Luleå kommun,Trafikbrott,1
 2019,7,Luleå kommun,"Trafikolycka,  vilt",1
+2019,7,Luleå kommun,Övrigt/oklassificerad,1
 2019,7,"Norrbotten, okänd kommun",Rattfylleri,2
 2019,7,"Norrbotten, okänd kommun",Trafikkontroll,2
 2019,7,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
@@ -861,48 +983,52 @@ year,month,geography_group,event_type_extracted,event_count
 2019,7,"Norrbotten, okänd kommun",Narkotikabrott,1
 2019,7,"Norrbotten, okänd kommun",Trafikolycka,1
 2019,7,"Norrbotten, okänd kommun",Våld/hot mot tjänsteman,1
+2019,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2019,7,Övriga Norrbotten,Misshandel,7
 2019,7,Övriga Norrbotten,Rattfylleri,7
-2019,7,Övriga Norrbotten,Trafikolycka,5
+2019,7,Övriga Norrbotten,Övrigt/oklassificerad,6
+2019,7,Övriga Norrbotten,Inbrott,4
 2019,7,Övriga Norrbotten,Skadegörelse,4
+2019,7,Övriga Norrbotten,Trafikolycka,4
+2019,7,Övriga Norrbotten,Brand,3
 2019,7,Övriga Norrbotten,Fjällräddning,3
-2019,7,Övriga Norrbotten,Fylleri/LOB,3
 2019,7,Övriga Norrbotten,Trafikkontroll,3
-2019,7,Övriga Norrbotten,Brand,2
-2019,7,Övriga Norrbotten,Inbrott,2
+2019,7,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2019,7,Övriga Norrbotten,Fylleri/LOB,2
 2019,7,Övriga Norrbotten,Narkotikabrott,2
 2019,7,Övriga Norrbotten,Olovlig körning,2
-2019,7,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2019,7,Övriga Norrbotten,Försvunnen person,1
 2019,7,Övriga Norrbotten,Knivlagen,1
 2019,7,Övriga Norrbotten,Ofredande/förargelse,1
-2019,7,Övriga Norrbotten,Stöld/inbrott,1
+2019,7,Övriga Norrbotten,Rån,1
+2019,7,Övriga Norrbotten,Trafikbrott,1
 2019,8,Luleå kommun,Rattfylleri,4
+2019,8,Luleå kommun,Inbrott,3
 2019,8,Luleå kommun,Trafikkontroll,3
-2019,8,Luleå kommun,Inbrott,2
 2019,8,Luleå kommun,Misshandel,2
 2019,8,Luleå kommun,Skadegörelse,2
 2019,8,Luleå kommun,Brand,1
 2019,8,Luleå kommun,Olovlig körning,1
 2019,8,Luleå kommun,Stöld,1
-2019,8,Luleå kommun,Stöld/inbrott,1
 2019,8,Luleå kommun,"Trafikolycka,  vilt",1
 2019,8,Luleå kommun,Våld/hot mot tjänsteman,1
+2019,8,Luleå kommun,Övrigt/oklassificerad,1
 2019,8,"Norrbotten, okänd kommun",Fylleri/LOB,2
+2019,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2019,8,"Norrbotten, okänd kommun",Narkotikabrott,1
 2019,8,"Norrbotten, okänd kommun",Skadegörelse,1
 2019,8,"Norrbotten, okänd kommun",Trafikolycka,1
 2019,8,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2019,8,Övriga Norrbotten,Trafikkontroll,8
+2019,8,Övriga Norrbotten,Inbrott,6
 2019,8,Övriga Norrbotten,Misshandel,5
 2019,8,Övriga Norrbotten,Rattfylleri,4
-2019,8,Övriga Norrbotten,Stöld/inbrott,4
 2019,8,Övriga Norrbotten,Trafikbrott,4
 2019,8,Övriga Norrbotten,Trafikolycka,4
+2019,8,Övriga Norrbotten,Övrigt/oklassificerad,4
 2019,8,Övriga Norrbotten,Narkotikabrott,3
 2019,8,Övriga Norrbotten,Ofredande/förargelse,3
 2019,8,Övriga Norrbotten,Olovlig körning,3
-2019,8,Övriga Norrbotten,Inbrott,2
 2019,8,Övriga Norrbotten,Skadegörelse,2
 2019,8,Övriga Norrbotten,Arbetsplatsolycka,1
 2019,8,Övriga Norrbotten,Brand,1
@@ -923,25 +1049,27 @@ year,month,geography_group,event_type_extracted,event_count
 2019,9,Luleå kommun,Skadegörelse,1
 2019,9,Luleå kommun,Trafikkontroll,1
 2019,9,Luleå kommun,"Trafikolycka,  vilt",1
+2019,9,Luleå kommun,Övrigt/oklassificerad,1
 2019,9,"Norrbotten, okänd kommun",Fylleri/LOB,3
+2019,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2019,9,"Norrbotten, okänd kommun",Fjällräddning,1
+2019,9,Övriga Norrbotten,Inbrott,10
 2019,9,Övriga Norrbotten,Misshandel,8
 2019,9,Övriga Norrbotten,Rattfylleri,7
 2019,9,Övriga Norrbotten,Trafikbrott,6
-2019,9,Övriga Norrbotten,Stöld/inbrott,5
-2019,9,Övriga Norrbotten,Inbrott,4
+2019,9,Övriga Norrbotten,Trafikkontroll,5
 2019,9,Övriga Norrbotten,Skadegörelse,4
-2019,9,Övriga Norrbotten,Trafikkontroll,4
 2019,9,Övriga Norrbotten,Narkotikabrott,3
+2019,9,Övriga Norrbotten,Stöld,3
 2019,9,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
-2019,9,Övriga Norrbotten,Stöld,2
 2019,9,Övriga Norrbotten,Trafikolycka,2
+2019,9,Övriga Norrbotten,"Trafikolycka,  vilt",2
+2019,9,Övriga Norrbotten,Övrigt/oklassificerad,2
 2019,9,Övriga Norrbotten,Arbetsplatsolycka,1
 2019,9,Övriga Norrbotten,Knivlagen,1
 2019,9,Övriga Norrbotten,Ofredande/förargelse,1
 2019,9,Övriga Norrbotten,Olaga hot,1
 2019,9,Övriga Norrbotten,Olovlig körning,1
-2019,9,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2019,9,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2019,10,Luleå kommun,Misshandel,8
 2019,10,Luleå kommun,Trafikbrott,5
@@ -951,12 +1079,14 @@ year,month,geography_group,event_type_extracted,event_count
 2019,10,Luleå kommun,Trafikolycka,3
 2019,10,Luleå kommun,Våld/hot mot tjänsteman,3
 2019,10,Luleå kommun,Olaga intrång/hemfridsbrott,2
+2019,10,Luleå kommun,Övrigt/oklassificerad,2
 2019,10,Luleå kommun,Knivlagen,1
 2019,10,Luleå kommun,Narkotikabrott,1
 2019,10,Luleå kommun,Olaga hot,1
 2019,10,Luleå kommun,Olovlig körning,1
 2019,10,Luleå kommun,Stöld,1
 2019,10,Luleå kommun,Trafikkontroll,1
+2019,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2019,10,"Norrbotten, okänd kommun",Brand,1
 2019,10,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2019,10,"Norrbotten, okänd kommun",Rattfylleri,1
@@ -968,10 +1098,11 @@ year,month,geography_group,event_type_extracted,event_count
 2019,10,Övriga Norrbotten,Misshandel,5
 2019,10,Övriga Norrbotten,Trafikkontroll,4
 2019,10,Övriga Norrbotten,Våld/hot mot tjänsteman,4
+2019,10,Övriga Norrbotten,Inbrott,3
 2019,10,Övriga Norrbotten,Ofredande/förargelse,3
-2019,10,Övriga Norrbotten,Stöld/inbrott,3
 2019,10,Övriga Norrbotten,Trafikbrott,3
-2019,10,Övriga Norrbotten,Trafikolycka,3
+2019,10,Övriga Norrbotten,Trafikolycka,2
+2019,10,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2019,10,Övriga Norrbotten,Arbetsplatsolycka,1
 2019,10,Övriga Norrbotten,Fylleri/LOB,1
 2019,10,Övriga Norrbotten,Kontroll person/fordon,1
@@ -980,10 +1111,9 @@ year,month,geography_group,event_type_extracted,event_count
 2019,10,Övriga Norrbotten,Olovlig körning,1
 2019,10,Övriga Norrbotten,Sexualbrott,1
 2019,10,Övriga Norrbotten,Stöld,1
-2019,10,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2019,11,Luleå kommun,Rattfylleri,8
+2019,11,Luleå kommun,Misshandel,6
 2019,11,Luleå kommun,Stöld,4
-2019,11,Luleå kommun,Misshandel,3
 2019,11,Luleå kommun,Trafikbrott,3
 2019,11,Luleå kommun,Narkotikabrott,2
 2019,11,Luleå kommun,Fylleri/LOB,1
@@ -995,15 +1125,16 @@ year,month,geography_group,event_type_extracted,event_count
 2019,11,Luleå kommun,Skadegörelse,1
 2019,11,Luleå kommun,Trafikolycka,1
 2019,11,Luleå kommun,Våld/hot mot tjänsteman,1
+2019,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2019,11,"Norrbotten, okänd kommun",Fylleri/LOB,2
 2019,11,Övriga Norrbotten,Rattfylleri,10
 2019,11,Övriga Norrbotten,Brand,5
+2019,11,Övriga Norrbotten,Inbrott,5
+2019,11,Övriga Norrbotten,Misshandel,5
 2019,11,Övriga Norrbotten,Olovlig körning,4
-2019,11,Övriga Norrbotten,Misshandel,3
+2019,11,Övriga Norrbotten,Övrigt/oklassificerad,4
 2019,11,Övriga Norrbotten,Skadegörelse,3
-2019,11,Övriga Norrbotten,Stöld/inbrott,3
 2019,11,Övriga Norrbotten,Våld/hot mot tjänsteman,3
-2019,11,Övriga Norrbotten,Inbrott,2
 2019,11,Övriga Norrbotten,Knivlagen,2
 2019,11,Övriga Norrbotten,Ofredande/förargelse,2
 2019,11,Övriga Norrbotten,Olaga hot,2
@@ -1011,36 +1142,39 @@ year,month,geography_group,event_type_extracted,event_count
 2019,11,Övriga Norrbotten,Fylleri/LOB,1
 2019,11,Övriga Norrbotten,Rån,1
 2019,11,Övriga Norrbotten,Trafikkontroll,1
-2019,11,Övriga Norrbotten,Trafikolycka,1
+2019,11,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2019,12,Luleå kommun,Misshandel,5
+2019,12,Luleå kommun,Stöld,4
 2019,12,Luleå kommun,Trafikolycka,3
 2019,12,Luleå kommun,Inbrott,2
 2019,12,Luleå kommun,Narkotikabrott,2
 2019,12,Luleå kommun,Rattfylleri,2
-2019,12,Luleå kommun,Stöld,2
+2019,12,Luleå kommun,Övrigt/oklassificerad,2
 2019,12,Luleå kommun,Fylleri/LOB,1
 2019,12,Luleå kommun,Skadegörelse,1
 2019,12,Luleå kommun,Trafikbrott,1
+2019,12,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2019,12,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2019,12,"Norrbotten, okänd kommun",Narkotikabrott,1
 2019,12,"Norrbotten, okänd kommun",Trafikolycka,1
 2019,12,Övriga Norrbotten,Rattfylleri,12
 2019,12,Övriga Norrbotten,Trafikbrott,10
-2019,12,Övriga Norrbotten,Misshandel,8
+2019,12,Övriga Norrbotten,Misshandel,9
 2019,12,Övriga Norrbotten,Trafikolycka,5
 2019,12,Övriga Norrbotten,Skadegörelse,4
 2019,12,Övriga Norrbotten,Brand,3
-2019,12,Övriga Norrbotten,Inbrott,2
-2019,12,Övriga Norrbotten,Stöld,2
+2019,12,Övriga Norrbotten,Inbrott,3
 2019,12,Övriga Norrbotten,Arbetsplatsolycka,1
 2019,12,Övriga Norrbotten,Knivlagen,1
 2019,12,Övriga Norrbotten,Olaga hot,1
 2019,12,Övriga Norrbotten,Rån,1
+2019,12,Övriga Norrbotten,Stöld,1
 2019,12,Övriga Norrbotten,Trafikkontroll,1
 2019,12,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2019,12,Övriga Norrbotten,Våld/hot mot tjänsteman,1
+2019,12,Övriga Norrbotten,Övrigt/oklassificerad,1
 2020,1,Luleå kommun,Rattfylleri,9
-2020,1,Luleå kommun,Inbrott,5
+2020,1,Luleå kommun,Inbrott,6
 2020,1,Luleå kommun,Misshandel,5
 2020,1,Luleå kommun,Skadegörelse,4
 2020,1,Luleå kommun,Narkotikabrott,2
@@ -1048,48 +1182,53 @@ year,month,geography_group,event_type_extracted,event_count
 2020,1,Luleå kommun,Olaga hot,1
 2020,1,Luleå kommun,Olovlig körning,1
 2020,1,Luleå kommun,Rån,1
-2020,1,Luleå kommun,Stöld/inbrott,1
+2020,1,Luleå kommun,Trafikbrott,1
 2020,1,Luleå kommun,Trafikolycka,1
 2020,1,Luleå kommun,"Trafikolycka,  vilt",1
+2020,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,6
 2020,1,"Norrbotten, okänd kommun",Narkotikabrott,4
 2020,1,"Norrbotten, okänd kommun",Inbrott,1
 2020,1,"Norrbotten, okänd kommun",Misshandel,1
 2020,1,"Norrbotten, okänd kommun",Trafikbrott,1
-2020,1,Övriga Norrbotten,Misshandel,11
+2020,1,Övriga Norrbotten,Misshandel,12
 2020,1,Övriga Norrbotten,Rattfylleri,11
-2020,1,Övriga Norrbotten,Trafikkontroll,6
+2020,1,Övriga Norrbotten,Trafikkontroll,7
+2020,1,Övriga Norrbotten,Stöld,6
 2020,1,Övriga Norrbotten,Trafikbrott,5
+2020,1,Övriga Norrbotten,Inbrott,4
 2020,1,Övriga Norrbotten,Skadegörelse,4
-2020,1,Övriga Norrbotten,Stöld,4
-2020,1,Övriga Norrbotten,Inbrott,3
 2020,1,Övriga Norrbotten,Narkotikabrott,3
+2020,1,Övriga Norrbotten,Övrigt/oklassificerad,3
 2020,1,Övriga Norrbotten,Trafikolycka,2
 2020,1,Övriga Norrbotten,Olaga hot,1
-2020,1,Övriga Norrbotten,Stöld/inbrott,1
 2020,1,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2020,2,Luleå kommun,Rattfylleri,5
+2020,2,Luleå kommun,Övrigt/oklassificerad,4
 2020,2,Luleå kommun,Trafikbrott,2
 2020,2,Luleå kommun,Narkotikabrott,1
 2020,2,Luleå kommun,Skadegörelse,1
 2020,2,Luleå kommun,Trafikolycka,1
+2020,2,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
 2020,2,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2020,2,"Norrbotten, okänd kommun",Inbrott,1
 2020,2,"Norrbotten, okänd kommun",Narkotikabrott,1
 2020,2,"Norrbotten, okänd kommun",Rattfylleri,1
 2020,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2020,2,Övriga Norrbotten,Rattfylleri,10
-2020,2,Övriga Norrbotten,Misshandel,4
+2020,2,Övriga Norrbotten,Misshandel,5
+2020,2,Övriga Norrbotten,Brand,3
 2020,2,Övriga Norrbotten,Olovlig körning,3
-2020,2,Övriga Norrbotten,Trafikolycka,3
-2020,2,Övriga Norrbotten,Brand,2
+2020,2,Övriga Norrbotten,Övrigt/oklassificerad,3
 2020,2,Övriga Norrbotten,Narkotikabrott,2
-2020,2,Övriga Norrbotten,Skadegörelse,2
+2020,2,Övriga Norrbotten,Ofredande/förargelse,2
 2020,2,Övriga Norrbotten,Stöld,2
 2020,2,Övriga Norrbotten,Trafikbrott,2
+2020,2,Övriga Norrbotten,Trafikolycka,2
 2020,2,Övriga Norrbotten,Fylleri/LOB,1
-2020,2,Övriga Norrbotten,Ofredande/förargelse,1
 2020,2,Övriga Norrbotten,Olaga hot,1
+2020,2,Övriga Norrbotten,Skadegörelse,1
 2020,2,Övriga Norrbotten,"Stöld,  ringa",1
+2020,2,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2020,2,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2020,3,Luleå kommun,Rattfylleri,9
 2020,3,Luleå kommun,Misshandel,4
@@ -1101,6 +1240,8 @@ year,month,geography_group,event_type_extracted,event_count
 2020,3,Luleå kommun,Stöld,1
 2020,3,Luleå kommun,Trafikolycka,1
 2020,3,Luleå kommun,Vapenlagen,1
+2020,3,Luleå kommun,Övrigt/oklassificerad,1
+2020,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2020,3,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2020,3,"Norrbotten, okänd kommun",Narkotikabrott,1
 2020,3,"Norrbotten, okänd kommun",Trafikbrott,1
@@ -1108,17 +1249,17 @@ year,month,geography_group,event_type_extracted,event_count
 2020,3,Övriga Norrbotten,Misshandel,9
 2020,3,Övriga Norrbotten,Rattfylleri,7
 2020,3,Övriga Norrbotten,Trafikbrott,6
+2020,3,Övriga Norrbotten,Övrigt/oklassificerad,4
 2020,3,Övriga Norrbotten,Olovlig körning,3
 2020,3,Övriga Norrbotten,Skadegörelse,3
 2020,3,Övriga Norrbotten,Brand,2
+2020,3,Övriga Norrbotten,Inbrott,2
+2020,3,Övriga Norrbotten,Stöld,2
 2020,3,Övriga Norrbotten,Trafikolycka,2
 2020,3,Övriga Norrbotten,Fylleri/LOB,1
-2020,3,Övriga Norrbotten,Inbrott,1
 2020,3,Övriga Norrbotten,Narkotikabrott,1
 2020,3,Övriga Norrbotten,Olaga hot,1
 2020,3,Övriga Norrbotten,Räddningsinsats,1
-2020,3,Övriga Norrbotten,Stöld,1
-2020,3,Övriga Norrbotten,Stöld/inbrott,1
 2020,4,Luleå kommun,Rattfylleri,5
 2020,4,Luleå kommun,Misshandel,3
 2020,4,Luleå kommun,Skadegörelse,3
@@ -1128,48 +1269,57 @@ year,month,geography_group,event_type_extracted,event_count
 2020,4,Luleå kommun,Stöld,1
 2020,4,Luleå kommun,Trafikkontroll,1
 2020,4,Luleå kommun,Trafikolycka,1
+2020,4,Luleå kommun,Övrigt/oklassificerad,1
+2020,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,11
 2020,4,"Norrbotten, okänd kommun",Fylleri/LOB,2
 2020,4,"Norrbotten, okänd kommun",Narkotikabrott,2
-2020,4,Övriga Norrbotten,Misshandel,12
+2020,4,Övriga Norrbotten,Misshandel,14
 2020,4,Övriga Norrbotten,Rattfylleri,9
 2020,4,Övriga Norrbotten,Trafikbrott,7
 2020,4,Övriga Norrbotten,Skadegörelse,6
 2020,4,Övriga Norrbotten,Trafikolycka,4
 2020,4,Övriga Norrbotten,Olovlig körning,3
+2020,4,Övriga Norrbotten,Stöld,3
+2020,4,Övriga Norrbotten,Inbrott,2
+2020,4,Övriga Norrbotten,Övrigt/oklassificerad,2
 2020,4,Övriga Norrbotten,Brand,1
 2020,4,Övriga Norrbotten,Fjällräddning,1
-2020,4,Övriga Norrbotten,Inbrott,1
 2020,4,Övriga Norrbotten,Narkotikabrott,1
-2020,4,Övriga Norrbotten,Stöld,1
 2020,4,Övriga Norrbotten,"Stöld,  ringa",1
-2020,4,Övriga Norrbotten,Stöld/inbrott,1
+2020,4,Övriga Norrbotten,Trafikkontroll,1
 2020,5,Luleå kommun,Misshandel,6
 2020,5,Luleå kommun,Rattfylleri,6
 2020,5,Luleå kommun,Olovlig körning,4
 2020,5,Luleå kommun,Skadegörelse,2
 2020,5,Luleå kommun,Trafikbrott,2
 2020,5,Luleå kommun,"Trafikolycka,  vilt",2
+2020,5,Luleå kommun,Brand,1
 2020,5,Luleå kommun,Djur,1
 2020,5,Luleå kommun,Knivlagen,1
 2020,5,Luleå kommun,Narkotikabrott,1
 2020,5,Luleå kommun,Sexualbrott,1
 2020,5,Luleå kommun,Trafikolycka,1
+2020,5,Luleå kommun,Övrigt/oklassificerad,1
+2020,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2020,5,"Norrbotten, okänd kommun",Misshandel,2
 2020,5,"Norrbotten, okänd kommun",Narkotikabrott,2
+2020,5,"Norrbotten, okänd kommun",Stöld,2
+2020,5,"Norrbotten, okänd kommun",Försvunnen person,1
 2020,5,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2020,5,Övriga Norrbotten,Brand,12
-2020,5,Övriga Norrbotten,Rattfylleri,12
 2020,5,Övriga Norrbotten,Trafikbrott,12
-2020,5,Övriga Norrbotten,Misshandel,10
+2020,5,Övriga Norrbotten,Misshandel,11
+2020,5,Övriga Norrbotten,Rattfylleri,11
 2020,5,Övriga Norrbotten,Trafikolycka,8
 2020,5,Övriga Norrbotten,Trafikkontroll,6
+2020,5,Övriga Norrbotten,Övrigt/oklassificerad,6
 2020,5,Övriga Norrbotten,Skadegörelse,4
 2020,5,Övriga Norrbotten,Olovlig körning,3
 2020,5,Övriga Norrbotten,Knivlagen,2
+2020,5,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2020,5,Övriga Norrbotten,"Farligt föremål,  misstänkt",1
 2020,5,Övriga Norrbotten,Inbrott,1
 2020,5,Övriga Norrbotten,Räddningsinsats,1
-2020,5,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2020,5,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2020,6,Luleå kommun,Misshandel,11
 2020,6,Luleå kommun,Olovlig körning,4
@@ -1185,6 +1335,7 @@ year,month,geography_group,event_type_extracted,event_count
 2020,6,Luleå kommun,"Trafikolycka,  vilt",1
 2020,6,"Norrbotten, okänd kommun",Inbrott,1
 2020,6,"Norrbotten, okänd kommun",Rattfylleri,1
+2020,6,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2020,6,Övriga Norrbotten,Rattfylleri,14
 2020,6,Övriga Norrbotten,Misshandel,13
 2020,6,Övriga Norrbotten,Trafikbrott,13
@@ -1198,17 +1349,18 @@ year,month,geography_group,event_type_extracted,event_count
 2020,6,Övriga Norrbotten,Trafikolycka,2
 2020,6,Övriga Norrbotten,Brand,1
 2020,6,Övriga Norrbotten,Våld/hot mot tjänsteman,1
-2020,7,Luleå kommun,Misshandel,6
-2020,7,Luleå kommun,Rattfylleri,5
+2020,6,Övriga Norrbotten,Övrigt/oklassificerad,1
+2020,7,Luleå kommun,Misshandel,7
+2020,7,Luleå kommun,Inbrott,4
+2020,7,Luleå kommun,Rattfylleri,4
 2020,7,Luleå kommun,Trafikbrott,4
-2020,7,Luleå kommun,Inbrott,2
 2020,7,Luleå kommun,Skadegörelse,2
-2020,7,Luleå kommun,Stöld/inbrott,2
 2020,7,Luleå kommun,Trafikolycka,2
 2020,7,Luleå kommun,Brand,1
 2020,7,Luleå kommun,Ofredande/förargelse,1
 2020,7,Luleå kommun,Olovlig körning,1
 2020,7,Luleå kommun,Stöld,1
+2020,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2020,7,"Norrbotten, okänd kommun",Trafikolycka,1
 2020,7,Övriga Norrbotten,Trafikbrott,14
 2020,7,Övriga Norrbotten,Rattfylleri,11
@@ -1216,11 +1368,12 @@ year,month,geography_group,event_type_extracted,event_count
 2020,7,Övriga Norrbotten,Brand,6
 2020,7,Övriga Norrbotten,Fjällräddning,5
 2020,7,Övriga Norrbotten,Skadegörelse,5
+2020,7,Övriga Norrbotten,Övrigt/oklassificerad,5
 2020,7,Övriga Norrbotten,Narkotikabrott,4
+2020,7,Övriga Norrbotten,Stöld,3
 2020,7,Övriga Norrbotten,Fylleri/LOB,2
 2020,7,Övriga Norrbotten,Knivlagen,2
 2020,7,Övriga Norrbotten,Olovlig körning,2
-2020,7,Övriga Norrbotten,Stöld,2
 2020,7,Övriga Norrbotten,Trafikkontroll,2
 2020,7,Övriga Norrbotten,Trafikolycka,2
 2020,7,Övriga Norrbotten,Arbetsplatsolycka,1
@@ -1232,29 +1385,32 @@ year,month,geography_group,event_type_extracted,event_count
 2020,8,Luleå kommun,Skadegörelse,3
 2020,8,Luleå kommun,Stöld,3
 2020,8,Luleå kommun,Olovlig körning,2
+2020,8,Luleå kommun,Övrigt/oklassificerad,2
 2020,8,Luleå kommun,Narkotikabrott,1
 2020,8,Luleå kommun,Ofredande/förargelse,1
 2020,8,Luleå kommun,Olaga hot,1
 2020,8,Luleå kommun,Trafikolycka,1
 2020,8,Luleå kommun,"Trafikolycka,  vilt",1
+2020,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2020,8,"Norrbotten, okänd kommun",Fylleri/LOB,3
 2020,8,"Norrbotten, okänd kommun",Narkotikabrott,3
 2020,8,"Norrbotten, okänd kommun",Stöld,1
 2020,8,Övriga Norrbotten,Trafikbrott,8
 2020,8,Övriga Norrbotten,Misshandel,7
 2020,8,Övriga Norrbotten,Rattfylleri,6
-2020,8,Övriga Norrbotten,Trafikkontroll,4
-2020,8,Övriga Norrbotten,Brand,2
-2020,8,Övriga Norrbotten,Skadegörelse,2
+2020,8,Övriga Norrbotten,Övrigt/oklassificerad,6
+2020,8,Övriga Norrbotten,Trafikkontroll,5
+2020,8,Övriga Norrbotten,Brand,3
+2020,8,Övriga Norrbotten,Inbrott,2
 2020,8,Övriga Norrbotten,Trafikolycka,2
 2020,8,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2020,8,Övriga Norrbotten,Våld/hot mot tjänsteman,2
-2020,8,Övriga Norrbotten,Inbrott,1
 2020,8,Övriga Norrbotten,Ofredande/förargelse,1
 2020,8,Övriga Norrbotten,Olaga hot,1
 2020,8,Övriga Norrbotten,Olovlig körning,1
 2020,8,Övriga Norrbotten,Sexualbrott,1
-2020,8,Övriga Norrbotten,Stöld/inbrott,1
+2020,8,Övriga Norrbotten,Skadegörelse,1
+2020,8,Övriga Norrbotten,Stöld,1
 2020,9,Luleå kommun,Rattfylleri,8
 2020,9,Luleå kommun,Misshandel,2
 2020,9,Luleå kommun,Olovlig körning,2
@@ -1263,41 +1419,47 @@ year,month,geography_group,event_type_extracted,event_count
 2020,9,Luleå kommun,Stöld,1
 2020,9,Luleå kommun,Trafikolycka,1
 2020,9,Luleå kommun,Våld/hot mot tjänsteman,1
+2020,9,Luleå kommun,Övrigt/oklassificerad,1
+2020,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2020,9,"Norrbotten, okänd kommun",Narkotikabrott,2
 2020,9,"Norrbotten, okänd kommun",Brand,1
 2020,9,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2020,9,Övriga Norrbotten,Misshandel,11
+2020,9,Övriga Norrbotten,Inbrott,8
 2020,9,Övriga Norrbotten,Rattfylleri,8
 2020,9,Övriga Norrbotten,Olovlig körning,7
-2020,9,Övriga Norrbotten,Inbrott,6
 2020,9,Övriga Norrbotten,Trafikbrott,6
 2020,9,Övriga Norrbotten,Skadegörelse,4
 2020,9,Övriga Norrbotten,Trafikolycka,4
 2020,9,Övriga Norrbotten,Stöld,2
-2020,9,Övriga Norrbotten,Stöld/inbrott,2
+2020,9,Övriga Norrbotten,Övrigt/oklassificerad,2
 2020,9,Övriga Norrbotten,Arbetsplatsolycka,1
 2020,9,Övriga Norrbotten,Brand,1
 2020,9,Övriga Norrbotten,Fylleri/LOB,1
 2020,9,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2020,9,Övriga Norrbotten,Trafikkontroll,1
+2020,9,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2020,10,Luleå kommun,Misshandel,5
-2020,10,Luleå kommun,Inbrott,2
+2020,10,Luleå kommun,Inbrott,3
 2020,10,Luleå kommun,Stöld,2
+2020,10,Luleå kommun,Övrigt/oklassificerad,2
 2020,10,Luleå kommun,Fylleri/LOB,1
 2020,10,Luleå kommun,Narkotikabrott,1
 2020,10,Luleå kommun,Olovlig körning,1
 2020,10,Luleå kommun,Rattfylleri,1
-2020,10,Luleå kommun,Stöld/inbrott,1
 2020,10,Luleå kommun,Trafikbrott,1
 2020,10,Luleå kommun,Trafikkontroll,1
 2020,10,Luleå kommun,Våld/hot mot tjänsteman,1
 2020,10,"Norrbotten, okänd kommun",Narkotikabrott,3
+2020,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2020,10,"Norrbotten, okänd kommun",Trafikbrott,1
-2020,10,Övriga Norrbotten,Rattfylleri,9
+2020,10,Övriga Norrbotten,Rattfylleri,8
 2020,10,Övriga Norrbotten,Trafikolycka,8
 2020,10,Övriga Norrbotten,Misshandel,7
 2020,10,Övriga Norrbotten,Trafikbrott,6
+2020,10,Övriga Norrbotten,Övrigt/oklassificerad,5
 2020,10,Övriga Norrbotten,Narkotikabrott,3
+2020,10,Övriga Norrbotten,"Trafikolycka,  vilt",3
 2020,10,Övriga Norrbotten,Inbrott,2
 2020,10,Övriga Norrbotten,Olovlig körning,2
 2020,10,Övriga Norrbotten,Skadegörelse,2
@@ -1306,21 +1468,24 @@ year,month,geography_group,event_type_extracted,event_count
 2020,10,Övriga Norrbotten,Fylleri/LOB,1
 2020,10,Övriga Norrbotten,Knivlagen,1
 2020,10,Övriga Norrbotten,Olaga hot,1
+2020,10,Övriga Norrbotten,Stöld,1
 2020,10,Övriga Norrbotten,"Stöld,  ringa",1
-2020,10,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2020,11,Luleå kommun,Trafikbrott,4
 2020,11,Luleå kommun,Rattfylleri,3
+2020,11,Luleå kommun,Övrigt/oklassificerad,3
+2020,11,Luleå kommun,Inbrott,2
 2020,11,Luleå kommun,Olovlig körning,2
 2020,11,Luleå kommun,Trafikkontroll,2
 2020,11,Luleå kommun,Brand,1
-2020,11,Luleå kommun,Inbrott,1
 2020,11,Luleå kommun,Misshandel,1
 2020,11,Luleå kommun,Narkotikabrott,1
-2020,11,Luleå kommun,Stöld/inbrott,1
+2020,11,Luleå kommun,Stöld,1
+2020,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,9
 2020,11,"Norrbotten, okänd kommun",Fylleri/LOB,3
 2020,11,"Norrbotten, okänd kommun",Narkotikabrott,2
 2020,11,"Norrbotten, okänd kommun",Stöld,2
 2020,11,"Norrbotten, okänd kommun",Bedrägeri,1
+2020,11,Övriga Norrbotten,Övrigt/oklassificerad,7
 2020,11,Övriga Norrbotten,Rattfylleri,6
 2020,11,Övriga Norrbotten,Trafikbrott,6
 2020,11,Övriga Norrbotten,Skadegörelse,5
@@ -1340,8 +1505,10 @@ year,month,geography_group,event_type_extracted,event_count
 2020,12,Luleå kommun,Rattfylleri,3
 2020,12,Luleå kommun,Trafikkontroll,3
 2020,12,Luleå kommun,"Trafikolycka,  vilt",2
+2020,12,Luleå kommun,Inbrott,1
 2020,12,Luleå kommun,Narkotikabrott,1
 2020,12,Luleå kommun,Stöld,1
+2020,12,"Norrbotten, okänd kommun",Övrigt/oklassificerad,7
 2020,12,"Norrbotten, okänd kommun",Narkotikabrott,2
 2020,12,"Norrbotten, okänd kommun",Trafikkontroll,1
 2020,12,Övriga Norrbotten,Trafikkontroll,17
@@ -1350,23 +1517,25 @@ year,month,geography_group,event_type_extracted,event_count
 2020,12,Övriga Norrbotten,Misshandel,8
 2020,12,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2020,12,Övriga Norrbotten,Olovlig körning,5
+2020,12,Övriga Norrbotten,Trafikolycka,5
 2020,12,Övriga Norrbotten,Brand,4
-2020,12,Övriga Norrbotten,Trafikolycka,4
+2020,12,Övriga Norrbotten,Övrigt/oklassificerad,3
+2020,12,Övriga Norrbotten,Stöld,2
 2020,12,Övriga Norrbotten,Inbrott,1
 2020,12,Övriga Norrbotten,Narkotikabrott,1
 2020,12,Övriga Norrbotten,Olaga hot,1
 2020,12,Övriga Norrbotten,Skadegörelse,1
-2020,12,Övriga Norrbotten,Stöld,1
 2021,1,Luleå kommun,Rattfylleri,6
 2021,1,Luleå kommun,Brand,3
 2021,1,Luleå kommun,Misshandel,3
 2021,1,Luleå kommun,Narkotikabrott,2
 2021,1,Luleå kommun,Trafikkontroll,2
 2021,1,Luleå kommun,Fylleri/LOB,1
+2021,1,Luleå kommun,Inbrott,1
 2021,1,Luleå kommun,Skadegörelse,1
 2021,1,Luleå kommun,Stöld,1
-2021,1,Luleå kommun,Stöld/inbrott,1
 2021,1,Luleå kommun,"Trafikolycka,  vilt",1
+2021,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,13
 2021,1,"Norrbotten, okänd kommun",Fylleri/LOB,2
 2021,1,"Norrbotten, okänd kommun",Brand,1
 2021,1,"Norrbotten, okänd kommun",Rattfylleri,1
@@ -1377,10 +1546,11 @@ year,month,geography_group,event_type_extracted,event_count
 2021,1,Övriga Norrbotten,Trafikbrott,6
 2021,1,Övriga Norrbotten,Trafikolycka,6
 2021,1,Övriga Norrbotten,Brand,5
+2021,1,Övriga Norrbotten,"Trafikolycka,  vilt",5
 2021,1,Övriga Norrbotten,Skadegörelse,4
+2021,1,Övriga Norrbotten,Övrigt/oklassificerad,3
 2021,1,Övriga Norrbotten,Inbrott,2
 2021,1,Övriga Norrbotten,Trafikkontroll,2
-2021,1,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2021,1,Övriga Norrbotten,Arbetsplatsolycka,1
 2021,1,Övriga Norrbotten,Mord/dråp,1
 2021,1,Övriga Norrbotten,Narkotikabrott,1
@@ -1388,19 +1558,22 @@ year,month,geography_group,event_type_extracted,event_count
 2021,2,Luleå kommun,Rattfylleri,3
 2021,2,Luleå kommun,Trafikbrott,3
 2021,2,Luleå kommun,Skadegörelse,2
+2021,2,Luleå kommun,Stöld,2
 2021,2,Luleå kommun,Arbetsplatsolycka,1
 2021,2,Luleå kommun,Brand,1
-2021,2,Luleå kommun,Inbrott,1
+2021,2,Luleå kommun,Misshandel,1
 2021,2,Luleå kommun,Olovlig körning,1
 2021,2,Luleå kommun,Trafikolycka,1
+2021,2,"Norrbotten, okänd kommun",Övrigt/oklassificerad,9
 2021,2,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,2,"Norrbotten, okänd kommun",Trafikbrott,1
 2021,2,Övriga Norrbotten,Trafikbrott,7
 2021,2,Övriga Norrbotten,Brand,5
 2021,2,Övriga Norrbotten,Rattfylleri,5
-2021,2,Övriga Norrbotten,Stöld,3
+2021,2,Övriga Norrbotten,Stöld,4
 2021,2,Övriga Norrbotten,Misshandel,2
 2021,2,Övriga Norrbotten,Trafikkontroll,2
+2021,2,Övriga Norrbotten,Övrigt/oklassificerad,2
 2021,2,Övriga Norrbotten,Inbrott,1
 2021,2,Övriga Norrbotten,Trafikolycka,1
 2021,2,Övriga Norrbotten,"Trafikolycka,  vilt",1
@@ -1408,10 +1581,13 @@ year,month,geography_group,event_type_extracted,event_count
 2021,3,Luleå kommun,Trafikbrott,4
 2021,3,Luleå kommun,Narkotikabrott,3
 2021,3,Luleå kommun,Inbrott,2
-2021,3,Luleå kommun,Olaga intrång/hemfridsbrott,2
 2021,3,Luleå kommun,Misshandel,1
+2021,3,Luleå kommun,Olaga intrång/hemfridsbrott,1
+2021,3,Luleå kommun,Stöld,1
 2021,3,Luleå kommun,Trafikkontroll,1
 2021,3,Luleå kommun,Trafikolycka,1
+2021,3,Luleå kommun,Övrigt/oklassificerad,1
+2021,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2021,3,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,3,"Norrbotten, okänd kommun",Narkotikabrott,1
 2021,3,Övriga Norrbotten,Trafikbrott,11
@@ -1419,25 +1595,27 @@ year,month,geography_group,event_type_extracted,event_count
 2021,3,Övriga Norrbotten,"Trafikolycka,  vilt",5
 2021,3,Övriga Norrbotten,Brand,4
 2021,3,Övriga Norrbotten,Misshandel,4
+2021,3,Övriga Norrbotten,Inbrott,2
 2021,3,Övriga Norrbotten,Narkotikabrott,2
 2021,3,Övriga Norrbotten,Trafikolycka,2
 2021,3,Övriga Norrbotten,Fjällräddning,1
-2021,3,Övriga Norrbotten,Inbrott,1
 2021,3,Övriga Norrbotten,Olovlig körning,1
 2021,3,Övriga Norrbotten,Rattfylleri,1
 2021,3,Övriga Norrbotten,Rån,1
 2021,3,Övriga Norrbotten,Skadegörelse,1
-2021,3,Övriga Norrbotten,Stöld/inbrott,1
 2021,3,Övriga Norrbotten,Trafikhinder,1
+2021,3,Övriga Norrbotten,Övrigt/oklassificerad,1
 2021,4,Luleå kommun,Rattfylleri,5
+2021,4,Luleå kommun,Inbrott,3
 2021,4,Luleå kommun,Skadegörelse,3
-2021,4,Luleå kommun,Stöld/inbrott,3
 2021,4,Luleå kommun,Misshandel,2
+2021,4,Luleå kommun,Stöld,2
 2021,4,Luleå kommun,Olaga hot,1
 2021,4,Luleå kommun,Olovlig körning,1
-2021,4,Luleå kommun,Stöld,1
 2021,4,Luleå kommun,Trafikkontroll,1
 2021,4,Luleå kommun,"Trafikolycka,  vilt",1
+2021,4,Luleå kommun,Övrigt/oklassificerad,1
+2021,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,6
 2021,4,"Norrbotten, okänd kommun",Skadegörelse,2
 2021,4,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2021,4,"Norrbotten, okänd kommun",Trafikbrott,1
@@ -1445,6 +1623,7 @@ year,month,geography_group,event_type_extracted,event_count
 2021,4,Övriga Norrbotten,Trafikbrott,7
 2021,4,Övriga Norrbotten,Trafikkontroll,7
 2021,4,Övriga Norrbotten,Rattfylleri,6
+2021,4,Övriga Norrbotten,Övrigt/oklassificerad,5
 2021,4,Övriga Norrbotten,Misshandel,2
 2021,4,Övriga Norrbotten,Stöld,2
 2021,4,Övriga Norrbotten,Trafikolycka,2
@@ -1452,8 +1631,8 @@ year,month,geography_group,event_type_extracted,event_count
 2021,4,Övriga Norrbotten,Brand,1
 2021,4,Övriga Norrbotten,"Farligt föremål,  misstänkt",1
 2021,4,Övriga Norrbotten,Olovlig körning,1
+2021,5,Luleå kommun,Stöld,5
 2021,5,Luleå kommun,Rattfylleri,4
-2021,5,Luleå kommun,Stöld,4
 2021,5,Luleå kommun,Trafikbrott,4
 2021,5,Luleå kommun,Trafikkontroll,3
 2021,5,Luleå kommun,Inbrott,2
@@ -1462,6 +1641,7 @@ year,month,geography_group,event_type_extracted,event_count
 2021,5,Luleå kommun,Brand,1
 2021,5,Luleå kommun,Knivlagen,1
 2021,5,Luleå kommun,Sexualbrott,1
+2021,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2021,5,"Norrbotten, okänd kommun",Narkotikabrott,1
 2021,5,"Norrbotten, okänd kommun",Rattfylleri,1
 2021,5,"Norrbotten, okänd kommun",Trafikolycka,1
@@ -1469,12 +1649,14 @@ year,month,geography_group,event_type_extracted,event_count
 2021,5,Övriga Norrbotten,Trafikbrott,8
 2021,5,Övriga Norrbotten,Rattfylleri,6
 2021,5,Övriga Norrbotten,Brand,5
+2021,5,Övriga Norrbotten,"Trafikolycka,  vilt",4
+2021,5,Övriga Norrbotten,Övrigt/oklassificerad,4
 2021,5,Övriga Norrbotten,Olovlig körning,3
-2021,5,Övriga Norrbotten,Stöld,3
 2021,5,Övriga Norrbotten,Trafikkontroll,3
-2021,5,Övriga Norrbotten,Trafikolycka,3
-2021,5,Övriga Norrbotten,"Trafikolycka,  vilt",3
 2021,5,Övriga Norrbotten,Fjällräddning,2
+2021,5,Övriga Norrbotten,Stöld,2
+2021,5,Övriga Norrbotten,Trafikolycka,2
+2021,5,Övriga Norrbotten,Inbrott,1
 2021,5,Övriga Norrbotten,Narkotikabrott,1
 2021,5,Övriga Norrbotten,Olaga hot,1
 2021,5,Övriga Norrbotten,Sexualbrott,1
@@ -1486,45 +1668,51 @@ year,month,geography_group,event_type_extracted,event_count
 2021,6,Luleå kommun,Stöld,3
 2021,6,Luleå kommun,Brand,2
 2021,6,Luleå kommun,Trafikolycka,2
+2021,6,Luleå kommun,"Trafikolycka,  vilt",2
+2021,6,Luleå kommun,Övrigt/oklassificerad,2
 2021,6,Luleå kommun,Fylleri/LOB,1
 2021,6,Luleå kommun,Narkotikabrott,1
 2021,6,Luleå kommun,Rattfylleri,1
-2021,6,Luleå kommun,"Trafikolycka,  vilt",1
 2021,6,"Norrbotten, okänd kommun",Narkotikabrott,2
 2021,6,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,6,"Norrbotten, okänd kommun",Trafikbrott,1
+2021,6,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2021,6,Övriga Norrbotten,Trafikbrott,17
 2021,6,Övriga Norrbotten,Misshandel,16
 2021,6,Övriga Norrbotten,Rattfylleri,8
 2021,6,Övriga Norrbotten,Trafikkontroll,8
 2021,6,Övriga Norrbotten,Brand,6
 2021,6,Övriga Norrbotten,Olovlig körning,5
-2021,6,Övriga Norrbotten,"Trafikolycka,  vilt",4
-2021,6,Övriga Norrbotten,Trafikolycka,3
+2021,6,Övriga Norrbotten,"Trafikolycka,  vilt",5
+2021,6,Övriga Norrbotten,Övrigt/oklassificerad,4
 2021,6,Övriga Norrbotten,Olaga hot,2
 2021,6,Övriga Norrbotten,Skadegörelse,2
+2021,6,Övriga Norrbotten,Stöld,2
+2021,6,Övriga Norrbotten,Trafikolycka,2
 2021,6,Övriga Norrbotten,Fjällräddning,1
 2021,6,Övriga Norrbotten,Inbrott,1
 2021,6,Övriga Norrbotten,Knivlagen,1
 2021,6,Övriga Norrbotten,Narkotikabrott,1
+2021,6,Övriga Norrbotten,Ofredande/förargelse,1
 2021,6,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2021,6,Övriga Norrbotten,Sexualbrott,1
 2021,7,Luleå kommun,Rattfylleri,8
 2021,7,Luleå kommun,Misshandel,6
-2021,7,Luleå kommun,Inbrott,3
+2021,7,Luleå kommun,Inbrott,4
 2021,7,Luleå kommun,Skadegörelse,3
 2021,7,Luleå kommun,Olovlig körning,2
 2021,7,Luleå kommun,Fylleri/LOB,1
 2021,7,Luleå kommun,Stöld,1
-2021,7,Luleå kommun,Stöld/inbrott,1
 2021,7,Luleå kommun,Trafikbrott,1
 2021,7,Luleå kommun,Trafikkontroll,1
 2021,7,Luleå kommun,Våld/hot mot tjänsteman,1
+2021,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2021,7,"Norrbotten, okänd kommun",Fylleri/LOB,2
 2021,7,"Norrbotten, okänd kommun",Narkotikabrott,2
 2021,7,"Norrbotten, okänd kommun",Misshandel,1
 2021,7,Övriga Norrbotten,Misshandel,17
 2021,7,Övriga Norrbotten,Trafikbrott,9
+2021,7,Övriga Norrbotten,Övrigt/oklassificerad,7
 2021,7,Övriga Norrbotten,Brand,6
 2021,7,Övriga Norrbotten,Rattfylleri,6
 2021,7,Övriga Norrbotten,Skadegörelse,5
@@ -1544,48 +1732,55 @@ year,month,geography_group,event_type_extracted,event_count
 2021,8,Luleå kommun,Fylleri/LOB,1
 2021,8,Luleå kommun,Misshandel,1
 2021,8,Luleå kommun,Narkotikabrott,1
+2021,8,Luleå kommun,Ofredande/förargelse,1
 2021,8,Luleå kommun,Olovlig körning,1
 2021,8,Luleå kommun,Trafikkontroll,1
-2021,8,Luleå kommun,Våld/hot mot tjänsteman,1
+2021,8,Luleå kommun,Övrigt/oklassificerad,1
+2021,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2021,8,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,8,"Norrbotten, okänd kommun",Narkotikabrott,1
 2021,8,"Norrbotten, okänd kommun",Olovlig körning,1
 2021,8,Övriga Norrbotten,Trafikbrott,15
-2021,8,Övriga Norrbotten,Misshandel,13
-2021,8,Övriga Norrbotten,"Trafikolycka,  vilt",11
+2021,8,Övriga Norrbotten,Misshandel,14
+2021,8,Övriga Norrbotten,"Trafikolycka,  vilt",10
 2021,8,Övriga Norrbotten,Trafikolycka,6
 2021,8,Övriga Norrbotten,Skadegörelse,5
 2021,8,Övriga Norrbotten,Trafikkontroll,4
-2021,8,Övriga Norrbotten,Ofredande/förargelse,2
+2021,8,Övriga Norrbotten,Ofredande/förargelse,3
+2021,8,Övriga Norrbotten,Övrigt/oklassificerad,3
+2021,8,Övriga Norrbotten,Inbrott,2
 2021,8,Övriga Norrbotten,Olovlig körning,2
-2021,8,Övriga Norrbotten,Stöld/inbrott,2
 2021,8,Övriga Norrbotten,Brand,1
 2021,8,Övriga Norrbotten,Fjällräddning,1
 2021,8,Övriga Norrbotten,Rattfylleri,1
+2021,8,Övriga Norrbotten,Stöld,1
+2021,9,Luleå kommun,Misshandel,4
 2021,9,Luleå kommun,Stöld,4
 2021,9,Luleå kommun,Trafikbrott,4
-2021,9,Luleå kommun,Misshandel,3
 2021,9,Luleå kommun,Rattfylleri,3
 2021,9,Luleå kommun,Olovlig körning,2
+2021,9,Luleå kommun,"Trafikolycka,  vilt",2
 2021,9,Luleå kommun,Inbrott,1
 2021,9,Luleå kommun,Knivlagen,1
 2021,9,Luleå kommun,Narkotikabrott,1
 2021,9,Luleå kommun,"Stöld,  ringa",1
 2021,9,Luleå kommun,Trafikolycka,1
-2021,9,Luleå kommun,"Trafikolycka,  vilt",1
 2021,9,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,9,"Norrbotten, okänd kommun",Narkotikabrott,1
+2021,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2021,9,Övriga Norrbotten,Trafikbrott,14
 2021,9,Övriga Norrbotten,Trafikkontroll,12
+2021,9,Övriga Norrbotten,Misshandel,10
 2021,9,Övriga Norrbotten,Rattfylleri,10
-2021,9,Övriga Norrbotten,Misshandel,9
 2021,9,Övriga Norrbotten,Olovlig körning,6
 2021,9,Övriga Norrbotten,"Trafikolycka,  vilt",5
 2021,9,Övriga Norrbotten,Skadegörelse,4
 2021,9,Övriga Norrbotten,Trafikolycka,4
+2021,9,Övriga Norrbotten,Övrigt/oklassificerad,4
 2021,9,Övriga Norrbotten,Brand,2
 2021,9,Övriga Norrbotten,Inbrott,1
 2021,9,Övriga Norrbotten,Narkotikabrott,1
+2021,9,Övriga Norrbotten,Ofredande/förargelse,1
 2021,9,Övriga Norrbotten,Olaga hot,1
 2021,9,Övriga Norrbotten,Rån,1
 2021,9,Övriga Norrbotten,Stöld,1
@@ -1596,17 +1791,19 @@ year,month,geography_group,event_type_extracted,event_count
 2021,10,Luleå kommun,Trafikolycka,2
 2021,10,Luleå kommun,Narkotikabrott,1
 2021,10,Luleå kommun,Rån,1
+2021,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2021,10,Övriga Norrbotten,Trafikkontroll,11
 2021,10,Övriga Norrbotten,Trafikbrott,9
 2021,10,Övriga Norrbotten,Rattfylleri,7
 2021,10,Övriga Norrbotten,Misshandel,5
 2021,10,Övriga Norrbotten,Trafikolycka,4
+2021,10,Övriga Norrbotten,Ofredande/förargelse,3
 2021,10,Övriga Norrbotten,Olovlig körning,3
 2021,10,Övriga Norrbotten,Skadegörelse,3
+2021,10,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2021,10,Övriga Norrbotten,Övrigt/oklassificerad,3
 2021,10,Övriga Norrbotten,Brand,2
-2021,10,Övriga Norrbotten,Ofredande/förargelse,2
 2021,10,Övriga Norrbotten,Stöld,2
-2021,10,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2021,10,Övriga Norrbotten,Arbetsplatsolycka,1
 2021,10,Övriga Norrbotten,Narkotikabrott,1
 2021,10,Övriga Norrbotten,Våld/hot mot tjänsteman,1
@@ -1621,14 +1818,15 @@ year,month,geography_group,event_type_extracted,event_count
 2021,11,Luleå kommun,"Trafikolycka,  vilt",1
 2021,11,Luleå kommun,Våld/hot mot tjänsteman,1
 2021,11,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2021,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2021,11,Övriga Norrbotten,Trafikkontroll,17
+2021,11,Övriga Norrbotten,"Trafikolycka,  vilt",14
 2021,11,Övriga Norrbotten,Rattfylleri,13
-2021,11,Övriga Norrbotten,"Trafikolycka,  vilt",13
 2021,11,Övriga Norrbotten,Misshandel,9
-2021,11,Övriga Norrbotten,Trafikbrott,6
+2021,11,Övriga Norrbotten,Trafikbrott,8
 2021,11,Övriga Norrbotten,Inbrott,3
+2021,11,Övriga Norrbotten,Stöld,3
 2021,11,Övriga Norrbotten,Olovlig körning,2
-2021,11,Övriga Norrbotten,Stöld,2
 2021,11,Övriga Norrbotten,Trafikolycka,2
 2021,11,Övriga Norrbotten,Narkotikabrott,1
 2021,11,Övriga Norrbotten,Rån,1
@@ -1639,6 +1837,7 @@ year,month,geography_group,event_type_extracted,event_count
 2021,12,Luleå kommun,Misshandel,4
 2021,12,Luleå kommun,Narkotikabrott,3
 2021,12,Luleå kommun,Trafikolycka,3
+2021,12,Luleå kommun,Övrigt/oklassificerad,2
 2021,12,Luleå kommun,Fylleri/LOB,1
 2021,12,Luleå kommun,Inbrott,1
 2021,12,Luleå kommun,Knivlagen,1
@@ -1646,15 +1845,15 @@ year,month,geography_group,event_type_extracted,event_count
 2021,12,Luleå kommun,Skadegörelse,1
 2021,12,"Norrbotten, okänd kommun",Misshandel,1
 2021,12,Övriga Norrbotten,Trafikkontroll,13
-2021,12,Övriga Norrbotten,Misshandel,6
 2021,12,Övriga Norrbotten,Trafikbrott,6
 2021,12,Övriga Norrbotten,Brand,5
+2021,12,Övriga Norrbotten,Misshandel,5
 2021,12,Övriga Norrbotten,Rattfylleri,5
-2021,12,Övriga Norrbotten,Trafikolycka,3
+2021,12,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2021,12,Övriga Norrbotten,Ofredande/förargelse,2
 2021,12,Övriga Norrbotten,Skadegörelse,2
-2021,12,Övriga Norrbotten,"Trafikolycka,  vilt",2
+2021,12,Övriga Norrbotten,Trafikolycka,2
 2021,12,Övriga Norrbotten,Fjällräddning,1
-2021,12,Övriga Norrbotten,Ofredande/förargelse,1
 2021,12,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2021,12,Övriga Norrbotten,Olovlig körning,1
 2022,1,Luleå kommun,Skadegörelse,4
@@ -1674,6 +1873,7 @@ year,month,geography_group,event_type_extracted,event_count
 2022,1,Övriga Norrbotten,Rattfylleri,4
 2022,1,Övriga Norrbotten,Fjällräddning,1
 2022,1,Övriga Norrbotten,Narkotikabrott,1
+2022,1,Övriga Norrbotten,Ofredande/förargelse,1
 2022,1,Övriga Norrbotten,Olaga hot,1
 2022,1,Övriga Norrbotten,Skadegörelse,1
 2022,2,Luleå kommun,Misshandel,5
@@ -1681,22 +1881,25 @@ year,month,geography_group,event_type_extracted,event_count
 2022,2,Luleå kommun,Trafikkontroll,2
 2022,2,Luleå kommun,Inbrott,1
 2022,2,Luleå kommun,Narkotikabrott,1
-2022,2,Luleå kommun,Olaga intrång/hemfridsbrott,1
 2022,2,Luleå kommun,Rattfylleri,1
 2022,2,Luleå kommun,Skadegörelse,1
+2022,2,Luleå kommun,Stöld,1
+2022,2,Luleå kommun,Övrigt/oklassificerad,1
 2022,2,Övriga Norrbotten,"Trafikolycka,  vilt",10
 2022,2,Övriga Norrbotten,Trafikbrott,8
 2022,2,Övriga Norrbotten,Misshandel,7
 2022,2,Övriga Norrbotten,Rattfylleri,6
 2022,2,Övriga Norrbotten,Trafikkontroll,6
+2022,2,Övriga Norrbotten,Övrigt/oklassificerad,6
 2022,2,Övriga Norrbotten,Brand,2
 2022,2,Övriga Norrbotten,Narkotikabrott,1
 2022,2,Övriga Norrbotten,Trafikolycka,1
 2022,3,Luleå kommun,Misshandel,4
-2022,3,Luleå kommun,Narkotikabrott,3
 2022,3,Luleå kommun,Rattfylleri,3
 2022,3,Luleå kommun,Brand,2
+2022,3,Luleå kommun,Narkotikabrott,2
 2022,3,Luleå kommun,Skadegörelse,1
+2022,3,Luleå kommun,Vapenlagen,1
 2022,3,"Norrbotten, okänd kommun",Misshandel,1
 2022,3,"Norrbotten, okänd kommun",Narkotikabrott,1
 2022,3,Övriga Norrbotten,Trafikkontroll,5
@@ -1704,15 +1907,16 @@ year,month,geography_group,event_type_extracted,event_count
 2022,3,Övriga Norrbotten,Narkotikabrott,4
 2022,3,Övriga Norrbotten,Trafikbrott,4
 2022,3,Övriga Norrbotten,Rattfylleri,3
+2022,3,Övriga Norrbotten,Övrigt/oklassificerad,3
 2022,3,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2022,3,Övriga Norrbotten,Fjällräddning,1
 2022,3,Övriga Norrbotten,Fylleri/LOB,1
+2022,3,Övriga Norrbotten,Inbrott,1
 2022,3,Övriga Norrbotten,Knivlagen,1
 2022,3,Övriga Norrbotten,Ofredande/förargelse,1
 2022,3,Övriga Norrbotten,Olovlig körning,1
 2022,3,Övriga Norrbotten,Skadegörelse,1
 2022,3,Övriga Norrbotten,Stöld,1
-2022,3,Övriga Norrbotten,Stöld/inbrott,1
 2022,3,Övriga Norrbotten,Trafikolycka,1
 2022,4,Luleå kommun,Misshandel,5
 2022,4,Luleå kommun,Trafikbrott,5
@@ -1720,22 +1924,25 @@ year,month,geography_group,event_type_extracted,event_count
 2022,4,Luleå kommun,Rattfylleri,4
 2022,4,Luleå kommun,Skadegörelse,2
 2022,4,Luleå kommun,Trafikolycka,2
+2022,4,Luleå kommun,Inbrott,1
 2022,4,Luleå kommun,Ofredande/förargelse,1
-2022,4,Luleå kommun,Stöld/inbrott,1
 2022,4,Luleå kommun,Trafikkontroll,1
 2022,4,Luleå kommun,Våld/hot mot tjänsteman,1
 2022,4,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2022,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2022,4,Övriga Norrbotten,Trafikbrott,9
 2022,4,Övriga Norrbotten,Misshandel,8
 2022,4,Övriga Norrbotten,Rattfylleri,5
+2022,4,Övriga Norrbotten,"Trafikolycka,  vilt",5
 2022,4,Övriga Norrbotten,Trafikkontroll,4
-2022,4,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2022,4,Övriga Norrbotten,Övrigt/oklassificerad,4
+2022,4,Övriga Norrbotten,Ofredande/förargelse,2
 2022,4,Övriga Norrbotten,Stöld,2
-2022,4,Övriga Norrbotten,Trafikolycka,2
 2022,4,Övriga Norrbotten,Inbrott,1
 2022,4,Övriga Norrbotten,Knivlagen,1
 2022,4,Övriga Norrbotten,Olovlig körning,1
 2022,4,Övriga Norrbotten,Skadegörelse,1
+2022,4,Övriga Norrbotten,Trafikolycka,1
 2022,5,Luleå kommun,Rattfylleri,5
 2022,5,Luleå kommun,Misshandel,4
 2022,5,Luleå kommun,Trafikkontroll,3
@@ -1744,6 +1951,7 @@ year,month,geography_group,event_type_extracted,event_count
 2022,5,Luleå kommun,Skadegörelse,2
 2022,5,Luleå kommun,Trafikolycka,2
 2022,5,Luleå kommun,Våld/hot mot tjänsteman,2
+2022,5,Luleå kommun,Övrigt/oklassificerad,2
 2022,5,Luleå kommun,Knivlagen,1
 2022,5,Luleå kommun,Ofredande/förargelse,1
 2022,5,Luleå kommun,Sexualbrott,1
@@ -1753,29 +1961,29 @@ year,month,geography_group,event_type_extracted,event_count
 2022,5,"Norrbotten, okänd kommun",Narkotikabrott,1
 2022,5,Övriga Norrbotten,Trafikkontroll,14
 2022,5,Övriga Norrbotten,Rattfylleri,12
-2022,5,Övriga Norrbotten,Misshandel,6
+2022,5,Övriga Norrbotten,Misshandel,7
+2022,5,Övriga Norrbotten,Övrigt/oklassificerad,7
 2022,5,Övriga Norrbotten,Trafikbrott,6
 2022,5,Övriga Norrbotten,"Trafikolycka,  vilt",6
+2022,5,Övriga Norrbotten,Inbrott,4
 2022,5,Övriga Norrbotten,Skadegörelse,4
 2022,5,Övriga Norrbotten,Brand,3
-2022,5,Övriga Norrbotten,Inbrott,3
 2022,5,Övriga Norrbotten,Arbetsplatsolycka,1
 2022,5,Övriga Norrbotten,Narkotikabrott,1
 2022,5,Övriga Norrbotten,Olaga hot,1
-2022,5,Övriga Norrbotten,Stöld/inbrott,1
 2022,5,Övriga Norrbotten,Trafikolycka,1
 2022,6,Luleå kommun,Misshandel,5
 2022,6,Luleå kommun,Skadegörelse,4
 2022,6,Luleå kommun,Trafikbrott,3
 2022,6,Luleå kommun,"Trafikolycka,  vilt",3
 2022,6,Luleå kommun,Rattfylleri,2
+2022,6,Luleå kommun,Inbrott,1
 2022,6,Luleå kommun,Rån,1
-2022,6,Luleå kommun,Stöld/inbrott,1
 2022,6,Luleå kommun,Trafikkontroll,1
 2022,6,Luleå kommun,Trafikolycka,1
 2022,6,Luleå kommun,Våld/hot mot tjänsteman,1
 2022,6,Övriga Norrbotten,Rattfylleri,11
-2022,6,Övriga Norrbotten,Trafikkontroll,10
+2022,6,Övriga Norrbotten,Trafikkontroll,11
 2022,6,Övriga Norrbotten,Misshandel,7
 2022,6,Övriga Norrbotten,Trafikbrott,7
 2022,6,Övriga Norrbotten,"Trafikolycka,  vilt",4
@@ -1783,21 +1991,23 @@ year,month,geography_group,event_type_extracted,event_count
 2022,6,Övriga Norrbotten,Trafikolycka,3
 2022,6,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
 2022,6,Övriga Norrbotten,Skadegörelse,2
+2022,6,Övriga Norrbotten,Övrigt/oklassificerad,2
 2022,6,Övriga Norrbotten,Knivlagen,1
+2022,6,Övriga Norrbotten,Ofredande/förargelse,1
 2022,6,Övriga Norrbotten,Olaga hot,1
 2022,6,Övriga Norrbotten,Stöld,1
 2022,7,Luleå kommun,Rattfylleri,4
+2022,7,Luleå kommun,Inbrott,3
+2022,7,Luleå kommun,Misshandel,2
 2022,7,Luleå kommun,Olaga intrång/hemfridsbrott,2
-2022,7,Luleå kommun,Olovlig körning,2
 2022,7,Luleå kommun,Skadegörelse,2
-2022,7,Luleå kommun,Stöld/inbrott,2
+2022,7,Luleå kommun,Stöld,2
+2022,7,Luleå kommun,Övrigt/oklassificerad,2
 2022,7,Luleå kommun,Brand,1
 2022,7,Luleå kommun,Häleri,1
-2022,7,Luleå kommun,Inbrott,1
 2022,7,Luleå kommun,Knivlagen,1
-2022,7,Luleå kommun,Misshandel,1
+2022,7,Luleå kommun,Olovlig körning,1
 2022,7,Luleå kommun,Rån,1
-2022,7,Luleå kommun,Stöld,1
 2022,7,Luleå kommun,Trafikolycka,1
 2022,7,Luleå kommun,"Trafikolycka,  vilt",1
 2022,7,Luleå kommun,Våld/hot mot tjänsteman,1
@@ -1808,16 +2018,16 @@ year,month,geography_group,event_type_extracted,event_count
 2022,7,Övriga Norrbotten,"Trafikolycka,  vilt",8
 2022,7,Övriga Norrbotten,Rattfylleri,7
 2022,7,Övriga Norrbotten,Trafikolycka,6
+2022,7,Övriga Norrbotten,Inbrott,4
 2022,7,Övriga Norrbotten,Olovlig körning,4
 2022,7,Övriga Norrbotten,Brand,3
 2022,7,Övriga Norrbotten,Skadegörelse,3
 2022,7,Övriga Norrbotten,Stöld,3
-2022,7,Övriga Norrbotten,Stöld/inbrott,2
+2022,7,Övriga Norrbotten,Ofredande/förargelse,2
 2022,7,Övriga Norrbotten,Bedrägeri,1
-2022,7,Övriga Norrbotten,Inbrott,1
-2022,7,Övriga Norrbotten,Ofredande/förargelse,1
 2022,7,Övriga Norrbotten,Räddningsinsats,1
 2022,7,Övriga Norrbotten,Våld/hot mot tjänsteman,1
+2022,7,Övriga Norrbotten,Övrigt/oklassificerad,1
 2022,8,Luleå kommun,Rattfylleri,3
 2022,8,Luleå kommun,Misshandel,2
 2022,8,Luleå kommun,Skadegörelse,2
@@ -1828,8 +2038,9 @@ year,month,geography_group,event_type_extracted,event_count
 2022,8,Luleå kommun,Olovlig körning,1
 2022,8,Luleå kommun,Trafikkontroll,1
 2022,8,Luleå kommun,"Trafikolycka,  vilt",1
-2022,8,"Norrbotten, okänd kommun",Fjällräddning,1
+2022,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2022,8,"Norrbotten, okänd kommun",Fylleri/LOB,1
+2022,8,"Norrbotten, okänd kommun",Stöld,1
 2022,8,"Norrbotten, okänd kommun",Trafikbrott,1
 2022,8,"Norrbotten, okänd kommun",Trafikkontroll,1
 2022,8,Övriga Norrbotten,Trafikkontroll,8
@@ -1837,33 +2048,35 @@ year,month,geography_group,event_type_extracted,event_count
 2022,8,Övriga Norrbotten,Rattfylleri,6
 2022,8,Övriga Norrbotten,Trafikbrott,6
 2022,8,Övriga Norrbotten,Trafikolycka,5
+2022,8,Övriga Norrbotten,Övrigt/oklassificerad,5
 2022,8,Övriga Norrbotten,Skadegörelse,4
 2022,8,Övriga Norrbotten,Brand,3
 2022,8,Övriga Norrbotten,Inbrott,2
 2022,8,Övriga Norrbotten,Olaga hot,2
-2022,8,Övriga Norrbotten,Stöld,2
 2022,8,Övriga Norrbotten,Knivlagen,1
+2022,8,Övriga Norrbotten,Ofredande/förargelse,1
+2022,8,Övriga Norrbotten,Stöld,1
 2022,8,Övriga Norrbotten,"Trafikolycka,  vilt",1
+2022,8,Övriga Norrbotten,Vapenlagen,1
 2022,8,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2022,9,Luleå kommun,Misshandel,3
 2022,9,Luleå kommun,Ofredande/förargelse,3
 2022,9,Luleå kommun,Trafikkontroll,3
 2022,9,Luleå kommun,Brand,2
+2022,9,Luleå kommun,Inbrott,2
 2022,9,Luleå kommun,Knivlagen,2
 2022,9,Luleå kommun,Trafikbrott,2
 2022,9,Luleå kommun,Trafikolycka,2
-2022,9,Luleå kommun,Inbrott,1
 2022,9,Luleå kommun,Olaga hot,1
 2022,9,Luleå kommun,Skadegörelse,1
 2022,9,Luleå kommun,Stöld,1
-2022,9,Luleå kommun,Stöld/inbrott,1
 2022,9,Luleå kommun,"Trafikolycka,  vilt",1
-2022,9,"Norrbotten, okänd kommun",Fylleri/LOB,1
+2022,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
 2022,9,"Norrbotten, okänd kommun",Trafikbrott,1
 2022,9,Övriga Norrbotten,Trafikkontroll,11
 2022,9,Övriga Norrbotten,Rattfylleri,6
 2022,9,Övriga Norrbotten,Brand,5
-2022,9,Övriga Norrbotten,Stöld/inbrott,5
+2022,9,Övriga Norrbotten,Inbrott,5
 2022,9,Övriga Norrbotten,Arbetsplatsolycka,4
 2022,9,Övriga Norrbotten,Trafikbrott,4
 2022,9,Övriga Norrbotten,"Trafikolycka,  vilt",4
@@ -1875,10 +2088,11 @@ year,month,geography_group,event_type_extracted,event_count
 2022,9,Övriga Norrbotten,Mord/dråp,1
 2022,10,Luleå kommun,Misshandel,6
 2022,10,Luleå kommun,Skadegörelse,4
-2022,10,Luleå kommun,"Trafikolycka,  vilt",3
+2022,10,Luleå kommun,"Trafikolycka,  vilt",4
 2022,10,Luleå kommun,Brand,2
 2022,10,Luleå kommun,Trafikbrott,2
 2022,10,Luleå kommun,Trafikkontroll,2
+2022,10,Luleå kommun,Övrigt/oklassificerad,2
 2022,10,Luleå kommun,Fylleri/LOB,1
 2022,10,Luleå kommun,Rattfylleri,1
 2022,10,Luleå kommun,Trafikolycka,1
@@ -1887,11 +2101,13 @@ year,month,geography_group,event_type_extracted,event_count
 2022,10,Övriga Norrbotten,Trafikolycka,9
 2022,10,Övriga Norrbotten,Misshandel,6
 2022,10,Övriga Norrbotten,Trafikkontroll,6
+2022,10,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2022,10,Övriga Norrbotten,Skadegörelse,4
-2022,10,Övriga Norrbotten,"Trafikolycka,  vilt",4
 2022,10,Övriga Norrbotten,Brand,3
 2022,10,Övriga Norrbotten,Inbrott,3
 2022,10,Övriga Norrbotten,Rattfylleri,3
+2022,10,Övriga Norrbotten,Övrigt/oklassificerad,3
+2022,10,Övriga Norrbotten,Ofredande/förargelse,1
 2022,10,Övriga Norrbotten,Olaga hot,1
 2022,10,Övriga Norrbotten,Olovlig körning,1
 2022,10,Övriga Norrbotten,Trafikbrott,1
@@ -1907,8 +2123,10 @@ year,month,geography_group,event_type_extracted,event_count
 2022,11,Luleå kommun,Skadegörelse,1
 2022,11,Luleå kommun,Trafikkontroll,1
 2022,11,"Norrbotten, okänd kommun",Narkotikabrott,1
+2022,11,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2022,11,Övriga Norrbotten,Rattfylleri,10
 2022,11,Övriga Norrbotten,"Trafikolycka,  vilt",8
+2022,11,Övriga Norrbotten,Övrigt/oklassificerad,6
 2022,11,Övriga Norrbotten,Trafikbrott,4
 2022,11,Övriga Norrbotten,Trafikkontroll,4
 2022,11,Övriga Norrbotten,Trafikolycka,4
@@ -1919,46 +2137,50 @@ year,month,geography_group,event_type_extracted,event_count
 2022,11,Övriga Norrbotten,Inbrott,1
 2022,11,Övriga Norrbotten,Knivlagen,1
 2022,11,Övriga Norrbotten,Olovlig körning,1
-2022,12,Luleå kommun,Trafikkontroll,4
+2022,12,Luleå kommun,Trafikkontroll,7
+2022,12,Luleå kommun,Övrigt/oklassificerad,4
 2022,12,Luleå kommun,Misshandel,3
 2022,12,Luleå kommun,Olovlig körning,3
-2022,12,Luleå kommun,Rattfylleri,3
+2022,12,Luleå kommun,Rattfylleri,2
 2022,12,Luleå kommun,Fylleri/LOB,1
 2022,12,Luleå kommun,Skadegörelse,1
 2022,12,Luleå kommun,Trafikbrott,1
 2022,12,Luleå kommun,Trafikolycka,1
 2022,12,Luleå kommun,Våld/hot mot tjänsteman,1
-2022,12,"Norrbotten, okänd kommun",Narkotikabrott,3
-2022,12,Övriga Norrbotten,"Trafikolycka,  vilt",10
-2022,12,Övriga Norrbotten,Rattfylleri,8
-2022,12,Övriga Norrbotten,Trafikkontroll,7
+2022,12,"Norrbotten, okänd kommun",Narkotikabrott,2
+2022,12,"Norrbotten, okänd kommun",Misshandel,1
+2022,12,Övriga Norrbotten,"Trafikolycka,  vilt",11
+2022,12,Övriga Norrbotten,Trafikkontroll,8
+2022,12,Övriga Norrbotten,Rattfylleri,7
+2022,12,Övriga Norrbotten,Övrigt/oklassificerad,7
 2022,12,Övriga Norrbotten,Trafikolycka,6
 2022,12,Övriga Norrbotten,Olovlig körning,5
 2022,12,Övriga Norrbotten,Brand,4
 2022,12,Övriga Norrbotten,Trafikbrott,3
+2022,12,Övriga Norrbotten,Inbrott,2
 2022,12,Övriga Norrbotten,Knivlagen,2
 2022,12,Övriga Norrbotten,Misshandel,2
 2022,12,Övriga Norrbotten,Ofredande/förargelse,2
 2022,12,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
+2022,12,Övriga Norrbotten,Stöld,2
 2022,12,Övriga Norrbotten,Fylleri/LOB,1
-2022,12,Övriga Norrbotten,Inbrott,1
 2022,12,Övriga Norrbotten,Narkotikabrott,1
 2022,12,Övriga Norrbotten,Olaga hot,1
 2022,12,Övriga Norrbotten,Skadegörelse,1
-2022,12,Övriga Norrbotten,Stöld,1
-2022,12,Övriga Norrbotten,Stöld/inbrott,1
 2023,1,Luleå kommun,Misshandel,3
 2023,1,Luleå kommun,Rattfylleri,2
 2023,1,Luleå kommun,Skadegörelse,2
 2023,1,Luleå kommun,Trafikkontroll,2
 2023,1,Luleå kommun,Trafikolycka,2
+2023,1,Luleå kommun,Övrigt/oklassificerad,2
 2023,1,Luleå kommun,Olaga hot,1
 2023,1,Luleå kommun,Stöld,1
 2023,1,Luleå kommun,"Trafikolycka,  vilt",1
 2023,1,Övriga Norrbotten,"Trafikolycka,  vilt",18
 2023,1,Övriga Norrbotten,Misshandel,6
+2023,1,Övriga Norrbotten,Trafikkontroll,6
 2023,1,Övriga Norrbotten,Rattfylleri,5
-2023,1,Övriga Norrbotten,Trafikkontroll,5
+2023,1,Övriga Norrbotten,Övrigt/oklassificerad,4
 2023,1,Övriga Norrbotten,Olovlig körning,2
 2023,1,Övriga Norrbotten,Skadegörelse,2
 2023,1,Övriga Norrbotten,Trafikbrott,2
@@ -1966,13 +2188,16 @@ year,month,geography_group,event_type_extracted,event_count
 2023,1,Övriga Norrbotten,Inbrott,1
 2023,1,Övriga Norrbotten,Narkotikabrott,1
 2023,1,Övriga Norrbotten,Ofredande/förargelse,1
+2023,1,Övriga Norrbotten,Stöld,1
 2023,1,Övriga Norrbotten,Trafikolycka,1
 2023,1,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2023,2,Luleå kommun,Misshandel,3
 2023,2,Luleå kommun,Rattfylleri,2
+2023,2,Luleå kommun,Stöld,2
 2023,2,Luleå kommun,Narkotikabrott,1
 2023,2,Luleå kommun,Trafikbrott,1
-2023,2,"Norrbotten, okänd kommun",Narkotikabrott,2
+2023,2,"Norrbotten, okänd kommun",Misshandel,1
+2023,2,"Norrbotten, okänd kommun",Narkotikabrott,1
 2023,2,Övriga Norrbotten,Rattfylleri,7
 2023,2,Övriga Norrbotten,Misshandel,4
 2023,2,Övriga Norrbotten,Trafikkontroll,4
@@ -1981,33 +2206,39 @@ year,month,geography_group,event_type_extracted,event_count
 2023,2,Övriga Norrbotten,Brand,1
 2023,2,Övriga Norrbotten,Inbrott,1
 2023,2,Övriga Norrbotten,Narkotikabrott,1
+2023,2,Övriga Norrbotten,Ofredande/förargelse,1
 2023,2,Övriga Norrbotten,Olovlig körning,1
 2023,2,Övriga Norrbotten,Skadegörelse,1
+2023,2,Övriga Norrbotten,Övrigt/oklassificerad,1
 2023,3,Luleå kommun,Brand,5
-2023,3,Luleå kommun,Trafikkontroll,2
+2023,3,Luleå kommun,Trafikkontroll,3
 2023,3,Luleå kommun,Trafikolycka,2
+2023,3,Luleå kommun,Övrigt/oklassificerad,2
 2023,3,Luleå kommun,Inbrott,1
 2023,3,Luleå kommun,Misshandel,1
 2023,3,Luleå kommun,Rattfylleri,1
 2023,3,Luleå kommun,Trafikbrott,1
 2023,3,Luleå kommun,Våld/hot mot tjänsteman,1
 2023,3,"Norrbotten, okänd kommun",Narkotikabrott,3
-2023,3,"Norrbotten, okänd kommun",Fylleri/LOB,2
-2023,3,Övriga Norrbotten,Misshandel,6
+2023,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
+2023,3,"Norrbotten, okänd kommun",Fylleri/LOB,1
+2023,3,"Norrbotten, okänd kommun",Misshandel,1
+2023,3,Övriga Norrbotten,Misshandel,7
 2023,3,Övriga Norrbotten,Rattfylleri,6
 2023,3,Övriga Norrbotten,Skadegörelse,3
 2023,3,Övriga Norrbotten,Trafikkontroll,3
+2023,3,Övriga Norrbotten,Övrigt/oklassificerad,3
 2023,3,Övriga Norrbotten,Brand,2
 2023,3,Övriga Norrbotten,Fjällräddning,2
+2023,3,Övriga Norrbotten,Inbrott,2
 2023,3,Övriga Norrbotten,Olovlig körning,2
 2023,3,Övriga Norrbotten,Trafikbrott,2
 2023,3,Övriga Norrbotten,Trafikolycka,2
+2023,3,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2023,3,Övriga Norrbotten,Bedrägeri,1
-2023,3,Övriga Norrbotten,Inbrott,1
 2023,3,Övriga Norrbotten,Ofredande/förargelse,1
 2023,3,Övriga Norrbotten,Stöld,1
 2023,3,Övriga Norrbotten,"Stöld,  ringa",1
-2023,3,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2023,4,Luleå kommun,Trafikkontroll,5
 2023,4,Luleå kommun,Misshandel,3
 2023,4,Luleå kommun,Rattfylleri,3
@@ -2020,6 +2251,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,4,Luleå kommun,Våld/hot mot tjänsteman,1
 2023,4,"Norrbotten, okänd kommun",Narkotikabrott,2
 2023,4,"Norrbotten, okänd kommun",Trafikbrott,1
+2023,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2023,4,Övriga Norrbotten,Rattfylleri,7
 2023,4,Övriga Norrbotten,Trafikkontroll,7
 2023,4,Övriga Norrbotten,"Trafikolycka,  vilt",6
@@ -2027,13 +2259,14 @@ year,month,geography_group,event_type_extracted,event_count
 2023,4,Övriga Norrbotten,Misshandel,3
 2023,4,Övriga Norrbotten,Skadegörelse,3
 2023,4,Övriga Norrbotten,Olovlig körning,2
+2023,4,Övriga Norrbotten,Stöld,2
+2023,4,Övriga Norrbotten,Trafikolycka,2
+2023,4,Övriga Norrbotten,Övrigt/oklassificerad,2
 2023,4,Övriga Norrbotten,Arbetsplatsolycka,1
 2023,4,Övriga Norrbotten,Inbrott,1
 2023,4,Övriga Norrbotten,Olaga hot,1
 2023,4,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
-2023,4,Övriga Norrbotten,Stöld,1
 2023,4,Övriga Norrbotten,Trafikbrott,1
-2023,4,Övriga Norrbotten,Trafikolycka,1
 2023,5,Luleå kommun,Misshandel,8
 2023,5,Luleå kommun,Trafikolycka,4
 2023,5,Luleå kommun,Rattfylleri,3
@@ -2044,6 +2277,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,5,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2023,5,"Norrbotten, okänd kommun",Misshandel,1
 2023,5,"Norrbotten, okänd kommun",Narkotikabrott,1
+2023,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2023,5,Övriga Norrbotten,Trafikkontroll,11
 2023,5,Övriga Norrbotten,"Trafikolycka,  vilt",8
 2023,5,Övriga Norrbotten,Misshandel,7
@@ -2065,15 +2299,16 @@ year,month,geography_group,event_type_extracted,event_count
 2023,6,Luleå kommun,Misshandel,4
 2023,6,Luleå kommun,Brand,3
 2023,6,Luleå kommun,Rattfylleri,3
+2023,6,Luleå kommun,Stöld,3
 2023,6,Luleå kommun,Narkotikabrott,2
 2023,6,Luleå kommun,Trafikbrott,2
 2023,6,Luleå kommun,Trafikkontroll,2
+2023,6,Luleå kommun,Övrigt/oklassificerad,2
 2023,6,Luleå kommun,Fylleri/LOB,1
 2023,6,Luleå kommun,Inbrott,1
 2023,6,Luleå kommun,Knivlagen,1
 2023,6,Luleå kommun,Olovlig körning,1
 2023,6,Luleå kommun,Skadegörelse,1
-2023,6,Luleå kommun,Stöld,1
 2023,6,Luleå kommun,"Trafikolycka,  vilt",1
 2023,6,"Norrbotten, okänd kommun",Narkotikabrott,3
 2023,6,"Norrbotten, okänd kommun",Fylleri/LOB,1
@@ -2081,21 +2316,23 @@ year,month,geography_group,event_type_extracted,event_count
 2023,6,Övriga Norrbotten,Trafikkontroll,8
 2023,6,Övriga Norrbotten,Trafikbrott,7
 2023,6,Övriga Norrbotten,Brand,6
+2023,6,Övriga Norrbotten,Övrigt/oklassificerad,6
 2023,6,Övriga Norrbotten,Inbrott,5
 2023,6,Övriga Norrbotten,Skadegörelse,5
 2023,6,Övriga Norrbotten,Rattfylleri,4
 2023,6,Övriga Norrbotten,Trafikolycka,4
 2023,6,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2023,6,Övriga Norrbotten,Ofredande/förargelse,2
 2023,6,Övriga Norrbotten,Olovlig körning,2
 2023,6,Övriga Norrbotten,Våld/hot mot tjänsteman,2
-2023,6,Övriga Norrbotten,Ofredande/förargelse,1
 2023,6,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2023,7,Luleå kommun,Misshandel,6
 2023,7,Luleå kommun,Trafikbrott,3
+2023,7,Luleå kommun,Övrigt/oklassificerad,3
 2023,7,Luleå kommun,Olaga intrång/hemfridsbrott,2
+2023,7,Luleå kommun,Stöld,2
 2023,7,Luleå kommun,Olovlig körning,1
 2023,7,Luleå kommun,Rattfylleri,1
-2023,7,Luleå kommun,"Stöld,  ringa",1
 2023,7,Luleå kommun,Trafikkontroll,1
 2023,7,Luleå kommun,Trafikolycka,1
 2023,7,Luleå kommun,"Trafikolycka,  vilt",1
@@ -2106,14 +2343,16 @@ year,month,geography_group,event_type_extracted,event_count
 2023,7,Övriga Norrbotten,Trafikbrott,5
 2023,7,Övriga Norrbotten,Narkotikabrott,3
 2023,7,Övriga Norrbotten,Skadegörelse,3
+2023,7,Övriga Norrbotten,Stöld,3
 2023,7,Övriga Norrbotten,Trafikolycka,3
+2023,7,Övriga Norrbotten,Övrigt/oklassificerad,3
 2023,7,Övriga Norrbotten,Olovlig körning,2
-2023,7,Övriga Norrbotten,Stöld,2
 2023,7,Övriga Norrbotten,Arbetsplatsolycka,1
 2023,7,Övriga Norrbotten,Brand,1
 2023,7,Övriga Norrbotten,Fjällräddning,1
 2023,7,Övriga Norrbotten,Inbrott,1
 2023,7,Övriga Norrbotten,Mord/dråp,1
+2023,7,Övriga Norrbotten,Ofredande/förargelse,1
 2023,7,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2023,8,Luleå kommun,Misshandel,5
 2023,8,Luleå kommun,Skadegörelse,3
@@ -2144,6 +2383,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,8,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2023,8,Övriga Norrbotten,Stöld,1
 2023,8,Övriga Norrbotten,Våld/hot mot tjänsteman,1
+2023,8,Övriga Norrbotten,Övrigt/oklassificerad,1
 2023,9,Luleå kommun,Trafikolycka,4
 2023,9,Luleå kommun,Trafikkontroll,3
 2023,9,Luleå kommun,Misshandel,2
@@ -2155,9 +2395,11 @@ year,month,geography_group,event_type_extracted,event_count
 2023,9,Luleå kommun,Skadegörelse,1
 2023,9,Luleå kommun,Trafikbrott,1
 2023,9,Luleå kommun,Våld/hot mot tjänsteman,1
+2023,9,Luleå kommun,Övrigt/oklassificerad,1
 2023,9,"Norrbotten, okänd kommun",Fylleri/LOB,3
 2023,9,"Norrbotten, okänd kommun",Narkotikabrott,2
 2023,9,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2023,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2023,9,Övriga Norrbotten,Rattfylleri,6
 2023,9,Övriga Norrbotten,Ofredande/förargelse,4
 2023,9,Övriga Norrbotten,Trafikkontroll,4
@@ -2165,6 +2407,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,9,Övriga Norrbotten,Skadegörelse,3
 2023,9,Övriga Norrbotten,Trafikbrott,3
 2023,9,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2023,9,Övriga Norrbotten,Övrigt/oklassificerad,3
 2023,9,Övriga Norrbotten,Brand,2
 2023,9,Övriga Norrbotten,Inbrott,2
 2023,9,Övriga Norrbotten,Misshandel,2
@@ -2184,8 +2427,10 @@ year,month,geography_group,event_type_extracted,event_count
 2023,10,Luleå kommun,Narkotikabrott,1
 2023,10,Luleå kommun,Olovlig körning,1
 2023,10,Luleå kommun,Skadegörelse,1
+2023,10,Luleå kommun,Övrigt/oklassificerad,1
 2023,10,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2023,10,"Norrbotten, okänd kommun",Narkotikabrott,1
+2023,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2023,10,Övriga Norrbotten,"Trafikolycka,  vilt",7
 2023,10,Övriga Norrbotten,Rattfylleri,6
 2023,10,Övriga Norrbotten,Trafikolycka,5
@@ -2194,14 +2439,14 @@ year,month,geography_group,event_type_extracted,event_count
 2023,10,Övriga Norrbotten,Trafikkontroll,3
 2023,10,Övriga Norrbotten,Fylleri/LOB,2
 2023,10,Övriga Norrbotten,Inbrott,2
+2023,10,Övriga Norrbotten,Stöld,2
 2023,10,Övriga Norrbotten,Trafikbrott,2
 2023,10,Övriga Norrbotten,Brand,1
 2023,10,Övriga Norrbotten,Misshandel,1
 2023,10,Övriga Norrbotten,Ofredande/förargelse,1
 2023,10,Övriga Norrbotten,Olovlig körning,1
-2023,10,Övriga Norrbotten,Rån,1
-2023,10,Övriga Norrbotten,Stöld,1
 2023,10,Övriga Norrbotten,Våld/hot mot tjänsteman,1
+2023,10,Övriga Norrbotten,Övrigt/oklassificerad,1
 2023,11,Luleå kommun,Rattfylleri,3
 2023,11,Luleå kommun,Trafikbrott,3
 2023,11,Luleå kommun,"Trafikolycka,  vilt",3
@@ -2211,13 +2456,13 @@ year,month,geography_group,event_type_extracted,event_count
 2023,11,Luleå kommun,Olovlig körning,2
 2023,11,Luleå kommun,Brand,1
 2023,11,"Norrbotten, okänd kommun",Narkotikabrott,2
+2023,11,Övriga Norrbotten,Trafikolycka,9
 2023,11,Övriga Norrbotten,"Trafikolycka,  vilt",9
-2023,11,Övriga Norrbotten,Trafikolycka,8
 2023,11,Övriga Norrbotten,Brand,6
-2023,11,Övriga Norrbotten,Misshandel,5
+2023,11,Övriga Norrbotten,Misshandel,6
 2023,11,Övriga Norrbotten,Rattfylleri,5
-2023,11,Övriga Norrbotten,Trafikkontroll,3
-2023,11,Övriga Norrbotten,Våld/hot mot tjänsteman,2
+2023,11,Övriga Norrbotten,Övrigt/oklassificerad,5
+2023,11,Övriga Norrbotten,Trafikkontroll,4
 2023,11,Övriga Norrbotten,Arbetsplatsolycka,1
 2023,11,Övriga Norrbotten,Bedrägeri,1
 2023,11,Övriga Norrbotten,Fylleri/LOB,1
@@ -2227,6 +2472,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,11,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2023,11,Övriga Norrbotten,Olovlig körning,1
 2023,11,Övriga Norrbotten,Skadegörelse,1
+2023,11,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2023,12,Luleå kommun,Misshandel,5
 2023,12,Luleå kommun,Narkotikabrott,3
 2023,12,Luleå kommun,Olovlig körning,3
@@ -2235,6 +2481,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,12,Luleå kommun,Fylleri/LOB,1
 2023,12,Luleå kommun,Knivlagen,1
 2023,12,Luleå kommun,Trafikolycka,1
+2023,12,Luleå kommun,Övrigt/oklassificerad,1
 2023,12,Övriga Norrbotten,"Trafikolycka,  vilt",12
 2023,12,Övriga Norrbotten,Olovlig körning,5
 2023,12,Övriga Norrbotten,Trafikolycka,5
@@ -2245,6 +2492,7 @@ year,month,geography_group,event_type_extracted,event_count
 2023,12,Övriga Norrbotten,Brand,1
 2023,12,Övriga Norrbotten,Narkotikabrott,1
 2023,12,Övriga Norrbotten,Stöld,1
+2023,12,Övriga Norrbotten,Övrigt/oklassificerad,1
 2024,1,Luleå kommun,Rattfylleri,3
 2024,1,Luleå kommun,Trafikolycka,3
 2024,1,Luleå kommun,Knivlagen,2
@@ -2254,22 +2502,25 @@ year,month,geography_group,event_type_extracted,event_count
 2024,1,Luleå kommun,Brand,1
 2024,1,Luleå kommun,Narkotikabrott,1
 2024,1,Luleå kommun,Olaga hot,1
+2024,1,Luleå kommun,Rån,1
 2024,1,Luleå kommun,Skadegörelse,1
 2024,1,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2024,1,Övriga Norrbotten,Misshandel,9
 2024,1,Övriga Norrbotten,Rattfylleri,8
 2024,1,Övriga Norrbotten,"Trafikolycka,  vilt",8
-2024,1,Övriga Norrbotten,Brand,5
+2024,1,Övriga Norrbotten,Brand,6
 2024,1,Övriga Norrbotten,Skadegörelse,4
+2024,1,Övriga Norrbotten,Trafikkontroll,3
 2024,1,Övriga Norrbotten,Trafikolycka,3
 2024,1,Övriga Norrbotten,Stöld,2
 2024,1,Övriga Norrbotten,Trafikbrott,2
-2024,1,Övriga Norrbotten,Trafikkontroll,2
+2024,1,Övriga Norrbotten,Övrigt/oklassificerad,2
 2024,1,Övriga Norrbotten,Inbrott,1
 2024,1,Övriga Norrbotten,Mord/dråp,1
 2024,1,Övriga Norrbotten,Narkotikabrott,1
 2024,1,Övriga Norrbotten,Ofredande/förargelse,1
-2024,2,Luleå kommun,Misshandel,4
+2024,2,Luleå kommun,Misshandel,5
+2024,2,Luleå kommun,Övrigt/oklassificerad,2
 2024,2,Luleå kommun,Bedrägeri,1
 2024,2,Luleå kommun,Fylleri/LOB,1
 2024,2,Luleå kommun,Narkotikabrott,1
@@ -2283,35 +2534,39 @@ year,month,geography_group,event_type_extracted,event_count
 2024,2,Övriga Norrbotten,Misshandel,4
 2024,2,Övriga Norrbotten,Rattfylleri,4
 2024,2,Övriga Norrbotten,Narkotikabrott,3
+2024,2,Övriga Norrbotten,Övrigt/oklassificerad,3
 2024,2,Övriga Norrbotten,Ofredande/förargelse,2
 2024,2,Övriga Norrbotten,Brand,1
+2024,2,Övriga Norrbotten,Inbrott,1
 2024,2,Övriga Norrbotten,Knivlagen,1
-2024,2,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2024,2,Övriga Norrbotten,Skadegörelse,1
+2024,2,Övriga Norrbotten,Stöld,1
 2024,2,Övriga Norrbotten,Trafikbrott,1
 2024,2,Övriga Norrbotten,Trafikkontroll,1
 2024,2,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2024,3,Luleå kommun,Misshandel,3
 2024,3,Luleå kommun,Narkotikabrott,2
 2024,3,Luleå kommun,Rattfylleri,2
+2024,3,Luleå kommun,Stöld,2
 2024,3,Luleå kommun,Trafikkontroll,2
 2024,3,Luleå kommun,Trafikolycka,2
 2024,3,Luleå kommun,Olaga hot,1
 2024,3,Luleå kommun,Olovlig körning,1
-2024,3,Luleå kommun,Stöld,1
 2024,3,Luleå kommun,Trafikbrott,1
 2024,3,Luleå kommun,"Trafikolycka,  vilt",1
 2024,3,Luleå kommun,Våld/hot mot tjänsteman,1
+2024,3,Luleå kommun,Övrigt/oklassificerad,1
 2024,3,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2024,3,"Norrbotten, okänd kommun",Narkotikabrott,1
 2024,3,Övriga Norrbotten,Rattfylleri,7
 2024,3,Övriga Norrbotten,Misshandel,3
 2024,3,Övriga Norrbotten,Skadegörelse,3
+2024,3,Övriga Norrbotten,Övrigt/oklassificerad,3
+2024,3,Övriga Norrbotten,Brand,2
 2024,3,Övriga Norrbotten,Narkotikabrott,2
 2024,3,Övriga Norrbotten,Olovlig körning,2
 2024,3,Övriga Norrbotten,Trafikbrott,2
 2024,3,Övriga Norrbotten,Bedrägeri,1
-2024,3,Övriga Norrbotten,Brand,1
 2024,3,Övriga Norrbotten,Inbrott,1
 2024,3,Övriga Norrbotten,Knivlagen,1
 2024,3,Övriga Norrbotten,Olaga hot,1
@@ -2325,10 +2580,12 @@ year,month,geography_group,event_type_extracted,event_count
 2024,4,Luleå kommun,Rattfylleri,1
 2024,4,Luleå kommun,Skadegörelse,1
 2024,4,Luleå kommun,Våld/hot mot tjänsteman,1
+2024,4,Luleå kommun,Övrigt/oklassificerad,1
 2024,4,Övriga Norrbotten,Rattfylleri,8
 2024,4,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2024,4,Övriga Norrbotten,Misshandel,5
 2024,4,Övriga Norrbotten,Trafikkontroll,3
+2024,4,Övriga Norrbotten,Övrigt/oklassificerad,3
 2024,4,Övriga Norrbotten,Narkotikabrott,2
 2024,4,Övriga Norrbotten,Olovlig körning,2
 2024,4,Övriga Norrbotten,Brand,1
@@ -2336,31 +2593,34 @@ year,month,geography_group,event_type_extracted,event_count
 2024,4,Övriga Norrbotten,Trafikbrott,1
 2024,4,Övriga Norrbotten,Trafikolycka,1
 2024,5,Luleå kommun,Brand,4
-2024,5,Luleå kommun,Misshandel,3
+2024,5,Luleå kommun,Misshandel,4
 2024,5,Luleå kommun,Rattfylleri,2
+2024,5,Luleå kommun,Stöld,2
 2024,5,Luleå kommun,Våld/hot mot tjänsteman,2
 2024,5,Luleå kommun,Narkotikabrott,1
 2024,5,Luleå kommun,Olaga intrång/hemfridsbrott,1
-2024,5,Luleå kommun,Stöld,1
 2024,5,Luleå kommun,"Stöld,  ringa",1
 2024,5,Luleå kommun,Trafikbrott,1
 2024,5,Luleå kommun,Trafikkontroll,1
+2024,5,Luleå kommun,Övrigt/oklassificerad,1
 2024,5,"Norrbotten, okänd kommun",Fylleri/LOB,1
-2024,5,Övriga Norrbotten,Trafikkontroll,11
+2024,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
+2024,5,Övriga Norrbotten,Trafikkontroll,12
 2024,5,Övriga Norrbotten,Trafikbrott,8
 2024,5,Övriga Norrbotten,Misshandel,7
 2024,5,Övriga Norrbotten,"Trafikolycka,  vilt",6
+2024,5,Övriga Norrbotten,Övrigt/oklassificerad,5
 2024,5,Övriga Norrbotten,Rattfylleri,3
+2024,5,Övriga Norrbotten,Trafikolycka,3
+2024,5,Övriga Norrbotten,Ofredande/förargelse,2
 2024,5,Övriga Norrbotten,Olovlig körning,2
 2024,5,Övriga Norrbotten,Skadegörelse,2
 2024,5,Övriga Norrbotten,Stöld,2
-2024,5,Övriga Norrbotten,Trafikolycka,2
 2024,5,Övriga Norrbotten,Arbetsplatsolycka,1
 2024,5,Övriga Norrbotten,Brand,1
 2024,5,Övriga Norrbotten,Fylleri/LOB,1
 2024,5,Övriga Norrbotten,Inbrott,1
 2024,5,Övriga Norrbotten,Knivlagen,1
-2024,5,Övriga Norrbotten,Ofredande/förargelse,1
 2024,5,Övriga Norrbotten,Olaga hot,1
 2024,5,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2024,5,Övriga Norrbotten,Rån,1
@@ -2368,6 +2628,7 @@ year,month,geography_group,event_type_extracted,event_count
 2024,6,Luleå kommun,Misshandel,11
 2024,6,Luleå kommun,Brand,5
 2024,6,Luleå kommun,Rattfylleri,3
+2024,6,Luleå kommun,Övrigt/oklassificerad,3
 2024,6,Luleå kommun,Inbrott,2
 2024,6,Luleå kommun,Olaga intrång/hemfridsbrott,2
 2024,6,Luleå kommun,Trafikbrott,2
@@ -2375,16 +2636,19 @@ year,month,geography_group,event_type_extracted,event_count
 2024,6,Luleå kommun,Anträffat gods,1
 2024,6,Luleå kommun,Bedrägeri,1
 2024,6,Luleå kommun,Narkotikabrott,1
+2024,6,Luleå kommun,Ofredande/förargelse,1
 2024,6,Luleå kommun,Olovlig körning,1
+2024,6,Luleå kommun,Stöld,1
 2024,6,Luleå kommun,Trafikkontroll,1
 2024,6,"Norrbotten, okänd kommun",Misshandel,1
+2024,6,Övriga Norrbotten,Övrigt/oklassificerad,10
 2024,6,Övriga Norrbotten,Misshandel,7
 2024,6,Övriga Norrbotten,Rattfylleri,6
 2024,6,Övriga Norrbotten,Skadegörelse,5
 2024,6,Övriga Norrbotten,Trafikkontroll,4
-2024,6,Övriga Norrbotten,Trafikolycka,3
+2024,6,Övriga Norrbotten,Trafikolycka,4
+2024,6,Övriga Norrbotten,Ofredande/förargelse,3
 2024,6,Övriga Norrbotten,Narkotikabrott,2
-2024,6,Övriga Norrbotten,Ofredande/förargelse,2
 2024,6,Övriga Norrbotten,Trafikbrott,2
 2024,6,Övriga Norrbotten,Anträffat gods,1
 2024,6,Övriga Norrbotten,Brand,1
@@ -2392,6 +2656,7 @@ year,month,geography_group,event_type_extracted,event_count
 2024,6,Övriga Norrbotten,Inbrott,1
 2024,6,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2024,6,Övriga Norrbotten,Rån,1
+2024,6,Övriga Norrbotten,Stöld,1
 2024,6,Övriga Norrbotten,"Trafikolycka,  vilt",1
 2024,7,Luleå kommun,Misshandel,7
 2024,7,Luleå kommun,Rattfylleri,4
@@ -2403,55 +2668,66 @@ year,month,geography_group,event_type_extracted,event_count
 2024,7,Luleå kommun,Olovlig körning,1
 2024,7,Luleå kommun,Stöld,1
 2024,7,Luleå kommun,Våld/hot mot tjänsteman,1
+2024,7,Luleå kommun,Övrigt/oklassificerad,1
 2024,7,"Norrbotten, okänd kommun",Misshandel,3
+2024,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2024,7,"Norrbotten, okänd kommun",Narkotikabrott,1
 2024,7,"Norrbotten, okänd kommun",Olovlig körning,1
 2024,7,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2024,7,Övriga Norrbotten,Misshandel,11
 2024,7,Övriga Norrbotten,Trafikkontroll,7
+2024,7,Övriga Norrbotten,Trafikolycka,4
+2024,7,Övriga Norrbotten,Övrigt/oklassificerad,4
+2024,7,Övriga Norrbotten,Ofredande/förargelse,3
 2024,7,Övriga Norrbotten,Rattfylleri,3
 2024,7,Övriga Norrbotten,Stöld,3
 2024,7,Övriga Norrbotten,Trafikbrott,3
 2024,7,Övriga Norrbotten,Brand,2
 2024,7,Övriga Norrbotten,Olaga hot,2
 2024,7,Övriga Norrbotten,Skadegörelse,2
-2024,7,Övriga Norrbotten,Trafikolycka,2
 2024,7,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2024,7,Övriga Norrbotten,Fjällräddning,1
 2024,7,Övriga Norrbotten,Knivlagen,1
 2024,7,Övriga Norrbotten,Narkotikabrott,1
-2024,7,Övriga Norrbotten,Ofredande/förargelse,1
 2024,8,Luleå kommun,Stöld,3
 2024,8,Luleå kommun,Trafikolycka,3
+2024,8,Luleå kommun,Misshandel,2
 2024,8,Luleå kommun,Narkotikabrott,2
-2024,8,Luleå kommun,Skadegörelse,2
+2024,8,Luleå kommun,Övrigt/oklassificerad,2
 2024,8,Luleå kommun,Arbetsplatsolycka,1
 2024,8,Luleå kommun,Brand,1
 2024,8,Luleå kommun,Fylleri/LOB,1
-2024,8,Luleå kommun,Misshandel,1
+2024,8,Luleå kommun,Inbrott,1
 2024,8,Luleå kommun,Olovlig körning,1
 2024,8,Luleå kommun,Rattfylleri,1
+2024,8,Luleå kommun,Skadegörelse,1
 2024,8,Luleå kommun,Trafikbrott,1
+2024,8,Luleå kommun,"Trafikolycka,  vilt",1
 2024,8,"Norrbotten, okänd kommun",Misshandel,3
 2024,8,"Norrbotten, okänd kommun",Narkotikabrott,2
 2024,8,"Norrbotten, okänd kommun",Trafikolycka,1
+2024,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
+2024,8,Övriga Norrbotten,Övrigt/oklassificerad,12
 2024,8,Övriga Norrbotten,Misshandel,10
 2024,8,Övriga Norrbotten,Rattfylleri,8
-2024,8,Övriga Norrbotten,Skadegörelse,6
+2024,8,Övriga Norrbotten,Skadegörelse,5
+2024,8,Övriga Norrbotten,Trafikolycka,5
 2024,8,Övriga Norrbotten,Olovlig körning,4
-2024,8,Övriga Norrbotten,Trafikolycka,3
+2024,8,Övriga Norrbotten,Ofredande/förargelse,3
+2024,8,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2024,8,Övriga Norrbotten,Brand,2
 2024,8,Övriga Norrbotten,Narkotikabrott,2
 2024,8,Övriga Norrbotten,Trafikkontroll,2
-2024,8,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2024,8,Övriga Norrbotten,Fjällräddning,1
 2024,8,Övriga Norrbotten,Fylleri/LOB,1
 2024,8,Övriga Norrbotten,Inbrott,1
-2024,8,Övriga Norrbotten,Ofredande/förargelse,1
 2024,8,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2024,8,Övriga Norrbotten,Stöld,1
 2024,9,Luleå kommun,Misshandel,8
 2024,9,Luleå kommun,Rattfylleri,3
+2024,9,Luleå kommun,Övrigt/oklassificerad,2
 2024,9,Luleå kommun,Narkotikabrott,1
+2024,9,Luleå kommun,Ofredande/förargelse,1
 2024,9,Luleå kommun,Olovlig körning,1
 2024,9,Luleå kommun,Rån,1
 2024,9,Luleå kommun,Trafikolycka,1
@@ -2460,17 +2736,18 @@ year,month,geography_group,event_type_extracted,event_count
 2024,9,Övriga Norrbotten,Misshandel,7
 2024,9,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2024,9,Övriga Norrbotten,Skadegörelse,5
+2024,9,Övriga Norrbotten,Trafikolycka,5
 2024,9,Övriga Norrbotten,Narkotikabrott,4
-2024,9,Övriga Norrbotten,Trafikolycka,4
+2024,9,Övriga Norrbotten,Trafikbrott,3
 2024,9,Övriga Norrbotten,Brand,2
 2024,9,Övriga Norrbotten,Inbrott,2
-2024,9,Övriga Norrbotten,Trafikbrott,2
 2024,9,Övriga Norrbotten,Trafikkontroll,2
 2024,9,Övriga Norrbotten,Knivlagen,1
 2024,9,Övriga Norrbotten,Ofredande/förargelse,1
 2024,9,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2024,9,Övriga Norrbotten,Olovlig körning,1
 2024,9,Övriga Norrbotten,Våld/hot mot tjänsteman,1
+2024,9,Övriga Norrbotten,Övrigt/oklassificerad,1
 2024,10,Luleå kommun,Misshandel,4
 2024,10,Luleå kommun,Rattfylleri,4
 2024,10,Luleå kommun,Trafikolycka,2
@@ -2478,10 +2755,11 @@ year,month,geography_group,event_type_extracted,event_count
 2024,10,Luleå kommun,Ofredande/förargelse,1
 2024,10,Luleå kommun,Olaga hot,1
 2024,10,Luleå kommun,"Trafikolycka,  vilt",1
+2024,10,Luleå kommun,Övrigt/oklassificerad,1
 2024,10,"Norrbotten, okänd kommun",Misshandel,1
 2024,10,"Norrbotten, okänd kommun",Narkotikabrott,1
 2024,10,Övriga Norrbotten,Rattfylleri,8
-2024,10,Övriga Norrbotten,Trafikolycka,6
+2024,10,Övriga Norrbotten,Trafikolycka,8
 2024,10,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2024,10,Övriga Norrbotten,Misshandel,4
 2024,10,Övriga Norrbotten,Narkotikabrott,4
@@ -2489,16 +2767,17 @@ year,month,geography_group,event_type_extracted,event_count
 2024,10,Övriga Norrbotten,Olovlig körning,3
 2024,10,Övriga Norrbotten,Brand,2
 2024,10,Övriga Norrbotten,Trafikbrott,2
+2024,10,Övriga Norrbotten,Övrigt/oklassificerad,2
 2024,10,Övriga Norrbotten,Bedrägeri,1
 2024,10,Övriga Norrbotten,Knivlagen,1
 2024,10,Övriga Norrbotten,Skadegörelse,1
 2024,11,Luleå kommun,Rattfylleri,6
 2024,11,Luleå kommun,Misshandel,4
 2024,11,Luleå kommun,Narkotikabrott,2
+2024,11,Luleå kommun,Trafikbrott,2
+2024,11,Luleå kommun,Trafikolycka,2
 2024,11,Luleå kommun,Olovlig körning,1
 2024,11,Luleå kommun,Skadegörelse,1
-2024,11,Luleå kommun,Trafikbrott,1
-2024,11,Luleå kommun,Trafikolycka,1
 2024,11,Luleå kommun,"Trafikolycka,  vilt",1
 2024,11,Luleå kommun,Våld/hot mot tjänsteman,1
 2024,11,"Norrbotten, okänd kommun",Fylleri/LOB,1
@@ -2507,12 +2786,14 @@ year,month,geography_group,event_type_extracted,event_count
 2024,11,Övriga Norrbotten,Misshandel,7
 2024,11,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2024,11,Övriga Norrbotten,Narkotikabrott,3
-2024,11,Övriga Norrbotten,Olovlig körning,2
 2024,11,Övriga Norrbotten,Skadegörelse,2
 2024,11,Övriga Norrbotten,Trafikbrott,2
+2024,11,Övriga Norrbotten,Övrigt/oklassificerad,2
 2024,11,Övriga Norrbotten,Brand,1
 2024,11,Övriga Norrbotten,Inbrott,1
 2024,11,Övriga Norrbotten,Olaga hot,1
+2024,11,Övriga Norrbotten,Olovlig körning,1
+2024,11,Övriga Norrbotten,Stöld,1
 2024,11,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2024,12,Luleå kommun,Brand,3
 2024,12,Luleå kommun,Narkotikabrott,2
@@ -2523,19 +2804,20 @@ year,month,geography_group,event_type_extracted,event_count
 2024,12,Luleå kommun,Trafikbrott,1
 2024,12,Luleå kommun,Trafikolycka,1
 2024,12,Luleå kommun,"Trafikolycka,  vilt",1
+2024,12,Luleå kommun,Övrigt/oklassificerad,1
 2024,12,"Norrbotten, okänd kommun",Misshandel,1
 2024,12,Övriga Norrbotten,"Trafikolycka,  vilt",8
-2024,12,Övriga Norrbotten,Misshandel,6
-2024,12,Övriga Norrbotten,Narkotikabrott,5
+2024,12,Övriga Norrbotten,Misshandel,7
+2024,12,Övriga Norrbotten,Narkotikabrott,4
+2024,12,Övriga Norrbotten,Ofredande/förargelse,4
 2024,12,Övriga Norrbotten,Rattfylleri,4
+2024,12,Övriga Norrbotten,Trafikolycka,4
 2024,12,Övriga Norrbotten,Inbrott,2
 2024,12,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
+2024,12,Övriga Norrbotten,Stöld,2
 2024,12,Övriga Norrbotten,Trafikbrott,2
-2024,12,Övriga Norrbotten,Trafikolycka,2
-2024,12,Övriga Norrbotten,Ofredande/förargelse,1
 2024,12,Övriga Norrbotten,Olovlig körning,1
 2024,12,Övriga Norrbotten,Skadegörelse,1
-2024,12,Övriga Norrbotten,Stöld,1
 2024,12,Övriga Norrbotten,Trafikkontroll,1
 2024,12,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2025,1,Luleå kommun,Rattfylleri,3
@@ -2544,12 +2826,15 @@ year,month,geography_group,event_type_extracted,event_count
 2025,1,Luleå kommun,Misshandel,1
 2025,1,"Norrbotten, okänd kommun",Narkotikabrott,2
 2025,1,"Norrbotten, okänd kommun",Fylleri/LOB,1
+2025,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2025,1,Övriga Norrbotten,"Trafikolycka,  vilt",13
 2025,1,Övriga Norrbotten,Rattfylleri,6
 2025,1,Övriga Norrbotten,Trafikolycka,5
 2025,1,Övriga Norrbotten,Misshandel,4
 2025,1,Övriga Norrbotten,Brand,3
 2025,1,Övriga Norrbotten,Narkotikabrott,3
+2025,1,Övriga Norrbotten,Ofredande/förargelse,2
+2025,1,Övriga Norrbotten,Övrigt/oklassificerad,2
 2025,1,Övriga Norrbotten,Arbetsplatsolycka,1
 2025,1,Övriga Norrbotten,Stöld,1
 2025,1,Övriga Norrbotten,Trafikbrott,1
@@ -2557,19 +2842,20 @@ year,month,geography_group,event_type_extracted,event_count
 2025,1,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2025,2,Luleå kommun,Misshandel,4
 2025,2,Luleå kommun,Trafikkontroll,4
+2025,2,Luleå kommun,Inbrott,1
 2025,2,Luleå kommun,Ofredande/förargelse,1
 2025,2,Luleå kommun,Olaga hot,1
 2025,2,Luleå kommun,Rattfylleri,1
-2025,2,Luleå kommun,Stöld/inbrott,1
 2025,2,Luleå kommun,Trafikolycka,1
-2025,2,"Norrbotten, okänd kommun",Fylleri/LOB,1
-2025,2,"Norrbotten, okänd kommun",Misshandel,1
+2025,2,Luleå kommun,Övrigt/oklassificerad,1
+2025,2,"Norrbotten, okänd kommun",Misshandel,2
+2025,2,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2025,2,Övriga Norrbotten,Rattfylleri,9
 2025,2,Övriga Norrbotten,"Trafikolycka,  vilt",7
 2025,2,Övriga Norrbotten,Misshandel,3
+2025,2,Övriga Norrbotten,Trafikbrott,3
 2025,2,Övriga Norrbotten,Brand,2
 2025,2,Övriga Norrbotten,Skadegörelse,2
-2025,2,Övriga Norrbotten,Trafikbrott,2
 2025,2,Övriga Norrbotten,Trafikkontroll,2
 2025,2,Övriga Norrbotten,Bedrägeri,1
 2025,2,Övriga Norrbotten,Fjällräddning,1
@@ -2579,6 +2865,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,3,Luleå kommun,Misshandel,3
 2025,3,Luleå kommun,Narkotikabrott,2
 2025,3,Luleå kommun,Trafikkontroll,2
+2025,3,Luleå kommun,Övrigt/oklassificerad,2
 2025,3,Luleå kommun,Brand,1
 2025,3,Luleå kommun,Fylleri/LOB,1
 2025,3,Luleå kommun,Inbrott,1
@@ -2591,21 +2878,23 @@ year,month,geography_group,event_type_extracted,event_count
 2025,3,"Norrbotten, okänd kommun",Misshandel,3
 2025,3,Övriga Norrbotten,Rattfylleri,8
 2025,3,Övriga Norrbotten,Trafikkontroll,8
-2025,3,Övriga Norrbotten,Trafikolycka,6
+2025,3,Övriga Norrbotten,Trafikolycka,7
 2025,3,Övriga Norrbotten,"Trafikolycka,  vilt",4
+2025,3,Övriga Norrbotten,Övrigt/oklassificerad,4
 2025,3,Övriga Norrbotten,Brand,2
 2025,3,Övriga Norrbotten,Skadegörelse,2
+2025,3,Övriga Norrbotten,Inbrott,1
 2025,3,Övriga Norrbotten,Misshandel,1
 2025,3,Övriga Norrbotten,Narkotikabrott,1
 2025,3,Övriga Norrbotten,Ofredande/förargelse,1
 2025,3,Övriga Norrbotten,Olovlig körning,1
 2025,3,Övriga Norrbotten,Trafikbrott,1
+2025,4,Luleå kommun,Ofredande/förargelse,2
 2025,4,Luleå kommun,Trafikbrott,2
 2025,4,Luleå kommun,Bedrägeri,1
 2025,4,Luleå kommun,Knivlagen,1
 2025,4,Luleå kommun,Misshandel,1
 2025,4,Luleå kommun,Narkotikabrott,1
-2025,4,Luleå kommun,Ofredande/förargelse,1
 2025,4,Luleå kommun,Skadegörelse,1
 2025,4,Luleå kommun,Trafikkontroll,1
 2025,4,Luleå kommun,Trafikolycka,1
@@ -2622,6 +2911,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,4,Övriga Norrbotten,Narkotikabrott,3
 2025,4,Övriga Norrbotten,Ofredande/förargelse,2
 2025,4,Övriga Norrbotten,Skadegörelse,2
+2025,4,Övriga Norrbotten,Övrigt/oklassificerad,2
 2025,4,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2025,4,Övriga Norrbotten,Olovlig körning,1
 2025,4,Övriga Norrbotten,Trafikbrott,1
@@ -2636,15 +2926,16 @@ year,month,geography_group,event_type_extracted,event_count
 2025,5,Luleå kommun,Kontroll person/fordon,1
 2025,5,Luleå kommun,Narkotikabrott,1
 2025,5,Luleå kommun,"Trafikolycka,  vilt",1
+2025,5,Luleå kommun,Övrigt/oklassificerad,1
 2025,5,"Norrbotten, okänd kommun",Misshandel,1
 2025,5,Övriga Norrbotten,"Trafikolycka,  vilt",12
 2025,5,Övriga Norrbotten,Trafikkontroll,10
 2025,5,Övriga Norrbotten,Misshandel,8
 2025,5,Övriga Norrbotten,Rattfylleri,6
-2025,5,Övriga Norrbotten,Skadegörelse,4
+2025,5,Övriga Norrbotten,Ofredande/förargelse,5
+2025,5,Övriga Norrbotten,Brand,4
 2025,5,Övriga Norrbotten,Trafikbrott,4
-2025,5,Övriga Norrbotten,Brand,3
-2025,5,Övriga Norrbotten,Ofredande/förargelse,3
+2025,5,Övriga Norrbotten,Skadegörelse,3
 2025,5,Övriga Norrbotten,Trafikolycka,3
 2025,5,Övriga Norrbotten,Våld/hot mot tjänsteman,2
 2025,5,Övriga Norrbotten,Fylleri/LOB,1
@@ -2652,11 +2943,12 @@ year,month,geography_group,event_type_extracted,event_count
 2025,5,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2025,5,Övriga Norrbotten,Olovlig körning,1
 2025,5,Övriga Norrbotten,Stöld,1
-2025,6,Luleå kommun,Stöld,4
+2025,5,Övriga Norrbotten,Övrigt/oklassificerad,1
+2025,6,Luleå kommun,Stöld,5
+2025,6,Luleå kommun,Ofredande/förargelse,4
 2025,6,Luleå kommun,Misshandel,3
 2025,6,Luleå kommun,Trafikkontroll,3
 2025,6,Luleå kommun,Narkotikabrott,2
-2025,6,Luleå kommun,Ofredande/förargelse,2
 2025,6,Luleå kommun,"Trafikolycka,  vilt",2
 2025,6,Luleå kommun,Rattfylleri,1
 2025,6,Luleå kommun,Trafikbrott,1
@@ -2664,15 +2956,16 @@ year,month,geography_group,event_type_extracted,event_count
 2025,6,Luleå kommun,Våld/hot mot tjänsteman,1
 2025,6,"Norrbotten, okänd kommun",Misshandel,1
 2025,6,Övriga Norrbotten,Misshandel,16
-2025,6,Övriga Norrbotten,Rattfylleri,11
+2025,6,Övriga Norrbotten,Rattfylleri,12
 2025,6,Övriga Norrbotten,Trafikbrott,7
 2025,6,Övriga Norrbotten,Trafikkontroll,6
 2025,6,Övriga Norrbotten,Narkotikabrott,5
+2025,6,Övriga Norrbotten,Ofredande/förargelse,5
 2025,6,Övriga Norrbotten,Skadegörelse,4
 2025,6,Övriga Norrbotten,Brand,3
-2025,6,Övriga Norrbotten,Ofredande/förargelse,3
 2025,6,Övriga Norrbotten,Trafikolycka,3
 2025,6,Övriga Norrbotten,"Trafikolycka,  vilt",3
+2025,6,Övriga Norrbotten,Övrigt/oklassificerad,3
 2025,6,Övriga Norrbotten,Olaga hot,2
 2025,6,Övriga Norrbotten,Fylleri/LOB,1
 2025,6,Övriga Norrbotten,Knivlagen,1
@@ -2693,6 +2986,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,7,Luleå kommun,Våld/hot mot tjänsteman,1
 2025,7,"Norrbotten, okänd kommun",Fylleri/LOB,3
 2025,7,"Norrbotten, okänd kommun",Misshandel,1
+2025,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2025,7,Övriga Norrbotten,Trafikkontroll,8
 2025,7,Övriga Norrbotten,Misshandel,6
 2025,7,Övriga Norrbotten,Trafikbrott,5
@@ -2702,6 +2996,7 @@ year,month,geography_group,event_type_extracted,event_count
 2025,7,Övriga Norrbotten,"Trafikolycka,  vilt",4
 2025,7,Övriga Norrbotten,Brand,3
 2025,7,Övriga Norrbotten,Ofredande/förargelse,3
+2025,7,Övriga Norrbotten,Övrigt/oklassificerad,3
 2025,7,Övriga Norrbotten,Knivlagen,2
 2025,7,Övriga Norrbotten,Våld/hot mot tjänsteman,2
 2025,7,Övriga Norrbotten,Inbrott,1
@@ -2723,13 +3018,15 @@ year,month,geography_group,event_type_extracted,event_count
 2025,8,Luleå kommun,Trafikbrott,1
 2025,8,Luleå kommun,Trafikolycka,1
 2025,8,Luleå kommun,Våld/hot mot tjänsteman,1
-2025,8,Övriga Norrbotten,"Trafikolycka,  vilt",13
+2025,8,Övriga Norrbotten,"Trafikolycka,  vilt",12
 2025,8,Övriga Norrbotten,Misshandel,9
 2025,8,Övriga Norrbotten,Trafikbrott,9
 2025,8,Övriga Norrbotten,Rattfylleri,8
 2025,8,Övriga Norrbotten,Trafikkontroll,7
 2025,8,Övriga Norrbotten,Trafikolycka,6
+2025,8,Övriga Norrbotten,Övrigt/oklassificerad,5
 2025,8,Övriga Norrbotten,Brand,4
+2025,8,Övriga Norrbotten,Ofredande/förargelse,4
 2025,8,Övriga Norrbotten,Skadegörelse,4
 2025,8,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
 2025,8,Övriga Norrbotten,Bedrägeri,1
@@ -2737,7 +3034,6 @@ year,month,geography_group,event_type_extracted,event_count
 2025,8,Övriga Norrbotten,Inbrott,1
 2025,8,Övriga Norrbotten,Knivlagen,1
 2025,8,Övriga Norrbotten,Narkotikabrott,1
-2025,8,Övriga Norrbotten,Ofredande/förargelse,1
 2025,8,Övriga Norrbotten,Olaga hot,1
 2025,8,Övriga Norrbotten,Olovlig körning,1
 2025,8,Övriga Norrbotten,Stöld,1
@@ -2755,10 +3051,12 @@ year,month,geography_group,event_type_extracted,event_count
 2025,9,"Norrbotten, okänd kommun",Misshandel,1
 2025,9,Övriga Norrbotten,"Trafikolycka,  vilt",8
 2025,9,Övriga Norrbotten,Trafikkontroll,7
+2025,9,Övriga Norrbotten,Misshandel,4
 2025,9,Övriga Norrbotten,Narkotikabrott,4
+2025,9,Övriga Norrbotten,Övrigt/oklassificerad,4
 2025,9,Övriga Norrbotten,Brand,3
 2025,9,Övriga Norrbotten,Skadegörelse,3
-2025,9,Övriga Norrbotten,Misshandel,2
+2025,9,Övriga Norrbotten,Ofredande/förargelse,2
 2025,9,Övriga Norrbotten,Olaga hot,2
 2025,9,Övriga Norrbotten,Rattfylleri,2
 2025,9,Övriga Norrbotten,Fylleri/LOB,1
@@ -2769,10 +3067,9 @@ year,month,geography_group,event_type_extracted,event_count
 2025,9,Övriga Norrbotten,Trafikolycka,1
 2025,9,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2025,10,Luleå kommun,Misshandel,5
-2025,10,Luleå kommun,"Trafikolycka,  vilt",3
+2025,10,Luleå kommun,"Trafikolycka,  vilt",4
 2025,10,Luleå kommun,Arbetsplatsolycka,2
 2025,10,Luleå kommun,Brand,2
-2025,10,Luleå kommun,Djur,1
 2025,10,Luleå kommun,Fylleri/LOB,1
 2025,10,Luleå kommun,Inbrott,1
 2025,10,Luleå kommun,Olaga intrång/hemfridsbrott,1
@@ -2781,13 +3078,16 @@ year,month,geography_group,event_type_extracted,event_count
 2025,10,Luleå kommun,Stöld,1
 2025,10,Luleå kommun,Trafikkontroll,1
 2025,10,Luleå kommun,Våld/hot mot tjänsteman,1
+2025,10,Luleå kommun,Övrigt/oklassificerad,1
 2025,10,"Norrbotten, okänd kommun",Narkotikabrott,2
+2025,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2025,10,Övriga Norrbotten,Trafikkontroll,10
 2025,10,Övriga Norrbotten,Trafikbrott,9
 2025,10,Övriga Norrbotten,Misshandel,5
 2025,10,Övriga Norrbotten,"Trafikolycka,  vilt",5
 2025,10,Övriga Norrbotten,Trafikolycka,4
 2025,10,Övriga Norrbotten,Rattfylleri,3
+2025,10,Övriga Norrbotten,Övrigt/oklassificerad,3
 2025,10,Övriga Norrbotten,Brand,2
 2025,10,Övriga Norrbotten,Bedrägeri,1
 2025,10,Övriga Norrbotten,Knivlagen,1
@@ -2796,9 +3096,10 @@ year,month,geography_group,event_type_extracted,event_count
 2025,10,Övriga Norrbotten,Rån,1
 2025,10,Övriga Norrbotten,Skadegörelse,1
 2025,10,Övriga Norrbotten,Skottlossning/explosion,1
-2025,11,Luleå kommun,Misshandel,10
-2025,11,Luleå kommun,Skadegörelse,3
+2025,10,Övriga Norrbotten,Stöld,1
+2025,11,Luleå kommun,Misshandel,12
 2025,11,Luleå kommun,Narkotikabrott,2
+2025,11,Luleå kommun,Skadegörelse,2
 2025,11,Luleå kommun,Stöld,2
 2025,11,Luleå kommun,Inbrott,1
 2025,11,Luleå kommun,Olovlig körning,1
@@ -2811,12 +3112,14 @@ year,month,geography_group,event_type_extracted,event_count
 2025,11,Övriga Norrbotten,Trafikkontroll,7
 2025,11,Övriga Norrbotten,Misshandel,5
 2025,11,Övriga Norrbotten,Trafikbrott,5
+2025,11,Övriga Norrbotten,Övrigt/oklassificerad,4
 2025,11,Övriga Norrbotten,Narkotikabrott,3
 2025,11,Övriga Norrbotten,Olovlig körning,3
 2025,11,Övriga Norrbotten,Rattfylleri,2
 2025,11,Övriga Norrbotten,Trafikolycka,2
 2025,11,Övriga Norrbotten,Arbetsplatsolycka,1
 2025,11,Övriga Norrbotten,Brand,1
+2025,11,Övriga Norrbotten,Ofredande/förargelse,1
 2025,12,Luleå kommun,Rattfylleri,4
 2025,12,Luleå kommun,Misshandel,2
 2025,12,Luleå kommun,Trafikkontroll,2
@@ -2825,15 +3128,19 @@ year,month,geography_group,event_type_extracted,event_count
 2025,12,Luleå kommun,Narkotikabrott,1
 2025,12,Luleå kommun,Olaga intrång/hemfridsbrott,1
 2025,12,Luleå kommun,Trafikolycka,1
+2025,12,Luleå kommun,Övrigt/oklassificerad,1
 2025,12,"Norrbotten, okänd kommun",Narkotikabrott,2
 2025,12,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2025,12,"Norrbotten, okänd kommun",Misshandel,1
 2025,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2025,12,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
+2025,12,Övriga Norrbotten,Misshandel,9
 2025,12,Övriga Norrbotten,Rattfylleri,9
-2025,12,Övriga Norrbotten,Misshandel,8
+2025,12,Övriga Norrbotten,Övrigt/oklassificerad,9
 2025,12,Övriga Norrbotten,"Trafikolycka,  vilt",7
 2025,12,Övriga Norrbotten,Trafikkontroll,6
 2025,12,Övriga Norrbotten,Skadegörelse,5
+2025,12,Övriga Norrbotten,Trafikolycka,4
 2025,12,Övriga Norrbotten,Trafikbrott,3
 2025,12,Övriga Norrbotten,Olaga hot,2
 2025,12,Övriga Norrbotten,Våld/hot mot tjänsteman,2
@@ -2845,21 +3152,24 @@ year,month,geography_group,event_type_extracted,event_count
 2026,1,Luleå kommun,Misshandel,4
 2026,1,Luleå kommun,Trafikkontroll,4
 2026,1,Luleå kommun,Trafikolycka,3
-2026,1,Luleå kommun,Brand,1
+2026,1,Luleå kommun,Brand,2
 2026,1,Luleå kommun,Vapenlagen,1
+2026,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2026,1,"Norrbotten, okänd kommun",Fylleri/LOB,1
-2026,1,Övriga Norrbotten,"Trafikolycka,  vilt",16
+2026,1,Övriga Norrbotten,"Trafikolycka,  vilt",18
 2026,1,Övriga Norrbotten,Trafikbrott,10
-2026,1,Övriga Norrbotten,Rattfylleri,9
+2026,1,Övriga Norrbotten,Rattfylleri,8
 2026,1,Övriga Norrbotten,Misshandel,5
-2026,1,Övriga Norrbotten,Skadegörelse,4
-2026,1,Övriga Norrbotten,Brand,3
+2026,1,Övriga Norrbotten,Brand,4
+2026,1,Övriga Norrbotten,Skadegörelse,3
 2026,1,Övriga Norrbotten,Trafikkontroll,3
 2026,1,Övriga Norrbotten,Bedrägeri,1
 2026,1,Övriga Norrbotten,Fjällräddning,1
 2026,1,Övriga Norrbotten,Narkotikabrott,1
+2026,1,Övriga Norrbotten,Ofredande/förargelse,1
 2026,1,Övriga Norrbotten,Olovlig körning,1
 2026,1,Övriga Norrbotten,Trafikolycka,1
+2026,1,Övriga Norrbotten,Övrigt/oklassificerad,1
 2026,2,Luleå kommun,Trafikkontroll,6
 2026,2,Luleå kommun,Misshandel,3
 2026,2,Luleå kommun,"Trafikolycka,  vilt",2
@@ -2869,59 +3179,64 @@ year,month,geography_group,event_type_extracted,event_count
 2026,2,Luleå kommun,Rattfylleri,1
 2026,2,Luleå kommun,Skadegörelse,1
 2026,2,Luleå kommun,Trafikbrott,1
+2026,2,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2026,2,Övriga Norrbotten,"Trafikolycka,  vilt",13
 2026,2,Övriga Norrbotten,Trafikkontroll,8
 2026,2,Övriga Norrbotten,Misshandel,5
 2026,2,Övriga Norrbotten,Trafikbrott,5
 2026,2,Övriga Norrbotten,Rattfylleri,4
+2026,2,Övriga Norrbotten,Övrigt/oklassificerad,4
+2026,2,Övriga Norrbotten,Ofredande/förargelse,3
+2026,2,Övriga Norrbotten,Stöld,3
 2026,2,Övriga Norrbotten,Brand,2
-2026,2,Övriga Norrbotten,Stöld,2
 2026,2,Övriga Norrbotten,Trafikolycka,2
 2026,2,Övriga Norrbotten,Fjällräddning,1
 2026,2,Övriga Norrbotten,Fylleri/LOB,1
 2026,2,Övriga Norrbotten,Inbrott,1
 2026,2,Övriga Norrbotten,Knivlagen,1
 2026,2,Övriga Norrbotten,Narkotikabrott,1
-2026,2,Övriga Norrbotten,Ofredande/förargelse,1
 2026,2,Övriga Norrbotten,Olaga intrång/hemfridsbrott,1
 2026,2,Övriga Norrbotten,Olovlig körning,1
 2026,2,Övriga Norrbotten,Skadegörelse,1
 2026,3,Luleå kommun,Misshandel,6
 2026,3,Luleå kommun,Trafikkontroll,5
+2026,3,Luleå kommun,Inbrott,3
 2026,3,Luleå kommun,Fylleri/LOB,2
-2026,3,Luleå kommun,Inbrott,2
 2026,3,Luleå kommun,Skadegörelse,2
+2026,3,Luleå kommun,Övrigt/oklassificerad,2
 2026,3,Luleå kommun,Knivlagen,1
 2026,3,Luleå kommun,Narkotikabrott,1
 2026,3,Luleå kommun,Olovlig körning,1
 2026,3,Luleå kommun,Stöld,1
-2026,3,Luleå kommun,Stöld/inbrott,1
 2026,3,Luleå kommun,Trafikbrott,1
 2026,3,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2026,3,"Norrbotten, okänd kommun",Misshandel,1
+2026,3,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
 2026,3,Övriga Norrbotten,Trafikkontroll,14
+2026,3,Övriga Norrbotten,Övrigt/oklassificerad,10
 2026,3,Övriga Norrbotten,Trafikbrott,7
+2026,3,Övriga Norrbotten,Trafikolycka,6
+2026,3,Övriga Norrbotten,Ofredande/förargelse,5
 2026,3,Övriga Norrbotten,Olovlig körning,5
 2026,3,Övriga Norrbotten,"Trafikolycka,  vilt",5
 2026,3,Övriga Norrbotten,Misshandel,4
-2026,3,Övriga Norrbotten,Trafikolycka,4
-2026,3,Övriga Norrbotten,Ofredande/förargelse,3
 2026,3,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
 2026,3,Övriga Norrbotten,Rattfylleri,2
 2026,3,Övriga Norrbotten,Brand,1
 2026,3,Övriga Norrbotten,Fjällräddning,1
 2026,3,Övriga Norrbotten,Inbrott,1
 2026,3,Övriga Norrbotten,Skadegörelse,1
+2026,3,Övriga Norrbotten,Stöld,1
 2026,4,Luleå kommun,Trafikkontroll,8
 2026,4,Luleå kommun,Misshandel,4
 2026,4,Luleå kommun,Trafikbrott,4
+2026,4,Luleå kommun,Ofredande/förargelse,3
 2026,4,Luleå kommun,Brand,2
 2026,4,Luleå kommun,Narkotikabrott,2
 2026,4,Luleå kommun,Fylleri/LOB,1
-2026,4,Luleå kommun,Ofredande/förargelse,1
 2026,4,Luleå kommun,Rattfylleri,1
 2026,4,Luleå kommun,"Stöld,  ringa",1
-2026,4,Luleå kommun,Trafikolycka,1
+2026,4,Luleå kommun,"Trafikolycka,  vilt",1
 2026,4,"Norrbotten, okänd kommun",Misshandel,3
 2026,4,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2026,4,"Norrbotten, okänd kommun",Narkotikabrott,1
@@ -2932,6 +3247,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,4,Övriga Norrbotten,Misshandel,2
 2026,4,Övriga Norrbotten,Skadegörelse,2
 2026,4,Övriga Norrbotten,Trafikolycka,2
+2026,4,Övriga Norrbotten,Övrigt/oklassificerad,2
 2026,4,Övriga Norrbotten,Brand,1
 2026,4,Övriga Norrbotten,Fjällräddning,1
 2026,4,Övriga Norrbotten,Inbrott,1
@@ -2941,27 +3257,30 @@ year,month,geography_group,event_type_extracted,event_count
 2026,4,Övriga Norrbotten,Olovlig körning,1
 2026,5,Luleå kommun,Misshandel,8
 2026,5,Luleå kommun,Trafikkontroll,6
-2026,5,Luleå kommun,"Trafikolycka,  vilt",5
 2026,5,Luleå kommun,Trafikolycka,4
+2026,5,Luleå kommun,"Trafikolycka,  vilt",4
 2026,5,Luleå kommun,Trafikbrott,3
 2026,5,Luleå kommun,Narkotikabrott,2
 2026,5,Luleå kommun,Rattfylleri,2
 2026,5,Luleå kommun,Rån,2
 2026,5,Luleå kommun,Brand,1
+2026,5,Luleå kommun,Inbrott,1
 2026,5,Luleå kommun,Knivlagen,1
 2026,5,Luleå kommun,Ofredande/förargelse,1
 2026,5,Luleå kommun,Skadegörelse,1
 2026,5,Luleå kommun,Stöld,1
+2026,5,Luleå kommun,Övrigt/oklassificerad,1
 2026,5,Övriga Norrbotten,Trafikbrott,7
 2026,5,Övriga Norrbotten,Trafikkontroll,7
 2026,5,Övriga Norrbotten,Misshandel,5
+2026,5,Övriga Norrbotten,Ofredande/förargelse,5
 2026,5,Övriga Norrbotten,Rattfylleri,5
 2026,5,Övriga Norrbotten,Skadegörelse,5
-2026,5,Övriga Norrbotten,Ofredande/förargelse,3
 2026,5,Övriga Norrbotten,Stöld,3
 2026,5,Övriga Norrbotten,Bedrägeri,2
 2026,5,Övriga Norrbotten,Trafikolycka,2
 2026,5,Övriga Norrbotten,"Trafikolycka,  vilt",2
+2026,5,Övriga Norrbotten,Övrigt/oklassificerad,2
 2026,5,Övriga Norrbotten,Brand,1
 2026,5,Övriga Norrbotten,Inbrott,1
 2026,5,Övriga Norrbotten,Narkotikabrott,1
@@ -2978,6 +3297,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,6,Luleå kommun,Brand,1
 2026,6,Luleå kommun,Knivlagen,1
 2026,6,Luleå kommun,Narkotikabrott,1
+2026,6,Luleå kommun,Ofredande/förargelse,1
 2026,6,Luleå kommun,Olovlig körning,1
 2026,6,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2026,6,"Norrbotten, okänd kommun",Misshandel,1
@@ -2989,8 +3309,10 @@ year,month,geography_group,event_type_extracted,event_count
 2026,6,Övriga Norrbotten,Trafikolycka,3
 2026,6,Övriga Norrbotten,Olovlig körning,2
 2026,6,Övriga Norrbotten,"Trafikolycka,  vilt",2
+2026,6,Övriga Norrbotten,Övrigt/oklassificerad,2
 2026,6,Övriga Norrbotten,Brand,1
 2026,6,Övriga Norrbotten,Fjällräddning,1
+2026,6,Övriga Norrbotten,Inbrott,1
 2026,6,Övriga Norrbotten,Knivlagen,1
 2026,6,Övriga Norrbotten,Narkotikabrott,1
 2026,6,Övriga Norrbotten,Ofredande/förargelse,1
@@ -3000,35 +3322,36 @@ year,month,geography_group,event_type_extracted,event_count
 2026,7,Luleå kommun,Skadegörelse,2
 2026,7,Luleå kommun,Stöld,2
 2026,7,Luleå kommun,Trafikolycka,2
+2026,7,Luleå kommun,"Trafikolycka,  vilt",2
 2026,7,Luleå kommun,Arbetsplatsolycka,1
 2026,7,Luleå kommun,Inbrott,1
 2026,7,Luleå kommun,Misshandel,1
 2026,7,Luleå kommun,Olovlig körning,1
 2026,7,Luleå kommun,Trafikbrott,1
-2026,7,Luleå kommun,"Trafikolycka,  vilt",1
 2026,7,"Norrbotten, okänd kommun",Misshandel,2
-2026,7,Övriga Norrbotten,Misshandel,13
+2026,7,Övriga Norrbotten,Misshandel,12
 2026,7,Övriga Norrbotten,Trafikkontroll,11
-2026,7,Övriga Norrbotten,Trafikbrott,7
+2026,7,Övriga Norrbotten,Trafikbrott,8
 2026,7,Övriga Norrbotten,Rattfylleri,6
+2026,7,Övriga Norrbotten,"Trafikolycka,  vilt",6
 2026,7,Övriga Norrbotten,Olovlig körning,5
-2026,7,Övriga Norrbotten,"Trafikolycka,  vilt",5
+2026,7,Övriga Norrbotten,Ofredande/förargelse,4
 2026,7,Övriga Norrbotten,Trafikolycka,4
 2026,7,Övriga Norrbotten,Inbrott,2
 2026,7,Övriga Norrbotten,Narkotikabrott,2
 2026,7,Övriga Norrbotten,Olaga intrång/hemfridsbrott,2
 2026,7,Övriga Norrbotten,Skadegörelse,2
 2026,7,Övriga Norrbotten,Våld/hot mot tjänsteman,2
+2026,7,Övriga Norrbotten,Övrigt/oklassificerad,2
 2026,7,Övriga Norrbotten,Brand,1
 2026,7,Övriga Norrbotten,Fjällräddning,1
 2026,7,Övriga Norrbotten,Olaga hot,1
 2026,8,Luleå kommun,Trafikkontroll,7
-2026,8,Luleå kommun,Misshandel,5
+2026,8,Luleå kommun,Misshandel,6
+2026,8,Luleå kommun,Ofredande/förargelse,2
 2026,8,Luleå kommun,Trafikolycka,2
 2026,8,Luleå kommun,"Trafikolycka,  vilt",2
-2026,8,Luleå kommun,Fylleri/LOB,1
 2026,8,Luleå kommun,Knivlagen,1
-2026,8,Luleå kommun,Ofredande/förargelse,1
 2026,8,Luleå kommun,Olovlig körning,1
 2026,8,Luleå kommun,Rattfylleri,1
 2026,8,Luleå kommun,Stöld,1
@@ -3039,12 +3362,14 @@ year,month,geography_group,event_type_extracted,event_count
 2026,8,Övriga Norrbotten,Misshandel,7
 2026,8,Övriga Norrbotten,Trafikolycka,5
 2026,8,Övriga Norrbotten,Trafikbrott,4
+2026,8,Övriga Norrbotten,Övrigt/oklassificerad,4
 2026,8,Övriga Norrbotten,Brand,3
 2026,8,Övriga Norrbotten,Skadegörelse,3
 2026,8,Övriga Norrbotten,Fjällräddning,2
-2026,8,Övriga Norrbotten,Fylleri/LOB,2
+2026,8,Övriga Norrbotten,Ofredande/förargelse,2
 2026,8,Övriga Norrbotten,Arbetsplatsolycka,1
 2026,8,Övriga Norrbotten,Bedrägeri,1
+2026,8,Övriga Norrbotten,Fylleri/LOB,1
 2026,8,Övriga Norrbotten,Narkotikabrott,1
 2026,8,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2026,9,Luleå kommun,Rattfylleri,4
@@ -3055,6 +3380,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,9,Luleå kommun,Brand,1
 2026,9,Luleå kommun,Inbrott,1
 2026,9,Luleå kommun,Narkotikabrott,1
+2026,9,Luleå kommun,Ofredande/förargelse,1
 2026,9,Luleå kommun,Rån,1
 2026,9,Luleå kommun,Skadegörelse,1
 2026,9,Luleå kommun,Trafikbrott,1
@@ -3063,20 +3389,22 @@ year,month,geography_group,event_type_extracted,event_count
 2026,9,Övriga Norrbotten,Rattfylleri,8
 2026,9,Övriga Norrbotten,Trafikkontroll,8
 2026,9,Övriga Norrbotten,Brand,5
+2026,9,Övriga Norrbotten,"Trafikolycka,  vilt",4
+2026,9,Övriga Norrbotten,Misshandel,3
 2026,9,Övriga Norrbotten,Trafikolycka,3
-2026,9,Övriga Norrbotten,Misshandel,2
 2026,9,Övriga Norrbotten,Narkotikabrott,2
 2026,9,Övriga Norrbotten,Skadegörelse,2
+2026,9,Övriga Norrbotten,Stöld,2
 2026,9,Övriga Norrbotten,Trafikbrott,2
-2026,9,Övriga Norrbotten,"Trafikolycka,  vilt",2
 2026,9,Övriga Norrbotten,Bedrägeri,1
 2026,9,Övriga Norrbotten,Fylleri/LOB,1
 2026,9,Övriga Norrbotten,Inbrott,1
+2026,9,Övriga Norrbotten,Ofredande/förargelse,1
 2026,9,Övriga Norrbotten,Olovlig körning,1
-2026,9,Övriga Norrbotten,Stöld,1
 2026,9,Övriga Norrbotten,Våld/hot mot tjänsteman,1
 2026,10,Luleå kommun,Misshandel,2
 2026,10,Luleå kommun,Trafikkontroll,1
+2026,10,Övriga Norrbotten,Ofredande/förargelse,5
 2026,10,Övriga Norrbotten,Trafikkontroll,3
 2026,10,Övriga Norrbotten,Brand,2
 2026,10,Övriga Norrbotten,Rattfylleri,2
@@ -3086,3 +3414,4 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Övriga Norrbotten,Trafikbrott,1
 2026,10,Övriga Norrbotten,Trafikolycka,1
 2026,10,Övriga Norrbotten,"Trafikolycka,  vilt",1
+2026,10,Övriga Norrbotten,Övrigt/oklassificerad,1
