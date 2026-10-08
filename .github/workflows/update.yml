@@ -2,6 +2,12 @@ name: Update polishandelser
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_latest.py"
+      - "scripts/common.py"
+      - "scripts/extract_summary_details.py"
+      - ".github/workflows/update.yml"
   schedule:
     - cron: "17 4 * * *"
 
