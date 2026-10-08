@@ -45,6 +45,7 @@ jobs:
       - run: python scripts/annotate_summary_validation_batch6.py
       - run: python scripts/revise_summary_validation_event_definition.py
       - run: python scripts/build_summary_validation_remaining.py
+      - run: python scripts/build_summary_validation_misses.py
       - run: python scripts/report_summary_validation.py
       - name: Sync dashboard data
         run: |
