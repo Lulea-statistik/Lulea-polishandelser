@@ -10,6 +10,7 @@ EVENTS = ROOT / "data" / "events.csv"
 DETAILS = ROOT / "data" / "summary_details_dedup.csv"
 OUT = ROOT / "data" / "expanded_monthly_summary.csv"
 OUT_STATS = ROOT / "data" / "expanded_summary_resolution_stats.csv"
+OUT_QUIET = ROOT / "data" / "quiet_summaries_monthly.csv"
 
 NO_NEW_EVENT_RE = re.compile(
     r"(?i)\b(?:"
@@ -31,6 +32,25 @@ def summary_text(row: pd.Series) -> str:
         str(row.get(col, "") or "")
         for col in ("headline", "description", "content")
     )
+
+
+def quiet_bucket(value: str) -> str:
+    s = str(value or "").casefold()
+    if "kväll" in s and "natt" in s:
+        return "Kväll/natt"
+    if "natt" in s:
+        return "Natt"
+    if "förmiddag" in s:
+        return "Förmiddag"
+    if "eftermiddag" in s:
+        return "Eftermiddag"
+    if "kväll" in s:
+        return "Kväll"
+    if "dag" in s:
+        return "Dag"
+    if "helg" in s:
+        return "Helg"
+    return "Övrig sammanfattning"
 
 
 def main() -> None:
@@ -63,6 +83,15 @@ def main() -> None:
     unresolved["explicit_no_new_event"] = unresolved.apply(
         lambda r: bool(NO_NEW_EVENT_RE.search(summary_text(r))), axis=1
     )
+    quiet = unresolved[unresolved["explicit_no_new_event"]].copy()
+    quiet["quiet_bucket"] = quiet["type_original"].map(quiet_bucket)
+    quiet_monthly = (
+        quiet.groupby(["year", "month", "geography_group", "quiet_bucket"], dropna=False)
+        .size().reset_index(name="event_count")
+        .sort_values(["year", "month", "geography_group", "quiet_bucket"])
+    )
+    quiet_monthly.to_csv(OUT_QUIET, index=False, encoding="utf-8")
+
     unresolved_keep = unresolved[~unresolved["explicit_no_new_event"]].copy()
     unresolved_rows = unresolved_keep[["year", "month", "geography_group"]].copy()
     unresolved_rows["event_type"] = "Sammanfattning, ej uppdelad"
