@@ -373,10 +373,7 @@ def geography_group(
     if title_cf in OTHER_SWEDISH_MUNICIPALITY_TITLES:
         return "Övriga Sverige"
     if source.startswith("municipality_pair:"):
-        pair = source.split(":", 1)[1].split("|")
-        labels = [MUNICIPALITY_GROUP_LABELS.get(m, m) for m in pair if m]
-        if len(labels) == 2:
-            return " / ".join(sorted(labels))
+        return "Flera kommuner i Norrbotten"
     if area_cf == "norrbottens län" and source == "ambiguous_municipality_names":
         return "Flera kommuner i Norrbotten"
     if area_cf == "norrbottens län" and source == "cross_county_ambiguous":
