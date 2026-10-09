@@ -204,6 +204,7 @@
       <div class="card">
         <h2>Vanligaste händelsetyper</h2>
         <div class="chartbox"><canvas id="typeChart"></canvas></div>
+        <p class="chart-note">Kategorifördelningen använder den expanderade serien: sammanfattningsposter ersätts av deduplicerade underhändelser när sådana kunnat identifieras. Endast sammanfattningar som inte kunnat delas upp ligger kvar som <strong>Sammanfattning, ej uppdelad</strong>.</p>
       </div>
     </div>
 
@@ -250,7 +251,7 @@
         </div>
       </div>
       <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
-      <p class="chart-note">Diagrammet visar hur stor andel varje aggregerad händelsekategori utgör av samtliga händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
+      <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
     </div>
 
     <div class="foot">
@@ -263,9 +264,10 @@
 const DATA_URL='data/monthly_summary.csv';
 const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
+const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], summaryRows=[], summaryExtraRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart;
+let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -376,6 +378,14 @@ function groupSum(data,key){
   return [...m.entries()];
 }
 function selected(id){return document.getElementById(id).value}
+function filtExpanded(ignoreGeo=false, ignoreType=false){
+  const g=selected('geo'), y=selected('year'), t=selected('type'), field=typeField();
+  return expandedRows.filter(r=>
+    (ignoreGeo || g==='Alla'||r.geography_group===g) &&
+    (y==='Alla'||r.year===y) &&
+    (ignoreType || t==='Alla'||r[field]===t)
+  );
+}
 function filt(ignoreGeo=false){
   const g=selected('geo'), y=selected('year'), t=selected('type'), field=typeField();
   return rows.filter(r=>
@@ -513,8 +523,9 @@ function buildTypeSearch(){
 }
 function refreshTypeSelector(preferred='Alla'){
   const field=typeField();
-  const values=[...new Set(rows.map(x=>x[field]).filter(Boolean))]
-    .sort((a,b)=>a.localeCompare(b,'sv'));
+  const values=[...new Set(
+    [...rows,...expandedRows].map(x=>x[field]).filter(Boolean)
+  )].sort((a,b)=>a.localeCompare(b,'sv'));
   fillTypeSearch(values,preferred);
 }
 
@@ -524,7 +535,7 @@ function chartReplace(oldChart,ctx,config){
 }
 function updateTypeShareChart(){
   const g=selected('geo');
-  const data=rows.filter(r=>g==='Alla'||r.geography_group===g);
+  const data=expandedRows.filter(r=>g==='Alla'||r.geography_group===g);
   const grandTotal=sum(data);
   const field=typeField();
   const allTypeTotals=groupSum(data,field)
@@ -684,9 +695,9 @@ function updateSummaryDetailChart(){
 
 function comparisonAreaRows(area){
   if(area==='Norrbotten'){
-    return rows.filter(r=>r.geography_group!=='Utanför Norrbotten');
+    return expandedRows.filter(r=>r.geography_group!=='Utanför Norrbotten');
   }
-  return rows.filter(r=>r.geography_group===area);
+  return expandedRows.filter(r=>r.geography_group===area);
 }
 
 function syncComparisonAreaOptions(){
@@ -870,7 +881,8 @@ function update(){
   });
 
   const field=typeField();
-  const types=groupSum(d,field).sort((a,b)=>b[1]-a[1]).slice(0,15);
+  const expandedFiltered=filtExpanded();
+  const types=groupSum(expandedFiltered,field).sort((a,b)=>b[1]-a[1]).slice(0,15);
   typeChart=chartReplace(typeChart,document.getElementById('typeChart'),{
     type:'bar',
     data:{labels:types.map(x=>x[0]),datasets:[{label:'Antal',data:types.map(x=>x[1]),backgroundColor:'#2f855a',borderColor:'#2f855a'}]},
@@ -903,13 +915,20 @@ function update(){
 Promise.all([
   fetch(DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Huvuddata HTTP '+r.status);return r.text()}),
   fetch(SUMMARY_DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
-  fetch(SUMMARY_EXTRA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
+  fetch(SUMMARY_EXTRA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
+  fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()})
 ])
-  .then(([text,summaryText,summaryExtraText])=>{
+  .then(([text,summaryText,summaryExtraText,expandedText])=>{
     rows=parseCSV(text).map(r=>({
       ...r,
       event_count:+r.event_count||0,
       type_aggregated:aggregatedType(r.type_original)
+    }));
+    expandedRows=parseCSV(expandedText).map(r=>({
+      ...r,
+      type_original:r.event_type,
+      event_count:+r.event_count||0,
+      type_aggregated:aggregatedType(r.event_type)
     }));
     summaryRows=summaryText?parseCSV(summaryText).map(r=>({...r,event_count:+r.event_count||0})) : [];
     summaryExtraRows=summaryExtraText?parseCSV(summaryExtraText).map(r=>({...r,event_count:+r.event_count||0})) : summaryRows;
