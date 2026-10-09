@@ -9,3 +9,7 @@ year,county,county_code,measure,value,unit,source_report,source_url,coverage_not
 2023,Norrbotten,25,answered_112_calls,79229,antal,112-rapporten 2025,https://www.sosalarm.se/112-rapporten-2025/statistik-112-tjansten-2025/,Besvarade 112-samtal; not equivalent to reported incidents
 2024,Norrbotten,25,answered_112_calls,74677,antal,112-rapporten 2025,https://www.sosalarm.se/112-rapporten-2025/statistik-112-tjansten-2025/,Besvarade 112-samtal; not equivalent to reported incidents
 2025,Norrbotten,25,answered_112_calls,80986,antal,112-rapporten 2025,https://www.sosalarm.se/112-rapporten-2025/statistik-112-tjansten-2025/,Besvarade 112-samtal; not equivalent to reported incidents
+2018,Norrbotten,25,answered_112_calls,81995,antal,112-rapporten 2021,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2021.pdf,Besvarade 112-samtal per lan; not equivalent to incidents
+2019,Norrbotten,25,answered_112_calls,89123,antal,112-rapporten 2021,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2021.pdf,Besvarade 112-samtal per lan; not equivalent to incidents
+2020,Norrbotten,25,answered_112_calls,84735,antal,112-rapporten 2021,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2021.pdf,Besvarade 112-samtal per lan; not equivalent to incidents
+2021,Norrbotten,25,answered_112_calls,71405,antal,112-rapporten 2021,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2021.pdf,Besvarade 112-samtal per lan; not equivalent to incidents
