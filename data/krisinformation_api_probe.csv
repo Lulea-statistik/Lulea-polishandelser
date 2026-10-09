@@ -1,0 +1,5 @@
+days,status,returned,fields,error
+7,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+30,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+365,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+3650,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
