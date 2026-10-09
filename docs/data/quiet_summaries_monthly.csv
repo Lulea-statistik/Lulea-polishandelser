@@ -15,7 +15,7 @@ year,month,geography_group,quiet_bucket,event_count
 2017,1,"Norrbotten, okänd kommun",Eftermiddag,1
 2017,1,"Norrbotten, okänd kommun",Förmiddag,8
 2017,1,"Norrbotten, okänd kommun",Kväll,3
-2017,1,"Norrbotten, okänd kommun",Natt,3
+2017,1,"Norrbotten, okänd kommun",Natt,5
 2017,2,"Norrbotten, okänd kommun",Dag,2
 2017,2,"Norrbotten, okänd kommun",Förmiddag,3
 2017,2,"Norrbotten, okänd kommun",Kväll,1
@@ -33,7 +33,7 @@ year,month,geography_group,quiet_bucket,event_count
 2017,5,"Norrbotten, okänd kommun",Förmiddag,6
 2017,5,"Norrbotten, okänd kommun",Natt,2
 2017,6,"Norrbotten, okänd kommun",Förmiddag,5
-2017,6,"Norrbotten, okänd kommun",Natt,2
+2017,6,"Norrbotten, okänd kommun",Natt,3
 2017,7,"Norrbotten, okänd kommun",Dag,2
 2017,7,"Norrbotten, okänd kommun",Förmiddag,2
 2017,8,"Norrbotten, okänd kommun",Eftermiddag,2
@@ -49,7 +49,7 @@ year,month,geography_group,quiet_bucket,event_count
 2017,10,"Norrbotten, okänd kommun",Eftermiddag,1
 2017,10,"Norrbotten, okänd kommun",Förmiddag,3
 2017,10,"Norrbotten, okänd kommun",Kväll,1
-2017,10,"Norrbotten, okänd kommun",Natt,1
+2017,10,"Norrbotten, okänd kommun",Natt,2
 2017,11,"Norrbotten, okänd kommun",Kväll,1
 2017,11,"Norrbotten, okänd kommun",Natt,4
 2017,12,"Norrbotten, okänd kommun",Dag,2
@@ -65,7 +65,7 @@ year,month,geography_group,quiet_bucket,event_count
 2018,2,"Norrbotten, okänd kommun",Natt,3
 2018,3,"Norrbotten, okänd kommun",Eftermiddag,1
 2018,3,"Norrbotten, okänd kommun",Förmiddag,3
-2018,3,"Norrbotten, okänd kommun",Natt,1
+2018,3,"Norrbotten, okänd kommun",Natt,2
 2018,4,"Norrbotten, okänd kommun",Dag,1
 2018,4,"Norrbotten, okänd kommun",Förmiddag,6
 2018,4,"Norrbotten, okänd kommun",Natt,6
@@ -73,12 +73,12 @@ year,month,geography_group,quiet_bucket,event_count
 2018,5,"Norrbotten, okänd kommun",Eftermiddag,1
 2018,5,"Norrbotten, okänd kommun",Förmiddag,3
 2018,5,"Norrbotten, okänd kommun",Kväll,1
-2018,5,"Norrbotten, okänd kommun",Natt,3
+2018,5,"Norrbotten, okänd kommun",Natt,4
 2018,6,"Norrbotten, okänd kommun",Dag,3
 2018,6,"Norrbotten, okänd kommun",Eftermiddag,1
 2018,6,"Norrbotten, okänd kommun",Förmiddag,4
 2018,6,"Norrbotten, okänd kommun",Kväll/natt,1
-2018,6,"Norrbotten, okänd kommun",Natt,5
+2018,6,"Norrbotten, okänd kommun",Natt,6
 2018,7,"Norrbotten, okänd kommun",Dag,1
 2018,7,"Norrbotten, okänd kommun",Eftermiddag,1
 2018,7,"Norrbotten, okänd kommun",Förmiddag,1
@@ -87,7 +87,7 @@ year,month,geography_group,quiet_bucket,event_count
 2018,8,"Norrbotten, okänd kommun",Natt,4
 2018,9,"Norrbotten, okänd kommun",Dag,1
 2018,9,"Norrbotten, okänd kommun",Förmiddag,1
-2018,9,"Norrbotten, okänd kommun",Natt,3
+2018,9,"Norrbotten, okänd kommun",Natt,4
 2018,10,"Norrbotten, okänd kommun",Förmiddag,2
 2018,10,"Norrbotten, okänd kommun",Natt,2
 2018,11,Bodens kommun,Natt,1
@@ -123,10 +123,10 @@ year,month,geography_group,quiet_bucket,event_count
 2020,1,"Norrbotten, okänd kommun",Natt,1
 2020,2,"Norrbotten, okänd kommun",Natt,1
 2020,3,"Norrbotten, okänd kommun",Kväll,3
-2020,3,"Norrbotten, okänd kommun",Natt,1
+2020,3,"Norrbotten, okänd kommun",Natt,2
 2020,4,"Norrbotten, okänd kommun",Natt,2
 2020,5,"Norrbotten, okänd kommun",Kväll,1
-2020,6,"Norrbotten, okänd kommun",Natt,2
+2020,6,"Norrbotten, okänd kommun",Natt,3
 2020,7,"Norrbotten, okänd kommun",Natt,1
 2020,8,"Norrbotten, okänd kommun",Natt,1
 2020,9,"Norrbotten, okänd kommun",Kväll,2

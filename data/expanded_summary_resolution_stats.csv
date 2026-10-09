@@ -1,6 +1,6 @@
 metric,value
 summaries_total,4056
-summaries_expanded,3424
-summaries_explicit_no_new_event,375
-summaries_unresolved_kept,257
-extra_subevents,11932
+summaries_expanded,3398
+summaries_explicit_no_new_event,385
+summaries_unresolved_kept,273
+extra_subevents,11794

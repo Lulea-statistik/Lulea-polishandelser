@@ -1,4 +1,6 @@
 event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lulea_count	current_correct_count	current_false_positive_count	current_missed_count	qa_note
+184797	2021-01-07	"<p>Kl 00:00-07:00, det har varit en natt med relativt låg arbetsbelastning. Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke. </p>
+<p>Tre viltolyckor har anmälts till polisen under natten. På riksväg 94 i Pålsträsk (Älvsbyn), i Holmfors (Boden) och på E45 strax norr om Jokkmokk. Inga personskador har rapporterats.</p>"	3	0	3.0	0.0	2.0	1.0	1.0	00:00 är rapportperiod; tre viltolyckor anges explicit och missas.
 204291	2021-07-08	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Här följer ett urval av nattens händelser:</p>
 <p>03:48 Misshandel, Piteå<br />Samtal inkommer från en person, en man, i Piteå som uppger att han blivit misshandlad av en man tidigare. Polis beordras till adressen inringaren befinner sig på, förhör hålls och anmälan ska upprättas.</p>
@@ -21,13 +23,15 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>En anmälan gällande skadegörelse upprättas.</p>
 <p>Kl 06:17, Boden</p>
 <p>Trafikkontroll hålls vid Travbanegränd. Alla trafikanter passerar utan några anmärkningar.</p>"	3	1	4.0	1.0	3.0	0.0	1.0	Två separata fortkörningar under 00:11-blocket, skadegörelse Luleå och trafikkontroll Boden.
+258395	2023-02-21	"<p>Kl 00:00-07:00, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
+<p>En lastbil har kolliderat med två renar på länsväg 395 i Vittangi, Kiruna, under natten. Inga personskador har rapporterats.</p>"	0	0	1.0	0.0	0.0	0.0	1.0	En renolycka; två renar i samma olycka.
 265553	2023-05-25	"<p>Kl 00:00-07:00, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Kl 01:46, Haparanda</p>
 <p>Polis kontaktas gällande skadegörelse på en fastighet i centrum, en ruta är trasig. En anmälan upprättas.</p>
 <p>Under natten och morgonen upptäcks ytterligare skadegörelser på fönster i centrum, på en skola och livsmedelsbutik.</p>
 <p>Ingen misstänkt person påträffas.</p>
 <p>Kl 05:25, Kiruna</p>
-<p>Trafikkontroll hålls på E45 vid Svappavaara. Två förare får böter på grund av hastighetsöverträdelser.</p>"	3	0	4.0	0.0	2.0	1.0	2.0	Tre separata skadegörelser i Haparanda + en trafikkontroll; 00:00-status är falsk parserträff.
+<p>Trafikkontroll hålls på E45 vid Svappavaara. Två förare får böter på grund av hastighetsöverträdelser.</p>"	2	0	4.0	0.0	2.0	0.0	2.0	Tre separata skadegörelser i Haparanda + en trafikkontroll; 00:00-status är falsk parserträff.
 272321	2023-09-01	<p>Kl 00:00-07:00, inga händelser att rapportera om. En person har omhändertagits för fylleri. </p>	0	0	1.0	0.0	0.0	0.0	1.0	Ett ej tidsatt LOB.
 291029	2024-05-31	"<p>Kl 00:00-06:55, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke. I övrigt har en bilist i Gällivare fått böter på grund av fordon med körförbud och dubbade däck på otillåten tid och en annan trafikant har fått böter på grund av att fordonet inte stannats korrekt vid stopplikt.</p>
 <p>I övrigt har trafikkontroller hållits i Gällivare, vid Vuosko industriområde samt Folkets parkområdet, utan några anmärkningar. En nykterhetskontroll har också hållits på riksväg 99 vid Mattila, Haparanda, utan några anmärkningar. Under tidig morgon har även trafiken kontrollerats vid Strömnäs, Piteå.</p>"	1	0	4.0	0.0	1.0	0.0	3.0	Två böteshändelser och tre separata trafikkontroller; parsern grupperar för mycket.
