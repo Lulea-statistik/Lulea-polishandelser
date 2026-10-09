@@ -66,6 +66,12 @@ MUNICIPALITY_GROUP_LABELS = {
     "Övertorneå": "Övertorneå kommun",
 }
 
+OTHER_SWEDISH_MUNICIPALITY_TITLES = {
+    "alingsås", "berg", "bjurholm", "falun", "lycksele", "munkfors",
+    "norsjö", "nyköping", "ronneby", "skellefteå", "sorsele", "storuman",
+    "strömstad", "söderhamn", "vellinge", "vännäs", "västervik", "örnsköldsvik",
+}
+
 OTHER_COUNTY_TITLE_ALIASES = {
     "stockholms län": "Stockholms län",
     "uppsala län": "Uppsala län",
@@ -334,6 +340,8 @@ def geography_group(
     if municipality_clean in MUNICIPALITY_GROUP_LABELS:
         return MUNICIPALITY_GROUP_LABELS[municipality_clean]
     if title_cf in OTHER_COUNTY_TITLE_ALIASES:
+        return "Övriga Sverige"
+    if title_cf in OTHER_SWEDISH_MUNICIPALITY_TITLES:
         return "Övriga Sverige"
     if area_cf == "norrbottens län" and source == "ambiguous_municipality_names":
         return "Flera kommuner i Norrbotten"
