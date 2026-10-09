@@ -17,6 +17,7 @@ on:
       - "scripts/audit_unknown_geography_reasons.py"
       - "scripts/audit_unknown_short_locations.py"
       - "scripts/audit_cross_county_ambiguous.py"
+      - "scripts/audit_summary_unknown_places.py"
       - "scripts/build_summary_validation_sample.py"
       - "scripts/build_summary_validation_review.py"
       - "scripts/build_summary_validation_misses.py"
@@ -54,6 +55,7 @@ jobs:
       - run: python scripts/audit_unknown_geography_reasons.py
       - run: python scripts/audit_unknown_short_locations.py
       - run: python scripts/audit_cross_county_ambiguous.py
+      - run: python scripts/audit_summary_unknown_places.py
       - run: python scripts/build_summary_validation_sample.py
       - run: python scripts/annotate_summary_validation_batch1.py
       - run: python scripts/annotate_summary_validation_batch2.py
