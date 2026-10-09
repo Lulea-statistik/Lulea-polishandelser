@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 BASE = "https://api.krisinformation.se/v3/news"
 WINDOWS = (7, 30, 365, 3650)
+ARTICLE_LIMITS = (20, 100, 500)
 FIELDS = ["article_id","title","published_at","updated_at","url","area_json","summary","retrieved_at"]
 def request(params):
     url = BASE + "?" + urllib.parse.urlencode(params)
@@ -55,6 +56,20 @@ def main():
             except Exception as exc:
                 stats.append({"days":days,"scope":scope,"status":"error","returned":0,"fields":"",
                     "error":str(exc)[:350]})
+    for limit in ARTICLE_LIMITS:
+        for scope,params in [("county",{"language":"sv","counties":"25","numberOfNewsArticles":limit}),("all",{"language":"sv","allCounties":"true","numberOfNewsArticles":limit})]:
+            try:
+                payload=request(params)
+                items=records(payload)
+                if items is None: raise ValueError("Unexpected JSON response shape")
+                valid=[r for r in items if isinstance(r,dict)]
+                stats.append({"days":"count="+str(limit),"scope":scope,"status":"ok","returned":len(valid),
+                    "fields":",".join(sorted({k for r in valid[:4] for k in r.keys()})),"error":""})
+                for r in valid:
+                    ident=flat(value(r,"identifier","Identifier","id","Id","contentId"))
+                    if ident and scope=="county": selected[ident]=r
+            except Exception as exc:
+                stats.append({"days":"count="+str(limit),"scope":scope,"status":"error","returned":0,"fields":"","error":str(exc)[:350]})
     with (DATA/"krisinformation_api_probe.csv").open("w",encoding="utf-8",newline="") as f:
         w=csv.DictWriter(f,fieldnames=["days","scope","status","returned","fields","error"])
         w.writeheader();w.writerows(stats)
