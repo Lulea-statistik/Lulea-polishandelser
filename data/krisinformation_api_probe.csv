@@ -1,5 +1,9 @@
-days,status,returned,fields,error
-7,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
-30,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
-365,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
-3650,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+days,scope,status,returned,fields,error
+7,county,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+7,all,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+30,county,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+30,all,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+365,county,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+365,all,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+3650,county,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+3650,all,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
