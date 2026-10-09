@@ -1,0 +1,2 @@
+source,endpoint,checked_at,http_status,item_count,json_type,available_fields,status_values,message_types,sample_area,error
+Sveriges Radio VMA v3,https://vmaapi.sr.se/api/v3/alerts,2026-10-09T13:30:48.800314+00:00,200,0,dict,,,,,
