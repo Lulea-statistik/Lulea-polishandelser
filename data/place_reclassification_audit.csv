@@ -1,0 +1,114 @@
+event_id,date,type_original,title_location,location_string,municipality,geography_group,municipality_source
+5560,2016-11-26,Övrigt,Norrbotten,"Hakkas, Kompelusvaara, Norrbotten, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+6569,2016-12-03,"Trafikolycka,  singel",Norrbotten,"Skrövån, Hakkas, Norrbotten, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+8346,2016-12-16,Sammanfattning natt,Norrbotten,"Lansån, Överkalix, Norrbotten, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+17865,2017-02-23,Sammanfattning natt,Norrbotten,"Hakkas, Norrbotten, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+24664,2017-04-14,Sammanfattning kväll och natt,Norrbotten,"Räktforsen, Överkalix, Norrbotten, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+29933,2017-05-29,Sammanfattning natt,Norrbotten,"Gällivare, Luleåvägen, Coop, Norrbotten, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+32953,2017-06-23,"Trafikolycka,  personskada",Norrbotten,"Rosvik, Norrbotten, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+36843,2017-07-30,Sammanfattning natt,Norrbotten,"Korpilombolo, Norrbotten, Norrbottens län",Pajala,Pajala kommun,place_dictionary
+38168,2017-08-14,Sammanfattning natt,Norrbotten,"Sangis, Katt, Kåbdalis, Norrbotten, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+38830,2017-08-20,Övrigt,Norrbotten,"Rosvik, Norrbotten, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+40056,2017-08-31,Sammanfattning natt,Norrbotten,"Överkalix, Hedensbyn, Norrbotten, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+51510,2017-12-02,Sammanfattning kväll och natt,Norrbotten,"Roknäs, Norrbotten, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+54695,2017-12-25,Sammanfattning natt,Norrbotten,"Luleå, Bodenvägen, Pontusbadet, Sunderby Sjukhus, Norrbotten, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+55584,2018-01-01,Sammanfattning natt,Norrbotten,"Svensbyn, Klubben, Laponia, Scandic, Norrbotten, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+74750,2018-06-03,Sammanfattning natt,Norrbottens län,"Sävast, Norrbottens län",Boden,Bodens kommun,place_dictionary
+78658,2018-07-10,Sammanfattning natt,Norrbottens län,"Norrbotten, Koskullskulle, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+79927,2018-07-23,Polisinsats/kommendering,Norrbottens län,"Karesuando, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+82132,2018-08-13,Sammanfattning natt,Västerbottens län,"Skellefteå, Jävre, Bjurholm, Västerbottens län, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+108758,2019-02-24,Fjällräddning,Norrbottens län,"Norrbotten, Västerbotten, Fjällen, Abisko, Karesuando, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+109430,2019-03-01,Sammanfattning natt,Norrbottens län,"Norrbotten, Bodens Kommun, Hakkas, Gällivare, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+113567,2019-04-01,Sammanfattning natt,Norrbottens län,"Bodens Kommun, Nordkalottvägen, Kiruna, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+124952,2019-07-01,"Trafikolycka,  vilt",Norsjö,"Glommersträsk, Norsjö, Norrbottens län",Arvidsjaur,Arvidsjaurs kommun,place_dictionary
+125485,2019-07-06,Sammanfattning natt,Norrbottens län,"Börjelslandet, Råneå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+127253,2019-07-25,Sammanfattning kväll,Norrbottens län,"Överkalix, Högsta, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+140970,2019-11-20,"Trafikolycka,  vilt",Norrbottens län,"Svappavaara, Raitajärvi, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+141093,2019-11-21,"Trafikolycka,  vilt",Norrbottens län,"Harads, Nystrand, Norrbottens län",Boden,Bodens kommun,place_dictionary
+141500,2019-11-25,"Trafikolycka,  vilt",Norrbottens län,"Vittangi, Björksele, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+143180,2019-12-09,"Trafikolycka,  vilt",Norrbottens län,"Karesuando, Övre Svartlå, Skaulo, Puoltikasvaara, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+147584,2020-01-17,Sammanfattning natt,Norrbottens län,"Svensbyn, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+150542,2020-02-11,Trafikolycka,Sundsvall,"Lillberget, Överkalix, Sundsvall, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+151194,2020-02-17,Sammanfattning natt,Norrbottens län,"Bergsviken, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+159448,2020-05-04,Sammanfattning natt,Norrbottens län,"Gällivare, Kalixälven, Björkskatan, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+161572,2020-05-24,Sammanfattning kväll,Norrbottens län,"Djupviken, Krokvik, Rosvik, Karungi, Sanden, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+163982,2020-06-15,Försvunnen person,Norrbottens län,"Harads, Norrbottens län",Boden,Bodens kommun,place_dictionary
+163984,2020-06-15,Försvunnen person,Norrbottens län,"Harads, Norrbottens län",Boden,Bodens kommun,place_dictionary
+168954,2020-08-10,Sammanfattning natt,Norrbottens län,"Långviksudden, Bergsviken, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+169419,2020-08-14,Sammanfattning natt,Norrbottens län,"Haparandavägen, Luleå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+173264,2020-09-18,Trafikkontroll,Norrbottens län,"Norrbotten, Bälinge, Nedre Svartlå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+174427,2020-09-30,Sammanfattning natt,Norrbottens län,"Notviken, Lövskatan, Luleå, Racksund, Arjeplogs Kommun, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+176898,2020-10-23,Sammanfattning natt,Norrbottens län,"Roknäs, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+177358,2020-10-27,Sammanfattning natt,Norrbottens län,"Jukkasjärvi, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+178839,2020-11-10,Sammanfattning natt,Norrbottens län,"Norrbotten, Luleå, Haparandavägen, Bergviken, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+181192,2020-12-02,Sammanfattning natt,Norrbottens län,"Lerbäcken, Malmudden, Vittjärv, Norrbottens län",Boden,Bodens kommun,place_dictionary
+182799,2020-12-17,Sammanfattning natt,Norrbottens län,"Bondersbyn, Överkalix, Tvärån, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+185939,2021-01-18,Sammanfattning natt,Norrbottens län,"Vuollerim, Norrbottens län",Jokkmokk,Jokkmokks kommun,place_dictionary
+186686,2021-01-24,Sammanfattning kväll,Norrbottens län,"Karesuando, Sikfors, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+189616,2021-02-22,Sammanfattning natt,Norrbottens län,"Hakkas, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+189618,2021-02-22,Sammanfattning natt,Norrbottens län,"Hakkas, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+189620,2021-02-22,Sammanfattning natt,Norrbottens län,"Hakkas, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+193156,2021-03-28,Sammanfattning natt,Norrbottens län,"Norrbotten, Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+196347,2021-04-27,Sammanfattning natt,Norrbottens län,"Bredviken, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+196349,2021-04-28,Sammanfattning natt,Norrbottens län,"Bredviken, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+197776,2021-05-09,Sammanfattning natt,Norrbottens län,"Glommersträsk, Norrbottens län",Arvidsjaur,Arvidsjaurs kommun,place_dictionary
+205953,2021-07-25,"Trafikolycka,  vilt",Norrbottens län,"Strömsund, Töre, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+206312,2021-07-30,Sammanfattning natt,Norrbottens län,"Bodens Kommun, Piteå, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+207427,2021-08-13,Sammanfattning natt,Norrbottens län,"Norra Bredåker, Norrbottens län",Boden,Bodens kommun,place_dictionary
+216649,2021-11-08,"Trafikolycka,  vilt",Norrbottens län,"Lansjärv, Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+225769,2022-02-04,Sammanfattning natt,Norrbottens län,"Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+227721,2022-02-24,Sammanfattning natt,Norrbottens län,"Nikkala, Norrbottens län",Haparanda,Haparanda kommun,place_dictionary
+229491,2022-03-14,Sammanfattning natt,Norrbottens län,"Luleå, Jokkmokks Kommun, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+230277,2022-03-23,Sammanfattning natt,Norrbottens län,"Öjebyn, Vittangi, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+232321,2022-04-15,Trafikkontroll,Norrbottens län,"Norrbotten, Jukkasjärvi, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+234496,2022-05-10,Trafikkontroll,Norrbottens län,"Norrbotten, Hortlax, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+243088,2022-08-23,Sammanfattning natt,Norrbottens län,"Abborrträsk, Glommersträsk, Norrbottens län",Arvidsjaur,Arvidsjaurs kommun,place_dictionary
+248552,2022-10-26,Sammanfattning natt,Norrbottens län,"Bodenvägen, Gammelstadsvägen, Luleå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+255178,2023-01-13,Sammanfattning natt,Norrbottens län,"Vuollerim, Norrbottens län",Jokkmokk,Jokkmokks kommun,place_dictionary
+255300,2023-01-14,Trafikkontroll,Norrbottens län,"Gamla Lulevägen, Björkskataleden, Luleå, Bodenvägen, Mjölkudden, Haparandavägen, Rutvik, Hertsövägen, Lerbäcken, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+256729,2023-01-31,Trafikkontroll,Norrbottens län,"Brännabergsvägen, Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+256940,2023-02-03,Sammanfattning natt,Norrbottens län,"Notviken, Luleå Kommun, Älvsbyns Kommun, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+269803,2023-07-27,Rattfylleri,Norrbottens län,"Töre, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+275493,2023-10-13,Sammanfattning natt,Norrbottens län,"Nybyn, Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+279306,2023-12-10,Sammanfattning natt,Norrbottens län,"Pajala, Korpilombolo, Mattisudden, Jokkmokks Kommun, Norrbottens län",Pajala,Pajala kommun,place_dictionary
+283227,2024-02-06,Sammanfattning natt,Norrbottens län,"Koskullskulle, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+284102,2024-02-19,Sammanfattning natt,Norrbottens län,"Överkalix, Lilla Edet, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+286539,2024-03-27,Sammanfattning natt,Norrbottens län,"Luleå, Bodenvägen, Svartövägen, Mjölkuddsvägen, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+288301,2024-04-23,Sammanfattning natt,Norrbottens län,"Krokfors, Överkalix Kommun, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+288723,2024-04-29,Sammanfattning natt,Norrbottens län,"Svappavaara, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+293870,2024-07-12,Sammanfattning natt,Norrbottens län,"Luleå, Öjebyn, Norra Hamn, Aspnäs, Arjeplogs Kommun, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+294922,2024-07-30,Sammanfattning natt,Norrbottens län,"Norrbotten, Luleå, Bodenvägen, Porsön, Högsta, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+301928,2024-11-07,"Trafikolycka,  vilt",Norrbottens län,"Norrbotten, Renviken, Arvidsjaurs Kommun, Abborrträsk, Strömsund, Luleå Kommun, Murjek, Jokkmokks Kommun, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+306296,2025-01-10,Sammanfattning natt,Norrbottens län,"Roknäs, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+308746,2025-02-13,Sammanfattning natt,Norrbottens län,"Bodenvägen, Övre Soppero, Kiruna Kommun, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+312332,2025-04-03,Sammanfattning natt,Norrbottens län,"Älvsbyns Kommun, Gällivare, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+312391,2025-04-04,Sammanfattning natt,Norrbottens län,"Sjötorgsgatan, Gällivare, Luleåvägen, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+314131,2025-04-29,Sammanfattning natt,Norrbottens län,"Hakkas, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+314249,2025-05-01,Sammanfattning natt,Norrbottens län,"Bodenvägen, Notviken, Luleå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+314875,2025-05-09,Sammanfattning natt,Norrbottens län,"Luleå, Kalixvägen, Karlsborg, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+318733,2025-07-02,Sammanfattning natt,Norrbottens län,"Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+322780,2025-07-23,Sammanfattning natt,Norrbottens län,"Arvidsjaur, Stenträsk, Jokkmokks Kommun, Norrbottens län",Arvidsjaur,Arvidsjaurs kommun,place_dictionary
+363584,2025-09-09,Trafikkontroll,Norrbottens län,"Gällivare, Kirunagatan, Koskullskulle, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+371480,2025-09-21,Sammanfattning natt,Norrbottens län,"Kiruna, Bodens Kommun, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+391790,2025-10-12,Trafikkontroll,Norrbottens län,"Norrbotten, Sanden, Bredviken, Malmvägen, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+395229,2025-10-15,Trafikkontroll,Norrbottens län,"Norrbotten, Mariebergsvägen, Södra Sunderbyn, Nygatan, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+470799,2026-01-09,Sammanfattning natt,Norrbottens län,"Hakkas, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+472760,2026-01-13,"Trafikolycka,  vilt",Norrbottens län,"Norrbotten, Vidsel, Moskosel, Södra Bredåker, Klubbudden, Vajmat, Älvsbyvägen, Öjebyn, Laxforsen, Norrbottens län",Älvsbyn,Älvsbyns kommun,place_dictionary
+473289,2026-01-14,Trafikkontroll,Norrbottens län,"Industrivägen, Bodenvägen, Notviken, Luleå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+496402,2026-02-13,Sammanfattning natt,Norrbottens län,"Vittangi, Norrbottens län",Kiruna,Kiruna kommun,place_dictionary
+497054,2026-02-23,Sammanfattning natt,Norrbottens län,"Norrbotten, Tuolluvaara, Korsträsk, Norrbottens län",Älvsbyn,Älvsbyns kommun,place_dictionary
+499387,2026-04-01,Trafikkontroll,Norrbottens län,"Bodenvägen, Notviken, Luleå, Måttsund, Svängleden, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+500402,2026-04-17,Sammanfattning natt,Norrbottens län,"Älvsbyns Kommun, Mjölkuddsvägen, Luleå, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+500993,2026-04-26,Sammanfattning natt,Norrbottens län,"Norrbotten, Luleå, Bodenvägen, Porsön, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+501522,2026-05-04,Trafikkontroll,Norrbottens län,"Norrbotten, Moråsleden, Töre, Österleden, Hagelvägen, Björkskatan, Norrbottens län",Kalix,Kalix kommun,place_dictionary
+501661,2026-05-06,Trafikkontroll,Norrbottens län,"Boden, Garnisonen, Jokkmokksvägen, Vittjärv, Norrbottens län",Boden,Bodens kommun,place_dictionary
+502200,2026-05-15,Sammanfattning natt,Norrbottens län,"Luleå, Björkskatan, Bodenvägen, Mjölkudden, Teknikergatan, Skurholmen, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+502506,2026-05-19,"Motorfordon,  stöld",Skellefteå,"Glommersträsk, Jörn, Puck, Skellefteå, Norrbottens län",Arvidsjaur,Arvidsjaurs kommun,place_dictionary
+506395,2026-07-19,Trafikkontroll,Norrbottens län,"Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
+506427,2026-07-20,Sammanfattning natt,Norrbottens län,"Södra Sunderbyn, Notviken, Vitberget, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+506874,2026-07-28,Sammanfattning natt,Norrbottens län,"Norrbotten, Gällivare, Luleåvägen, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
+507664,2026-08-12,Sammanfattning natt,Norrbottens län,"Jävre, Trångfors, Norrbottens län",Piteå,Piteå kommun,place_dictionary
+509300,2026-09-07,Trafikkontroll,Norrbottens län,"Norrbotten, Heden, Bensbyn, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+509531,2026-09-11,Sammanfattning natt,Norrbottens län,"Luleå, Porsön, Bodenvägen, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+510999,2026-10-05,Trafikkontroll,Norrbottens län,"Norrbotten, Högsta, Arvidsjaurs Kommun, Bodens Kommun, Drottninggatan, Luleå Kommun, Södra Sunderbyn, Norrbottens län",Luleå,Luleå kommun,place_dictionary
+511111,2026-10-07,Sammanfattning natt,Norrbottens län,"Hemlunda, Koskullskulle, Norrbottens län",Gällivare,Gällivare kommun,place_dictionary
