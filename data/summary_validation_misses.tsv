@@ -1,13 +1,4 @@
 event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lulea_count	current_correct_count	current_false_positive_count	current_missed_count	qa_note
-130657	2019-08-27	"<p>Det råder lugn i Norrbottens län. Arbetsbelastningen har varit låg  under natten.  </p>
-
-
-<p><strong>Uppdatering 07:08 av Maria Linné, kommunikatör: </strong></p>
-<p><strong>23:06 Ofredande, Gällivare</strong><br />Polisen kontaktas angående några ungdomar som gått in på en persons tomt och slår på fönster och fasad. Polisen åker till platsen och påträffar där en av de misstänkta, en minderårig flicka. Hon skjutsas hem till vårdnadshavare. En anmälan om ofredande upprättas.</p>
-<p><strong>23:28 Narkotikabrott, Piteå</strong><br />Polispatrull påträffar en man i centrala Piteå. Mannen, som är i 30-årsåldern, kroppsvisiteras och på honom hittas narkotika. Han misstänks för narkotikabrott genom innehav.</p>
-<p><strong>03:51 Olovlig körning, Luleå</strong><br />Polisen stoppar och kontrollerar en personbil på Björkskatan. Föraren, en man i 35-årsåldern, saknar behörighet att köra. En anmälan om olovlig körning upprättas.</p>
-<p><strong>Övrigt:</strong> En person har under tidig morgon omhändertagits enligt LOB, lagen om omhändertagande av berusade personer. Detta skedde i Boden.</p>
-"	3	1	4.0	1.0	3.0	0.0	1.0	Tre tidsatta händelser plus ett LOB-ingripande.
 213090	2021-10-06	"<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>I övrigt:</p>
 <p>Kl 00:11, Gällivare</p>
@@ -19,11 +10,6 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>En anmälan gällande skadegörelse upprättas.</p>
 <p>Kl 06:17, Boden</p>
 <p>Trafikkontroll hålls vid Travbanegränd. Alla trafikanter passerar utan några anmärkningar.</p>"	3	1	4.0	1.0	3.0	0.0	1.0	Två separata fortkörningar under 00:11-blocket, skadegörelse Luleå och trafikkontroll Boden.
-245157	2022-09-16	"<p>Utöver nedanstående ärenden har polisen kontrollerat personer och fordon som inte har lett till någon misstanke om brott.<strong> </strong></p>
-<p><strong>00:24 Inbrott, Luleå</strong><br />Polisen beordras till Örnäset i Luleå med anledning av ett garageinbrott. Ett antal anmälningar är upprättade i nuläget, gällande bland annat olaga intrång, skadegörelse och försök av tillgrepp av fortskaffningsmedel. Eventuellt saknas också ett fordon, men polisen har inte kommit i kontakt med en eventuell målsägande.</p>
-<p><strong>Övrigt: </strong></p>
-<p>Polisen i Piteå har hanterat ett ärende gällande en försvunnen person sedan i går kväll. <strong>Mannen är nu återfunnen.</strong></p>
-<p>En viltolycka har inrapporterats till polisen under morgonen, den skedde i Lovikka, Pajala kommun. Ingen person har kommit till skada. </p>"	2	1	3.0	1.0	2.0	0.0	1.0	Inbrott Luleå, återfunnen person Piteå och viltolycka Pajala.
 265553	2023-05-25	"<p>Kl 00:00-07:00, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Kl 01:46, Haparanda</p>
 <p>Polis kontaktas gällande skadegörelse på en fastighet i centrum, en ruta är trasig. En anmälan upprättas.</p>
