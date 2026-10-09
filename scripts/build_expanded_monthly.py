@@ -34,7 +34,7 @@ ADMIN_HEADLINE_RE = re.compile(
     r"tillfälligt obemannat|"
     r"en lugn (?:avslutning på |start på )?(?:natten|morgonen|kvällen|dagen)|"
     r"inget(?:\s+särskilt)?\s+att\s+rapportera|"
-    r"inga\s+(?:akuta\s+)?händelser\s+att\s+rapportera"
+    r"inga\s+(?:akuta\s+)?händelser\s+att\s+rapportera|"\n    r"det finns inga akuta händelser|"\n    r"inga akuta händelser i länet|"\n    r"lugn(?:t)?\s+(?:morgon|eftermiddag|kväll|natt|i länet)|"\n    r"norrbotten,?\s+en fortsatt bra dag|"\n    r"förtydligande av bemanning|"\n    r"inga kommunikatörer i tjänst|"\n    r"mediecentret obemannat|"\n    r"ledningscentralen .*ej bemannad|"\n    r"rlc är .*ej bemannad"
     r")\b"
 )
 INCIDENT_IN_HEADLINE_RE = re.compile(
