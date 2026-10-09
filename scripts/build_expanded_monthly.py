@@ -43,7 +43,10 @@ ADMIN_HEADLINE_RE = re.compile(
     r"inga kommunikatörer i tjänst|"
     r"mediecentret obemannat|"
     r"ledningscentralen .*ej bemannad|"
-    r"rlc är .*ej bemannad"
+    r"rlc är .*ej bemannad|"
+    r"ingen\s+(?:media|medie|press|rlc-)?kommunikatör(?:\s+i\s+tjänst)?|"
+    r"norrbotten,?\s+ingen\s+(?:media|medie|press|rlc-)?kommunikatör(?:\s+i\s+tjänst)?|"
+    r"under kvällen(?:/natten)?\s+kommer vi inte ha någon kommunikatör"
     r")\b"
 )
 INCIDENT_IN_HEADLINE_RE = re.compile(
