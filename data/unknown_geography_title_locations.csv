@@ -1,0 +1,34 @@
+title_location,reason,is_summary_norm,event_count
+Norrbottens län,unknown,True,2288
+Norrbottens län,unknown,False,2132
+Norrbotten,unknown,True,513
+Norrbotten,unknown,False,205
+Västernorrland län,unknown,False,66
+Norrbottens län,summary_container,True,65
+Jämtlands län,unknown,False,57
+Västerbottens län,unknown,False,40
+Berg,unknown,False,25
+Norrbotten,summary_container,True,10
+Falun,unknown,False,3
+Västerbottens län,unknown,True,3
+Skellefteå,unknown,False,2
+(tom),unknown,False,1
+Lycksele,unknown,False,1
+Alingsås,unknown,False,1
+Bjurholm,unknown,False,1
+Nyköping,unknown,False,1
+Norsjö,unknown,False,1
+Norrbottens län,multi_location_ambiguous,False,1
+Munkfors,unknown,False,1
+Strömstad,unknown,False,1
+Ronneby,unknown,False,1
+Sorsele,unknown,False,1
+Storuman,unknown,False,1
+Vännäs,unknown,False,1
+Vellinge,unknown,False,1
+Söderhamn,unknown,False,1
+Västerbottens län,summary_container,True,1
+Västerbotten,unknown,False,1
+Västernorrlands län,unknown,False,1
+Västervik,unknown,False,1
+Örnsköldsvik,unknown,False,1

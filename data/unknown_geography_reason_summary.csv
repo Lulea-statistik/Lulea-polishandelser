@@ -1,0 +1,5 @@
+reason,is_summary_norm,event_count
+unknown,True,2804
+unknown,False,2548
+summary_container,True,76
+multi_location_ambiguous,False,1
