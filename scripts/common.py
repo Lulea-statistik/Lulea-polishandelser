@@ -440,9 +440,13 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
                 str(all_df.at[idx, "title_location"] or ""),
                 str(all_df.at[idx, "location_string"] or ""),
             )
+            # Spara alltid inferensorsaken, även när ingen enskild kommun
+            # kan väljas. Det gör att t.ex. flera explicit nämnda kommuner
+            # kan redovisas som "Flera kommuner i Norrbotten" i stället för
+            # att falla tillbaka till okänd kommun.
+            all_df.at[idx, "municipality_source"] = source
             if municipality:
                 all_df.at[idx, "municipality"] = municipality
-                all_df.at[idx, "municipality_source"] = source
 
         # Räkna därefter om geografisk grupp för hela historiken.
         all_df["geography_group"] = all_df.apply(
