@@ -116,7 +116,7 @@ PRE_TIME_HEADER_RE = re.compile(
 
 NON_EVENT_RE = re.compile(
     r"(?i)^(?:"
-    r"(?:fortsatt|fortfarande|allt är|natten (?:i länet )?har varit)?\s*lugnt|"
+    r"(?:fortsatt|fortfarande|allt är|natten (?:i länet )?har varit)?\s*lugn(?:t|g)t|"
     r"lugn(?:t| start| inledning)(?: på natten| i länet| så långt i norrbotten)?|"
     r"inget att rapportera|inga händelser att rapportera|ingenting att rapportera|"
     r"(?:det har varit )?en natt med (?:relativt )?(?:få ärenden|låg arbetsbelastning|normal arbetsbelastning)|"
@@ -133,6 +133,17 @@ BLANK_RE = re.compile(r"\n{3,}")
 
 NUMBER_WORDS = {"en":1,"ett":1,"två":2,"tre":3,"fyra":4,"fem":5,"sex":6,"sju":7,"åtta":8,"nio":9,"tio":10}
 COUNTED_ACCIDENT_RE = re.compile(r"(?i)(?<![:.\d])\b(?P<count>\d{1,2}|en|ett|två|tre|fyra|fem|sex|sju|åtta|nio|tio)\s+(?P<kind>viltolyck(?:a|or)|renpåkörning(?:ar)?)\b")
+
+STATUS_ONLY_RE = re.compile(
+    r"(?i)(?:^|\b)(?:"
+    r"fortsatt lugnt|fortfarande lugnt|lungt i länet|lugnt i länet|"
+    r"lugn start på natten|lugn inledning på natten|"
+    r"inget att rapportera|ingenting att rapportera|inga händelser att rapportera|"
+    r"(?:det har varit )?en natt med (?:relativt )?(?:få ärenden|låg arbetsbelastning|normal arbetsbelastning)|"
+    r"polisen har (?:även )?(?:utfört|genomfört|gjort|kontrollerat) (?:ett |ett flertal |ett antal |flera )?"
+    r"(?:kontroller av )?(?:personer och fordon|personer|fordon)"
+    r")"
+)
 
 UNTIMED_SINGLE_PATTERNS = [
     (re.compile(r"(?i)^en person har(?:[^.]{0,80})?omhändertagits för fylleri\b"), "Fylleri/LOB"),
@@ -588,7 +599,22 @@ def extract_row(row: pd.Series) -> list[dict]:
             })
             break
 
-    return out
+    # Slutlig försiktig städning: rena statusrader ska inte räknas som
+    # underhändelser. Begränsa detta till oklassificerade poster så att en
+    # verklig brott-/trafikhändelse aldrig tas bort bara för att samma text
+    # även innehåller ord som "lugnt" eller "få ärenden".
+    cleaned_out = []
+    for item in out:
+        event_type = str(item.get("event_type_extracted", "") or "")
+        status_text = " ".join([
+            str(item.get("place_text", "") or ""),
+            str(item.get("description", "") or ""),
+        ]).strip()
+        if event_type == "Övrigt/oklassificerad" and STATUS_ONLY_RE.search(status_text):
+            continue
+        cleaned_out.append(item)
+
+    return cleaned_out
 
 def main() -> None:
     if not EVENTS.exists() or EVENTS.stat().st_size == 0:
