@@ -122,6 +122,10 @@
     .summary-metrics strong{font-size:1.2rem}
     .comparison-controls{display:grid;grid-template-columns:repeat(2,minmax(220px,320px));gap:14px;margin-bottom:14px}
     .comparison-chartbox{height:520px}
+    details.summary-details{margin-top:16px}
+    details.summary-details>summary{cursor:pointer;font-weight:650;font-size:1rem}
+    details.summary-details[open]>summary{margin-bottom:14px}
+    .other-chartbox{height:420px}
     @media(max-width:700px){.summary-metrics{grid-template-columns:1fr}}
     .foot{font-size:.87rem;color:var(--muted);margin-top:22px;line-height:1.5}
     .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
@@ -199,7 +203,7 @@
       <div class="card">
         <h2>Händelser per månad</h2>
         <div class="chartbox"><canvas id="monthlyChart"></canvas></div>
-        <p class="chart-note">Linjen <strong>Inkl. sammanfattningar</strong> adderar identifierade underhändelser från polisens sammanfattningstexter efter en konservativ kontroll mot vanliga polisnotiser för att minska dubbelräkning. Tooltipen visar hur många extra sammanfattningshändelser som lagts till varje månad.</p>
+        <p class="chart-note">Diagrammet använder den <strong>expanderade händelseserien</strong>. När konkreta underhändelser har kunnat identifieras i en sammanfattning ersätter de sammanfattningsposten och redovisas under sin vanliga händelsetyp. Endast sammanfattningar som inte kunnat delas upp ligger kvar som <strong>Sammanfattning, ej uppdelad</strong>.</p>
       </div>
       <div class="card">
         <h2>Vanligaste händelsetyper</h2>
@@ -226,7 +230,14 @@
     </div>
 
     <div class="card" style="margin-top:16px">
-      <h2>Vad innehåller polisens sammanfattningar?</h2>
+      <h2>Vad ingår i Övrigt?</h2>
+      <div class="other-chartbox"><canvas id="otherBreakdownChart"></canvas></div>
+      <p class="chart-note">Visar de händelsetyper som hamnar i <strong>Övrigt</strong> i 100 %-diagrammet ovan. Samma 2-procentsgräns används och diagrammet följer vald geografi och kategorisering.</p>
+    </div>
+
+    <details class="card summary-details">
+      <summary>Om sammanfattningar och extraherade underhändelser</summary>
+      <p class="chart-note">Sammanfattningar är inte en parallell händelseserie. Identifierade underhändelser förs över till sina vanliga händelsetyper i den expanderade serien. Endast den lilla rest som inte kunnat delas upp redovisas som <strong>Sammanfattning, ej uppdelad</strong>.</p>
       <div class="summary-metrics">
         <div><span>Extraherade underhändelser</span><strong id="summaryExtractedTotal">–</strong></div>
         <div><span>Vanligaste underhändelse</span><strong id="summaryTopType">–</strong></div>
@@ -235,8 +246,8 @@
       <div class="chartbox"><canvas id="summaryDetailChart"></canvas></div>
       <h3 style="margin:20px 0 8px">Extraherade sammanfattningshändelser per månad</h3>
       <div class="chartbox"><canvas id="summaryMonthlyChart"></canvas></div>
-      <p class="chart-note">Underhändelser identifieras i texten i poster som Polisen publicerat som sammanfattningar. Diagrammen följer filtren Geografi och År och använder vald kategorisering. Den separata månadsserien visar hur många underhändelser som kunnat identifieras i sammanfattningarna.</p>
-    </div>
+      <p class="chart-note">Diagrammen nedan är diagnostik för hur parsern har tolkat sammanfattningarna och påverkar inte huvudseriens kategorisering utöver de underhändelser som redan förts över.</p>
+    </details>
 
     <div class="card" style="margin-top:16px">
       <h2>Jämförelse av händelsetypernas andel</h2>
@@ -274,7 +285,7 @@ const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
 const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart;
+let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -624,6 +635,40 @@ function updateTypeShareChart(){
   });
 }
 
+function updateOtherBreakdownChart(){
+  const canvas=document.getElementById('otherBreakdownChart');
+  if(!canvas)return;
+  const g=selected('geo');
+  const data=expandedRows.filter(r=>g==='Alla'||r.geography_group===g);
+  const field=typeField();
+  const grandTotal=sum(data);
+  const totals=groupSum(data,field).sort((a,b)=>b[1]-a[1]);
+  const minor=totals
+    .filter(([name,count])=>name && grandTotal>0 && count/grandTotal<0.02)
+    .sort((a,b)=>b[1]-a[1]);
+
+  const top=minor.slice(0,20);
+  const rest=minor.slice(20).reduce((acc,x)=>acc+x[1],0);
+  const labels=top.map(x=>x[0]);
+  const values=top.map(x=>x[1]);
+  if(rest>0){labels.push('Övriga små kategorier');values.push(rest);}
+
+  otherBreakdownChart=chartReplace(otherBreakdownChart,canvas,{
+    type:'bar',
+    data:{labels,datasets:[{label:'Antal',data:values}]},
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:false,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label(ctx){return 'Antal: '+fmt.format(ctx.parsed.x);}}}
+      },
+      scales:{x:{beginAtZero:true,title:{display:true,text:'Antal händelser'}},y:{ticks:{autoSkip:false}}}
+    }
+  });
+}
+
 function filteredSummaryRows(source=summaryRows){
   const g=selected('geo'), y=selected('year'), t=selected('type');
   const policeMode=selected('categoryMode')==='police';
@@ -878,74 +923,47 @@ function updateQuietSummaryChart(){
 
 function update(){
   const d=filt();
+  const expandedMain=filtExpanded();
   const modeLabel=typeModeLabel();
   const headings=[...document.querySelectorAll('.card h2')];
   const topHeading=headings.find(h=>h.textContent.startsWith('Vanligaste '));
   if(topHeading)topHeading.textContent='Vanligaste händelsetyper – '+modeLabel.toLowerCase();
-  const total=sum(d);
-  const months=[...new Set(d.map(x=>x.year+'-'+String(x.month).padStart(2,'0')))].sort();
+  const total=sum(expandedMain);
+  const months=[...new Set(expandedMain.map(x=>x.year+'-'+String(x.month).padStart(2,'0')))].sort();
   document.getElementById('kpiTotal').textContent=fmt.format(total);
   document.getElementById('kpiAvg').textContent=months.length?fmt.format(Math.round(total/months.length)):'–';
   document.getElementById('kpiFirst').textContent=months[0]||'–';
   document.getElementById('kpiLast').textContent=months.at(-1)||'–';
 
   const byMonth=new Map();
-  d.forEach(x=>{
+  expandedMain.forEach(x=>{
     const k=x.year+'-'+String(x.month).padStart(2,'0');
     byMonth.set(k,(byMonth.get(k)||0)+(+x.event_count||0));
   });
 
-  const summaryFiltered=filteredSummaryRows(summaryExtraRows);
-  const summaryByMonth=new Map();
-  summaryFiltered.forEach(x=>{
-    const k=x.year+'-'+String(x.month).padStart(2,'0');
-    summaryByMonth.set(k,(summaryByMonth.get(k)||0)+(+x.event_count||0));
-  });
-
-  const ml=[...new Set([...byMonth.keys(),...summaryByMonth.keys()])].sort();
+  const ml=[...byMonth.keys()].sort();
   monthlyChart=chartReplace(monthlyChart,document.getElementById('monthlyChart'),{
     type:'line',
     data:{
       labels:ml,
-      datasets:[
-        {
-          label:'Händelser',
-          data:ml.map(k=>byMonth.get(k)||0),
-          borderWidth:2,
-          pointRadius:1.5,
-          tension:.18
-        },
-        {
-          label:'Inkl. sammanfattningar',
-          data:ml.map(k=>(byMonth.get(k)||0)+(summaryByMonth.get(k)||0)),
-          borderWidth:2,
-          pointRadius:1.5,
-          tension:.18
-        }
-      ]
+      datasets:[{
+        label:'Händelser',
+        data:ml.map(k=>byMonth.get(k)||0),
+        borderWidth:2,
+        pointRadius:1.5,
+        tension:.18
+      }]
     },
     options:{
       responsive:true,
       maintainAspectRatio:false,
-      plugins:{
-        legend:{display:true,position:'bottom'},
-        tooltip:{
-          callbacks:{
-            afterBody(items){
-              if(!items?.length)return '';
-              const k=ml[items[0].dataIndex];
-              const extra=summaryByMonth.get(k)||0;
-              return 'Extraherat ur sammanfattningar: '+fmt.format(extra);
-            }
-          }
-        }
-      },
+      plugins:{legend:{display:false}},
       scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}
     }
   });
 
   const field=typeField();
-  const expandedFiltered=filtExpanded();
+  const expandedFiltered=expandedMain;
   const types=groupSum(expandedFiltered,field).sort((a,b)=>b[1]-a[1]).slice(0,15);
   typeChart=chartReplace(typeChart,document.getElementById('typeChart'),{
     type:'bar',
@@ -953,16 +971,16 @@ function update(){
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}
   });
 
-  const yrs=groupSum(d,'year').sort((a,b)=>+a[0]-+b[0]);
+  const yrs=groupSum(expandedMain,'year').sort((a,b)=>+a[0]-+b[0]);
   yearChart=chartReplace(yearChart,document.getElementById('yearChart'),{
     type:'bar',
     data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1])}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
   });
 
-  const dg=filt(true).filter(r=>{
-    const y=selected('year'),t=selected('type');
-    return (y==='Alla'||r.year===y)&&(t==='Alla'||r[typeField()]===t);
+  const dg=expandedRows.filter(r=>{
+    const y=selected('year'),t=selected('type'),field=typeField();
+    return (y==='Alla'||r.year===y)&&(t==='Alla'||r[field]===t);
   });
   const geos=groupSum(dg,'geography_group').sort((a,b)=>b[1]-a[1]);
   geoChart=chartReplace(geoChart,document.getElementById('geoChart'),{
@@ -972,6 +990,7 @@ function update(){
   });
 
   updateTypeShareChart();
+  updateOtherBreakdownChart();
   updateSummaryDetailChart();
   updateAreaComparisonChart();
   updateQuietSummaryChart();
