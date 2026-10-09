@@ -264,6 +264,19 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
         return NORRBOTTEN_MUNICIPALITIES[title_cf], "municipality_name"
 
     loc_cf = (location_string or "").casefold()
+    outside_county_terms = (
+        "västerbotten", "västerbottens län",
+        "västernorrland", "västernorrlands län",
+        "jämtland", "jämtlands län",
+        "gävleborg", "gävleborgs län",
+        "dalarna", "dalarnas län",
+    )
+    if any(
+        re.search(r"(?<![a-zåäö])" + re.escape(term) + r"(?![a-zåäö])", loc_cf)
+        for term in outside_county_terms
+    ):
+        return "", "cross_county_ambiguous"
+
     hits = []
     for key, canonical in NORRBOTTEN_MUNICIPALITIES.items():
         if key in loc_cf:
@@ -312,20 +325,6 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     parts = [p.strip() for p in (location_string or "").split(",") if p.strip()]
     if len(parts) > 5:
         return "", "multi_location_ambiguous"
-
-    loc_cf = (location_string or "").casefold()
-    outside_county_terms = (
-        "västerbotten", "västerbottens län",
-        "västernorrland", "västernorrlands län",
-        "jämtland", "jämtlands län",
-        "gävleborg", "gävleborgs län",
-        "dalarna", "dalarnas län",
-    )
-    if any(
-        re.search(r"(?<![a-zåäö])" + re.escape(term) + r"(?![a-zåäö])", loc_cf)
-        for term in outside_county_terms
-    ):
-        return "", "cross_county_ambiguous"
 
     inferred, inferred_place = infer_norrbotten_place(" ".join([title_location or "", location_string or ""]))
     if inferred and (not title_inferred or title_inferred == inferred):
