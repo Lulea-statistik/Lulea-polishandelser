@@ -29,10 +29,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp data/norrbotten_place_to_municipality.csv /tmp/norrbotten_place_to_municipality.csv
+          git fetch origin main
+          git reset --hard origin/main
+          mkdir -p data
+          cp /tmp/norrbotten_place_to_municipality.csv data/norrbotten_place_to_municipality.csv
           git add data/norrbotten_place_to_municipality.csv
           if git diff --cached --quiet; then
             echo "No place dictionary changes"
           else
             git commit -m "Uppdatera ort-till-kommunreferens"
-            git push
+            git push origin HEAD:main
           fi
