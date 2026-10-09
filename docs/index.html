@@ -251,7 +251,7 @@
         </div>
       </div>
       <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
-      <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert. <strong>Övriga Sverige</strong> avser poster som har en säker koppling till ett annat svenskt län än Norrbotten. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
+      <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert och poster som säkert berör flera kommuner i länet. <strong>Övriga Sverige</strong> avser poster som har en säker koppling till ett annat svenskt län än Norrbotten. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
     </div>
 
         <div class="card" style="margin-top:16px">
@@ -704,6 +704,7 @@ function comparisonAreaRows(area){
   if(area==='Norrbotten'){
     return expandedRows.filter(r=>
       r.geography_group==='Norrbotten, okänd kommun' ||
+      r.geography_group==='Flera kommuner i Norrbotten' ||
       (r.geography_group||'').endsWith(' kommun')
     );
   }
