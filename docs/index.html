@@ -201,7 +201,7 @@
 
     <div class="grid2">
       <div class="card">
-        <h2>Händelser per månad</h2>
+        <h2>Händelser per år och månad</h2>
         <div class="chartbox"><canvas id="monthlyChart"></canvas></div>
         <p class="chart-note">Diagrammet använder den <strong>expanderade händelseserien</strong>. När konkreta underhändelser har kunnat identifieras i en sammanfattning ersätter de sammanfattningsposten och redovisas under sin vanliga händelsetyp. Endast sammanfattningar som inte kunnat delas upp ligger kvar som <strong>Sammanfattning, ej uppdelad</strong>.</p>
       </div>
@@ -218,7 +218,7 @@
         <div class="chartbox"><canvas id="yearChart"></canvas></div>
       </div>
       <div class="card">
-        <h2>Händelser per kalendermånad</h2>
+        <h2>Händelser per månad</h2>
         <div class="chartbox"><canvas id="calendarMonthChart"></canvas></div>
         <p class="chart-note">Summerar händelser januari–december över vald tidsperiod. Välj ett enskilt år i årsfiltret för att visa månadsfördelningen det året. Samma filter och dataserie som Händelser per år.</p>
       </div>
@@ -872,7 +872,7 @@ function updateAreaComparisonChart(){
           title:{display:true,text:'Andel av samtliga händelser (%)'},
           ticks:{callback:v=>v+' %'}
         },
-        y:{ticks:{autoSkip:false}}
+        y:{ticks:{autoSkip:false},grid:{color:'#555555',lineWidth:1}}
       }
     }
   });
@@ -977,7 +977,7 @@ function update(){
   const yrs=groupSum(expandedMain,'year').sort((a,b)=>+a[0]-+b[0]);
   yearChart=chartReplace(yearChart,document.getElementById('yearChart'),{
     type:'bar',
-    data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1])}]},
+    data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1]),backgroundColor:'#a7dca0',borderColor:'#81bf7b'}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
   });
 
