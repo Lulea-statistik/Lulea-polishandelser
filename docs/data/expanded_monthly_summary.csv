@@ -70,7 +70,6 @@ year,month,geography_group,event_type,event_count
 2016,10,Luleå kommun,"Trafikolycka,  singel",1
 2016,10,Luleå kommun,Övrigt,1
 2016,10,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",7
-2016,10,"Norrbotten, okänd kommun",Övrigt,2
 2016,10,"Norrbotten, okänd kommun",Inbrott,1
 2016,10,"Norrbotten, okänd kommun",Rattfylleri,1
 2016,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
@@ -190,7 +189,7 @@ year,month,geography_group,event_type,event_count
 2016,11,Luleå kommun,"Trafikolycka,  smitning från",1
 2016,11,Norrbotten / Övriga Sverige,"Trafikolycka,  vilt",2
 2016,11,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",12
-2016,11,"Norrbotten, okänd kommun",Övrigt,6
+2016,11,"Norrbotten, okänd kommun",Övrigt,3
 2016,11,"Norrbotten, okänd kommun",Tillfälligt obemannat,2
 2016,11,"Norrbotten, okänd kommun",Misshandel,1
 2016,11,"Norrbotten, okänd kommun",Olaga hot,1
@@ -587,7 +586,7 @@ year,month,geography_group,event_type,event_count
 2017,2,Luleå kommun,Stöld/inbrott,1
 2017,2,Luleå kommun,"Trafikolycka,  singel",1
 2017,2,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",5
-2017,2,"Norrbotten, okänd kommun",Övrigt,4
+2017,2,"Norrbotten, okänd kommun",Övrigt,3
 2017,2,"Norrbotten, okänd kommun",Narkotikabrott,1
 2017,2,"Norrbotten, okänd kommun",Rattfylleri,1
 2017,2,"Norrbotten, okänd kommun",Rån,1
@@ -877,12 +876,12 @@ year,month,geography_group,event_type,event_count
 2017,4,Luleå kommun,Trafikhinder,1
 2017,4,Luleå kommun,"Trafikolycka,  personskada",1
 2017,4,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",8
-2017,4,"Norrbotten, okänd kommun",Tillfälligt obemannat,3
 2017,4,"Norrbotten, okänd kommun",Trafikkontroll,2
 2017,4,"Norrbotten, okänd kommun",Övrigt/oklassificerad,2
 2017,4,"Norrbotten, okänd kommun",Brand,1
 2017,4,"Norrbotten, okänd kommun",Misshandel,1
 2017,4,"Norrbotten, okänd kommun",Skadegörelse,1
+2017,4,"Norrbotten, okänd kommun",Tillfälligt obemannat,1
 2017,4,Pajala kommun,Rattfylleri,2
 2017,4,Pajala kommun,Brand,1
 2017,4,Piteå kommun,Misshandel,5
@@ -1015,9 +1014,7 @@ year,month,geography_group,event_type,event_count
 2017,5,Norrbotten / Övriga Sverige,Trafikkontroll,1
 2017,5,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",7
 2017,5,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
-2017,5,"Norrbotten, okänd kommun",Tillfälligt obemannat,1
 2017,5,"Norrbotten, okänd kommun",Trafikkontroll,1
-2017,5,"Norrbotten, okänd kommun",Övrigt,1
 2017,5,Pajala kommun,Brand,1
 2017,5,Pajala kommun,Inbrott,1
 2017,5,Piteå kommun,Övrigt/oklassificerad,4
@@ -1164,7 +1161,6 @@ year,month,geography_group,event_type,event_count
 2017,6,"Norrbotten, okänd kommun",Misshandel,1
 2017,6,"Norrbotten, okänd kommun",Rattfylleri,1
 2017,6,"Norrbotten, okänd kommun",Stöld,1
-2017,6,"Norrbotten, okänd kommun",Tillfälligt obemannat,1
 2017,6,"Norrbotten, okänd kommun",Trafikbrott,1
 2017,6,Pajala kommun,Räddningsinsats,3
 2017,6,Pajala kommun,Narkotikabrott,2
@@ -1298,9 +1294,9 @@ year,month,geography_group,event_type,event_count
 2017,7,Luleå kommun,"Trafikolycka,  singel",1
 2017,7,Luleå kommun,"Trafikolycka,  vilt",1
 2017,7,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",12
-2017,7,"Norrbotten, okänd kommun",Tillfälligt obemannat,5
 2017,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
 2017,7,"Norrbotten, okänd kommun",Fjällräddning,4
+2017,7,"Norrbotten, okänd kommun",Tillfälligt obemannat,3
 2017,7,"Norrbotten, okänd kommun",Misshandel,2
 2017,7,"Norrbotten, okänd kommun",Övrigt,2
 2017,7,"Norrbotten, okänd kommun",Olaga hot,1
@@ -1440,7 +1436,7 @@ year,month,geography_group,event_type,event_count
 2017,8,Luleå kommun,Vållande till kroppsskada,1
 2017,8,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",12
 2017,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,8
-2017,8,"Norrbotten, okänd kommun",Tillfälligt obemannat,5
+2017,8,"Norrbotten, okänd kommun",Tillfälligt obemannat,4
 2017,8,"Norrbotten, okänd kommun",Inbrott,1
 2017,8,"Norrbotten, okänd kommun",Rattfylleri,1
 2017,8,Pajala kommun,Misshandel,1
@@ -1738,7 +1734,6 @@ year,month,geography_group,event_type,event_count
 2017,10,Luleå kommun,"Trafikolycka,  smitning från",1
 2017,10,Norrbotten / Övriga Sverige,Stöld,1
 2017,10,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",17
-2017,10,"Norrbotten, okänd kommun",Tillfälligt obemannat,3
 2017,10,"Norrbotten, okänd kommun",Övrigt,3
 2017,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2017,10,"Norrbotten, okänd kommun",Bedrägeri,1
@@ -3285,7 +3280,7 @@ year,month,geography_group,event_type,event_count
 2018,9,Luleå kommun,Olaga hot,1
 2018,9,Luleå kommun,"Trafikolycka,  singel",1
 2018,9,Luleå kommun,"Trafikolycka,  smitning från",1
-2018,9,"Norrbotten, okänd kommun",Övrigt,10
+2018,9,"Norrbotten, okänd kommun",Övrigt,8
 2018,9,"Norrbotten, okänd kommun",Övrigt/oklassificerad,6
 2018,9,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",2
 2018,9,"Norrbotten, okänd kommun",Bedrägeri,1
@@ -7261,7 +7256,6 @@ year,month,geography_group,event_type,event_count
 2021,2,"Norrbotten, okänd kommun",Fylleri/LOB,1
 2021,2,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",1
 2021,2,"Norrbotten, okänd kommun",Trafikbrott,1
-2021,2,"Norrbotten, okänd kommun",Övrigt,1
 2021,2,Pajala kommun,"Trafikolycka, vilt",2
 2021,2,Pajala kommun,Trafikolycka,1
 2021,2,Pajala kommun,"Trafikolycka,  vilt",1

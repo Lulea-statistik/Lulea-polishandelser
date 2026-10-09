@@ -1,5 +1,22 @@
 event_id,date,type_original,headline,geography_group
+849,2016-10-19,Övrigt,Det finns inga akuta händelser att rapportera om i länet just nu.,"Norrbotten, okänd kommun"
+1007,2016-10-21,Övrigt,Lugn morgon i länet. Inget att rapportera.,"Norrbotten, okänd kommun"
+2550,2016-11-02,Övrigt,"Norrbotten, en fortsatt bra dag. Inga akuta händelser att rapportera om","Norrbotten, okänd kommun"
+3174,2016-11-07,Övrigt,Lugn eftermiddag i länet. Inget att rapportera.,"Norrbotten, okänd kommun"
+5557,2016-11-26,Övrigt,Förtydligande av bemanning kommunikatör i RLC,"Norrbotten, okänd kommun"
+14835,2017-02-01,Övrigt,"Lugnt i länet för närvarande, inget särskilt att rapportera.","Norrbotten, okänd kommun"
+23430,2017-04-04,Tillfälligt obemannat,Ledningscentralen är ikväll ej bemannad med någon presstalesman. Frågor besvaras om möjligt av RLC-befälen som arbetar under kvällen.,"Norrbotten, okänd kommun"
+25363,2017-04-20,Tillfälligt obemannat,Inga kommunikatörer i tjänst under kvällen,"Norrbotten, okänd kommun"
+28524,2017-05-16,Tillfälligt obemannat,Mediecentret obemannat under kvällen-natten.,"Norrbotten, okänd kommun"
+29635,2017-05-26,Övrigt,Inga akuta händelser i länet under morgonen,"Norrbotten, okänd kommun"
+33337,2017-06-27,Tillfälligt obemannat,Ledningscentralen är under kvällen och natten ej bemannad med någon kommunikatör. Uppdateringar på hemsidan och mediasamtal hanteras i mån av tid av tjänstgörande RLC-befäl.,"Norrbotten, okänd kommun"
+34625,2017-07-09,Tillfälligt obemannat,RLC är under kvällen ej bemannad med någon media kommunikatör. Samtal från media besvaras i mån av tid av RLC-befälen.,"Norrbotten, okänd kommun"
+34715,2017-07-10,Tillfälligt obemannat,RLC är under kvällen ej bemannad med någon mediakommunikatör. Samtal från media besvaras i mån av tid av RLC-befälen.,"Norrbotten, okänd kommun"
+39329,2017-08-24,Tillfälligt obemannat,RLC är under kvällen ej bemannad med någon mediakommunikatör.,"Norrbotten, okänd kommun"
 40203,2017-09-01,Övrigt,En lugn avslutning på natten,"Norrbotten, okänd kommun"
+44078,2017-10-04,Tillfälligt obemannat,Ledningscentralen är under dagen ej bemannad med någon presstalesman. Hemsidan samt telefonsamtal hanteras i mån av tid av tjänstgörande RLC-befäl på 010-56 94028,"Norrbotten, okänd kommun"
+44212,2017-10-05,Tillfälligt obemannat,Ledningscentralen är under dagen ej bemannad med någon presstalesman. Hemsidan samt telefonsamtal hanteras i mån av tid av tjänstgörande RLC-befäl på 010-56 94028.,"Norrbotten, okänd kommun"
+45572,2017-10-16,Tillfälligt obemannat,Ledningscentralen är under kvällen ej bemannad med någon mediakommunikatör.,"Norrbotten, okänd kommun"
 49059,2017-11-14,Övrigt,Ingen kommunikatör i tjänst 22 - 07,"Norrbotten, okänd kommun"
 49138,2017-11-15,Övrigt,Ingen kommunikatör i tjänst 13 - 07,"Norrbotten, okänd kommun"
 49298,2017-11-16,Övrigt,Ingen kommunikatör i tjänst 15 - 07,"Norrbotten, okänd kommun"
@@ -204,7 +221,9 @@ event_id,date,type_original,headline,geography_group
 86033,2018-09-13,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
 86193,2018-09-14,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
 86511,2018-09-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+86566,2018-09-18,Övrigt,Lugnt i Länet,"Norrbotten, okänd kommun"
 86646,2018-09-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+86689,2018-09-18,Övrigt,Lugnt i länet,"Norrbotten, okänd kommun"
 86773,2018-09-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
 87188,2018-09-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
 87294,2018-09-23,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
@@ -492,6 +511,7 @@ event_id,date,type_original,headline,geography_group
 165940,2020-07-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
 166013,2020-07-08,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
 186298,2021-01-20,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+187372,2021-02-01,Övrigt,Lugnt i länet.,"Norrbotten, okänd kommun"
 188749,2021-02-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
 188822,2021-02-14,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
 189434,2021-02-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
