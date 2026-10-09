@@ -1,6 +1,31 @@
 event_id,date,type_original,headline,content,geography_group,review_flag
+849,2016-10-19,Övrigt,Det finns inga akuta händelser att rapportera om i länet just nu.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+1007,2016-10-21,Övrigt,Lugn morgon i länet. Inget att rapportera.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+2550,2016-11-02,Övrigt,"Norrbotten, en fortsatt bra dag. Inga akuta händelser att rapportera om",Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+3174,2016-11-07,Övrigt,Lugn eftermiddag i länet. Inget att rapportera.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+5557,2016-11-26,Övrigt,Förtydligande av bemanning kommunikatör i RLC,"Mediaanknytningen 010-5691519 är bemannand enligt nedan
+Måndag - fredag 07 - 22
+Lördag - söndag 07 - 15 
+Övrig tid hänvisas media till tidigare meddelande direktnummer till respektive område/rlc-befäl
+Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
+14835,2017-02-01,Övrigt,"Lugnt i länet för närvarande, inget särskilt att rapportera.",Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+23430,2017-04-04,Tillfälligt obemannat,Ledningscentralen är ikväll ej bemannad med någon presstalesman. Frågor besvaras om möjligt av RLC-befälen som arbetar under kvällen.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+25363,2017-04-20,Tillfälligt obemannat,Inga kommunikatörer i tjänst under kvällen,"Under kvällen har vi inga mediakommunikatörer i tjänst. RLC Befäl i aktuellt område svarar i telefon och lägger ut notiser mån av tid.
+Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
+28524,2017-05-16,Tillfälligt obemannat,Mediecentret obemannat under kvällen-natten.,"Mediefrågor besvaras av respektive RLC-befäl.
+Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
+29635,2017-05-26,Övrigt,Inga akuta händelser i länet under morgonen,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+33337,2017-06-27,Tillfälligt obemannat,Ledningscentralen är under kvällen och natten ej bemannad med någon kommunikatör. Uppdateringar på hemsidan och mediasamtal hanteras i mån av tid av tjänstgörande RLC-befäl.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+34625,2017-07-09,Tillfälligt obemannat,RLC är under kvällen ej bemannad med någon media kommunikatör. Samtal från media besvaras i mån av tid av RLC-befälen.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+34715,2017-07-10,Tillfälligt obemannat,RLC är under kvällen ej bemannad med någon mediakommunikatör. Samtal från media besvaras i mån av tid av RLC-befälen.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+39329,2017-08-24,Tillfälligt obemannat,RLC är under kvällen ej bemannad med någon mediakommunikatör.,"Samtal från media samt uppdateringar på hemsidan hanteras i mån av tid av tjänstgörande RLC-befäl på tel 010-56 94028.
+Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
 40203,2017-09-01,Övrigt,En lugn avslutning på natten,"Godmorgon! Det har inte varit några akuta händelser att rapportera om under tidig morgon.
 Dagens kommunikatör är Börje Öhman och på eftermiddagen kommer Marie Andersson.
+Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
+44078,2017-10-04,Tillfälligt obemannat,Ledningscentralen är under dagen ej bemannad med någon presstalesman. Hemsidan samt telefonsamtal hanteras i mån av tid av tjänstgörande RLC-befäl på 010-56 94028,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+44212,2017-10-05,Tillfälligt obemannat,Ledningscentralen är under dagen ej bemannad med någon presstalesman. Hemsidan samt telefonsamtal hanteras i mån av tid av tjänstgörande RLC-befäl på 010-56 94028.,Polisen Norrbotten,"Norrbotten, okänd kommun",no_incident_keywords
+45572,2017-10-16,Tillfälligt obemannat,Ledningscentralen är under kvällen ej bemannad med någon mediakommunikatör.,"Uppdateringar på hemsidan samt samtal från media besvaras i mån av tid av tjänstgörande befäl på ledningscentralen, telefonnummer: 010-5694028.
 Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
 49059,2017-11-14,Övrigt,Ingen kommunikatör i tjänst 22 - 07,"Polisen.se/händelsenotiser och samtal från media hanteras i mån av tid av befälen på RLC. Media hänvisas att ringa 010-56 94028 
  
@@ -582,8 +607,11 @@ Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
 <p>Kommunikatör Marie Andersson i tjänst från lördag 07:00.</p>","Norrbotten, okänd kommun",no_incident_keywords
 86511,2018-09-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"<p>Polisen.se/händelsenotiser och samtal från media hanteras i mån av tid av befälen på RLC. Media hänvisas att ringa 010-569 40 28.</p>
 <p>Kommunikatör Liv Fahlén i tjänst från tisdag 07:00. </p>","Norrbotten, okänd kommun",no_incident_keywords
+86566,2018-09-18,Övrigt,Lugnt i Länet,<p>Förutom Fjällräddningsinsatsen vid Tjäkjastugan som ska påbörjas när det blir ljust så finns det inget att rapportera om från nattpasset. För mer information hänvisas till ordinarie kommunikatör som börjar kl 07.00.</p>,"Norrbotten, okänd kommun",no_incident_keywords
 86646,2018-09-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"<p>Polisen.se/händelsenotiser och samtal från media hanteras i mån av tid av befälen på RLC. Media hänvisas att ringa 010-569 40 28.</p>
 <p>Kommunikatör Liv Fahlén i tjänst från onsdag klockan 07:00.</p>","Norrbotten, okänd kommun",no_incident_keywords
+86689,2018-09-18,Övrigt,Lugnt i länet,"<p>Nattpasset har börjat lugnt och det finns inget att rapportera. För sammanfattning hänvisas till RLC:s kommunikatör som finns på plats kl 07:00.</p>
+","Norrbotten, okänd kommun",no_incident_keywords
 86773,2018-09-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"<p>Polisen.se/händelsenotiser och samtal från media hanteras i mån av tid av befälen på RLC. Media hänvisas att ringa 010-569 40 28.</p>
 <p>Kommunikatör Marie Andersson i tjänst från torsdag klockan 07:00.</p>","Norrbotten, okänd kommun",no_incident_keywords
 87188,2018-09-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"<p>Polisen.se/händelsenotiser och samtal från media hanteras i mån av tid av befälen på RLC. Media hänvisas att ringa 010-569 40 28.</p>
@@ -1421,6 +1449,7 @@ Polisen Norrbotten","Norrbotten, okänd kommun",no_incident_keywords
 <p>Västerbotten: 010-569 40 25</p>
 <p>Västernorrland: 010-569 40 26</p>
 <p>Kommunikatör i tjänst igen från klockan 07:00 i morgon.</p>",Norrbotten / Övriga Sverige,no_incident_keywords
+187372,2021-02-01,Övrigt,Lugnt i länet.,<p>Lugnt i länet.</p>,"Norrbotten, okänd kommun",no_incident_keywords
 188749,2021-02-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"<p>Händelsenotiser på polisen.se och samtal från journalister hanteras i mån av tid av befälen på regionledningscentralen (RLC).</p>
 <p>Telefonnummer till RLC-befäl</p>
 <p>Jämtland: 010-569 40 27</p>
