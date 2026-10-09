@@ -1,0 +1,523 @@
+event_id,date,type_original,headline,geography_group
+40203,2017-09-01,Övrigt,En lugn avslutning på natten,"Norrbotten, okänd kommun"
+49059,2017-11-14,Övrigt,Ingen kommunikatör i tjänst 22 - 07,"Norrbotten, okänd kommun"
+49138,2017-11-15,Övrigt,Ingen kommunikatör i tjänst 13 - 07,"Norrbotten, okänd kommun"
+49298,2017-11-16,Övrigt,Ingen kommunikatör i tjänst 15 - 07,"Norrbotten, okänd kommun"
+49551,2017-11-18,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+49642,2017-11-19,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+49796,2017-11-20,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+49959,2017-11-21,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+50326,2017-11-23,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+50503,2017-11-24,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+50570,2017-11-25,Tillfälligt obemannat,Ingen kommunikatör i tjänst 15 - 07,"Norrbotten, okänd kommun"
+50673,2017-11-26,Tillfälligt obemannat,Ingen kommunikatör i tjänst 15 - 07,"Norrbotten, okänd kommun"
+50894,2017-11-27,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+51093,2017-11-28,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+51204,2017-11-29,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+51356,2017-11-30,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+51890,2017-12-04,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+52352,2017-12-07,Tillfälligt obemannat,Ingen kommunikatör i tjänst 22 - 07,"Norrbotten, okänd kommun"
+52494,2017-12-08,Tillfälligt obemannat,Ingen kommunikatör i tjänst 22 - 07.,"Norrbotten, okänd kommun"
+52933,2017-12-11,Övrigt,Ingen kommunikatör i tjänst under natten 22 - 07,"Norrbotten, okänd kommun"
+53123,2017-12-12,Övrigt,Ingen kommunikatör i tjänst under natten 22 - 07,"Norrbotten, okänd kommun"
+53254,2017-12-13,Övrigt,Ingen kommunikatör i tjänst 22 - 07.,"Norrbotten, okänd kommun"
+53694,2017-12-16,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+53780,2017-12-17,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+53936,2017-12-18,Övrigt,Ingen kommunikatör i tjänst 22 - 07.,"Norrbotten, okänd kommun"
+54112,2017-12-19,Övrigt,Ingen kommunikatör i tjänst 22 - 07.,"Norrbotten, okänd kommun"
+54586,2017-12-22,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+54542,2017-12-23,Övrigt,Ingen kommunikatör i tjänst 15 - 07,"Norrbotten, okänd kommun"
+54675,2017-12-24,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+55047,2017-12-27,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+55207,2017-12-28,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+55353,2017-12-29,Övrigt,Ingen kommunikatör i tjänst 22 - 07,"Norrbotten, okänd kommun"
+55423,2017-12-30,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+55512,2017-12-31,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+55836,2018-01-02,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+55978,2018-01-03,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+56136,2018-01-04,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+56226,2018-01-05,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+56563,2018-01-08,Övrigt,Ingen kommunikatör i tjänst 22 - 07,"Norrbotten, okänd kommun"
+56689,2018-01-09,Övrigt,Ingen kommunikatör i tjänst 19:30 - 07,"Norrbotten, okänd kommun"
+57155,2018-01-14,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+57387,2018-01-16,Tillfälligt obemannat,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+57860,2018-01-19,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+57916,2018-01-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+58767,2018-01-28,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+58937,2018-01-29,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+59074,2018-01-30,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+59186,2018-01-31,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+59274,2018-02-01,Övrigt,"Ingen kommunikatör på plats, åter vid 15-tiden.","Norrbotten, okänd kommun"
+59355,2018-02-01,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+59515,2018-02-02,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+59846,2018-02-05,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+60062,2018-02-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+60214,2018-02-08,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+60474,2018-02-10,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+60563,2018-02-11,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+60673,2018-02-12,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+60828,2018-02-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+60925,2018-02-14,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+61277,2018-02-16,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+61342,2018-02-17,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+61554,2018-02-19,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+62301,2018-02-20,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+61736,2018-02-20,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+62103,2018-02-21,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+61922,2018-02-21,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+61982,2018-02-22,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+62526,2018-02-23,Övrigt,Ingen kommunikatör i tjänst under sen kväll och natt,"Norrbotten, okänd kommun"
+62674,2018-02-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+62827,2018-02-25,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+63046,2018-02-26,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+63308,2018-02-27,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+63453,2018-02-28,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+63738,2018-03-01,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+63898,2018-03-02,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+64320,2018-03-05,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+64457,2018-03-06,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+64541,2018-03-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+64665,2018-03-08,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+64908,2018-03-10,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+64976,2018-03-11,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+65129,2018-03-12,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+65271,2018-03-13,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+65694,2018-03-16,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+65754,2018-03-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+66181,2018-03-21,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+66314,2018-03-22,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+66460,2018-03-23,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+66545,2018-03-24,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+66628,2018-03-25,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+66787,2018-03-26,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+66951,2018-03-27,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+67030,2018-03-28,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+67354,2018-03-30,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+67627,2018-04-02,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+68012,2018-04-05,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+68211,2018-04-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+68304,2018-04-08,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+68391,2018-04-09,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+68530,2018-04-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+68792,2018-04-12,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+68957,2018-04-13,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+69040,2018-04-14,Övrigt,"Ingen kommunikatör i tjänst under eftermiddag, kväll och natt","Norrbotten, okänd kommun"
+69365,2018-04-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+69488,2018-04-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+69636,2018-04-19,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+69744,2018-04-20,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+69816,2018-04-21,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+69887,2018-04-22,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+70028,2018-04-23,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+70163,2018-04-24,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+70828,2018-05-01,Övrigt,Ingen kommunikatör i tjänst,Bodens kommun
+71044,2018-05-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+71276,2018-05-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+71379,2018-05-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+71529,2018-05-07,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+71605,2018-05-08,Övrigt,ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+71865,2018-05-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+71990,2018-05-11,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+72055,2018-05-12,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+72139,2018-05-13,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+72474,2018-05-15,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+72611,2018-05-16,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+72759,2018-05-17,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+72890,2018-05-18,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+72964,2018-05-19,Övrigt,Ingen kommunikatör i tjänst under eftermiddag och natt,"Norrbotten, okänd kommun"
+73027,2018-05-20,Övrigt,Ingen kommunikatör under kvällen och natten,"Norrbotten, okänd kommun"
+73137,2018-05-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+73289,2018-05-22,Övrigt,"Ingen kommunikatör i tjänst under kvällen, natten och hela onsdagen","Norrbotten, okänd kommun"
+73547,2018-05-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+73730,2018-05-25,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+74013,2018-05-28,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+74149,2018-05-29,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+74345,2018-05-30,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+74511,2018-05-31,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+74714,2018-06-02,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+74787,2018-06-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+74933,2018-06-04,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+75076,2018-06-05,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+75169,2018-06-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+75497,2018-06-08,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+75564,2018-06-09,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+75658,2018-06-10,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+76075,2018-06-13,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+76193,2018-06-14,Övrigt,Ingen kommunikatör i tjänst under natten,"Norrbotten, okänd kommun"
+76357,2018-06-16,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+76420,2018-06-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+76761,2018-06-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+76871,2018-06-21,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+76979,2018-06-22,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+77633,2018-06-29,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+77760,2018-07-01,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten.,"Norrbotten, okänd kommun"
+78339,2018-07-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+78843,2018-07-12,Övrigt,Ingen kommunikatör i tjänst under kvällen eller natten,"Norrbotten, okänd kommun"
+78975,2018-07-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+79059,2018-07-14,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+79132,2018-07-15,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+79217,2018-07-16,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+79315,2018-07-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+79428,2018-07-18,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+79548,2018-07-19,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+79645,2018-07-20,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+79726,2018-07-21,Övrigt,Ingen kommunikatör i tjänst,"Norrbotten, okänd kommun"
+79792,2018-07-22,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+79902,2018-07-23,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+80008,2018-07-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+80110,2018-07-25,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+80252,2018-07-26,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+80558,2018-07-29,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+80647,2018-07-30,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+80771,2018-07-31,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+80880,2018-08-01,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+81027,2018-08-02,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+81166,2018-08-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+81277,2018-08-04,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+81353,2018-08-05,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+81438,2018-08-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+81554,2018-08-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+81690,2018-08-08,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+81819,2018-08-09,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+81955,2018-08-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+82015,2018-08-11,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+82090,2018-08-12,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+82185,2018-08-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+82301,2018-08-14,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+82417,2018-08-15,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+82516,2018-08-16,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+82671,2018-08-17,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+82742,2018-08-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+82830,2018-08-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+83259,2018-08-22,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+83858,2018-08-27,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+83998,2018-08-28,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+84386,2018-08-31,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+84809,2018-09-04,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+84957,2018-09-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+85146,2018-09-06,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+85365,2018-09-08,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+85477,2018-09-09,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+85664,2018-09-10,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+85810,2018-09-11,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+85892,2018-09-12,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+86033,2018-09-13,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+86193,2018-09-14,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+86511,2018-09-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+86646,2018-09-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+86773,2018-09-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+87188,2018-09-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+87294,2018-09-23,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+87831,2018-09-28,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+88003,2018-09-30,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten,"Norrbotten, okänd kommun"
+88187,2018-10-01,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+88330,2018-10-02,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+88415,2018-10-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+88783,2018-10-05,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+88863,2018-10-06,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+88966,2018-10-07,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+89160,2018-10-08,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+89316,2018-10-09,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+89601,2018-10-11,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+89750,2018-10-12,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+90155,2018-10-15,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+90301,2018-10-16,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+90306,2018-10-16,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+90428,2018-10-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+90431,2018-10-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+90430,2018-10-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+90814,2018-10-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+90902,2018-10-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+91250,2018-10-23,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+91248,2018-10-23,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+91247,2018-10-23,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+91720,2018-10-26,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+91848,2018-10-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+91846,2018-10-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+91845,2018-10-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+91945,2018-10-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+91942,2018-10-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+91941,2018-10-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+92474,2018-10-31,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+92472,2018-10-31,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+92471,2018-10-31,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+92671,2018-11-01,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+92669,2018-11-01,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+92668,2018-11-01,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+92828,2018-11-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+92826,2018-11-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+92825,2018-11-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+92917,2018-11-03,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+92916,2018-11-03,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten,Övriga Sverige
+92914,2018-11-03,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Norrbotten / Övriga Sverige
+93027,2018-11-04,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+93026,2018-11-04,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+93024,2018-11-04,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Norrbotten / Övriga Sverige
+93551,2018-11-07,Övrigt,Ingen kommunikatör i tjänst under natten. Obs! Gäller i kväll från klockan 21.00.,Norrbotten / Övriga Sverige
+93550,2018-11-07,Övrigt,Ingen kommunikatör i tjänst under natten. Obs! Gäller i kväll från klockan 21.00.,Övriga Sverige
+93549,2018-11-07,Övrigt,Ingen kommunikatör i tjänst under natten. Obs! Gäller i kväll från klockan 21.00.,Övriga Sverige
+93548,2018-11-07,Övrigt,Ingen kommunikatör i tjänst under natten. Obs! Gäller i kväll från klockan 21.00.,Övriga Sverige
+93733,2018-11-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+93732,2018-11-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+93731,2018-11-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+93730,2018-11-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+93891,2018-11-09,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+93890,2018-11-09,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+93889,2018-11-09,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+93888,2018-11-09,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94253,2018-11-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+94252,2018-11-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94251,2018-11-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94250,2018-11-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94413,2018-11-13,Övrigt,Ingen kommunikatör i tjänst. Dessutom så påverkar en uppgradering av polisens telefonväxel medias telefonnummer till ledningscentralen.,Norrbotten / Övriga Sverige
+94412,2018-11-13,Övrigt,Ingen kommunikatör i tjänst. Dessutom så påverkar en uppgradering av polisens telefonväxel medias telefonnummer till ledningscentralen.,Övriga Sverige
+94416,2018-11-13,Övrigt,Ingen kommunikatör i tjänst. Dessutom så påverkar en uppgradering av polisens telefonväxel medias telefonnummer till ledningscentralen.,Övriga Sverige
+94415,2018-11-13,Övrigt,Ingen kommunikatör i tjänst. Dessutom så påverkar en uppgradering av polisens telefonväxel medias telefonnummer till ledningscentralen.,Övriga Sverige
+94553,2018-11-14,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94562,2018-11-14,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94561,2018-11-14,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94560,2018-11-14,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+94692,2018-11-15,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+94691,2018-11-15,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94690,2018-11-15,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94689,2018-11-15,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+94984,2018-11-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+95103,2018-11-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+95304,2018-11-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+95303,2018-11-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+95302,2018-11-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+95301,2018-11-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+95457,2018-11-20,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+95456,2018-11-20,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+95455,2018-11-20,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+95460,2018-11-20,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+95940,2018-11-23,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+96009,2018-11-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+96008,2018-11-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96007,2018-11-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96006,2018-11-24,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96107,2018-11-25,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96106,2018-11-25,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96105,2018-11-25,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96104,2018-11-25,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+96186,2018-11-26,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96185,2018-11-26,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96184,2018-11-26,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+96188,2018-11-26,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96351,2018-11-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+96357,2018-11-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96356,2018-11-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96355,2018-11-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96523,2018-11-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+96522,2018-11-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96521,2018-11-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96520,2018-11-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+96758,2018-11-29,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+96757,2018-11-29,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+96756,2018-11-29,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+96755,2018-11-29,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+96936,2018-11-30,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+96935,2018-11-30,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+96934,2018-11-30,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+96933,2018-11-30,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+97066,2018-12-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+97065,2018-12-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+97064,2018-12-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+97199,2018-12-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+97198,2018-12-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97197,2018-12-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97196,2018-12-03,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97336,2018-12-04,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+97335,2018-12-04,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97334,2018-12-04,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97338,2018-12-04,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97455,2018-12-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+97454,2018-12-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97453,2018-12-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97452,2018-12-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97617,2018-12-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+97616,2018-12-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97615,2018-12-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+97779,2018-12-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+97778,2018-12-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+97775,2018-12-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+97774,2018-12-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+98094,2018-12-10,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+98223,2018-12-10,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+98222,2018-12-10,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98221,2018-12-10,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98220,2018-12-10,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98421,2018-12-11,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+98420,2018-12-11,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98419,2018-12-11,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98418,2018-12-11,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98617,2018-12-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98622,2018-12-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98621,2018-12-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98620,2018-12-12,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+98797,2018-12-13,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98796,2018-12-13,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+98795,2018-12-13,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+98800,2018-12-13,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+99039,2018-12-15,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+99146,2018-12-16,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+99310,2018-12-17,Övrigt,Ingen kommunikatör på plats under natten.,Norrbotten / Övriga Sverige
+99308,2018-12-17,Övrigt,Ingen kommunikatör på plats under natten.,Övriga Sverige
+99307,2018-12-17,Övrigt,Ingen kommunikatör på plats under natten.,Övriga Sverige
+99465,2018-12-18,Övrigt,Ingen kommunikatör på plats under natten.,Övriga Sverige
+99464,2018-12-18,Övrigt,Ingen kommunikatör på plats under natten.,Övriga Sverige
+99463,2018-12-18,Övrigt,Ingen kommunikatör på plats under natten.,Norrbotten / Övriga Sverige
+99953,2018-12-21,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+100035,2018-12-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+100125,2018-12-23,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+100202,2018-12-24,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,"Norrbotten, okänd kommun"
+100795,2018-12-28,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+100793,2018-12-28,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+100792,2018-12-28,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+100843,2018-12-29,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+100842,2018-12-29,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+100840,2018-12-29,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+100934,2018-12-30,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+100933,2018-12-30,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+100932,2018-12-30,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+101009,2018-12-31,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+101106,2019-01-01,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+101287,2019-01-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+101285,2019-01-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101289,2019-01-02,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101466,2019-01-03,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+101464,2019-01-03,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101463,2019-01-03,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101633,2019-01-04,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+101632,2019-01-04,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101630,2019-01-04,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101962,2019-01-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+101960,2019-01-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+101959,2019-01-07,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+102146,2019-01-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+102145,2019-01-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+102143,2019-01-08,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+102659,2019-01-12,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+102779,2019-01-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+102932,2019-01-14,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+103095,2019-01-15,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+103630,2019-01-18,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+103720,2019-01-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+103719,2019-01-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+103717,2019-01-19,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+103807,2019-01-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+103806,2019-01-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+103805,2019-01-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+104259,2019-01-23,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+104402,2019-01-24,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+104400,2019-01-24,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+104399,2019-01-24,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+104546,2019-01-25,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+104544,2019-01-25,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+104550,2019-01-25,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+104620,2019-01-26,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Norrbotten / Övriga Sverige
+104615,2019-01-26,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+104614,2019-01-26,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+104729,2019-01-27,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+104727,2019-01-27,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Övriga Sverige
+104726,2019-01-27,Övrigt,Ingen kommunikatör i tjänst under kvällen/natten.,Norrbotten / Övriga Sverige
+104837,2019-01-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+104836,2019-01-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+104834,2019-01-28,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+108268,2019-02-20,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+108411,2019-02-21,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+108564,2019-02-22,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+108562,2019-02-22,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+108561,2019-02-22,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+108900,2019-02-25,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+109087,2019-02-26,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+109408,2019-02-28,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+109406,2019-02-28,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+109405,2019-02-28,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+110632,2019-03-09,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+110733,2019-03-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+110897,2019-03-11,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+111304,2019-03-14,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+111519,2019-03-15,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+112140,2019-03-20,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+112280,2019-03-21,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+114389,2019-04-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+114494,2019-04-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+115902,2019-04-17,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+116106,2019-04-18,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+116481,2019-04-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+116672,2019-04-23,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+117968,2019-05-04,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+118055,2019-05-05,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+118745,2019-05-10,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+119433,2019-05-15,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+119577,2019-05-16,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+122225,2019-06-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+122391,2019-06-07,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+122743,2019-06-10,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+122854,2019-06-11,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+123112,2019-06-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+123270,2019-06-14,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+123572,2019-06-17,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+123696,2019-06-18,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+124044,2019-06-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+124138,2019-06-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+124232,2019-06-23,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+124534,2019-06-26,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+124640,2019-06-27,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+124801,2019-06-28,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+124984,2019-07-01,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+125089,2019-07-02,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+125547,2019-07-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+125627,2019-07-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+125882,2019-07-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+125989,2019-07-11,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+126123,2019-07-12,Övrigt,Ingen kommunikatör i tjänst under natten.,"Norrbotten, okänd kommun"
+126303,2019-07-15,Övrigt,Ingen kommunikatör i tjänst under kvällen/ natten.,"Norrbotten, okänd kommun"
+126403,2019-07-16,Övrigt,Ingen kommunikatör i tjänst.,"Norrbotten, okänd kommun"
+126801,2019-07-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+126800,2019-07-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+126877,2019-07-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+126876,2019-07-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+126956,2019-07-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+126955,2019-07-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+128840,2019-08-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+128839,2019-08-10,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+128982,2019-08-12,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+129095,2019-08-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,"Norrbotten, okänd kommun"
+137598,2019-10-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+137597,2019-10-22,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+165944,2020-07-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+165942,2020-07-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+165940,2020-07-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+166013,2020-07-08,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+186298,2021-01-20,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+188749,2021-02-13,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+188822,2021-02-14,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+189434,2021-02-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+189979,2021-02-24,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+189977,2021-02-24,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+190091,2021-02-25,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+190207,2021-02-26,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+190749,2021-03-03,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+190870,2021-03-04,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+191039,2021-03-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+191037,2021-03-06,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+191111,2021-03-07,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+191329,2021-03-09,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+192201,2021-03-17,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+192301,2021-03-18,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+192422,2021-03-19,Övrigt,Ingen kommunikatör i tjänst under natten,Norrbotten / Övriga Sverige
+192419,2021-03-19,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+192483,2021-03-20,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+192562,2021-03-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Norrbotten / Övriga Sverige
+192560,2021-03-21,Övrigt,Ingen kommunikatör i tjänst under kvällen och natten.,Övriga Sverige
+192657,2021-03-22,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+192761,2021-03-23,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+192895,2021-03-24,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+193052,2021-03-25,Övrigt,Ingen kommunikatör i tjänst under natten.,Övriga Sverige
+199227,2021-05-21,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+199744,2021-05-26,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+200256,2021-05-31,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+200382,2021-06-01,Övrigt,Ingen kommunikatör i tjänst under natten.,Norrbotten / Övriga Sverige
+204858,2021-07-13,Övrigt,Ingen kommunikatör i tjänst,Norrbotten / Övriga Sverige

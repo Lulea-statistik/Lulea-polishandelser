@@ -11222,8 +11222,8 @@ year,month,geography_group,type_original,event_count
 2026,9,Älvsbyns kommun,Sammanfattning natt,1
 2026,9,Övertorneå kommun,Trafikolycka,1
 2026,10,Arjeplogs kommun,Mord/dråp,1
+2026,10,Bodens kommun,Rattfylleri,2
 2026,10,Bodens kommun,Olovlig körning,1
-2026,10,Bodens kommun,Rattfylleri,1
 2026,10,Bodens kommun,Sammanfattning natt,1
 2026,10,Bodens kommun,Skadegörelse,1
 2026,10,Bodens kommun,Trafikkontroll,1
@@ -11248,4 +11248,5 @@ year,month,geography_group,type_original,event_count
 2026,10,Piteå kommun,Rattfylleri,1
 2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikolycka,1
+2026,10,Piteå kommun,"Trafikolycka,  singel",1
 2026,10,Älvsbyns kommun,Rattfylleri,1
