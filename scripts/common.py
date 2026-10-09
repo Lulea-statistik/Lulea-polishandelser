@@ -66,6 +66,15 @@ MUNICIPALITY_GROUP_LABELS = {
     "Övertorneå": "Övertorneå kommun",
 }
 
+SWEDISH_COUNTIES = {
+    "stockholms län", "uppsala län", "södermanlands län", "östergötlands län",
+    "jönköpings län", "kronobergs län", "kalmar län", "gotlands län",
+    "blekinge län", "skåne län", "hallands län", "västra götalands län",
+    "värmlands län", "örebro län", "västmanlands län", "dalarnas län",
+    "gävleborgs län", "västernorrlands län", "jämtlands län",
+    "västerbottens län", "norrbottens län",
+}
+
 NORRBOTTEN_MUNICIPALITIES = {
     "arvidsjaur": "Arvidsjaur",
     "arjeplog": "Arjeplog",
@@ -271,6 +280,8 @@ def geography_group(municipality: str, area: str) -> str:
         return MUNICIPALITY_GROUP_LABELS[municipality_clean]
     if area_cf == "norrbottens län":
         return "Norrbotten, okänd kommun"
+    if area_cf in SWEDISH_COUNTIES:
+        return "Övriga Sverige"
     return "Utanför Norrbotten"
 
 
