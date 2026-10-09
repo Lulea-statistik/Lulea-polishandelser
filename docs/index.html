@@ -295,11 +295,8 @@
     <div class="card" style="margin-top:16px">
       <h2>Vad ingår i Okänd Norrbottenskommun?</h2>
       <div class="other-chartbox"><canvas id="unknownNorrbottenChart"></canvas></div>
-      <h3 style="margin:20px 0 8px">Kommunpar inom Flera kommuner i Norrbotten</h3>
-      <div class="other-chartbox" style="height:440px"><canvas id="municipalityPairsChart"></canvas></div>
-      <p class="chart-note">Färgblandning: varje kommun har en egen grundfärg. Ett par får medelvärdet av båda kommunernas RGB-färger (t.ex. blått + rött ger lila). Kommunpar visas bara om båda kommunerna uttryckligen identifierats i händelsens geografiklassificering. Gruppen ”Fler än två / otydlig kombination” redovisas separat och färgas neutralt. Detta är antal ursprungliga publiceringar, inte antalet extraherade underhändelser.</p>
+      <p class="chart-note">Stapeln <strong>Flera kommuner i Norrbotten</strong> är uppdelad i verifierade kommunpar, med blandade kommunfärger och en grå rest för fler än två eller otydliga kombinationer. Hovra över segmenten för kommunpar och antal. Övriga två staplar är odelade. Alla tre använder <strong>ursprungliga publiceringar</strong> för jämförbara totaler och följer valt år.</p>
       <p id="municipalityPairsStatus" class="chart-note" aria-live="polite"></p>
-      <p class="chart-note">Visar de tre geografiska grupperna <strong>Norrbotten, okänd kommun</strong>, <strong>Flera kommuner i Norrbotten</strong> (minst två kommuner) och <strong>Norrbotten / Övriga Sverige</strong>. De är inte säkert knutna till en enskild kommun. Exakt vilka kommuner som förekommer tillsammans går inte att utläsa ur den aggregerade månadsfilen. Följer filtret År, men inte sidans geografifilter.</p>
     </div>
 
     <div class="foot">
@@ -679,48 +676,51 @@ function mixedMunicipalityColor(names){
   const rgb=names.map(n=>[1,3,5].map(i=>parseInt(municipalityColors[n].slice(i,i+2),16)));
   return '#'+[0,1,2].map(i=>Math.round((rgb[0][i]+rgb[1][i])/2).toString(16).padStart(2,'0')).join('');
 }
-function updateMunicipalityPairsChart(){
-  const canvas=document.getElementById('municipalityPairsChart');
-  if(!canvas)return;
-  const year=selected('year');
-  const yearRows=municipalityPairRows.filter(r=>year==='Alla'||r.year===year);
-  const sums=new Map(),members=new Map();
-  for(const row of yearRows){
-    const key=row.municipality_combination;
-    sums.set(key,(sums.get(key)||0)+(+row.event_count||0));
-    members.set(key,(row.municipalities||'').split('|').filter(Boolean));
-  }
-  const all=[...sums.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'sv-SE'));
-  const display=all.slice(0,19);
-  const rest=all.slice(19).reduce((a,r)=>a+r[1],0);
-  if(rest>0)display.push(['Övriga kommunpar',rest]);
-  const status=document.getElementById('municipalityPairsStatus');
-  if(status)status.textContent=municipalityPairRows.length ? 'Visar '+all.length+' kombinationer för valt år/alla år. Kommunpar med lägst antal kan slås samman till Övriga kommunpar.' : 'Väntar på den första publiceringen av kommunparsfilen.';
-  municipalityPairsChart=chartReplace(municipalityPairsChart,canvas,{
-    type:'bar',data:{labels:display.map(x=>x[0]),datasets:[{label:'Publicerade händelser',data:display.map(x=>x[1]),backgroundColor:display.map(x=>mixedMunicipalityColor(members.get(x[0])||[]))}]},
-    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label(ctx){return 'Antal: '+fmt.format(ctx.parsed.x);}}}},
-      scales:{x:{beginAtZero:true,title:{display:true,text:'Antal publicerade händelser'},ticks:{precision:0}},y:{ticks:{autoSkip:false}}}
-    }
-  });
-}
-
 function updateUnknownNorrbottenChart(){
   const canvas=document.getElementById('unknownNorrbottenChart');
   if(!canvas)return;
   const year=selected('year');
   const names=['Norrbotten, okänd kommun','Flera kommuner i Norrbotten','Norrbotten / Övriga Sverige'];
+  // All totals use original publications, consistent with the pair source.
   const totals=new Map(names.map(name=>[name,0]));
-  for(const r of expandedRows){
+  for(const r of rows){
     if(!totals.has(r.geography_group)||(year!=='Alla'&&r.year!==year))continue;
     totals.set(r.geography_group,totals.get(r.geography_group)+(+r.event_count||0));
   }
+  const pairRows=municipalityPairRows.filter(r=>year==='Alla'||r.year===year);
+  const groups=new Map(),members=new Map();
+  for(const r of pairRows){
+    const key=r.municipality_combination;
+    groups.set(key,(groups.get(key)||0)+(+r.event_count||0));
+    members.set(key,(r.municipalities||'').split('|').filter(Boolean));
+  }
+  const multiTotal=totals.get(names[1])||0;
+  const sorted=[...groups.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'sv-SE'));
+  let remaining=multiTotal;
+  const segments=[];
+  for(const [name,count] of sorted){
+    if(name==='Fler än två / otydlig kombination')continue;
+    const accepted=Math.min(Math.max(0,count),remaining);
+    if(!accepted)continue;
+    segments.push({name,count:accepted,color:mixedMunicipalityColor(members.get(name)||[])});
+    remaining-=accepted;
+  }
+  if(remaining>0)segments.push({name:'Fler än två / otydlig kombination',count:remaining,color:'#a3a3a3'});
+  // If the pair file has not been published yet, show the full gray bar.
+  const datasets=[
+    {label:names[0],data:[totals.get(names[0]),0,0],backgroundColor:'#7298bd',stack:'geo'},
+    ...segments.map(part=>({label:part.name,data:[0,part.count,0],backgroundColor:part.color,stack:'geo'})),
+    {label:names[2],data:[0,0,totals.get(names[2])],backgroundColor:'#91aba5',stack:'geo'}
+  ];
+  const status=document.getElementById('municipalityPairsStatus');
+  if(status)status.textContent=municipalityPairRows.length?
+    'Den uppdelade stapeln visar '+segments.length+' delgrupper. Summa: '+fmt.format(multiTotal)+' publiceringar.' :
+    'Kommunparsfilen väntar på publicering. Mittenstapeln visas tills vidare som oidentifierad.';
   unknownNorrbottenChart=chartReplace(unknownNorrbottenChart,canvas,{
-    type:'bar',
-    data:{labels:names,datasets:[{label:'Antal händelser',data:names.map(name=>totals.get(name)),backgroundColor:['#7298bd','#e4ab78','#91aba5']}]},
+    type:'bar',data:{labels:names,datasets},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label(ctx){return 'Antal: '+fmt.format(ctx.parsed.x);}}}},
-      scales:{x:{beginAtZero:true,title:{display:true,text:'Antal händelser'},ticks:{precision:0}},y:{ticks:{autoSkip:false}}}
+      plugins:{legend:{display:false},tooltip:{mode:'nearest',intersect:true,callbacks:{label(ctx){return ctx.dataset.label+': '+fmt.format(ctx.parsed.x)+' publiceringar';}}}},
+      scales:{x:{stacked:true,beginAtZero:true,title:{display:true,text:'Antal publicerade händelser'},ticks:{precision:0}},y:{stacked:true,ticks:{autoSkip:false}}}
     }
   });
 }
@@ -1101,7 +1101,6 @@ function update(){
   updateOtherBreakdownChart();
   updateSummaryDetailChart();
   updateUnknownNorrbottenChart();
-  updateMunicipalityPairsChart();
   updateAreaComparisonChart();
   updateQuietSummaryChart();
 }
