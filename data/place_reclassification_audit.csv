@@ -31,6 +31,4 @@ event_id,date,type_original,title_location,location_string,municipality,geograph
 501522,2026-05-04,Trafikkontroll,Norrbottens län,"Norrbotten, Moråsleden, Töre, Österleden, Hagelvägen, Björkskatan, Norrbottens län",Kalix,Kalix kommun,place_dictionary
 501661,2026-05-06,Trafikkontroll,Norrbottens län,"Boden, Garnisonen, Jokkmokksvägen, Vittjärv, Norrbottens län",Boden,Bodens kommun,place_dictionary
 502506,2026-05-19,"Motorfordon,  stöld",Skellefteå,"Glommersträsk, Jörn, Puck, Skellefteå, Norrbottens län",Arvidsjaur,Arvidsjaurs kommun,place_dictionary
-506395,2026-07-19,Trafikkontroll,Norrbottens län,"Överkalix, Norrbottens län",Överkalix,Överkalix kommun,place_dictionary
 509300,2026-09-07,Trafikkontroll,Norrbottens län,"Norrbotten, Heden, Bensbyn, Norrbottens län",Luleå,Luleå kommun,place_dictionary
-510999,2026-10-05,Trafikkontroll,Norrbottens län,"Norrbotten, Högsta, Arvidsjaurs Kommun, Bodens Kommun, Drottninggatan, Luleå Kommun, Södra Sunderbyn, Norrbottens län",Luleå,Luleå kommun,place_dictionary
