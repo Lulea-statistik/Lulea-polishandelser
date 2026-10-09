@@ -139,6 +139,14 @@ LULEA_PLACE_NAMES = {
     "skurholmen", "svartostaden", "ornaset"
 }
 
+VERIFIED_PLACE_TO_MUNICIPALITY = {
+    "morjarv": "Kalix",
+    "moskosel": "Arvidsjaur",
+    "nikkaluokta": "Gällivare",
+    "ojebyn": "Piteå",
+    "buddbyn": "Boden",
+}
+
 EMPIRICAL_SAFE_PLACES = {
     "storheden": "Luleå",
     "bergnaset": "Luleå",
@@ -292,6 +300,16 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     place = infer_lulea_place(title_location, location_string)
     if place:
         return "Luleå", "lulea_place_name"
+
+    verified_text = _ascii_fold(" ".join([title_location or "", location_string or ""]))
+    verified_hits = set()
+    for place_key, canonical in VERIFIED_PLACE_TO_MUNICIPALITY.items():
+        if re.search(r"(?<![a-z0-9])" + re.escape(place_key) + r"(?![a-z0-9])", verified_text):
+            verified_hits.add(canonical)
+    if len(verified_hits) == 1:
+        return next(iter(verified_hits)), "verified_place"
+    if len(verified_hits) > 1:
+        return "", "ambiguous_verified_places"
 
     # Empiriskt validerade ortnamn från säkert kommunbestämda historiska
     # icke-sammanfattningar. Dessa används endast när ingen explicit
