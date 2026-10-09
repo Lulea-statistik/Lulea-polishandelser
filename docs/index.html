@@ -652,9 +652,12 @@ function updateOtherBreakdownChart(){
 
   const top=minor.slice(0,20);
   const rest=minor.slice(20).reduce((acc,x)=>acc+x[1],0);
-  const labels=top.map(x=>x[0]);
-  const values=top.map(x=>x[1]);
-  if(rest>0){labels.push('Övriga små kategorier');values.push(rest);}
+  // Sortera även den sammanslagna restkategorin efter dess totala antal.
+  const displayed=[...top];
+  if(rest>0) displayed.push(['Övriga små kategorier',rest]);
+  displayed.sort((a,b)=>b[1]-a[1] || a[0].localeCompare(b[0],'sv-SE'));
+  const labels=displayed.map(x=>x[0]);
+  const values=displayed.map(x=>x[1]);
 
   otherBreakdownChart=chartReplace(otherBreakdownChart,canvas,{
     type:'bar',
