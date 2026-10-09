@@ -254,6 +254,12 @@
       <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
     </div>
 
+        <div class="card" style="margin-top:16px">
+      <h2>Lugna sammanfattningar – exkluderade från övriga händelsediagram</h2>
+      <div class="chartbox"><canvas id="quietSummaryChart"></canvas></div>
+      <p class="chart-note">Diagrammet visar sammanfattningsposter där Polisen uttryckligen anger att det inte finns någon ny konkret händelse att rapportera, till exempel ”inget att rapportera” eller ”inga akuta händelser”. Dessa poster finns kvar i rådata men är <strong>exkluderade från den expanderade händelseserien och från övriga kategoridiagram</strong>.</p>
+    </div>
+
     <div class="foot">
       Källa: Brottsplatskartan/Polisens publicerade händelseflöde. Klassificeringen av kommun är preliminär och använder API-fält när det finns samt försiktig platsbaserad fallback när kommunfält saknas. Regionala sammanfattningar kan innehålla flera delhändelser och bör inte tolkas som ett enskilt brott.
     </div>
@@ -265,9 +271,10 @@ const DATA_URL='data/monthly_summary.csv';
 const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
 const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
+const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart;
+let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -788,10 +795,12 @@ function updateAreaComparisonChart(){
       indexAxis:'y',
       responsive:true,
       maintainAspectRatio:false,
-      interaction:{mode:'index',intersect:false},
+      interaction:{mode:'nearest',intersect:true,axis:'y'},
       plugins:{
         legend:{position:'bottom'},
         tooltip:{
+          mode:'nearest',
+          intersect:true,
           callbacks:{
             label(ctx){
               const count=ctx.dataset.rawCounts?.[ctx.dataIndex]||0;
@@ -808,6 +817,52 @@ function updateAreaComparisonChart(){
         },
         y:{ticks:{autoSkip:false}}
       }
+    }
+  });
+}
+
+function filteredQuietSummaryRows(){
+  const g=selected('geo'), y=selected('year');
+  return quietSummaryRows.filter(r=>
+    (g==='Alla'||r.geography_group===g) &&
+    (y==='Alla'||r.year===y)
+  );
+}
+
+function updateQuietSummaryChart(){
+  const canvas=document.getElementById('quietSummaryChart');
+  if(!canvas)return;
+  const data=filteredQuietSummaryRows();
+  const order=['Natt','Förmiddag','Eftermiddag','Kväll','Kväll/natt','Dag','Helg','Övrig sammanfattning'];
+  const counts=new Map(groupSum(data,'quiet_bucket'));
+  const labels=order.filter(x=>(counts.get(x)||0)>0);
+  const values=labels.map(x=>counts.get(x)||0);
+
+  quietSummaryChart=chartReplace(quietSummaryChart,canvas,{
+    type:'bar',
+    data:{
+      labels,
+      datasets:[{
+        label:'Lugna sammanfattningar',
+        data:values,
+        backgroundColor:'#94a3b8',
+        borderColor:'#94a3b8'
+      }]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:false,
+      interaction:{mode:'nearest',intersect:true,axis:'y'},
+      plugins:{
+        legend:{display:false},
+        tooltip:{
+          mode:'nearest',
+          intersect:true,
+          callbacks:{label(ctx){return 'Antal: '+fmt.format(ctx.parsed.x);}}
+        }
+      },
+      scales:{x:{beginAtZero:true,title:{display:true,text:'Antal lugna sammanfattningar'}}}
     }
   });
 }
@@ -910,15 +965,17 @@ function update(){
   updateTypeShareChart();
   updateSummaryDetailChart();
   updateAreaComparisonChart();
+  updateQuietSummaryChart();
 }
 
 Promise.all([
   fetch(DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Huvuddata HTTP '+r.status);return r.text()}),
   fetch(SUMMARY_DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(SUMMARY_EXTRA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
-  fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()})
+  fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()}),
+  fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
-  .then(([text,summaryText,summaryExtraText,expandedText])=>{
+  .then(([text,summaryText,summaryExtraText,expandedText,quietText])=>{
     rows=parseCSV(text).map(r=>({
       ...r,
       event_count:+r.event_count||0,
@@ -930,6 +987,7 @@ Promise.all([
       event_count:+r.event_count||0,
       type_aggregated:aggregatedType(r.event_type)
     }));
+    quietSummaryRows=quietText?parseCSV(quietText).map(r=>({...r,event_count:+r.event_count||0})) : [];
     summaryRows=summaryText?parseCSV(summaryText).map(r=>({...r,event_count:+r.event_count||0})) : [];
     summaryExtraRows=summaryExtraText?parseCSV(summaryExtraText).map(r=>({...r,event_count:+r.event_count||0})) : summaryRows;
     if(!rows.length) throw new Error('Ingen data');
