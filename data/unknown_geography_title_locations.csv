@@ -1,11 +1,9 @@
 title_location,reason,is_summary_norm,event_count
 Norrbottens län,unknown,True,2288
 Norrbotten,unknown,True,513
-Norrbottens län,unknown,False,412
-Norrbottens län,cross_county_ambiguous,False,205
-Norrbotten,unknown,False,165
+Norrbottens län,unknown,False,411
+Norrbotten,unknown,False,164
 Norrbottens län,summary_container,True,65
 Norrbotten,summary_container,True,10
-Norrbottens län,multi_location_ambiguous,False,10
-Norrbotten,cross_county_ambiguous,False,3
-Norrbotten,multi_location_ambiguous,False,2
+Norrbottens län,multi_location_ambiguous,False,8
+Norrbotten,multi_location_ambiguous,False,1
