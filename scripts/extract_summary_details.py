@@ -166,14 +166,20 @@ def classify_type(value: str) -> str:
 
 
 def source_text(row: pd.Series) -> str:
-    # content är den fullständiga sammanfattningstexten i normalfallet.
-    # description/headline är ofta utdrag eller kopior av samma text. Att
-    # konkatenera alla tre skapade därför dubbla tidsstämplar och falska
-    # underhändelser. Använd i stället första tillgängliga fullvärdiga källa.
+    # content är normalt bäst, men äldre poster kan innehålla enbart
+    # avsändartexten "Polisen Norrbotten". Då är description/headline mer
+    # informativ och ska användas i stället.
     for col in ("content", "description", "headline"):
         v = row.get(col, "")
-        if pd.notna(v) and str(v).strip():
-            return clean_text(str(v))
+        if pd.isna(v) or not str(v).strip():
+            continue
+        cleaned = clean_text(str(v))
+        boilerplate = cleaned.casefold().strip(" .") in {
+            "polisen norrbotten", "polisen region nord", "polisen"
+        }
+        if boilerplate:
+            continue
+        return cleaned
     return ""
 
 
