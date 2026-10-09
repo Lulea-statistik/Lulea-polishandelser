@@ -12,6 +12,14 @@ OUT = ROOT / "data" / "summary_details.csv"
 OUT_MONTHLY = ROOT / "data" / "summary_details_monthly.csv"
 PLACE_DICTIONARY = ROOT / "data" / "norrbotten_place_to_municipality.csv"
 
+VERIFIED_PLACE_TO_MUNICIPALITY = {
+    "morjärv": "Kalix",
+    "moskosel": "Arvidsjaur",
+    "nikkaluokta": "Gällivare",
+    "öjebyn": "Piteå",
+    "buddbyn": "Boden",
+}
+
 MUNICIPALITIES = {
     "arvidsjaur": "Arvidsjaur",
     "arjeplog": "Arjeplog",
@@ -188,13 +196,31 @@ def municipality_mentions(value: str) -> list[str]:
 
 def municipality_from_text(value: str) -> str:
     p = (value or "").casefold()
-    hits = []
+
+    # Explicita kommunnamn väger tyngst. En ortordboksträff får inte göra
+    # en annars entydig kommunangivelse tvetydig.
+    explicit_hits = []
     for key, canonical in MUNICIPALITIES.items():
         if re.search(r"(?<![a-zåäö])" + re.escape(key) + r"(?![a-zåäö])", p):
-            hits.append(canonical)
-    hits.extend(municipalities_from_place_dictionary(value))
-    hits = sorted(set(hits))
-    return hits[0] if len(hits) == 1 else ""
+            explicit_hits.append(canonical)
+    explicit_hits = sorted(set(explicit_hits))
+    if len(explicit_hits) == 1:
+        return explicit_hits[0]
+    if len(explicit_hits) > 1:
+        return ""
+
+    verified_hits = []
+    for key, canonical in VERIFIED_PLACE_TO_MUNICIPALITY.items():
+        if re.search(r"(?<![a-zåäö])" + re.escape(key) + r"(?![a-zåäö])", p):
+            verified_hits.append(canonical)
+    verified_hits = sorted(set(verified_hits))
+    if len(verified_hits) == 1:
+        return verified_hits[0]
+    if len(verified_hits) > 1:
+        return ""
+
+    place_hits = municipalities_from_place_dictionary(value)
+    return place_hits[0] if len(place_hits) == 1 else ""
 
 
 def geography(municipality: str) -> str:
