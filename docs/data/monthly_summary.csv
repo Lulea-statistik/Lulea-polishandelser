@@ -2156,6 +2156,7 @@ year,month,geography_group,type_original,event_count
 2018,3,Gällivare kommun,Stöld/inbrott,2
 2018,3,Gällivare kommun,Arbetsplatsolycka,1
 2018,3,Gällivare kommun,Brand,1
+2018,3,Gällivare kommun,Fjällräddning,1
 2018,3,Gällivare kommun,Fylleri/LOB,1
 2018,3,Gällivare kommun,Kontroll person/fordon,1
 2018,3,Gällivare kommun,"Mord/dråp,  försök",1
@@ -2213,8 +2214,8 @@ year,month,geography_group,type_original,event_count
 2018,3,Luleå kommun,"Trafikolycka,  personskada",1
 2018,3,"Norrbotten, okänd kommun",Övrigt,30
 2018,3,"Norrbotten, okänd kommun",Sammanfattning natt,14
-2018,3,"Norrbotten, okänd kommun",Fjällräddning,3
 2018,3,"Norrbotten, okänd kommun",Sammanfattning förmiddag,3
+2018,3,"Norrbotten, okänd kommun",Fjällräddning,2
 2018,3,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,2
 2018,3,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,2
 2018,3,"Norrbotten, okänd kommun",Sammanfattning dag,1
@@ -2613,7 +2614,7 @@ year,month,geography_group,type_original,event_count
 2018,7,Jokkmokks kommun,Försvunnen person,1
 2018,7,Jokkmokks kommun,Stöld/inbrott,1
 2018,7,Jokkmokks kommun,"Trafikolycka,  vilt",1
-2018,7,Kalix kommun,Trafikolycka,3
+2018,7,Kalix kommun,Trafikolycka,4
 2018,7,Kalix kommun,Brand,2
 2018,7,Kalix kommun,Stöld/inbrott,2
 2018,7,Kalix kommun,Djur skadat/omhändertaget,1
@@ -2664,7 +2665,6 @@ year,month,geography_group,type_original,event_count
 2018,7,"Norrbotten, okänd kommun",Sammanfattning dag,1
 2018,7,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,1
 2018,7,"Norrbotten, okänd kommun",Sammanfattning förmiddag,1
-2018,7,"Norrbotten, okänd kommun",Trafikolycka,1
 2018,7,Piteå kommun,Fylleri/LOB,10
 2018,7,Piteå kommun,Trafikkontroll,4
 2018,7,Piteå kommun,Trafikolycka,3
@@ -3331,7 +3331,7 @@ year,month,geography_group,type_original,event_count
 2019,1,Jokkmokks kommun,"Trafikolycka,  vilt",5
 2019,1,Jokkmokks kommun,Stöld/inbrott,1
 2019,1,Jokkmokks kommun,Trafikbrott,1
-2019,1,Kalix kommun,Trafikolycka,4
+2019,1,Kalix kommun,Trafikolycka,5
 2019,1,Kalix kommun,Brand,2
 2019,1,Kalix kommun,"Trafikolycka,  vilt",2
 2019,1,Kalix kommun,Misshandel,1
@@ -3374,7 +3374,6 @@ year,month,geography_group,type_original,event_count
 2019,1,"Norrbotten, okänd kommun",Övrigt,16
 2019,1,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,2
 2019,1,"Norrbotten, okänd kommun",Sammanfattning förmiddag,2
-2019,1,"Norrbotten, okänd kommun",Trafikolycka,1
 2019,1,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2019,1,Pajala kommun,"Trafikolycka,  vilt",5
 2019,1,Piteå kommun,Trafikkontroll,9
@@ -4491,8 +4490,8 @@ year,month,geography_group,type_original,event_count
 2019,11,Arjeplogs kommun,"Trafikolycka,  vilt",2
 2019,11,Arjeplogs kommun,Rattfylleri,1
 2019,11,Arjeplogs kommun / Gällivare kommun,"Trafikolycka,  vilt",1
+2019,11,Arvidsjaurs kommun,"Trafikolycka,  vilt",6
 2019,11,Arvidsjaurs kommun,Trafikkontroll,5
-2019,11,Arvidsjaurs kommun,"Trafikolycka,  vilt",5
 2019,11,Arvidsjaurs kommun,Inbrott,1
 2019,11,Arvidsjaurs kommun,Trafikbrott,1
 2019,11,Bodens kommun,Trafikkontroll,8
@@ -4567,9 +4566,9 @@ year,month,geography_group,type_original,event_count
 2019,11,Norrbotten / Övriga Sverige,Övrigt,4
 2019,11,"Norrbotten, okänd kommun",Sammanfattning natt,16
 2019,11,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,8
-2019,11,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2019,11,"Norrbotten, okänd kommun",Sammanfattning dag,1
 2019,11,"Norrbotten, okänd kommun",Sammanfattning förmiddag,1
+2019,11,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2019,11,"Norrbotten, okänd kommun",Övrigt,1
 2019,11,Pajala kommun,"Trafikolycka,  vilt",3
 2019,11,Pajala kommun,Rattfylleri,1
@@ -4697,7 +4696,6 @@ year,month,geography_group,type_original,event_count
 2019,12,"Norrbotten, okänd kommun",Sammanfattning kväll,2
 2019,12,"Norrbotten, okänd kommun",Bedrägeri,1
 2019,12,"Norrbotten, okänd kommun",Trafikhinder,1
-2019,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2019,12,Pajala kommun,Sammanfattning natt,1
 2019,12,Pajala kommun,Trafikolycka,1
 2019,12,Piteå kommun,Trafikkontroll,11
@@ -4706,13 +4704,13 @@ year,month,geography_group,type_original,event_count
 2019,12,Piteå kommun,Djur,2
 2019,12,Piteå kommun,Sammanfattning natt,2
 2019,12,Piteå kommun,Stöld,2
+2019,12,Piteå kommun,"Trafikolycka,  vilt",2
 2019,12,Piteå kommun,Arbetsplatsolycka,1
 2019,12,Piteå kommun,Olaga hot,1
 2019,12,Piteå kommun,Rattfylleri,1
 2019,12,Piteå kommun,Trafikbrott,1
 2019,12,Piteå kommun,Trafikhinder,1
 2019,12,Piteå kommun,"Trafikolycka,  smitning från",1
-2019,12,Piteå kommun,"Trafikolycka,  vilt",1
 2019,12,Älvsbyns kommun,Rattfylleri,2
 2019,12,Älvsbyns kommun,Trafikolycka,2
 2019,12,Älvsbyns kommun,"Trafikolycka,  vilt",2
@@ -4945,6 +4943,7 @@ year,month,geography_group,type_original,event_count
 2020,3,Bodens kommun,Trafikolycka,2
 2020,3,Bodens kommun,Rattfylleri,1
 2020,3,Bodens kommun,Sammanfattning natt,1
+2020,3,Bodens kommun,Våldtäkt,1
 2020,3,Gällivare kommun,Trafikkontroll,6
 2020,3,Gällivare kommun,Narkotikabrott,3
 2020,3,Gällivare kommun,Sammanfattning natt,3
@@ -5010,7 +5009,6 @@ year,month,geography_group,type_original,event_count
 2020,3,"Norrbotten, okänd kommun",Sammanfattning natt,20
 2020,3,"Norrbotten, okänd kommun",Sammanfattning kväll,4
 2020,3,"Norrbotten, okänd kommun",Fjällräddning,1
-2020,3,"Norrbotten, okänd kommun",Våldtäkt,1
 2020,3,"Norrbotten, okänd kommun",Övrigt,1
 2020,3,Pajala kommun,Trafikolycka,3
 2020,3,Pajala kommun,Trafikkontroll,2
@@ -5325,10 +5323,9 @@ year,month,geography_group,type_original,event_count
 2020,6,"Norrbotten, okänd kommun",Sammanfattning natt,26
 2020,6,"Norrbotten, okänd kommun",Sammanfattning kväll,1
 2020,6,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,1
-2020,6,"Norrbotten, okänd kommun",Trafikkontroll,1
 2020,6,Pajala kommun,Trafikbrott,2
 2020,6,Pajala kommun,Inbrott,1
-2020,6,Piteå kommun,Trafikkontroll,7
+2020,6,Piteå kommun,Trafikkontroll,8
 2020,6,Piteå kommun,Trafikbrott,6
 2020,6,Piteå kommun,Arbetsplatsolycka,2
 2020,6,Piteå kommun,Stöld,2
@@ -5392,10 +5389,10 @@ year,month,geography_group,type_original,event_count
 2020,7,Jokkmokks kommun,Rattfylleri,1
 2020,7,Jokkmokks kommun,Trafikolycka,1
 2020,7,Jokkmokks kommun,"Trafikolycka,  vilt",1
+2020,7,Kalix kommun,Försvunnen person,2
 2020,7,Kalix kommun,Rattfylleri,2
 2020,7,Kalix kommun,Trafikbrott,2
 2020,7,Kalix kommun,Trafikkontroll,2
-2020,7,Kalix kommun,Försvunnen person,1
 2020,7,Kalix kommun,"Motorfordon,  stöld",1
 2020,7,Kalix kommun,Narkotikabrott,1
 2020,7,Kalix kommun,Olaga hot,1
@@ -5445,7 +5442,6 @@ year,month,geography_group,type_original,event_count
 2020,7,"Norrbotten, okänd kommun",Sammanfattning natt,18
 2020,7,"Norrbotten, okänd kommun",Sammanfattning kväll,2
 2020,7,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
-2020,7,"Norrbotten, okänd kommun",Försvunnen person,1
 2020,7,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,1
 2020,7,Pajala kommun,Trafikbrott,1
 2020,7,Piteå kommun,Brand,3
@@ -8781,7 +8777,7 @@ year,month,geography_group,type_original,event_count
 2023,7,Haparanda kommun,Trafikolycka,1
 2023,7,Jokkmokks kommun,Fjällräddning,1
 2023,7,Jokkmokks kommun,Trafikkontroll,1
-2023,7,Kalix kommun,Rattfylleri,2
+2023,7,Kalix kommun,Rattfylleri,3
 2023,7,Kalix kommun,Inbrott,1
 2023,7,Kalix kommun,Misshandel,1
 2023,7,Kalix kommun,Trafikhinder,1
@@ -8807,7 +8803,6 @@ year,month,geography_group,type_original,event_count
 2023,7,Luleå kommun,Skadegörelse,1
 2023,7,Luleå kommun,Trafikkontroll,1
 2023,7,"Norrbotten, okänd kommun",Sammanfattning natt,20
-2023,7,"Norrbotten, okänd kommun",Rattfylleri,1
 2023,7,Pajala kommun,Sammanfattning natt,1
 2023,7,Pajala kommun,Trafikolycka,1
 2023,7,Piteå kommun,Sammanfattning natt,4
@@ -11430,14 +11425,14 @@ year,month,geography_group,type_original,event_count
 2026,6,Luleå kommun,Upphittat föremål,1
 2026,6,Luleå kommun / Piteå kommun,Sammanfattning natt,1
 2026,6,Luleå kommun / Älvsbyns kommun,Sammanfattning natt,1
-2026,6,"Norrbotten, okänd kommun",Sammanfattning natt,8
+2026,6,"Norrbotten, okänd kommun",Sammanfattning natt,7
 2026,6,Pajala kommun,Arbetsplatsolycka,1
 2026,6,Pajala kommun,Trafikolycka,1
 2026,6,Piteå kommun,Rattfylleri,3
+2026,6,Piteå kommun,Sammanfattning natt,2
 2026,6,Piteå kommun,Arbetsplatsolycka,1
 2026,6,Piteå kommun,Brand,1
 2026,6,Piteå kommun,Ofredande/förargelse,1
-2026,6,Piteå kommun,Sammanfattning natt,1
 2026,6,Piteå kommun,Stöld,1
 2026,6,Piteå kommun,Trafikbrott,1
 2026,6,Piteå kommun,Trafikkontroll,1
@@ -11684,6 +11679,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Kiruna kommun / Luleå kommun,Trafikkontroll,1
 2026,10,Luleå kommun,Fylleri,1
 2026,10,Luleå kommun,Häleri,1
+2026,10,Luleå kommun,Stöld,1
 2026,10,Luleå kommun,Trafikkontroll,1
 2026,10,"Norrbotten, okänd kommun",Sammanfattning natt,2
 2026,10,Pajala kommun,Rattfylleri,1
