@@ -1,0 +1,7 @@
+metric,value
+excluded_count,522
+excluded_keyword_incident_check,0
+included_ovrigt_or_unstaffed,564
+included_admin_candidates,299
+included_admin_candidates_with_incident_words,7
+auto_reclassified,0
