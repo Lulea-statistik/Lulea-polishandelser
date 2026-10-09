@@ -218,9 +218,15 @@
         <div class="chartbox"><canvas id="yearChart"></canvas></div>
       </div>
       <div class="card">
-        <h2>Geografisk fördelning</h2>
-        <div class="chartbox"><canvas id="geoChart"></canvas></div>
+        <h2>Händelser per kalendermånad</h2>
+        <div class="chartbox"><canvas id="calendarMonthChart"></canvas></div>
+        <p class="chart-note">Summerar händelser januari–december över vald tidsperiod. Välj ett enskilt år i årsfiltret för att visa månadsfördelningen det året. Samma filter och dataserie som Händelser per år.</p>
       </div>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h2>Geografisk fördelning</h2>
+      <div class="chartbox"><canvas id="geoChart"></canvas></div>
     </div>
 
     <div class="card" style="margin-top:16px">
@@ -282,7 +288,7 @@ const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
 const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart;
+let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -973,6 +979,21 @@ function update(){
     type:'bar',
     data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1])}]},
     options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
+  });
+
+  const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];
+  const calendarTotals=Array(12).fill(0);
+  expandedMain.forEach(r=>{
+    const m=Number(r.month);
+    if(Number.isInteger(m)&&m>=1&&m<=12) calendarTotals[m-1]+=(+r.event_count||0);
+  });
+  calendarMonthChart=chartReplace(calendarMonthChart,document.getElementById('calendarMonthChart'),{
+    type:'bar',
+    data:{labels:monthNames,datasets:[{label:'Antal',data:calendarTotals}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal händelser: '+fmt.format(ctx.parsed.y)}}},
+      scales:{y:{beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
+    }
   });
 
   const dg=expandedRows.filter(r=>{
