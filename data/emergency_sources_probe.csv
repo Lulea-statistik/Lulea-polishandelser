@@ -1,0 +1,4 @@
+source,http_status,kind,item_count,fields,sample,error
+vma_all,200,json,0,,,
+vma_norrbotten,200,json,0,,,
+sos_inblick_lulea,,,,,,HTTP Error 403: Forbidden
