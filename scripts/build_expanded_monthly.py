@@ -176,7 +176,8 @@ def main() -> None:
     print(
         f"expanded_rows={len(expanded)} summaries_total={summary_total} "
         f"summaries_expanded={parsed_total} summaries_no_new_event={no_new_event_total} "
-        f"summaries_unresolved_kept={unresolved_kept_total} extra_subevents={len(extra_rows)}"
+        f"summaries_unresolved_kept={unresolved_kept_total} extra_subevents={len(extra_rows)} "
+        f"ordinary_administrative_excluded={len(excluded_admin)}"
     )
 
 
