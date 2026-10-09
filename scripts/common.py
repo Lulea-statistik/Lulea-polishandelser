@@ -16,6 +16,7 @@ DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 EVENTS_CSV = DATA_DIR / "events.csv"
 MONTHLY_CSV = DATA_DIR / "monthly_summary.csv"
 RAW_JSONL = DATA_DIR / "events_raw.jsonl"
+PLACE_DICTIONARY = DATA_DIR / "norrbotten_place_to_municipality.csv"
 
 SESSION = requests.Session()
 SESSION.headers.update({"User-Agent": f"{APP_ID}/1.0 (+GitHub Actions)"})
@@ -164,6 +165,47 @@ def infer_lulea_place(title_location: str, location_string: str) -> str:
     key = unique_places[0]
     return LULEA_PLACE_CANONICAL.get(key, key)
 
+
+_PLACE_LOOKUP: list[tuple[str, str, str]] | None = None
+
+
+def load_norrbotten_place_dictionary() -> list[tuple[str, str, str]]:
+    global _PLACE_LOOKUP
+    if _PLACE_LOOKUP is not None:
+        return _PLACE_LOOKUP
+    rows = []
+    if PLACE_DICTIONARY.exists():
+        df = pd.read_csv(PLACE_DICTIONARY, dtype=str).fillna("")
+        for _, r in df.iterrows():
+            normalized = _ascii_fold(str(r.get("normalized_name") or r.get("place_name") or "")).strip()
+            normalized = re.sub(r"[^a-z0-9 -]+", " ", normalized)
+            normalized = re.sub(r"\s+", " ", normalized).strip(" -")
+            municipality = str(r.get("municipality", "") or "").strip()
+            place_name = str(r.get("place_name", "") or "").strip()
+            if normalized and municipality in MUNICIPALITY_GROUP_LABELS:
+                rows.append((normalized, municipality, place_name))
+    _PLACE_LOOKUP = sorted(rows, key=lambda x: len(x[0]), reverse=True)
+    return _PLACE_LOOKUP
+
+
+def infer_norrbotten_place(value: str) -> tuple[str, str]:
+    text = _ascii_fold(value or "")
+    text = re.sub(r"[^a-z0-9 -]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    hits = []
+    for normalized, municipality, place_name in load_norrbotten_place_dictionary():
+        if len(normalized) < 3:
+            continue
+        if re.search(r"(?<![a-z0-9])" + re.escape(normalized) + r"(?![a-z0-9])", text):
+            hits.append((municipality, place_name))
+    municipalities = sorted(set(m for m, _ in hits))
+    if len(municipalities) != 1:
+        return "", ""
+    municipality = municipalities[0]
+    place_names = sorted(set(p for m, p in hits if m == municipality), key=len, reverse=True)
+    return municipality, (place_names[0] if place_names else "")
+
+
 def infer_municipality_detail(municipality: str, title_location: str, location_string: str) -> tuple[str, str]:
     """Infer municipality and record why the assignment was made."""
     raw = (municipality or "").strip()
@@ -186,6 +228,10 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     place = infer_lulea_place(title_location, location_string)
     if place:
         return "Luleå", "lulea_place_name"
+
+    inferred, inferred_place = infer_norrbotten_place(" ".join([title_location or "", location_string or ""]))
+    if inferred:
+        return inferred, "place_dictionary"
 
     return "", "unknown"
 
