@@ -15,6 +15,7 @@ on:
       - "scripts/audit_place_reclassification.py"
       - "scripts/audit_unknown_geography.py"
       - "scripts/audit_unknown_geography_reasons.py"
+      - "scripts/audit_unknown_short_locations.py"
       - "scripts/build_summary_validation_sample.py"
       - "scripts/build_summary_validation_review.py"
       - "scripts/build_summary_validation_misses.py"
@@ -50,6 +51,7 @@ jobs:
       - run: python scripts/audit_place_reclassification.py
       - run: python scripts/audit_unknown_geography.py
       - run: python scripts/audit_unknown_geography_reasons.py
+      - run: python scripts/audit_unknown_short_locations.py
       - run: python scripts/build_summary_validation_sample.py
       - run: python scripts/annotate_summary_validation_batch1.py
       - run: python scripts/annotate_summary_validation_batch2.py
