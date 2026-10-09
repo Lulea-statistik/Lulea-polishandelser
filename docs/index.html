@@ -140,7 +140,7 @@
     @media(max-width:520px){.kpis{grid-template-columns:1fr}}
     /* Diskret bildvisarläge: centrerad dialog i stället för webbläsarens helskärm. */
     .chartbox,.comparison-chartbox,.other-chartbox{position:relative}
-    .chart-focus-button{position:absolute;top:7px;right:7px;z-index:5;width:30px;height:30px;display:grid;place-items:center;border:1px solid #d9e0e7;background:rgba(255,255,255,.94);color:#52606d;border-radius:7px;cursor:pointer;padding:0}
+    .chart-heading-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.chart-heading-row>h2,.chart-heading-row>h3{margin:0;min-width:0}.chart-heading-row .chart-focus-button{flex:0 0 30px}.chart-focus-button{position:static;z-index:5;width:30px;height:30px;display:grid;place-items:center;border:1px solid #d9e0e7;background:rgba(255,255,255,.94);color:#52606d;border-radius:7px;cursor:pointer;padding:0}
     .chart-focus-button:hover,.chart-focus-button:focus-visible{background:#eef3f7;color:#0b5cab;border-color:#aab8c5}
     .chart-focus-button svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
     .chart-viewer{position:fixed;inset:0;z-index:9999;background:rgba(14,24,36,.67);display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,32px)}
@@ -1121,7 +1121,18 @@ Promise.all([
     button.innerHTML=icon;
     button.setAttribute('aria-label','Förstora diagram');
     button.title='Förstora diagram';
-    container.appendChild(button);
+    const host=container.closest('.card,details')||container.parentElement;
+    const headings=[...host.querySelectorAll('h2,h3')].filter(h=>h.compareDocumentPosition(container)&Node.DOCUMENT_POSITION_FOLLOWING);
+    const heading=headings[headings.length-1];
+    if(heading){
+      const bar=document.createElement('div');
+      bar.className='chart-heading-row';
+      heading.parentNode.insertBefore(bar,heading);
+      bar.appendChild(heading);
+      bar.appendChild(button);
+    }else{
+      container.parentNode.insertBefore(button,container);
+    }
     button.addEventListener('click',()=>show(container,button));
   });
   close.addEventListener('click',dismiss);
