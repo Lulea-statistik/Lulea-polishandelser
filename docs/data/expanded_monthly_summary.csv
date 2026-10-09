@@ -6728,9 +6728,9 @@ year,month,geography_group,event_type,event_count
 2020,10,Luleå kommun,Narkotikabrott,11
 2020,10,Luleå kommun,Stöld,11
 2020,10,Luleå kommun,"Trafikolycka, vilt",10
+2020,10,Luleå kommun,Trafikkontroll,8
 2020,10,Luleå kommun,Fylleri/LOB,7
 2020,10,Luleå kommun,Rattfylleri,7
-2020,10,Luleå kommun,Trafikkontroll,7
 2020,10,Luleå kommun,Misshandel,6
 2020,10,Luleå kommun,Inbrott,4
 2020,10,Luleå kommun,Stöld/inbrott,4
@@ -6745,7 +6745,7 @@ year,month,geography_group,event_type,event_count
 2020,10,Luleå kommun,Våld/hot mot tjänsteman,1
 2020,10,Luleå kommun,Våldtäkt,1
 2020,10,"Norrbotten, okänd kommun","Trafikolycka,  vilt",10
-2020,10,"Norrbotten, okänd kommun",Trafikkontroll,8
+2020,10,"Norrbotten, okänd kommun",Trafikkontroll,7
 2020,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",6
 2020,10,"Norrbotten, okänd kommun",Övrigt,6
 2020,10,"Norrbotten, okänd kommun",Trafikolycka,4
@@ -13294,7 +13294,7 @@ year,month,geography_group,event_type,event_count
 2025,10,Luleå kommun,Trafikolycka,10
 2025,10,Luleå kommun,Misshandel,7
 2025,10,Luleå kommun,Stöld,7
-2025,10,Luleå kommun,Trafikkontroll,4
+2025,10,Luleå kommun,Trafikkontroll,5
 2025,10,Luleå kommun,"Trafikolycka,  vilt",4
 2025,10,Luleå kommun,Brand,3
 2025,10,Luleå kommun,Fylleri/LOB,3
@@ -13316,7 +13316,7 @@ year,month,geography_group,event_type,event_count
 2025,10,Luleå kommun,Stöld/inbrott,1
 2025,10,Luleå kommun,"Trafikolycka, vilt",1
 2025,10,Luleå kommun,Övrigt/oklassificerad,1
-2025,10,"Norrbotten, okänd kommun",Trafikkontroll,23
+2025,10,"Norrbotten, okänd kommun",Trafikkontroll,22
 2025,10,"Norrbotten, okänd kommun","Trafikolycka,  vilt",4
 2025,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
 2025,10,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",2

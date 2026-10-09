@@ -1,0 +1,10 @@
+candidate_municipality,matched_places,unknown_event_count
+Luleå,Storheden,105
+Luleå,Bergnäset,55
+Luleå,Gammelstad,52
+Luleå,Rutvik,18
+Luleå,Bergnäset | Storheden,5
+Luleå,Bergnäset | Gammelstad,3
+Luleå,Gammelstad | Storheden,3
+Luleå,Bergnäset | Rutvik,1
+Luleå,Rutvik | Storheden,1
