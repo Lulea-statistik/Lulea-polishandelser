@@ -1,22 +1,22 @@
 matched_place,event_count,share_of_place_matches_pct,title_location_1,title_location_2,location_string_1,location_string_2,example_1,example_2,example_3
-Hertson,5,8.33,Norrbotten,Norrbottens län,"Skogsbilväg, Hertsön, Norrbotten, Norrbottens län","Hertsön, Norrbottens län",Ett urval av nattens händelser,Ett urval av kvällens polisverksamhet,Ett urval av nattens polisverksamhet.
-Bergnaset,4,6.67,Norrbotten,Norrbottens län,"Älvbrovägen, Bergnäset, Norrbotten, Norrbottens län","Bergnäset, Norrbottens län",Nykterhetskontroll på Älvbrovägen i Bergnäset nu på morgonen.,Ett urval av nattens händelser.,Under förmiddagen har polisen genomfört flera trafikkontroller.
-Notviken,4,6.67,Norrbotten,Norrbottens län,"Notviken, Krongårdsringen, Norrbotten, Norrbottens län","Notviken, Storheden, Norrbottens län","Norrbotten, ett urval av händelser under natten.",Ett urval av kvällens händelser,Ett urval av nattens polisverksamhet i Norrbottens län.
-Porson,4,6.67,Norrbotten,Umeå,"Porsön, Professorsvägen, Forskarvägen, Norrbotten, Norrbottens län","Porsön, Ica Supermarket, Norrbotten, Norrbottens län",Problem med publicering under morgontimmarna.,Sammanfattning,22:00 - 05:00
-Bergviken,3,5.0,Norrbottens län,,"Bergviken, Norrbottens län","Svartövägen, Bergviken, Fjällnäs, Norrbottens län",Ett urval av nattens polisverksamhet.,Ett urval av nattens polisverksamhet,
-Ornaset,3,5.0,Norrbotten,Norrbottens län,"Örnäset, Föreningsgatan, Norrbotten, Norrbottens län","Örnäset, Gruvvägen, Norrbottens län",Sammanfattning av nattens händelser,Ett urval av nattens händelser.,Ett urval av nattens polisverksamhet.
-Ranea,3,5.0,Norrbottens län,,"Råneå, Norrbottens län",,"Ett urval av nattens polisverksamhet klockan 22.00-07.00,",Ett urval av nattens polisverksamhet.,
-Gammelstad,2,3.33,Norrbottens län,,"Gammelstad, Norrbottens län",,Ett urval av nattens polisverksamhet.,Ett urval av nattens polisverksamhet i Norrbottens län.,
-Mjolkudden,2,3.33,Norrbotten,Norrbottens län,"Mjölkudden, Norrbotten, Norrbottens län","Mjölkudden, Norrbottens län","Norrbotten, få händelser under natten.","Ett urval av nattens polisverksamhet, 22-07.",
-Niemisel,2,3.33,Norrbottens län,,"Niemisel, Norrbottens län",,"Dödsolycka, Niemisel",Polisen söker efter en försvunnen kvinna i 80-årsåldern i norra Niemisel.,
-Rutvik,2,3.33,Norrbottens län,,"Södra Svartbyn, Rutvik, Norrbottens län","Rutvik, Norrbottens län",Ett urval av dagens trafikkontroller,Ett urval av nattens polisverksamhet.,
-Skurholmen,2,3.33,Norrbottens län,,"Sanden, Skurholmen, Norrbottens län","Skurholmen, Norrbottens län",Ett urval av nattens polisverksamhet.,,
-Alvik,1,1.67,Norrbottens län,,"Alvik, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
-Antnas,1,1.67,Norrbottens län,,"Antnäs, Norrbottens län",,Ett urval av nattens händelser,,
-Balinge,1,1.67,Norrbottens län,,"Bälinge, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
-Bjorsbyn,1,1.67,Norrbottens län,,"Björsbyn, Storheden, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
-Kallax,1,1.67,Norrbottens län,,"Kallax, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
-Lerbacken,1,1.67,Norrbottens län,,"Hertsövägen, Lerbäcken, Norrbottens län",,Ett urval av nattens polisverksamhet i Norrbottens län.,,
-Lulsundet,1,1.67,Norrbottens län,,"Lulsundet, Sundsgatan, Öjebyn, Norrbottens län",,Ett urval av nattens polisverksamhet i Norrbottens län.,,
-Malmudden,1,1.67,Norrbottens län,,"Malmudden, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
-Sunderbyn,1,1.67,Norrbottens län,,"Sunderbyvägen, Södra Sunderbyn, Norrbottens län",,Gräsbränder vid Norra Sunderbyvägen – allmänfarlig vårdslöshet utreds,,
+Hertson,5,11.11,Norrbotten,Norrbottens län,"Skogsbilväg, Hertsön, Norrbotten, Norrbottens län","Hertsön, Norrbottens län",Ett urval av nattens händelser,Ett urval av kvällens polisverksamhet,Ett urval av nattens polisverksamhet.
+Bergnaset,4,8.89,Norrbotten,Norrbottens län,"Älvbrovägen, Bergnäset, Norrbotten, Norrbottens län","Bergnäset, Norrbottens län",Nykterhetskontroll på Älvbrovägen i Bergnäset nu på morgonen.,Ett urval av nattens händelser.,Under förmiddagen har polisen genomfört flera trafikkontroller.
+Notviken,4,8.89,Norrbotten,Norrbottens län,"Notviken, Krongårdsringen, Norrbotten, Norrbottens län","Notviken, Storheden, Norrbottens län","Norrbotten, ett urval av händelser under natten.",Ett urval av kvällens händelser,Ett urval av nattens polisverksamhet i Norrbottens län.
+Porson,4,8.89,Norrbotten,Umeå,"Porsön, Professorsvägen, Forskarvägen, Norrbotten, Norrbottens län","Porsön, Ica Supermarket, Norrbotten, Norrbottens län",Problem med publicering under morgontimmarna.,Sammanfattning,22:00 - 05:00
+Bergviken,3,6.67,Norrbottens län,,"Bergviken, Norrbottens län","Svartövägen, Bergviken, Fjällnäs, Norrbottens län",Ett urval av nattens polisverksamhet.,Ett urval av nattens polisverksamhet,
+Ornaset,3,6.67,Norrbotten,Norrbottens län,"Örnäset, Föreningsgatan, Norrbotten, Norrbottens län","Örnäset, Gruvvägen, Norrbottens län",Sammanfattning av nattens händelser,Ett urval av nattens händelser.,Ett urval av nattens polisverksamhet.
+Ranea,3,6.67,Norrbottens län,,"Råneå, Norrbottens län",,"Ett urval av nattens polisverksamhet klockan 22.00-07.00,",Ett urval av nattens polisverksamhet.,
+Gammelstad,2,4.44,Norrbottens län,,"Gammelstad, Norrbottens län",,Ett urval av nattens polisverksamhet.,Ett urval av nattens polisverksamhet i Norrbottens län.,
+Mjolkudden,2,4.44,Norrbotten,Norrbottens län,"Mjölkudden, Norrbotten, Norrbottens län","Mjölkudden, Norrbottens län","Norrbotten, få händelser under natten.","Ett urval av nattens polisverksamhet, 22-07.",
+Niemisel,2,4.44,Norrbottens län,,"Niemisel, Norrbottens län",,"Dödsolycka, Niemisel",Polisen söker efter en försvunnen kvinna i 80-årsåldern i norra Niemisel.,
+Rutvik,2,4.44,Norrbottens län,,"Södra Svartbyn, Rutvik, Norrbottens län","Rutvik, Norrbottens län",Ett urval av dagens trafikkontroller,Ett urval av nattens polisverksamhet.,
+Skurholmen,2,4.44,Norrbottens län,,"Sanden, Skurholmen, Norrbottens län","Skurholmen, Norrbottens län",Ett urval av nattens polisverksamhet.,,
+Alvik,1,2.22,Norrbottens län,,"Alvik, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
+Antnas,1,2.22,Norrbottens län,,"Antnäs, Norrbottens län",,Ett urval av nattens händelser,,
+Balinge,1,2.22,Norrbottens län,,"Bälinge, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
+Bjorsbyn,1,2.22,Norrbottens län,,"Björsbyn, Storheden, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
+Kallax,1,2.22,Norrbottens län,,"Kallax, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
+Lerbacken,1,2.22,Norrbottens län,,"Hertsövägen, Lerbäcken, Norrbottens län",,Ett urval av nattens polisverksamhet i Norrbottens län.,,
+Lulsundet,1,2.22,Norrbottens län,,"Lulsundet, Sundsgatan, Öjebyn, Norrbottens län",,Ett urval av nattens polisverksamhet i Norrbottens län.,,
+Malmudden,1,2.22,Norrbottens län,,"Malmudden, Norrbottens län",,Ett urval av nattens polisverksamhet.,,
+Sunderbyn,1,2.22,Norrbottens län,,"Sunderbyvägen, Södra Sunderbyn, Norrbottens län",,Gräsbränder vid Norra Sunderbyvägen – allmänfarlig vårdslöshet utreds,,
