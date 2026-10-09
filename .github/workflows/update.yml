@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - "scripts/update_latest.py"
+      - "scripts/rebuild_monthly_summary.py"
       - "scripts/common.py"
       - "data/norrbotten_place_to_municipality.csv"
       - "scripts/extract_summary_details.py"
@@ -46,6 +47,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python scripts/update_latest.py
+      - run: python scripts/rebuild_monthly_summary.py
       - run: python scripts/extract_summary_details.py
       - run: python scripts/deduplicate_summary_details.py
       - run: python scripts/build_expanded_monthly.py
