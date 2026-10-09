@@ -8706,7 +8706,6 @@ year,month,geography_group,event_type,event_count
 2022,3,Kiruna kommun,Misshandel,1
 2022,3,Kiruna kommun,Narkotikabrott,1
 2022,3,Kiruna kommun,Olovlig körning,1
-2022,3,Kiruna kommun,"Sammanfattning, ej uppdelad",1
 2022,3,Kiruna kommun,Skadegörelse,1
 2022,3,Kiruna kommun,Stöld,1
 2022,3,Kiruna kommun,"Trafikolycka,  smitning från",1
@@ -8733,8 +8732,8 @@ year,month,geography_group,event_type,event_count
 2022,3,Luleå kommun,Vapenlagen,1
 2022,3,Luleå kommun,Våld/hot mot tjänsteman,1
 2022,3,"Norrbotten, okänd kommun",Trafikkontroll,25
+2022,3,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",3
 2022,3,"Norrbotten, okänd kommun","Trafikolycka, vilt",3
-2022,3,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",2
 2022,3,"Norrbotten, okänd kommun",Misshandel,1
 2022,3,"Norrbotten, okänd kommun",Narkotikabrott,1
 2022,3,"Norrbotten, okänd kommun",Rån övrigt,1
