@@ -1,5 +1,7 @@
 year,county,county_code,measure,value,unit,source_report,source_url,coverage_note
-2022,Norrbotten,25,vma_count,2,antal,112-rapporten 2024,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapport_2024.pdf,County count; multi-county VMA may count in multiple counties
+2020,Norrbotten,25,vma_count,1,antal,112-rapporten 2022,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2022.pdf,County count; multi-county VMA may count in multiple counties
+2021,Norrbotten,25,vma_count,3,antal,112-rapporten 2022,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2022.pdf,County count; multi-county VMA may count in multiple counties
+2022,Norrbotten,25,vma_count,2,antal,112-rapporten 2022,https://www.sosalarm.se/globalassets/dokument/112-rapporter/112-rapporten-2022.pdf,County count; multi-county VMA may count in multiple counties
 2023,Norrbotten,25,vma_count,1,antal,112-rapporten 2025,https://www.sosalarm.se/112-rapporten-2025/statistik-112-tjansten-2025/,County count; multi-county VMA may count in multiple counties
 2024,Norrbotten,25,vma_count,3,antal,112-rapporten 2025,https://www.sosalarm.se/112-rapporten-2025/statistik-112-tjansten-2025/,County count; multi-county VMA may count in multiple counties
 2025,Norrbotten,25,vma_count,2,antal,112-rapporten 2025,https://www.sosalarm.se/112-rapporten-2025/statistik-112-tjansten-2025/,County count; multi-county VMA may count in multiple counties
