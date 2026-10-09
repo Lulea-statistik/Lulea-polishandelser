@@ -12,6 +12,12 @@ OUT = ROOT / "data" / "summary_details.csv"
 OUT_MONTHLY = ROOT / "data" / "summary_details_monthly.csv"
 PLACE_DICTIONARY = ROOT / "data" / "norrbotten_place_to_municipality.csv"
 
+OUTSIDE_SWEDEN_PLACES = {
+    "umeå", "skellefteå", "skellefteåhamn", "bjurholm", "nordmaling",
+    "dorotea", "robertsfors", "lycksele", "norsjö", "sorsele", "storuman",
+    "vännäs",
+}
+
 VERIFIED_PLACE_TO_MUNICIPALITY = {
     "morjärv": "Kalix",
     "moskosel": "Arvidsjaur",
@@ -109,8 +115,16 @@ PRE_TIME_HEADER_RE = re.compile(
 )
 
 NON_EVENT_RE = re.compile(
-    r"(?i)^(?:lugnt|inget att rapportera|inga händelser att rapportera|"
-    r"uppdatering|norrbotten\s*$|kl\s*[0-2]?\d[:.]\d{2}\s*[-–]\s*[0-2]?\d[:.]\d{2})"
+    r"(?i)^(?:"
+    r"(?:fortsatt|fortfarande|allt är|natten (?:i länet )?har varit)?\s*lugnt|"
+    r"lugn(?:t| start| inledning)(?: på natten| i länet| så långt i norrbotten)?|"
+    r"inget att rapportera|inga händelser att rapportera|ingenting att rapportera|"
+    r"(?:det har varit )?en natt med (?:relativt )?(?:få ärenden|låg arbetsbelastning|normal arbetsbelastning)|"
+    r"sammanfattningsvis en natt med låg arbetsbelastning|"
+    r"polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke|"
+    r"uppdatering|norrbotten\s*$|"
+    r"kl\s*[0-2]?\d[:.]\d{2}\s*[-–]\s*[0-2]?\d[:.]\d{2}"
+    r")"
 )
 TAG_BREAK_RE = re.compile(r"(?i)<\s*(?:br\s*/?|/?p|/?div|/?li|/?h\d)\s*>")
 TAG_RE = re.compile(r"<[^>]+>")
@@ -223,9 +237,19 @@ def municipality_from_text(value: str) -> str:
     return place_hits[0] if len(place_hits) == 1 else ""
 
 
-def geography(municipality: str) -> str:
+def outside_sweden_from_text(value: str) -> bool:
+    p = (value or "").casefold()
+    return any(
+        re.search(r"(?<![a-zåäö])" + re.escape(place) + r"(?![a-zåäö])", p)
+        for place in OUTSIDE_SWEDEN_PLACES
+    )
+
+
+def geography(municipality: str, evidence_text: str = "") -> str:
     if municipality in MUNICIPALITY_GROUP_LABELS:
         return MUNICIPALITY_GROUP_LABELS[municipality]
+    if outside_sweden_from_text(evidence_text):
+        return "Övriga Sverige"
     return "Norrbotten, okänd kommun"
 
 
@@ -336,7 +360,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             "event_type_extracted": event_type,
             "place_text": place,
             "municipality": municipality,
-            "geography_group": geography(municipality),
+            "geography_group": geography(municipality, " ".join([header if 'header' in locals() else '', place_label if 'place_label' in locals() else '', line if 'line' in locals() else '', body if 'body' in locals() else ''])),
             "description": body,
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
             "occurrence_index": "",
@@ -370,7 +394,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             "event_type_extracted": event_type,
             "place_text": place_label,
             "municipality": municipality,
-            "geography_group": geography(municipality),
+            "geography_group": geography(municipality, " ".join([header if 'header' in locals() else '', place_label if 'place_label' in locals() else '', line if 'line' in locals() else '', body if 'body' in locals() else ''])),
             "description": body,
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
             "occurrence_index": "",
@@ -434,7 +458,7 @@ def extract_row(row: pd.Series) -> list[dict]:
             "event_type_extracted": event_type,
             "place_text": line,
             "municipality": municipality,
-            "geography_group": geography(municipality),
+            "geography_group": geography(municipality, " ".join([header if 'header' in locals() else '', place_label if 'place_label' in locals() else '', line if 'line' in locals() else '', body if 'body' in locals() else ''])),
             "description": body,
             "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
             "confidence": "medium",
@@ -528,7 +552,7 @@ def extract_row(row: pd.Series) -> list[dict]:
                 "event_type_extracted": "Trafikolycka, vilt",
                 "place_text": line,
                 "municipality": municipality,
-                "geography_group": geography(municipality),
+                "geography_group": geography(municipality, " ".join([header if 'header' in locals() else '', place_label if 'place_label' in locals() else '', line if 'line' in locals() else '', body if 'body' in locals() else ''])),
                 "description": line,
                 "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
                 "occurrence_index": occurrence_index,
@@ -556,7 +580,7 @@ def extract_row(row: pd.Series) -> list[dict]:
                 "event_type_extracted": event_type,
                 "place_text": line,
                 "municipality": municipality,
-                "geography_group": geography(municipality),
+                "geography_group": geography(municipality, " ".join([header if 'header' in locals() else '', place_label if 'place_label' in locals() else '', line if 'line' in locals() else '', body if 'body' in locals() else ''])),
                 "description": line,
                 "source_link": row.get("external_source_link", "") or row.get("brottsplatskartan_url", ""),
                 "occurrence_index": "",
