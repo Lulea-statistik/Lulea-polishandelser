@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EVENTS = ROOT / "data" / "events.csv"
 OUT = ROOT / "data" / "summary_details.csv"
 OUT_MONTHLY = ROOT / "data" / "summary_details_monthly.csv"
+PLACE_DICTIONARY = ROOT / "data" / "norrbotten_place_to_municipality.csv"
 
 MUNICIPALITIES = {
     "arvidsjaur": "Arvidsjaur",
@@ -129,6 +130,48 @@ def clean_text(value: str) -> str:
     return s.strip()
 
 
+
+def _norm_place(value: str) -> str:
+    import unicodedata
+    s = unicodedata.normalize("NFKD", str(value or "").casefold())
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    s = re.sub(r"[^a-z0-9 -]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip(" -")
+
+
+def load_place_dictionary() -> list[tuple[str, str, str]]:
+    if not PLACE_DICTIONARY.exists():
+        return []
+    df = pd.read_csv(PLACE_DICTIONARY, dtype=str).fillna("")
+    rows = []
+    for _, r in df.iterrows():
+        normalized = _norm_place(r.get("normalized_name") or r.get("place_name"))
+        municipality = str(r.get("municipality", "") or "").strip()
+        place_name = str(r.get("place_name", "") or "").strip()
+        if normalized and municipality in MUNICIPALITY_GROUP_LABELS:
+            rows.append((normalized, municipality, place_name))
+    return sorted(rows, key=lambda x: len(x[0]), reverse=True)
+
+
+PLACE_LOOKUP: list[tuple[str, str, str]] | None = None
+
+
+def municipalities_from_place_dictionary(value: str) -> list[str]:
+    global PLACE_LOOKUP
+    if PLACE_LOOKUP is None:
+        PLACE_LOOKUP = load_place_dictionary()
+    text = _norm_place(value)
+    if not text:
+        return []
+    hits = []
+    for normalized, municipality, _ in PLACE_LOOKUP:
+        if len(normalized) < 3:
+            continue
+        if re.search(r"(?<![a-z0-9])" + re.escape(normalized) + r"(?![a-z0-9])", text):
+            hits.append(municipality)
+    return sorted(set(hits))
+
+
 def municipality_mentions(value: str) -> list[str]:
     """Return unique Norrbotten municipalities mentioned, in text order."""
     p = (value or "").casefold()
@@ -149,6 +192,7 @@ def municipality_from_text(value: str) -> str:
     for key, canonical in MUNICIPALITIES.items():
         if re.search(r"(?<![a-zåäö])" + re.escape(key) + r"(?![a-zåäö])", p):
             hits.append(canonical)
+    hits.extend(municipalities_from_place_dictionary(value))
     hits = sorted(set(hits))
     return hits[0] if len(hits) == 1 else ""
 
