@@ -7,6 +7,7 @@ on:
     paths:
       - "scripts/update_latest.py"
       - "scripts/common.py"
+      - "data/norrbotten_place_to_municipality.csv"
       - "scripts/extract_summary_details.py"
       - "scripts/deduplicate_summary_details.py"
       - "scripts/build_expanded_monthly.py"
