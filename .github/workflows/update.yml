@@ -12,6 +12,7 @@ on:
       - "scripts/extract_summary_details.py"
       - "scripts/deduplicate_summary_details.py"
       - "scripts/build_expanded_monthly.py"
+      - "scripts/build_municipality_pairs.py"
       - "scripts/audit_unresolved_summaries.py"
       - "scripts/audit_place_reclassification.py"
       - "scripts/audit_unknown_geography.py"
@@ -51,6 +52,7 @@ jobs:
       - run: python scripts/extract_summary_details.py
       - run: python scripts/deduplicate_summary_details.py
       - run: python scripts/build_expanded_monthly.py
+      - run: python scripts/build_municipality_pairs.py
       - run: python scripts/audit_unresolved_summaries.py
       - run: python scripts/audit_place_reclassification.py
       - run: python scripts/audit_unknown_geography.py
@@ -77,12 +79,13 @@ jobs:
           cp data/summary_details_monthly.csv docs/data/summary_details_monthly.csv
           cp data/summary_details_extra_monthly.csv docs/data/summary_details_extra_monthly.csv
           cp data/expanded_monthly_summary.csv docs/data/expanded_monthly_summary.csv
+          cp data/norrbotten_municipality_pairs.csv docs/data/norrbotten_municipality_pairs.csv
           cp data/quiet_summaries_monthly.csv docs/data/quiet_summaries_monthly.csv
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv
+          git add data/ docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
