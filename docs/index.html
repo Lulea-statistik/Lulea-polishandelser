@@ -295,6 +295,10 @@
     <div class="card" style="margin-top:16px">
       <h2>Vad ingår i Okänd Norrbottenskommun?</h2>
       <div class="other-chartbox"><canvas id="unknownNorrbottenChart"></canvas></div>
+      <h3 style="margin:20px 0 8px">Kommunpar inom Flera kommuner i Norrbotten</h3>
+      <div class="other-chartbox" style="height:440px"><canvas id="municipalityPairsChart"></canvas></div>
+      <p class="chart-note">Färgblandning: varje kommun har en egen grundfärg. Ett par får medelvärdet av båda kommunernas RGB-färger (t.ex. blått + rött ger lila). Kommunpar visas bara om båda kommunerna uttryckligen identifierats i händelsens geografiklassificering. Gruppen ”Fler än två / otydlig kombination” redovisas separat och färgas neutralt. Detta är antal ursprungliga publiceringar, inte antalet extraherade underhändelser.</p>
+      <p id="municipalityPairsStatus" class="chart-note" aria-live="polite"></p>
       <p class="chart-note">Visar de tre geografiska grupperna <strong>Norrbotten, okänd kommun</strong>, <strong>Flera kommuner i Norrbotten</strong> (minst två kommuner) och <strong>Norrbotten / Övriga Sverige</strong>. De är inte säkert knutna till en enskild kommun. Exakt vilka kommuner som förekommer tillsammans går inte att utläsa ur den aggregerade månadsfilen. Följer filtret År, men inte sidans geografifilter.</p>
     </div>
 
@@ -310,9 +314,10 @@ const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
 const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
 const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
+const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart;
+let municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -658,6 +663,44 @@ function updateTypeShareChart(){
         x:{stacked:true,title:{display:true,text:'År'}},
         y:{stacked:true,min:0,max:100,title:{display:true,text:'Andel (%)'},ticks:{callback:v=>v+' %'}}
       }
+    }
+  });
+}
+
+// Consistent municipality colors; pair colors use the RGB midpoint.
+const municipalityColors={
+  'Luleå':'#4169bf','Kalix':'#d24c59','Boden':'#3f9a78','Piteå':'#df922f',
+  'Kiruna':'#8a62bd','Gällivare':'#43a0a5','Haparanda':'#bf669e',
+  'Jokkmokk':'#759e42','Pajala':'#a27744','Arjeplog':'#6b82ae',
+  'Arvidsjaur':'#9c6a55','Älvsbyn':'#5593cc','Överkalix':'#bd8580','Övertorneå':'#7382aa'
+};
+function mixedMunicipalityColor(names){
+  if(names.length!==2||names.some(n=>!municipalityColors[n]))return '#9ca3af';
+  const rgb=names.map(n=>[1,3,5].map(i=>parseInt(municipalityColors[n].slice(i,i+2),16)));
+  return '#'+[0,1,2].map(i=>Math.round((rgb[0][i]+rgb[1][i])/2).toString(16).padStart(2,'0')).join('');
+}
+function updateMunicipalityPairsChart(){
+  const canvas=document.getElementById('municipalityPairsChart');
+  if(!canvas)return;
+  const year=selected('year');
+  const yearRows=municipalityPairRows.filter(r=>year==='Alla'||r.year===year);
+  const sums=new Map(),members=new Map();
+  for(const row of yearRows){
+    const key=row.municipality_combination;
+    sums.set(key,(sums.get(key)||0)+(+row.event_count||0));
+    members.set(key,(row.municipalities||'').split('|').filter(Boolean));
+  }
+  const all=[...sums.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'sv-SE'));
+  const display=all.slice(0,19);
+  const rest=all.slice(19).reduce((a,r)=>a+r[1],0);
+  if(rest>0)display.push(['Övriga kommunpar',rest]);
+  const status=document.getElementById('municipalityPairsStatus');
+  if(status)status.textContent=municipalityPairRows.length ? 'Visar '+all.length+' kombinationer för valt år/alla år. Kommunpar med lägst antal kan slås samman till Övriga kommunpar.' : 'Väntar på den första publiceringen av kommunparsfilen.';
+  municipalityPairsChart=chartReplace(municipalityPairsChart,canvas,{
+    type:'bar',data:{labels:display.map(x=>x[0]),datasets:[{label:'Publicerade händelser',data:display.map(x=>x[1]),backgroundColor:display.map(x=>mixedMunicipalityColor(members.get(x[0])||[]))}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label(ctx){return 'Antal: '+fmt.format(ctx.parsed.x);}}}},
+      scales:{x:{beginAtZero:true,title:{display:true,text:'Antal publicerade händelser'},ticks:{precision:0}},y:{ticks:{autoSkip:false}}}
     }
   });
 }
@@ -1058,6 +1101,7 @@ function update(){
   updateOtherBreakdownChart();
   updateSummaryDetailChart();
   updateUnknownNorrbottenChart();
+  updateMunicipalityPairsChart();
   updateAreaComparisonChart();
   updateQuietSummaryChart();
 }
@@ -1067,9 +1111,11 @@ Promise.all([
   fetch(SUMMARY_DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(SUMMARY_EXTRA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()}),
-  fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
+  fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
+  fetch(MUNICIPALITY_PAIRS_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
-  .then(([text,summaryText,summaryExtraText,expandedText,quietText])=>{
+  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText])=>{
+    municipalityPairRows=pairsText?parseCSV(pairsText):[];
     rows=parseCSV(text).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({
       ...r,
       event_count:+r.event_count||0,
