@@ -41,7 +41,7 @@ def main():
         strong={}
         for place,municipality in byplace.items():
             # Match an explicit incident location, not a casual mention.
-            pat=r"\\b(?:i|vid|pa|utanfor|nara|intill)\\s+"+re.escape(place)+r"\\b"
+            pat=r"\b(?:i|vid|pa|utanfor|nara|intill)\s+"+re.escape(place)+r"\b"
             if re.search(pat,body):
                 strong.setdefault(municipality,set()).add(place)
         if len(strong)!=1:
