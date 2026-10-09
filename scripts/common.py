@@ -108,6 +108,13 @@ LULEA_PLACE_NAMES = {
     "skurholmen", "svartostaden", "ornaset"
 }
 
+EMPIRICAL_SAFE_PLACES = {
+    "storheden": "Luleå",
+    "bergnaset": "Luleå",
+    "gammelstad": "Luleå",
+    "rutvik": "Luleå",
+}
+
 LULEA_PLACE_CANONICAL = {
     "ale":"Ale","alvik":"Alvik","antnas":"Antnas","avan":"Avan","balinge":"Balinge",
     "ersnas":"Ersnas","falltrask":"Falltrask","kallax":"Kallax","klovertrask":"Klovertrask",
@@ -239,6 +246,21 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     place = infer_lulea_place(title_location, location_string)
     if place:
         return "Luleå", "lulea_place_name"
+
+    # Empiriskt validerade ortnamn från säkert kommunbestämda historiska
+    # icke-sammanfattningar. Dessa används endast när ingen explicit
+    # Norrbottenskommun ovan har identifierats och alla träffar pekar på
+    # samma kommun.
+    empirical_text = _ascii_fold(" ".join([title_location or "", location_string or ""]))
+    empirical_hits = set()
+    for place_key, canonical in EMPIRICAL_SAFE_PLACES.items():
+        if re.search(r"(?<![a-z0-9])" + re.escape(place_key) + r"(?![a-z0-9])", empirical_text):
+            empirical_hits.add(canonical)
+    if len(empirical_hits) == 1:
+        # Om källans länsfält uttryckligen pekar på annat län ska ingen
+        # Norrbottenklassning göras här.
+        if "västerbottens län" not in loc_cf and not re.search(r"(?<![a-zåäö])västerbotten(?![a-zåäö])", loc_cf):
+            return next(iter(empirical_hits)), "empirical_place"
 
     # Ortreferensen är en konservativ fallback. Den används inte när
     # title_location pekar ut en annan, icke-generisk plats som inte själv
