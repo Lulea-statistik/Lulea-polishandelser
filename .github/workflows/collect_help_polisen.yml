@@ -1,0 +1,38 @@
+name: Collect Hjälp polisen RSS
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 5 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/collect_help_polisen.py"
+      - ".github/workflows/collect_help_polisen.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-help-polisen
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/collect_help_polisen.py
+      - name: Commit collected metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/help_polisen.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Archive Hjälp polisen RSS publication metadata"
+            git pull --rebase origin main
+            git push
+          fi
