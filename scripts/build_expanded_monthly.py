@@ -23,6 +23,45 @@ NO_NEW_EVENT_RE = re.compile(
 )
 
 
+
+# Conservative exclusion of stand-alone notices without a reported incident.
+# Headline must itself identify a quiet/administrative bulletin; matching words
+# only in the body is not sufficient because real incidents may be discussed too.
+ADMIN_HEADLINE_RE = re.compile(
+    r"(?i)^\s*(?:"
+    r"ingen kommunikatör(?:\s+i\s+tjänst)?|"
+    r"kommunikatör(?:en)?\s+(?:i\s+tjänst|saknas)|"
+    r"tillfälligt obemannat|"
+    r"en lugn (?:avslutning på |start på )?(?:natten|morgonen|kvällen|dagen)|"
+    r"inget(?:\s+särskilt)?\s+att\s+rapportera|"
+    r"inga\s+(?:akuta\s+)?händelser\s+att\s+rapportera"
+    r")\b"
+)
+INCIDENT_IN_HEADLINE_RE = re.compile(
+    r"(?i)\b(?:olycka|brand|rån|misshandel|inbrott|stöld|rattfylleri|"
+    r"trafikkontroll|trafikbrott|larm|försvunnen|omhändertagen|"
+    r"gripen|anhållen|skottlossning)\b"
+)
+
+
+def admin_non_event(row: pd.Series) -> bool:
+    headline = str(row.get("headline", "") or "")
+    title = str(row.get("type_original", "") or "")
+    if INCIDENT_IN_HEADLINE_RE.search(headline):
+        return False
+    # Only remove high-confidence administrative type/headline combinations.
+    administrative_type = title.casefold().strip() in {"övrigt", "tillfälligt obemannat"}
+    if not administrative_type or not ADMIN_HEADLINE_RE.search(headline):
+        return False
+    # Exception: a concrete report in the body must not be silently removed.
+    body = str(row.get("content", "") or "")
+    incident_lines = re.search(
+        r"(?im)^\s*(?:kl(?:ockan)?\.?\s*)?\d{1,2}[.:]\d{2}\s+"
+        r".*(?:polis|patrull|olycka|brand|stöld|misstänk|larm|grip)",
+        body,
+    )
+    return not bool(incident_lines)
+
 def truthy(series: pd.Series) -> pd.Series:
     return series.astype(str).str.casefold().isin(["true", "1"])
 
@@ -59,8 +98,14 @@ def main() -> None:
 
     is_summary = truthy(events.get("is_summary", pd.Series(False, index=events.index)))
 
-    # Vanliga publicerade poster behålls oförändrade.
+    # Råposter bevaras, men rena informationsnotiser räknas inte som händelser.
     ordinary = events[~is_summary].copy()
+    ordinary["excluded_admin_non_event"] = ordinary.apply(admin_non_event, axis=1)
+    excluded_admin = ordinary[ordinary["excluded_admin_non_event"]].copy()
+    ordinary = ordinary[~ordinary["excluded_admin_non_event"]].copy()
+    excluded_admin[["event_id", "date", "type_original", "headline", "geography_group"]].to_csv(
+        ROOT / "data" / "excluded_administrative_notices.csv", index=False, encoding="utf-8"
+    )
     ordinary_rows = ordinary[["year", "month", "geography_group", "type_original"]].copy()
     ordinary_rows = ordinary_rows.rename(columns={"type_original": "event_type"})
 
@@ -125,6 +170,7 @@ def main() -> None:
         ("summaries_explicit_no_new_event", no_new_event_total),
         ("summaries_unresolved_kept", unresolved_kept_total),
         ("extra_subevents", len(extra_rows)),
+        ("ordinary_administrative_excluded", len(excluded_admin)),
     ], columns=["metric", "value"]).to_csv(OUT_STATS, index=False, encoding="utf-8")
 
     print(
