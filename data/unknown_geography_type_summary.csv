@@ -1,8 +1,7 @@
 type_original,reason,is_summary_norm,event_count
 Sammanfattning natt,unknown,True,2360
-Trafikkontroll,unknown,False,1245
-Övrigt,unknown,False,668
-"Trafikolycka,  vilt",unknown,False,272
+Övrigt,unknown,False,457
+Övrigt,cross_county_ambiguous,False,203
 Sammanfattning kväll,unknown,True,131
 Sammanfattning förmiddag,unknown,True,128
 Sammanfattning kväll och natt,unknown,True,92
@@ -10,34 +9,38 @@ Sammanfattning natt,summary_container,True,70
 Tillfälligt obemannat,unknown,False,47
 Sammanfattning eftermiddag,unknown,True,43
 Sammanfattning dag,unknown,True,41
-Trafikbrott,unknown,False,21
-Bedrägeri,unknown,False,13
-Fjällräddning,unknown,False,11
-Stöld,unknown,False,11
-Trafikolycka,unknown,False,6
-Stöld/inbrott,unknown,False,5
-Inbrott,unknown,False,5
+"Trafikolycka,  vilt",unknown,False,12
+Fjällräddning,unknown,False,10
+Bedrägeri,unknown,False,10
+Trafikkontroll,unknown,False,8
 Trafikhinder,unknown,False,5
-Rattfylleri,unknown,False,5
-Sammanfattning kväll,summary_container,True,3
-Uppdatering,unknown,False,3
+"Trafikolycka,  vilt",multi_location_ambiguous,False,4
+Trafikkontroll,multi_location_ambiguous,False,4
+Stöld,unknown,False,4
 Misshandel,unknown,False,3
-Försvunnen person,unknown,False,3
-Kontroll person/fordon,unknown,False,2
+Trafikolycka,unknown,False,3
+Sammanfattning kväll,summary_container,True,3
+Rattfylleri,unknown,False,2
+Övrigt,multi_location_ambiguous,False,2
 "Trafikolycka,  singel",unknown,False,2
-Sammanfattning dygn,unknown,True,2
-Sammanfattning helg,unknown,True,2
-Sammanfattning kväll och natt,summary_container,True,2
+Uppdatering,unknown,False,2
 Sammanfattning vecka,unknown,True,2
-Olovlig körning,unknown,False,1
-Häleri,unknown,False,1
-Fylleri/LOB,unknown,False,1
-Bombhot,unknown,False,1
-Sexualbrott,unknown,False,1
+Sammanfattning kväll och natt,summary_container,True,2
+Kontroll person/fordon,unknown,False,2
+Sammanfattning dygn,unknown,True,2
+"Trafikolycka,  vilt",cross_county_ambiguous,False,2
+Stöld/inbrott,unknown,False,2
+Sammanfattning helg,unknown,True,2
 Polisinsats/kommendering,unknown,False,1
+Försvunnen person,unknown,False,1
+Bedrägeri,cross_county_ambiguous,False,1
+Inbrott,unknown,False,1
+Inbrott,multi_location_ambiguous,False,1
 Rån övrigt,unknown,False,1
-"Stöld,  ringa",unknown,False,1
-"Stöld,  försök",unknown,False,1
+Trafikbrott,unknown,False,1
 Skadegörelse,unknown,False,1
-Trafikkontroll,multi_location_ambiguous,False,1
+"Stöld,  försök",unknown,False,1
+Trafikolycka,cross_county_ambiguous,False,1
+Trafikkontroll,cross_county_ambiguous,False,1
+Uppdatering,multi_location_ambiguous,False,1
 Våldtäkt,unknown,False,1

@@ -1,5 +1,6 @@
 reason,is_summary_norm,event_count
 unknown,True,2801
-unknown,False,2338
+unknown,False,577
+cross_county_ambiguous,False,208
 summary_container,True,75
-multi_location_ambiguous,False,1
+multi_location_ambiguous,False,12
