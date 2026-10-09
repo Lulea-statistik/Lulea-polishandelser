@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "scripts/audit_administrative_notices.py"
+      - "scripts/build_expanded_monthly.py"
       - ".github/workflows/audit_administrative_notices.yml"
   workflow_dispatch:
 
