@@ -13,3 +13,7 @@ count=100,county,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,h
 count=100,all,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
 count=500,county,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
 count=500,all,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+diagnostic,unfiltered,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+diagnostic,norrbotten_name,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+diagnostic,norrbotten_code,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
+diagnostic,unfiltered_days,ok,1,"area,bodyLinks,bodyText,contentId,contentTypeName,event,headline,identifier,imageLink,isPinned,language,links,preamble,published,senderName,updated,web",
