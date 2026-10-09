@@ -1,5 +1,5 @@
 name: Update polishandelser
-# QA rerun marker 6
+# QA rerun marker 7 - publish municipality pair data
 
 on:
   workflow_dispatch:
