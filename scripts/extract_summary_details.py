@@ -85,6 +85,8 @@ TYPE_PATTERNS = [
 TIME_LINE_RE = re.compile(
     r"(?im)(?:^|\n)\s*"
     r"(?:(?P<prefix>[^\n,]{2,90})\s*,\s*)?"
+    r"(?:(?:\d{4}-\d{2}-\d{2}|måndag|tisdag|onsdag|torsdag|fredag|lördag|söndag)"
+    r"\s*[^\w\d\n]{0,2}\s*)?"
     r"(?:kl\.?\s*)?(?P<time>[0-2]?\d[:.]\d{2})"
     r"\s*[,;:-]?\s*(?P<rest>[^\n]{0,240})"
 )
