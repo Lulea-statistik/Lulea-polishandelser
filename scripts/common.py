@@ -267,6 +267,9 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
     title_location = (e.get("title_location") or "").strip()
     municipality, municipality_source = infer_municipality_detail(municipality_api, title_location, loc)
     is_summary = title_type.casefold().startswith("sammanfattning")
+    if is_summary and municipality_source == "place_dictionary":
+        municipality = ""
+        municipality_source = "summary_container"
     is_multi = bool(is_summary or loc.count(",") >= 4)
 
     return {
@@ -311,10 +314,25 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
     if not all_df.empty:
         all_df = all_df.drop_duplicates(subset=["event_id"], keep="last")
 
-        # Kör om kommuninferensen för historiska rader som fortfarande saknar
-        # kommun. Redan fastställda kommuner (API/kommunnamn/tidigare säkra
-        # regler) lämnas helt orörda.
-        missing_mask = all_df["municipality"].fillna("").astype(str).str.strip().eq("")
+        # En länssammanfattning kan innehålla flera kommuner och får därför
+        # aldrig flyttas som hel behållare med ortreferensen. Kommunfördelning
+        # sker i stället på de extraherade underhändelserna.
+        is_summary_mask = all_df["is_summary"].astype(str).str.casefold().isin(["true", "1"])
+
+        # Rensa tidigare ortbaserade tilldelningar på sammanfattningsbehållare.
+        prior_summary_place = (
+            is_summary_mask
+            & all_df["municipality_source"].fillna("").astype(str).eq("place_dictionary")
+        )
+        all_df.loc[prior_summary_place, "municipality"] = ""
+        all_df.loc[prior_summary_place, "municipality_source"] = "summary_container"
+
+        # Kör om kommuninferensen endast för historiska icke-sammanfattningar
+        # som fortfarande saknar kommun.
+        missing_mask = (
+            all_df["municipality"].fillna("").astype(str).str.strip().eq("")
+            & ~is_summary_mask
+        )
         for idx in all_df.index[missing_mask]:
             municipality, source = infer_municipality_detail(
                 "",
