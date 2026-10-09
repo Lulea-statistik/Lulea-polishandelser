@@ -2,6 +2,8 @@ name: Probe SOS Inblick and VMA availability
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "23 6 * * *"
   push:
     branches: [main]
     paths:
@@ -20,11 +22,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/probe_emergency_sources.py
+      - run: python scripts/archive_emergency_probe.py
       - name: Archive diagnostic only
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/emergency_sources_probe.csv
+          git add data/emergency_sources_probe.csv data/emergency_sources_history.csv
           if ! git diff --cached --quiet; then
             git commit -m "Archive SOS Inblick and VMA availability check"
             git pull --rebase origin main
