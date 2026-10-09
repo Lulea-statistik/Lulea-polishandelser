@@ -12,6 +12,7 @@ on:
       - "scripts/deduplicate_summary_details.py"
       - "scripts/build_expanded_monthly.py"
       - "scripts/audit_unresolved_summaries.py"
+      - "scripts/audit_place_reclassification.py"
       - "scripts/build_summary_validation_sample.py"
       - "scripts/build_summary_validation_review.py"
       - "scripts/build_summary_validation_misses.py"
@@ -44,6 +45,7 @@ jobs:
       - run: python scripts/deduplicate_summary_details.py
       - run: python scripts/build_expanded_monthly.py
       - run: python scripts/audit_unresolved_summaries.py
+      - run: python scripts/audit_place_reclassification.py
       - run: python scripts/build_summary_validation_sample.py
       - run: python scripts/annotate_summary_validation_batch1.py
       - run: python scripts/annotate_summary_validation_batch2.py
