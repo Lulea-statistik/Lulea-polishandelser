@@ -66,6 +66,31 @@ MUNICIPALITY_GROUP_LABELS = {
     "Övertorneå": "Övertorneå kommun",
 }
 
+OTHER_COUNTY_TITLE_ALIASES = {
+    "stockholms län": "Stockholms län",
+    "uppsala län": "Uppsala län",
+    "södermanlands län": "Södermanlands län",
+    "östergötlands län": "Östergötlands län",
+    "jönköpings län": "Jönköpings län",
+    "kronobergs län": "Kronobergs län",
+    "kalmar län": "Kalmar län",
+    "gotlands län": "Gotlands län",
+    "blekinge län": "Blekinge län",
+    "skåne län": "Skåne län",
+    "hallands län": "Hallands län",
+    "västra götalands län": "Västra Götalands län",
+    "värmlands län": "Värmlands län",
+    "örebro län": "Örebro län",
+    "västmanlands län": "Västmanlands län",
+    "dalarnas län": "Dalarnas län",
+    "gävleborgs län": "Gävleborgs län",
+    "västernorrlands län": "Västernorrlands län",
+    "västernorrland län": "Västernorrlands län",
+    "jämtlands län": "Jämtlands län",
+    "västerbottens län": "Västerbottens län",
+    "västerbotten": "Västerbottens län",
+}
+
 SWEDISH_COUNTIES = {
     "stockholms län", "uppsala län", "södermanlands län", "östergötlands län",
     "jönköpings län", "kronobergs län", "kalmar län", "gotlands län",
@@ -296,12 +321,20 @@ def infer_municipality(municipality: str, title_location: str, location_string: 
     return infer_municipality_detail(municipality, title_location, location_string)[0]
 
 
-def geography_group(municipality: str, area: str, municipality_source: str = "") -> str:
+def geography_group(
+    municipality: str,
+    area: str,
+    municipality_source: str = "",
+    title_location: str = "",
+) -> str:
     municipality_clean = (municipality or "").strip()
     area_cf = (area or "").strip().casefold()
+    title_cf = (title_location or "").strip().casefold()
     source = (municipality_source or "").strip()
     if municipality_clean in MUNICIPALITY_GROUP_LABELS:
         return MUNICIPALITY_GROUP_LABELS[municipality_clean]
+    if title_cf in OTHER_COUNTY_TITLE_ALIASES:
+        return "Övriga Sverige"
     if area_cf == "norrbottens län" and source == "ambiguous_municipality_names":
         return "Flera kommuner i Norrbotten"
     if area_cf == "norrbottens län":
@@ -347,7 +380,7 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
         "municipality": municipality,
         "municipality_source": municipality_source,
         "administrative_area_level_1": area,
-        "geography_group": geography_group(municipality, area, municipality_source),
+        "geography_group": geography_group(municipality, area, municipality_source, title_location),
         "latitude": e.get("lat"),
         "longitude": e.get("lng"),
         "is_summary": is_summary,
@@ -409,6 +442,7 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
                 str(r.get("municipality", "") or ""),
                 str(r.get("administrative_area_level_1", "") or ""),
                 str(r.get("municipality_source", "") or ""),
+                str(r.get("title_location", "") or ""),
             ),
             axis=1,
         )
