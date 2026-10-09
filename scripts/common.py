@@ -252,11 +252,12 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     # Norrbottenskommun ovan har identifierats och alla träffar pekar på
     # samma kommun.
     empirical_text = _ascii_fold(" ".join([title_location or "", location_string or ""]))
+    empirical_parts = [p.strip() for p in (location_string or "").split(",") if p.strip()]
     empirical_hits = set()
     for place_key, canonical in EMPIRICAL_SAFE_PLACES.items():
         if re.search(r"(?<![a-z0-9])" + re.escape(place_key) + r"(?![a-z0-9])", empirical_text):
             empirical_hits.add(canonical)
-    if len(empirical_hits) == 1:
+    if len(empirical_hits) == 1 and len(empirical_parts) <= 4:
         # Om källans länsfält uttryckligen pekar på annat län ska ingen
         # Norrbottenklassning göras här.
         if "västerbottens län" not in loc_cf and not re.search(r"(?<![a-zåäö])västerbotten(?![a-zåäö])", loc_cf):
@@ -295,11 +296,14 @@ def infer_municipality(municipality: str, title_location: str, location_string: 
     return infer_municipality_detail(municipality, title_location, location_string)[0]
 
 
-def geography_group(municipality: str, area: str) -> str:
+def geography_group(municipality: str, area: str, municipality_source: str = "") -> str:
     municipality_clean = (municipality or "").strip()
     area_cf = (area or "").strip().casefold()
+    source = (municipality_source or "").strip()
     if municipality_clean in MUNICIPALITY_GROUP_LABELS:
         return MUNICIPALITY_GROUP_LABELS[municipality_clean]
+    if area_cf == "norrbottens län" and source == "ambiguous_municipality_names":
+        return "Flera kommuner i Norrbotten"
     if area_cf == "norrbottens län":
         return "Norrbotten, okänd kommun"
     if area_cf in SWEDISH_COUNTIES:
@@ -343,7 +347,7 @@ def parse_event(e: dict[str, Any]) -> dict[str, Any]:
         "municipality": municipality,
         "municipality_source": municipality_source,
         "administrative_area_level_1": area,
-        "geography_group": geography_group(municipality, area),
+        "geography_group": geography_group(municipality, area, municipality_source),
         "latitude": e.get("lat"),
         "longitude": e.get("lng"),
         "is_summary": is_summary,
@@ -404,6 +408,7 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
             lambda r: geography_group(
                 str(r.get("municipality", "") or ""),
                 str(r.get("administrative_area_level_1", "") or ""),
+                str(r.get("municipality_source", "") or ""),
             ),
             axis=1,
         )
