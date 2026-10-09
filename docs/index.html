@@ -164,7 +164,7 @@
 
   <section class="intro" aria-labelledby="intro-title">
     <h2 id="intro-title">Polishändelser i Luleå och Norrbotten</h2>
-    <p>Här kan du följa historik och statistik över offentligt publicerade polishändelser med fokus på <strong>Luleå kommun</strong> och övriga Norrbotten. Rapporten uppdateras automatiskt en gång per dygn och kan filtreras på geografi, år och händelsetyp. Läs mer om datakällor, geografisk klassificering och begränsningar på sidan <a href="info-metod.html">Info & metod</a>.</p>
+    <p>Här kan du följa historik och statistik över offentligt publicerade polishändelser med fokus på <strong>Luleå kommun</strong> och övriga Norrbotten. Huvuddiagrammen använder en <strong>expanderad händelseserie</strong>: konkreta underhändelser som identifierats i polisens sammanfattningar förs över till sina vanliga händelsetyper, medan endast den lilla rest som inte kunnat delas upp ligger kvar som <em>Sammanfattning, ej uppdelad</em>. Rapporten uppdateras automatiskt en gång per dygn och kan filtreras på geografi, år och händelsetyp. Läs mer på sidan <a href="info-metod.html">Info & metod</a>.</p>
   </section>
 
   <div id="loading" class="status">Läser in månadsdata…</div>
@@ -246,7 +246,10 @@
       <div class="chartbox"><canvas id="summaryDetailChart"></canvas></div>
       <h3 style="margin:20px 0 8px">Extraherade sammanfattningshändelser per månad</h3>
       <div class="chartbox"><canvas id="summaryMonthlyChart"></canvas></div>
-      <p class="chart-note">Diagrammen nedan är diagnostik för hur parsern har tolkat sammanfattningarna och påverkar inte huvudseriens kategorisering utöver de underhändelser som redan förts över.</p>
+      <p class="chart-note">Diagrammen ovan är diagnostik för hur parsern har tolkat sammanfattningarna och påverkar inte huvudseriens kategorisering utöver de underhändelser som redan förts över.</p>
+      <h3 style="margin:20px 0 8px">Lugna sammanfattningar – exkluderade från huvudserien</h3>
+      <div class="chartbox"><canvas id="quietSummaryChart"></canvas></div>
+      <p class="chart-note">Dessa poster anger uttryckligen att det inte finns någon ny konkret händelse att rapportera och räknas därför inte i den expanderade händelseserien.</p>
     </details>
 
     <div class="card" style="margin-top:16px">
@@ -263,12 +266,6 @@
       </div>
       <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
       <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert, poster som berör flera kommuner i länet samt poster som samtidigt berör Norrbotten och övriga Sverige. Poster som säkert berör två eller fler Norrbottenskommuner redovisas gemensamt som <strong>Flera kommuner i Norrbotten</strong>. <strong>Norrbotten / Övriga Sverige</strong> används när posten tydligt spänner över länsgränsen men inte kan delas upp. <strong>Övriga Sverige</strong> används när kopplingen ligger utanför Norrbotten. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
-    </div>
-
-        <div class="card" style="margin-top:16px">
-      <h2>Lugna sammanfattningar – exkluderade från övriga händelsediagram</h2>
-      <div class="chartbox"><canvas id="quietSummaryChart"></canvas></div>
-      <p class="chart-note">Diagrammet visar sammanfattningsposter där Polisen uttryckligen anger att det inte finns någon ny konkret händelse att rapportera, till exempel ”inget att rapportera” eller ”inga akuta händelser”. Dessa poster finns kvar i rådata men är <strong>exkluderade från den expanderade händelseserien och från övriga kategoridiagram</strong>.</p>
     </div>
 
     <div class="foot">
