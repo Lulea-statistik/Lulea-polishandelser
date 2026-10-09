@@ -1,15 +1,13 @@
 event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lulea_count	current_correct_count	current_false_positive_count	current_missed_count	qa_note
-204291	2021-07-08	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-<p>Här följer ett urval av nattens händelser:</p>
-<p>03:48 Misshandel, Piteå<br />Samtal inkommer från en person, en man, i Piteå som uppger att han blivit misshandlad av en man tidigare. Polis beordras till adressen inringaren befinner sig på, förhör hålls och anmälan ska upprättas.</p>
-<p>Två viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	3	0	4.0	0.0	3.0	0.0	1.0	Ett LOB, en misshandel och två viltolyckor.
-210596	2021-09-13	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri.</p>
-<p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-<p>Här följer ett urval av nattens händelser:</p>
-<p><strong>03:02 Rattfylleri, Älvsbyn:</strong> Polispatrull i centrala Älvsbyn uppmärksammar en bil som plötsligt stannar, backar och svänger in på en parkering varefter en man lämnar bilen.</p>
-<p>Patrullen kontrollerar föraren, som blåser positivt i polisens sållningsinstrument och får följa med för provtagning.</p>
-<p>Mannen saknar behörighet att köra bil. En anmälan gällande rattfylleri samt olovlig körning upprättas.</p>
-<p><strong>05:34 Viltolycka, Pajala:</strong> Polisen får in en anmälan om att en personbil kolliderat med en ren på länsväg 395, Juhonpieti. Inga personskador rapporteras.</p>"	2	0	3.0	0.0	2.0	0.0	1.0	Ett LOB plus två tidsatta händelser.
+130657	2019-08-27	"<p>Det råder lugn i Norrbottens län. Arbetsbelastningen har varit låg  under natten.  </p>
+
+
+<p><strong>Uppdatering 07:08 av Maria Linné, kommunikatör: </strong></p>
+<p><strong>23:06 Ofredande, Gällivare</strong><br />Polisen kontaktas angående några ungdomar som gått in på en persons tomt och slår på fönster och fasad. Polisen åker till platsen och påträffar där en av de misstänkta, en minderårig flicka. Hon skjutsas hem till vårdnadshavare. En anmälan om ofredande upprättas.</p>
+<p><strong>23:28 Narkotikabrott, Piteå</strong><br />Polispatrull påträffar en man i centrala Piteå. Mannen, som är i 30-årsåldern, kroppsvisiteras och på honom hittas narkotika. Han misstänks för narkotikabrott genom innehav.</p>
+<p><strong>03:51 Olovlig körning, Luleå</strong><br />Polisen stoppar och kontrollerar en personbil på Björkskatan. Föraren, en man i 35-årsåldern, saknar behörighet att köra. En anmälan om olovlig körning upprättas.</p>
+<p><strong>Övrigt:</strong> En person har under tidig morgon omhändertagits enligt LOB, lagen om omhändertagande av berusade personer. Detta skedde i Boden.</p>
+"	3	1	4.0	1.0	3.0	0.0	1.0	Tre tidsatta händelser plus ett LOB-ingripande.
 213090	2021-10-06	"<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>I övrigt:</p>
 <p>Kl 00:11, Gällivare</p>
@@ -21,12 +19,11 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>En anmälan gällande skadegörelse upprättas.</p>
 <p>Kl 06:17, Boden</p>
 <p>Trafikkontroll hålls vid Travbanegränd. Alla trafikanter passerar utan några anmärkningar.</p>"	3	1	4.0	1.0	3.0	0.0	1.0	Två separata fortkörningar under 00:11-blocket, skadegörelse Luleå och trafikkontroll Boden.
-245281	2022-09-17	"<p><strong>22:35 Rattfylleri - Arvidsjaur<br /></strong>En polispatrull stoppade en personbil. Föraren, en man i 50-årsåldern, blåste positivt i polisens sållningsinstrument och misstänktes för rattfylleri. Mannen fick följa med patrullen för provtagning och en polisanmälan upprättades.</p>
-<p><strong>01:00 Lugnt i länet<br /></strong>Inget att rapportera.</p>
-<p><strong>02:03 Olaga hot - Luleå<br /></strong>Polisens regionledningscentral blev kontaktad av en ordningavakt med anledning av att en person försökte slåss. Personen, en man i 25-årsåldern, greps av ordningsvakten. En polispatrull beordrades till platsen. Mannen misstänktes för brott och fick följa med till polisstationen. En polisanmälan upprättades gällande olaga hot, våld mot tjänsteman samt våldsamt motstånd.</p>
-<p><strong>02:45 Lugnt i länet</strong><br />Inget att rapportera.</p>
-<p><strong>04:00 Lugnt i länet</strong><br />Inget att rapportera.</p>
-<p><strong>Övrigt</strong><br />På Western farm i Boden hölls en festivalkväll med ""Hooja"" och ""Sofie Svensson &amp; Dom Där"" som liveartister.<br />Evenemanget var slutsålt och det var mycket folk, ca 1600 personer.<br />Polisen som var på plats meddelade att det var en trevlig kväll med god stämning. En person omhändertogs för fylleri.<br /></p>"	2	1	3.0	1.0	2.0	0.0	1.0	Rattfylleri, olaga hot Luleå och ett ej tidsatt LOB.
+245157	2022-09-16	"<p>Utöver nedanstående ärenden har polisen kontrollerat personer och fordon som inte har lett till någon misstanke om brott.<strong> </strong></p>
+<p><strong>00:24 Inbrott, Luleå</strong><br />Polisen beordras till Örnäset i Luleå med anledning av ett garageinbrott. Ett antal anmälningar är upprättade i nuläget, gällande bland annat olaga intrång, skadegörelse och försök av tillgrepp av fortskaffningsmedel. Eventuellt saknas också ett fordon, men polisen har inte kommit i kontakt med en eventuell målsägande.</p>
+<p><strong>Övrigt: </strong></p>
+<p>Polisen i Piteå har hanterat ett ärende gällande en försvunnen person sedan i går kväll. <strong>Mannen är nu återfunnen.</strong></p>
+<p>En viltolycka har inrapporterats till polisen under morgonen, den skedde i Lovikka, Pajala kommun. Ingen person har kommit till skada. </p>"	2	1	3.0	1.0	2.0	0.0	1.0	Inbrott Luleå, återfunnen person Piteå och viltolycka Pajala.
 265553	2023-05-25	"<p>Kl 00:00-07:00, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Kl 01:46, Haparanda</p>
 <p>Polis kontaktas gällande skadegörelse på en fastighet i centrum, en ruta är trasig. En anmälan upprättas.</p>
@@ -35,17 +32,5 @@ event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lul
 <p>Kl 05:25, Kiruna</p>
 <p>Trafikkontroll hålls på E45 vid Svappavaara. Två förare får böter på grund av hastighetsöverträdelser.</p>"	3	0	4.0	0.0	2.0	1.0	2.0	Tre separata skadegörelser i Haparanda + en trafikkontroll; 00:00-status är falsk parserträff.
 272321	2023-09-01	<p>Kl 00:00-07:00, inga händelser att rapportera om. En person har omhändertagits för fylleri. </p>	0	0	1.0	0.0	0.0	0.0	1.0	Ett ej tidsatt LOB.
-290630	2024-05-26	"<p>Här följer ett urval av nattens händelser:</p>
-<p><strong>00.43 Trafikbrott, Boden:</strong><br /> Bilförare på länsväg 605, Fagernäs, får ordningsbot efter att ha kört åt fel håll i en rondell.</p>
-<p><strong>01.08 Trafikbrott, Gällivare:</strong><br /> A-traktorförare får, efter en flygande inspektion av fordonet, en ordningsbot på grund av otillräcklig profil på bakdäcken. A-traktorn måste genomgå registreringsbesiktning och efterkontroll.</p>
-<p><strong>01.47 Misshandel. Piteå:</strong><br /> Polisen kontaktas av en ordningsvakt på en krog om att en man blivit misshandlad av en annan man. Polispatrull beordras till platsen. Förhör med båda männen hålls och en anmälan gällande misshandel upprättas.</p>
-<p><strong>02.33 Rattfylleri, Piteå:</strong><br /> Vid stopp och kontroll av en personbil blåser föraren, en man, positivt i polisens sållningsinstrument och får följa med för provtagning. Förhör hålls och en anmälan gällande grovt rattfylleri upprättas. Då föraren är utländsk medborgare grips han och anhålls senare av åklagare.</p>
-<p><strong>03.20 Knivlagen, Kiruna:</strong><br /> Vid kontroll av en man i centrala Kiruna påträffas misstänkt narkotika samt knivar som tas i beslag. En anmälan gällande ringa narkotikabrott och brott mot knivlagen upprättas.</p>
-<p><strong>04.45 Rattfylleri, Luleå:</strong><br /> Vid stopp och kontroll av en personbil blåser föraren positivt i polisens sållningsinstrument och får följa med för provtagning. En anmälan upprättas.</p>
-<p><strong>Övrigt:<br /></strong>En man i Piteå kommun har under natten gripits misstänkt för att ha misshandlat en kvinna som han tidigare haft en relation med. Mannen har senare anhållits av åklagare.<br /><br /> En person har omhändertagits för fylleri och en person har medtagits för provtagning efter misstanke om narkotikabrott.</p>
-<p>Polisen har även utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-<p><strong>Uppdatering 10.12:</strong></p>
-<p><strong>03.41 Arbetsplatsolycka, Piteå:</strong><br />Polisen får under natten information om att en man skadat foten när han ramlat från en pall i samband med arbete i centrala Piteå. Mannen har förts med ambulans till sjukvård.</p>
-<p>Polispatrull har under morgonen kontaktat mannen och tagit upp en anmälan.</p>"	9	1	10.0	1.0	9.0	0.0	1.0	Sju tidsatta händelser samt tre övriga konkreta ingripanden.
 291029	2024-05-31	"<p>Kl 00:00-06:55, polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke. I övrigt har en bilist i Gällivare fått böter på grund av fordon med körförbud och dubbade däck på otillåten tid och en annan trafikant har fått böter på grund av att fordonet inte stannats korrekt vid stopplikt.</p>
 <p>I övrigt har trafikkontroller hållits i Gällivare, vid Vuosko industriområde samt Folkets parkområdet, utan några anmärkningar. En nykterhetskontroll har också hållits på riksväg 99 vid Mattila, Haparanda, utan några anmärkningar. Under tidig morgon har även trafiken kontrollerats vid Strömnäs, Piteå.</p>"	1	0	4.0	0.0	1.0	0.0	3.0	Två böteshändelser och tre separata trafikkontroller; parsern grupperar för mycket.

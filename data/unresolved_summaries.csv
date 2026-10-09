@@ -27,8 +27,6 @@ Polisen Norrbotten"
 2283,2016-10-31,2016,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,"Norrbotten, lugnt på händelsefronten. Inget akut att rapportera.",Polisen Norrbotten
 2506,2016-11-02,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,En mycket lugn natt i länet. Inget att rapportera om.,Polisen Norrbotten
 2645,2016-11-03,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,"Norrbotten, förutom publicerade händelser en natt med rutinärenden.",Polisen Norrbotten
-2876,2016-11-04,2016,Sammanfattning eftermiddag,"Norrbotten, okänd kommun",,False,False,True,159,"Norrbotten, en eftermiddag utan akuta händelser att rapportera om","På skärmen - fylleri, kontroller av person/fordon, trafikolycka vilt (rådjur), utredningsverksamhet och avrapportering av tidigare ärenden.
-Polisen Norrbotten"
 3701,2016-11-11,2016,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,145,"Norrbotten, en förmiddag utan akuta ärenden att rapportera om","Utredningsarbete och handräckningar (biträde till andra myndigheter, ofta transporter av personer) är ett axplock av ärenden.
 Polisen Norrbotten"
 3821,2016-11-13,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,236,Händelser i sammanfattning och urval som inkommit till polisens ledningscentral i Region Nord,"Under kvällen har flertalet personer omhändertagits för berusning och fått följa med till polisstationen för tillnyktring.
@@ -46,10 +44,6 @@ Polisen Norrbotten"
 4719,2016-11-20,2016,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,Lugnt i länet.,Polisen Norrbotten
 4772,2016-11-20,2016,Sammanfattning kväll,"Norrbotten, okänd kommun",,False,False,False,18,"Lugn eftermiddag i Norrbotten, polisen har inget att rapportera om.",Polisen Norrbotten
 4792,2016-11-21,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,182,En natt utan akuta händelser att rapportera om,"Förutom de tre särskilt redovisade rattfyllerier na så har det varit en normal söndagnatt. Kontroller av personer/fordon, fylleri, bråk, narkotikabrott och brand.
-Polisen Norrbotten"
-4841,2016-11-21,2016,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,True,226,Inga akuta händelser att rapportera om,"Under förmiddagen finns 46 händelser noterade. Det rör sig om mindre trafikincidenter, utredningsarbeten, trafikkontroller, kontroll person/fordon, bråk, psykisk ohälsa och stöld/inbrott (se särs notis), mm
-Polisen Norrbotten"
-4935,2016-11-22,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,206,En natt med många ingripanden men inget akut att rapportera om,"Från natten noteras ett stort antal kontroller person/fordon (brottsförebyggande), fylleri, trafikbrott, inbrottslarm/automatlarm, trafikolyckor vilt,skadegörelse och en och annan stöld.
 Polisen Norrbotten"
 5373,2016-11-25,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,03.00-06.30 Inget att rapportera,Polisen Norrbotten
 5695,2016-11-27,2016,Sammanfattning natt,"Norrbotten, okänd kommun",,True,False,True,500,Ytterligare en natt med många noterade händelser,"Under tiden 00:00 till 08:00 finns det 78 avslutade händelser noterade i ledningcentralen. De flesta ärenden är alkoholrelaterade, som tex fyllerier och bråk. 
@@ -107,8 +101,6 @@ Polisen Norrbotten"
 Polisen Norrbotten"
 11162,2017-01-05,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,Polisiärt en lugn start på dagen i länet.,Polisen Norrbotten
 11676,2017-01-09,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,"Norrbotten, inga akuta händelser i länet under förmiddagen.",Polisen Norrbotten
-11734,2017-01-09,2017,Sammanfattning eftermiddag,Luleå kommun,Luleå,False,False,True,141,Förutom branden i Luleå en eftermiddag utan akuta händelser,"Under eftermiddagen noteras bla trafikolyckor vilt, trafikkontroller, kontroller person/fordon och ett och annat fylleri.
-Polisen Norrbotten"
 11792,2017-01-10,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,Norrbotten. Inga akuta händelser att rapportera.,Polisen Norrbotten
 12258,2017-01-13,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,"Norrbotten, inga akuta händelser att rapportera. Lugnt i länet.",Polisen Norrbotten
 12487,2017-01-15,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,Överlag en mycket lugn natt i Norrbottens län.,Polisen Norrbotten
@@ -132,6 +124,11 @@ Ett antal personer har omhändertagits enligt lagen om berusade personer men i �
 Polisen Norrbotten"
 14694,2017-01-31,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,True,False,False,86,"Norrbotten, lugnt i länet. Inga akuta händelser att rapportera.","<strong>Uppdaterad klockan 12:00</strong>
 Fortsatt lugnt i länet.
+Polisen Norrbotten"
+14725,2017-01-31,2017,Sammanfattning eftermiddag,Bodens kommun,Boden,False,True,False,416,"Norrbotten, inga akuta händelser att rapportera under eftermiddagen.","Polisen har under eftermiddagen bland annat sysslat med handräckningar av personer som transporterats till ungdomshem och omhändertagit en berusad person enligt LOB, utanför en matvarubutik i Boden.
+Polisen har även ryckt ut för att kontrollera uppgifter om personer som kört vingligt eller gjort vårdslösa omkörningar samt till personer som misstänks vilja skada sig själva på olika sätt.
+ 
+ 
 Polisen Norrbotten"
 14778,2017-02-01,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,Lugn natt i länet,Polisen Norrbotten
 15058,2017-02-02,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,Lugn start på dagen i länet.,Polisen Norrbotten
@@ -246,8 +243,6 @@ Polisen Norrbotten"
 Polisen Norrbotten"
 32415,2017-06-18,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,Sammanfattnig av nattens händelser i polisområde Norrbotten.,Polisen Norrbotten
 32716,2017-06-21,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,En förmiddag utan akuta händelser att rapportera om,Polisen Norrbotten
-32744,2017-06-21,2017,Sammanfattning dag,"Norrbotten, okänd kommun",,False,False,True,129,"En fortsatt bra dag, inga akuta händelser att rapportera om","Några snatterier, fylleri, kontroll person/fordon och utredningsarbeten/avrapporteringar ryms i dagens skörd.
-Polisen Norrbotten"
 32993,2017-06-23,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,Midsommaraftonsnattens händelser ur polisiär synvinkel i polisområde Norrbotten.,Polisen Norrbotten
 33271,2017-06-26,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,63,Sammanfattning för natten.,"Löpande rapportering av händelser  i urval.
 Polisen Norrbotten"
@@ -255,17 +250,19 @@ Polisen Norrbotten"
 
 Arbetet med att hitta den fiskare som försvunnit i Torne älv har fortsatt under dagen. Arbetet leds och hanteras av PO Norrbotten. Eventuella frågor om arbetet hänvisas dit. Regionledningscentralen är ej inblandad i söket och har därför knapphändiga uppgifter kring arbetet.
 Polisen Norrbotten"
-33544,2017-06-29,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,"Lugnt i länet, inga akuta händelser.",Polisen Norrbotten
-33738,2017-07-01,2017,Sammanfattning natt,Kiruna kommun,Kiruna,True,True,True,639,Sammanfattning natt,"Sammanfattning natt fram till klockan 02:45.
+33516,2017-06-29,2017,Sammanfattning natt,Bodens kommun,Boden,True,True,True,302,Sammanfattning,"Sammanfattning natt fram till klockan 04.00.
  
-Ett flertal personer har omhändertagits pga berusning på flera olika orter i länet under natten.
+En person som framförde en A-traktor i centrala Boden stoppades strax efter midnatt och föraren rapporterades för olovlig körning.
  
-Kirunafestivalen:
-Gällande festivalen i Kiruna så har det även där omhändertagits ett flertal personer pga berusning inne på området.
-En anmälan gällande brott mot knivlagen har också upprättats inne på området i samband med att en person omhändertogs.
-Två anmälningar gällande sexuellt ofredande är också upprättade inne på området. I båda fallen är det kvinnor som blivit utsatta. Ingen ytterligare information kan lämnas gällande dessa i anmälningar i nuläget.
- 
+Ett par personer har omhändertagits pga berusning i länet men i övrigt har det varit en lugn natt.
 Polisen Norrbotten"
+33517,2017-06-29,2017,Sammanfattning natt,Bodens kommun,Boden,True,True,True,287,Sammanfattning natt,"Sammanfattning natt fram till klockan 04.00
+ 
+En person stoppades i en A-traktor i centrala Boden strax efter midnatt. Föraren är rapporterad för olovlig körning.
+ 
+Ett par personer har omhändertagits pga berusning i länet men i övrigt har det varit en lugn natt.
+Polisen Norrbotten"
+33544,2017-06-29,2017,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,18,"Lugnt i länet, inga akuta händelser.",Polisen Norrbotten
 34015,2017-07-03,2017,Sammanfattning eftermiddag,"Norrbotten, okänd kommun",,False,False,False,18,"Mediafunktionen obemannad, dessa samtal besvaras i mån av tid",Polisen Norrbotten
 34564,2017-07-09,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,18,Nattens händelser i Norrbotten.,Polisen Norrbotten
 34649,2017-07-09,2017,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,108,Sammanfattning för natten,"Än så länge är det lugnt i Norrbotten. Sammanfattningen fylls på med händelser eftersom.
@@ -596,6 +593,9 @@ Polisen Norrbotten"
 107975,2019-02-19,2019,Sammanfattning natt,"Norrbotten, okänd kommun",,True,False,False,61,Sammanfattning av nattens händelser i länet,"<p>Kl 05:00 - Lugnt i länet, ingenting att rapportera om.</p>"
 108499,2019-02-22,2019,Sammanfattning eftermiddag,"Norrbotten, okänd kommun",,False,False,False,3,"Få händelser i länet, inget att rapportera.",nan
 108646,2019-02-23,2019,Sammanfattning kväll och natt,"Norrbotten, okänd kommun",,True,False,False,47,Natten och kvällen från 17:00 i Norrbotten,<p>Fortfarande lungt i Norrbotten vid 20:15</p>
+109274,2019-02-28,2019,Sammanfattning natt,Haparanda kommun,Haparanda,False,True,True,404,Ett urval av nattens polisverksamhet.,"<p>Det har varit en natt med låg arbetsbelastning. Två personer har omhändertagits för fylleri. Polisen har även utfört ett antal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
+<p>Här följer ett urval av nattens händelser:</p>
+<p>En anmälan om olaga intrång/hemfridsbrott har upprättats sedan en person tagit sig in i en fastighet i Haparanda och somnat i farstun.</p>"
 109938,2019-03-05,2019,Sammanfattning natt,"Norrbotten, okänd kommun",,True,True,True,651,Norrbotten,"<p>En mycket lugn natt i hela Norrbottens län. Inget att rapportera.</p>
 <p><strong>Uppdatering 07:00</strong> (av kommunikatör Liv Fahlén)<br /> Polisen har under natten utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke. En bilist i Gällivare har fått en ordningsbot för att ej ha använt körriktningsvisare (blinkers).</p>
 <p>I Kiruna har polisen upprättat två anmälningar. En för brott mot kommunala trafikförordningar, då en bil stod på tomgång.</p>
@@ -645,7 +645,6 @@ Polisen Norrbotten"
 <p>Samma goda stämning rådde inne på PDOL-området med lika glada besökare. Där blev det tre LOB, tre anmälningar om misshandel, en anmälan om sexuellt ofredande, två förverkande av alkohol samt ett avlägsnande. Socialtjänsten har varit i tjänst under kvällen men de blev sysslolösa då inga ungdomar omhändertogs. </p>
 <p>Poliserna som jobbat med kommenderingen är mycket nöjda med ordningsvakternas arbete och den samverkan som skett mellan ordningsvakter och polis på de bägge tillställningarna som varit under kvällen.</p>
 <p>Kustbevakningen låter hälsa att de legat i Pitsundet och kontrollerat båttrafiken. Två ordningsbot för överskriden hastighet och 12 nykterhetskontroller, samtliga utan anmärkning. De meddelar att det varit mycket båtar i rörelse.</p>"
-128868,2019-08-11,2019,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,335,Ett urval av nattens polisverksamhet.,"<p>Det har varit en natt med normal arbetsbelastning. Tre personer har omhändertagits för fylleri och en person har medtagits för provtagning efter misstanke om narkotikabrott. Polisen har även utfört ett flertal kontroller av personer och fordon som i ett fall resulterade i att två personer misstänks för narkotikabrott, innehav.</p>"
 129031,2019-08-13,2019,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,164,Ett urval av nattens polisverksamhet.,<p>Det har varit en natt med låg arbetsbelastning. Polisen har utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 129273,2019-08-15,2019,Sammanfattning förmiddag,"Norrbotten, okänd kommun",,False,False,False,3,En morgon utan akuta händelser i länet.,nan
 130100,2019-08-21,2019,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,185,Sammanfattning av nattens händelser i länet.,"<p><strong>Natten i Norrbotten har börjat lugnt, Notisen kommer uppdateras under natten.</strong></p>
@@ -664,8 +663,6 @@ Polisen Norrbotten"
 <p>I övrigt finns inga ärenden att rapportera om.</p>"
 150498,2020-02-11,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,38,Sammanfattning,<p>En lugn natt i Norrbottens län.</p>
 150621,2020-02-12,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,28,Lugn natt,<p>Inget att rapportera.</p>
-151418,2020-02-19,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,324,Ett urval av nattens polisverksamhet.,"<p>Det har varit en natt med låg arbetsbelastning. En person har medtagits för provtagning efter misstanke om narkotikabrott. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke. </p>
-<p>Två vilolyckor utan personskador har anmälts till polisen under natten.</p>"
 153463,2020-03-09,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,97,Nattens polisverksamhet i Norrbottens län.,<p>Det har varit en lugn natt i Norrbottens län. Det finns inga händelser att rapportera om. </p>
 153948,2020-03-13,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,179,Ett urval av nattens polisverksamhet.,"<p>Klockan 22-07, det har varit en natt med låg arbetsbelastning. Polisen har utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>"
 154126,2020-03-14,2020,Sammanfattning kväll,"Norrbotten, okänd kommun",,True,False,False,70,Ett urval av kvällens händelser.,<p><strong>18:30 Lugnt i länet<br /></strong>Inget att rapportera.</p>
@@ -694,7 +691,9 @@ Polisen Norrbotten"
 <p>På grund av hög arbetsbelastning hänvisas all media till kommunikationsansvarig för sammanfattning på morgonen efter klockan 07:00.</p>"
 167282,2020-07-23,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,63,Natten i Norrbotten,<p>Natten har börjat med ett väldans lugn och fortsätter så</p>
 167786,2020-07-28,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,True,False,False,70,Ett urval av nattens händelser.,<p><strong>01:30 Lugnt i länet<br /></strong>Inget att rapportera.</p>
-168465,2020-08-05,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,247,Ett urval av nattens polisverksamhet.,<p>Det har varit en natt med normal arbetsbelastning. En person har medtagits för provtagning efter misstanke om narkotikabrott. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
+170213,2020-08-21,2020,Sammanfattning natt,Gällivare kommun,Gällivare,False,True,True,312,Nattens polisverksamhet klockan 00-07.,"<p>Sedan midnatt har en person i Norrbotten, i Gällivare, omhändertagits enligt LOB, lagen om omhändertagande av berusade personer.</p>
+<p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
+<p>I övrigt finns inga ärenden att rapportera om. </p>"
 171208,2020-08-31,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,Inget att rapportera,nan
 172102,2020-09-07,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,True,False,False,70,Ett urval av nattens händelser.,<p><strong>01:00 Lugnt i länet<br /></strong>Inget att rapportera.</p>
 172487,2020-09-11,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,,nan
@@ -702,8 +701,6 @@ Polisen Norrbotten"
 173684,2020-09-22,2020,Sammanfattning kväll,"Norrbotten, okänd kommun",,True,False,False,141,Ett urval av kvällens händelser.,"<p><strong>18:00 Lugnt i länet<br /></strong>Inget att rapportera.</p>
 <p><strong>20:00 Lugnt i länet</strong><br />Inget att rapportera.</p>"
 173835,2020-09-24,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,113,Ett urval av nattens polisverksamhet 00:00–07:00.,<p>Det har varit en natt med låg arbetsbelastning i Norrbottens län. Det finns inga händelser att rapportera.</p>
-175333,2020-10-09,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,259,Ett urval av nattens polisverksamhet 00:00–07:00.,"<p>Det har varit en natt med låg arbetsbelastning i länet. En person har medtagits för provtagning efter misstanke om narkotikabrott.</p>
-<p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>"
 176607,2020-10-21,2020,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,73,Lugn natt,<p>Förrutom de redovisade ärenden som inkommit har natten varit lugn.</p>
 178452,2020-11-05,2020,Sammanfattning kväll och natt,"Norrbotten, okänd kommun",,False,True,True,873,Två misshandelsfall i Norrbotten under kvällen.,"<p>20 tiden samhälle utanför Överkalix. Pågående bråk.</p>
 <p>När patrullen är på plats på adressen  visar det sig att det  två personer som   har bråkat. En man och en kvinna.  Mannen grips misstänkt för misshandel. .</p>
@@ -780,7 +777,6 @@ Polisen Norrbotten"
 192101,2021-03-17,2021,Sammanfattning natt,"Norrbotten, okänd kommun",,True,False,False,144,Ett urval av nattens händelser,"<p><strong>04:00 Lugnt i länet<br /></strong>Inget att rapportera.</p>
 <p>Sammanfattningsvis har det varit en natt med låg arbetsbelastning.</p>"
 194554,2021-04-12,2021,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,152,Ett urval av nattens polisverksamhet.,<p>Det har varit en natt med låg arbetsbelastning. Polisen har utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-194721,2021-04-13,2021,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,272,Ett urval av nattens polisverksamhet.,<p>Det har varit en natt med relativt låg arbetsbelastning. En person har omhändertagits med stöd av lagen om omhändertagande av berusade personer (LOB). Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 194948,2021-04-15,2021,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,104,Nattens polisverksamhet i Norrbottens län.,<p>Det har varit en natt med få ärenden i Norrbottens län. Det finns inga ärenden att rapportera om.</p>
 195139,2021-04-17,2021,Sammanfattning natt,"Norrbotten, okänd kommun",,True,False,False,276,Ett urval av nattens händelser,"<p><strong>03:30 Lugnt i länet<br /></strong>Inget att rapportera</p>
 
@@ -869,15 +865,6 @@ Polisen Norrbotten"
 244305,2022-09-06,2022,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,29,Lugn natt,<p>Inget att rapportera. </p>
 244745,2022-09-11,2022,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,352,"Norrbotten, ett urval av nattens polisverksamhet","<p>Efter midnatt, fem personer har omhändertagits för fylleri och en har fått medfölja för provtagning efter misstanke om narkotikabrott. Polisen har även kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke. En förare har dock fått böter på grund av att han vid omkörning ""ej lämnat betryggande avstånd i sidled"".</p>"
 244961,2022-09-14,2022,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,104,Ett urval av nattens polisverksamhet.,<p>Polisen har utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-245215,2022-09-16,2022,Sammanfattning kväll,"Norrbotten, okänd kommun",,False,True,True,798,"Norrbotten, ett urval av trafikrelaterade ärenden som polisen hanterat","<p>BODEN</p>
-<p>Under kvällen kontrollerades trafiken på riksväg 97 i Vittjärv. Två förare fick böter på grund av hastighetsöverträdelser.</p>
-<p>LULEÅ</p>
-<p>En trafikkontroll hölls vid Bergnäset under kvällen. Alla trafikanter passerade utan några anmärkningar.</p>
-<p>En bilist fick samtidigt böter på grund av trafikbrott på E4 vid Notviken.</p>
-<p>Vid 19-tiden inkom larm gällande en trafikolycka vid Storheden. En mopedist hade kört in i ett räcke. Föraren misstänks för grovt rattfylleri. Han fördes med ambulans till sjukhus.</p>
-<p>ÖVERTORNEÅ</p>
-<p>Under kvällen kolliderade en bilist med en älg på riksväg 99 i Valkeakoski. Ingen person skadades i olyckan. Oklart hur det gick för älgen, den lämnade platsen.</p>
-<p>En eftersöksjägare kallades ut för att spåra och kontrollera älgen.</p>"
 245524,2022-09-21,2022,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,173,Ett urval av nattens polisverksamhet 22:00–07:00.,"<p>Polisen har under natten utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>I övrigt finns inga händelser att rapportera om.</p>"
 246107,2022-09-28,2022,Sammanfattning natt,Gällivare kommun,Gällivare,False,False,False,3,,nan
@@ -906,9 +893,6 @@ Polisen Norrbotten"
 267790,2023-06-23,2023,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,217,Ett urval av nattens polisverksamhet 22:00-07:00.,"<p>Två personer har omhändertagits för fylleri.</p>
 <p>Polisen har även utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>I övrigt finns inga händelser att rapportera om.</p>"
-268230,2023-06-30,2023,Sammanfattning kväll och natt,Kiruna kommun,Kiruna,False,False,True,613,"Kiruna, en summering av polisens arbete i samband med Kirunafestivalen","<p>Polisen har under kvällen och natten arbetat med god synlighet och kommunikation med festivalbesökarna. </p>
-<p>Några personer har avvisats och avlägsnats med stöd av polislagen 13§ innan större incidenter hunnit uppstå. En person har omhändertagits med stöd av LOB, lagen om omhändertagande av berusade personer och polisen har även direktförverkat en del alkohol. Efter stängning har polisen arbetat med hög synlighet längs de stråk som besökarna färdats.</p>
-<p>Stämningen har varit god under kvällen och natten. Ett stort tack riktas till ordningsvakter, arrangörer och socialtjänst för gott samarbete.</p>"
 268364,2023-07-03,2023,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,"Norrbotten, inga händelser att rapportera om",nan
 269631,2023-07-24,2023,Sammanfattning natt,Bodens kommun,Boden,False,True,False,255,Ett urval av nattens polisverksamhet,"<p>Polisen har utfört kontroller av personer och fordon på flera platser i länet.</p>
 <p>I Boden kontrollerades ett 20 tal personer för nykterhet där alla var nyktra.<br />Tre personer fick böter på grund av hög hastighet och ett körkort omhändertogs.</p>"
@@ -933,13 +917,13 @@ Polisen Norrbotten"
 286864,2024-04-02,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,114,Ett urval av nattens polisverksamhet.,<p>Polisen har utfört ett antal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 287098,2024-04-05,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,160,Ett urval av nattens polisverksamhet 22.00-07.00.,"<p>Polisen har utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>I övrigt finns inga händelser att rapportera om.</p>"
-287451,2024-04-10,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,346,"Norrbotten, ett urval av nattens polisverksamhet","<p>Under natten har polisen hanterat ett ärende kopplat till psykisk ohälsa, där en person är förd till vården. I samband med detta grips också personen, misstänkt för vapenbrott då vapenliknande föremål anträffades på adressen.</p>
-<p>Polisen har även kontrollerat ett antal personer och fordon som inte resulterat i några brottsmisstankar. </p>"
 287501,2024-04-11,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,106,"Norrbotten, ett urval av nattens polisverksamhet",<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 289807,2024-05-15,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,106,"Norrbotten, ett urval av nattens polisverksamhet",<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 290237,2024-05-21,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,"Norrbotten, inga händelser att rapportera om",nan
 291858,2024-06-12,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,"Norrbotten, inga händelser att rapportera om.",nan
 292357,2024-06-18,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,167,Ett urval av polisens arbete klockan 22:00-07:00,<p>Polisen har utfört kontroller av ett antal personer och fordon som inte har resulterat i någon brottsmisstanke. I övrigt finns inga händelser att rapportera om.</p>
+293474,2024-07-05,2024,Sammanfattning natt,Bodens kommun,Boden,False,True,True,199,Ett urval av nattens polisverksamhet i Norrbottens län.,"<p>Under natten har en person, en man i Boden, omhändertagits enligt LOB, lagen om omhändertagande av berusade personer.</p>
+<p>I övrigt finns inga ärenden att rapportera om från natten i länet. </p>"
 294534,2024-07-23,2024,Sammanfattning natt,Arvidsjaurs kommun,Arvidsjaur,False,True,False,308,"Norrbotten, ett urval av nattens polisverksamhet","<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Under tidig morgon anmälde en bilförare att han kolliderat med en ren på riksväg 95 söder om Abborrträsk, Arvidsjaur. Inga personskador, renen lämnade platsen. Samebyn informerades om händelsen.</p>"
 297295,2024-09-04,2024,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,167,Ett urval av polisens arbete klockan 22:00 – 07:00,<p>Polisen har utfört kontroller av ett antal personer och fordon som inte har resulterat i någon brottsmisstanke. I övrigt finns inga händelser att rapportera om.</p>
@@ -968,7 +952,6 @@ Polisen Norrbotten"
 308243,2025-02-06,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,61,Nattens polisverksamhet i Norrbottens län.,<p>Det finns inga ärenden att rapportera om från natten. </p>
 308847,2025-02-14,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,162,Ett urval av polisens arbete under natten.,<p>Polisen har utfört kontroller av ett antal personer och fordon som inte har resulterat i någon brottsmisstanke. I övrigt finns inga ärenden att rapportera.</p>
 309292,2025-02-20,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,106,"Norrbotten, ett urval av nattens polisverksamhet",<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
-311802,2025-03-27,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,True,190,"Norrbotten, ett urval av nattens polisverksamhet",<p>En person har fått medfölja för provtagning efter misstanke om narkotikabrott. Polisen har även kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 312609,2025-04-07,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,162,Ett urval av polisens arbete klockan 22:00 – 07:00.,<p>Polisen har utfört ett antal kontroller av personer och fordon som inte har resulterat i någon brottsmisstanke. I övrigt finns inga ärenden att rapportera.</p>
 312693,2025-04-08,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,162,Ett urval av polisens arbete klockan 22:00 – 07:00.,<p>Polisen har utfört ett antal kontroller av personer och fordon som inte har resulterat i någon brottsmisstanke. I övrigt finns inga ärenden att rapportera.</p>
 315078,2025-05-12,2025,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,104,Det finns inga händelser att rapportera om.,<p>Polisen har utfört kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
@@ -1002,21 +985,6 @@ Polisen Norrbotten"
 499665,2026-04-06,2026,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,Inga ärenden att rapportera om från natten.,nan
 501577,2026-05-05,2026,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,"Norrbotten, inga händelser att rapportera om",nan
 504360,2026-06-16,2026,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,Inga ärenden att rapportera om från natten.,nan
-506440,2026-07-20,2026,Sammanfattning helg,Övertorneå kommun,Övertorneå,False,True,True,2298,"Norrbotten, sammanfattning av polisens arbete under olika evenemang i länet under helgen.","<p>Fredag 17/7 Övertorneå cruising: </p>
-<p>Det var cirka 1300-1400 personer inne på festområdet. Polis hanterade två ärenden gällande våldsamt motstånd, avlägsnade två personer enligt polislag 13 § och avvisade tio personer enligt polislag 13 §. Fem trafikbrott hanterades och en person omhändertogs med stöd av lagen om omhändertagande av berusade personer (LOB) och personen överlämnades till annans omsorg i hemmet. Polis arbetade även med två sjukvårdsärenden, de hanterades av polis initialt.</p>
-<p>Lördag 18/7 Övertorneå cruising</p>
-<p>Det var cirka 700-800 personer inne på festområdet. Polis hanterade ett ärende gällande misshandel och tre ärenden gällande trafikbrott. Tre personer avvisades eller avlägsnades med stöd av polislag 13 § och två personer omhändertogs med stöd av lagen om omhändertagande av berusade personer (LOB). De två sistnämnda kunde överlämnas till annans omsorg i hemmet. De poliser som arbetade under helgen bedömer lördagen som en lugnare kväll överlag i jämförelse med fredagen.</p>
-
-<p>Fredag 17/7 Överkalix marknad</p>
-<p>Polis hanterade ett ärende gällande misshandel, ett gällande olaga hot och ett gällande ett misstänkt rattfylleri, samt några direktförverkande av alkohol.</p>
-<p>Lördag 18/7 Överkalix marknad</p>
-<p>Polis hanterade ett ärende gällande misshandel, tre trafikbrott och en trafikolycka.</p>
-
-<p>Fredag 17/7 Kalix sommarkalas</p>
-<p>Polis omhändertog tre personer med stöd av lagen om omhändertagande av berusade personer (LOB) och överlämnade en alkoholpåverkad minderårig till vårdnadshavare. En person blev avlägsnad enligt polislag 13 §. Det hanterades ett ärende gällande ringa narkotikabrott innehav och ett gällande ringa narkotikabrott eget bruk samt några direktförverkande av alkohol</p>
-<p>Lördag 18/7 Kalix sommarkalas</p>
-<p>Polis hanterade ett ärende gällande misshandel, en minderårig person omhändertogs med stöd av lagen om omhändertagande av berusade personer (LOB) och överlämnades till vårdnadshavare, en person avlägsnades enligt polislag 13 §, samt några direktförverkande av alkohol. (Ett antal personer avvisades av ordningsvakter.)</p>
-<p>Polis som arbetade under Kalix sommarkalas uppger att det var många besökare, cirka 1000 per kväll, och att det överlag var en måttlig berusningsgrad och en god stämning.</p>"
 506815,2026-07-27,2026,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,106,Polisens nattarbete i Norrbotten – ett urval,<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 507427,2026-08-07,2026,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,"Norrbotten, inga händelser att rapportera om",nan
 507821,2026-08-14,2026,Sammanfattning natt,"Norrbotten, okänd kommun",,False,False,False,3,Inga ärenden att rapportera om från natten.,nan

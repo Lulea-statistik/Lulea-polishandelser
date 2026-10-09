@@ -3,16 +3,16 @@ year,month,geography_group,quiet_bucket,event_count
 2016,10,"Norrbotten, okänd kommun",Förmiddag,4
 2016,10,"Norrbotten, okänd kommun",Kväll,1
 2016,10,"Norrbotten, okänd kommun",Natt,2
-2016,11,"Norrbotten, okänd kommun",Eftermiddag,2
-2016,11,"Norrbotten, okänd kommun",Förmiddag,2
+2016,11,"Norrbotten, okänd kommun",Eftermiddag,1
+2016,11,"Norrbotten, okänd kommun",Förmiddag,1
 2016,11,"Norrbotten, okänd kommun",Kväll,1
-2016,11,"Norrbotten, okänd kommun",Natt,5
+2016,11,"Norrbotten, okänd kommun",Natt,4
 2016,12,"Norrbotten, okänd kommun",Dag,1
 2016,12,"Norrbotten, okänd kommun",Eftermiddag,1
 2016,12,"Norrbotten, okänd kommun",Förmiddag,4
 2016,12,"Norrbotten, okänd kommun",Kväll,3
 2016,12,"Norrbotten, okänd kommun",Natt,2
-2017,1,Luleå kommun,Eftermiddag,1
+2017,1,Bodens kommun,Eftermiddag,1
 2017,1,"Norrbotten, okänd kommun",Eftermiddag,1
 2017,1,"Norrbotten, okänd kommun",Förmiddag,8
 2017,1,"Norrbotten, okänd kommun",Kväll,3
@@ -33,7 +33,6 @@ year,month,geography_group,quiet_bucket,event_count
 2017,5,"Norrbotten, okänd kommun",Eftermiddag,1
 2017,5,"Norrbotten, okänd kommun",Förmiddag,6
 2017,5,"Norrbotten, okänd kommun",Natt,1
-2017,6,"Norrbotten, okänd kommun",Dag,1
 2017,6,"Norrbotten, okänd kommun",Förmiddag,5
 2017,6,"Norrbotten, okänd kommun",Natt,2
 2017,7,"Norrbotten, okänd kommun",Dag,2
@@ -130,6 +129,7 @@ year,month,geography_group,quiet_bucket,event_count
 2020,5,"Norrbotten, okänd kommun",Kväll,1
 2020,6,"Norrbotten, okänd kommun",Natt,2
 2020,7,"Norrbotten, okänd kommun",Natt,1
+2020,8,Gällivare kommun,Natt,1
 2020,8,"Norrbotten, okänd kommun",Natt,1
 2020,9,"Norrbotten, okänd kommun",Kväll,2
 2020,9,"Norrbotten, okänd kommun",Natt,2
@@ -167,6 +167,7 @@ year,month,geography_group,quiet_bucket,event_count
 2024,4,"Norrbotten, okänd kommun",Natt,1
 2024,5,"Norrbotten, okänd kommun",Natt,1
 2024,6,"Norrbotten, okänd kommun",Natt,2
+2024,7,Bodens kommun,Natt,1
 2024,9,"Norrbotten, okänd kommun",Natt,3
 2024,10,"Norrbotten, okänd kommun",Natt,3
 2024,11,"Norrbotten, okänd kommun",Natt,4
