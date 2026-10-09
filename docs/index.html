@@ -265,7 +265,7 @@
         </div>
       </div>
       <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
-      <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert, poster som berör flera kommuner i länet samt poster som samtidigt berör Norrbotten och övriga Sverige. Poster som säkert berör två eller fler Norrbottenskommuner redovisas gemensamt som <strong>Flera kommuner i Norrbotten</strong>. <strong>Norrbotten / Övriga Sverige</strong> används när posten tydligt spänner över länsgränsen men inte kan delas upp. <strong>Övriga Sverige</strong> används när kopplingen ligger utanför Norrbotten. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
+      <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert, poster som berör flera kommuner i länet samt poster som samtidigt berör Norrbotten och övriga Sverige. Poster som säkert berör två eller fler Norrbottenskommuner redovisas gemensamt som <strong>Flera kommuner i Norrbotten</strong>. <strong>Norrbotten / Övriga Sverige</strong> används när posten tydligt spänner över länsgränsen men inte kan delas upp. <strong>Övriga Sverige</strong> är exkluderat ur statistik, diagram och nyckeltal eftersom gruppen även innehåller regional administration och historiska metadatafel. Posterna finns kvar i rådata för kvalitetskontroll. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
     </div>
 
     <div class="foot">
@@ -1001,20 +1001,20 @@ Promise.all([
   fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
   .then(([text,summaryText,summaryExtraText,expandedText,quietText])=>{
-    rows=parseCSV(text).map(r=>({
+    rows=parseCSV(text).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({
       ...r,
       event_count:+r.event_count||0,
       type_aggregated:aggregatedType(r.type_original)
     }));
-    expandedRows=parseCSV(expandedText).map(r=>({
+    expandedRows=parseCSV(expandedText).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({
       ...r,
       type_original:r.event_type,
       event_count:+r.event_count||0,
       type_aggregated:aggregatedType(r.event_type)
     }));
-    quietSummaryRows=quietText?parseCSV(quietText).map(r=>({...r,event_count:+r.event_count||0})) : [];
-    summaryRows=summaryText?parseCSV(summaryText).map(r=>({...r,event_count:+r.event_count||0})) : [];
-    summaryExtraRows=summaryExtraText?parseCSV(summaryExtraText).map(r=>({...r,event_count:+r.event_count||0})) : summaryRows;
+    quietSummaryRows=quietText?parseCSV(quietText).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({...r,event_count:+r.event_count||0})) : [];
+    summaryRows=summaryText?parseCSV(summaryText).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({...r,event_count:+r.event_count||0})) : [];
+    summaryExtraRows=summaryExtraText?parseCSV(summaryExtraText).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({...r,event_count:+r.event_count||0})) : summaryRows;
     if(!rows.length) throw new Error('Ingen data');
     const geos=[...new Set(rows.map(x=>x.geography_group).filter(Boolean))].sort();
     const years=[...new Set(rows.map(x=>x.year).filter(Boolean))].sort((a,b)=>+a-+b);
