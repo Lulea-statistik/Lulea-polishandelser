@@ -271,7 +271,9 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     unique_hits = sorted(set(hits))
     if len(unique_hits) == 1:
         return unique_hits[0], "municipality_name"
-    if len(unique_hits) > 1:
+    if len(unique_hits) == 2:
+        return "", "municipality_pair:" + "|".join(unique_hits)
+    if len(unique_hits) > 2:
         return "", "ambiguous_municipality_names"
 
     place = infer_lulea_place(title_location, location_string)
@@ -312,7 +314,17 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
         return "", "multi_location_ambiguous"
 
     loc_cf = (location_string or "").casefold()
-    if "västerbottens län" in loc_cf or re.search(r"(?<![a-zåäö])västerbotten(?![a-zåäö])", loc_cf):
+    outside_county_terms = (
+        "västerbotten", "västerbottens län",
+        "västernorrland", "västernorrlands län",
+        "jämtland", "jämtlands län",
+        "gävleborg", "gävleborgs län",
+        "dalarna", "dalarnas län",
+    )
+    if any(
+        re.search(r"(?<![a-zåäö])" + re.escape(term) + r"(?![a-zåäö])", loc_cf)
+        for term in outside_county_terms
+    ):
         return "", "cross_county_ambiguous"
 
     inferred, inferred_place = infer_norrbotten_place(" ".join([title_location or "", location_string or ""]))
@@ -343,8 +355,15 @@ def geography_group(
         return "Övriga Sverige"
     if title_cf in OTHER_SWEDISH_MUNICIPALITY_TITLES:
         return "Övriga Sverige"
+    if source.startswith("municipality_pair:"):
+        pair = source.split(":", 1)[1].split("|")
+        labels = [MUNICIPALITY_GROUP_LABELS.get(m, m) for m in pair if m]
+        if len(labels) == 2:
+            return " / ".join(sorted(labels))
     if area_cf == "norrbottens län" and source == "ambiguous_municipality_names":
         return "Flera kommuner i Norrbotten"
+    if area_cf == "norrbottens län" and source == "cross_county_ambiguous":
+        return "Norrbotten / Övriga Sverige"
     if area_cf == "norrbottens län":
         return "Norrbotten, okänd kommun"
     if area_cf in SWEDISH_COUNTIES:
