@@ -1,0 +1,8 @@
+event_id,review_decision,reason
+47066,retain_incident,Active investigation at Gallivare airport
+55591,retain_multi_incident,New Year report contains several police actions and must not count as administrative
+58883,retain_incident,Investigation of suspected purchase of sexual services in Lulea
+70807,retain_multi_incident,Several arrests and reported offences during First of May in Boden
+118479,review_planned_exercise,Police exercise not an emergency incident and needs distinct classification
+169978,retain_incident,Response to drowning incident in Haparanda
+185507,retain_incident,Search for missing persons and assault report in Kalix
