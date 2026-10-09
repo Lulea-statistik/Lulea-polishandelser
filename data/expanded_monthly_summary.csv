@@ -14044,6 +14044,7 @@ year,month,geography_group,event_type,event_count
 2026,6,Bodens kommun,Trafikolycka,1
 2026,6,Bodens kommun,"Trafikolycka,  vilt",1
 2026,6,Bodens kommun,"Trafikolycka, vilt",1
+2026,6,Flera kommuner i Norrbotten,Trafikkontroll,12
 2026,6,Gällivare kommun,Brand,3
 2026,6,Gällivare kommun,Övrigt/oklassificerad,2
 2026,6,Gällivare kommun,Misshandel,1
@@ -14109,7 +14110,7 @@ year,month,geography_group,event_type,event_count
 2026,6,Luleå kommun,Sexualbrott,1
 2026,6,Luleå kommun,Trafikbrott,1
 2026,6,Luleå kommun,Upphittat föremål,1
-2026,6,"Norrbotten, okänd kommun",Trafikkontroll,27
+2026,6,"Norrbotten, okänd kommun",Trafikkontroll,15
 2026,6,"Norrbotten, okänd kommun","Trafikolycka, vilt",2
 2026,6,"Norrbotten, okänd kommun",Misshandel,1
 2026,6,Pajala kommun,Arbetsplatsolycka,1
@@ -14144,6 +14145,7 @@ year,month,geography_group,event_type,event_count
 2026,7,Bodens kommun,Brand,1
 2026,7,Bodens kommun,Inbrott,1
 2026,7,Bodens kommun,"Trafikolycka,  vilt",1
+2026,7,Flera kommuner i Norrbotten,Trafikkontroll,17
 2026,7,Gällivare kommun,Trafikkontroll,3
 2026,7,Gällivare kommun,"Trafikolycka, vilt",2
 2026,7,Gällivare kommun,Arbetsplatsolycka,1
@@ -14203,7 +14205,6 @@ year,month,geography_group,event_type,event_count
 2026,7,Luleå kommun,Rattfylleri,1
 2026,7,Luleå kommun,"Trafikolycka,  vilt",1
 2026,7,Luleå kommun,Uppdatering,1
-2026,7,"Norrbotten, okänd kommun",Trafikkontroll,17
 2026,7,"Norrbotten, okänd kommun",Misshandel,2
 2026,7,"Norrbotten, okänd kommun",Bedrägeri,1
 2026,7,"Norrbotten, okänd kommun","Sammanfattning, ej uppdelad",1
@@ -14249,6 +14250,9 @@ year,month,geography_group,event_type,event_count
 2026,8,Bodens kommun,Fylleri/LOB,1
 2026,8,Bodens kommun,Olovlig körning,1
 2026,8,Bodens kommun,Stöld,1
+2026,8,Flera kommuner i Norrbotten,Trafikkontroll,19
+2026,8,Flera kommuner i Norrbotten,Trafikbrott,1
+2026,8,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",1
 2026,8,Gällivare kommun,Fjällräddning,3
 2026,8,Gällivare kommun,Narkotikabrott,2
 2026,8,Gällivare kommun,Skadegörelse,1
@@ -14301,11 +14305,9 @@ year,month,geography_group,event_type,event_count
 2026,8,Luleå kommun,Olovlig körning,1
 2026,8,Luleå kommun,Stöld/inbrott,1
 2026,8,Luleå kommun,"Trafikolycka, vilt",1
-2026,8,"Norrbotten, okänd kommun",Trafikkontroll,20
 2026,8,"Norrbotten, okänd kommun","Trafikolycka, vilt",5
 2026,8,"Norrbotten, okänd kommun",Misshandel,1
-2026,8,"Norrbotten, okänd kommun",Trafikbrott,1
-2026,8,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
+2026,8,"Norrbotten, okänd kommun",Trafikkontroll,1
 2026,8,Pajala kommun,Trafikbrott,1
 2026,8,Pajala kommun,"Trafikolycka,  vilt",1
 2026,8,Piteå kommun,Trafikolycka,5
@@ -14338,6 +14340,8 @@ year,month,geography_group,event_type,event_count
 2026,9,Bodens kommun,Fylleri/LOB,1
 2026,9,Bodens kommun,Misshandel,1
 2026,9,Bodens kommun,Rattfylleri,1
+2026,9,Flera kommuner i Norrbotten,Trafikkontroll,16
+2026,9,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",1
 2026,9,Gällivare kommun,Trafikolycka,3
 2026,9,Gällivare kommun,Arbetsplatsolycka,1
 2026,9,Gällivare kommun,Fjällräddning,1
@@ -14396,11 +14400,11 @@ year,month,geography_group,event_type,event_count
 2026,9,Luleå kommun,"Trafikolycka,  smitning från",1
 2026,9,Luleå kommun,"Trafikolycka,  vilt",1
 2026,9,Luleå kommun,Övrigt,1
-2026,9,"Norrbotten, okänd kommun",Trafikkontroll,18
 2026,9,"Norrbotten, okänd kommun","Trafikolycka, vilt",17
 2026,9,"Norrbotten, okänd kommun",Misshandel,2
-2026,9,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
+2026,9,"Norrbotten, okänd kommun",Trafikkontroll,2
 2026,9,"Norrbotten, okänd kommun",Fylleri/LOB,1
+2026,9,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
 2026,9,Pajala kommun,Trafikkontroll,1
 2026,9,Pajala kommun,Trafikolycka,1
 2026,9,Pajala kommun,"Trafikolycka,  vilt",1
@@ -14431,6 +14435,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Bodens kommun,Rattfylleri,1
 2026,10,Bodens kommun,Skadegörelse,1
 2026,10,Bodens kommun,Trafikbrott,1
+2026,10,Flera kommuner i Norrbotten,Trafikkontroll,5
 2026,10,Gällivare kommun,Misshandel,2
 2026,10,Gällivare kommun,Brand,1
 2026,10,Gällivare kommun,Trafikkontroll,1
@@ -14453,7 +14458,6 @@ year,month,geography_group,event_type,event_count
 2026,10,Luleå kommun,Olovlig körning,1
 2026,10,Luleå kommun,"Trafikolycka,  vilt",1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
-2026,10,"Norrbotten, okänd kommun",Trafikkontroll,5
 2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",2
 2026,10,Pajala kommun,Rattfylleri,1
 2026,10,Pajala kommun,Trafikolycka,1
