@@ -51,7 +51,7 @@ def main():
                     "error":""})
                 for r in valid:
                     ident=flat(value(r,"identifier","Identifier","id","Id","contentId"))
-                    if ident: selected[ident]=r
+                    if ident and scope=="county": selected[ident]=r
             except Exception as exc:
                 stats.append({"days":days,"scope":scope,"status":"error","returned":0,"fields":"",
                     "error":str(exc)[:350]})
@@ -62,6 +62,8 @@ def main():
     with (DATA/"krisinformation_norrbotten_candidate.csv").open("w",encoding="utf-8",newline="") as f:
         w=csv.DictWriter(f,fieldnames=FIELDS);w.writeheader()
         for ident,r in sorted(selected.items()):
+            area=flat(value(r,"area","Area","Areas","areas")).casefold()
+            if "norrbotten" not in area: continue
             w.writerow({"article_id":ident,
                 "title":flat(value(r,"headline","Headline","Title","title")),
                 "published_at":flat(value(r,"published","Published","PublishedAt","publishedAt","Date","date")),
