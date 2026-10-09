@@ -224,13 +224,36 @@ def infer_municipality_detail(municipality: str, title_location: str, location_s
     unique_hits = sorted(set(hits))
     if len(unique_hits) == 1:
         return unique_hits[0], "municipality_name"
+    if len(unique_hits) > 1:
+        return "", "ambiguous_municipality_names"
 
     place = infer_lulea_place(title_location, location_string)
     if place:
         return "Luleå", "lulea_place_name"
 
+    # Ortreferensen är en konservativ fallback. Den används inte när
+    # title_location pekar ut en annan, icke-generisk plats som inte själv
+    # kan kopplas till samma Norrbottenskommun.
+    generic_titles = {"", "norrbotten", "norrbottens län", "norrbottens lan"}
+    title_norm = _ascii_fold(title_location or "").strip()
+    title_inferred = ""
+    if title_norm not in generic_titles:
+        title_inferred, _ = infer_norrbotten_place(title_location)
+        if not title_inferred:
+            return "", "title_location_conflict"
+
+    # Långa platslistor är ofta länssammanställningar/kontroller som berör
+    # flera orter. Hellre okänd kommun än falsk precision.
+    parts = [p.strip() for p in (location_string or "").split(",") if p.strip()]
+    if len(parts) > 5:
+        return "", "multi_location_ambiguous"
+
+    loc_cf = (location_string or "").casefold()
+    if "västerbottens län" in loc_cf or re.search(r"(?<![a-zåäö])västerbotten(?![a-zåäö])", loc_cf):
+        return "", "cross_county_ambiguous"
+
     inferred, inferred_place = infer_norrbotten_place(" ".join([title_location or "", location_string or ""]))
-    if inferred:
+    if inferred and (not title_inferred or title_inferred == inferred):
         return inferred, "place_dictionary"
 
     return "", "unknown"
