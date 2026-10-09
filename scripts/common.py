@@ -310,8 +310,22 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
     all_df = pd.concat([existing, new], ignore_index=True)
     if not all_df.empty:
         all_df = all_df.drop_duplicates(subset=["event_id"], keep="last")
-        # Räkna om geografisk grupp för hela historiken så att äldre rader
-        # också delas upp på enskilda Norrbottenskommuner.
+
+        # Kör om kommuninferensen för historiska rader som fortfarande saknar
+        # kommun. Redan fastställda kommuner (API/kommunnamn/tidigare säkra
+        # regler) lämnas helt orörda.
+        missing_mask = all_df["municipality"].fillna("").astype(str).str.strip().eq("")
+        for idx in all_df.index[missing_mask]:
+            municipality, source = infer_municipality_detail(
+                "",
+                str(all_df.at[idx, "title_location"] or ""),
+                str(all_df.at[idx, "location_string"] or ""),
+            )
+            if municipality:
+                all_df.at[idx, "municipality"] = municipality
+                all_df.at[idx, "municipality_source"] = source
+
+        # Räkna därefter om geografisk grupp för hela historiken.
         all_df["geography_group"] = all_df.apply(
             lambda r: geography_group(
                 str(r.get("municipality", "") or ""),
