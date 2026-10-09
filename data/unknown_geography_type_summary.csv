@@ -1,38 +1,38 @@
 type_original,reason,is_summary_norm,event_count
-Sammanfattning natt,unknown,True,2362
-Trafikkontroll,unknown,False,1251
-Övrigt,unknown,False,820
-"Trafikolycka,  vilt",unknown,False,278
+Sammanfattning natt,unknown,True,2360
+Trafikkontroll,unknown,False,1250
+Övrigt,unknown,False,668
+"Trafikolycka,  vilt",unknown,False,277
 Sammanfattning kväll,unknown,True,131
 Sammanfattning förmiddag,unknown,True,128
 Sammanfattning kväll och natt,unknown,True,92
-Sammanfattning natt,summary_container,True,71
+Sammanfattning natt,summary_container,True,70
 Tillfälligt obemannat,unknown,False,47
 Sammanfattning eftermiddag,unknown,True,43
 Sammanfattning dag,unknown,True,41
 Trafikbrott,unknown,False,26
-Fjällräddning,unknown,False,16
-Bedrägeri,unknown,False,14
-Trafikolycka,unknown,False,13
+Bedrägeri,unknown,False,13
+Fjällräddning,unknown,False,13
+Trafikolycka,unknown,False,12
 Rattfylleri,unknown,False,12
 Stöld,unknown,False,11
-Inbrott,unknown,False,10
-Stöld/inbrott,unknown,False,8
+Stöld/inbrott,unknown,False,7
 Trafikhinder,unknown,False,5
-Försvunnen person,unknown,False,5
 Brand,unknown,False,5
+Inbrott,unknown,False,5
+Försvunnen person,unknown,False,5
 Uppdatering,unknown,False,3
-Sammanfattning vecka,unknown,True,3
-Skadegörelse,unknown,False,3
 Sammanfattning kväll,summary_container,True,3
+Skadegörelse,unknown,False,3
 Misshandel,unknown,False,3
+Fylleri/LOB,unknown,False,2
 Arbetsplatsolycka,unknown,False,2
 Kontroll person/fordon,unknown,False,2
 "Trafikolycka,  singel",unknown,False,2
 Sammanfattning dygn,unknown,True,2
-Sammanfattning helg,unknown,True,2
 Sammanfattning kväll och natt,summary_container,True,2
-Fylleri/LOB,unknown,False,2
+Sammanfattning vecka,unknown,True,2
+Sammanfattning helg,unknown,True,2
 Olovlig körning,unknown,False,1
 Häleri,unknown,False,1
 Bombhot,unknown,False,1

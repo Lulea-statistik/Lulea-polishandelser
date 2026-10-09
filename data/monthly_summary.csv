@@ -1437,9 +1437,9 @@ year,month,geography_group,type_original,event_count
 2017,9,"Norrbotten, okänd kommun",Sammanfattning natt,15
 2017,9,"Norrbotten, okänd kommun","Trafikolycka,  vilt",6
 2017,9,"Norrbotten, okänd kommun",Sammanfattning kväll,5
-2017,9,"Norrbotten, okänd kommun",Övrigt,3
 2017,9,"Norrbotten, okänd kommun",Sammanfattning förmiddag,2
 2017,9,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,2
+2017,9,"Norrbotten, okänd kommun",Övrigt,2
 2017,9,"Norrbotten, okänd kommun",Kontroll person/fordon,1
 2017,9,"Norrbotten, okänd kommun",Sammanfattning dag,1
 2017,9,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,1
@@ -1474,6 +1474,7 @@ year,month,geography_group,type_original,event_count
 2017,9,Övertorneå kommun,Fylleri/LOB,1
 2017,9,Övertorneå kommun,Olaga hot,1
 2017,9,Övertorneå kommun,"Trafikolycka,  personskada",1
+2017,9,Övriga Sverige,Övrigt,1
 2017,10,Arjeplogs kommun,Trafikolycka,1
 2017,10,Arjeplogs kommun,"Trafikolycka,  vilt",1
 2017,10,Arvidsjaurs kommun,Trafikkontroll,2
@@ -2740,7 +2741,7 @@ year,month,geography_group,type_original,event_count
 2018,8,Luleå kommun,Uppdatering,1
 2018,8,Luleå kommun,Övrigt,1
 2018,8,"Norrbotten, okänd kommun",Övrigt,29
-2018,8,"Norrbotten, okänd kommun",Sammanfattning natt,27
+2018,8,"Norrbotten, okänd kommun",Sammanfattning natt,26
 2018,8,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,4
 2018,8,"Norrbotten, okänd kommun",Sammanfattning förmiddag,3
 2018,8,"Norrbotten, okänd kommun",Trafikkontroll,3
@@ -2772,6 +2773,7 @@ year,month,geography_group,type_original,event_count
 2018,8,Övertorneå kommun,"Stöld,  ringa",1
 2018,8,Övertorneå kommun,Trafikbrott,1
 2018,8,Övertorneå kommun,Trafikkontroll,1
+2018,8,Övriga Sverige,Sammanfattning natt,1
 2018,9,Arjeplogs kommun,Trafikkontroll,3
 2018,9,Arvidsjaurs kommun,Trafikkontroll,4
 2018,9,Arvidsjaurs kommun,Brand,1
@@ -2971,7 +2973,7 @@ year,month,geography_group,type_original,event_count
 2018,10,Luleå kommun,Uppdatering,1
 2018,10,Luleå kommun,Vapenlagen,1
 2018,10,Luleå kommun,Övrigt,1
-2018,10,"Norrbotten, okänd kommun",Övrigt,41
+2018,10,"Norrbotten, okänd kommun",Övrigt,30
 2018,10,"Norrbotten, okänd kommun",Sammanfattning natt,23
 2018,10,"Norrbotten, okänd kommun",Sammanfattning förmiddag,2
 2018,10,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,2
@@ -3019,6 +3021,7 @@ year,month,geography_group,type_original,event_count
 2018,10,Övertorneå kommun,"Trafikolycka,  vilt",4
 2018,10,Övertorneå kommun,Brand,1
 2018,10,Övertorneå kommun,Sammanfattning natt,1
+2018,10,Övriga Sverige,Övrigt,11
 2018,11,Arjeplogs kommun,"Trafikolycka,  vilt",1
 2018,11,Arvidsjaurs kommun,"Trafikolycka,  vilt",5
 2018,11,Arvidsjaurs kommun,Trafikkontroll,3
@@ -3114,7 +3117,7 @@ year,month,geography_group,type_original,event_count
 2018,11,Luleå kommun,"Trafikolycka,  singel",1
 2018,11,Luleå kommun,"Trafikolycka,  smitning från",1
 2018,11,Luleå kommun,Våld/hot mot tjänsteman,1
-2018,11,"Norrbotten, okänd kommun",Övrigt,90
+2018,11,"Norrbotten, okänd kommun",Övrigt,34
 2018,11,"Norrbotten, okänd kommun",Sammanfattning natt,23
 2018,11,"Norrbotten, okänd kommun",Sammanfattning kväll,3
 2018,11,"Norrbotten, okänd kommun",Sammanfattning dag,2
@@ -3149,6 +3152,7 @@ year,month,geography_group,type_original,event_count
 2018,11,Övertorneå kommun,Rattfylleri,1
 2018,11,Övertorneå kommun,Stöld,1
 2018,11,Övertorneå kommun,Trafikbrott,1
+2018,11,Övriga Sverige,Övrigt,56
 2018,12,Arjeplogs kommun,"Trafikolycka,  vilt",6
 2018,12,Arjeplogs kommun,Trafikkontroll,2
 2018,12,Arvidsjaurs kommun,"Trafikolycka,  vilt",6
@@ -3233,7 +3237,7 @@ year,month,geography_group,type_original,event_count
 2018,12,Luleå kommun,"Stöld,  försök",1
 2018,12,Luleå kommun,Trafikhinder,1
 2018,12,Luleå kommun,"Trafikolycka,  singel",1
-2018,12,"Norrbotten, okänd kommun",Övrigt,70
+2018,12,"Norrbotten, okänd kommun",Övrigt,31
 2018,12,"Norrbotten, okänd kommun",Sammanfattning natt,24
 2018,12,"Norrbotten, okänd kommun",Trafikkontroll,3
 2018,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
@@ -3268,6 +3272,7 @@ year,month,geography_group,type_original,event_count
 2018,12,Övertorneå kommun,Rattfylleri,2
 2018,12,Övertorneå kommun,Trafikolycka,2
 2018,12,Övertorneå kommun,"Trafikolycka,  vilt",1
+2018,12,Övriga Sverige,Övrigt,39
 2019,1,Arjeplogs kommun,"Trafikolycka,  vilt",2
 2019,1,Arjeplogs kommun,Trafikbrott,1
 2019,1,Arvidsjaurs kommun,Trafikkontroll,5
@@ -3341,7 +3346,7 @@ year,month,geography_group,type_original,event_count
 2019,1,Luleå kommun,Olaga hot,1
 2019,1,Luleå kommun,Rån,1
 2019,1,Luleå kommun,Skadegörelse,1
-2019,1,"Norrbotten, okänd kommun",Övrigt,52
+2019,1,"Norrbotten, okänd kommun",Övrigt,28
 2019,1,"Norrbotten, okänd kommun",Sammanfattning natt,23
 2019,1,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,2
 2019,1,"Norrbotten, okänd kommun",Sammanfattning förmiddag,2
@@ -3377,6 +3382,7 @@ year,month,geography_group,type_original,event_count
 2019,1,Övertorneå kommun,Olaga hot,1
 2019,1,Övertorneå kommun,Rattfylleri,1
 2019,1,Övertorneå kommun,Trafikbrott,1
+2019,1,Övriga Sverige,Övrigt,24
 2019,2,Arjeplogs kommun,Trafikkontroll,3
 2019,2,Arjeplogs kommun,Sammanfattning natt,1
 2019,2,Arjeplogs kommun,Trafikbrott,1
@@ -3463,16 +3469,15 @@ year,month,geography_group,type_original,event_count
 2019,2,Luleå kommun,Trafikhinder,1
 2019,2,Luleå kommun,"Trafikolycka,  smitning från",1
 2019,2,"Norrbotten, okänd kommun",Sammanfattning natt,18
-2019,2,"Norrbotten, okänd kommun",Övrigt,17
-2019,2,"Norrbotten, okänd kommun",Fjällräddning,3
+2019,2,"Norrbotten, okänd kommun",Övrigt,13
 2019,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",3
-2019,2,"Norrbotten, okänd kommun",Trafikolycka,2
 2019,2,"Norrbotten, okänd kommun",Försvunnen person,1
 2019,2,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,1
 2019,2,"Norrbotten, okänd kommun",Sammanfattning förmiddag,1
 2019,2,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,1
 2019,2,"Norrbotten, okänd kommun",Stöld,1
 2019,2,"Norrbotten, okänd kommun",Trafikkontroll,1
+2019,2,"Norrbotten, okänd kommun",Trafikolycka,1
 2019,2,Pajala kommun,"Trafikolycka,  vilt",3
 2019,2,Pajala kommun,Rattfylleri,2
 2019,2,Pajala kommun,Trafikkontroll,2
@@ -3498,6 +3503,9 @@ year,month,geography_group,type_original,event_count
 2019,2,Överkalix kommun,"Trafikolycka,  vilt",1
 2019,2,Övertorneå kommun,Djur,2
 2019,2,Övertorneå kommun,Trafikbrott,1
+2019,2,Övriga Sverige,Övrigt,4
+2019,2,Övriga Sverige,Fjällräddning,3
+2019,2,Övriga Sverige,Trafikolycka,1
 2019,3,Arjeplogs kommun,Trafikkontroll,4
 2019,3,Arjeplogs kommun,Fjällräddning,3
 2019,3,Arjeplogs kommun,Trafikolycka,1
@@ -3832,10 +3840,10 @@ year,month,geography_group,type_original,event_count
 2019,5,Luleå kommun,Övrigt,1
 2019,5,"Norrbotten, okänd kommun",Sammanfattning natt,20
 2019,5,"Norrbotten, okänd kommun",Övrigt,6
-2019,5,"Norrbotten, okänd kommun",Inbrott,2
 2019,5,"Norrbotten, okänd kommun",Sammanfattning förmiddag,2
 2019,5,"Norrbotten, okänd kommun",Sammanfattning kväll,2
 2019,5,"Norrbotten, okänd kommun",Arbetsplatsolycka,1
+2019,5,"Norrbotten, okänd kommun",Inbrott,1
 2019,5,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,1
 2019,5,"Norrbotten, okänd kommun",Trafikbrott,1
 2019,5,"Norrbotten, okänd kommun",Trafikkontroll,1
@@ -3872,6 +3880,7 @@ year,month,geography_group,type_original,event_count
 2019,5,Överkalix kommun,"Trafikolycka,  vilt",1
 2019,5,Övertorneå kommun,Trafikbrott,3
 2019,5,Övertorneå kommun,"Trafikolycka,  vilt",2
+2019,5,Övriga Sverige,Inbrott,1
 2019,6,Arjeplogs kommun,Försvunnen person,3
 2019,6,Arjeplogs kommun,Trafikkontroll,2
 2019,6,Arjeplogs kommun,"Trafikolycka,  vilt",2
@@ -3957,7 +3966,6 @@ year,month,geography_group,type_original,event_count
 2019,6,"Norrbotten, okänd kommun",Sammanfattning kväll,2
 2019,6,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,2
 2019,6,"Norrbotten, okänd kommun",Arbetsplatsolycka,1
-2019,6,"Norrbotten, okänd kommun",Inbrott,1
 2019,6,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,1
 2019,6,"Norrbotten, okänd kommun",Trafikbrott,1
 2019,6,"Norrbotten, okänd kommun","Trafikolycka,  vilt",1
@@ -3976,6 +3984,7 @@ year,month,geography_group,type_original,event_count
 2019,6,Överkalix kommun,Trafikbrott,1
 2019,6,Övertorneå kommun,Brand,1
 2019,6,Övertorneå kommun,Sammanfattning natt,1
+2019,6,Övriga Sverige,Inbrott,1
 2019,7,Arjeplogs kommun,"Trafikolycka,  vilt",3
 2019,7,Arjeplogs kommun,Uppdatering,2
 2019,7,Arjeplogs kommun,Ofredande/förargelse,1
@@ -4049,7 +4058,7 @@ year,month,geography_group,type_original,event_count
 2019,7,Luleå kommun,"Trafikolycka,  personskada",1
 2019,7,Luleå kommun,"Trafikolycka,  singel",1
 2019,7,Luleå kommun,Övrigt,1
-2019,7,"Norrbotten, okänd kommun",Övrigt,24
+2019,7,"Norrbotten, okänd kommun",Övrigt,21
 2019,7,"Norrbotten, okänd kommun",Sammanfattning natt,13
 2019,7,"Norrbotten, okänd kommun",Sammanfattning kväll,3
 2019,7,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,3
@@ -4076,6 +4085,7 @@ year,month,geography_group,type_original,event_count
 2019,7,Överkalix kommun,Stöld/inbrott,1
 2019,7,Övertorneå kommun,Sammanfattning natt,1
 2019,7,Övertorneå kommun,Trafikkontroll,1
+2019,7,Övriga Sverige,Övrigt,3
 2019,8,Arjeplogs kommun,Vapenlagen,1
 2019,8,Arvidsjaurs kommun,Trafikkontroll,4
 2019,8,Arvidsjaurs kommun,"Trafikolycka,  vilt",3
@@ -4159,7 +4169,7 @@ year,month,geography_group,type_original,event_count
 2019,8,Luleå kommun,Skadegörelse,1
 2019,8,Luleå kommun,Trafikhinder,1
 2019,8,"Norrbotten, okänd kommun",Sammanfattning natt,20
-2019,8,"Norrbotten, okänd kommun",Övrigt,11
+2019,8,"Norrbotten, okänd kommun",Övrigt,10
 2019,8,"Norrbotten, okänd kommun",Trafikkontroll,4
 2019,8,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,2
 2019,8,"Norrbotten, okänd kommun",Fjällräddning,1
@@ -4185,6 +4195,7 @@ year,month,geography_group,type_original,event_count
 2019,8,Överkalix kommun,Trafikolycka,1
 2019,8,Överkalix kommun,"Trafikolycka,  vilt",1
 2019,8,Övertorneå kommun,Trafikkontroll,3
+2019,8,Övriga Sverige,Övrigt,1
 2019,9,Arjeplogs kommun,Fjällräddning,2
 2019,9,Arjeplogs kommun,Trafikkontroll,2
 2019,9,Arjeplogs kommun,Trafikbrott,1
@@ -4280,9 +4291,9 @@ year,month,geography_group,type_original,event_count
 2019,9,Luleå kommun,Våldtäkt,1
 2019,9,"Norrbotten, okänd kommun",Sammanfattning natt,18
 2019,9,"Norrbotten, okänd kommun",Övrigt,9
-2019,9,"Norrbotten, okänd kommun",Inbrott,4
 2019,9,"Norrbotten, okänd kommun",Trafikkontroll,4
 2019,9,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,2
+2019,9,"Norrbotten, okänd kommun",Inbrott,1
 2019,9,"Norrbotten, okänd kommun",Sammanfattning dag,1
 2019,9,"Norrbotten, okänd kommun",Trafikbrott,1
 2019,9,Pajala kommun,Trafikkontroll,2
@@ -4308,6 +4319,7 @@ year,month,geography_group,type_original,event_count
 2019,9,Övertorneå kommun,"Trafikolycka,  vilt",2
 2019,9,Övertorneå kommun,Stöld/inbrott,1
 2019,9,Övertorneå kommun,Trafikbrott,1
+2019,9,Övriga Sverige,Inbrott,3
 2019,10,Arjeplogs kommun,Larm Överfall,1
 2019,10,Arjeplogs kommun,Skadegörelse,1
 2019,10,Arjeplogs kommun,Trafikkontroll,1
@@ -4399,8 +4411,8 @@ year,month,geography_group,type_original,event_count
 2019,10,Luleå kommun,"Trafikolycka,  singel",1
 2019,10,Luleå kommun,Vapenlagen,1
 2019,10,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,13
-2019,10,"Norrbotten, okänd kommun",Övrigt,9
 2019,10,"Norrbotten, okänd kommun",Sammanfattning natt,8
+2019,10,"Norrbotten, okänd kommun",Övrigt,8
 2019,10,"Norrbotten, okänd kommun","Trafikolycka,  vilt",3
 2019,10,"Norrbotten, okänd kommun",Sammanfattning dag,1
 2019,10,"Norrbotten, okänd kommun",Sammanfattning förmiddag,1
@@ -4435,6 +4447,7 @@ year,month,geography_group,type_original,event_count
 2019,10,Överkalix kommun,Trafikolycka,1
 2019,10,Övertorneå kommun,"Trafikolycka,  vilt",4
 2019,10,Övertorneå kommun,Rattfylleri,2
+2019,10,Övriga Sverige,Övrigt,1
 2019,11,Arjeplogs kommun,"Trafikolycka,  vilt",2
 2019,11,Arjeplogs kommun,Rattfylleri,1
 2019,11,Arvidsjaurs kommun,Trafikkontroll,5
@@ -4824,8 +4837,8 @@ year,month,geography_group,type_original,event_count
 2020,2,Luleå kommun,Sammanfattning natt,1
 2020,2,Luleå kommun,Skadegörelse,1
 2020,2,"Norrbotten, okänd kommun",Sammanfattning natt,21
-2020,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",7
 2020,2,"Norrbotten, okänd kommun",Övrigt,7
+2020,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",6
 2020,2,"Norrbotten, okänd kommun",Trafikolycka,2
 2020,2,"Norrbotten, okänd kommun",Rattfylleri,1
 2020,2,"Norrbotten, okänd kommun",Trafikbrott,1
@@ -4852,6 +4865,7 @@ year,month,geography_group,type_original,event_count
 2020,2,Övertorneå kommun,Olovlig körning,1
 2020,2,Övertorneå kommun,Trafikolycka,1
 2020,2,Övertorneå kommun,Övrigt,1
+2020,2,Övriga Sverige,"Trafikolycka,  vilt",1
 2020,3,Arjeplogs kommun,Rattfylleri,1
 2020,3,Arjeplogs kommun,Trafikkontroll,1
 2020,3,Arjeplogs kommun,"Trafikolycka,  vilt",1
@@ -5351,7 +5365,7 @@ year,month,geography_group,type_original,event_count
 2020,7,Luleå kommun,"Trafikolycka,  vilt",1
 2020,7,Luleå kommun,Uppdatering,1
 2020,7,"Norrbotten, okänd kommun",Sammanfattning natt,18
-2020,7,"Norrbotten, okänd kommun",Övrigt,10
+2020,7,"Norrbotten, okänd kommun",Övrigt,7
 2020,7,"Norrbotten, okänd kommun",Sammanfattning kväll,2
 2020,7,"Norrbotten, okänd kommun",Trafikkontroll,2
 2020,7,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
@@ -5376,6 +5390,7 @@ year,month,geography_group,type_original,event_count
 2020,7,Överkalix kommun,Trafikkontroll,1
 2020,7,Övertorneå kommun,Trafikbrott,1
 2020,7,Övertorneå kommun,Trafikkontroll,1
+2020,7,Övriga Sverige,Övrigt,3
 2020,8,Arjeplogs kommun,Trafikkontroll,2
 2020,8,Arjeplogs kommun,Stöld/inbrott,1
 2020,8,Arjeplogs kommun,Trafikbrott,1
@@ -5791,14 +5806,13 @@ year,month,geography_group,type_original,event_count
 2020,11,Luleå kommun,"Stöld,  försök",1
 2020,11,Luleå kommun,Trafikhinder,1
 2020,11,Luleå kommun,Våld/hot mot tjänsteman,1
-2020,11,"Norrbotten, okänd kommun",Sammanfattning natt,23
+2020,11,"Norrbotten, okänd kommun",Sammanfattning natt,22
 2020,11,"Norrbotten, okänd kommun",Trafikkontroll,10
 2020,11,"Norrbotten, okänd kommun","Trafikolycka,  vilt",9
 2020,11,"Norrbotten, okänd kommun",Övrigt,8
 2020,11,"Norrbotten, okänd kommun",Sammanfattning kväll,3
 2020,11,"Norrbotten, okänd kommun",Sammanfattning eftermiddag,1
 2020,11,"Norrbotten, okänd kommun",Sammanfattning kväll och natt,1
-2020,11,"Norrbotten, okänd kommun",Sammanfattning vecka,1
 2020,11,"Norrbotten, okänd kommun",Trafikbrott,1
 2020,11,Pajala kommun,"Trafikolycka,  vilt",4
 2020,11,Pajala kommun,Sammanfattning natt,1
@@ -5824,6 +5838,8 @@ year,month,geography_group,type_original,event_count
 2020,11,Överkalix kommun,Brand,1
 2020,11,Överkalix kommun,Rattfylleri,1
 2020,11,Övertorneå kommun,"Trafikolycka,  vilt",3
+2020,11,Övriga Sverige,Sammanfattning natt,1
+2020,11,Övriga Sverige,Sammanfattning vecka,1
 2020,12,Arjeplogs kommun,Brand,1
 2020,12,Arjeplogs kommun,Räddningsinsats,1
 2020,12,Arjeplogs kommun,Trafikkontroll,1
@@ -6089,8 +6105,8 @@ year,month,geography_group,type_original,event_count
 2021,2,Luleå kommun,Vapenlagen,1
 2021,2,Luleå kommun,Våld/hot mot tjänsteman,1
 2021,2,"Norrbotten, okänd kommun",Sammanfattning natt,27
-2021,2,"Norrbotten, okänd kommun",Övrigt,8
 2021,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",5
+2021,2,"Norrbotten, okänd kommun",Övrigt,5
 2021,2,"Norrbotten, okänd kommun",Trafikkontroll,4
 2021,2,Pajala kommun,Trafikolycka,1
 2021,2,Pajala kommun,"Trafikolycka,  vilt",1
@@ -6109,6 +6125,7 @@ year,month,geography_group,type_original,event_count
 2021,2,Överkalix kommun,"Trafikolycka,  vilt",1
 2021,2,Övertorneå kommun,Rattfylleri,1
 2021,2,Övertorneå kommun,Trafikolycka,1
+2021,2,Övriga Sverige,Övrigt,3
 2021,3,Arjeplogs kommun,Trafikkontroll,2
 2021,3,Arjeplogs kommun,Fjällräddning,1
 2021,3,Arjeplogs kommun,Sammanfattning natt,1
@@ -6170,7 +6187,7 @@ year,month,geography_group,type_original,event_count
 2021,3,Luleå kommun,"Trafikolycka,  vilt",1
 2021,3,"Norrbotten, okänd kommun",Sammanfattning natt,20
 2021,3,"Norrbotten, okänd kommun",Trafikkontroll,20
-2021,3,"Norrbotten, okänd kommun",Övrigt,17
+2021,3,"Norrbotten, okänd kommun",Övrigt,11
 2021,3,"Norrbotten, okänd kommun","Trafikolycka,  singel",1
 2021,3,Pajala kommun,Sammanfattning natt,1
 2021,3,Pajala kommun,Skadegörelse,1
@@ -6188,6 +6205,7 @@ year,month,geography_group,type_original,event_count
 2021,3,Älvsbyns kommun,Trafikbrott,1
 2021,3,Övertorneå kommun,Trafikbrott,2
 2021,3,Övertorneå kommun,Rattfylleri,1
+2021,3,Övriga Sverige,Övrigt,6
 2021,4,Arvidsjaurs kommun,Trafikkontroll,1
 2021,4,Bodens kommun,Trafikkontroll,21
 2021,4,Bodens kommun,Trafikbrott,5
@@ -6601,8 +6619,8 @@ year,month,geography_group,type_original,event_count
 2021,8,Luleå kommun,Våldtäkt,1
 2021,8,"Norrbotten, okänd kommun",Sammanfattning natt,25
 2021,8,"Norrbotten, okänd kommun",Trafikkontroll,18
-2021,8,"Norrbotten, okänd kommun",Stöld/inbrott,2
 2021,8,"Norrbotten, okänd kommun",Brand,1
+2021,8,"Norrbotten, okänd kommun",Stöld/inbrott,1
 2021,8,"Norrbotten, okänd kommun",Trafikbrott,1
 2021,8,Pajala kommun,Trafikbrott,2
 2021,8,Pajala kommun,Rattfylleri,1
@@ -6616,6 +6634,7 @@ year,month,geography_group,type_original,event_count
 2021,8,Piteå kommun,Trafikbrott,1
 2021,8,Älvsbyns kommun,Inbrott,1
 2021,8,Överkalix kommun,"Trafikolycka,  vilt",1
+2021,8,Övriga Sverige,Stöld/inbrott,1
 2021,9,Arjeplogs kommun,Trafikkontroll,3
 2021,9,Arjeplogs kommun,Fjällräddning,1
 2021,9,Arjeplogs kommun,"Trafikolycka,  vilt",1
@@ -9905,7 +9924,7 @@ year,month,geography_group,type_original,event_count
 2025,2,Luleå kommun,Trafikbrott,1
 2025,2,Luleå kommun,"Trafikolycka,  singel",1
 2025,2,Luleå kommun,Vapenlagen,1
-2025,2,"Norrbotten, okänd kommun",Sammanfattning natt,21
+2025,2,"Norrbotten, okänd kommun",Sammanfattning natt,20
 2025,2,"Norrbotten, okänd kommun",Trafikkontroll,9
 2025,2,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
 2025,2,Pajala kommun,Trafikkontroll,1
@@ -9923,6 +9942,7 @@ year,month,geography_group,type_original,event_count
 2025,2,Överkalix kommun,Trafikkontroll,1
 2025,2,Övertorneå kommun,Trafikkontroll,2
 2025,2,Övertorneå kommun,Rattfylleri,1
+2025,2,Övriga Sverige,Sammanfattning natt,1
 2025,3,Arjeplogs kommun,Fjällräddning,2
 2025,3,Arjeplogs kommun,Rattfylleri,1
 2025,3,Arjeplogs kommun,Trafikolycka,1
@@ -10532,7 +10552,7 @@ year,month,geography_group,type_original,event_count
 2025,11,Luleå kommun,Trafikhinder,1
 2025,11,Luleå kommun,"Trafikolycka,  personskada",1
 2025,11,"Norrbotten, okänd kommun",Sammanfattning natt,22
-2025,11,"Norrbotten, okänd kommun",Trafikkontroll,17
+2025,11,"Norrbotten, okänd kommun",Trafikkontroll,16
 2025,11,"Norrbotten, okänd kommun","Trafikolycka,  vilt",10
 2025,11,Pajala kommun,Rån,1
 2025,11,Piteå kommun,Trafikolycka,7
@@ -10546,6 +10566,7 @@ year,month,geography_group,type_original,event_count
 2025,11,Överkalix kommun,Trafikolycka,1
 2025,11,Övertorneå kommun,Trafikkontroll,1
 2025,11,Övertorneå kommun,Trafikolycka,1
+2025,11,Övriga Sverige,Trafikkontroll,1
 2025,12,Arjeplogs kommun,Sammanfattning natt,1
 2025,12,Arjeplogs kommun,Trafikbrott,1
 2025,12,Arvidsjaurs kommun,Rattfylleri,1
@@ -10592,7 +10613,7 @@ year,month,geography_group,type_original,event_count
 2025,12,"Norrbotten, okänd kommun",Sammanfattning natt,25
 2025,12,"Norrbotten, okänd kommun",Trafikkontroll,20
 2025,12,"Norrbotten, okänd kommun","Trafikolycka,  vilt",12
-2025,12,"Norrbotten, okänd kommun",Bedrägeri,2
+2025,12,"Norrbotten, okänd kommun",Bedrägeri,1
 2025,12,Pajala kommun,Trafikolycka,2
 2025,12,Pajala kommun,Misshandel,1
 2025,12,Pajala kommun,Övrigt,1
@@ -10604,6 +10625,7 @@ year,month,geography_group,type_original,event_count
 2025,12,Älvsbyns kommun,Brand,1
 2025,12,Älvsbyns kommun,Sammanfattning natt,1
 2025,12,Överkalix kommun,"Trafikolycka,  vilt",1
+2025,12,Övriga Sverige,Bedrägeri,1
 2026,1,Arjeplogs kommun,Trafikolycka,2
 2026,1,Arvidsjaurs kommun,Trafikolycka,2
 2026,1,Arvidsjaurs kommun,Trafikkontroll,1
