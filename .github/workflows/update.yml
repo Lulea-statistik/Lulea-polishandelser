@@ -61,13 +61,13 @@ jobs:
           cp data/monthly_summary.csv docs/data/monthly_summary.csv
           cp data/summary_details_monthly.csv docs/data/summary_details_monthly.csv
           cp data/summary_details_extra_monthly.csv docs/data/summary_details_extra_monthly.csv
-          cp data/expanded_monthly_summary.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv
+          cp data/expanded_monthly_summary.csv docs/data/expanded_monthly_summary.csv
           cp data/quiet_summaries_monthly.csv docs/data/quiet_summaries_monthly.csv
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv
+          git add data/ docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
