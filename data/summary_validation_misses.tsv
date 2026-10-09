@@ -1,4 +1,15 @@
 event_id	date	content	extracted_count	parser_lulea_count	manual_count	manual_lulea_count	current_correct_count	current_false_positive_count	current_missed_count	qa_note
+204291	2021-07-08	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
+<p>Här följer ett urval av nattens händelser:</p>
+<p>03:48 Misshandel, Piteå<br />Samtal inkommer från en person, en man, i Piteå som uppger att han blivit misshandlad av en man tidigare. Polis beordras till adressen inringaren befinner sig på, förhör hålls och anmälan ska upprättas.</p>
+<p>Två viltolyckor har anmälts till polisen under natten och morgonen. Det finns inga rapporter om personskador.</p>"	3	0	4.0	0.0	3.0	0.0	1.0	Ett LOB, en misshandel och två viltolyckor.
+210596	2021-09-13	"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri.</p>
+<p>Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
+<p>Här följer ett urval av nattens händelser:</p>
+<p><strong>03:02 Rattfylleri, Älvsbyn:</strong> Polispatrull i centrala Älvsbyn uppmärksammar en bil som plötsligt stannar, backar och svänger in på en parkering varefter en man lämnar bilen.</p>
+<p>Patrullen kontrollerar föraren, som blåser positivt i polisens sållningsinstrument och får följa med för provtagning.</p>
+<p>Mannen saknar behörighet att köra bil. En anmälan gällande rattfylleri samt olovlig körning upprättas.</p>
+<p><strong>05:34 Viltolycka, Pajala:</strong> Polisen får in en anmälan om att en personbil kolliderat med en ren på länsväg 395, Juhonpieti. Inga personskador rapporteras.</p>"	2	0	3.0	0.0	2.0	0.0	1.0	Ett LOB plus två tidsatta händelser.
 213090	2021-10-06	"<p>Polisen har kontrollerat ett antal personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>I övrigt:</p>
 <p>Kl 00:11, Gällivare</p>
