@@ -120,6 +120,8 @@
     .summary-metrics div{background:#f7f9fb;border:1px solid var(--line);border-radius:9px;padding:12px}
     .summary-metrics span{display:block;color:var(--muted);font-size:.78rem;margin-bottom:4px}
     .summary-metrics strong{font-size:1.2rem}
+    .comparison-controls{display:grid;grid-template-columns:repeat(2,minmax(220px,320px));gap:14px;margin-bottom:14px}
+    .comparison-chartbox{height:520px}
     @media(max-width:700px){.summary-metrics{grid-template-columns:1fr}}
     .foot{font-size:.87rem;color:var(--muted);margin-top:22px;line-height:1.5}
     .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
@@ -129,6 +131,7 @@
       .filters{grid-template-columns:1fr}
       .kpis{grid-template-columns:repeat(2,1fr)}
       .grid2{grid-template-columns:1fr}
+      .comparison-controls{grid-template-columns:1fr}
     }
     @media(max-width:520px){.kpis{grid-template-columns:1fr}}
   </style>
@@ -234,6 +237,22 @@
       <p class="chart-note">Underhändelser identifieras i texten i poster som Polisen publicerat som sammanfattningar. Diagrammen följer filtren Geografi och År och använder vald kategorisering. Den separata månadsserien visar hur många underhändelser som kunnat identifieras i sammanfattningarna.</p>
     </div>
 
+    <div class="card" style="margin-top:16px">
+      <h2>Jämförelse av händelsetypernas andel</h2>
+      <div class="comparison-controls">
+        <div>
+          <label for="compareArea1">Jämförelseområde 1</label>
+          <select id="compareArea1"></select>
+        </div>
+        <div>
+          <label for="compareArea2">Jämförelseområde 2</label>
+          <select id="compareArea2"></select>
+        </div>
+      </div>
+      <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
+      <p class="chart-note">Diagrammet visar hur stor andel varje aggregerad händelsekategori utgör av samtliga händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
+    </div>
+
     <div class="foot">
       Källa: Brottsplatskartan/Polisens publicerade händelseflöde. Klassificeringen av kommun är preliminär och använder API-fält när det finns samt försiktig platsbaserad fallback när kommunfält saknas. Regionala sammanfattningar kan innehålla flera delhändelser och bör inte tolkas som ett enskilt brott.
     </div>
@@ -246,7 +265,7 @@ const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let rows=[], summaryRows=[], summaryExtraRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart;
+let rows=[], summaryRows=[], summaryExtraRows=[], monthlyChart, typeChart, yearChart, geoChart, typeShareChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -663,6 +682,125 @@ function updateSummaryDetailChart(){
   });
 }
 
+function comparisonAreaRows(area){
+  if(area==='Norrbotten'){
+    return rows.filter(r=>r.geography_group!=='Utanför Norrbotten');
+  }
+  return rows.filter(r=>r.geography_group===area);
+}
+
+function syncComparisonAreaOptions(){
+  const s1=document.getElementById('compareArea1');
+  const s2=document.getElementById('compareArea2');
+  if(!s1||!s2)return;
+  [...s1.options].forEach(o=>o.disabled=o.value===s2.value);
+  [...s2.options].forEach(o=>o.disabled=o.value===s1.value);
+}
+
+function fillComparisonAreas(){
+  const municipalityAreas=[...new Set(
+    rows.map(r=>r.geography_group)
+      .filter(g=>g && g.endsWith(' kommun'))
+  )].sort((a,b)=>a.localeCompare(b,'sv-SE'));
+  const values=['Norrbotten',...municipalityAreas];
+  const s1=document.getElementById('compareArea1');
+  const s2=document.getElementById('compareArea2');
+  [s1,s2].forEach(s=>{
+    s.innerHTML='';
+    values.forEach(v=>{
+      const o=document.createElement('option');
+      o.value=v;o.textContent=v;s.appendChild(o);
+    });
+  });
+  s1.value=municipalityAreas.includes('Luleå kommun')?'Luleå kommun':municipalityAreas[0]||'Norrbotten';
+  s2.value='Norrbotten';
+  syncComparisonAreaOptions();
+
+  s1.addEventListener('change',()=>{
+    if(s1.value===s2.value){
+      s2.value=values.find(v=>v!==s1.value)||'';
+    }
+    syncComparisonAreaOptions();
+    updateAreaComparisonChart();
+  });
+  s2.addEventListener('change',()=>{
+    if(s2.value===s1.value){
+      s1.value=values.find(v=>v!==s2.value)||'';
+    }
+    syncComparisonAreaOptions();
+    updateAreaComparisonChart();
+  });
+}
+
+function updateAreaComparisonChart(){
+  const canvas=document.getElementById('areaComparisonChart');
+  const s1=document.getElementById('compareArea1');
+  const s2=document.getElementById('compareArea2');
+  if(!canvas||!s1||!s2||!s1.value||!s2.value)return;
+
+  const year=selected('year');
+  const field=typeField();
+  const areaData=area=>{
+    const data=comparisonAreaRows(area).filter(r=>year==='Alla'||r.year===year);
+    const total=sum(data);
+    const counts=new Map(groupSum(data,field));
+    return {data,total,counts};
+  };
+  const a1=areaData(s1.value);
+  const a2=areaData(s2.value);
+
+  const combined=new Map();
+  for(const [name,count] of a1.counts) combined.set(name,(combined.get(name)||0)+count);
+  for(const [name,count] of a2.counts) combined.set(name,(combined.get(name)||0)+count);
+
+  const labels=[...combined.entries()]
+    .filter(([name])=>name && name!=='Okänd')
+    .sort((a,b)=>b[1]-a[1])
+    .slice(0,15)
+    .map(([name])=>name);
+
+  const shares1=labels.map(name=>a1.total?100*(a1.counts.get(name)||0)/a1.total:0);
+  const shares2=labels.map(name=>a2.total?100*(a2.counts.get(name)||0)/a2.total:0);
+  const counts1=labels.map(name=>a1.counts.get(name)||0);
+  const counts2=labels.map(name=>a2.counts.get(name)||0);
+
+  areaComparisonChart=chartReplace(areaComparisonChart,canvas,{
+    type:'bar',
+    data:{
+      labels,
+      datasets:[
+        {label:s1.value,data:shares1,rawCounts:counts1},
+        {label:s2.value,data:shares2,rawCounts:counts2}
+      ]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{position:'bottom'},
+        tooltip:{
+          callbacks:{
+            label(ctx){
+              const count=ctx.dataset.rawCounts?.[ctx.dataIndex]||0;
+              return ctx.dataset.label+': '+ctx.parsed.x.toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' % ('+fmt.format(count)+' händelser)';
+            }
+          }
+        }
+      },
+      scales:{
+        x:{
+          beginAtZero:true,
+          title:{display:true,text:'Andel av samtliga händelser (%)'},
+          ticks:{callback:v=>v+' %'}
+        },
+        y:{ticks:{autoSkip:false}}
+      }
+    }
+  });
+}
+
 function update(){
   const d=filt();
   const modeLabel=typeModeLabel();
@@ -759,6 +897,7 @@ function update(){
 
   updateTypeShareChart();
   updateSummaryDetailChart();
+  updateAreaComparisonChart();
 }
 
 Promise.all([
@@ -780,6 +919,7 @@ Promise.all([
     fillSelect('geo',geos,'Luleå kommun');
     fillSelect('year',years,'Alla');
     refreshTypeSelector('Alla');
+    fillComparisonAreas();
     ['geo','year','type'].forEach(id=>document.getElementById(id).addEventListener('change',update));
     document.getElementById('categoryMode').addEventListener('change',()=>{
       refreshTypeSelector('Alla');
