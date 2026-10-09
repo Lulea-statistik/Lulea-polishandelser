@@ -70,6 +70,23 @@ def main():
                     if ident and scope=="county": selected[ident]=r
             except Exception as exc:
                 stats.append({"days":"count="+str(limit),"scope":scope,"status":"error","returned":0,"fields":"","error":str(exc)[:350]})
+    # Distinguish a real one-item API result from a county parameter problem.
+    diagnostic_cases = [
+        ("unfiltered", {"language":"sv","numberOfNewsArticles":100,"useCentralizedNoOfArticles":"false"}),
+        ("norrbotten_name", {"language":"sv","counties":"Norrbottens län","numberOfNewsArticles":100}),
+        ("norrbotten_code", {"language":"sv","counties":"25","numberOfNewsArticles":100,"useCentralizedNoOfArticles":"false"}),
+        ("unfiltered_days", {"language":"sv","days":3650,"useCentralizedNoOfArticles":"false"}),
+    ]
+    for scope,params in diagnostic_cases:
+        try:
+            payload=request(params)
+            items=records(payload)
+            if items is None: raise ValueError("Unexpected JSON response shape")
+            valid=[r for r in items if isinstance(r,dict)]
+            stats.append({"days":"diagnostic","scope":scope,"status":"ok","returned":len(valid),
+                "fields":",".join(sorted({k for r in valid[:4] for k in r.keys()})),"error":""})
+        except Exception as exc:
+            stats.append({"days":"diagnostic","scope":scope,"status":"error","returned":0,"fields":"","error":str(exc)[:350]})
     with (DATA/"krisinformation_api_probe.csv").open("w",encoding="utf-8",newline="") as f:
         w=csv.DictWriter(f,fieldnames=["days","scope","status","returned","fields","error"])
         w.writeheader();w.writerows(stats)
