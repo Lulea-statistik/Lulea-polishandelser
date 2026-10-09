@@ -110,9 +110,9 @@ NUMBER_WORDS = {"en":1,"ett":1,"två":2,"tre":3,"fyra":4,"fem":5,"sex":6,"sju":7
 COUNTED_ACCIDENT_RE = re.compile(r"(?i)(?<![:.\d])\b(?P<count>\d{1,2}|en|ett|två|tre|fyra|fem|sex|sju|åtta|nio|tio)\s+(?P<kind>viltolyck(?:a|or)|renpåkörning(?:ar)?)\b")
 
 UNTIMED_SINGLE_PATTERNS = [
-    (re.compile(r"(?i)^en person har(?:[^.]{0,80})?omhändertagits för fylleri\\b"), "Fylleri/LOB"),
-    (re.compile(r"(?i)^en person har(?:[^.]{0,100})?medtagits för provtagning efter misstanke om narkotikabrott\\b"), "Narkotikabrott"),
-    (re.compile(r"(?i)^en man(?:[^.]{0,120})?har under natten gripits misstänkt för att ha misshandlat\\b"), "Misshandel"),
+    (re.compile(r"(?i)^en person har(?:[^.]{0,80})?omhändertagits för fylleri\b"), "Fylleri/LOB"),
+    (re.compile(r"(?i)^en person har(?:[^.]{0,100})?medtagits för provtagning efter misstanke om narkotikabrott\b"), "Narkotikabrott"),
+    (re.compile(r"(?i)^en man(?:[^.]{0,120})?har under natten gripits misstänkt för att ha misshandlat\b"), "Misshandel"),
 ]
 
 
