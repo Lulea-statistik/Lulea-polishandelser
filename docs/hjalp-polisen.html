@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hjälp polisen – publiceringar | Luleå Statistik</title>
+<link rel="icon" type="image/png" href="https://lulea-statistik.github.io/BR-brottsstatistik/favicon.png">
+<style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#16202a;background:#f5f7fa}
+*{box-sizing:border-box}body{margin:0}header{background:white;border-bottom:1px solid #d9e0e7}
+.wrap{max-width:1150px;margin:auto;padding:22px}header .wrap{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px}.brand img{width:54px;height:54px}
+h1{font-size:1.9rem;margin:0}h2{font-size:1.16rem}p{line-height:1.55}
+nav{display:flex;flex-wrap:wrap;gap:8px}nav a{padding:9px 12px;text-decoration:none;border-radius:8px;color:#0b5cab;font-weight:650}nav a[aria-current]{background:#e7f0f9}
+.panel{background:white;border:1px solid #d9e0e7;border-radius:12px;padding:20px;margin:18px 0}
+.note{border-left:4px solid #b9871a;background:#fff8e5;padding:12px 16px}
+.filters{display:grid;grid-template-columns:1fr 180px 180px;gap:12px}
+label{display:block;font-weight:600;font-size:.92rem;margin-bottom:5px}
+input,select{width:100%;padding:10px;border:1px solid #bdc8d3;border-radius:8px;font:inherit;background:white}
+.kpis{display:flex;gap:16px;flex-wrap:wrap}.kpi{background:#f2f6fa;border-radius:8px;padding:12px 18px;min-width:130px}
+.kpi strong{font-size:1.8rem;display:block}.kpi small{color:#536272}
+#monthchart{display:flex;align-items:end;gap:6px;height:150px;border-bottom:1px solid #aab7c5;padding:15px 0 0}
+.bar{flex:1;background:#75b59d;position:relative;min-height:1px;border-radius:3px 3px 0 0}.bar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:.8rem}
+#monthlabels{display:flex;gap:6px}#monthlabels span{flex:1;text-align:center;font-size:.73rem;color:#596775}
+article{border-top:1px solid #e2e7ed;padding:14px 0}article h3{margin:0 0 5px;font-size:1.04rem}article a{color:#0b5cab}article p{margin:4px 0 8px}article small{color:#607080}
+@media(max-width:720px){.filters{grid-template-columns:1fr}header .wrap{display:block}nav{margin-top:15px}}
+</style></head><body>
+<header><div class="wrap"><div class="brand"><img src="https://lulea-statistik.github.io/BR-brottsstatistik/lulea-statistik-logo.svg" alt=""><div><h1>Hjälp polisen</h1><div>Arkiverade publiceringar från Polisens RSS</div></div></div><nav aria-label="Huvudmeny"><a href="./">Statistik</a><a href="hjalp-polisen.html" aria-current="page">Hjälp polisen</a><a href="info-metod.html">Info &amp; metod</a></nav></div></header>
+<main class="wrap">
+<div class="note"><strong>Begränsat historiskt underlag.</strong> Detta är publiceringar som fångats av RSS-insamlingen, inte en komplett historik över efterlysningar eller polisiära händelser. Datumet avser publicering och säger inte när en eventuell underliggande händelse inträffade. Ingen uppgift om aktuellt ärendestatus kan garanteras.</div>
+<section class="panel"><h2>Filtrera publiceringar</h2><div class="filters"><div><label for="search">Sök rubrik och beskrivning</label><input id="search" type="search" placeholder="Sökord"></div><div><label for="year">Publiceringsår</label><select id="year"><option value="">Alla år</option></select></div><div><label for="area">Geografiskt omnämnande</label><select id="area"><option value="all">Alla publiceringar</option><option value="county">Norrbotten (textträff)</option><option value="lulea">Luleå (textträff)</option></select></div></div>
+<p style="font-size:.88rem;color:#596775">Geografifiltret är en textsökning efter namn i rubrik och kortbeskrivning, inte en verifierad geografisk klassificering. En träff kan exempelvis avse en person som rört sig mellan olika platser.</p></section>
+<section class="panel"><div class="kpis"><div class="kpi"><strong id="total">–</strong><small>Insamlade publiceringar</small></div><div class="kpi"><strong id="shown">–</strong><small>Efter filter</small></div><div class="kpi"><strong id="oldest">–</strong><small>Tidigaste publicering</small></div></div><h2>Publiceringar per månad för valt urval</h2><div id="monthchart" role="img" aria-label="Antal publiceringar per månad"></div><div id="monthlabels"></div></section>
+<section class="panel"><h2>Publiceringslista</h2><div id="items" aria-live="polite">Läser data ...</div></section>
+<section class="panel"><h2>Källa och tolkning</h2><p>Data samlas dagligen från <a href="https://polisen.se/aktuellt/hjalp-polisen/">Polisens Hjälp polisen</a>. Unika originaladresser sparas, liksom första och senaste observation. Tidigare uppgifter behålls när de försvinner från RSS-flödet. RSS kan innehålla mycket få poster och äldre år är därför ofullständiga. Denna serie är fristående från antalet publicerade polishändelser.</p><p>Av integritetsskäl publiceras inga bilder eller fullständiga personuppgifter på sidan. Följ originalartikeln för aktuell information.</p></section>
+</main>
+<script>
+const url="./data/help_polisen.csv";
+function csv(text){let out=[],row=[],field="",quoted=false;for(let i=0;i<text.length;i++){let c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){field+='"';i++}else quoted=!quoted}else if(c===','&&!quoted){row.push(field);field=""}else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&text[i+1]==='\n')i++;row.push(field);if(row.some(Boolean))out.push(row);row=[];field=""}else field+=c}if(field||row.length){row.push(field);out.push(row)}const cols=out.shift()||[];return out.map(r=>Object.fromEntries(cols.map((c,i)=>[c,r[i]||""])));}
+const all=[];const el=id=>document.getElementById(id);const date=v=>v?v.slice(0,10):"Okänt";
+function match(r){let s=(r.title+" "+r.description).toLocaleLowerCase("sv");let q=el("search").value.trim().toLocaleLowerCase("sv");let y=el("year").value;let a=el("area").value;return (!q||s.includes(q))&&(!y||r.published_at.startsWith(y))&&(a==="all"||(a==="lulea"?/luleå/.test(s):/norrbotten|luleå|kiruna|gällivare|boden|piteå|kalix|haparanda|pajala|jokkmokk|arjeplog|arvidsjaur|älvsbyn|övertorneå|överkalix/.test(s)));}
+function render(){let chosen=all.filter(match).sort((a,b)=>b.published_at.localeCompare(a.published_at));el("total").textContent=all.length;el("shown").textContent=chosen.length;el("oldest").textContent=all.length?date([...all].sort((a,b)=>a.published_at.localeCompare(b.published_at))[0].published_at):"–";
+let grouped={};for(let x of chosen){let m=x.published_at.slice(0,7)||"Okänt";grouped[m]=(grouped[m]||0)+1}let keys=Object.keys(grouped).sort(),max=Math.max(1,...Object.values(grouped));el("monthchart").replaceChildren();el("monthlabels").replaceChildren();
+for(let key of keys){let b=document.createElement("div");b.className="bar";b.style.height=(100*grouped[key]/max)+"%";b.title=key+": "+grouped[key];let t=document.createElement("span");t.textContent=grouped[key];b.append(t);el("monthchart").append(b);let l=document.createElement("span");l.textContent=key;el("monthlabels").append(l)}
+let box=el("items");box.replaceChildren();if(!chosen.length){box.textContent="Inga publiceringar matchar filtret. Det betyder inte att Polisen saknar historiska publiceringar för området.";return}
+for(let r of chosen){let article=document.createElement("article"),h=document.createElement("h3"),link=document.createElement("a");link.textContent=r.title||"Utan rubrik";link.href=r.source_url;link.target="_blank";link.rel="noopener noreferrer";h.append(link);let p=document.createElement("p");p.textContent=r.description||"";let sm=document.createElement("small");sm.textContent="Publicerad: "+date(r.published_at)+" · Först registrerad: "+date(r.first_seen_at);article.append(h,p,sm);box.append(article)}}
+for(let id of ["search","year","area"])el(id).addEventListener(id==="search"?"input":"change",render);
+fetch(url).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.text()}).then(t=>{all.push(...csv(t).filter(x=>x.source_url&&x.source_url.startsWith("https://polisen.se/")));let ys=[...new Set(all.map(r=>r.published_at.slice(0,4)).filter(Boolean))].sort().reverse();for(let y of ys){let op=document.createElement("option");op.value=y;op.textContent=y;el("year").append(op)}render()}).catch(e=>{el("items").textContent="Kunde inte läsa datafilen: "+e.message});
+</script></body></html>
