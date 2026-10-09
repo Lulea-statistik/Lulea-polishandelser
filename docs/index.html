@@ -138,15 +138,22 @@
       .comparison-controls{grid-template-columns:1fr}
     }
     @media(max-width:520px){.kpis{grid-template-columns:1fr}}
-    /* Fokusläge för alla diagram, utan att ändra diagrammens data. */
+    /* Diskret bildvisarläge: centrerad dialog i stället för webbläsarens helskärm. */
     .chartbox,.comparison-chartbox,.other-chartbox{position:relative}
-    .chart-focus-button{position:absolute;top:8px;right:9px;z-index:10;border:1px solid #a9b7c5;background:#fff;color:#17324c;border-radius:8px;padding:6px 10px;font:600 13px system-ui,sans-serif;cursor:pointer;box-shadow:0 1px 5px #0002}
-    .chart-focus-button:hover,.chart-focus-button:focus-visible{background:#e8f2fc;outline-offset:2px}
-    .chartbox:fullscreen,.comparison-chartbox:fullscreen,.other-chartbox:fullscreen,
-    .chart-focus-fallback{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;z-index:9999!important;background:#fff!important;padding:52px 20px 18px!important;border:0!important;border-radius:0!important;box-sizing:border-box!important}
-    .chartbox:fullscreen canvas,.comparison-chartbox:fullscreen canvas,.other-chartbox:fullscreen canvas,
-    .chart-focus-fallback canvas{width:100%!important;height:100%!important}
+    .chart-focus-button{position:absolute;top:7px;right:7px;z-index:5;width:30px;height:30px;display:grid;place-items:center;border:1px solid #d9e0e7;background:rgba(255,255,255,.94);color:#52606d;border-radius:7px;cursor:pointer;padding:0}
+    .chart-focus-button:hover,.chart-focus-button:focus-visible{background:#eef3f7;color:#0b5cab;border-color:#aab8c5}
+    .chart-focus-button svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+    .chart-viewer{position:fixed;inset:0;z-index:9999;background:rgba(14,24,36,.67);display:flex;align-items:center;justify-content:center;padding:clamp(12px,3vw,32px)}
+    .chart-viewer[hidden]{display:none}
+    .chart-viewer-panel{position:relative;background:#fff;border-radius:12px;width:min(1180px,96vw);height:min(790px,90dvh);padding:54px 22px 20px;box-shadow:0 18px 70px rgba(0,0,0,.3);display:flex;flex-direction:column;min-height:0}
+    .chart-viewer-title{position:absolute;top:18px;left:23px;right:72px;margin:0;font-size:1rem;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .chart-viewer-close{position:absolute;right:16px;top:12px;width:34px;height:34px;background:transparent;border:0;border-radius:7px;color:#475569;font-size:24px;line-height:1;cursor:pointer}
+    .chart-viewer-close:hover,.chart-viewer-close:focus-visible{background:#eef2f6}
+    .chart-viewer-body{flex:1;min-height:0;position:relative}
+    .chart-viewer-body>.chartbox,.chart-viewer-body>.comparison-chartbox,.chart-viewer-body>.other-chartbox{height:100%!important;width:100%!important}
+    .chart-viewer-body .chart-focus-button{display:none}
     body.chart-focus-lock{overflow:hidden}
+    @media(max-width:620px){.chart-viewer-panel{width:100%;height:88dvh;padding:52px 9px 12px}.chart-viewer-title{left:13px}}
   </style>
 </head>
 <body>
@@ -1069,50 +1076,60 @@ Promise.all([
     console.error(err);
   });
 
-// Fokusläge fungerar även där Fullscreen API inte stöds.
+// Diagramvisare som bildmodal: behåller samma Chart.js-instans och filter.
 (function installChartFocus(){
   const containers=[...document.querySelectorAll('.chartbox,.comparison-chartbox,.other-chartbox')].filter(el=>el.querySelector('canvas'));
-  let fallback=null;
-  const resize=container=>{
+  const overlay=document.createElement('div');
+  overlay.className='chart-viewer';overlay.hidden=true;
+  overlay.innerHTML='<div class="chart-viewer-panel" role="dialog" aria-modal="true" aria-labelledby="chartViewerTitle"><h2 class="chart-viewer-title" id="chartViewerTitle"></h2><button class="chart-viewer-close" type="button" aria-label="Stäng förstoring" title="Stäng (Esc)">×</button><div class="chart-viewer-body"></div></div>';
+  document.body.appendChild(overlay);
+  const viewerBody=overlay.querySelector('.chart-viewer-body');
+  const close=overlay.querySelector('.chart-viewer-close');
+  const title=overlay.querySelector('.chart-viewer-title');
+  let current=null,placeholder=null,trigger=null;
+  function resize(container){
     if(!container)return;
     const canvas=container.querySelector('canvas');
     const chart=canvas && window.Chart && Chart.getChart(canvas);
-    if(chart){requestAnimationFrame(()=>{chart.resize();chart.update('none')});}
-  };
-  const restore=()=>{
-    if(fallback){const previous=fallback;fallback=null;previous.classList.remove('chart-focus-fallback');document.body.classList.remove('chart-focus-lock');resize(previous);}
-  };
+    if(chart)requestAnimationFrame(()=>{chart.resize();chart.update('none');});
+  }
+  function dismiss(){
+    if(!current)return;
+    const previous=current;
+    placeholder.replaceWith(previous);
+    placeholder=null;current=null;
+    overlay.hidden=true;document.body.classList.remove('chart-focus-lock');
+    resize(previous);
+    if(trigger)trigger.focus();
+    trigger=null;
+  }
+  function show(container,button){
+    if(current)dismiss();
+    placeholder=document.createComment('Diagrammets ursprungliga plats');
+    container.replaceWith(placeholder);
+    viewerBody.appendChild(container);
+    const card=placeholder.parentElement?.closest('.card,details');
+    title.textContent=card?.querySelector('h2,h3')?.textContent?.trim()||'Diagram';
+    current=container;trigger=button;
+    overlay.hidden=false;document.body.classList.add('chart-focus-lock');
+    close.focus();resize(container);
+  }
+  const icon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg>';
   containers.forEach(container=>{
     const button=document.createElement('button');
     button.type='button';button.className='chart-focus-button';
-    button.textContent='⛶ Fokusläge';button.setAttribute('aria-label','Visa diagram i fokusläge');
+    button.innerHTML=icon;
+    button.setAttribute('aria-label','Förstora diagram');
+    button.title='Förstora diagram';
     container.appendChild(button);
-    button.addEventListener('click',async()=>{
-      const focused=document.fullscreenElement===container || fallback===container;
-      if(focused){
-        if(document.fullscreenElement===container){try{await document.exitFullscreen()}catch(e){console.warn(e)}}
-        else restore();
-      }else{
-        if(fallback)restore();
-        if(container.requestFullscreen){
-          try{await container.requestFullscreen();resize(container);return}catch(e){console.warn('Helskärm stöds inte, använder fokusläge',e)}
-        }
-        fallback=container;container.classList.add('chart-focus-fallback');document.body.classList.add('chart-focus-lock');resize(container);
-      }
-    });
+    button.addEventListener('click',()=>show(container,button));
   });
-  document.addEventListener('fullscreenchange',()=>{
-    containers.forEach(c=>{
-      const active=document.fullscreenElement===c || fallback===c;
-      const b=c.querySelector('.chart-focus-button');
-      if(b){b.textContent=active?'✕ Stäng fokusläge':'⛶ Fokusläge';b.setAttribute('aria-label',active?'Stäng fokusläge':'Visa diagram i fokusläge')}
-      resize(c);
-    });
-  });
-  document.addEventListener('keydown',event=>{
-    if(event.key==='Escape'&&fallback)restore();
-  });
+  close.addEventListener('click',dismiss);
+  overlay.addEventListener('click',event=>{if(event.target===overlay)dismiss();});
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&current)dismiss();});
+  window.addEventListener('resize',()=>{if(current)resize(current);});
 })();
+;
 </script>
 </body>
 </html>
