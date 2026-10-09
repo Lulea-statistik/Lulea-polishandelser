@@ -17,7 +17,6 @@ OUT = DATA / "norrbotten_place_to_municipality.csv"
 SCB_WFS = "https://geodata.scb.se/geoserver/stat/wfs"
 LAYERS = {
     "scb_tatort_2023": "stat:Tatorter_2023",
-    "scb_smaort_2023": "stat:Smaorter_2023",
 }
 
 MUNICIPALITIES = {
@@ -65,7 +64,7 @@ def canonical_municipalities_from_props(props: dict) -> set[str]:
 
 def candidate_place_name(props: dict, layer: str) -> str:
     keys = list(props)
-    wanted = ("tatort", "tätort") if "tatort" in layer else ("smaort", "småort")
+    wanted = ("tatort", "tätort")
     ranked = []
     for key in keys:
         nk = norm(key)
@@ -191,6 +190,8 @@ def resolve(rows: list[dict]) -> pd.DataFrame:
 
 def main() -> None:
     DATA.mkdir(parents=True, exist_ok=True)
+    # SCB publicerar inte namn för statistiska småorter från 2015 och framåt,
+    # bara områdeskoder. Därför används endast tätorter här som namnkälla.
     rows = []
     for source, typename in LAYERS.items():
         part = fetch_scb_layer(source, typename)
