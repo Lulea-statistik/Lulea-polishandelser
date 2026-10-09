@@ -25,6 +25,7 @@ year,month,geography_group,event_type_extracted,event_count
 2016,11,Arvidsjaurs kommun,Övrigt/oklassificerad,1
 2016,11,Bodens kommun,Rattfylleri,1
 2016,11,Bodens kommun,Skadegörelse,1
+2016,11,Bodens kommun,Övrigt/oklassificerad,1
 2016,11,Gällivare kommun,Övrigt/oklassificerad,2
 2016,11,Gällivare kommun,Olaga hot,1
 2016,11,Gällivare kommun,Olovlig körning,1
@@ -35,15 +36,17 @@ year,month,geography_group,event_type_extracted,event_count
 2016,11,Kiruna kommun,Fylleri/LOB,1
 2016,11,Kiruna kommun,Misshandel,1
 2016,11,Kiruna kommun,Övrigt/oklassificerad,1
+2016,11,Luleå kommun,Övrigt/oklassificerad,4
 2016,11,Luleå kommun,Rattfylleri,3
-2016,11,Luleå kommun,Övrigt/oklassificerad,3
 2016,11,Luleå kommun,Brand,1
 2016,11,Luleå kommun,Fylleri/LOB,1
 2016,11,Luleå kommun,Narkotikabrott,1
 2016,11,Luleå kommun,Skadegörelse,1
 2016,11,"Norrbotten, okänd kommun",Misshandel,1
 2016,11,"Norrbotten, okänd kommun",Olaga hot,1
+2016,11,"Norrbotten, okänd kommun",Olovlig körning,1
 2016,11,"Norrbotten, okänd kommun",Rån,1
+2016,11,"Norrbotten, okänd kommun",Trafikolycka,1
 2016,11,Pajala kommun,Trafikolycka,1
 2016,11,Pajala kommun,Övrigt/oklassificerad,1
 2016,11,Piteå kommun,Rattfylleri,1
@@ -76,11 +79,10 @@ year,month,geography_group,event_type_extracted,event_count
 2016,12,Överkalix kommun,Trafikolycka,1
 2017,1,Bodens kommun,Fylleri/LOB,1
 2017,1,Bodens kommun,Trafikolycka,1
-2017,1,Kalix kommun,Övrigt/oklassificerad,1
+2017,1,Kalix kommun,Övrigt/oklassificerad,2
+2017,1,Luleå kommun,Stöld,2
 2017,1,Luleå kommun,Brand,1
 2017,1,Luleå kommun,Rattfylleri,1
-2017,1,Luleå kommun,Rån,1
-2017,1,Luleå kommun,Stöld,1
 2017,1,"Norrbotten, okänd kommun",Brand,4
 2017,1,"Norrbotten, okänd kommun",Övrigt/oklassificerad,3
 2017,1,"Norrbotten, okänd kommun",Skadegörelse,1
@@ -95,13 +97,15 @@ year,month,geography_group,event_type_extracted,event_count
 2017,2,Kiruna kommun,Misshandel,1
 2017,2,Kiruna kommun,Övrigt/oklassificerad,1
 2017,2,Luleå kommun,Fylleri/LOB,2
+2017,2,Luleå kommun,Narkotikabrott,2
 2017,2,Luleå kommun,Rattfylleri,2
 2017,2,Luleå kommun,Brand,1
 2017,2,Luleå kommun,Misshandel,1
-2017,2,Luleå kommun,Narkotikabrott,1
 2017,2,Luleå kommun,Ofredande/förargelse,1
 2017,2,Luleå kommun,Skadegörelse,1
 2017,2,"Norrbotten, okänd kommun",Narkotikabrott,1
+2017,2,"Norrbotten, okänd kommun",Rattfylleri,1
+2017,2,"Norrbotten, okänd kommun",Rån,1
 2017,2,"Norrbotten, okänd kommun",Skadegörelse,1
 2017,2,"Norrbotten, okänd kommun",Trafikolycka,1
 2017,2,Piteå kommun,Narkotikabrott,1
@@ -117,11 +121,11 @@ year,month,geography_group,event_type_extracted,event_count
 2017,3,Arvidsjaurs kommun,Brand,1
 2017,3,Bodens kommun,Rattfylleri,2
 2017,3,Bodens kommun,"Trafikolycka,  vilt",2
+2017,3,Bodens kommun,Övrigt/oklassificerad,2
 2017,3,Bodens kommun,Misshandel,1
 2017,3,Bodens kommun,"Stöld,  ringa",1
 2017,3,Bodens kommun,Trafikbrott,1
 2017,3,Bodens kommun,Trafikolycka,1
-2017,3,Bodens kommun,Övrigt/oklassificerad,1
 2017,3,Gällivare kommun,Djur,1
 2017,3,Gällivare kommun,Fylleri/LOB,1
 2017,3,Gällivare kommun,Narkotikabrott,1
@@ -164,11 +168,13 @@ year,month,geography_group,event_type_extracted,event_count
 2017,3,Piteå kommun,Ofredande/förargelse,1
 2017,4,Arjeplogs kommun,Fjällräddning,1
 2017,4,Arvidsjaurs kommun,Inbrott,2
+2017,4,Arvidsjaurs kommun,Fylleri/LOB,1
+2017,4,Arvidsjaurs kommun,Narkotikabrott,1
 2017,4,Arvidsjaurs kommun,Rattfylleri,1
 2017,4,Bodens kommun,Misshandel,4
 2017,4,Bodens kommun,Brand,2
+2017,4,Bodens kommun,Fylleri/LOB,2
 2017,4,Bodens kommun,Skadegörelse,2
-2017,4,Bodens kommun,Fylleri/LOB,1
 2017,4,Bodens kommun,Rattfylleri,1
 2017,4,Bodens kommun,"Stöld,  ringa",1
 2017,4,Bodens kommun,Trafikkontroll,1
@@ -216,13 +222,13 @@ year,month,geography_group,event_type_extracted,event_count
 2017,4,Piteå kommun,Misshandel,3
 2017,4,Piteå kommun,Rattfylleri,3
 2017,4,Piteå kommun,Övrigt/oklassificerad,3
+2017,4,Piteå kommun,Skadegörelse,2
 2017,4,Piteå kommun,Trafikkontroll,2
 2017,4,Piteå kommun,Djur,1
 2017,4,Piteå kommun,Fylleri/LOB,1
 2017,4,Piteå kommun,Inbrott,1
 2017,4,Piteå kommun,Narkotikabrott,1
 2017,4,Piteå kommun,Olovlig körning,1
-2017,4,Piteå kommun,Skadegörelse,1
 2017,4,Älvsbyns kommun,Skadegörelse,2
 2017,4,Överkalix kommun,Rattfylleri,1
 2017,4,Övertorneå kommun,Rattfylleri,2
@@ -268,6 +274,7 @@ year,month,geography_group,event_type_extracted,event_count
 2017,6,Bodens kommun,Olovlig körning,2
 2017,6,Bodens kommun,Övrigt/oklassificerad,2
 2017,6,Bodens kommun,Inbrott,1
+2017,6,Bodens kommun,Misshandel,1
 2017,6,Bodens kommun,"Stöld,  ringa",1
 2017,6,Bodens kommun,Trafikbrott,1
 2017,6,Bodens kommun,Trafikkontroll,1
@@ -335,6 +342,7 @@ year,month,geography_group,event_type_extracted,event_count
 2017,7,Bodens kommun,Fylleri/LOB,1
 2017,7,Bodens kommun,Rattfylleri,1
 2017,7,Bodens kommun,Trafikolycka,1
+2017,7,Gällivare kommun,Fjällräddning,1
 2017,7,Gällivare kommun,Inbrott,1
 2017,7,Gällivare kommun,Olovlig körning,1
 2017,7,Gällivare kommun,Rattfylleri,1
@@ -358,8 +366,8 @@ year,month,geography_group,event_type_extracted,event_count
 2017,7,Luleå kommun,Rattfylleri,1
 2017,7,Luleå kommun,"Stöld,  ringa",1
 2017,7,Luleå kommun,Våld/hot mot tjänsteman,1
-2017,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,4
-2017,7,"Norrbotten, okänd kommun",Fjällräddning,3
+2017,7,"Norrbotten, okänd kommun",Övrigt/oklassificerad,5
+2017,7,"Norrbotten, okänd kommun",Fjällräddning,4
 2017,7,"Norrbotten, okänd kommun",Misshandel,3
 2017,7,"Norrbotten, okänd kommun",Brand,2
 2017,7,"Norrbotten, okänd kommun","Trafikolycka,  vilt",2
@@ -412,6 +420,7 @@ year,month,geography_group,event_type_extracted,event_count
 2017,8,Luleå kommun,Skadegörelse,1
 2017,8,"Norrbotten, okänd kommun",Övrigt/oklassificerad,9
 2017,8,"Norrbotten, okänd kommun",Inbrott,1
+2017,8,"Norrbotten, okänd kommun",Misshandel,1
 2017,8,"Norrbotten, okänd kommun",Rattfylleri,1
 2017,8,Piteå kommun,Övrigt/oklassificerad,2
 2017,8,Piteå kommun,Trafikolycka,1
@@ -1896,11 +1905,11 @@ year,month,geography_group,event_type_extracted,event_count
 2019,10,Luleå kommun,Trafikbrott,6
 2019,10,Luleå kommun,Fylleri/LOB,4
 2019,10,Luleå kommun,Brand,3
+2019,10,Luleå kommun,Rattfylleri,3
 2019,10,Luleå kommun,Trafikolycka,3
 2019,10,Luleå kommun,Våld/hot mot tjänsteman,3
 2019,10,Luleå kommun,Olaga intrång/hemfridsbrott,2
 2019,10,Luleå kommun,Olovlig körning,2
-2019,10,Luleå kommun,Rattfylleri,2
 2019,10,Luleå kommun,Övrigt/oklassificerad,2
 2019,10,Luleå kommun,Knivlagen,1
 2019,10,Luleå kommun,Narkotikabrott,1
@@ -1928,6 +1937,7 @@ year,month,geography_group,event_type_extracted,event_count
 2019,10,Piteå kommun,Trafikbrott,1
 2019,10,Piteå kommun,Våld/hot mot tjänsteman,1
 2019,10,Älvsbyns kommun,Inbrott,1
+2019,10,Älvsbyns kommun,Rattfylleri,1
 2019,10,Övertorneå kommun,Misshandel,1
 2019,10,Övertorneå kommun,Rattfylleri,1
 2019,11,Bodens kommun,Brand,3
