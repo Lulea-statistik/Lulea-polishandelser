@@ -6777,26 +6777,31 @@ year,month,geography_group,event_type_extracted,event_count
 2026,9,Överkalix kommun,"Trafikolycka, vilt",1
 2026,9,Övertorneå kommun,Trafikolycka,1
 2026,10,Arjeplogs kommun,Narkotikabrott,1
+2026,10,Bodens kommun,Trafikbrott,3
 2026,10,Bodens kommun,Brand,1
-2026,10,Bodens kommun,Trafikbrott,1
 2026,10,Bodens kommun,Trafikkontroll,1
 2026,10,Gällivare kommun,Brand,1
 2026,10,Gällivare kommun,Misshandel,1
+2026,10,Gällivare kommun,Narkotikabrott,1
 2026,10,Gällivare kommun,Trafikkontroll,1
 2026,10,Gällivare kommun,"Trafikolycka,  vilt",1
 2026,10,Gällivare kommun,Övrigt/oklassificerad,1
 2026,10,Haparanda kommun,Rattfylleri,1
+2026,10,Kalix kommun,Misshandel,1
 2026,10,Kalix kommun,Trafikolycka,1
 2026,10,Kiruna kommun,Misshandel,1
 2026,10,Kiruna kommun,Rattfylleri,1
 2026,10,Kiruna kommun,Skadegörelse,1
+2026,10,Kiruna kommun,Trafikbrott,1
 2026,10,Luleå kommun,Misshandel,2
 2026,10,Luleå kommun,Fylleri/LOB,1
 2026,10,Luleå kommun,Olovlig körning,1
+2026,10,Luleå kommun,Skadegörelse,1
 2026,10,Luleå kommun,Trafikkontroll,1
 2026,10,Luleå kommun,"Trafikolycka,  vilt",1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
-2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",2
+2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",3
 2026,10,Piteå kommun,Ofredande/förargelse,5
+2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikkontroll,1
 2026,10,Övertorneå kommun,Övrigt/oklassificerad,1
