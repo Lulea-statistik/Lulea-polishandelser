@@ -14301,7 +14301,7 @@ year,month,geography_group,event_type,event_count
 2026,9,Bodens kommun,Misshandel,1
 2026,9,Bodens kommun,Rattfylleri,1
 2026,9,Bodens kommun,"Trafikolycka,  vilt",1
-2026,9,Flera kommuner i Norrbotten,Trafikkontroll,16
+2026,9,Flera kommuner i Norrbotten,Trafikkontroll,15
 2026,9,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",1
 2026,9,Gällivare kommun,Trafikolycka,3
 2026,9,Gällivare kommun,Arbetsplatsolycka,1
@@ -14366,7 +14366,7 @@ year,month,geography_group,event_type,event_count
 2026,9,"Norrbotten, okänd kommun",Misshandel,2
 2026,9,"Norrbotten, okänd kommun",Trafikkontroll,2
 2026,9,"Norrbotten, okänd kommun",Fylleri/LOB,1
-2026,9,Pajala kommun,Trafikkontroll,1
+2026,9,Pajala kommun,Trafikkontroll,2
 2026,9,Pajala kommun,Trafikolycka,1
 2026,9,Pajala kommun,"Trafikolycka,  vilt",1
 2026,9,Piteå kommun,Trafikolycka,5
@@ -14396,7 +14396,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Bodens kommun,Brand,1
 2026,10,Bodens kommun,Olovlig körning,1
 2026,10,Bodens kommun,Skadegörelse,1
-2026,10,Flera kommuner i Norrbotten,Trafikkontroll,6
+2026,10,Flera kommuner i Norrbotten,Trafikkontroll,7
 2026,10,Gällivare kommun,Misshandel,2
 2026,10,Gällivare kommun,Brand,1
 2026,10,Gällivare kommun,Narkotikabrott,1
@@ -14409,22 +14409,23 @@ year,month,geography_group,event_type,event_count
 2026,10,Kalix kommun,Narkotikabrott,1
 2026,10,Kalix kommun,Stöld,1
 2026,10,Kalix kommun,Trafikolycka,1
+2026,10,Kiruna kommun,Trafikbrott,2
 2026,10,Kiruna kommun,Arbetsplatsolycka,1
 2026,10,Kiruna kommun,Misshandel,1
 2026,10,Kiruna kommun,Rattfylleri,1
 2026,10,Kiruna kommun,Skadegörelse,1
-2026,10,Kiruna kommun,Trafikbrott,1
-2026,10,Luleå kommun,Misshandel,2
+2026,10,Luleå kommun,Misshandel,3
 2026,10,Luleå kommun,Stöld,2
 2026,10,Luleå kommun,Trafikkontroll,2
 2026,10,Luleå kommun,Fylleri,1
 2026,10,Luleå kommun,Fylleri/LOB,1
 2026,10,Luleå kommun,Häleri,1
+2026,10,Luleå kommun,Narkotikabrott,1
 2026,10,Luleå kommun,Olovlig körning,1
 2026,10,Luleå kommun,Skadegörelse,1
 2026,10,Luleå kommun,"Trafikolycka,  vilt",1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
-2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",3
+2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
 2026,10,Pajala kommun,Rattfylleri,1
 2026,10,Pajala kommun,Trafikolycka,1
 2026,10,Piteå kommun,Ofredande/förargelse,5
