@@ -1154,14 +1154,14 @@ function update(){
   typeChart=chartReplace(typeChart,document.getElementById('typeChart'),{
     type:'bar',
     data:{labels:types.map(x=>x[0]),datasets:[{label:'Antal',data:types.map(x=>x[1]),backgroundColor:'#2f855a',borderColor:'#2f855a'}]},
-    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{beginAtZero:true}}}
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal: '+fmt.format(ctx.parsed.x),afterLabel:ctx=>'Andel: '+(total?(100*ctx.parsed.x/total).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'}}},scales:{x:{beginAtZero:true}}}
   });
 
   const yrs=groupSum(expandedMain,'year').sort((a,b)=>+a[0]-+b[0]);
   yearChart=chartReplace(yearChart,document.getElementById('yearChart'),{
     type:'bar',
     data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1]),backgroundColor:'#a7dca0',borderColor:'#81bf7b'}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal: '+fmt.format(ctx.parsed.y),afterLabel:ctx=>'Andel: '+(geographyTotal?(100*ctx.parsed.y/geographyTotal).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'}}},scales:{y:{beginAtZero:true}}}
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
   });
 
   const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];
@@ -1174,7 +1174,7 @@ function update(){
     type:'bar',
     data:{labels:monthNames,datasets:[{label:'Antal',data:calendarTotals}]},
     options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal händelser: '+fmt.format(ctx.parsed.y)}}},
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal händelser: '+fmt.format(ctx.parsed.y),afterLabel:ctx=>'Andel: '+(total?(100*ctx.parsed.y/total).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'}}},
       scales:{y:{beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
     }
   });
@@ -1209,7 +1209,7 @@ function update(){
         legend:{display:true,position:'bottom',labels:{boxWidth:12,padding:12}},
         tooltip:{callbacks:{
           label:ctx=>ctx.dataset.label+': '+fmt.format(ctx.parsed.y)+' händelser',
-          footer:items=>'Totalt för månaden: '+fmt.format(items[0].chart.data.datasets.reduce((a,ds)=>a+(+ds.data[items[0].dataIndex]||0),0))
+          afterLabel:ctx=>{const monthlyTotal=calendarTotals[ctx.dataIndex]||0;return 'Andel: '+(monthlyTotal?(100*ctx.parsed.y/monthlyTotal).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %';}
         }}
       },
       scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
