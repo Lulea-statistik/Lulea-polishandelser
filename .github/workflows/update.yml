@@ -1,5 +1,5 @@
 name: Update polishandelser
-# QA rerun marker 8 - publish theft object data
+# QA rerun marker 9 - strict theft wording
 
 on:
   workflow_dispatch:
