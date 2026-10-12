@@ -248,12 +248,6 @@
     </div>
 
     <div class="card" style="margin-top:16px">
-      <h2>Händelser per veckodag – uppdelat efter kategori</h2>
-      <div class="chartbox composition"><canvas id="monthCategoryChart"></canvas></div>
-      <p class="chart-note">Antal daterade händelser per veckodag (måndag–söndag), uppdelat efter vald kategorisering. Följer geografi, år och händelsetyp. Dygnstid behöver inte vara känd för att veckodagen ska kunna beräknas. Sammanfattningar utan känd veckodag ingår inte. Mindre kategorier samlas i Övrigt. Andelen i hover-rutan avser kategorins andel av alla händelser under samma veckodag.</p>
-    </div>
-
-    <div class="card" style="margin-top:16px">
       <h2>Geografisk fördelning</h2>
       <div class="chartbox"><canvas id="geoChart"></canvas></div>
     </div>
@@ -330,7 +324,7 @@ const CALENDAR_PERIOD_URL='data/weekday_period_calendar.csv';
 const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, monthCategoryChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
+let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -1176,47 +1170,6 @@ function update(){
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal händelser: '+fmt.format(ctx.parsed.y),afterLabel:ctx=>'Andel: '+(total?(100*ctx.parsed.y/total).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'}}},
       scales:{y:{beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
-    }
-  });
-
-  // Weekday comes from the dated observation dataset, not monthly aggregates.
-  const weekdayField=typeField(), chosenGeo=selected('geo'), chosenYear=selected('year'), chosenType=selected('type');
-  const datedEvents=weekdayPeriodRows.filter(r=>r.kind==='Händelse' &&
-    r.geography_group!=='Övriga Sverige' &&
-    (chosenGeo==='Alla'||r.geography_group===chosenGeo) &&
-    (chosenYear==='Alla'||r.year===chosenYear) &&
-    (chosenType==='Alla'||r[weekdayField]===chosenType) &&
-    Number.isInteger(r.weekday)&&r.weekday>=0&&r.weekday<=6);
-  const categoryTotals=groupSum(datedEvents,weekdayField).sort((a,b)=>b[1]-a[1]);
-  const mainCategories=categoryTotals.slice(0,12).map(([name])=>name);
-  const sums=new Map(),weekdayTotals=Array(7).fill(0);
-  datedEvents.forEach(r=>{
-    const day=r.weekday, count=+r.event_count||0;
-    const cat=mainCategories.includes(r[weekdayField])?r[weekdayField]:'Övrigt';
-    const key=cat+'|'+day;
-    sums.set(key,(sums.get(key)||0)+count);
-    weekdayTotals[day]+=count;
-  });
-  const categories=[...mainCategories];
-  if([...sums.keys()].some(k=>k.startsWith('Övrigt|'))&&!categories.includes('Övrigt'))categories.push('Övrigt');
-  const colors=['#2563eb','#2f855a','#e58f3d','#8b5cf6','#ef4444','#06b6d4','#c9a227','#ec4899','#64748b','#16a34a','#a855f7','#0f766e','#94a3b8'];
-  monthCategoryChart=chartReplace(monthCategoryChart,document.getElementById('monthCategoryChart'),{
-    type:'bar',
-    data:{labels:['Mån','Tis','Ons','Tor','Fre','Lör','Sön'],datasets:categories.map((cat,i)=>({
-      label:cat,data:Array.from({length:7},(_,day)=>sums.get(cat+'|'+day)||0),
-      backgroundColor:colors[i%colors.length],stack:'category'
-    }))},
-    options:{responsive:true,maintainAspectRatio:false,
-      interaction:{mode:'nearest',intersect:true},
-      plugins:{
-        legend:{display:true,position:'bottom',labels:{boxWidth:12,padding:12}},
-        tooltip:{callbacks:{
-          label:ctx=>ctx.dataset.label+': '+fmt.format(ctx.parsed.y)+' händelser',
-          afterLabel:ctx=>'Andel: '+(weekdayTotals[ctx.dataIndex]?
-            (100*ctx.parsed.y/weekdayTotals[ctx.dataIndex]).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'
-        }}
-      },
-      scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
     }
   });
 
