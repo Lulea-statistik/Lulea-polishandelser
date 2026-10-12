@@ -84,11 +84,12 @@ jobs:
           cp data/norrbotten_municipality_pairs.csv docs/data/norrbotten_municipality_pairs.csv
           cp data/quiet_summaries_monthly.csv docs/data/quiet_summaries_monthly.csv
           cp data/weekday_period_observations.csv docs/data/weekday_period_observations.csv
+          cp data/weekday_period_calendar.csv docs/data/weekday_period_calendar.csv
       - name: Commit data if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/weekday_period_observations.csv
+          git add data/ docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/weekday_period_observations.csv docs/data/weekday_period_calendar.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
