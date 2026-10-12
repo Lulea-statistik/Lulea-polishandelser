@@ -307,6 +307,7 @@
 
     <div class="card" style="margin-top:16px">
       <h2>Vad ingår i Okänd Norrbottenskommun?</h2>
+      <p id="unknownNorrbottenShare" class="chart-note" aria-live="polite"></p>
       <div class="other-chartbox"><canvas id="unknownNorrbottenChart"></canvas></div>
       <p class="chart-note">Stapeln <strong>Flera kommuner i Norrbotten</strong> är uppdelad i verifierade kommunpar, med blandade kommunfärger och en grå rest för fler än två eller otydliga kombinationer. Hovra över segmenten för kommunpar och antal. Övriga två staplar är odelade. Alla tre använder <strong>ursprungliga publiceringar</strong> för jämförbara totaler och följer valt år.</p>
       <p id="municipalityPairsStatus" class="chart-note" aria-live="polite"></p>
@@ -702,6 +703,17 @@ function updateUnknownNorrbottenChart(){
     if(!totals.has(r.geography_group)||(year!=='Alla'&&r.year!==year))continue;
     totals.set(r.geography_group,totals.get(r.geography_group)+(+r.event_count||0));
   }
+  const norrbottenTotal=rows.filter(r=>year==='Alla'||r.year===year)
+    .reduce((sum,r)=>sum+(+r.event_count||0),0);
+  const unknownTotal=totals.get(names[0])||0;
+  const share=norrbottenTotal?100*unknownTotal/norrbottenTotal:0;
+  const shareLabel=document.getElementById('unknownNorrbottenShare');
+  if(shareLabel)shareLabel.textContent=norrbottenTotal
+    ? fmt.format(unknownTotal)+' av '+fmt.format(norrbottenTotal)+
+      ' ursprungliga publicerade händelser ('+
+      share.toLocaleString('sv-SE',{maximumFractionDigits:1})+
+      ' %) har geografikategorin Norrbotten, okänd kommun under vald tidsperiod.'
+    : 'Inga publicerade händelser finns i den valda tidsperioden.';
   const pairRows=municipalityPairRows.filter(r=>year==='Alla'||r.year===year);
   const groups=new Map(),members=new Map();
   for(const r of pairRows){
