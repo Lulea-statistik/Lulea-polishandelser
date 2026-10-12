@@ -4,6 +4,7 @@ An unknown time is never assigned from the publication timestamp.
 """
 from pathlib import Path
 import pandas as pd
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 BLOCKS = ("Eftermiddag", "Kväll", "Kväll/natt", "Natt")
@@ -51,7 +52,13 @@ def main():
     # Independent quiet observations: also retain explicitly quiet summaries
     # which have identifiable subevents. Do not infer quietness from silence.
     all_summaries = events.loc[is_summary].copy()
-    quiet_all = all_summaries.loc[all_summaries.apply(lambda r: bool(NO_NEW_EVENT_RE.search(summary_text(r))), axis=1)].copy()
+    # Only classify explicit quiet language in a summary headline as quiet.
+    # A vague lack of reports is not a reliable zero-event observation.
+    QUIET_HEADLINE = re.compile(r"(?i)\\b(?:lugn(?:t|a)?\\s+(?:eftermiddag|kväll|natt)|(?:eftermiddagen|kvällen|natten)\\s+(?:har\\s+varit\\s+)?lugn|inga\\s+(?:akuta\\s+)?händelser|inget\\s+(?:särskilt\\s+)?att\\s+rapportera)\\b")
+    quiet_all = all_summaries.loc[all_summaries.apply(
+        lambda r: bool(NO_NEW_EVENT_RE.search(summary_text(r)) or QUIET_HEADLINE.search(str(r.get("headline", "") or ""))),
+        axis=1
+    )].copy()
     # Keep the original narrow quiet series for the observation chart, but
     # use all explicitly quiet summaries for the calendar analysis.
     unresolved = unresolved.loc[~quiet_mask]
