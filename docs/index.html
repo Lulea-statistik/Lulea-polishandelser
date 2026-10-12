@@ -127,6 +127,14 @@
     details.summary-details>summary{cursor:pointer;font-weight:650;font-size:1rem}
     details.summary-details[open]>summary{margin-bottom:14px}
     .other-chartbox{height:420px}
+    .weekday-panel{margin-top:16px}
+    .weekday-grid{display:grid;grid-template-columns:112px repeat(7,minmax(0,1fr));gap:5px;margin:12px 0;align-items:stretch}
+    .weekday-cell,.weekday-heading{min-width:0;text-align:center;padding:9px 3px;border-radius:5px}
+    .weekday-heading{font-weight:600;font-size:.85rem}
+    .weekday-cell{border:1px solid rgba(65,75,85,.12);font-size:.85rem;cursor:help;font-weight:650}
+    .weekday-cell:focus-visible{outline:3px solid #225ca5;outline-offset:1px}
+    .weekday-legend{font-size:.8rem;color:var(--muted)}
+    @media(max-width:650px){.weekday-grid{grid-template-columns:80px repeat(7,minmax(0,1fr));gap:2px}.weekday-heading,.weekday-cell{font-size:.7rem;padding:10px 1px}}
     @media(max-width:700px){.summary-metrics{grid-template-columns:1fr}}
     .foot{font-size:.87rem;color:var(--muted);margin-top:22px;line-height:1.5}
     .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
@@ -216,6 +224,13 @@
       <div class="card"><div class="kpi-label">Senaste månad</div><div class="kpi-value" id="kpiLast">–</div></div>
     </div>
 
+    <section class="card weekday-panel" aria-labelledby="weekdayTitle">
+      <h2 id="weekdayTitle">Händelser och lugna sammanfattningar per veckodag och dygnsperiod</h2>
+      <p class="chart-note" id="weekdayCoverage" aria-live="polite">Beräknar datatäckning …</p>
+      <div id="weekdayHeatmap" class="weekday-grid" role="group" aria-label="Antal tidsatta händelser per veckodag och dygnsperiod"></div>
+      <p class="weekday-legend">Färgskalan gäller antal tidsatta händelser. Siffran i varje ruta är antal händelser + uttryckliga lugna sammanfattningar. Håll muspekaren över en ruta eller använd tangentbordet för antal per kategori.</p>
+      <p class="chart-note">Dygnsperioder: eftermiddag 12–18, kväll 18–22, natt 22–06. Kväll/natt används endast för sammanfattningar som täcker båda perioderna och kan inte delas på exakta timmar. För vanliga polisnotiser utan verifierad händelsetid används inte publiceringstiden som ersättning. En lugn sammanfattning är en publicerad observation om lugn verksamhet, inte bevis för att inga händelser inträffade. Andelarna avser observationer med känt datum inom valt geografiskt och årsvis urval. Händelsetypsfiltret gäller händelser; lugna sammanfattningar saknar händelsetyp.</p>
+    </section>
     <div class="grid2">
       <div class="card">
         <h2>Händelser per år och månad</h2>
@@ -312,10 +327,11 @@ const SUMMARY_DATA_URL='data/summary_details_monthly.csv';
 const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
 const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
 const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
+const WEEKDAY_PERIOD_URL='data/weekday_period_observations.csv';
 const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
+let weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -1015,6 +1031,61 @@ function updateQuietSummaryChart(){
   });
 }
 
+
+function updateWeekdayPeriod(){
+  const grid=document.getElementById('weekdayHeatmap');
+  const coverage=document.getElementById('weekdayCoverage');
+  if(!grid||!coverage)return;
+  const geo=selected('geo'), year=selected('year'), type=selected('type'), field=typeField();
+  const candidates=weekdayPeriodRows.filter(r=>
+    (geo==='Alla'||r.geography_group===geo)&&
+    (year==='Alla'||r.year===year)
+  );
+  // Type filters only apply to incidents; quiet reports have no incident type.
+  const entries=candidates.filter(r=>r.kind==='Icke-händelse'||type==='Alla'||r[field]===type);
+  const count=(kind,known)=>entries.filter(r=>r.kind===kind&&(known===null||r.time_known===known))
+    .reduce((a,r)=>a+r.event_count,0);
+  const allEvents=count('Händelse',null), timedEvents=count('Händelse',1);
+  const allQuiet=count('Icke-händelse',null), timedQuiet=count('Icke-händelse',1);
+  const total=allEvents+allQuiet, assigned=timedEvents+timedQuiet;
+  const pct=(n,d)=>d? (100*n/d).toLocaleString('sv-SE',{maximumFractionDigits:1})+' %':'–';
+  coverage.textContent=weekdayPeriodRows.length?
+    'Datatäckning: '+fmt.format(timedEvents)+' av '+fmt.format(allEvents)+' händelser ('+pct(timedEvents,allEvents)+
+    ') och '+fmt.format(timedQuiet)+' av '+fmt.format(allQuiet)+' lugna sammanfattningar ('+pct(timedQuiet,allQuiet)+
+    ') har både datum och identifierbar dygnsperiod. Totalt '+fmt.format(assigned)+' av '+fmt.format(total)+
+    ' daterade observationer ('+pct(assigned,total)+').':
+    'Tidsindelad statistik saknas ännu. Den genereras i nästa datauppdatering.';
+  const periods=['Eftermiddag','Kväll','Kväll/natt','Natt'];
+  const days=['Mån','Tis','Ons','Tor','Fre','Lör','Sön'];
+  const values=periods.flatMap(period=>days.map((_,i)=>{
+    const arr=entries.filter(r=>r.time_known===1&&r.period===period&&r.weekday===i);
+    const incidents=arr.filter(r=>r.kind==='Händelse').reduce((a,r)=>a+r.event_count,0);
+    const quiet=arr.filter(r=>r.kind==='Icke-händelse').reduce((a,r)=>a+r.event_count,0);
+    return {period,i,incidents,quiet,total:incidents+quiet};
+  }));
+  const max=Math.max(1,...values.map(x=>x.incidents));
+  const make=(tag,klass,label)=>{const el=document.createElement(tag);el.className=klass;el.textContent=label;grid.append(el);return el;};
+  grid.replaceChildren();
+  make('div','weekday-heading','Period');
+  days.forEach(d=>make('div','weekday-heading',d));
+  periods.forEach(period=>{
+    make('div','weekday-heading',period);
+    values.filter(v=>v.period===period).forEach(v=>{
+      const alpha=v.incidents? .16+.65*v.incidents/max : 0;
+      const cell=make('div','weekday-cell',fmt.format(v.total));
+      cell.style.backgroundColor=v.incidents?'rgba(194,76,42,'+alpha.toFixed(3)+')': '#f1f5f9';
+      cell.style.color=alpha>.55?'#fff':'#182a38';
+      const detail=days[v.i]+' – '+period+'\\nHändelser: '+fmt.format(v.incidents)+
+        '\\nIcke-händelser (lugna sammanfattningar): '+fmt.format(v.quiet)+
+        '\\nTotalt antal observationer: '+fmt.format(v.total)+
+        '\\nAndel händelser: '+pct(v.incidents,v.total);
+      cell.title=detail;
+      cell.setAttribute('aria-label',detail.replaceAll('\\n',', '));
+      cell.tabIndex=0;
+    });
+  });
+}
+
 function update(){
   const d=filt();
   const expandedMain=filtExpanded();
@@ -1104,6 +1175,7 @@ function update(){
   updateUnknownNorrbottenChart();
   updateAreaComparisonChart();
   updateQuietSummaryChart();
+  updateWeekdayPeriod();
 }
 
 Promise.all([
@@ -1112,9 +1184,11 @@ Promise.all([
   fetch(SUMMARY_EXTRA_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()}),
   fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
-  fetch(MUNICIPALITY_PAIRS_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
+  fetch(MUNICIPALITY_PAIRS_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
+  fetch(WEEKDAY_PERIOD_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
-  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText])=>{
+  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText,weekdayText])=>{
+    weekdayPeriodRows=weekdayText?parseCSV(weekdayText).map(r=>({...r,event_count:+r.event_count||0,time_known:+r.time_known||0,weekday:+r.weekday,type_original:r.event_type,type_aggregated:aggregatedType(r.event_type)})):[];
     municipalityPairRows=pairsText?parseCSV(pairsText):[];
     rows=parseCSV(text).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({
       ...r,
