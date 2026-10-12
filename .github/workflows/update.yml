@@ -1,5 +1,5 @@
 name: Update polishandelser
-# QA rerun marker 9 - strict theft wording
+# QA rerun marker 10 - fix false theft word match
 
 on:
   workflow_dispatch:
