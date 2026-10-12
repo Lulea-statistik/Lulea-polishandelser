@@ -227,25 +227,7 @@
       <div class="card"><div class="kpi-label">Senaste månad</div><div class="kpi-value" id="kpiLast">–</div></div>
     </div>
 
-    <section class="card weekday-panel" aria-labelledby="calendarTitle">
-      <h2 id="calendarTitle">Dokumenterat lugna och händelserika dagar per veckodag</h2>
-      <p class="calendar-note">Varje kalenderdatum räknas högst en gång per dygnsperiod. Grönt = bara uttryckligen lugn sammanfattning, rött = bara tidsatt händelse, gult = båda. Grått betyder att tillförlitlig perioduppgift saknas, inte att dagen var lugn. Diagrammet visar dokumentationens fördelning och kan inte bevisa att en period var händelsefri. Endast källor med samma geografiska klassificering jämförs.</p>
-      <div id="calendarHeatmap" class="weekday-grid" role="group" aria-label="Unika datum med dokumenterade händelser och lugna perioder"></div>
-      <p class="chart-note" id="calendarCoverage"></p>
-    </section>
-    <section class="card weekday-panel" aria-labelledby="weekdayTitle">
-      <h2 id="weekdayTitle">Händelser och lugna sammanfattningar per veckodag och dygnsperiod</h2>
-      <p class="chart-note" id="weekdayCoverage" aria-live="polite">Beräknar datatäckning …</p>
-      <div id="weekdayHeatmap" class="weekday-grid" role="group" aria-label="Antal tidsatta händelser per veckodag och dygnsperiod"></div>
-      <p class="weekday-legend">Färgskalan gäller antal tidsatta händelser. Siffran i varje ruta är antal händelser + uttryckliga lugna sammanfattningar. Håll muspekaren över en ruta eller använd tangentbordet för antal per kategori.</p>
-      <p class="chart-note">Dygnsperioder: eftermiddag 12–18, kväll 18–22, natt 22–06. Kväll/natt används endast för sammanfattningar som täcker båda perioderna och kan inte delas på exakta timmar. För vanliga polisnotiser utan verifierad händelsetid används inte publiceringstiden som ersättning. En lugn sammanfattning är en publicerad observation om lugn verksamhet, inte bevis för att inga händelser inträffade. Andelarna avser observationer med känt datum inom valt geografiskt och årsvis urval. Händelsetypsfiltret gäller händelser; lugna sammanfattningar saknar händelsetyp.</p>
-    </section>
-    <div class="grid2">
-      <div class="card">
-        <h2>Händelser per år och månad</h2>
-        <div class="chartbox"><canvas id="monthlyChart"></canvas></div>
-        <p class="chart-note">Diagrammet använder den <strong>expanderade händelseserien</strong>. När konkreta underhändelser har kunnat identifieras i en sammanfattning ersätter de sammanfattningsposten och redovisas under sin vanliga händelsetyp. Endast sammanfattningar som inte kunnat delas upp ligger kvar som <strong>Sammanfattning, ej uppdelad</strong>.</p>
-      </div>
+    <div class="grid2" style="grid-template-columns:minmax(0,1fr)">
       <div class="card">
         <h2>Vanligaste händelsetyper</h2>
         <div class="chartbox"><canvas id="typeChart"></canvas></div>
@@ -1146,27 +1128,6 @@ function update(){
   expandedMain.forEach(x=>{
     const k=x.year+'-'+String(x.month).padStart(2,'0');
     byMonth.set(k,(byMonth.get(k)||0)+(+x.event_count||0));
-  });
-
-  const ml=[...byMonth.keys()].sort();
-  monthlyChart=chartReplace(monthlyChart,document.getElementById('monthlyChart'),{
-    type:'line',
-    data:{
-      labels:ml,
-      datasets:[{
-        label:'Händelser',
-        data:ml.map(k=>byMonth.get(k)||0),
-        borderWidth:2,
-        pointRadius:1.5,
-        tension:.18
-      }]
-    },
-    options:{
-      responsive:true,
-      maintainAspectRatio:false,
-      plugins:{legend:{display:false}},
-      scales:{y:{beginAtZero:true,title:{display:true,text:'Antal'}}}
-    }
   });
 
   const field=typeField();
