@@ -19,12 +19,12 @@ RULES={
 # tillgripa/tillgriper/tillgrep/tillgripit/tillgripen; inbrott.
 # Prefix allows compounds such as bilstöld and cykelstöld.
 THEFT=re.compile(
- r"(?i)(?<!\\w)(?:\\w*stöld\\w*|\\w*inbrott\\w*|"
+ r"(?i)(?<!\w)(?:\w*stöld\w*|\w*inbrott\w*|"
  r"stjäla|stjäl|stjäls|stjäles|stjälas|stjälande|"
  r"stal|stals|stulit|stulits|stulen|stulet|stulna|stulne|"
  r"tillgripa|tillgriper|tillgrips|tillgrep|tillgreps|"
  r"tillgripit|tillgripits|tillgripen|tillgripet|tillgripna|"
- r"tillgrepp\\w*)(?!\\w)"
+ r"tillgrepp\w*)(?!\w)"
 )
 NEGATE=re.compile(r"(?i)\b(?:förhindrat|försök att förhindra|ingen stöld|inte stulit|ej stulen|stöldgods återfunnet)\b")
 def main():
