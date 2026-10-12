@@ -248,6 +248,12 @@
     </div>
 
     <div class="card" style="margin-top:16px">
+      <h2>Händelser per månad – uppdelat efter kategori</h2>
+      <div class="chartbox composition"><canvas id="monthCategoryChart"></canvas></div>
+      <p class="chart-note">Antal händelser per kalendermånad, uppdelat efter vald Kategorisering (Polisens eller aggregerade kategorier). Följer samma filter som månadsdiagrammet. Mindre kategorier samlas i Övrigt för att hålla legenden läsbar. Håll muspekaren över ett segment för antal i kategorin.</p>
+    </div>
+
+    <div class="card" style="margin-top:16px">
       <h2>Geografisk fördelning</h2>
       <div class="chartbox"><canvas id="geoChart"></canvas></div>
     </div>
@@ -323,7 +329,7 @@ const CALENDAR_PERIOD_URL='data/weekday_period_calendar.csv';
 const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
+let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, monthCategoryChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -1158,6 +1164,43 @@ function update(){
     options:{responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal händelser: '+fmt.format(ctx.parsed.y)}}},
       scales:{y:{beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
+    }
+  });
+
+  // Stacked monthly counts using the same expanded, filtered event series.
+  const categoryField=typeField();
+  const categoryTotals=groupSum(expandedMain,categoryField).sort((a,b)=>b[1]-a[1]);
+  const mainCategories=categoryTotals.slice(0,12).map(([name])=>name);
+  const sums=new Map();
+  expandedMain.forEach(r=>{
+    const m=+r.month;
+    if(m<1||m>12)return;
+    const cat=mainCategories.includes(r[categoryField])?r[categoryField]:'Övrigt';
+    const k=cat+'|'+m;
+    sums.set(k,(sums.get(k)||0)+(+r.event_count||0));
+  });
+  const categories=[...mainCategories];
+  if([...sums.keys()].some(k=>k.startsWith('Övrigt|'))&&!categories.includes('Övrigt'))categories.push('Övrigt');
+  const colors=['#2563eb','#2f855a','#e58f3d','#8b5cf6','#ef4444','#06b6d4','#c9a227','#ec4899','#64748b','#16a34a','#a855f7','#0f766e','#94a3b8'];
+  monthCategoryChart=chartReplace(monthCategoryChart,document.getElementById('monthCategoryChart'),{
+    type:'bar',
+    data:{labels:monthNames,datasets:categories.map((cat,i)=>({
+      label:cat,
+      data:Array.from({length:12},(_,m)=>sums.get(cat+'|'+(m+1))||0),
+      backgroundColor:colors[i%colors.length],
+      stack:'category'
+    }))},
+    options:{
+      responsive:true,maintainAspectRatio:false,
+      interaction:{mode:'nearest',intersect:true},
+      plugins:{
+        legend:{display:true,position:'bottom',labels:{boxWidth:12,padding:12}},
+        tooltip:{callbacks:{
+          label:ctx=>ctx.dataset.label+': '+fmt.format(ctx.parsed.y)+' händelser',
+          footer:items=>'Totalt för månaden: '+fmt.format(items[0].chart.data.datasets.reduce((a,ds)=>a+(+ds.data[items[0].dataIndex]||0),0))
+        }}
+      },
+      scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
     }
   });
 
