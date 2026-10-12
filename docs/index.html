@@ -248,9 +248,9 @@
     </div>
 
     <div class="card" style="margin-top:16px">
-      <h2>Händelser per månad – uppdelat efter kategori</h2>
+      <h2>Händelser per veckodag – uppdelat efter kategori</h2>
       <div class="chartbox composition"><canvas id="monthCategoryChart"></canvas></div>
-      <p class="chart-note">Antal händelser per kalendermånad, uppdelat efter vald Kategorisering (Polisens eller aggregerade kategorier). Följer samma filter som månadsdiagrammet. Mindre kategorier samlas i Övrigt för att hålla legenden läsbar. Håll muspekaren över ett segment för antal i kategorin.</p>
+      <p class="chart-note">Antal daterade händelser per veckodag (måndag–söndag), uppdelat efter vald kategorisering. Följer geografi, år och händelsetyp. Dygnstid behöver inte vara känd för att veckodagen ska kunna beräknas. Sammanfattningar utan känd veckodag ingår inte. Mindre kategorier samlas i Övrigt. Andelen i hover-rutan avser kategorins andel av alla händelser under samma veckodag.</p>
     </div>
 
     <div class="card" style="margin-top:16px">
@@ -1179,37 +1179,41 @@ function update(){
     }
   });
 
-  // Stacked monthly counts using the same expanded, filtered event series.
-  const categoryField=typeField();
-  const categoryTotals=groupSum(expandedMain,categoryField).sort((a,b)=>b[1]-a[1]);
+  // Weekday comes from the dated observation dataset, not monthly aggregates.
+  const weekdayField=typeField(), chosenGeo=selected('geo'), chosenYear=selected('year'), chosenType=selected('type');
+  const datedEvents=weekdayPeriodRows.filter(r=>r.kind==='Händelse' &&
+    r.geography_group!=='Övriga Sverige' &&
+    (chosenGeo==='Alla'||r.geography_group===chosenGeo) &&
+    (chosenYear==='Alla'||r.year===chosenYear) &&
+    (chosenType==='Alla'||r[weekdayField]===chosenType) &&
+    Number.isInteger(r.weekday)&&r.weekday>=0&&r.weekday<=6);
+  const categoryTotals=groupSum(datedEvents,weekdayField).sort((a,b)=>b[1]-a[1]);
   const mainCategories=categoryTotals.slice(0,12).map(([name])=>name);
-  const sums=new Map();
-  expandedMain.forEach(r=>{
-    const m=+r.month;
-    if(m<1||m>12)return;
-    const cat=mainCategories.includes(r[categoryField])?r[categoryField]:'Övrigt';
-    const k=cat+'|'+m;
-    sums.set(k,(sums.get(k)||0)+(+r.event_count||0));
+  const sums=new Map(),weekdayTotals=Array(7).fill(0);
+  datedEvents.forEach(r=>{
+    const day=r.weekday, count=+r.event_count||0;
+    const cat=mainCategories.includes(r[weekdayField])?r[weekdayField]:'Övrigt';
+    const key=cat+'|'+day;
+    sums.set(key,(sums.get(key)||0)+count);
+    weekdayTotals[day]+=count;
   });
   const categories=[...mainCategories];
   if([...sums.keys()].some(k=>k.startsWith('Övrigt|'))&&!categories.includes('Övrigt'))categories.push('Övrigt');
   const colors=['#2563eb','#2f855a','#e58f3d','#8b5cf6','#ef4444','#06b6d4','#c9a227','#ec4899','#64748b','#16a34a','#a855f7','#0f766e','#94a3b8'];
   monthCategoryChart=chartReplace(monthCategoryChart,document.getElementById('monthCategoryChart'),{
     type:'bar',
-    data:{labels:monthNames,datasets:categories.map((cat,i)=>({
-      label:cat,
-      data:Array.from({length:12},(_,m)=>sums.get(cat+'|'+(m+1))||0),
-      backgroundColor:colors[i%colors.length],
-      stack:'category'
+    data:{labels:['Mån','Tis','Ons','Tor','Fre','Lör','Sön'],datasets:categories.map((cat,i)=>({
+      label:cat,data:Array.from({length:7},(_,day)=>sums.get(cat+'|'+day)||0),
+      backgroundColor:colors[i%colors.length],stack:'category'
     }))},
-    options:{
-      responsive:true,maintainAspectRatio:false,
+    options:{responsive:true,maintainAspectRatio:false,
       interaction:{mode:'nearest',intersect:true},
       plugins:{
         legend:{display:true,position:'bottom',labels:{boxWidth:12,padding:12}},
         tooltip:{callbacks:{
           label:ctx=>ctx.dataset.label+': '+fmt.format(ctx.parsed.y)+' händelser',
-          afterLabel:ctx=>{const monthlyTotal=calendarTotals[ctx.dataIndex]||0;return 'Andel: '+(monthlyTotal?(100*ctx.parsed.y/monthlyTotal).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %';}
+          afterLabel:ctx=>'Andel: '+(weekdayTotals[ctx.dataIndex]?
+            (100*ctx.parsed.y/weekdayTotals[ctx.dataIndex]).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'
         }}
       },
       scales:{x:{stacked:true},y:{stacked:true,beginAtZero:true,title:{display:true,text:'Antal händelser'}}}
