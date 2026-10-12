@@ -1161,7 +1161,7 @@ function update(){
   yearChart=chartReplace(yearChart,document.getElementById('yearChart'),{
     type:'bar',
     data:{labels:yrs.map(x=>x[0]),datasets:[{label:'Antal',data:yrs.map(x=>x[1]),backgroundColor:'#a7dca0',borderColor:'#81bf7b'}]},
-    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true}}}
+    options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>'Antal: '+fmt.format(ctx.parsed.y),afterLabel:ctx=>'Andel: '+(geographyTotal?(100*ctx.parsed.y/geographyTotal).toLocaleString('sv-SE',{maximumFractionDigits:1}):'0')+' %'}}},scales:{y:{beginAtZero:true}}}
   });
 
   const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];
@@ -1221,6 +1221,7 @@ function update(){
     return (y==='Alla'||r.year===y)&&(t==='Alla'||r[field]===t);
   });
   const geos=groupSum(dg,'geography_group').sort((a,b)=>b[1]-a[1]);
+  const geographyTotal=geos.reduce((sum,[,count])=>sum+count,0);
   geoChart=chartReplace(geoChart,document.getElementById('geoChart'),{
     type:'bar',
     data:{labels:geos.map(x=>x[0]),datasets:[{label:'Antal',data:geos.map(x=>x[1]),backgroundColor:'#e0b400',borderColor:'#e0b400'}]},
