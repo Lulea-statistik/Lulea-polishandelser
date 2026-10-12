@@ -128,6 +128,8 @@
     details.summary-details[open]>summary{margin-bottom:14px}
     .other-chartbox{height:420px}
     .weekday-panel{margin-top:16px}
+    .calendar-cell{font-size:.75rem;text-align:center;padding:8px 2px;border-radius:5px;border:1px solid #dce1e7;white-space:normal}
+    .calendar-note{margin:10px 0 16px;color:var(--muted);font-size:.85rem}
     .weekday-grid{display:grid;grid-template-columns:112px repeat(7,minmax(0,1fr));gap:5px;margin:12px 0;align-items:stretch}
     .weekday-cell,.weekday-heading{min-width:0;text-align:center;padding:9px 3px;border-radius:5px}
     .weekday-heading{font-weight:600;font-size:.85rem}
@@ -224,6 +226,12 @@
       <div class="card"><div class="kpi-label">Senaste månad</div><div class="kpi-value" id="kpiLast">–</div></div>
     </div>
 
+    <section class="card weekday-panel" aria-labelledby="calendarTitle">
+      <h2 id="calendarTitle">Dokumenterat lugna och händelserika dagar per veckodag</h2>
+      <p class="calendar-note">Varje kalenderdatum räknas högst en gång per dygnsperiod. Grönt = bara uttryckligen lugn sammanfattning, rött = bara tidsatt händelse, gult = båda. Grått betyder att tillförlitlig perioduppgift saknas, inte att dagen var lugn. Diagrammet visar dokumentationens fördelning och kan inte bevisa att en period var händelsefri. Endast källor med samma geografiska klassificering jämförs.</p>
+      <div id="calendarHeatmap" class="weekday-grid" role="group" aria-label="Unika datum med dokumenterade händelser och lugna perioder"></div>
+      <p class="chart-note" id="calendarCoverage"></p>
+    </section>
     <section class="card weekday-panel" aria-labelledby="weekdayTitle">
       <h2 id="weekdayTitle">Händelser och lugna sammanfattningar per veckodag och dygnsperiod</h2>
       <p class="chart-note" id="weekdayCoverage" aria-live="polite">Beräknar datatäckning …</p>
@@ -328,10 +336,11 @@ const SUMMARY_EXTRA_URL='data/summary_details_extra_monthly.csv';
 const EXPANDED_DATA_URL='data/expanded_monthly_summary.csv';
 const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
 const WEEKDAY_PERIOD_URL='data/weekday_period_observations.csv';
+const CALENDAR_PERIOD_URL='data/weekday_period_calendar.csv';
 const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
+let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -1032,6 +1041,38 @@ function updateQuietSummaryChart(){
 }
 
 
+function updateCalendarPeriod(){
+  const target=document.getElementById('calendarHeatmap');
+  const info=document.getElementById('calendarCoverage');
+  if(!target||!info)return;
+  const geo=selected('geo'),year=selected('year');
+  const data=calendarPeriodRows.filter(r=>
+    (geo==='Alla'||r.geography_group===geo)&&(year==='Alla'||r.year===year));
+  const periods=['Eftermiddag','Kväll','Kväll/natt','Natt'];
+  const days=['Mån','Tis','Ons','Tor','Fre','Lör','Sön'];
+  const records=periods.flatMap(period=>days.map((day,i)=>{
+    const a=data.filter(r=>r.period===period&&r.weekday===i);
+    const count=status=>a.filter(r=>r.status===status).length;
+    return {period,day,quiet:count('Lugn'),event:count('Händelse'),both:count('Båda')};
+  }));
+  const make=(name,label)=>{const el=document.createElement('div');el.className=name;el.textContent=label;target.appendChild(el);return el};
+  target.replaceChildren();make('weekday-heading','Period');days.forEach(d=>make('weekday-heading',d));
+  periods.forEach(p=>{
+    make('weekday-heading',p);
+    records.filter(r=>r.period===p).forEach(r=>{
+      const cell=make('calendar-cell',r.quiet+' / '+r.both+' / '+r.event);
+      cell.style.background=r.quiet>r.event?'#d7f2e1':r.event>r.quiet?'#f8dedb':r.both?'#fff0c8':'#eef1f4';
+      const caption=r.day+' – '+p+'\\nUnika dagar med endast lugn rapport: '+r.quiet+
+        '\\nUnika dagar med både lugn rapport och händelse: '+r.both+
+        '\\nUnika dagar med endast händelse: '+r.event+
+        '\\nTotalt dokumenterade datum: '+(r.quiet+r.both+r.event);
+      cell.title=caption;cell.tabIndex=0;cell.setAttribute('aria-label',caption.replaceAll('\\n',', '));
+    });
+  });
+  const counts=records.reduce((a,r)=>({quiet:a.quiet+r.quiet,event:a.event+r.event,both:a.both+r.both}),{quiet:0,event:0,both:0});
+  info.textContent=calendarPeriodRows.length?'Per cell: gröna / gula / röda datum. Totalt över periodrutorna: '+counts.quiet+' enbart lugna, '+counts.both+' blandade och '+counts.event+' enbart händelser. Samma datum kan förekomma i olika perioder. Händelsetypsfiltret tillämpas inte här eftersom lugna sammanfattningar saknar händelsetyp.':'Kalenderunderlaget skapas i nästa datauppdatering.';
+}
+
 function updateWeekdayPeriod(){
   const grid=document.getElementById('weekdayHeatmap');
   const coverage=document.getElementById('weekdayCoverage');
@@ -1176,6 +1217,7 @@ function update(){
   updateAreaComparisonChart();
   updateQuietSummaryChart();
   updateWeekdayPeriod();
+  updateCalendarPeriod();
 }
 
 Promise.all([
@@ -1185,9 +1227,11 @@ Promise.all([
   fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()}),
   fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(MUNICIPALITY_PAIRS_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
-  fetch(WEEKDAY_PERIOD_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
+  fetch(WEEKDAY_PERIOD_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
+  fetch(CALENDAR_PERIOD_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
-  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText,weekdayText])=>{
+  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText,weekdayText,calendarText])=>{
+    calendarPeriodRows=calendarText?parseCSV(calendarText).map(r=>({...r,weekday:+r.weekday,event_count:+r.event_count,quiet_count:+r.quiet_count})):[];
     weekdayPeriodRows=weekdayText?parseCSV(weekdayText).map(r=>({...r,event_count:+r.event_count||0,time_known:+r.time_known||0,weekday:+r.weekday,type_original:r.event_type,type_aggregated:aggregatedType(r.event_type)})):[];
     municipalityPairRows=pairsText?parseCSV(pairsText):[];
     rows=parseCSV(text).filter(r=>r.geography_group!=='Övriga Sverige').map(r=>({
