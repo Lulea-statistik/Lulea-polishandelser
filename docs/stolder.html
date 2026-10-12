@@ -9,7 +9,7 @@
 <main class="wrap"><div class="card warning"><strong>Utforskande textanalys, inte officiell brottsstatistik.</strong> Diagrammen visar polisnotiser som matchar sökord, inte verifierade brott eller gärningspersoner. Närliggande notiser över flera kommuner kan vara oberoende händelser. Platsord i en notis behöver inte vara brottsplats. Ingen slutsats dras om stöldligor.</div>
 <div class="card"><h2>Urval</h2><div class="controls"><label>Stöldobjekt<select id="object"><option value="Alla">Alla</option></select></label><label>År<select id="year"><option value="Alla">Alla</option></select></label><label>Tidsupplösning<select id="period"><option value="week">Vecka (ISO)</option><option value="month">Månad</option></select></label><label>Geografi<select id="geo"><option value="Alla">Alla</option></select></label></div><p class="muted">En polisnotis kan nämna flera stöldobjekt och räknas då i flera objektkategorier. Sammanfattningar hålls tills vidare utanför på grund av risk för dubbelräkning.</p></div>
 <div class="card"><h2>Översikt</h2><div class="kpis"><span id="reports">– notiser</span><span id="areas">– geografier</span><span id="times">– perioder</span></div><p id="coverage" class="muted"></p></div>
-<div class="card"><h2>Tidsutveckling – möjliga ansamlingar</h2><p class="muted">Varje stapel är antal unika polisnotiser med träff. Tät rapportering är en signal att undersöka, inte ett belägg för samordnade stölder.</p><div class="scroll"><table><thead><tr><th>Vecka / månad</th><th>Antal notiser</th><th>Geografier</th><th>Intensitet</th></tr></thead><tbody id="timeTable"></tbody></table></div></div>
+<div class="card"><h2>Tidsutveckling – möjliga ansamlingar</h2><p class="muted">Varje stapel är antal unika polisnotiser med träff. Intensitet visas som ett rullande medelvärde för aktuell och föregående fyra veckor (vid månadsvis visning: fem månader). Veckor utan notiser räknas som noll. Under de första fyra perioderna används det tillgängliga antalet perioder. Tät rapportering är en signal att undersöka, inte ett belägg för samordnade stölder.</p><div class="scroll"><table><thead><tr><th>Vecka / månad</th><th>Antal notiser</th><th>Geografier</th><th id="intensityHeading">5 veckors rullande medel</th></tr></thead><tbody id="timeTable"></tbody></table></div></div>
 <div class="card"><h2>Geografisk spridning över tid</h2><p class="muted">Tabellen visar geografisk samtidighet. Den anger inte i vilken ordning gärningspersoner rört sig, och drar inga färdvägar mellan kommuner.</p><div class="scroll"><table><thead><tr><th>Period</th><th>Geografier med notiser</th><th>Antal kommungrupper</th><th>Unika notiser</th></tr></thead><tbody id="movement"></tbody></table></div></div>
 <div class="card"><h2>Händelser att granska manuellt</h2><p class="muted">Läs originalnotiser för att avgöra om det rör stöld, stöldförsök, anträffat gods eller en annan uppgift. Rubrikmatchning är inte en verifierad klassificering.</p><div class="scroll"><table><thead><tr><th>Datum</th><th>Objekt</th><th>Geografi</th><th>Rubrik / källa</th></tr></thead><tbody id="events"></tbody></table></div></div>
 <div class="card"><h2>Metod och begränsningar</h2><p>Datasetet kommer från publicerade polishändelser. Endast notiser där rubrik, beskrivning eller händelsetext uttryckligen innehåller en form av stöld, inbrott, stjäla eller tillgripa tas med. Stöldtypens kategorietikett räcker inte ensam. Träffordet sparas för granskning. Även stöldskydd, återfunnet gods eller äldre händelser kan ge falska träffar och kräver kontroll. En notis kan omfatta flera faktiska stölder, medan flera notiser kan avse samma händelse. Datumet kommer från datasetets händelsedatum, vilket måste kontrolleras mot originaltexten vid analys av enskilda serier. Vissa träffar kan vara falska positiva, och täckningsgrad för alla verkliga stölder kan inte beräknas med detta material.</p><p>För vidare analys bör man granska upprepade objekt, korta tidsfönster och flera geografier tillsammans med brottsplats, metod, tidpunkter och polisens egna offentliga uppgifter. Detta är <strong>hypotesgenerering</strong>, inte identifiering av misstänkta eller stöldligor.</p></div>
@@ -22,6 +22,21 @@ const unique=a=>[...new Set(a)];
 const escapeHTML=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function csv(s){const out=[];let fields=[],field='',q=false;for(let i=0;i<s.length;i++){const c=s[i];if(c==='"'){if(q&&s[i+1]==='"'){field+='"';i++}else q=!q}else if(c===','&&!q){fields.push(field);field=''}else if((c==='\r'||c==='\n')&&!q){if(c==='\r'&&s[i+1]==='\n')i++;fields.push(field);if(fields.some(Boolean))out.push(fields);fields=[];field=''}else field+=c}if(fields.length||field){fields.push(field);out.push(fields)}const h=out.shift()||[];return out.map(r=>Object.fromEntries(h.map((v,i)=>[v,r[i]||''])));}
 function period(r){return $('period').value==='week'?r.week:r.date.slice(0,7)}
+function periodDate(key,weekly){
+ if(!weekly)return new Date(Date.UTC(Number(key.slice(0,4)),Number(key.slice(5,7))-1,1));
+ const y=Number(key.slice(0,4)),w=Number(key.slice(6));
+ const jan4=new Date(Date.UTC(y,0,4));
+ jan4.setUTCDate(jan4.getUTCDate()-(jan4.getUTCDay()||7)+1+(w-1)*7);
+ return jan4;
+}
+function periodKey(date,weekly){
+ if(!weekly)return date.toISOString().slice(0,7);
+ const d=new Date(date.getTime());
+ d.setUTCDate(d.getUTCDate()+4-(d.getUTCDay()||7));
+ const y=d.getUTCFullYear(),jan1=new Date(Date.UTC(y,0,1));
+ const w=Math.ceil(((d-jan1)/86400000+1)/7);
+ return y+'-W'+String(w).padStart(2,'0');
+}
 function render(){
  const object=$('object').value,year=$('year').value,geo=$('geo').value;
  const data=rows.filter(r=>(object==='Alla'||r.object_category===object)&&(year==='Alla'||r.year===year)&&(geo==='Alla'||r.geography_group===geo));
@@ -32,8 +47,30 @@ function render(){
  $('coverage').textContent='Observationer i valt urval: '+fmt.format(data.length)+' objektträffar i '+fmt.format(ids.length)+' unika polisnotiser. Urvalet utgör inte samtliga stölder.';
  const time=new Map();for(const r of data){const k=period(r);if(!time.has(k))time.set(k,[]);time.get(k).push(r);}
  const sorted=[...time.entries()].sort((a,b)=>b[0].localeCompare(a[0]));
- const max=Math.max(1,...sorted.map(([,v])=>unique(v.map(x=>x.event_id)).length));
- $('timeTable').innerHTML=sorted.map(([k,v])=>{const n=unique(v.map(x=>x.event_id)).length,g=unique(v.map(x=>x.geography_group));return '<tr><td>'+escapeHTML(k)+'</td><td>'+n+'</td><td>'+g.length+'</td><td><span class="bar" style="width:'+Math.round(n/max*150)+'px"></span></td></tr>'}).join('');
+ const weekly=$('period').value==='week';
+ $('intensityHeading').textContent=weekly?'Rullande medel (5 veckor)':'Rullande medel (5 månader)';
+ // Calculate on calendar periods, including missing weeks/months as zero.
+ const counts=new Map(sorted.map(([k,v])=>[k,unique(v.map(x=>x.event_id)).length]));
+ const keys=[...counts.keys()].sort();
+ const rolling=new Map();
+ if(keys.length){
+   const current=periodDate(keys[0],weekly),last=periodDate(keys[keys.length-1],weekly);
+   const history=[];
+   while(current<=last){
+     const key=periodKey(current,weekly);
+     history.push(counts.get(key)||0);
+     const lastFive=history.slice(-5);
+     rolling.set(key,lastFive.reduce((a,b)=>a+b,0)/lastFive.length);
+     if(weekly)current.setUTCDate(current.getUTCDate()+7);
+     else current.setUTCMonth(current.getUTCMonth()+1);
+   }
+ }
+ const max=Math.max(1,...rolling.values());
+ $('timeTable').innerHTML=sorted.map(([k,v])=>{
+   const n=unique(v.map(x=>x.event_id)).length,g=unique(v.map(x=>x.geography_group));
+   const avg=rolling.get(k)||0;
+   return '<tr><td>'+escapeHTML(k)+'</td><td>'+n+'</td><td>'+g.length+'</td><td title="Rullande medel inklusive aktuell period och föregående fyra kalenderperioder"><span class="bar" style="width:'+Math.round(avg/max*150)+'px"></span>'+avg.toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+'</td></tr>';
+ }).join('');
  $('movement').innerHTML=sorted.filter(([,v])=>unique(v.map(x=>x.geography_group)).length>1).map(([k,v])=>'<tr><td>'+escapeHTML(k)+'</td><td>'+escapeHTML(unique(v.map(x=>x.geography_group)).join(', '))+'</td><td>'+unique(v.map(x=>x.geography_group)).length+'</td><td>'+unique(v.map(x=>x.event_id)).length+'</td></tr>').join('')||'<tr><td colspan="4">Inga perioder med flera geografier i urvalet.</td></tr>';
  const latest=[...data].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,200);
  $('events').innerHTML=latest.map(r=>'<tr><td>'+escapeHTML(r.date)+'</td><td>'+escapeHTML(r.object_category)+'</td><td>'+escapeHTML(r.geography_group)+'</td><td>'+(r.source_url&&/^https:\/\//.test(r.source_url)?'<a rel="noopener noreferrer" target="_blank" href="'+escapeHTML(r.source_url)+'">'+escapeHTML(r.headline||'Källa')+'</a>':escapeHTML(r.headline))+'</td></tr>').join('');
