@@ -8,6 +8,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parents[1]
 BLOCKS = ("Eftermiddag", "Kväll", "Kväll/natt", "Natt")
 OUT = ROOT / "data" / "weekday_period_observations.csv"
+CALENDAR_OUT = ROOT / "data" / "weekday_period_calendar.csv"
 
 def valid_dates(df):
     df = df.copy()
@@ -47,6 +48,12 @@ def main():
     from build_expanded_monthly import NO_NEW_EVENT_RE, summary_text, quiet_bucket
     quiet_mask = unresolved.apply(lambda r: bool(NO_NEW_EVENT_RE.search(summary_text(r))), axis=1)
     quiet = unresolved.loc[quiet_mask].copy()
+    # Independent quiet observations: also retain explicitly quiet summaries
+    # which have identifiable subevents. Do not infer quietness from silence.
+    all_summaries = events.loc[is_summary].copy()
+    quiet_all = all_summaries.loc[all_summaries.apply(lambda r: bool(NO_NEW_EVENT_RE.search(summary_text(r))), axis=1)].copy()
+    # Keep the original narrow quiet series for the observation chart, but
+    # use all explicitly quiet summaries for the calendar analysis.
     unresolved = unresolved.loc[~quiet_mask]
 
     datasets = []
@@ -77,6 +84,39 @@ def main():
         dropna=False
     )["event_count"].sum().reset_index()
     result.to_csv(OUT, index=False, encoding="utf-8")
+    quiet_cal = valid_dates(quiet_all)
+    quiet_cal["period"] = quiet_cal["type_original"].map(quiet_bucket)
+    quiet_cal = quiet_cal.loc[quiet_cal["period"].isin(BLOCKS)]
+    quiet_cal["kind"] = "Icke-händelse"
+    # Do not duplicate ordinary and extracted events in the daily status grid.
+    calendar_events = pd.concat([valid_dates(ordinary), valid_dates(included)], ignore_index=True)
+    calendar_events["period"] = ""
+    ordinary_n = len(valid_dates(ordinary))
+    calendar_events.loc[calendar_events.index >= ordinary_n, "period"] = (
+        calendar_events.loc[calendar_events.index >= ordinary_n, "time"].map(block_from_time)
+    )
+    calendar_events = calendar_events.loc[calendar_events["period"].isin(BLOCKS)].copy()
+    calendar_events["kind"] = "Händelse"
+    cal = pd.concat([
+        calendar_events[["date", "geography_group", "period", "kind"]],
+        quiet_cal[["date", "geography_group", "period", "kind"]]
+    ], ignore_index=True)
+    # A single date and period can contain many reports, but remains one day.
+    cal = cal.groupby(["date", "geography_group", "period", "kind"]).size().unstack(fill_value=0).reset_index()
+    for kind in ("Händelse", "Icke-händelse"):
+        if kind not in cal.columns:
+            cal[kind] = 0
+    cal["year"] = cal["date"].dt.year
+    cal["weekday"] = cal["date"].dt.weekday
+    cal["status"] = cal.apply(lambda r: (
+        "Båda" if r["Händelse"] and r["Icke-händelse"] else
+        "Händelse" if r["Händelse"] else "Lugn"
+    ), axis=1)
+    cal.rename(columns={"Händelse": "event_count", "Icke-händelse": "quiet_count"}, inplace=True)
+    cal[["date", "year", "weekday", "geography_group", "period", "event_count", "quiet_count", "status"]].to_csv(
+        CALENDAR_OUT, index=False, encoding="utf-8"
+    )
+    print(f"calendar_day_periods={len(cal)}")
     print(f"dated_observations={len(combined)} assigned_period={int(combined['time_known'].sum())}")
 
 if __name__ == "__main__":
