@@ -6662,7 +6662,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,9,Övertorneå kommun,Trafikolycka,1
 2026,10,Arjeplogs kommun,Narkotikabrott,1
 2026,10,Bodens kommun,Trafikbrott,3
-2026,10,Bodens kommun,Brand,1
+2026,10,Bodens kommun,Brand,2
 2026,10,Bodens kommun,Trafikkontroll,1
 2026,10,Gällivare kommun,Brand,1
 2026,10,Gällivare kommun,Misshandel,1
@@ -6689,4 +6689,5 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Piteå kommun,Ofredande/förargelse,5
 2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikkontroll,1
+2026,10,Piteå kommun,Övrigt/oklassificerad,1
 2026,10,Övertorneå kommun,Övrigt/oklassificerad,1

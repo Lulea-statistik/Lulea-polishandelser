@@ -14392,11 +14392,11 @@ year,month,geography_group,event_type,event_count
 2026,10,Arjeplogs kommun,Narkotikabrott,1
 2026,10,Bodens kommun,Rattfylleri,3
 2026,10,Bodens kommun,Trafikbrott,3
+2026,10,Bodens kommun,Brand,2
 2026,10,Bodens kommun,Trafikkontroll,2
-2026,10,Bodens kommun,Brand,1
 2026,10,Bodens kommun,Olovlig körning,1
 2026,10,Bodens kommun,Skadegörelse,1
-2026,10,Flera kommuner i Norrbotten,Trafikkontroll,7
+2026,10,Flera kommuner i Norrbotten,Trafikkontroll,8
 2026,10,Gällivare kommun,Misshandel,2
 2026,10,Gällivare kommun,Brand,1
 2026,10,Gällivare kommun,Narkotikabrott,1
@@ -14436,5 +14436,6 @@ year,month,geography_group,event_type,event_count
 2026,10,Piteå kommun,Trafikkontroll,1
 2026,10,Piteå kommun,Trafikolycka,1
 2026,10,Piteå kommun,"Trafikolycka,  singel",1
+2026,10,Piteå kommun,Övrigt/oklassificerad,1
 2026,10,Älvsbyns kommun,Rattfylleri,1
 2026,10,Övertorneå kommun,Övrigt/oklassificerad,1
