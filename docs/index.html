@@ -111,7 +111,8 @@
     .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     .kpi-label{font-size:.8rem;color:var(--muted)}
     .kpi-value{font-size:1.75rem;font-weight:700;margin-top:5px}
-    .grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:16px;margin-top:16px}
+    .grid2{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px;margin-top:16px}
+    .grid2>.card{min-width:0}
     h2{font-size:1.12rem;margin:0 0 14px}
     .chartbox{height:360px}
     .chartbox.composition{height:430px}
@@ -139,7 +140,7 @@
     }
     @media(max-width:520px){.kpis{grid-template-columns:1fr}}
     /* Diskret bildvisarläge: centrerad dialog i stället för webbläsarens helskärm. */
-    .chartbox,.comparison-chartbox,.other-chartbox{position:relative}
+    .chartbox,.comparison-chartbox,.other-chartbox{position:relative;min-width:0;width:100%}
     .chart-heading-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.chart-heading-row>h2,.chart-heading-row>h3{margin:0;min-width:0}.chart-heading-row .chart-focus-button{flex:0 0 30px}.chart-focus-button{position:static;z-index:5;width:30px;height:30px;display:grid;place-items:center;border:1px solid #d9e0e7;background:rgba(255,255,255,.94);color:#52606d;border-radius:7px;cursor:pointer;padding:0}
     .chart-focus-button:hover,.chart-focus-button:focus-visible{background:#eef3f7;color:#0b5cab;border-color:#aab8c5}
     .chart-focus-button svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
@@ -1165,7 +1166,7 @@ Promise.all([
     if(!container)return;
     const canvas=container.querySelector('canvas');
     const chart=canvas && window.Chart && Chart.getChart(canvas);
-    if(chart)requestAnimationFrame(()=>{chart.resize();chart.update('none');});
+    if(chart)requestAnimationFrame(()=>requestAnimationFrame(()=>{chart.resize();chart.update('none');}));
   }
   function dismiss(){
     if(!current)return;
