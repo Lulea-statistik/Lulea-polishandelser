@@ -982,10 +982,6 @@ function updateAreaComparisonChart(){
               const share1=a1.total?100*first/a1.total:0;
               const share2=a2.total?100*second/a2.total:0;
               const n1=s1.value, n2=s2.value;
-              const countDiff=first-second;
-              const countText=countDiff===0
-                ?'I '+n1+' är det lika många händelser ('+fmt.format(first)+') som i '+n2+'.'
-                :'I '+n1+' är det '+fmt.format(Math.abs(countDiff))+' händelser '+(countDiff>0?'fler':'färre')+' än i '+n2+'.';
               let shareText;
               if(Math.abs(share1-share2)<1e-9){
                 shareText='Andelen är lika stor i båda områdena ('+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %).';
@@ -997,7 +993,7 @@ function updateAreaComparisonChart(){
                 shareText='I '+n1+' är andelen '+rel.toLocaleString('sv-SE',{maximumFractionDigits:1})+
                   ' % '+(share1>share2?'större':'mindre')+' än i '+n2+'.';
               }
-              return [s1.value+': '+fmt.format(first)+' händelser ('+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',s2.value+': '+fmt.format(second)+' händelser ('+share2.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',countText,shareText];
+              return [s1.value+': '+fmt.format(first)+' händelser ('+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',s2.value+': '+fmt.format(second)+' händelser ('+share2.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',shareText];
             }
           }
         }
