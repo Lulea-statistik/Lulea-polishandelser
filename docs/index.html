@@ -271,6 +271,7 @@
         </div>
       </div>
       <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
+      <p class="chart-note"><strong>OBS!</strong> Antalen per kommun är osäkra eftersom vissa polispubliceringar saknar säker kommunanknytning eller berör flera kommuner. Dessa kan inte fördelas entydigt mellan jämförelseområdena. Se diagrammet <a href="#unknownNorrbottenSection">Vad ingår i Okänd Norrbottenskommun?</a> längre ned. Norrbotten inkluderar dessutom Luleå, så de områdena är inte oberoende av varandra.</p>
       <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert, poster som berör flera kommuner i länet samt poster som samtidigt berör Norrbotten och övriga Sverige. Poster som säkert berör två eller fler Norrbottenskommuner redovisas gemensamt som <strong>Flera kommuner i Norrbotten</strong>. <strong>Norrbotten / Övriga Sverige</strong> används när posten tydligt spänner över länsgränsen men inte kan delas upp. <strong>Övriga Sverige</strong> är exkluderat ur statistik, diagram och nyckeltal eftersom gruppen även innehåller regional administration och historiska metadatafel. Posterna finns kvar i rådata för kvalitetskontroll. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
     </div>
 
@@ -299,7 +300,7 @@
       <p class="chart-note">Visar de händelsetyper som hamnar i <strong>Övrigt</strong> i 100 %-diagrammet ovan. Samma 2-procentsgräns används och diagrammet följer vald geografi och kategorisering.</p>
     </div>
 
-    <div class="card" style="margin-top:16px">
+    <div class="card" id="unknownNorrbottenSection" style="margin-top:16px">
       <h2>Vad ingår i Okänd Norrbottenskommun?</h2>
       <p id="unknownNorrbottenShare" class="chart-note" aria-live="polite"></p>
       <div class="other-chartbox"><canvas id="unknownNorrbottenChart"></canvas></div>
@@ -974,11 +975,12 @@ function updateAreaComparisonChart(){
               const count=ctx.dataset.rawCounts?.[ctx.dataIndex]||0;
               return ctx.dataset.label+': '+ctx.parsed.x.toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' % ('+fmt.format(count)+' händelser)';
             },
-            afterBody(items){
-              if(!items.length)return [];
-              const i=items[0].dataIndex;
-              const first=counts1[i], second=counts2[i];
-              const share1=shares1[i], share2=shares2[i];
+            afterLabel(ctx){
+              // The hovered category is determined directly from its bar, not tooltip item ordering.
+              const category=ctx.label;
+              const first=a1.counts.get(category)||0, second=a2.counts.get(category)||0;
+              const share1=a1.total?100*first/a1.total:0;
+              const share2=a2.total?100*second/a2.total:0;
               const n1=s1.value, n2=s2.value;
               const countDiff=first-second;
               const countText=countDiff===0
@@ -995,7 +997,7 @@ function updateAreaComparisonChart(){
                 shareText='I '+n1+' är andelen '+rel.toLocaleString('sv-SE',{maximumFractionDigits:1})+
                   ' % '+(share1>share2?'större':'mindre')+' än i '+n2+'.';
               }
-              return ['',countText,shareText];
+              return [s1.value+': '+fmt.format(first)+' händelser ('+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',s2.value+': '+fmt.format(second)+' händelser ('+share2.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',countText,shareText];
             }
           }
         }
