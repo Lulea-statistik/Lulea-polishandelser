@@ -1,4 +1,4 @@
 source,http_status,kind,item_count,fields,sample,error
-vma_all,200,json,0,,,
-vma_norrbotten,200,json,0,,,
+vma_all,,,,,,HTTP Error 503: Service Unavailable
+vma_norrbotten,,,,,,HTTP Error 503: Service Unavailable
 sos_inblick_lulea,,,,,,HTTP Error 403: Forbidden
