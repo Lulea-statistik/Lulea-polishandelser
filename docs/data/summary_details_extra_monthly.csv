@@ -6683,9 +6683,10 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Luleå kommun,Olovlig körning,1
 2026,10,Luleå kommun,Skadegörelse,1
 2026,10,Luleå kommun,Trafikkontroll,1
+2026,10,Luleå kommun,Trafikolycka,1
 2026,10,Luleå kommun,"Trafikolycka,  vilt",1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
-2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
+2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",8
 2026,10,Piteå kommun,Ofredande/förargelse,5
 2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikkontroll,1
