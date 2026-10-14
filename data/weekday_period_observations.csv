@@ -13963,6 +13963,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Jokkmokks kommun,Händelse,,Skadegörelse,3,0,1
 2026,Jokkmokks kommun,Händelse,,Skadegörelse,5,0,1
 2026,Jokkmokks kommun,Händelse,,Skyddslagen,4,0,1
+2026,Jokkmokks kommun,Händelse,,Trafikkontroll,1,0,1
 2026,Jokkmokks kommun,Händelse,,Trafikkontroll,5,0,1
 2026,Jokkmokks kommun,Händelse,,Trafikolycka,3,0,1
 2026,Jokkmokks kommun,Händelse,,Trafikolycka,4,0,1
@@ -14012,7 +14013,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kalix kommun,Händelse,,Trafikkontroll,4,0,1
 2026,Kalix kommun,Händelse,,Trafikolycka,0,0,4
 2026,Kalix kommun,Händelse,,Trafikolycka,1,0,2
-2026,Kalix kommun,Händelse,,Trafikolycka,2,0,3
+2026,Kalix kommun,Händelse,,Trafikolycka,2,0,4
 2026,Kalix kommun,Händelse,,Trafikolycka,3,0,2
 2026,Kalix kommun,Händelse,,Trafikolycka,4,0,3
 2026,Kalix kommun,Händelse,,Trafikolycka,6,0,2
@@ -14110,7 +14111,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,Trafikkontroll,5,0,1
 2026,Kiruna kommun,Händelse,,Trafikolycka,0,0,1
 2026,Kiruna kommun,Händelse,,Trafikolycka,1,0,5
-2026,Kiruna kommun,Händelse,,Trafikolycka,2,0,3
+2026,Kiruna kommun,Händelse,,Trafikolycka,2,0,4
 2026,Kiruna kommun,Händelse,,Trafikolycka,3,0,2
 2026,Kiruna kommun,Händelse,,Trafikolycka,4,0,1
 2026,Kiruna kommun,Händelse,,Trafikolycka,5,0,2
@@ -14639,7 +14640,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Övertorneå kommun,Händelse,,Trafikolycka,3,0,1
 2026,Övertorneå kommun,Händelse,,Trafikolycka,6,0,1
 2026,Övertorneå kommun,Händelse,,"Trafikolycka,  vilt",1,0,1
-2026,Övertorneå kommun,Händelse,,"Trafikolycka,  vilt",2,0,1
+2026,Övertorneå kommun,Händelse,,"Trafikolycka,  vilt",2,0,2
 2026,Övertorneå kommun,Händelse,,"Trafikolycka, vilt",0,0,1
 2026,Övertorneå kommun,Händelse,Natt,Trafikolycka,2,1,3
 2026,Övertorneå kommun,Händelse,Natt,"Trafikolycka,  vilt",0,1,1
