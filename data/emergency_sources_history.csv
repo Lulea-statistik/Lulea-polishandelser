@@ -11,3 +11,6 @@ checked_at,source,http_status,kind,item_count,fields,error
 2026-10-13T14:23:23.836930+00:00,vma_all,,,,,HTTP Error 503: Service Unavailable
 2026-10-13T14:23:23.836930+00:00,vma_norrbotten,,,,,HTTP Error 503: Service Unavailable
 2026-10-13T14:23:23.836930+00:00,sos_inblick_lulea,,,,,HTTP Error 403: Forbidden
+2026-10-14T12:06:36.869962+00:00,vma_all,200,json,0,,
+2026-10-14T12:06:36.869962+00:00,vma_norrbotten,200,json,0,,
+2026-10-14T12:06:36.869962+00:00,sos_inblick_lulea,,,,,HTTP Error 403: Forbidden
