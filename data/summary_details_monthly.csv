@@ -6793,6 +6793,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Kiruna kommun,Misshandel,1
 2026,10,Kiruna kommun,Rattfylleri,1
 2026,10,Kiruna kommun,Skadegörelse,1
+2026,10,Kiruna kommun,Trafikkontroll,1
 2026,10,Luleå kommun,Misshandel,3
 2026,10,Luleå kommun,Fylleri/LOB,1
 2026,10,Luleå kommun,Narkotikabrott,1
@@ -6802,7 +6803,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Luleå kommun,Trafikolycka,1
 2026,10,Luleå kommun,"Trafikolycka,  vilt",1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
-2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",8
+2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",10
 2026,10,Piteå kommun,Ofredande/förargelse,5
 2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikkontroll,1

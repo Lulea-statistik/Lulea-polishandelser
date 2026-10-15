@@ -233,7 +233,7 @@ year,municipality_combination,municipalities,event_count
 2025,Kalix + Luleå,Kalix|Luleå,1
 2025,Kalix + Överkalix,Kalix|Överkalix,1
 2025,Kiruna + Älvsbyn,Kiruna|Älvsbyn,1
-2026,Fler än två / otydlig kombination,,184
+2026,Fler än två / otydlig kombination,,185
 2026,Boden + Luleå,Boden|Luleå,25
 2026,Luleå + Piteå,Luleå|Piteå,14
 2026,Boden + Kiruna,Boden|Kiruna,6
@@ -246,6 +246,7 @@ year,municipality_combination,municipalities,event_count
 2026,Boden + Övertorneå,Boden|Övertorneå,3
 2026,Arvidsjaur + Boden,Arvidsjaur|Boden,2
 2026,Arvidsjaur + Luleå,Arvidsjaur|Luleå,2
+2026,Arvidsjaur + Piteå,Arvidsjaur|Piteå,2
 2026,Boden + Gällivare,Boden|Gällivare,2
 2026,Jokkmokk + Kiruna,Jokkmokk|Kiruna,2
 2026,Kalix + Kiruna,Kalix|Kiruna,2
@@ -253,7 +254,6 @@ year,municipality_combination,municipalities,event_count
 2026,Arjeplog + Kalix,Arjeplog|Kalix,1
 2026,Arjeplog + Kiruna,Arjeplog|Kiruna,1
 2026,Arjeplog + Piteå,Arjeplog|Piteå,1
-2026,Arvidsjaur + Piteå,Arvidsjaur|Piteå,1
 2026,Gällivare + Jokkmokk,Gällivare|Jokkmokk,1
 2026,Gällivare + Kalix,Gällivare|Kalix,1
 2026,Gällivare + Kiruna,Gällivare|Kiruna,1
