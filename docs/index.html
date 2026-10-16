@@ -65,7 +65,10 @@
   }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
-  <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
     :root{
       --bg:#f5f7fa;--panel:#fff;--text:#16202a;--muted:#66717d;--line:#d9e0e7;
       --blue:#0b5cab;--blue2:#1677c8;--warn:#fff6d8;--warnline:#d9a400
@@ -165,7 +168,14 @@
     .chart-viewer-body .chart-focus-button{display:none}
     body.chart-focus-lock{overflow:hidden}
     @media(max-width:620px){.chart-viewer-panel{width:100%;height:88dvh;padding:52px 9px 12px}.chart-viewer-title{left:13px}}
-  </style>
+  
+/* Gemensam webbtypografi: Protipo om licensierad font finns, annars Inter. */
+:root{--font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--font-heading:'protipo','Inter',system-ui,sans-serif}
+body{font-family:var(--font-body)}
+h1,h2,h3,h4,h5,h6,nav a{font-family:var(--font-heading)}
+a{font-family:var(--font-heading)}
+button,input,select,textarea,table{font-family:var(--font-body)}
+</style>
 </head>
 <body>
 <header>
@@ -326,7 +336,7 @@ const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
 // Gemensam typografi och upplosning for samtliga Chart.js-diagram.
 // Retina-upplosning aven pa skarmar med DPR=1 minskar suddiga axeletiketter.
 Chart.defaults.devicePixelRatio=Math.min(3,Math.max(2,window.devicePixelRatio||1));
-Chart.defaults.font.family='system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+Chart.defaults.font.family='Inter, system-ui, -apple-system, Segoe UI, sans-serif';
 Chart.defaults.font.size=13;
 Chart.defaults.font.weight='500';
 Chart.defaults.color='#334155';
