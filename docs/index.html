@@ -323,6 +323,17 @@ const QUIET_SUMMARY_URL='data/quiet_summaries_monthly.csv';
 const WEEKDAY_PERIOD_URL='data/weekday_period_observations.csv';
 const CALENDAR_PERIOD_URL='data/weekday_period_calendar.csv';
 const MUNICIPALITY_PAIRS_URL='data/norrbotten_municipality_pairs.csv';
+// Gemensam typografi och upplosning for samtliga Chart.js-diagram.
+// Retina-upplosning aven pa skarmar med DPR=1 minskar suddiga axeletiketter.
+Chart.defaults.devicePixelRatio=Math.min(3,Math.max(2,window.devicePixelRatio||1));
+Chart.defaults.font.family='system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+Chart.defaults.font.size=13;
+Chart.defaults.font.weight='500';
+Chart.defaults.color='#334155';
+Chart.defaults.scale.ticks.padding=7;
+Chart.defaults.scale.ticks.color='#334155';
+Chart.defaults.scale.ticks.font={size:13,weight:'500'};
+Chart.defaults.scale.title.font={size:14,weight:'600'};
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
 let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
