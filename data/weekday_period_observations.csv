@@ -13809,7 +13809,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,39
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,30
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,30
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,27
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,5,0,22
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,6,0,19
@@ -13858,7 +13858,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,,Trafikolycka,0,0,2
 2026,Gällivare kommun,Händelse,,Trafikolycka,1,0,1
 2026,Gällivare kommun,Händelse,,Trafikolycka,2,0,1
-2026,Gällivare kommun,Händelse,,Trafikolycka,3,0,2
+2026,Gällivare kommun,Händelse,,Trafikolycka,3,0,3
 2026,Gällivare kommun,Händelse,,Trafikolycka,4,0,1
 2026,Gällivare kommun,Händelse,,Trafikolycka,5,0,1
 2026,Gällivare kommun,Händelse,,"Trafikolycka,  personskada",5,0,1
@@ -14348,7 +14348,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Misshandel,1,1,1
 2026,Luleå kommun,Händelse,Natt,Misshandel,2,1,1
 2026,Luleå kommun,Händelse,Natt,Misshandel,3,1,3
-2026,Luleå kommun,Händelse,Natt,Misshandel,4,1,2
+2026,Luleå kommun,Händelse,Natt,Misshandel,4,1,3
 2026,Luleå kommun,Händelse,Natt,Misshandel,5,1,18
 2026,Luleå kommun,Händelse,Natt,Misshandel,6,1,16
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,2,1,1
@@ -14374,7 +14374,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Rån,6,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,0,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,3,1,1
-2026,Luleå kommun,Händelse,Natt,Skadegörelse,4,1,2
+2026,Luleå kommun,Händelse,Natt,Skadegörelse,4,1,3
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,5,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,6,1,5
 2026,Luleå kommun,Händelse,Natt,Stöld,0,1,1
@@ -14450,6 +14450,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Pajala kommun,Händelse,,Trafikkontroll,6,0,1
 2026,Pajala kommun,Händelse,,Trafikolycka,1,0,1
 2026,Pajala kommun,Händelse,,Trafikolycka,2,0,1
+2026,Pajala kommun,Händelse,,Trafikolycka,3,0,1
 2026,Pajala kommun,Händelse,,Trafikolycka,4,0,1
 2026,Pajala kommun,Händelse,,"Trafikolycka,  singel",6,0,1
 2026,Pajala kommun,Händelse,,"Trafikolycka,  vilt",1,0,1
