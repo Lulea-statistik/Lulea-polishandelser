@@ -78,7 +78,7 @@
     header{background:#fff;border-bottom:1px solid var(--line)}
     .topbar{display:flex;justify-content:space-between;gap:24px;align-items:center}
     .brand{display:flex;align-items:center;gap:14px;min-width:0}
-    .brandLogo{width:54px;height:54px;flex:0 0 auto;display:block}
+    .brandLogo{height:54px;width:auto;max-width:72px;flex:0 0 auto;display:block;object-fit:contain}
     .brandText{min-width:0}
     nav{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
     nav a{color:var(--blue);text-decoration:none;font-weight:650;padding:9px 12px;border-radius:9px}
@@ -145,7 +145,7 @@
     .status{padding:16px;background:#fff;border:1px solid var(--line);border-radius:10px}
     @media(max-width:850px){
       .topbar{align-items:flex-start}
-      .brandLogo{width:48px;height:48px}
+      .brandLogo{height:48px;width:auto;max-width:64px}
       .filters{grid-template-columns:1fr}
       .kpis{grid-template-columns:repeat(2,1fr)}
       .grid2{grid-template-columns:1fr}
