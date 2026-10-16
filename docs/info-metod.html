@@ -30,7 +30,10 @@
     "inLanguage": "sv-SE"
   }
   </script>
-  <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
     :root{
       --bg:#f5f7fa;--panel:#fff;--text:#16202a;--muted:#66717d;--line:#d9e0e7;
       --blue:#0b5cab;--warn:#fff6d8;--warnline:#d9a400
@@ -67,7 +70,14 @@
       nav{margin-top:14px}
       .twocol{grid-template-columns:1fr}
     }
-  </style>
+  
+/* Gemensam webbtypografi: Protipo om licensierad font finns, annars Inter. */
+:root{--font-body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;--font-heading:'protipo','Inter',system-ui,sans-serif}
+body{font-family:var(--font-body)}
+h1,h2,h3,h4,h5,h6,nav a{font-family:var(--font-heading)}
+a{font-family:var(--font-heading)}
+button,input,select,textarea,table{font-family:var(--font-body)}
+</style>
 </head>
 <body>
 <header>
