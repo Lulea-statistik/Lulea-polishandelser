@@ -11224,13 +11224,16 @@ year,month,geography_group,type_original,event_count
 2026,10,Arjeplogs kommun,Mord/dråp,1
 2026,10,Arjeplogs kommun,Trafikolycka,1
 2026,10,Arvidsjaurs kommun,Trafikolycka,1
-2026,10,Bodens kommun,Rattfylleri,3
+2026,10,Bodens kommun,Rattfylleri,4
 2026,10,Bodens kommun,Sammanfattning natt,3
+2026,10,Bodens kommun,Arbetsplatsolycka,1
 2026,10,Bodens kommun,Olovlig körning,1
 2026,10,Bodens kommun,Skadegörelse,1
 2026,10,Bodens kommun,Trafikkontroll,1
-2026,10,Flera kommuner i Norrbotten,Trafikkontroll,12
+2026,10,Bodens kommun,Trafikolycka,1
+2026,10,Flera kommuner i Norrbotten,Trafikkontroll,14
 2026,10,Flera kommuner i Norrbotten,Sammanfattning natt,5
+2026,10,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",1
 2026,10,Gällivare kommun,Misshandel,1
 2026,10,Gällivare kommun,Sammanfattning natt,1
 2026,10,Gällivare kommun,Trafikolycka,1
@@ -11251,7 +11254,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Luleå kommun,Häleri,1
 2026,10,Luleå kommun,Sammanfattning natt,1
 2026,10,Luleå kommun,Trafikkontroll,1
-2026,10,"Norrbotten, okänd kommun",Sammanfattning natt,3
+2026,10,"Norrbotten, okänd kommun",Sammanfattning natt,4
 2026,10,Pajala kommun,Trafikolycka,2
 2026,10,Pajala kommun,Rattfylleri,1
 2026,10,Piteå kommun,Olaga hot,1
