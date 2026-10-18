@@ -11239,6 +11239,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Gällivare kommun,Trafikolycka,1
 2026,10,Haparanda kommun,Brand,1
 2026,10,Haparanda kommun,Fylleri,1
+2026,10,Haparanda kommun,Trafikolycka,1
 2026,10,Jokkmokks kommun,Trafikkontroll,1
 2026,10,Kalix kommun,Narkotikabrott,1
 2026,10,Kalix kommun,Sammanfattning natt,1
@@ -11249,10 +11250,10 @@ year,month,geography_group,type_original,event_count
 2026,10,Kiruna kommun,Olaga intrång,1
 2026,10,Kiruna kommun,Trafikolycka,1
 2026,10,Luleå kommun,Stöld,3
+2026,10,Luleå kommun,Sammanfattning natt,2
 2026,10,Luleå kommun,Trafikolycka,2
 2026,10,Luleå kommun,Fylleri,1
 2026,10,Luleå kommun,Häleri,1
-2026,10,Luleå kommun,Sammanfattning natt,1
 2026,10,Luleå kommun,Trafikkontroll,1
 2026,10,"Norrbotten, okänd kommun",Sammanfattning natt,4
 2026,10,Pajala kommun,Trafikolycka,2
@@ -11266,4 +11267,5 @@ year,month,geography_group,type_original,event_count
 2026,10,Piteå kommun,"Trafikolycka,  singel",1
 2026,10,Älvsbyns kommun,Rattfylleri,2
 2026,10,Älvsbyns kommun,Trafikolycka,1
+2026,10,Övertorneå kommun,Trafikkontroll,1
 2026,10,Övertorneå kommun,Trafikolycka,1
