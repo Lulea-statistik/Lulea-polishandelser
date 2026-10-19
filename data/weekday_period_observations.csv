@@ -13750,9 +13750,10 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Trafikolycka,4,0,5
 2026,Bodens kommun,Händelse,,Trafikolycka,5,0,1
 2026,Bodens kommun,Händelse,,Trafikolycka,6,0,2
+2026,Bodens kommun,Händelse,,"Trafikolycka,  vilt",0,0,1
 2026,Bodens kommun,Händelse,,"Trafikolycka,  vilt",1,0,1
 2026,Bodens kommun,Händelse,,"Trafikolycka,  vilt",4,0,1
-2026,Bodens kommun,Händelse,,"Trafikolycka, vilt",0,0,1
+2026,Bodens kommun,Händelse,,"Trafikolycka, vilt",0,0,2
 2026,Bodens kommun,Händelse,,"Trafikolycka, vilt",1,0,1
 2026,Bodens kommun,Händelse,,"Trafikolycka, vilt",3,0,2
 2026,Bodens kommun,Händelse,,"Trafikolycka, vilt",5,0,1
@@ -13791,7 +13792,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,3,1,1
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,5,1,1
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,6,1,2
-2026,Bodens kommun,Händelse,Natt,Trafikkontroll,0,1,7
+2026,Bodens kommun,Händelse,Natt,Trafikkontroll,0,1,8
 2026,Bodens kommun,Händelse,Natt,Trafikkontroll,2,1,2
 2026,Bodens kommun,Händelse,Natt,Trafikkontroll,3,1,2
 2026,Bodens kommun,Händelse,Natt,Trafikkontroll,4,1,3
@@ -13809,7 +13810,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Stöld,4,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,1,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,5,0,1
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,39
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,40
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,30
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
@@ -13828,6 +13829,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,,Brand,2,0,1
 2026,Gällivare kommun,Händelse,,Brand,3,0,1
 2026,Gällivare kommun,Händelse,,Brand,4,0,2
+2026,Gällivare kommun,Händelse,,Brand,6,0,1
 2026,Gällivare kommun,Händelse,,Fjällräddning,2,0,2
 2026,Gällivare kommun,Händelse,,Fjällräddning,5,0,1
 2026,Gällivare kommun,Händelse,,Fylleri,2,0,1
@@ -13891,6 +13893,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,Natt,Ofredande/förargelse,6,1,2
 2026,Gällivare kommun,Händelse,Natt,Olovlig körning,2,1,1
 2026,Gällivare kommun,Händelse,Natt,Olovlig körning,4,1,2
+2026,Gällivare kommun,Händelse,Natt,Rattfylleri,0,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,3,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,6,1,1
 2026,Gällivare kommun,Händelse,Natt,Skadegörelse,1,1,1
@@ -14219,7 +14222,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Fylleri,3,0,5
 2026,Luleå kommun,Händelse,,Fylleri,4,0,1
 2026,Luleå kommun,Händelse,,Fylleri,5,0,2
-2026,Luleå kommun,Händelse,,Fylleri/LOB,0,0,7
+2026,Luleå kommun,Händelse,,Fylleri/LOB,0,0,8
 2026,Luleå kommun,Händelse,,Fylleri/LOB,1,0,7
 2026,Luleå kommun,Händelse,,Fylleri/LOB,2,0,9
 2026,Luleå kommun,Händelse,,Fylleri/LOB,3,0,14
@@ -14410,6 +14413,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,"Trafikolycka,  vilt",4,1,2
 2026,Luleå kommun,Händelse,Natt,"Trafikolycka,  vilt",5,1,1
 2026,Luleå kommun,Händelse,Natt,Vapenlagen,6,1,1
+2026,Luleå kommun,Händelse,Natt,Våld/hot mot tjänsteman,0,1,1
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,3,1,1
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,6,1,2
 2026,Norrbotten / Övriga Sverige,Händelse,,Bedrägeri,4,0,1
@@ -14452,7 +14456,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Pajala kommun,Händelse,,Trafikkontroll,2,0,1
 2026,Pajala kommun,Händelse,,Trafikkontroll,3,0,1
 2026,Pajala kommun,Händelse,,Trafikkontroll,5,0,2
-2026,Pajala kommun,Händelse,,Trafikkontroll,6,0,1
+2026,Pajala kommun,Händelse,,Trafikkontroll,6,0,2
 2026,Pajala kommun,Händelse,,Trafikolycka,1,0,1
 2026,Pajala kommun,Händelse,,Trafikolycka,2,0,1
 2026,Pajala kommun,Händelse,,Trafikolycka,3,0,1
