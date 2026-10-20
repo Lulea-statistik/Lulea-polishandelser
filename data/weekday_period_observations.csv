@@ -13810,8 +13810,8 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Stöld,4,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,1,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,5,0,1
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,40
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,32
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,41
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,33
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,30
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,29
@@ -14661,5 +14661,6 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Övertorneå kommun,Händelse,,"Trafikolycka, vilt",0,0,1
 2026,Övertorneå kommun,Händelse,Natt,Trafikolycka,2,1,3
 2026,Övertorneå kommun,Händelse,Natt,"Trafikolycka,  vilt",0,1,1
+2026,Övertorneå kommun,Händelse,Natt,"Trafikolycka,  vilt",1,1,1
 2026,Övertorneå kommun,Händelse,Natt,Våld/hot mot tjänsteman,5,1,1
 2026,Övertorneå kommun,Händelse,Natt,Övrigt/oklassificerad,3,1,2
