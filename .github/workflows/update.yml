@@ -1,5 +1,5 @@
 name: Update polishandelser
-# QA rerun marker 10 - fix false theft word match
+# QA rerun marker 11 - publish Lulea district monthly data
 
 on:
   workflow_dispatch:
