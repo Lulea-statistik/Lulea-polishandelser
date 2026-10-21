@@ -495,9 +495,8 @@ def save_events(rows: list[dict[str, Any]], append_raw: bool = True) -> pd.DataF
     all_df.to_csv(EVENTS_CSV, index=False, encoding="utf-8")
 
     if append_raw and rows:
-        with RAW_JSONL.open("a", encoding="utf-8") as f:
-            for row in rows:
-                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        from partition_raw_events import partition
+        partition(rows)
 
     write_monthly_summary(all_df)
     return all_df
