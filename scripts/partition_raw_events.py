@@ -52,7 +52,7 @@ def checksum(path):
 def partition(input_rows=(),bootstrap=False):
     PARTS.mkdir(parents=True,exist_ok=True)
     existing=list(PARTS.glob("*.jsonl"))
-    first=bootstrap and not MANIFEST.exists()
+    first=bootstrap and LEGACY.exists() and (not MANIFEST.exists() or not json.loads(MANIFEST.read_text(encoding="utf-8")).get("legacy_sha256"))
     byyear={}
     def add(row):
         year=year_for(row)
@@ -69,6 +69,8 @@ def partition(input_rows=(),bootstrap=False):
         add(row);incoming+=1
     if not first and not incoming and MANIFEST.exists():return
     if first and legacy_rows==0 and LEGACY.exists() and LEGACY.stat().st_size:raise ValueError("Legacy was not read")
+    if bootstrap and LEGACY.exists() and LEGACY.stat().st_size and not first and not json.loads(MANIFEST.read_text(encoding="utf-8")).get("legacy_sha256"):
+        raise ValueError("Legacy migration not certified")
     for year,records in sorted(byyear.items()):
         atomic_jsonl(PARTS/(year+".jsonl"),records)
     total=sum(len(v) for v in byyear.values())
@@ -83,6 +85,7 @@ def partition(input_rows=(),bootstrap=False):
     MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     observed=sum(1 for f in PARTS.glob("*.jsonl") for _ in read_records(f))
     if observed!=total:raise ValueError(f"Raw partition QA failed: {observed} vs {total}")
+    if first and total < legacy_rows:raise ValueError("Lost raw observations during migration")
     print("Partition QA OK:",len(byyear),"years,",total,"raw rows; legacy input",legacy_rows,", added",incoming)
 def main():
     parser=argparse.ArgumentParser()
