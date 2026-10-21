@@ -14397,15 +14397,15 @@ year,month,geography_group,event_type,event_count
 2026,10,Bodens kommun,Trafikbrott,3
 2026,10,Bodens kommun,Trafikkontroll,3
 2026,10,Bodens kommun,Brand,2
+2026,10,Bodens kommun,"Trafikolycka, vilt",2
 2026,10,Bodens kommun,Arbetsplatsolycka,1
 2026,10,Bodens kommun,Olovlig körning,1
 2026,10,Bodens kommun,Skadegörelse,1
 2026,10,Bodens kommun,Trafikolycka,1
 2026,10,Bodens kommun,"Trafikolycka,  vilt",1
-2026,10,Bodens kommun,"Trafikolycka, vilt",1
 2026,10,Bodens kommun,Övrigt/oklassificerad,1
-2026,10,Flera kommuner i Norrbotten,Trafikkontroll,17
-2026,10,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",1
+2026,10,Flera kommuner i Norrbotten,Trafikkontroll,18
+2026,10,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",2
 2026,10,Gällivare kommun,Brand,2
 2026,10,Gällivare kommun,Misshandel,2
 2026,10,Gällivare kommun,Narkotikabrott,1
@@ -14418,6 +14418,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Haparanda kommun,Fylleri,1
 2026,10,Haparanda kommun,Rattfylleri,1
 2026,10,Haparanda kommun,Trafikolycka,1
+2026,10,Haparanda kommun,"Trafikolycka, vilt",1
 2026,10,Jokkmokks kommun,Trafikkontroll,1
 2026,10,Kalix kommun,Trafikolycka,2
 2026,10,Kalix kommun,Misshandel,1
@@ -14433,12 +14434,13 @@ year,month,geography_group,event_type,event_count
 2026,10,Kiruna kommun,Trafikkontroll,1
 2026,10,Kiruna kommun,Trafikolycka,1
 2026,10,Luleå kommun,Misshandel,5
+2026,10,Luleå kommun,Trafikolycka,4
 2026,10,Luleå kommun,Stöld,3
-2026,10,Luleå kommun,Trafikolycka,3
 2026,10,Luleå kommun,Fylleri/LOB,2
 2026,10,Luleå kommun,Skadegörelse,2
 2026,10,Luleå kommun,Trafikkontroll,2
 2026,10,Luleå kommun,Fylleri,1
+2026,10,Luleå kommun,Försvunnen person,1
 2026,10,Luleå kommun,Häleri,1
 2026,10,Luleå kommun,Narkotikabrott,1
 2026,10,Luleå kommun,Olovlig körning,1
@@ -14449,6 +14451,7 @@ year,month,geography_group,event_type,event_count
 2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",10
 2026,10,"Norrbotten, okänd kommun",Misshandel,1
 2026,10,"Norrbotten, okänd kommun",Narkotikabrott,1
+2026,10,"Norrbotten, okänd kommun",Skadegörelse,1
 2026,10,Pajala kommun,Trafikolycka,2
 2026,10,Pajala kommun,Rattfylleri,1
 2026,10,Pajala kommun,Trafikkontroll,1

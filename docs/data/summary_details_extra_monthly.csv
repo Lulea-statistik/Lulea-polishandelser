@@ -6665,8 +6665,8 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Bodens kommun,Trafikbrott,3
 2026,10,Bodens kommun,Brand,2
 2026,10,Bodens kommun,Trafikkontroll,2
+2026,10,Bodens kommun,"Trafikolycka, vilt",2
 2026,10,Bodens kommun,"Trafikolycka,  vilt",1
-2026,10,Bodens kommun,"Trafikolycka, vilt",1
 2026,10,Bodens kommun,Övrigt/oklassificerad,1
 2026,10,Gällivare kommun,Brand,1
 2026,10,Gällivare kommun,Misshandel,1
@@ -6676,6 +6676,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Gällivare kommun,"Trafikolycka,  vilt",1
 2026,10,Gällivare kommun,Övrigt/oklassificerad,1
 2026,10,Haparanda kommun,Rattfylleri,1
+2026,10,Haparanda kommun,"Trafikolycka, vilt",1
 2026,10,Kalix kommun,Misshandel,1
 2026,10,Kalix kommun,Trafikolycka,1
 2026,10,Kiruna kommun,Övrigt/oklassificerad,3
@@ -6698,6 +6699,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",10
 2026,10,"Norrbotten, okänd kommun",Misshandel,1
 2026,10,"Norrbotten, okänd kommun",Narkotikabrott,1
+2026,10,"Norrbotten, okänd kommun",Skadegörelse,1
 2026,10,Piteå kommun,Ofredande/förargelse,5
 2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikkontroll,1
