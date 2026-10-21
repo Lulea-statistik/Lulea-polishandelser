@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "scripts/audit_lulea_places.py"
+      - ".github/workflows/audit-lulea-places.yml"
 permissions:
   contents: write
 concurrency:
