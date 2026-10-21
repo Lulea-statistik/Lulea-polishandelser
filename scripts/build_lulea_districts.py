@@ -16,8 +16,8 @@ OUT = ROOT / "docs/data/lulea_district_monthly.csv"
 
 ALIASES = {
  "Bergnäset": ["bergnaset", "bergnäset"],
- "Bergviken": ["bergviken"],
- "Björkskatan": ["bjorkskatan", "björkskatan"],
+ "Bergviken": ["bergviken", "midgardsvagen", "midgårdsvägen", "delfinvagen", "delfinvägen", "hummergatan"],
+ "Björkskatan": ["bjorkskatan", "björkskatan", "vaderleden", "väderleden"],
  "Centrum": [
   "centrum", "lulea centrum", "luleå centrum", "innerstaden", "lulea innerstad", "luleå innerstad",
   "stadsviken", "charlottendal", "norra hamn", "norra hamnen", "sodra hamn", "södra hamn", "sodra hamnen", "södra hamnen", "ostermalm", "östermalm",
