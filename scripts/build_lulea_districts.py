@@ -30,6 +30,7 @@ ALIASES = {
   "lulea c", "luleå c", "kulturens hus", "stadsparken", "gymnasiebyn", "gymnasieby",
   "lulea domkyrka", "luleå domkyrka", "domkyrkan", "lulea energi arena", "luleå energi arena", "pontushallen",
   "smedjan galleria", "smedjan", "strand galleria", "shopping galleria", "shoppinghuset",
+  "lulea live", "luleå live", "splash lulea", "splash luleå", "under solen", "rix fm festival", "rix fm-festival", "rixfm festival", "lulea hamnfestival", "luleå hamnfestival", "hamnfestivalen", "luleakalaset", "luleåkalaset", "musikens makt", "musikfestivalen i lulea", "musikfestivalen i luleå",
   "hermelinsparken", "jarnvagsparken", "järnvägsparken", "residensparken",
   "pontusbadet", "halsans hus", "hälsans hus", "norrbottensteatern", "norrbottens museum",
   "skomakargatan", "bastugatan", "residensgatan", "norra hamnpromenaden",
