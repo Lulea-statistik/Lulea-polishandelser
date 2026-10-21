@@ -1,0 +1,450 @@
+platsnamn,antal_okanda_platsfalt,antal_okanda_loptext,unika_okanda,foreslagen_stadsdel,status
+innerstaden,0,414,414,Centrum,Endast löptext - osäkert
+centrum,0,34,34,Centrum,Endast löptext - osäkert
+sunderbyn,0,24,24,Sunderbyn,Endast löptext - osäkert
+svartostaden,0,17,17,Svartöstaden,Endast löptext - osäkert
+bodenvagen,3,16,16,,Verifiera händelseplats
+lulea kallaxvagen,16,0,16,,Verifiera händelseplats
+lulea mjolkuddsvagen,16,0,16,,Verifiera händelseplats
+mjolkuddsvagen,1,16,16,,Verifiera händelseplats
+kallaxvagen,1,14,15,,Verifiera händelseplats
+storhedsvagen,2,14,14,,Verifiera händelseplats
+lulea bodenvagen,12,0,12,,Verifiera händelseplats
+bjorkskataleden,2,11,11,,Verifiera händelseplats
+lulea bensbyvagen,11,0,11,,Verifiera händelseplats
+lulea storhedsvagen,11,0,11,,Verifiera händelseplats
+bensbyvagen,1,8,9,,Verifiera händelseplats
+lulea gammelstadsvagen,9,0,9,,Verifiera händelseplats
+mariebergsvagen,2,9,9,,Verifiera händelseplats
+alvsbyvagen,4,8,8,,Verifiera händelseplats
+haparandavagen,1,7,8,,Verifiera händelseplats
+lulea bjorkskataleden,8,0,8,,Verifiera händelseplats
+lulea haparandavagen,8,0,8,,Verifiera händelseplats
+delfingatan,1,7,7,,Verifiera händelseplats
+gammelstadsvagen,4,7,7,,Verifiera händelseplats
+lulea mariebergsvagen,7,0,7,,Verifiera händelseplats
+smedsbyvagen,0,7,7,,Endast löptext - osäkert
+lulea delfingatan,6,0,6,,Verifiera händelseplats
+lulea nya gaddviksbron,6,0,6,,Verifiera händelseplats
+nya gaddviksbron,1,5,6,,Verifiera händelseplats
+storsandsvagen,0,6,6,,Endast löptext - osäkert
+alvbrovagen,2,5,5,,Verifiera händelseplats
+bjorsbyvagen,1,5,5,,Verifiera händelseplats
+lulea bjorsbyvagen,5,0,5,,Verifiera händelseplats
+lulea gamla gaddviksbron,5,0,5,,Verifiera händelseplats
+lulea storsandsvagen,5,0,5,,Verifiera händelseplats
+lulea tunastigen,5,0,5,,Verifiera händelseplats
+lulevagen,1,5,5,,Verifiera händelseplats
+avans byavag,1,4,4,,Verifiera händelseplats
+balingevagen,1,4,4,,Verifiera händelseplats
+busstationen,0,4,4,Centrum,Endast löptext - osäkert
+fiskehamnsvagen,0,4,4,,Endast löptext - osäkert
+gamla gaddviksbron,1,4,4,,Verifiera händelseplats
+kronan,0,4,4,Kronan,Endast löptext - osäkert
+kronbacksvagen,2,3,4,,Verifiera händelseplats
+lulea alvbrovagen,4,0,4,,Verifiera händelseplats
+lulea balingevagen,4,0,4,,Verifiera händelseplats
+lulea fiskehamnsvagen,4,0,4,,Verifiera händelseplats
+lulea lulevagen,4,0,4,,Verifiera händelseplats
+lulea malmuddsvagen,4,0,4,,Verifiera händelseplats
+malmuddsvagen,0,4,4,,Endast löptext - osäkert
+porson,0,4,4,Porsön,Endast löptext - osäkert
+svartskatavagen,1,4,4,,Verifiera händelseplats
+tunastigen,0,4,4,,Endast löptext - osäkert
+bergviken,0,3,3,Bergviken,Endast löptext - osäkert
+betongvagen,1,3,3,,Verifiera händelseplats
+bjorkskateleden,0,3,3,,Endast löptext - osäkert
+gaddviksbron,0,3,3,,Endast löptext - osäkert
+jarnvagsstationen,0,3,3,Centrum,Endast löptext - osäkert
+korsningen gammelstadsvagen,0,3,3,,Endast löptext - osäkert
+lulea alvsbyvagen,3,0,3,,Verifiera händelseplats
+lulea backgatan,3,0,3,,Verifiera händelseplats
+lulea svartskatavagen,3,0,3,,Verifiera händelseplats
+lulsundsgatan,1,3,3,,Verifiera händelseplats
+lulviksvagen,1,3,3,,Verifiera händelseplats
+maskinvagen,2,3,3,,Verifiera händelseplats
+ornaset,0,3,3,Örnäset,Endast löptext - osäkert
+robertsviksgatan,1,2,3,,Verifiera händelseplats
+stadsovagen,0,3,3,,Endast löptext - osäkert
+truppvagen,3,3,3,,Verifiera händelseplats
+universitetsvagen,0,3,3,,Endast löptext - osäkert
+alviksvagen,0,2,2,,Endast löptext - osäkert
+angesbyvagen,0,2,2,,Endast löptext - osäkert
+arcusvagen,0,2,2,,Endast löptext - osäkert
+arendet fortgar utredningsvagen,0,2,2,,Endast löptext - osäkert
+avaviksvagen,0,2,2,,Endast löptext - osäkert
+banvagen,1,2,2,,Verifiera händelseplats
+bjorksgatan,1,2,2,,Verifiera händelseplats
+bolidenvagen,0,2,2,,Endast löptext - osäkert
+ett flygplan,0,2,2,,Endast löptext - osäkert
+for drograttfylleri haparandavagen,0,2,2,,Endast löptext - osäkert
+for drograttfylleri mjolkuddsvagen,0,2,2,,Endast löptext - osäkert
+garage angesbyvagen,0,2,2,,Endast löptext - osäkert
+grusvag,0,2,2,,Endast löptext - osäkert
+hjortstigen,0,2,2,,Endast löptext - osäkert
+industrivagen industrivagen,0,2,2,,Endast löptext - osäkert
+klingsbovagen,0,2,2,,Endast löptext - osäkert
+korsningen bensbyvagen,0,2,2,,Endast löptext - osäkert
+langs gamla lovskarsgatan,0,2,2,,Endast löptext - osäkert
+lulea alviksvagen,2,0,2,,Verifiera händelseplats
+lulea angesbyvagen,2,0,2,,Verifiera händelseplats
+lulea arcusvagen,2,0,2,,Verifiera händelseplats
+lulea avans byavag,2,0,2,,Verifiera händelseplats
+lulea bolidenvagen,2,0,2,,Verifiera händelseplats
+lulea hjortstigen,2,0,2,,Verifiera händelseplats
+lulea industrivagen,2,0,2,,Verifiera händelseplats
+lulea kronbacksvagen,2,0,2,,Verifiera händelseplats
+lulea lulsundsgatan,2,0,2,,Verifiera händelseplats
+lulea lulviksvagen,2,0,2,,Verifiera händelseplats
+lulea malmhamnsvagen,2,0,2,,Verifiera händelseplats
+lulea porsovagen,2,0,2,,Verifiera händelseplats
+lulea robertsviksgatan,2,0,2,,Verifiera händelseplats
+lulea rutviksvagen,2,0,2,,Verifiera händelseplats
+lulea seletvagen,2,0,2,,Verifiera händelseplats
+lulea sunderbyvagen,2,0,2,,Verifiera händelseplats
+lulea universitetsvagen,2,0,2,,Verifiera händelseplats
+lulea valorvagen,2,0,2,,Verifiera händelseplats
+malmhamnsvagen,0,2,2,,Endast löptext - osäkert
+mattsundsvagen,1,2,2,,Verifiera händelseplats
+notviken,0,2,2,Notviken,Endast löptext - osäkert
+orarnavagen,1,2,2,,Verifiera händelseplats
+prastgatan,0,2,2,Centrum,Endast löptext - osäkert
+rikvag,0,2,2,,Endast löptext - osäkert
+rutviksvagen,1,1,2,,Verifiera händelseplats
+sandnasetvagen,0,2,2,,Endast löptext - osäkert
+stadsotorget,1,1,2,,Verifiera händelseplats
+storgatan,0,2,2,Centrum,Endast löptext - osäkert
+sundomsvagen,0,2,2,,Endast löptext - osäkert
+svartoleden,0,2,2,,Endast löptext - osäkert
+valorvagen,0,2,2,,Endast löptext - osäkert
+varvsleden,0,2,2,,Endast löptext - osäkert
+vid gamla gaddviksbron,0,2,2,,Endast löptext - osäkert
+adressen vastra brogatan,0,1,1,,Endast löptext - osäkert
+angdalsrovagen,0,1,1,,Endast löptext - osäkert
+anlant till professorsvagen,0,1,1,,Endast löptext - osäkert
+assistentvagen,0,1,1,,Endast löptext - osäkert
+atervandsgrand,0,1,1,,Endast löptext - osäkert
+avlossats vid tunastigen,0,1,1,,Endast löptext - osäkert
+backgatan,0,1,1,,Endast löptext - osäkert
+ballingevagen,0,1,1,,Endast löptext - osäkert
+bangardsgatan,0,1,1,,Endast löptext - osäkert
+beodras till sunderbyvagen,0,1,1,,Endast löptext - osäkert
+bergsgatan,1,1,1,,Verifiera händelseplats
+berodras till malmuddsbron,0,1,1,,Endast löptext - osäkert
+bil malmuddsvagen,0,1,1,,Endast löptext - osäkert
+bil nya gaddviksbron,0,1,1,,Endast löptext - osäkert
+bilbrand vid rutviksvagen,0,1,1,,Endast löptext - osäkert
+bjorbyvagen,0,1,1,,Endast löptext - osäkert
+bjorkleden,0,1,1,,Endast löptext - osäkert
+bjorkskatavagen,1,1,1,,Verifiera händelseplats
+bragegatan,0,1,1,,Endast löptext - osäkert
+brandovagen,0,1,1,,Endast löptext - osäkert
+burstromsvagen,0,1,1,,Endast löptext - osäkert
+cementvagen,0,1,1,,Endast löptext - osäkert
+dalagatan,0,1,1,,Endast löptext - osäkert
+daligt langs hortlaxvagen,0,1,1,,Endast löptext - osäkert
+degerbergsvagen,0,1,1,,Endast löptext - osäkert
+docentvagen,0,1,1,,Endast löptext - osäkert
+domarvagen,0,1,1,,Endast löptext - osäkert
+dvarggrand,0,1,1,,Endast löptext - osäkert
+edeforsgatan,0,1,1,,Endast löptext - osäkert
+fallgatan,1,0,1,,Verifiera händelseplats
+fallolycka mjolkuddsvagen,0,1,1,,Endast löptext - osäkert
+farjeledsvagen,0,1,1,,Endast löptext - osäkert
+fastighet efter smedsbyvagen,0,1,1,,Endast löptext - osäkert
+flarkenvagen,0,1,1,,Endast löptext - osäkert
+flatenvagen,0,1,1,,Endast löptext - osäkert
+flera fordon bensbyvagen,0,1,1,,Endast löptext - osäkert
+flera ganger kraftgatan,0,1,1,,Endast löptext - osäkert
+flygplan,1,0,1,,Verifiera händelseplats
+flygstationsvagen,1,1,1,,Verifiera händelseplats
+flystationsvagen,0,1,1,,Endast löptext - osäkert
+folkhogskolevagen,0,1,1,,Endast löptext - osäkert
+for drograttfylleri havsoringsgrand,0,1,1,,Endast löptext - osäkert
+for drograttfylleri josefinvagen,0,1,1,,Endast löptext - osäkert
+for drograttfylleri malmuddsvagen,0,1,1,,Endast löptext - osäkert
+for rattfylleri alvbrovagen,0,1,1,,Endast löptext - osäkert
+for rattfylleri gammelstadsvagen,0,1,1,,Endast löptext - osäkert
+for rattfylleri paddelvagen,0,1,1,,Endast löptext - osäkert
+for rattfylleri tunastigen,0,1,1,,Endast löptext - osäkert
+forare tranbacksvagen,0,1,1,,Endast löptext - osäkert
+foretagslokaler langs bjorsbyvagen,0,1,1,,Endast löptext - osäkert
+forrad angesbyvagen,0,1,1,,Endast löptext - osäkert
+forrad snalltorpsvagen,0,1,1,,Endast löptext - osäkert
+forskarvagen,0,1,1,,Endast löptext - osäkert
+forvirrad herre mjolkuddsvagen,0,1,1,,Endast löptext - osäkert
+fraktarvagen,0,1,1,,Endast löptext - osäkert
+framlanningsvagen,1,0,1,,Verifiera händelseplats
+fran fordon bangardsgatan,0,1,1,,Endast löptext - osäkert
+fran lastbil kallaxvagen,0,1,1,,Endast löptext - osäkert
+frisorgatan,1,0,1,,Verifiera händelseplats
+furumovagen,0,1,1,,Endast löptext - osäkert
+gaddviksvagen,0,1,1,,Endast löptext - osäkert
+gamla haparandavagen,0,1,1,,Endast löptext - osäkert
+gamla malmkajen,0,1,1,,Endast löptext - osäkert
+gammelstad,0,1,1,Gammelstad,Endast löptext - osäkert
+gangtummel vid kronbacksvagen,0,1,1,,Endast löptext - osäkert
+gangvag,0,1,1,,Endast löptext - osäkert
+garage ostra malmgatan,0,1,1,,Endast löptext - osäkert
+gardsvagen,0,1,1,,Endast löptext - osäkert
+gatan krusbarsstigen,0,1,1,,Endast löptext - osäkert
+genom isen likskarsvagen,0,1,1,,Endast löptext - osäkert
+grangatan,0,1,1,,Endast löptext - osäkert
+grasorvagen,0,1,1,,Endast löptext - osäkert
+gunnarsbyvagen,0,1,1,,Endast löptext - osäkert
+halls efter timmerleden,0,1,1,,Endast löptext - osäkert
+handleden,0,1,1,,Endast löptext - osäkert
+hantverksvagen,0,1,1,,Endast löptext - osäkert
+hastighetskontroll mariebergsvagen,0,1,1,,Endast löptext - osäkert
+havsoringsgrand,0,1,1,,Endast löptext - osäkert
+hertsavagen,0,1,1,,Endast löptext - osäkert
+hertson,0,1,1,Hertsön,Endast löptext - osäkert
+hertsotorget,0,1,1,,Endast löptext - osäkert
+hojd fallgatan,0,1,1,,Endast löptext - osäkert
+hortlaxvagen,0,1,1,,Endast löptext - osäkert
+hos lansstyrelsens stationsgatan,0,1,1,,Endast löptext - osäkert
+hostvagen,0,1,1,,Endast löptext - osäkert
+hus kyrkogatan,0,1,1,,Endast löptext - osäkert
+ica vid stadsotorget,0,1,1,,Endast löptext - osäkert
+industrivagen,0,1,1,,Endast löptext - osäkert
+intraffade efter kallaxvagen,0,1,1,,Endast löptext - osäkert
+intraffat efter haparandavagen,0,1,1,,Endast löptext - osäkert
+intraffat langs lovskarsvagen,0,1,1,,Endast löptext - osäkert
+intraffat nar alvsbron,0,1,1,,Endast löptext - osäkert
+isbrytare gamla malmkajen,0,1,1,,Endast löptext - osäkert
+isen vid likskarsvagen,0,1,1,,Endast löptext - osäkert
+jarnvagsstation,0,1,1,Centrum,Endast löptext - osäkert
+jarpvagen,0,1,1,,Endast löptext - osäkert
+josefinvagen,0,1,1,,Endast löptext - osäkert
+kammenvagen,1,0,1,,Verifiera händelseplats
+kapellgrand,0,1,1,,Endast löptext - osäkert
+karlsviksvagen,0,1,1,,Endast löptext - osäkert
+klintvagen,1,1,1,,Verifiera händelseplats
+knoppelasvagen,0,1,1,,Endast löptext - osäkert
+kolliderat vid gaddviksbron,0,1,1,,Endast löptext - osäkert
+kompanivagen,0,1,1,,Endast löptext - osäkert
+kontrollen stangdes alvbrovagen,0,1,1,,Endast löptext - osäkert
+korrigering kapellgrand,0,1,1,,Endast löptext - osäkert
+korsningen backgatan,0,1,1,,Endast löptext - osäkert
+korsningen banvagen,0,1,1,,Endast löptext - osäkert
+korsningen bergnasvagen,0,1,1,,Endast löptext - osäkert
+korsningen bjorkskatavagen,0,1,1,,Endast löptext - osäkert
+korsningen framlanningsvagen,0,1,1,,Endast löptext - osäkert
+korsningen karlviksvagen,0,1,1,,Endast löptext - osäkert
+korsningen langs gammelstadsvagen,0,1,1,,Endast löptext - osäkert
+korsningen mantalsvagen,0,1,1,,Endast löptext - osäkert
+korsningen mjolkuddsvagen,0,1,1,,Endast löptext - osäkert
+korsningen porsovagen,0,1,1,,Endast löptext - osäkert
+korsningen rudtjarnsvagen,0,1,1,,Endast löptext - osäkert
+kraftgatan,0,1,1,,Endast löptext - osäkert
+kranvagen,0,1,1,,Endast löptext - osäkert
+kronanvagen,0,1,1,,Endast löptext - osäkert
+krusbarsstigen,0,1,1,,Endast löptext - osäkert
+kyrkgatan,0,1,1,,Endast löptext - osäkert
+kyrkogatan,0,1,1,,Endast löptext - osäkert
+lag efter lejdevagen,0,1,1,,Endast löptext - osäkert
+lagenhet dvarggrand,0,1,1,,Endast löptext - osäkert
+lagenhet tunastigen,0,1,1,,Endast löptext - osäkert
+lan avans byavag,1,0,1,,Verifiera händelseplats
+lan mattsunds byavag,1,0,1,,Verifiera händelseplats
+langbackavagen,0,1,1,,Endast löptext - osäkert
+langmyrvagen,0,1,1,,Endast löptext - osäkert
+langnasvagen,0,1,1,,Endast löptext - osäkert
+langs med paradvagen,0,1,1,,Endast löptext - osäkert
+lantmatarvagen,1,1,1,,Verifiera händelseplats
+lanvag,0,1,1,,Endast löptext - osäkert
+lasarettsgatan,1,1,1,,Verifiera händelseplats
+lasnvag,0,1,1,,Endast löptext - osäkert
+lerbacksvagen,0,1,1,,Endast löptext - osäkert
+likskarsvagen,0,1,1,,Endast löptext - osäkert
+loser trafikolyckan forsakringsvagen,0,1,1,,Endast löptext - osäkert
+lovgatan,1,1,1,,Verifiera händelseplats
+lovskarsvagen,0,1,1,,Endast löptext - osäkert
+lulea assistentvagen,1,0,1,,Verifiera händelseplats
+lulea avaviksvagen,1,0,1,,Verifiera händelseplats
+lulea bangardsgatan,1,0,1,,Verifiera händelseplats
+lulea banvagen,1,0,1,,Verifiera händelseplats
+lulea bathamn,1,0,1,,Verifiera händelseplats
+lulea bathamnen,1,0,1,,Verifiera händelseplats
+lulea bergnasvagen,1,0,1,,Verifiera händelseplats
+lulea bergvikstorget,1,0,1,,Verifiera händelseplats
+lulea betongvagen,1,0,1,,Verifiera händelseplats
+lulea bjorksgatan,1,0,1,,Verifiera händelseplats
+lulea bjorkskatavagen,1,0,1,,Verifiera händelseplats
+lulea bragegatan,1,0,1,,Verifiera händelseplats
+lulea brandovagen,1,0,1,,Verifiera händelseplats
+lulea burstromsvagen,1,0,1,,Verifiera händelseplats
+lulea cementvagen,1,0,1,,Verifiera händelseplats
+lulea centralstation,0,1,1,Centrum,Endast löptext - osäkert
+lulea degerbergsvagen,1,0,1,,Verifiera händelseplats
+lulea domarvagen,1,0,1,,Verifiera händelseplats
+lulea dvarggrand,1,0,1,,Verifiera händelseplats
+lulea edeforsgatan,1,0,1,,Verifiera händelseplats
+lulea farjeledsvagen,1,0,1,,Verifiera händelseplats
+lulea farleden,1,0,1,,Verifiera händelseplats
+lulea flarkenvagen,1,0,1,,Verifiera händelseplats
+lulea flatenvagen,1,0,1,,Verifiera händelseplats
+lulea folkhogskolevagen,1,0,1,,Verifiera händelseplats
+lulea forskarvagen,1,0,1,,Verifiera händelseplats
+lulea furumovagen,1,0,1,,Verifiera händelseplats
+lulea gaddviksvagen,1,0,1,,Verifiera händelseplats
+lulea gamelstadsvagen,0,1,1,,Endast löptext - osäkert
+lulea gunnarsbyvagen,1,0,1,,Verifiera händelseplats
+lulea hammarenvagen,1,0,1,,Verifiera händelseplats
+lulea hantverksvagen,1,0,1,,Verifiera händelseplats
+lulea havsoringsgrand,1,0,1,,Verifiera händelseplats
+lulea hertsotorget,1,0,1,,Verifiera händelseplats
+lulea hostvagen,1,0,1,,Verifiera händelseplats
+lulea kantgatan,1,0,1,,Verifiera händelseplats
+lulea kapellgrand,1,0,1,,Verifiera händelseplats
+lulea karlsviksvagen,1,0,1,,Verifiera händelseplats
+lulea knoppelasvagen,1,0,1,,Verifiera händelseplats
+lulea kompanivagen,1,0,1,,Verifiera händelseplats
+lulea kornettgatan,1,0,1,,Verifiera händelseplats
+lulea kraftgatan,1,0,1,,Verifiera händelseplats
+lulea kronanvagen,1,0,1,,Verifiera händelseplats
+lulea krusbarsstigen,1,0,1,,Verifiera händelseplats
+lulea kyrkogatan,1,0,1,,Verifiera händelseplats
+lulea kyrktorget,1,0,1,,Verifiera händelseplats
+lulea langbackavagen,1,0,1,,Verifiera händelseplats
+lulea lerbacksvagen,1,0,1,,Verifiera händelseplats
+lulea lovskarsvagen,1,0,1,,Verifiera händelseplats
+lulea mantalsvagen,1,0,1,,Verifiera händelseplats
+lulea maskinvagen,1,0,1,,Verifiera händelseplats
+lulea mattsundsvagen,1,0,1,,Verifiera händelseplats
+lulea orarnavagen,1,0,1,,Verifiera händelseplats
+lulea ormbergsvagen,1,0,1,,Verifiera händelseplats
+lulea ornviksvagen,1,0,1,,Verifiera händelseplats
+lulea ostra malmgatan,1,0,1,,Verifiera händelseplats
+lulea paddelvagen,1,0,1,,Verifiera händelseplats
+lulea paradvagen,1,0,1,,Verifiera händelseplats
+lulea producentvagen,1,0,1,,Verifiera händelseplats
+lulea professorsvagen,1,0,1,,Verifiera händelseplats
+lulea rektorsgatan,1,0,1,,Verifiera händelseplats
+lulea repslagargatan,1,0,1,,Verifiera händelseplats
+lulea rudtjarnsvagen,1,0,1,,Verifiera händelseplats
+lulea sjukhusvagen,1,0,1,,Verifiera händelseplats
+lulea snalltorpsvagen,1,0,1,,Verifiera händelseplats
+lulea sommargatan,1,0,1,,Verifiera händelseplats
+lulea spovgrand,1,0,1,,Verifiera händelseplats
+lulea stadsotorget,1,0,1,,Verifiera händelseplats
+lulea stengatan,1,0,1,,Verifiera händelseplats
+lulea stormvagen,1,0,1,,Verifiera händelseplats
+lulea studentvagen,0,1,1,,Endast löptext - osäkert
+lulea sundomsvagen,1,0,1,,Verifiera händelseplats
+lulea tallvagen,1,0,1,,Verifiera händelseplats
+lulea teknikergatan,1,0,1,,Verifiera händelseplats
+lulea timmermansgatan,1,0,1,,Verifiera händelseplats
+lulea tjardalsvagen,1,0,1,,Verifiera händelseplats
+lulea tomtebovagen,1,0,1,,Verifiera händelseplats
+lulea torsvagen,1,0,1,,Verifiera händelseplats
+lulea tranbacksvagen,1,0,1,,Verifiera händelseplats
+lulea varvsgatan,1,0,1,,Verifiera händelseplats
+lulea vastra brogatan,1,0,1,,Verifiera händelseplats
+luleavagen,0,1,1,,Endast löptext - osäkert
+magnetitvagen,0,1,1,,Endast löptext - osäkert
+malmudden,0,1,1,Malmudden,Endast löptext - osäkert
+marknadsvagen,1,1,1,,Verifiera händelseplats
+masshedsvagen,0,1,1,,Endast löptext - osäkert
+mattsunds byavag,0,1,1,,Endast löptext - osäkert
+med fyrhjuling fiskehamnsvagen,0,1,1,,Endast löptext - osäkert
+midsommarvagen,0,1,1,,Endast löptext - osäkert
+mjolkudden,0,1,1,Mjölkudden,Endast löptext - osäkert
+morovagen,0,1,1,,Endast löptext - osäkert
+nara nya gaddviksbron,0,1,1,,Endast löptext - osäkert
+nekats borda flygplan,0,1,1,,Endast löptext - osäkert
+norra altervagen,1,1,1,,Verifiera händelseplats
+norra sunderbyvagen,0,1,1,,Endast löptext - osäkert
+norrbotten dalagatan,1,0,1,,Verifiera händelseplats
+norrbotten jarpvagen,1,0,1,,Verifiera händelseplats
+norrbotten luleavagen,1,0,1,,Verifiera händelseplats
+norrbotten sundomsvagen,1,0,1,,Verifiera händelseplats
+norrbottens lan avaviksvagen,1,0,1,,Verifiera händelseplats
+norrbottens lan bensbyvagen,1,0,1,,Verifiera händelseplats
+norrbottens lan bjorkskataleden,1,0,1,,Verifiera händelseplats
+norrbottens lan grangatan,1,0,1,,Verifiera händelseplats
+nya alvvagen,0,1,1,,Endast löptext - osäkert
+nykterhetskontroll balingevagen,0,1,1,,Endast löptext - osäkert
+och delfingatan,0,1,1,,Endast löptext - osäkert
+och frisorgatan,0,1,1,,Endast löptext - osäkert
+och robertsviksgatan,0,1,1,,Endast löptext - osäkert
+olaga hot spovgrand,0,1,1,,Endast löptext - osäkert
+omberget till bensbyvagen,0,1,1,,Endast löptext - osäkert
+orbergsvagen,0,1,1,,Endast löptext - osäkert
+ormbergsstugevagen,0,1,1,,Endast löptext - osäkert
+ormbergsvagen,0,1,1,,Endast löptext - osäkert
+ornnasvagen,0,1,1,,Endast löptext - osäkert
+ornviksvagen,0,1,1,,Endast löptext - osäkert
+ostra malmgatan,0,1,1,,Endast löptext - osäkert
+paddelvagen,0,1,1,,Endast löptext - osäkert
+parkeringen vid bathamnen,0,1,1,,Endast löptext - osäkert
+personbil forskarvagen,0,1,1,,Endast löptext - osäkert
+personbil vid rutviksvagen,0,1,1,,Endast löptext - osäkert
+porsovagen,0,1,1,,Endast löptext - osäkert
+producentvagen,0,1,1,,Endast löptext - osäkert
+professorsvagen,0,1,1,,Endast löptext - osäkert
+ranea,0,1,1,Råneå,Endast löptext - osäkert
+rektorsgatan,0,1,1,,Endast löptext - osäkert
+repslagaragatan,0,1,1,,Endast löptext - osäkert
+repslagargatan,0,1,1,,Endast löptext - osäkert
+riktsvag,0,1,1,,Endast löptext - osäkert
+rondell vid bensbyvagen,0,1,1,,Endast löptext - osäkert
+seletvagen,0,1,1,,Endast löptext - osäkert
+senast synlig hjortstigen,0,1,1,,Endast löptext - osäkert
+sig mot kornettgatan,0,1,1,,Endast löptext - osäkert
+sig vid malmkajen,0,1,1,,Endast löptext - osäkert
+singelolycka haparandavagen,0,1,1,,Endast löptext - osäkert
+singelolycka ornviksvagen,0,1,1,,Endast löptext - osäkert
+sjukhusvagen,0,1,1,,Endast löptext - osäkert
+skurholmen,0,1,1,Skurholmen,Endast löptext - osäkert
+snalltorpsvagen,0,1,1,,Endast löptext - osäkert
+sodra hamnleden,0,1,1,Centrum,Endast löptext - osäkert
+sodra vretvagen,0,1,1,,Endast löptext - osäkert
+som voltat varvsleden,0,1,1,,Endast löptext - osäkert
+sommargatan,0,1,1,,Endast löptext - osäkert
+spantgatan,1,1,1,,Verifiera händelseplats
+spovgrand,0,1,1,,Endast löptext - osäkert
+stengatan,0,1,1,,Endast löptext - osäkert
+stormvagen,0,1,1,,Endast löptext - osäkert
+storstrandsvagen,0,1,1,,Endast löptext - osäkert
+strandvagen,0,1,1,,Endast löptext - osäkert
+studentvagen,0,1,1,,Endast löptext - osäkert
+sundsgatan,1,1,1,,Verifiera händelseplats
+svartbyvagen,1,1,1,,Verifiera händelseplats
+svavare vid farleden,0,1,1,,Endast löptext - osäkert
+svedjegardsvagen,0,1,1,,Endast löptext - osäkert
+tallvagen,0,1,1,,Endast löptext - osäkert
+teknikergatan,0,1,1,,Endast löptext - osäkert
+till gamla malmkajen,0,1,1,,Endast löptext - osäkert
+timmerleden,1,0,1,,Verifiera händelseplats
+timmermansgatan,0,1,1,,Endast löptext - osäkert
+timmermansgatan timmermansgatan,0,1,1,,Endast löptext - osäkert
+tjardalsvagen,0,1,1,,Endast löptext - osäkert
+tomtebovagen,0,1,1,,Endast löptext - osäkert
+torsvagen,0,1,1,,Endast löptext - osäkert
+trad angdalsrovagen,0,1,1,,Endast löptext - osäkert
+trafikanterna efter kallaxvagen,0,1,1,,Endast löptext - osäkert
+trafiken avans byavag,0,1,1,,Endast löptext - osäkert
+trafiken efter smedsbyvagen,0,1,1,,Endast löptext - osäkert
+trafiken rikvag,0,1,1,,Endast löptext - osäkert
+trafikolycka gammelstadsvagen,0,1,1,,Endast löptext - osäkert
+tranbacksvagen,0,1,1,,Endast löptext - osäkert
+trapphuset hjortstigen,0,1,1,,Endast löptext - osäkert
+trapphuset malmuddsvagen,0,1,1,,Endast löptext - osäkert
+trollslandevagen,1,1,1,,Verifiera händelseplats
+tva bilar flystationsvagen,0,1,1,,Endast löptext - osäkert
+utan korkort assistentvagen,0,1,1,,Endast löptext - osäkert
+utmarksvagen,1,1,1,,Verifiera händelseplats
+vagen efter rutviksvagen,0,1,1,,Endast löptext - osäkert
+vagen nya gaddviksbron,0,1,1,,Endast löptext - osäkert
+varvsgatan,0,1,1,,Endast löptext - osäkert
+vastra brogatan,0,1,1,,Endast löptext - osäkert
+vespa till spovgrand,0,1,1,,Endast löptext - osäkert
+via balkongen torsvagen,0,1,1,,Endast löptext - osäkert
+via gammelstadsvagen,0,1,1,,Endast löptext - osäkert
+vid barplockning degerbergsvagen,0,1,1,,Endast löptext - osäkert
+vid hagavikens bathamn,0,1,1,,Endast löptext - osäkert
+vid korsningen kallaxvagen,0,1,1,,Endast löptext - osäkert
+vid lilla bergvikstorget,0,1,1,,Endast löptext - osäkert
+vid nya gaddviksbron,0,1,1,,Endast löptext - osäkert
+vid sommargatan,0,1,1,,Endast löptext - osäkert
