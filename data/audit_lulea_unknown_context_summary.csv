@@ -1,0 +1,140 @@
+clue_type,matched_text,source_field,occurrences,recommendation
+ort_eller_by,person,content,424,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,description,142,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,headline,138,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,rutvik,location_string,83,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,rutvik,headline,71,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,rutvik,description,70,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,location_string,63,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,kallax,location_string,34,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,kallax,headline,34,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,kallax,description,34,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,smedsbyn,headline,33,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,smedsbyn,description,33,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,niemisel,location_string,27,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,rutvik,content,26,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,jamton,location_string,25,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,jamton,headline,23,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,jamton,description,23,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,niemisel,headline,22,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,niemisel,description,21,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,balinge,headline,20,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,balinge,description,20,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,balinge,location_string,20,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sinksundet,location_string,20,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bensbyn,location_string,20,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,stromsund,location_string,19,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,lulsundet,location_string,19,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sinksundet,description,18,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,stromsund,headline,17,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,stromsund,description,17,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sinksundet,headline,17,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bensbyn,headline,16,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bensbyn,description,16,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,korsningen,headline,14,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,korsningen,description,14,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,avan,location_string,14,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,lulsundet,headline,14,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,lulsundet,description,14,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,smedsbyn,location_string,14,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,korsningen,content,13,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,borjelslandet,location_string,12,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,avan,headline,12,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,avan,description,12,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bjorsbyn,location_string,11,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bjorsbyn,headline,11,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bjorsbyn,description,11,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,stationen,content,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,orarna,location_string,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,borjelslandet,headline,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,borjelslandet,description,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,orarna,headline,9,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,orarna,description,9,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,niemisel,content,9,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,kallax,content,8,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,smedsbyn,content,7,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bensbyn,content,7,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sunderbyn,content,7,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,brandon,location_string,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,avan,content,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,lulsundet,content,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,trafikplats,headline,5,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,trafikplats,description,5,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,jamton,content,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,parkeringen,content,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,brandon,headline,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,brandon,description,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,stromsund,content,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sunderbyn,headline,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sunderbyn,description,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sinksundet,content,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sundom,headline,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sundom,description,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,bron,content,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,balinge,content,4,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,borjelslandet,content,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,trafikplats,location_string,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,prastholm,headline,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,prastholm,description,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,busshallplats,content,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sundom,location_string,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,vita,location_string,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,vita,content,3,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,mattsund,content,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,musikomat,location_string,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,musikomat,headline,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,musikomat,description,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,postnord,content,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,trafikplats,content,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,coop forum,headline,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,coop forum,description,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,rondellen,content,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,brandon,content,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,vid skolan,content,2,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,shell,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,stationen,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,shell,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,shell,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,antnas,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,fotbollsplan,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,fotbollsplan,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,idrottsplatsen,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,idrottsplatsen,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,idrottsplatsen,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+adressfragment,prastgatan 20,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+adressfragment,prastgatan 20,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,postnord,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,orarna,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,teknikens hus,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,teknikens hus,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,stationen,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,stationen,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,rondellen,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,rondellen,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,coop forum,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,systembolaget,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,systembolaget,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,shell,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+adressfragment,betongvagen 1,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+adressfragment,forskarvagen 198,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+adressfragment,forskarvagen 198,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,sunderby sjukhus,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,vita,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,vita,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,stadshuset,location_string,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,stadshuset,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,ersnas,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,parkeringshuset,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,circle k,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,bjorsbyn,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,systembolaget,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+byggnad_eller_verksamhet,systembolaget,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+adressfragment,stationsgatan 5,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,hamnen,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,hamnen,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,badplats,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,badplats,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,badplats,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,sundom,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,busshallplats,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,busshallplats,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad

@@ -8,6 +8,7 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 38987,Coop Forum,0,1,"Luleå Storhedsvägen, Luleå, Norrbottens län",2017
 41946,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2017
 49244,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2017
+54011,Systembolaget,1,1,"Luleå Storhedsvägen, Systembolaget, Luleå, Norrbottens län",2017
 54935,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Kallaxvägen, Luleå, Norrbottens län",2017
 55290,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Mjölkuddsvägen, Luleå, Norrbottens län",2017
 69301,Universitetet / LTU,0,1,"Luleå Universitetsområdet, Norrbotten, Luleå, Norrbottens län",2018
@@ -40,6 +41,7 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 181849,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2020
 182581,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Boden, Luleå, Norrbottens län",2020
 183821,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2020
+225055,Systembolaget,0,1,"Luleå Delfingatan, Luleå, Norrbottens län",2022
 234585,Luleå Hockey,0,1,"Norrbottens län Norrbotten, Luleå, Färjestad, Norrbottens län",2022
 266436,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2023
 277192,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2023
