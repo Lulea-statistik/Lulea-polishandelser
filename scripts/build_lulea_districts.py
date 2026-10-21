@@ -16,7 +16,7 @@ OUT = ROOT / "docs/data/lulea_district_monthly.csv"
 
 ALIASES = {
  "Bergnäset": ["bergnaset", "bergnäset", "lulea flygplats", "luleå flygplats", "kallax flygplats", "f21", "f 21", "flottilj f21", "flygplatsen"],
- "Antnäs": ["antnas", "antnäs"],
+ "Sörbyarna": ["sorbyarna", "sörbyarna", "antnas", "antnäs", "alvik", "ale", "ersnas", "ersnäs", "mattsund", "måttsund", "matsund", "alhamn", "langnas", "långnäs", "kallax by", "kallaxby"],
  "Bergviken": ["bergviken", "midgardsvagen", "midgårdsvägen", "delfinvagen", "delfinvägen", "hummergatan"],
  "Björkskatan": ["bjorkskatan", "björkskatan", "vaderleden", "väderleden"],
  "Centrum": [
@@ -78,7 +78,7 @@ NARRATIVE_CENTRUM = re.compile(
 # Snäva områdesnamn med tydlig platsinledning. Gatunamn från aliases
 # läggs inte automatiskt till här: de kräver särskild adressgranskning.
 NARRATIVE_DISTRICT_NAMES={
- "Bergnäset":["bergnaset","flygplatsen","lulea flygplats","f21","f 21"],"Antnäs":["antnas"],"Skutviken":["skutviken","coop arena"],"Bergviken":["bergviken"],
+ "Bergnäset":["bergnaset","flygplatsen","lulea flygplats","f21","f 21"],"Sörbyarna":["sorbyarna","antnas","alvik","ale","ersnas","mattsund","matsund","alhamn","langnas","kallax by"],"Skutviken":["skutviken","coop arena"],"Bergviken":["bergviken"],
  "Björkskatan":["bjorkskatan"],"Gammelstad":["gammelstad"],
  "Hertsön":["hertson"],"Hertsöheden":["hertsoheden"],
  "Kallkällan":["kallkallan"],"Karlsvik":["karlsvik"],
