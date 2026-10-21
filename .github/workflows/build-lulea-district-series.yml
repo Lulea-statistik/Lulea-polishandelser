@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: update-polishandelser
+  group: polishandelser-data-publish
   cancel-in-progress: false
 jobs:
   build:
