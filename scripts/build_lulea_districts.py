@@ -104,6 +104,15 @@ def district(row):
  narrative=normalize(" ".join((row.get(k) or "") for k in ("headline","description","content")))
  candidates={name for name,pattern in NARRATIVE_DISTRICT_PATTERNS.items() if pattern.search(narrative)}
  if NARRATIVE_CENTRUM.search(narrative):candidates.add("Centrum")
+ # En explicit geografisk rubrikinledning (t.ex. "Innerstaden, ...")
+ # kan ange händelseplats utan preposition. Gäller inte sammanfattningar
+ # eller platser som bara förekommer längre in i löptexten.
+ headline=normalize(row.get("headline") or "")
+ description=normalize(row.get("description") or "")
+ is_summary=str(row.get("is_summary") or "").strip().casefold() in ("true","1")
+ innerstad_prefix=re.compile(r"^\\s*(?:lulea\\s*[,–-]\\s*)?innerstaden\\s*[,.:;–-]\\s+")
+ if not is_summary and (innerstad_prefix.search(headline) or innerstad_prefix.search(description)):
+  candidates.add("Centrum")
  if len(candidates)==1:
   selected=next(iter(candidates))
   # Blockera när en annan stadsdel, bro eller lång väg också omnämns.
