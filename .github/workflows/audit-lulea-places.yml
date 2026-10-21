@@ -26,7 +26,8 @@ jobs:
       - run: python scripts/audit_lulea_unknown.py
       - run: python scripts/audit_lulea_unknown_landmarks.py
       - run: python scripts/audit_lulea_context.py
-      - name: Commit audit
+      - name: Commit audit (main only)
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
