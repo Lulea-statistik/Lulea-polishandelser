@@ -1,23 +1,23 @@
 platsord,okanda_handelser_platsfalt,okanda_handelser_loptext,unika_okanda_handelser,vanligaste_handelsetyp,händelser_av_typen
 innerstaden,0,414,414,Stöld,127
 lansvag,0,106,106,"Trafikolycka,  vilt",37
-riksvag,0,86,86,Trafikkontroll,22
+riksvag,0,81,81,Trafikkontroll,21
 centrum,0,34,34,Stöld,8
-sunderbyn,0,24,24,Trafikkontroll,9
-svartostaden,0,17,17,Stöld/inbrott,4
 bodenvagen,3,16,16,Trafikolycka,13
-lulea kallaxvagen,16,0,16,Trafikkontroll,8
 lulea mjolkuddsvagen,16,0,16,Trafikkontroll,5
 mjolkuddsvagen,1,16,16,Trafikkontroll,6
-kallaxvagen,1,14,15,Trafikkontroll,7
+lulea kallaxvagen,15,0,15,Trafikkontroll,7
+kallaxvagen,1,13,14,Trafikkontroll,6
 olycksplatsen,0,14,14,Trafikolycka,8
 storhedsvagen,2,14,14,Trafikkontroll,6
 lulea bodenvagen,12,0,12,Trafikolycka,9
+svartostaden,0,12,12,Arbetsplatsolycka,2
 bjorkskataleden,2,11,11,Trafikolycka,4
 brottsplatsen,0,11,11,Misshandel,4
 lulea bensbyvagen,11,0,11,Trafikolycka,6
 lulea storhedsvagen,11,0,11,Trafikkontroll,5
 med till polisstationen,0,11,11,Sammanfattning natt,4
+sunderbyn,0,11,11,Trafikkontroll,5
 bensbyvagen,1,8,9,Trafikkontroll,5
 bensinstation,0,9,9,Olaga hot,2
 lulea gammelstadsvagen,9,0,9,Trafikolycka,6
@@ -54,7 +54,6 @@ balingevagen,1,4,4,Trafikkontroll,2
 busstationen,0,4,4,Fylleri/LOB,4
 fiskehamnsvagen,0,4,4,Trafikkontroll,3
 gamla gaddviksbron,1,4,4,Trafikhinder,1
-kronan,0,4,4,Stöld/inbrott,2
 kronbacksvagen,2,3,4,Sammanfattning natt,1
 lulea alvbrovagen,4,0,4,Trafikkontroll,2
 lulea balingevagen,4,0,4,Trafikkontroll,3
@@ -63,7 +62,6 @@ lulea lulevagen,4,0,4,Trafikkontroll,4
 lulea malmuddsvagen,4,0,4,Rattfylleri,1
 malmuddsvagen,0,4,4,Rattfylleri,1
 polisstationen,0,4,4,Olaga hot,1
-porson,0,4,4,Sammanfattning natt,2
 som lamnat olycksplatsen,0,4,4,"Trafikolycka,  vilt",3
 svartskatavagen,1,4,4,"Trafikolycka,  vilt",2
 tunastigen,0,4,4,Rattfylleri,2
@@ -75,6 +73,7 @@ bjorkskateleden,0,3,3,Trafikolycka,2
 gaddviksbron,0,3,3,Trafikolycka,2
 jarnvagsstationen,0,3,3,Fylleri/LOB,2
 korsningen gammelstadsvagen,0,3,3,Trafikolycka,3
+kronan,0,3,3,Stöld/inbrott,2
 lulea alvsbyvagen,3,0,3,"Trafikolycka,  singel",1
 lulea backgatan,3,0,3,Trafikolycka,2
 lulea svartskatavagen,3,0,3,"Trafikolycka,  vilt",2
@@ -137,7 +136,6 @@ lulea valorvagen,2,0,2,Stöld/inbrott,1
 malmhamnsvagen,0,2,2,Stöld/inbrott,1
 mattsundsvagen,1,2,2,Trafikkontroll,2
 mittracke riksvag,0,2,2,"Trafikolycka,  singel",2
-notviken,0,2,2,Trafikolycka,1
 och alg lansvag,0,2,2,"Trafikolycka,  vilt",2
 orarnavagen,1,2,2,Trafikkontroll,1
 polisen till flygplatsen,0,2,2,Fylleri/LOB,2
@@ -197,7 +195,6 @@ bil nya gaddviksbron,0,1,1,Trafikolycka,1
 bilbrand vid rutviksvagen,0,1,1,Brand,1
 bistar vid brandplatsen,0,1,1,Brand,1
 bjorbyvagen,0,1,1,Trafikolycka,1
-bjorkleden,0,1,1,Trafikkontroll,1
 bjorkskatavagen,1,1,1,Trafikolycka,1
 bragegatan,0,1,1,Trafikolycka,1
 brak utanfor polisstationen,0,1,1,Bråk,1
@@ -262,7 +259,6 @@ furumovagen,0,1,1,Övrigt,1
 gaddviksvagen,0,1,1,Trafikkontroll,1
 gamla haparandavagen,0,1,1,"Trafikolycka,  vilt",1
 gamla malmkajen,0,1,1,Brand,1
-gammelstad,0,1,1,Trafikkontroll,1
 gangtummel vid kronbacksvagen,0,1,1,Sammanfattning natt,1
 gangvag,0,1,1,Sammanfattning natt,1
 garage ostra malmgatan,0,1,1,Skadegörelse,1
@@ -474,6 +470,7 @@ norrbottens lan avaviksvagen,1,0,1,Sammanfattning natt,1
 norrbottens lan bensbyvagen,1,0,1,Sammanfattning natt,1
 norrbottens lan bjorkskataleden,1,0,1,Sammanfattning natt,1
 norrbottens lan grangatan,1,0,1,Trafikkontroll,1
+notviken,0,1,1,Trafikolycka,1
 nya alvvagen,0,1,1,Sammanfattning natt,1
 nykterhetskontroll balingevagen,0,1,1,Trafikkontroll,1
 och cirkulationsplats mjolkudden,0,1,1,Trafikolycka,1
@@ -506,6 +503,7 @@ polis lansvag,0,1,1,Trafikbrott,1
 polisen dokumenterar olycksplatsen,0,1,1,Arbetsplatsolycka,1
 polisen lamnar olycksplatsen,0,1,1,Trafikolycka,1
 polispatrull kontrollerar olycksplatsen,0,1,1,Trafikolycka,1
+porson,0,1,1,Brand,1
 porsovagen,0,1,1,Trafikkontroll,1
 porttelefonen till polisstationen,0,1,1,Sammanfattning natt,1
 producentvagen,0,1,1,Trafikolycka,1

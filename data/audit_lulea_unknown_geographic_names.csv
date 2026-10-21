@@ -1,18 +1,18 @@
 platsnamn,antal_okanda_platsfalt,antal_okanda_loptext,unika_okanda,foreslagen_stadsdel,status
 innerstaden,0,414,414,Centrum,Endast löptext - osäkert
 centrum,0,34,34,Centrum,Endast löptext - osäkert
-sunderbyn,0,24,24,Sunderbyn,Endast löptext - osäkert
-svartostaden,0,17,17,Svartöstaden,Endast löptext - osäkert
 bodenvagen,3,16,16,,Verifiera händelseplats
-lulea kallaxvagen,16,0,16,,Verifiera händelseplats
 lulea mjolkuddsvagen,16,0,16,,Verifiera händelseplats
 mjolkuddsvagen,1,16,16,,Verifiera händelseplats
-kallaxvagen,1,14,15,,Verifiera händelseplats
+lulea kallaxvagen,15,0,15,,Verifiera händelseplats
+kallaxvagen,1,13,14,,Verifiera händelseplats
 storhedsvagen,2,14,14,,Verifiera händelseplats
 lulea bodenvagen,12,0,12,,Verifiera händelseplats
+svartostaden,0,12,12,Svartöstaden,Endast löptext - osäkert
 bjorkskataleden,2,11,11,,Verifiera händelseplats
 lulea bensbyvagen,11,0,11,,Verifiera händelseplats
 lulea storhedsvagen,11,0,11,,Verifiera händelseplats
+sunderbyn,0,11,11,Sunderbyn,Endast löptext - osäkert
 bensbyvagen,1,8,9,,Verifiera händelseplats
 lulea gammelstadsvagen,9,0,9,,Verifiera händelseplats
 mariebergsvagen,2,9,9,,Verifiera händelseplats
@@ -40,7 +40,6 @@ balingevagen,1,4,4,,Verifiera händelseplats
 busstationen,0,4,4,Centrum,Endast löptext - osäkert
 fiskehamnsvagen,0,4,4,,Endast löptext - osäkert
 gamla gaddviksbron,1,4,4,,Verifiera händelseplats
-kronan,0,4,4,Kronan,Endast löptext - osäkert
 kronbacksvagen,2,3,4,,Verifiera händelseplats
 lulea alvbrovagen,4,0,4,,Verifiera händelseplats
 lulea balingevagen,4,0,4,,Verifiera händelseplats
@@ -48,7 +47,6 @@ lulea fiskehamnsvagen,4,0,4,,Verifiera händelseplats
 lulea lulevagen,4,0,4,,Verifiera händelseplats
 lulea malmuddsvagen,4,0,4,,Verifiera händelseplats
 malmuddsvagen,0,4,4,,Endast löptext - osäkert
-porson,0,4,4,Porsön,Endast löptext - osäkert
 svartskatavagen,1,4,4,,Verifiera händelseplats
 tunastigen,0,4,4,,Endast löptext - osäkert
 bergviken,0,3,3,Bergviken,Endast löptext - osäkert
@@ -57,6 +55,7 @@ bjorkskateleden,0,3,3,,Endast löptext - osäkert
 gaddviksbron,0,3,3,,Endast löptext - osäkert
 jarnvagsstationen,0,3,3,Centrum,Endast löptext - osäkert
 korsningen gammelstadsvagen,0,3,3,,Endast löptext - osäkert
+kronan,0,3,3,Kronan,Endast löptext - osäkert
 lulea alvsbyvagen,3,0,3,,Verifiera händelseplats
 lulea backgatan,3,0,3,,Verifiera händelseplats
 lulea svartskatavagen,3,0,3,,Verifiera händelseplats
@@ -106,7 +105,6 @@ lulea universitetsvagen,2,0,2,,Verifiera händelseplats
 lulea valorvagen,2,0,2,,Verifiera händelseplats
 malmhamnsvagen,0,2,2,,Endast löptext - osäkert
 mattsundsvagen,1,2,2,,Verifiera händelseplats
-notviken,0,2,2,Notviken,Endast löptext - osäkert
 orarnavagen,1,2,2,,Verifiera händelseplats
 prastgatan,0,2,2,Centrum,Endast löptext - osäkert
 rikvag,0,2,2,,Endast löptext - osäkert
@@ -135,7 +133,6 @@ bil malmuddsvagen,0,1,1,,Endast löptext - osäkert
 bil nya gaddviksbron,0,1,1,,Endast löptext - osäkert
 bilbrand vid rutviksvagen,0,1,1,,Endast löptext - osäkert
 bjorbyvagen,0,1,1,,Endast löptext - osäkert
-bjorkleden,0,1,1,,Endast löptext - osäkert
 bjorkskatavagen,1,1,1,,Verifiera händelseplats
 bragegatan,0,1,1,,Endast löptext - osäkert
 brandovagen,0,1,1,,Endast löptext - osäkert
@@ -182,7 +179,6 @@ furumovagen,0,1,1,,Endast löptext - osäkert
 gaddviksvagen,0,1,1,,Endast löptext - osäkert
 gamla haparandavagen,0,1,1,,Endast löptext - osäkert
 gamla malmkajen,0,1,1,,Endast löptext - osäkert
-gammelstad,0,1,1,Gammelstad,Endast löptext - osäkert
 gangtummel vid kronbacksvagen,0,1,1,,Endast löptext - osäkert
 gangvag,0,1,1,,Endast löptext - osäkert
 garage ostra malmgatan,0,1,1,,Endast löptext - osäkert
@@ -363,6 +359,7 @@ norrbottens lan avaviksvagen,1,0,1,,Verifiera händelseplats
 norrbottens lan bensbyvagen,1,0,1,,Verifiera händelseplats
 norrbottens lan bjorkskataleden,1,0,1,,Verifiera händelseplats
 norrbottens lan grangatan,1,0,1,,Verifiera händelseplats
+notviken,0,1,1,Notviken,Endast löptext - osäkert
 nya alvvagen,0,1,1,,Endast löptext - osäkert
 nykterhetskontroll balingevagen,0,1,1,,Endast löptext - osäkert
 och delfingatan,0,1,1,,Endast löptext - osäkert
@@ -380,6 +377,7 @@ paddelvagen,0,1,1,,Endast löptext - osäkert
 parkeringen vid bathamnen,0,1,1,,Endast löptext - osäkert
 personbil forskarvagen,0,1,1,,Endast löptext - osäkert
 personbil vid rutviksvagen,0,1,1,,Endast löptext - osäkert
+porson,0,1,1,Porsön,Endast löptext - osäkert
 porsovagen,0,1,1,,Endast löptext - osäkert
 producentvagen,0,1,1,,Endast löptext - osäkert
 professorsvagen,0,1,1,,Endast löptext - osäkert
