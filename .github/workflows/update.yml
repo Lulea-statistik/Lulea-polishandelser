@@ -39,8 +39,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-polishandelser
-  cancel-in-progress: true
+  group: polishandelser-data-publish
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -98,10 +98,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ docs/data/lulea_district_monthly.csv docs/data/lulea_district_expanded_monthly.csv docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/local_police_area_pairs_monthly.csv docs/data/weekday_period_observations.csv docs/data/weekday_period_calendar.csv docs/data/theft_object_mentions.csv
+          git add -A -- data/ ':!data/events_raw.jsonl' docs/data/lulea_district_monthly.csv docs/data/lulea_district_expanded_monthly.csv docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/local_police_area_pairs_monthly.csv docs/data/weekday_period_observations.csv docs/data/weekday_period_calendar.csv docs/data/theft_object_mentions.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
+            git restore --worktree -- data/events_raw.jsonl
             git commit -m "Uppdatera polishändelser"
             git pull --rebase origin main
             git push origin HEAD:main
