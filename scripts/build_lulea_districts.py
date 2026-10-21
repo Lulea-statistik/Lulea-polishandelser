@@ -88,7 +88,7 @@ NARRATIVE_DISTRICT_NAMES={
  "Sunderbyn":["sunderbyn"],"Svartöstaden":["svartostaden"],
  "Örnäset":["ornaset"]}
 NARRATIVE_DISTRICT_PATTERNS={
- district:re.compile(r"(?<![a-z])(?:i|pa|vid|intill|utanfor|kring)\\s+(?:lulea\\s+)?(?:"+"|".join(names)+r")(?![a-z])")
+ district:re.compile(r"(?<![a-z])(?:i|pa|vid|intill|utanfor|kring)\s+(?:lulea\s+)?(?:"+"|".join(names)+r")(?![a-z])")
  for district,names in NARRATIVE_DISTRICT_NAMES.items()
 }
 def district(row):
