@@ -359,7 +359,7 @@ Chart.defaults.scale.ticks.font={size:13,weight:'500'};
 Chart.defaults.scale.title.font={size:14,weight:'600'};
 const fmt=new Intl.NumberFormat('sv-SE');
 const monthNames=['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec'];
-let calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
+let localPolicePairRows=[], calendarPeriodRows=[], weekdayPeriodRows=[], municipalityPairRows=[], rows=[], expandedRows=[], summaryRows=[], summaryExtraRows=[], quietSummaryRows=[], monthlyChart, typeChart, yearChart, calendarMonthChart, geoChart, typeShareChart, otherBreakdownChart, summaryDetailChart, summaryMonthlyChart, areaComparisonChart, quietSummaryChart, unknownNorrbottenChart, municipalityPairsChart;
 
 const AGGREGATED_TYPE_MAP={
   'Trafikolycka':'Trafikolycka',
@@ -470,7 +470,13 @@ function groupSum(data,key){
   return [...m.entries()];
 }
 function selected(id){return document.getElementById(id).value}
-function activeSeries(){return selected("seriesMode")==="original"?rows:expandedRows;}
+function activeSeries(){
+ const mode=selected("seriesMode");
+ const base=mode==="original"?rows:expandedRows;
+ const area=selected("geo");
+ if(!Object.hasOwn(LOCAL_POLICE_AREAS,area))return base;
+ return base.concat(localPolicePairRows.filter(r=>r.series===mode));
+}
 const LOCAL_POLICE_AREAS={
  'Lokalpolisområde Luleå/Boden':['Luleå kommun','Bodens kommun'],
  'Lokalpolisområde Piteå Älvdal':['Piteå kommun','Älvsbyns kommun','Arvidsjaurs kommun','Arjeplogs kommun'],
@@ -1243,7 +1249,7 @@ function update(){
     }
   });
 
-  const dg=activeSeries().filter(r=>{
+  const dg=(Object.hasOwn(LOCAL_POLICE_AREAS,selected("geo"))?activeSeries().filter(r=>geographyMatches(r,selected("geo"))):activeSeries()).filter(r=>{
     const y=selected('year'),t=selected('type'),field=typeField();
     return (y==='Alla'||r.year===y)&&(t==='Alla'||r[field]===t);
   });
@@ -1272,10 +1278,12 @@ Promise.all([
   fetch(EXPANDED_DATA_URL,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('Expanderad data HTTP '+r.status);return r.text()}),
   fetch(QUIET_SUMMARY_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(MUNICIPALITY_PAIRS_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
+  fetch("data/local_police_area_pairs_monthly.csv",{cache:"no-store"}).then(r=>r.ok?r.text():""),
   fetch(WEEKDAY_PERIOD_URL,{cache:'no-store'}).then(r=>r.ok?r.text():''),
   fetch(CALENDAR_PERIOD_URL,{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ])
-  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText,weekdayText,calendarText])=>{
+  .then(([text,summaryText,summaryExtraText,expandedText,quietText,pairsText,lpoText,weekdayText,calendarText])=>{
+    localPolicePairRows=lpoText?parseCSV(lpoText).map(r=>({...r,event_count:+r.event_count||0,type_aggregated:aggregatedType(r.type_original)})):[];
     calendarPeriodRows=calendarText?parseCSV(calendarText).map(r=>({...r,weekday:+r.weekday,event_count:+r.event_count,quiet_count:+r.quiet_count})):[];
     weekdayPeriodRows=weekdayText?parseCSV(weekdayText).map(r=>({...r,event_count:+r.event_count||0,time_known:+r.time_known||0,weekday:+r.weekday,type_original:r.event_type,type_aggregated:aggregatedType(r.event_type)})):[];
     municipalityPairRows=pairsText?parseCSV(pairsText):[];
