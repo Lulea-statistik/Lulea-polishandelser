@@ -73,6 +73,24 @@ NARRATIVE_CENTRUM = re.compile(
  r"(?<![a-z])(?:i|pa|vid|intill|utanfor|inne i|omkring|kring)\s+"
  r"(?:lulea\s+)?(?:innerstaden|centrum|busstationen|busstation)(?![a-z])"
 )
+# Snäva områdesnamn med tydlig platsinledning. Gatunamn från aliases
+# läggs inte automatiskt till här: de kräver särskild adressgranskning.
+NARRATIVE_DISTRICT_NAMES={
+ "Bergnäset":["bergnaset"],"Bergviken":["bergviken"],
+ "Björkskatan":["bjorkskatan"],"Gammelstad":["gammelstad"],
+ "Hertsön":["hertson"],"Hertsöheden":["hertsoheden"],
+ "Kallkällan":["kallkallan"],"Karlsvik":["karlsvik"],
+ "Kronan":["kronan"],"Lerbäcken":["lerbacken"],
+ "Malmudden":["malmudden"],"Mjölkudden":["mjolkudden"],
+ "Munksund":["munksund"],"Notviken":["notviken"],
+ "Porsön":["porson"],"Råneå":["ranea"],
+ "Skurholmen":["skurholmen"],"Storheden":["storheden"],
+ "Sunderbyn":["sunderbyn"],"Svartöstaden":["svartostaden"],
+ "Örnäset":["ornaset"]}
+NARRATIVE_DISTRICT_PATTERNS={
+ district:re.compile(r"(?<![a-z])(?:i|pa|vid|intill|utanfor|kring)\\s+(?:lulea\\s+)?(?:"+"|".join(names)+r")(?![a-z])")
+ for district,names in NARRATIVE_DISTRICT_NAMES.items()
+}
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
@@ -81,12 +99,14 @@ def district(row):
  if any(p.search(text) for p in ROAD_PATTERNS): return MULTI
  # Använd löptext bara om platsfält inte redan ger säker stadsdel.
  narrative=normalize(" ".join((row.get(k) or "") for k in ("headline","description","content")))
- if NARRATIVE_CENTRUM.search(narrative):
-  # Om löptexten också innehåller en annan namngiven stadsdel lämnas
-  # händelsen okänd: vi vet inte vilken plats som avser händelsen.
-  others={name for name,pats in PATTERNS.items() if name!="Centrum" and any(p.search(narrative) for p in pats)}
+ candidates={name for name,pattern in NARRATIVE_DISTRICT_PATTERNS.items() if pattern.search(narrative)}
+ if NARRATIVE_CENTRUM.search(narrative):candidates.add("Centrum")
+ if len(candidates)==1:
+  selected=next(iter(candidates))
+  # Blockera när en annan stadsdel, bro eller lång väg också omnämns.
+  others={name for name,pats in PATTERNS.items() if name!=selected and any(p.search(narrative) for p in pats)}
   if not others and not any(p.search(narrative) for p in ROAD_PATTERNS):
-   return "Centrum"
+   return selected
  return UNKNOWN
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
