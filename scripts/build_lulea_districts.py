@@ -70,8 +70,8 @@ PATTERNS = {name:[re.compile(r"(?<![a-z])"+re.escape(normalize(alias))+r"(?![a-z
 # Den snäva listan är uttryckligen godkänd för Centrum; ett naket omnämnande
 # i löptexten räcker inte. "till/från busstationen" ska inte räknas.
 NARRATIVE_CENTRUM = re.compile(
- r"(?<![a-z])(?:i|pa|vid|intill|utanfor|inne i|omkring|kring)\\s+"
- r"(?:lulea\\s+)?(?:innerstaden|centrum|busstationen|busstation)(?![a-z])"
+ r"(?<![a-z])(?:i|pa|vid|intill|utanfor|inne i|omkring|kring)\s+"
+ r"(?:lulea\s+)?(?:innerstaden|centrum|busstationen|busstation)(?![a-z])"
 )
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
