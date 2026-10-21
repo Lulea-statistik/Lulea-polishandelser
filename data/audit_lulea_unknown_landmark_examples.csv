@@ -19,11 +19,9 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 78806,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Storhedsvägen, Luleå, Norrbottens län",2018
 88932,Arcusområdet,1,1,"Luleå Arcusvägen, Luleå, Norrbottens län",2018
 92631,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2018
-93681,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2018
 94215,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2018
 99014,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2018
 99941,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2018
-101895,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 107218,Stadshuset,1,1,"Luleå Stadshuset, Luleå, Norrbottens län",2019
 110841,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 115709,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2019
@@ -33,7 +31,6 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 126104,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 126945,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 128915,Luleå sjukhus / Sunderby sjukhus,0,1,"Norrbottens län Niemisel, Norrbottens län",2019
-133010,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 134567,Luleå sjukhus / Sunderby sjukhus,0,1,"Norrbottens län Luleå, Norrbottens län",2019
 148053,Gymnasiebyn,0,1,"Luleå Café Samt, Luleå, Norrbottens län",2020
 153040,Luleå sjukhus / Sunderby sjukhus,0,1,"Norrbottens län Luleå, Norrbottens län",2020
@@ -46,15 +43,11 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 266436,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2023
 277192,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2023
 278784,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2023
-285349,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2024
 288563,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2024
 288650,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2024
-288780,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2024
 291003,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2024
-297012,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2024
 299791,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2024
 303692,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2024
 307144,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2025
 315496,Luleå sjukhus / Sunderby sjukhus,0,1,"Luleå Luleå, Norrbottens län",2025
 431025,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2025
-500967,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2026

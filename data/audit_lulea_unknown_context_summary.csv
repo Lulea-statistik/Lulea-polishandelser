@@ -1,7 +1,7 @@
 clue_type,matched_text,source_field,occurrences,recommendation
-ort_eller_by,person,content,424,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-ort_eller_by,person,description,142,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-ort_eller_by,person,headline,138,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,content,409,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,description,128,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,headline,124,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,rutvik,location_string,83,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,rutvik,headline,71,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,rutvik,description,70,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
@@ -44,7 +44,6 @@ ort_eller_by,avan,description,12,Granska platsrelation och extern adresskalla; e
 ort_eller_by,bjorsbyn,location_string,11,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,bjorsbyn,headline,11,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,bjorsbyn,description,11,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-platsbeskrivning,stationen,content,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,orarna,location_string,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,borjelslandet,headline,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,borjelslandet,description,10,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
@@ -55,6 +54,7 @@ ort_eller_by,kallax,content,8,Granska platsrelation och extern adresskalla; ej a
 ort_eller_by,smedsbyn,content,7,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,bensbyn,content,7,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,sunderbyn,content,7,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+platsbeskrivning,stationen,content,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,brandon,location_string,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,avan,content,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,lulsundet,content,6,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
@@ -136,5 +136,3 @@ platsbeskrivning,badplats,headline,1,Granska platsrelation och extern adresskall
 platsbeskrivning,badplats,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 platsbeskrivning,badplats,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,sundom,content,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-platsbeskrivning,busshallplats,headline,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-platsbeskrivning,busshallplats,description,1,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
