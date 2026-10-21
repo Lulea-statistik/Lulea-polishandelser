@@ -33,6 +33,10 @@ ALIASES = {
   "pontusbadet", "halsans hus", "hälsans hus", "norrbottensteatern", "norrbottens museum",
   "skomakargatan", "bastugatan", "residensgatan", "norra hamnpromenaden",
   "sodra hamnplan", "södra hamnplan",
+  "prastgatan", "prästgatan", "tullgatan", "kopmangatan", "köpmangatan", "magasinsgatan",
+  "norra strandgatan", "vastra varvsgatan", "västra varvsgatan", "centrumhallplatsen", "centrumhållplatsen",
+  "sodra hamnkranen", "södra hamnkranen", "hamnkranen", "karpen parkeringshus", "parkeringshuset karpen",
+  "sodra hamnterminalen", "södra hamnterminalen", "lulea stadshus", "luleå stadshus", "lulea stadsbibliotek", "luleå stadsbibliotek",
  ],
  "Gammelstad": ["gammelstad"],
  "Hertsön": ["hertson", "hertsön"],
@@ -54,8 +58,8 @@ ALIASES = {
  "Örnäset": ["ornaset", "örnäset"],
 }
 UNKNOWN = "Okänt delområde"
-MULTI = "Flera områden i Luleå"
-MULTI_ROADS = ["svartovagen", "hertsovagen"]
+MULTI = "Flera stadsdelar i Luleå"
+MULTI_ROADS = ["svartovagen", "hertsovagen", "bergnasbron", "bergnäsbron"]
 def normalize(s):
  s = unicodedata.normalize("NFKD",str(s or "").casefold())
  s = "".join(c for c in s if not unicodedata.combining(c))
