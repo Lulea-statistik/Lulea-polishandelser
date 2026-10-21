@@ -18,7 +18,7 @@ ALIASES = {
  "Bergnäset": ["bergnaset", "bergnäset"],
  "Bergviken": ["bergviken"],
  "Björkskatan": ["bjorkskatan", "björkskatan"],
- "Centrum": ["centrum", "lulea centrum", "luleå centrum"],
+ "Centrum": ["centrum", "lulea centrum", "luleå centrum", "innerstaden", "lulea innerstad", "luleå innerstad"],
  "Gammelstad": ["gammelstad"],
  "Hertsön": ["hertson", "hertsön"],
  "Hertsöheden": ["hertsoheden", "hertsöheden"],
