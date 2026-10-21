@@ -471,10 +471,22 @@ function groupSum(data,key){
 }
 function selected(id){return document.getElementById(id).value}
 function activeSeries(){return selected("seriesMode")==="original"?rows:expandedRows;}
+const LOCAL_POLICE_AREAS={
+ 'Lokalpolisområde Luleå/Boden':['Luleå kommun','Bodens kommun'],
+ 'Lokalpolisområde Piteå Älvdal':['Piteå kommun','Älvsbyns kommun','Arvidsjaurs kommun','Arjeplogs kommun'],
+ 'Lokalpolisområde Norra Lappland':['Kiruna kommun','Gällivare kommun','Jokkmokks kommun'],
+ 'Lokalpolisområde Östra Norrbotten':['Haparanda kommun','Kalix kommun','Pajala kommun','Överkalix kommun','Övertorneå kommun']
+};
+const LPO_NAMES=Object.keys(LOCAL_POLICE_AREAS);
+function geographyMatches(row,chosen){
+ return chosen==='Alla'||row.geography_group===chosen||
+   (Object.hasOwn(LOCAL_POLICE_AREAS,chosen)&&LOCAL_POLICE_AREAS[chosen].includes(row.geography_group));
+}
+
 function filtExpanded(ignoreGeo=false, ignoreType=false){
   const g=selected('geo'), y=selected('year'), t=selected('type'), field=typeField();
   return activeSeries().filter(r=>
-    (ignoreGeo || g==='Alla'||r.geography_group===g) &&
+    (ignoreGeo || geographyMatches(r,g)) &&
     (y==='Alla'||r.year===y) &&
     (ignoreType || t==='Alla'||r[field]===t)
   );
@@ -482,7 +494,7 @@ function filtExpanded(ignoreGeo=false, ignoreType=false){
 function filt(ignoreGeo=false){
   const g=selected('geo'), y=selected('year'), t=selected('type'), field=typeField();
   return rows.filter(r=>
-    (ignoreGeo || g==='Alla'||r.geography_group===g) &&
+    (ignoreGeo || geographyMatches(r,g)) &&
     (y==='Alla'||r.year===y) &&
     (t==='Alla'||r[field]===t)
   );
@@ -628,7 +640,7 @@ function chartReplace(oldChart,ctx,config){
 }
 function updateTypeShareChart(){
   const g=selected('geo');
-  const data=activeSeries().filter(r=>g==='Alla'||r.geography_group===g);
+  const data=activeSeries().filter(r=>geographyMatches(r,g));
   const grandTotal=sum(data);
   const field=typeField();
   const allTypeTotals=groupSum(data,field)
@@ -787,7 +799,7 @@ function updateOtherBreakdownChart(){
   const canvas=document.getElementById('otherBreakdownChart');
   if(!canvas)return;
   const g=selected('geo');
-  const data=activeSeries().filter(r=>g==='Alla'||r.geography_group===g);
+  const data=activeSeries().filter(r=>geographyMatches(r,g));
   const field=typeField();
   const grandTotal=sum(data);
   const totals=groupSum(data,field).sort((a,b)=>b[1]-a[1]);
@@ -829,7 +841,7 @@ function filteredSummaryRows(source=summaryRows){
       display_type:policeMode?r.event_type_extracted:aggregatedType(r.event_type_extracted)
     }))
     .filter(r=>
-      (g==='Alla'||r.geography_group===g) &&
+      geographyMatches(r,g) &&
       (y==='Alla'||r.year===y) &&
       (t==='Alla'||r.display_type===t)
     );
@@ -897,6 +909,7 @@ function updateSummaryDetailChart(){
 }
 
 function comparisonAreaRows(area){
+  if(Object.hasOwn(LOCAL_POLICE_AREAS,area))return activeSeries().filter(r=>geographyMatches(r,area));
   if(area==='Norrbotten'){
     return activeSeries().filter(r=>
       r.geography_group==='Norrbotten, okänd kommun' ||
@@ -925,7 +938,7 @@ function fillComparisonAreas(){
     rows.map(r=>r.geography_group)
       .filter(g=>g==='Övriga Sverige' || g==='Norrbotten / Övriga Sverige' || g==='Flera kommuner i Norrbotten')
   )];
-  const values=['Norrbotten',...specialAreas,...municipalityAreas];
+  const values=['Norrbotten',...LPO_NAMES,...specialAreas,...municipalityAreas];
   const s1=document.getElementById('compareArea1');
   const s2=document.getElementById('compareArea2');
   [s1,s2].forEach(s=>{
@@ -1283,7 +1296,7 @@ Promise.all([
     if(!rows.length) throw new Error('Ingen data');
     const geos=[...new Set(rows.map(x=>x.geography_group).filter(Boolean))].sort();
     const years=[...new Set(rows.map(x=>x.year).filter(Boolean))].sort((a,b)=>+a-+b);
-    fillSelect('geo',geos,'Luleå kommun');
+    fillSelect('geo',[...LPO_NAMES,...geos],'Luleå kommun');
     fillSelect('year',years,'Alla');
     refreshTypeSelector('Alla');
     fillComparisonAreas();
