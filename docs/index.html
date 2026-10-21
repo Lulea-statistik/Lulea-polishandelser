@@ -1023,33 +1023,43 @@ function updateAreaComparisonChart(){
       plugins:{
         legend:{position:'bottom'},
         tooltip:{
+          enabled:false,
           mode:'nearest',
           intersect:true,
-          callbacks:{
-            label(ctx){
-              const count=ctx.dataset.rawCounts?.[ctx.dataIndex]||0;
-              return ctx.dataset.label+': '+ctx.parsed.x.toLocaleString('sv-SE',{minimumFractionDigits:1,maximumFractionDigits:1})+' % ('+fmt.format(count)+' händelser)';
-            },
-            afterLabel(ctx){
-              // The hovered category is determined directly from its bar, not tooltip item ordering.
-              const category=ctx.label;
-              const first=a1.counts.get(category)||0, second=a2.counts.get(category)||0;
-              const share1=a1.total?100*first/a1.total:0;
-              const share2=a2.total?100*second/a2.total:0;
-              const n1=s1.value, n2=s2.value;
-              let shareText;
-              if(Math.abs(share1-share2)<1e-9){
-                shareText='Andelen är lika stor i båda områdena ('+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %).';
-              }else if(share2===0){
-                shareText='Andelen är '+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' % i '+n1+
-                  ' och 0 % i '+n2+'; relativ skillnad kan inte beräknas.';
-              }else{
-                const rel=100*Math.abs(share1-share2)/share2;
-                shareText='I '+n1+' är andelen '+rel.toLocaleString('sv-SE',{maximumFractionDigits:1})+
-                  ' % '+(share1>share2?'större':'mindre')+' än i '+n2+'.';
-              }
-              return [s1.value+': '+fmt.format(first)+' händelser ('+share1.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',s2.value+': '+fmt.format(second)+' händelser ('+share2.toLocaleString('sv-SE',{maximumFractionDigits:1})+' %)',shareText];
+          external({chart,tooltip}){
+            let el=document.getElementById('area-comparison-tooltip');
+            if(!el){
+              el=document.createElement('div');
+              el.id='area-comparison-tooltip';
+              el.setAttribute('role','status');
+              Object.assign(el.style,{position:'absolute',pointerEvents:'none',zIndex:'1000',background:'rgba(30,30,30,.96)',color:'#fff',padding:'9px 11px',borderRadius:'6px',font:'12px Inter, sans-serif',lineHeight:'1.45',boxShadow:'0 3px 14px rgba(0,0,0,.2)',maxWidth:'420px'});
+              document.body.appendChild(el);
             }
+            if(tooltip.opacity===0||!tooltip.dataPoints?.length){el.style.display='none';return;}
+            el.replaceChildren();
+            const ctx=tooltip.dataPoints[0],category=ctx.label;
+            const first=a1.counts.get(category)||0,second=a2.counts.get(category)||0;
+            const share1=a1.total?100*first/a1.total:0,share2=a2.total?100*second/a2.total:0;
+            const percent=n=>n.toLocaleString('sv-SE',{maximumFractionDigits:1});
+            const heading=document.createElement('strong');heading.textContent=category;el.appendChild(heading);
+            const addRow=(color,msg)=>{
+              const row=document.createElement('div');row.style.display='flex';row.style.alignItems='flex-start';row.style.gap='5px';
+              const square=document.createElement('span');Object.assign(square.style,{display:'inline-block',width:'10px',height:'10px',minWidth:'10px',marginTop:'3px',backgroundColor:color,border:'1px solid rgba(255,255,255,.65)'});
+              const t=document.createElement('span');t.textContent=msg;row.append(square,t);el.appendChild(row);
+            };
+            addRow(ctx.dataset.backgroundColor,ctx.dataset.label+': '+percent(ctx.parsed.x)+' % ('+fmt.format(ctx.dataset.rawCounts?.[ctx.dataIndex]||0)+' händelser)');
+            addRow('#9CCCF2',s1.value+': '+fmt.format(first)+' händelser ('+percent(share1)+' %)');
+            addRow('#F2B183',s2.value+': '+fmt.format(second)+' händelser ('+percent(share2)+' %)');
+            let msg;
+            if(Math.abs(share1-share2)<1e-9)msg='Andelen är lika stor i båda områdena ('+percent(share1)+' %).';
+            else if(share2===0)msg='Andelen är '+percent(share1)+' % i '+s1.value+' och 0 % i '+s2.value+'; relativ skillnad kan inte beräknas.';
+            else msg='I '+s1.value+' är andelen '+percent(100*Math.abs(share1-share2)/share2)+' % '+(share1>share2?'större':'mindre')+' än i '+s2.value+'.';
+            addRow('#a78bfa',msg);
+            el.style.display='block';
+            const rect=chart.canvas.getBoundingClientRect();
+            const left=rect.left+window.scrollX+tooltip.caretX+12,top=rect.top+window.scrollY+tooltip.caretY+12;
+            el.style.left=Math.max(window.scrollX+8,Math.min(left,window.scrollX+window.innerWidth-el.offsetWidth-8))+'px';
+            el.style.top=top+'px';
           }
         }
       },
