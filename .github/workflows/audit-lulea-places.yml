@@ -12,7 +12,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: audit-lulea-place-mentions
+  group: polishandelser-data-publish
   cancel-in-progress: false
 jobs:
   audit:
