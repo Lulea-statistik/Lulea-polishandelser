@@ -94,7 +94,7 @@
     .intro h2{margin:0 0 7px;font-size:1.08rem}
     .intro p{margin:0;color:#35414d}
     .intro a{color:var(--blue)}
-    .filters{display:grid;grid-template-columns:repeat(4,minmax(170px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+    .filters{display:grid;grid-template-columns:repeat(5,minmax(150px,1fr));gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     label{display:block;font-size:.82rem;font-weight:600;color:var(--muted);margin-bottom:6px}
     select{width:100%;padding:9px 10px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;font:inherit}
     .native-type-select{display:none}
@@ -217,6 +217,7 @@ button,input,select,textarea,table{font-family:var(--font-body)}
   <section id="dashboard" hidden>
     <div class="sticky-summary">
     <div class="filters">
+      <div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div>
       <div>
         <label for="geo">Geografi</label>
         <select id="geo"></select>
@@ -247,6 +248,7 @@ button,input,select,textarea,table{font-family:var(--font-body)}
 
     </div><!-- /sticky-summary -->
 
+    <p id="seriesExplanation" class="chart-note" aria-live="polite">Expanderade händelser: tolkade underhändelser från sammanfattningar ingår.</p>
     <div class="grid2" style="grid-template-columns:minmax(0,1fr)">
       <div class="card">
         <h2>Vanligaste händelsetyper</h2>
@@ -321,7 +323,8 @@ button,input,select,textarea,table{font-family:var(--font-body)}
     </div>
 
     <div class="card" id="unknownNorrbottenSection" style="margin-top:16px">
-      <h2>Vad ingår i Okänd Norrbottenskommun?</h2>
+      <h2>Händelser som inte kan tillskrivas endast en kommun</h2>
+      <p class="chart-note"><strong>Separat kontroll: ursprungliga publiceringar.</strong> Diagrammet visar de tre särskilda geografikategorierna oavsett geografifiltret och ska inte jämföras direkt med nyckeltalen för expanderade händelser.</p>
       <p id="unknownNorrbottenShare" class="chart-note" aria-live="polite"></p>
       <div class="other-chartbox"><canvas id="unknownNorrbottenChart"></canvas></div>
       <p class="chart-note">Stapeln <strong>Flera kommuner i Norrbotten</strong> är uppdelad i verifierade kommunpar, med blandade kommunfärger och en grå rest för fler än två eller otydliga kombinationer. Hovra över segmenten för kommunpar och antal. Övriga två staplar är odelade. Alla tre använder <strong>ursprungliga publiceringar</strong> för jämförbara totaler och följer valt år.</p>
@@ -467,9 +470,10 @@ function groupSum(data,key){
   return [...m.entries()];
 }
 function selected(id){return document.getElementById(id).value}
+function activeSeries(){return selected("seriesMode")==="original"?rows:expandedRows;}
 function filtExpanded(ignoreGeo=false, ignoreType=false){
   const g=selected('geo'), y=selected('year'), t=selected('type'), field=typeField();
-  return expandedRows.filter(r=>
+  return activeSeries().filter(r=>
     (ignoreGeo || g==='Alla'||r.geography_group===g) &&
     (y==='Alla'||r.year===y) &&
     (ignoreType || t==='Alla'||r[field]===t)
@@ -624,7 +628,7 @@ function chartReplace(oldChart,ctx,config){
 }
 function updateTypeShareChart(){
   const g=selected('geo');
-  const data=expandedRows.filter(r=>g==='Alla'||r.geography_group===g);
+  const data=activeSeries().filter(r=>g==='Alla'||r.geography_group===g);
   const grandTotal=sum(data);
   const field=typeField();
   const allTypeTotals=groupSum(data,field)
@@ -723,7 +727,8 @@ function updateUnknownNorrbottenChart(){
   if(!canvas)return;
   const year=selected('year');
   const names=['Norrbotten, okänd kommun','Flera kommuner i Norrbotten','Norrbotten / Övriga Sverige'];
-  // All totals use original publications, consistent with the pair source.
+  // Delningsdiagrammet är en särskild granskning av ursprungliga publiceringar.
+  // Kommunpar kan inte härledas utan vidare för expanderade underhändelser.
   const totals=new Map(names.map(name=>[name,0]));
   for(const r of rows){
     if(!totals.has(r.geography_group)||(year!=='Alla'&&r.year!==year))continue;
@@ -782,7 +787,7 @@ function updateOtherBreakdownChart(){
   const canvas=document.getElementById('otherBreakdownChart');
   if(!canvas)return;
   const g=selected('geo');
-  const data=expandedRows.filter(r=>g==='Alla'||r.geography_group===g);
+  const data=activeSeries().filter(r=>g==='Alla'||r.geography_group===g);
   const field=typeField();
   const grandTotal=sum(data);
   const totals=groupSum(data,field).sort((a,b)=>b[1]-a[1]);
@@ -893,14 +898,14 @@ function updateSummaryDetailChart(){
 
 function comparisonAreaRows(area){
   if(area==='Norrbotten'){
-    return expandedRows.filter(r=>
+    return activeSeries().filter(r=>
       r.geography_group==='Norrbotten, okänd kommun' ||
       r.geography_group==='Flera kommuner i Norrbotten' ||
       r.geography_group==='Norrbotten / Övriga Sverige' ||
       (r.geography_group||'').endsWith(' kommun')
     );
   }
-  return expandedRows.filter(r=>r.geography_group===area);
+  return activeSeries().filter(r=>r.geography_group===area);
 }
 
 function syncComparisonAreaOptions(){
@@ -1177,6 +1182,7 @@ function updateWeekdayPeriod(){
 function update(){
   const d=filt();
   const expandedMain=filtExpanded();
+  document.getElementById("seriesExplanation").textContent=selected("seriesMode")==="expanded"?"Expanderade händelser: underhändelser från sammanfattningar kan räknas separat. Diagram med ursprungliga publiceringar är särskilt märkta.":"Ursprungliga publiceringar: varje publicerad polisnotis räknas som en post. Särskilda granskningsdiagram redovisas separat.";
   const modeLabel=typeModeLabel();
   const headings=[...document.querySelectorAll('.card h2')];
   const topHeading=headings.find(h=>h.textContent.startsWith('Vanligaste '));
@@ -1225,7 +1231,7 @@ function update(){
     }
   });
 
-  const dg=expandedRows.filter(r=>{
+  const dg=activeSeries().filter(r=>{
     const y=selected('year'),t=selected('type'),field=typeField();
     return (y==='Alla'||r.year===y)&&(t==='Alla'||r[field]===t);
   });
@@ -1282,7 +1288,8 @@ Promise.all([
     fillSelect('year',years,'Alla');
     refreshTypeSelector('Alla');
     fillComparisonAreas();
-    ['geo','year','type'].forEach(id=>document.getElementById(id).addEventListener('change',update));
+    ['geo','year','type','seriesMode'].forEach(id=>document.getElementById(id).addEventListener('change',update));
+    document.getElementById('seriesMode').addEventListener('change',()=>{refreshTypeSelector('Alla');update();});
     document.getElementById('categoryMode').addEventListener('change',()=>{
       refreshTypeSelector('Alla');
       update();
