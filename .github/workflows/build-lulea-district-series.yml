@@ -1,0 +1,34 @@
+name: Build Lulea district series
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_lulea_districts.py"
+      - "scripts/build_lulea_districts_expanded.py"
+      - ".github/workflows/build-lulea-district-series.yml"
+permissions:
+  contents: write
+concurrency:
+  group: update-polishandelser
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/build_lulea_districts.py
+      - run: python scripts/build_lulea_districts_expanded.py
+      - name: Commit district data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/lulea_district_monthly.csv docs/data/lulea_district_expanded_monthly.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Publicera stadsdelsserier for Lulea"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
