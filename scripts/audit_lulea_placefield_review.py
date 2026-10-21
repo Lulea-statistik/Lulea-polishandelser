@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Review unresolved Lulea location fields without guessing district assignments."""
 import csv
+import re
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -16,6 +17,10 @@ PLACE_TERMS = (
     "sunderbyn", "gammelstan", "gammelstad", "orarna", "kyrkbyn",
     "bjurstrask", "shell", "musikomat", "postnord"
 )
+TERM_PATTERNS = {term: re.compile(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])") for term in PLACE_TERMS}
+def detect(value):
+    value = normalize(value)
+    return [term for term, pattern in TERM_PATTERNS.items() if pattern.search(value)]
 rows = []
 seen = set()
 with source.open(encoding="utf-8-sig", newline="") as f:
@@ -35,9 +40,9 @@ with source.open(encoding="utf-8-sig", newline="") as f:
         if not title and not loc and not headline:
             continue
         combined = normalize(title + " " + loc + " " + headline)
-        if not any(word in combined for word in PLACE_TERMS):
+        if not detect(combined):
             continue
-        source_matches = {field: [term for term in PLACE_TERMS if term in normalize(value)] for field, value in (("title_location", title), ("location_string", loc), ("headline", headline))}
+        source_matches = {field: detect(value) for field, value in (("title_location", title), ("location_string", loc), ("headline", headline))}
         matched = sorted(set(term for terms in source_matches.values() for term in terms))
         field_count = sum(bool(terms) for terms in source_matches.values())
         priority = "Flera källfält" if field_count >= 2 else ("Platsfält" if source_matches["title_location"] or source_matches["location_string"] else "Endast rubrik")
