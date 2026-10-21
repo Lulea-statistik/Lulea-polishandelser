@@ -33,6 +33,7 @@ ALIASES = {
   "pontusbadet", "halsans hus", "hälsans hus", "norrbottensteatern", "norrbottens museum",
   "skomakargatan", "bastugatan", "residensgatan", "norra hamnpromenaden",
   "sodra hamnplan", "södra hamnplan",
+  "hermelinsgatan", "sodra smedjegatan", "södra smedjegatan", "smabatsgatan", "småbåtsgatan",
   "prastgatan", "prästgatan", "tullgatan", "kopmangatan", "köpmangatan", "magasinsgatan",
   "norra strandgatan", "vastra varvsgatan", "västra varvsgatan", "centrumhallplatsen", "centrumhållplatsen",
   "sodra hamnkranen", "södra hamnkranen", "hamnkranen", "karpen parkeringshus", "parkeringshuset karpen",
