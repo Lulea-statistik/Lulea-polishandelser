@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - "scripts/audit_lulea_places.py"
+      - "scripts/audit_lulea_unknown.py"
+      - "scripts/build_lulea_districts.py"
       - ".github/workflows/audit-lulea-places.yml"
 permissions:
   contents: write
@@ -19,11 +21,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/audit_lulea_places.py
+      - run: python scripts/audit_lulea_unknown.py
       - name: Commit audit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/audit_lulea_place_mentions.csv data/audit_lulea_place_summary.csv
+          git add data/audit_lulea_place_mentions.csv data/audit_lulea_place_summary.csv data/audit_lulea_unknown_candidates.csv data/audit_lulea_unknown_summary.csv data/audit_lulea_unknown_examples.csv
           if ! git diff --cached --quiet; then
             git commit -m "Auditera platsnamn i Luleas polishandelser"
             git pull --rebase origin main
