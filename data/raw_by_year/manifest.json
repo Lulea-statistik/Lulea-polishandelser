@@ -1,0 +1,13 @@
+{
+  "format": "raw-jsonl-by-year-v1",
+  "partition_record_count": 500,
+  "partition_count": 1,
+  "raw_source_rows_on_first_migration": 0,
+  "legacy_sha256": null,
+  "partitions": {
+    "2026": {
+      "records": 500,
+      "sha256": "19e99480aed2061a1380f04deca5351c622bc55b468e1b83cb6ae86966771c98"
+    }
+  }
+}
