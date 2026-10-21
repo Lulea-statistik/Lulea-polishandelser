@@ -1,0 +1,219 @@
+series,year,month,geography_group,type_original,event_count
+expanded,2017,05,Lokalpolisområde Piteå Älvdal,Stöld,1
+expanded,2017,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2019,03,Lokalpolisområde Piteå Älvdal,Övrigt,1
+expanded,2019,05,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2019,06,Lokalpolisområde Luleå/Boden,Trafikbrott,1
+expanded,2019,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2019,11,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+expanded,2019,11,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+expanded,2019,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2019,12,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+expanded,2020,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",2
+expanded,2020,01,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2020,01,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+expanded,2020,06,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2020,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2020,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2020,11,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+expanded,2020,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2020,12,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+expanded,2020,12,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+expanded,2021,03,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+expanded,2021,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2021,04,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2021,05,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2021,07,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2021,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2021,08,Lokalpolisområde Norra Lappland,Trafikbrott,1
+expanded,2021,09,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+expanded,2021,09,Lokalpolisområde Norra Lappland,Trafikbrott,1
+expanded,2021,10,Lokalpolisområde Luleå/Boden,Fylleri/LOB,1
+expanded,2021,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+expanded,2021,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,5
+expanded,2021,11,Lokalpolisområde Piteå Älvdal,Trafikkontroll,2
+expanded,2021,11,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+expanded,2021,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2021,12,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2022,02,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2022,02,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2022,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2022,05,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2022,05,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2022,06,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2022,09,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+expanded,2022,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2022,10,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2022,10,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+expanded,2022,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+expanded,2022,12,Lokalpolisområde Luleå/Boden,Rattfylleri,1
+expanded,2022,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2023,01,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2023,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+expanded,2023,03,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+expanded,2023,03,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2023,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2023,05,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2023,06,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2023,06,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+expanded,2023,07,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2023,08,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2023,10,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+expanded,2024,01,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+expanded,2024,02,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2024,02,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+expanded,2024,03,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2024,03,Lokalpolisområde Östra Norrbotten,Stöld,1
+expanded,2024,03,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+expanded,2024,05,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2024,09,Lokalpolisområde Luleå/Boden,Försvunnen person,1
+expanded,2024,09,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+expanded,2024,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2024,12,Lokalpolisområde Östra Norrbotten,Trafikkontroll,2
+expanded,2025,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",2
+expanded,2025,01,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+expanded,2025,02,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2025,02,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2025,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2025,04,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+expanded,2025,05,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2025,06,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2025,07,Lokalpolisområde Östra Norrbotten,Stöld/inbrott,1
+expanded,2025,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2025,08,Lokalpolisområde Norra Lappland,Fjällräddning,1
+expanded,2025,09,Lokalpolisområde Luleå/Boden,Bedrägeri,1
+expanded,2025,09,Lokalpolisområde Luleå/Boden,Sexualbrott,1
+expanded,2025,09,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2025,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+expanded,2025,10,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+expanded,2025,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2025,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2026,01,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+expanded,2026,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+expanded,2026,02,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2026,02,Lokalpolisområde Luleå/Boden,"Trafikolycka,  vilt",1
+expanded,2026,02,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+expanded,2026,03,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+expanded,2026,05,Lokalpolisområde Luleå/Boden,Stöld,1
+expanded,2026,05,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+expanded,2026,06,Lokalpolisområde Luleå/Boden,Trafikkontroll,6
+expanded,2026,06,Lokalpolisområde Piteå Älvdal,Trafikkontroll,2
+expanded,2026,07,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2026,07,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+expanded,2026,08,Lokalpolisområde Luleå/Boden,Trafikbrott,1
+expanded,2026,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+expanded,2026,08,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+expanded,2026,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+expanded,2026,10,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2017,05,Lokalpolisområde Piteå Älvdal,Stöld,1
+original,2017,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2019,03,Lokalpolisområde Piteå Älvdal,Övrigt,1
+original,2019,05,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2019,06,Lokalpolisområde Luleå/Boden,Trafikbrott,1
+original,2019,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2019,11,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+original,2019,11,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+original,2019,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2019,12,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+original,2020,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",2
+original,2020,01,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2020,01,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+original,2020,06,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2020,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2020,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2020,11,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+original,2020,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2020,12,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+original,2020,12,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+original,2021,03,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+original,2021,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2021,04,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2021,05,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2021,07,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2021,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2021,08,Lokalpolisområde Norra Lappland,Trafikbrott,1
+original,2021,09,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+original,2021,09,Lokalpolisområde Norra Lappland,Trafikbrott,1
+original,2021,10,Lokalpolisområde Luleå/Boden,Fylleri/LOB,1
+original,2021,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+original,2021,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,5
+original,2021,11,Lokalpolisområde Piteå Älvdal,Trafikkontroll,2
+original,2021,11,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+original,2021,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2021,12,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2022,02,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2022,02,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2022,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2022,05,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2022,05,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2022,06,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2022,09,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+original,2022,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2022,10,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2022,10,Lokalpolisområde Östra Norrbotten,"Trafikolycka,  vilt",1
+original,2022,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+original,2022,12,Lokalpolisområde Luleå/Boden,Rattfylleri,1
+original,2022,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2023,01,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2023,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+original,2023,03,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+original,2023,03,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2023,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2023,05,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2023,06,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2023,06,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+original,2023,07,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2023,08,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2023,10,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+original,2024,01,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+original,2024,02,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2024,02,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+original,2024,03,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2024,03,Lokalpolisområde Östra Norrbotten,Stöld,1
+original,2024,03,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+original,2024,05,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2024,09,Lokalpolisområde Luleå/Boden,Försvunnen person,1
+original,2024,09,Lokalpolisområde Piteå Älvdal,"Trafikolycka,  vilt",1
+original,2024,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2024,12,Lokalpolisområde Östra Norrbotten,Trafikkontroll,2
+original,2025,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",2
+original,2025,01,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+original,2025,02,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2025,02,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2025,04,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2025,04,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+original,2025,05,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2025,06,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2025,07,Lokalpolisområde Östra Norrbotten,Stöld/inbrott,1
+original,2025,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2025,08,Lokalpolisområde Norra Lappland,Fjällräddning,1
+original,2025,09,Lokalpolisområde Luleå/Boden,Bedrägeri,1
+original,2025,09,Lokalpolisområde Luleå/Boden,Sexualbrott,1
+original,2025,09,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2025,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,4
+original,2025,10,Lokalpolisområde Norra Lappland,Trafikkontroll,1
+original,2025,11,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2025,12,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2026,01,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+original,2026,01,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+original,2026,02,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2026,02,Lokalpolisområde Luleå/Boden,"Trafikolycka,  vilt",1
+original,2026,02,Lokalpolisområde Norra Lappland,"Trafikolycka,  vilt",1
+original,2026,03,Lokalpolisområde Luleå/Boden,Trafikkontroll,2
+original,2026,05,Lokalpolisområde Luleå/Boden,Stöld,1
+original,2026,05,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+original,2026,06,Lokalpolisområde Luleå/Boden,Sammanfattning natt,1
+original,2026,06,Lokalpolisområde Luleå/Boden,Trafikkontroll,6
+original,2026,06,Lokalpolisområde Piteå Älvdal,Trafikkontroll,2
+original,2026,07,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2026,07,Lokalpolisområde Östra Norrbotten,Trafikkontroll,1
+original,2026,08,Lokalpolisområde Luleå/Boden,Trafikbrott,1
+original,2026,08,Lokalpolisområde Luleå/Boden,Trafikkontroll,3
+original,2026,08,Lokalpolisområde Norra Lappland,Sammanfattning natt,1
+original,2026,08,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
+original,2026,09,Lokalpolisområde Luleå/Boden,Sammanfattning natt,1
+original,2026,09,Lokalpolisområde Östra Norrbotten,Sammanfattning natt,1
+original,2026,10,Lokalpolisområde Luleå/Boden,Sammanfattning natt,1
+original,2026,10,Lokalpolisområde Luleå/Boden,Trafikkontroll,1
+original,2026,10,Lokalpolisområde Norra Lappland,Sammanfattning natt,1
+original,2026,10,Lokalpolisområde Piteå Älvdal,Trafikkontroll,1
