@@ -9,6 +9,13 @@ from build_lulea_districts import district, UNKNOWN, normalize
 root = Path(__file__).resolve().parents[1]
 source = root / "data/events.csv"
 out = root / "data/audit_lulea_placefield_review.csv"
+PLACE_TERMS = (
+    "vagen", "gatan", "grand", "stigen", "leden", "bron", "rutvik",
+    "smedsbyn", "kallax", "bensbyn", "sinksundet", "borjelslandet",
+    "balinge", "stromsund", "bjorsbyn", "jamton", "niemisel",
+    "sunderbyn", "gammelstan", "gammelstad", "orarna", "kyrkbyn",
+    "bjurstrask", "shell", "musikomat", "postnord"
+)
 rows = []
 seen = set()
 with source.open(encoding="utf-8-sig", newline="") as f:
@@ -24,21 +31,17 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             continue
         title = (event.get("title_location") or "").strip()
         loc = (event.get("location_string") or "").strip()
-        if not title and not loc:
+        headline = (event.get("headline") or "").strip()
+        if not title and not loc and not headline:
             continue
-        combined = normalize(title + " " + loc)
-        if all(word not in combined for word in (
-            "vagen", "gatan", "grand", "stigen", "leden", "bron", "rutvik",
-            "smedsbyn", "kallax", "bensbyn", "sinksundet",
-            "borjelslandet", "balinge", "stromsund", "bjorsbyn", "jamton",
-            "niemisel", "sunderbyn", "gammelstan", "gammelstad", "orarna",
-            "kyrkbyn", "bjurstrask", "shell", "musikomat", "postnord"
-        )):
+        combined = normalize(title + " " + loc + " " + headline)
+        if not any(word in combined for word in PLACE_TERMS):
             continue
         rows.append({
             "event_id": eid, "year": event.get("year", ""),
             "title_location": title, "location_string": loc,
-            "headline": (event.get("headline") or "")[:250],
+            "headline": headline[:250],
+            "candidate_sources": " | ".join(field for field, value in (("title_location", title), ("location_string", loc), ("headline", headline)) if any(word in normalize(value) for word in PLACE_TERMS)),
             "existing_group": UNKNOWN, "proposed_group": "",
             "review_status": "Manuell geografisk kontroll krävs",
             "review_note": "Platsfält kan avse väg, by eller verksamhet; ingen automatisk placering",
@@ -47,7 +50,7 @@ out.parent.mkdir(exist_ok=True)
 with out.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [
         "event_id","year","title_location","location_string","headline",
-        "existing_group","proposed_group","review_status","review_note"])
+        "candidate_sources","existing_group","proposed_group","review_status","review_note"])
     w.writeheader()
     w.writerows(rows)
 print("Unknown Lulea placefield review rows:", len(rows))
