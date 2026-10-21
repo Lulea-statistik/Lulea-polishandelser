@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Review unresolved Lulea location fields without guessing district assignments."""
 import csv
-from collections import Counter
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -30,8 +29,8 @@ with source.open(encoding="utf-8-sig", newline="") as f:
         combined = normalize(title + " " + loc)
         if all(word not in combined for word in (
             "vagen", "gatan", "grand", "stigen", "leden", "bron", "rutvik",
-            "smedsbyn", "kallax", "bensbyn", "pers on", "person", "sinksundet",
-            "borjelslandet", "balinge", "stromsund", "bjorsbyn", "jamt on",
+            "smedsbyn", "kallax", "bensbyn", "sinksundet",
+            "borjelslandet", "balinge", "stromsund", "bjorsbyn", "jamton",
             "niemisel", "sunderbyn", "gammelstan", "gammelstad", "orarna",
             "kyrkbyn", "bjurstrask", "shell", "musikomat", "postnord"
         )):
