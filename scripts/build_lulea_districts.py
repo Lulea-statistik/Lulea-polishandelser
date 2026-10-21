@@ -110,7 +110,7 @@ def district(row):
  headline=normalize(row.get("headline") or "")
  description=normalize(row.get("description") or "")
  is_summary=str(row.get("is_summary") or "").strip().casefold() in ("true","1")
- innerstad_prefix=re.compile(r"^\\s*(?:lulea\\s*[,–-]\\s*)?innerstaden\\s*[,.:;–-]\\s+")
+ innerstad_prefix=re.compile(r"^[ ]*(?:lulea[ ]*[,–-][ ]*)?innerstaden[ ]*[,.:;–-][ ]+")
  if not is_summary and (innerstad_prefix.search(headline) or innerstad_prefix.search(description)):
   candidates.add("Centrum")
  if len(candidates)==1:
