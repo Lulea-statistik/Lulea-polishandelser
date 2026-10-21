@@ -1,0 +1,650 @@
+platsord,okanda_handelser_platsfalt,okanda_handelser_loptext,unika_okanda_handelser,vanligaste_handelsetyp,händelser_av_typen
+innerstaden,0,641,641,Stöld,191
+centrum,0,112,112,Stöld,24
+lansvag,0,107,107,"Trafikolycka,  vilt",37
+riksvag,0,88,88,Trafikkontroll,23
+sunderbyn,0,24,24,Trafikkontroll,9
+busstationen,0,19,19,Fylleri/LOB,16
+bodenvagen,3,17,17,Trafikolycka,14
+olycksplatsen,0,17,17,Trafikolycka,9
+svartostaden,0,17,17,Stöld/inbrott,4
+lulea kallaxvagen,16,0,16,Trafikkontroll,8
+lulea mjolkuddsvagen,16,0,16,Trafikkontroll,5
+mjolkuddsvagen,1,16,16,Trafikkontroll,6
+kallaxvagen,1,14,15,Trafikkontroll,7
+storhedsvagen,2,14,14,Trafikkontroll,6
+lulea bodenvagen,13,0,13,Trafikolycka,10
+med till polisstationen,0,12,12,Sammanfattning natt,4
+bjorkskataleden,2,11,11,Trafikolycka,4
+brottsplatsen,0,11,11,Misshandel,4
+lulea bensbyvagen,11,0,11,Trafikolycka,6
+lulea storhedsvagen,11,0,11,Trafikkontroll,5
+lulea gammelstadsvagen,10,0,10,Trafikolycka,7
+midgardsvagen,4,10,10,Trafikolycka,4
+bensbyvagen,1,8,9,Trafikkontroll,5
+bensinstation,0,9,9,Olaga hot,2
+fors till polisstationen,0,9,9,Fylleri/LOB,5
+mariebergsvagen,2,9,9,Trafikkontroll,4
+alvsbyvagen,4,8,8,Trafikkontroll,3
+gammelstadsvagen,4,8,8,Trafikolycka,6
+haparandavagen,1,7,8,Trafikkontroll,3
+lulea bjorkskataleden,8,0,8,Trafikolycka,3
+lulea haparandavagen,8,0,8,Trafikkontroll,3
+vaderleden,1,8,8,Rattfylleri,3
+beordras till busstationen,0,7,7,Fylleri/LOB,5
+busstation,0,7,7,Fylleri/LOB,6
+delfingatan,1,7,7,Trafikkontroll,4
+hummergatan,2,7,7,Trafikolycka,3
+lulea mariebergsvagen,7,0,7,Trafikkontroll,4
+lulea midgardsvagen,7,0,7,Trafikolycka,2
+smedsbyvagen,0,7,7,Trafikkontroll,4
+flygplatsen,1,6,6,Fylleri/LOB,3
+ford till polisstationen,0,6,6,Fylleri/LOB,2
+lulea delfingatan,6,0,6,Trafikkontroll,4
+lulea hummergatan,6,0,6,Trafikolycka,2
+lulea nya gaddviksbron,6,0,6,Trafikolycka,4
+lulea vaderleden,6,0,6,Rattfylleri,3
+nya gaddviksbron,1,5,6,Trafikolycka,4
+storsandsvagen,0,6,6,Trafikkontroll,4
+alvbrovagen,2,5,5,Trafikolycka,3
+bjorsbyvagen,1,5,5,Trafikkontroll,4
+centralstationen,0,5,5,Fylleri/LOB,3
+efter hastighetsovertradelse riksvag,0,5,5,Trafikbrott,5
+efter trafikkontroll lansvag,0,5,5,Trafikkontroll,5
+fordes till polisstationen,0,5,5,Sammanfattning kväll,2
+kronbacksvagen,3,4,5,Sammanfattning natt,2
+lulea bjorsbyvagen,5,0,5,Trafikkontroll,3
+lulea gamla gaddviksbron,5,0,5,"Trafikolycka,  singel",1
+lulea storsandsvagen,5,0,5,Trafikkontroll,3
+lulea tunastigen,5,0,5,Rattfylleri,2
+lulevagen,1,5,5,Trafikkontroll,5
+avans byavag,1,4,4,Trafikkontroll,4
+balingevagen,1,4,4,Trafikkontroll,2
+fiskehamnsvagen,0,4,4,Trafikkontroll,3
+gamla gaddviksbron,1,4,4,Trafikhinder,1
+kronan,0,4,4,Stöld/inbrott,2
+lulea alvbrovagen,4,0,4,Trafikkontroll,2
+lulea balingevagen,4,0,4,Trafikkontroll,3
+lulea fiskehamnsvagen,4,0,4,Trafikkontroll,3
+lulea lulevagen,4,0,4,Trafikkontroll,4
+lulea malmuddsvagen,4,0,4,Rattfylleri,1
+malmuddsvagen,0,4,4,Rattfylleri,1
+polisstationen,0,4,4,Olaga hot,1
+porson,0,4,4,Sammanfattning natt,2
+robertsviksgatan,1,3,4,Trafikolycka,3
+skjutsats till polisstationen,0,4,4,Fylleri/LOB,4
+som lamnat olycksplatsen,0,4,4,"Trafikolycka,  vilt",3
+svartskatavagen,1,4,4,"Trafikolycka,  vilt",2
+tunastigen,0,4,4,Rattfylleri,2
+beordras till flygplatsen,0,3,3,Misshandel,1
+bergviken,0,3,3,Sammanfattning kväll och natt,1
+berusad man busstationen,0,3,3,Fylleri/LOB,3
+betongvagen,1,3,3,Stöld/inbrott,1
+bjorkskateleden,0,3,3,Trafikolycka,2
+gaddviksbron,0,3,3,Trafikolycka,2
+honom till polisstationen,0,3,3,Fylleri/LOB,2
+jarnvagsstationen,0,3,3,Fylleri/LOB,2
+korsningen gammelstadsvagen,0,3,3,Trafikolycka,3
+lulea alvsbyvagen,3,0,3,"Trafikolycka,  singel",1
+lulea backgatan,3,0,3,Trafikolycka,2
+lulea robertsviksgatan,3,0,3,Trafikolycka,2
+lulea svartskatavagen,3,0,3,"Trafikolycka,  vilt",2
+lulsundsgatan,1,3,3,Våldtäkt,1
+lulviksvagen,1,3,3,Trafikolycka,2
+maskinvagen,2,3,3,Trafikolycka,3
+och dokumenterat olycksplatsen,0,3,3,Trafikolycka,2
+ornaset,0,3,3,Fylleri/LOB,1
+stadsovagen,0,3,3,Trafikolycka,2
+tagstationen,0,3,3,Bråk,1
+till lulea busstation,0,3,3,Fylleri/LOB,2
+truppvagen,3,3,3,Trafikolycka,2
+universitetsvagen,0,3,3,Trafikkontroll,2
+vid lulea busstation,0,3,3,Fylleri/LOB,1
+aker till busstationen,0,2,2,Fylleri/LOB,2
+alviksvagen,0,2,2,Trafikkontroll,1
+angesbyvagen,0,2,2,Stöld/inbrott,2
+arcusvagen,0,2,2,Trafikolycka,1
+arendet fortgar utredningsvagen,0,2,2,"Motorfordon,  stöld",1
+avaviksvagen,0,2,2,Trafikkontroll,1
+banvagen,1,2,2,"Inbrott,  försök",1
+bargas fran olycksplatsen,0,2,2,Trafikolycka,2
+bit fran brottsplatsen,0,2,2,Skadegörelse,1
+bjorksgatan,1,2,2,Uppdatering,1
+bolidenvagen,0,2,2,Trafikolycka,2
+brandplatsen,0,2,2,Brand,2
+centralstation,0,2,2,Fylleri/LOB,1
+ett flygplan,0,2,2,Övrigt,1
+for drograttfylleri haparandavagen,0,2,2,Rattfylleri,2
+for drograttfylleri mjolkuddsvagen,0,2,2,Rattfylleri,2
+for drograttfylleri vaderleden,0,2,2,Rattfylleri,2
+for rattfylleri riksvag,0,2,2,Rattfylleri,2
+garage angesbyvagen,0,2,2,Stöld/inbrott,2
+grusvag,0,2,2,Trafikolycka,2
+har lamnat olycksplatsen,0,2,2,Trafikolycka,2
+hjortstigen,0,2,2,Fylleri/LOB,1
+industrivagen industrivagen,0,2,2,Ofog barn/ungdom,1
+kallas till busstationen,0,2,2,Fylleri/LOB,1
+klingsbovagen,0,2,2,Rattfylleri,1
+klovertrask riksvag,0,2,2,"Trafikolycka,  vilt",2
+korsningen bensbyvagen,0,2,2,Trafikbrott,1
+langs gamla lovskarsgatan,0,2,2,"Inbrott,  försök",2
+lulea alviksvagen,2,0,2,Trafikkontroll,1
+lulea angesbyvagen,2,0,2,Stöld/inbrott,2
+lulea arcusvagen,2,0,2,Trafikolycka,1
+lulea avans byavag,2,0,2,Trafikkontroll,2
+lulea bolidenvagen,2,0,2,Trafikolycka,2
+lulea busstation,0,2,2,Knivlagen,1
+lulea hjortstigen,2,0,2,Fylleri/LOB,1
+lulea industrivagen,2,0,2,Ofog barn/ungdom,1
+lulea kronbacksvagen,2,0,2,"Trafikolycka,  vilt",1
+lulea lulsundsgatan,2,0,2,Våldtäkt,1
+lulea lulviksvagen,2,0,2,Trafikkontroll,1
+lulea malmhamnsvagen,2,0,2,Stöld/inbrott,1
+lulea porsovagen,2,0,2,Trafikkontroll,1
+lulea rutviksvagen,2,0,2,Brand,1
+lulea seletvagen,2,0,2,"Trafikolycka,  vilt",1
+lulea sunderbyvagen,2,0,2,Brand,1
+lulea universitetsvagen,2,0,2,Trafikkontroll,2
+lulea valorvagen,2,0,2,Stöld/inbrott,1
+malmhamnsvagen,0,2,2,Stöld/inbrott,1
+mattsundsvagen,1,2,2,Trafikkontroll,2
+mittracke riksvag,0,2,2,"Trafikolycka,  singel",2
+notviken,0,2,2,Trafikolycka,1
+och alg lansvag,0,2,2,"Trafikolycka,  vilt",2
+orarnavagen,1,2,2,Trafikkontroll,1
+personer vid busstationen,0,2,2,Narkotikabrott,1
+polisen till flygplatsen,0,2,2,Fylleri/LOB,2
+prastgatan,0,2,2,Inbrott,2
+rikvag,0,2,2,Trafikolycka,1
+rutviksvagen,1,1,2,Rattfylleri,1
+samt dokumenterat olycksplatsen,0,2,2,Trafikolycka,2
+sandnasetvagen,0,2,2,Trafikkontroll,2
+sig forbi olycksplatsen,0,2,2,Trafikolycka,2
+stadsotorget,1,1,2,"Trafikolycka,  personskada",1
+storgatan,0,2,2,Sammanfattning kväll och natt,1
+sundomsvagen,0,2,2,Trafikolycka,1
+svartoleden,0,2,2,Trafikolycka,2
+till lulea polisstation,0,2,2,Olaga hot,1
+trafiken vid lansvag,0,2,2,Trafikkontroll,2
+trafikolycka vid lansvag,0,2,2,Trafikkontroll,1
+valorvagen,0,2,2,Stöld/inbrott,1
+varvsleden,0,2,2,Trafikolycka,2
+vid gamla gaddviksbron,0,2,2,"Trafikolycka,  singel",1
+abergsleden,1,0,1,Trafikkontroll,1
+adressen vastra brogatan,0,1,1,Bråk,1
+aker fran bensinstationen,0,1,1,Stöld,1
+aker till flygplatsen,0,1,1,Övrigt,1
+alg riksvag,0,1,1,"Trafikolycka,  vilt",1
+angdalsrovagen,0,1,1,"Trafikolycka,  singel",1
+anlande till busstationen,0,1,1,Fylleri/LOB,1
+anlant till professorsvagen,0,1,1,Vapenlagen,1
+anslutning till brottsplatsen,0,1,1,Mord/dråp,1
+anslutning till flygplatsen,0,1,1,Olaga hot,1
+arbetsplats vid lansvag,0,1,1,Arbetsplatsolycka,1
+arbetsplatsen,0,1,1,Arbetsplatsolycka,1
+assistentvagen,0,1,1,Trafikbrott,1
+atervandsgrand,0,1,1,Olovlig körning,1
+atervinningsstation,0,1,1,Kontroll person/fordon,1
+att dokumentera olycksplatsen,0,1,1,"Trafikolycka,  vilt",1
+att passera olycksplatsen,0,1,1,Trafikolycka,1
+avlossats vid tunastigen,0,1,1,"Mord/dråp,  försök",1
+avvek fran olycksplatsen,0,1,1,"Trafikolycka,  personskada",1
+avvikit fran olycksplatsen,0,1,1,"Trafikolycka,  personskada",1
+avvisas fran flygplatsen,0,1,1,Fylleri/LOB,1
+backgatan,0,1,1,Trafikkontroll,1
+ballingevagen,0,1,1,"Trafikolycka,  vilt",1
+bangardsgatan,0,1,1,Stöld,1
+begransad vid olycksplatsen,0,1,1,"Trafikolycka,  personskada",1
+bensbyn lansvag,0,1,1,"Trafikolycka,  vilt",1
+beodras till sunderbyvagen,0,1,1,Brand,1
+beordras till backgatan,0,1,1,Trafikolycka,1
+beordras till busstation,0,1,1,Skadegörelse,1
+beordras till centralstationen,0,1,1,Stöld/inbrott,1
+beordras till gammelstadsvagen,0,1,1,Trafikolycka,1
+beordras till hammarenvagen,0,1,1,Trafikolycka,1
+beordras till kantgatan,0,1,1,Trafikolycka,1
+beordras till lansvag,0,1,1,"Trafikolycka,  personskada",1
+beordras till seletvagen,0,1,1,Brand,1
+bergsgatan,1,1,1,Trafikolycka,1
+berodras till malmuddsbron,0,1,1,Skadegörelse,1
+berusad man centralstationen,0,1,1,Fylleri/LOB,1
+bil malmuddsvagen,0,1,1,Stöld,1
+bil nya gaddviksbron,0,1,1,Trafikolycka,1
+bilar utanfor busstationen,0,1,1,Skadegörelse,1
+bilbrand vid rutviksvagen,0,1,1,Brand,1
+bistar vid brandplatsen,0,1,1,Brand,1
+bjorbyvagen,0,1,1,Trafikolycka,1
+bjorkleden,0,1,1,Trafikkontroll,1
+bjorkskatavagen,1,1,1,Trafikolycka,1
+bragegatan,0,1,1,Trafikolycka,1
+brak utanfor polisstationen,0,1,1,Bråk,1
+brak vid centralstationen,0,1,1,Bråk,1
+brandovagen,0,1,1,Trafikolycka,1
+burstromsvagen,0,1,1,Brand,1
+cementvagen,0,1,1,Trafikolycka,1
+dalagatan,0,1,1,Sammanfattning kväll,1
+daligt langs hortlaxvagen,0,1,1,Sammanfattning kväll,1
+degerbergsvagen,0,1,1,Försvunnen person,1
+den formodade detonationsplatsen,0,1,1,Detonation,1
+den till polisstationen,0,1,1,Sammanfattning kväll,1
+den troliga brottsplatsen,0,1,1,Övrigt,1
+det att detonationsplatsen,0,1,1,Detonation,1
+diket langs riksvag,0,1,1,Trafikolycka,1
+dirigeras via lansvag,0,1,1,Trafikolycka,1
+docentvagen,0,1,1,Skadegörelse,1
+dokumenterar ocksa olycksplatsen,0,1,1,Rattfylleri,1
+domarvagen,0,1,1,Rattfylleri,1
+dvarggrand,0,1,1,Skadegörelse,1
+edeforsgatan,0,1,1,Trafikkontroll,1
+ett radjur lansvag,0,1,1,"Trafikolycka,  vilt",1
+fallgatan,1,0,1,"Trafikolycka,  smitning från",1
+fallolycka mjolkuddsvagen,0,1,1,Arbetsplatsolycka,1
+falltrask lansvag,0,1,1,Trafikkontroll,1
+farjeledsvagen,0,1,1,Trafikhinder,1
+fastighet efter smedsbyvagen,0,1,1,Stöld/inbrott,1
+flarkenvagen,0,1,1,Djur skadat/omhändertaget,1
+flatenvagen,0,1,1,Trafikkontroll,1
+flera brott midgardsvagen,0,1,1,Rattfylleri,1
+flera fordon bensbyvagen,0,1,1,Trafikolycka,1
+flera ganger kraftgatan,0,1,1,Rattfylleri,1
+flygplan,1,0,1,Olaga hot,1
+flygstationsvagen,1,1,1,Rattfylleri,1
+flystationsvagen,0,1,1,Trafikolycka,1
+folkhogskolevagen,0,1,1,Trafikkontroll,1
+for drograttfylleri havsoringsgrand,0,1,1,Rattfylleri,1
+for drograttfylleri josefinvagen,0,1,1,Rattfylleri,1
+for drograttfylleri malmuddsvagen,0,1,1,Rattfylleri,1
+for rattfylleri alvbrovagen,0,1,1,Rattfylleri,1
+for rattfylleri gammelstadsvagen,0,1,1,Rattfylleri,1
+for rattfylleri hummergatan,0,1,1,Rattfylleri,1
+for rattfylleri paddelvagen,0,1,1,Rattfylleri,1
+for rattfylleri tunastigen,0,1,1,Rattfylleri,1
+for rattfylleri vaderleden,0,1,1,Rattfylleri,1
+forare tranbacksvagen,0,1,1,Bråk,1
+foraren lamna olycksplatsen,0,1,1,Trafikolycka,1
+foras till polisstationen,0,1,1,Fylleri/LOB,1
+forbi olycksplatsen,0,1,1,Trafikolycka,1
+fordon inblandade riksvag,0,1,1,Trafikolycka,1
+foretagslokaler langs bjorsbyvagen,0,1,1,Stöld/inbrott,1
+forrad angesbyvagen,0,1,1,Stöld/inbrott,1
+forrad snalltorpsvagen,0,1,1,Stöld/inbrott,1
+fors tilll polisstationen,0,1,1,Stöld,1
+forskarvagen,0,1,1,"Motorfordon,  stöld",1
+forvirrad herre mjolkuddsvagen,0,1,1,Fylleri/LOB,1
+fotbollsplan,1,0,1,Skadegörelse,1
+fraktarvagen,0,1,1,Trafikolycka,1
+fraktats till polisstationen,0,1,1,Övrigt,1
+framlanningsvagen,1,0,1,Trafikolycka,1
+fran fordon bangardsgatan,0,1,1,Stöld,1
+fran lastbil kallaxvagen,0,1,1,Arbetsplatsolycka,1
+frisorgatan,1,0,1,Försvunnen person,1
+furumovagen,0,1,1,Övrigt,1
+gaddviksvagen,0,1,1,Trafikkontroll,1
+gamla haparandavagen,0,1,1,"Trafikolycka,  vilt",1
+gamla lulevagen,0,1,1,Sammanfattning kväll,1
+gamla malmkajen,0,1,1,Brand,1
+gammelstad,0,1,1,Trafikkontroll,1
+gangtummel vid kronbacksvagen,0,1,1,Sammanfattning natt,1
+gangvag,0,1,1,Sammanfattning natt,1
+garage ostra malmgatan,0,1,1,Skadegörelse,1
+gardsvagen,0,1,1,Sammanfattning natt,1
+garningsmannen vid polisstationen,0,1,1,Sammanfattning natt,1
+gatan krusbarsstigen,0,1,1,Bråk,1
+genom att olycksplatsen,0,1,1,Trafikolycka,1
+genom isen likskarsvagen,0,1,1,Räddningsinsats,1
+grangatan,0,1,1,Trafikkontroll,1
+grasorvagen,0,1,1,Trafikkontroll,1
+grillplats vid fotbollsplan,0,1,1,Skadegörelse,1
+gunnarsbyvagen,0,1,1,Trafikolycka,1
+halls efter timmerleden,0,1,1,Sammanfattning natt,1
+halls och brandplatsen,0,1,1,Sammanfattning natt,1
+handgemang vid flygplatsen,0,1,1,Misshandel,1
+handleden,0,1,1,Arbetsplatsolycka,1
+hantverksvagen,0,1,1,Trafikkontroll,1
+har dokumenterat olycksplatsen,0,1,1,Arbetsplatsolycka,1
+har kolliderat lansvag,0,1,1,Trafikolycka,1
+hastighetskontroll efter riksvag,0,1,1,Trafikbrott,1
+hastighetskontroll mariebergsvagen,0,1,1,Trafikkontroll,1
+havsoringsgrand,0,1,1,Rattfylleri,1
+hertsavagen,0,1,1,Trafikolycka,1
+hertson,0,1,1,Sammanfattning natt,1
+hertsotorget,0,1,1,"Stöld,  ringa",1
+hojd fallgatan,0,1,1,"Trafikolycka,  smitning från",1
+hojd med flygplatsen,0,1,1,Fylleri/LOB,1
+hortlaxvagen,0,1,1,Sammanfattning kväll,1
+hos lansstyrelsens stationsgatan,0,1,1,"Farligt föremål,  misstänkt",1
+hostvagen,0,1,1,Trafikolycka,1
+humergatan,0,1,1,"Trafikolycka,  personskada",1
+hund till polisstationen,0,1,1,Sammanfattning kväll och natt,1
+hus kyrkogatan,0,1,1,Olaga intrång/hemfridsbrott,1
+ica vid stadsotorget,0,1,1,"Trafikolycka,  personskada",1
+idrottsplatsen,0,1,1,Skadegörelse,1
+industrivagen,0,1,1,Brand,1
+inkommit till polisstationen,0,1,1,Misshandel,1
+intraffade efter kallaxvagen,0,1,1,"Trafikolycka,  vilt",1
+intraffat efter haparandavagen,0,1,1,Trafikolycka,1
+intraffat efter lansvag,0,1,1,"Trafikolycka,  vilt",1
+intraffat langs lovskarsvagen,0,1,1,"Trafikolycka,  vilt",1
+intraffat nar alvsbron,0,1,1,"Trafikolycka,  singel",1
+intraffat vid hummergatan,0,1,1,"Trafikolycka,  singel",1
+isbrytare gamla malmkajen,0,1,1,Brand,1
+isen fran lulnasudden,0,1,1,Räddningsinsats,1
+isen vid likskarsvagen,0,1,1,Räddningsinsats,1
+jarnvagsstation,0,1,1,Fylleri/LOB,1
+jarpvagen,0,1,1,Sammanfattning kväll och natt,1
+josefinvagen,0,1,1,Rattfylleri,1
+kallas till tagstationen,0,1,1,Fylleri/LOB,1
+kammenvagen,1,0,1,Trafikkontroll,1
+kapellgrand,0,1,1,Misshandel,1
+karlsviksvagen,0,1,1,Trafikolycka,1
+klintvagen,1,1,1,Trafikolycka,1
+knoppelasvagen,0,1,1,Trafikkontroll,1
+kolliderat vid gaddviksbron,0,1,1,Trafikolycka,1
+kompanivagen,0,1,1,Trafikkontroll,1
+kontroll vid lansvag,0,1,1,Trafikkontroll,1
+kontrollen stangdes alvbrovagen,0,1,1,Trafikkontroll,1
+kora fran olycksplatsen,0,1,1,"Trafikolycka,  vilt",1
+korrigering kapellgrand,0,1,1,Misshandel,1
+korsningen backgatan,0,1,1,Trafikolycka,1
+korsningen banvagen,0,1,1,Trafikolycka,1
+korsningen bergnasvagen,0,1,1,Trafikolycka,1
+korsningen bjorkskatavagen,0,1,1,Trafikolycka,1
+korsningen framlanningsvagen,0,1,1,Trafikolycka,1
+korsningen gamla lulevagen,0,1,1,Sammanfattning kväll,1
+korsningen karlviksvagen,0,1,1,Trafikolycka,1
+korsningen langs gammelstadsvagen,0,1,1,"Trafikolycka,  personskada",1
+korsningen lansvag,0,1,1,Sammanfattning natt,1
+korsningen mantalsvagen,0,1,1,Trafikolycka,1
+korsningen midgardsvagen,0,1,1,Trafikolycka,1
+korsningen mjolkuddsvagen,0,1,1,Trafikolycka,1
+korsningen porsovagen,0,1,1,Trafikolycka,1
+korsningen rudtjarnsvagen,0,1,1,Trafikolycka,1
+kraftgatan,0,1,1,Rattfylleri,1
+kranvagen,0,1,1,Trafikkontroll,1
+kronanvagen,0,1,1,Trafikkontroll,1
+krondalsvagen,0,1,1,Sammanfattning natt,1
+krusbarsstigen,0,1,1,Bråk,1
+kvinna utanfor busstationen,0,1,1,Fylleri/LOB,1
+kvinnan visade brottsplatsen,0,1,1,Sammanfattning kväll och natt,1
+kyrkgatan,0,1,1,Trafikkontroll,1
+kyrkogatan,0,1,1,Olaga intrång/hemfridsbrott,1
+lag efter lejdevagen,0,1,1,"Trafikolycka,  vilt",1
+lagenhet dvarggrand,0,1,1,Skadegörelse,1
+lagenhet tunastigen,0,1,1,Stöld/inbrott,1
+lan avans byavag,1,0,1,Trafikkontroll,1
+lan mattsunds byavag,1,0,1,Trafikkontroll,1
+langbackavagen,0,1,1,Trafikkontroll,1
+langmyrvagen,0,1,1,Skadegörelse,1
+langnasvagen,0,1,1,Trafikkontroll,1
+langs med paradvagen,0,1,1,Övrigt,1
+lantmatarvagen,1,1,1,Sammanfattning kväll,1
+lanvag,0,1,1,Trafikolycka,1
+lasarettsgatan,1,1,1,Trafikkontroll,1
+lasnvag,0,1,1,"Trafikolycka,  vilt",1
+lerbacksvagen,0,1,1,Trafikolycka,1
+likskarsvagen,0,1,1,Räddningsinsats,1
+lob vid busstationen,0,1,1,Fylleri/LOB,1
+loser trafikolyckan forsakringsvagen,0,1,1,Trafikolycka,1
+lovgatan,1,1,1,Sammanfattning natt,1
+lovskarsvagen,0,1,1,Trafikkontroll,1
+lulea assistentvagen,1,0,1,Trafikbrott,1
+lulea avaviksvagen,1,0,1,Trafikkontroll,1
+lulea bangardsgatan,1,0,1,Stöld,1
+lulea banvagen,1,0,1,Trafikolycka,1
+lulea bathamn,1,0,1,Inbrott,1
+lulea bathamnen,1,0,1,"Trafikolycka,  personskada",1
+lulea bergnasvagen,1,0,1,Trafikolycka,1
+lulea bergvikstorget,1,0,1,Försvunnen person,1
+lulea betongvagen,1,0,1,Stöld/inbrott,1
+lulea bjorksgatan,1,0,1,Försvunnen person,1
+lulea bjorkskatavagen,1,0,1,Trafikolycka,1
+lulea bragegatan,1,0,1,Trafikolycka,1
+lulea brandovagen,1,0,1,Trafikolycka,1
+lulea burstromsvagen,1,0,1,Brand,1
+lulea cementvagen,1,0,1,Trafikolycka,1
+lulea centralstation,0,1,1,Fylleri/LOB,1
+lulea degerbergsvagen,1,0,1,Försvunnen person,1
+lulea domarvagen,1,0,1,Rattfylleri,1
+lulea dvarggrand,1,0,1,Skadegörelse,1
+lulea edeforsgatan,1,0,1,Trafikkontroll,1
+lulea farjeledsvagen,1,0,1,Trafikhinder,1
+lulea farleden,1,0,1,Trafikhinder,1
+lulea flarkenvagen,1,0,1,Djur skadat/omhändertaget,1
+lulea flatenvagen,1,0,1,Trafikkontroll,1
+lulea folkhogskolevagen,1,0,1,Trafikkontroll,1
+lulea forskarvagen,1,0,1,"Motorfordon,  stöld",1
+lulea furumovagen,1,0,1,Övrigt,1
+lulea gaddviksvagen,1,0,1,Trafikkontroll,1
+lulea gamelstadsvagen,0,1,1,Sammanfattning natt,1
+lulea gunnarsbyvagen,1,0,1,Trafikolycka,1
+lulea hammarenvagen,1,0,1,Trafikolycka,1
+lulea hantverksvagen,1,0,1,Trafikkontroll,1
+lulea havsoringsgrand,1,0,1,Rattfylleri,1
+lulea hertsotorget,1,0,1,"Stöld,  ringa",1
+lulea hostvagen,1,0,1,Trafikolycka,1
+lulea idrottsplatsen,1,0,1,Skadegörelse,1
+lulea kantgatan,1,0,1,Trafikolycka,1
+lulea kapellgrand,1,0,1,Misshandel,1
+lulea karlsviksvagen,1,0,1,Trafikolycka,1
+lulea knoppelasvagen,1,0,1,Trafikkontroll,1
+lulea kompanivagen,1,0,1,Trafikkontroll,1
+lulea kornettgatan,1,0,1,Försvunnen person,1
+lulea kraftgatan,1,0,1,Rattfylleri,1
+lulea kronanvagen,1,0,1,Trafikkontroll,1
+lulea krusbarsstigen,1,0,1,Bråk,1
+lulea kyrkogatan,1,0,1,Olaga intrång/hemfridsbrott,1
+lulea kyrktorget,1,0,1,Trafikolycka,1
+lulea langbackavagen,1,0,1,Trafikkontroll,1
+lulea lerbacksvagen,1,0,1,Trafikolycka,1
+lulea lovskarsvagen,1,0,1,Trafikkontroll,1
+lulea mantalsvagen,1,0,1,Trafikolycka,1
+lulea maskinvagen,1,0,1,Trafikolycka,1
+lulea mattsundsvagen,1,0,1,Trafikkontroll,1
+lulea orarnavagen,1,0,1,Trafikolycka,1
+lulea ormbergsvagen,1,0,1,Fylleri/LOB,1
+lulea ornviksvagen,1,0,1,"Trafikolycka,  singel",1
+lulea ostra malmgatan,1,0,1,Skadegörelse,1
+lulea ostrongatan,1,0,1,Trafikolycka,1
+lulea paddelvagen,1,0,1,Rattfylleri,1
+lulea paradvagen,1,0,1,Övrigt,1
+lulea producentvagen,1,0,1,Trafikolycka,1
+lulea professorsvagen,1,0,1,Vapenlagen,1
+lulea rektorsgatan,1,0,1,Brand,1
+lulea repslagargatan,1,0,1,Djur skadat/omhändertaget,1
+lulea rudtjarnsvagen,1,0,1,Trafikolycka,1
+lulea sandnasudden,1,0,1,Trafikolycka,1
+lulea sjukhusvagen,1,0,1,Trafikkontroll,1
+lulea snalltorpsvagen,1,0,1,Stöld/inbrott,1
+lulea sommargatan,1,0,1,Övrigt,1
+lulea spovgrand,1,0,1,Misshandel,1
+lulea stadsotorget,1,0,1,Skadegörelse,1
+lulea stengatan,1,0,1,Trafikkontroll,1
+lulea stormvagen,1,0,1,Trafikkontroll,1
+lulea studentvagen,0,1,1,Brand,1
+lulea sundomsvagen,1,0,1,"Trafikolycka,  vilt",1
+lulea tallvagen,1,0,1,Inbrott,1
+lulea teknikergatan,1,0,1,Trafikkontroll,1
+lulea timmermansgatan,1,0,1,Inbrott,1
+lulea tjardalsvagen,1,0,1,Trafikolycka,1
+lulea tomtebovagen,1,0,1,"Trafikolycka,  vilt",1
+lulea torsvagen,1,0,1,Fylleri/LOB,1
+lulea tranbacksvagen,1,0,1,Bråk,1
+lulea varvsgatan,1,0,1,Trafikolycka,1
+lulea vastra brogatan,1,0,1,Bråk,1
+luleavagen,0,1,1,Sammanfattning natt,1
+magnetitvagen,0,1,1,Sammanfattning kväll och natt,1
+malmudden,0,1,1,Sammanfattning natt,1
+man vid busstationen,0,1,1,Fylleri/LOB,1
+man vid centralstationen,0,1,1,Fylleri,1
+manifestation,0,1,1,Ordningslagen,1
+marknadsvagen,1,1,1,Trafikkontroll,1
+markte upp olycksplatsen,0,1,1,"Trafikolycka,  vilt",1
+masshedsvagen,0,1,1,Trafikkontroll,1
+mattsunds byavag,0,1,1,Trafikkontroll,1
+med fyrhjuling fiskehamnsvagen,0,1,1,"Trafikolycka,  personskada",1
+med trafikkontroll riksvag,0,1,1,Rattfylleri,1
+medtogs till polisstationen,0,1,1,Rattfylleri,1
+mellan flygplatsen,0,1,1,"Trafikolycka,  vilt",1
+mellan stenudden,0,1,1,"Trafikolycka,  vilt",1
+midsommarvagen,0,1,1,Sammanfattning natt,1
+misstankt gripen lulsundsgatan,0,1,1,Våldtäkt,1
+mittracket riksvag,0,1,1,Trafikolycka,1
+mjolkudden,0,1,1,Trafikolycka,1
+morovagen,0,1,1,Sammanfattning natt,1
+nara nya gaddviksbron,0,1,1,Trafikolycka,1
+nekats borda flygplan,0,1,1,Olaga hot,1
+niemisel lansvag,0,1,1,Trafikolycka,1
+norra altervagen,1,1,1,Trafikkontroll,1
+norra prastholm lansvag,0,1,1,"Trafikolycka,  vilt",1
+norra sunderbyvagen,0,1,1,Trafikolycka,1
+norrbotten dalagatan,1,0,1,Sammanfattning kväll,1
+norrbotten jarpvagen,1,0,1,Sammanfattning kväll och natt,1
+norrbotten luleavagen,1,0,1,Sammanfattning natt,1
+norrbotten sundomsvagen,1,0,1,Trafikolycka,1
+norrbotten vaderleden,1,0,1,Sammanfattning kväll,1
+norrbottens lan avaviksvagen,1,0,1,Sammanfattning natt,1
+norrbottens lan bensbyvagen,1,0,1,Sammanfattning natt,1
+norrbottens lan bjorkskataleden,1,0,1,Sammanfattning natt,1
+norrbottens lan grangatan,1,0,1,Trafikkontroll,1
+nya alvvagen,0,1,1,Sammanfattning natt,1
+nykterhetskontroll balingevagen,0,1,1,Trafikkontroll,1
+och cirkulationsplats mjolkudden,0,1,1,Trafikolycka,1
+och delfingatan,0,1,1,"Trafikolycka,  personskada",1
+och dokumenterar olycksplatsen,0,1,1,Arbetsplatsolycka,1
+och dokumenterat brottsplatsen,0,1,1,Stöld/inbrott,1
+och fotodokumenterar olycksplatsen,0,1,1,Trafikolycka,1
+och frisorgatan,0,1,1,Försvunnen person,1
+och robertsviksgatan,0,1,1,Trafikolycka,1
+och stold malmhamnsvagen,0,1,1,Stöld/inbrott,1
+ocksa vid flygplatsen,0,1,1,Trafikkontroll,1
+olaga hot spovgrand,0,1,1,Misshandel,1
+olycka mellan gaddviksbron,0,1,1,Trafikolycka,1
+olycka vid busstation,0,1,1,Trafikolycka,1
+olycka vid kyrktorget,0,1,1,Trafikolycka,1
+omberget till bensbyvagen,0,1,1,Trafikolycka,1
+omhandertagen vid busstationen,0,1,1,Fylleri/LOB,1
+orbergsvagen,0,1,1,Trafikolycka,1
+ormbergsstugevagen,0,1,1,Trafikkontroll,1
+ormbergsvagen,0,1,1,Fylleri/LOB,1
+ornnasvagen,0,1,1,Trafikolycka,1
+ornviksvagen,0,1,1,"Trafikolycka,  singel",1
+ostra malmgatan,0,1,1,Skadegörelse,1
+ostrongatan,0,1,1,Trafikolycka,1
+paddelvagen,0,1,1,Rattfylleri,1
+parkeringen vid bathamnen,0,1,1,"Trafikolycka,  personskada",1
+patraffad efter lansvag,0,1,1,"Motorfordon,  anträffat stulet",1
+patrullen dokumenterar olycksplatsen,0,1,1,Trafikolycka,1
+perrongen vid jarnvagsstationen,0,1,1,Fylleri/LOB,1
+personbil forskarvagen,0,1,1,"Motorfordon,  stöld",1
+personbil vid rutviksvagen,0,1,1,Brand,1
+personer utanfor jarnvagsstationen,0,1,1,Fylleri/LOB,1
+personer vid busstation,0,1,1,Fylleri/LOB,1
+polis lansvag,0,1,1,Trafikbrott,1
+polisen dokumenterar olycksplatsen,0,1,1,Arbetsplatsolycka,1
+polisen lamnar olycksplatsen,0,1,1,Trafikolycka,1
+polispatrull kontrollerar olycksplatsen,0,1,1,Trafikolycka,1
+polsstationen,0,1,1,Sammanfattning kväll,1
+porsovagen,0,1,1,Trafikkontroll,1
+porttelefonen till polisstationen,0,1,1,Sammanfattning natt,1
+producentvagen,0,1,1,Trafikolycka,1
+professorsvagen,0,1,1,Vapenlagen,1
+ranea,0,1,1,"Trafikolycka,  singel",1
+rektorsgatan,0,1,1,Brand,1
+repslagaragatan,0,1,1,Olaga hot,1
+repslagargatan,0,1,1,Djur skadat/omhändertaget,1
+respektive pitea polisstation,0,1,1,Övrigt,1
+riktsvag,0,1,1,"Trafikolycka,  vilt",1
+rondell vid bensbyvagen,0,1,1,Trafikolycka,1
+sandnasudden,0,1,1,Trafikolycka,1
+seletvagen,0,1,1,"Trafikolycka,  vilt",1
+senast synlig hjortstigen,0,1,1,Försvunnen person,1
+sig kring centralstationen,0,1,1,Fylleri/LOB,1
+sig mot kornettgatan,0,1,1,Försvunnen person,1
+sig vid malmkajen,0,1,1,Arbetsplatsolycka,1
+singelolycka haparandavagen,0,1,1,"Trafikolycka,  personskada",1
+singelolycka ornviksvagen,0,1,1,"Trafikolycka,  singel",1
+sjukhusvagen,0,1,1,Trafikkontroll,1
+skurholmen,0,1,1,Sammanfattning kväll och natt,1
+skuthamn,1,1,1,Trafikkontroll,1
+skyddsobjekt vid flygplatsen,0,1,1,Skyddslagen,1
+slass vid busstationen,0,1,1,Rån,1
+snalltorpsvagen,0,1,1,Stöld/inbrott,1
+snokant langs lansvag,0,1,1,Sammanfattning natt,1
+sodergaende vid olycksplatsen,0,1,1,Trafikolycka,1
+sodra hamnleden,0,1,1,Trafikkontroll,1
+sodra vretvagen,0,1,1,Fylleri/LOB,1
+som voltat varvsleden,0,1,1,Trafikolycka,1
+sommargatan,0,1,1,Övrigt,1
+spantgatan,1,1,1,Trafikolycka,1
+sparet jarnvagsstationen,0,1,1,Bråk,1
+spovgrand,0,1,1,Misshandel,1
+sprang till polisstationen,0,1,1,Skadegörelse,1
+sprungit fran olycksplatsen,0,1,1,"Trafikolycka,  vilt",1
+stannade vid olyksplatsen,0,1,1,Sammanfattning natt,1
+stengatan,0,1,1,Trafikkontroll,1
+stenudden,0,1,1,Trafikolycka,1
+stormvagen,0,1,1,Trafikkontroll,1
+storstrandsvagen,0,1,1,Trafikolycka,1
+strandvagen,0,1,1,Trafikkontroll,1
+studentvagen,0,1,1,Brand,1
+sturegatan,1,1,1,Sammanfattning natt,1
+sundsgatan,1,1,1,Sammanfattning natt,1
+svartbyleden,0,1,1,Sammanfattning kväll,1
+svartbyvagen,1,1,1,Trafikbrott,1
+svavare vid farleden,0,1,1,Trafikhinder,1
+svedjegardsvagen,0,1,1,Trafikolycka,1
+tallvagen,0,1,1,Inbrott,1
+teknikergatan,0,1,1,Trafikkontroll,1
+till gamla malmkajen,0,1,1,Trafikolycka,1
+till lulea centralstation,0,1,1,Olaga hot,1
+till polisstationen,0,1,1,Rattfylleri,1
+timmerleden,1,0,1,Sammanfattning natt,1
+timmermansgatan,0,1,1,Inbrott,1
+timmermansgatan timmermansgatan,0,1,1,Inbrott,1
+tjardalsvagen,0,1,1,Trafikolycka,1
+tomtebovagen,0,1,1,"Trafikolycka,  vilt",1
+torsvagen,0,1,1,Fylleri/LOB,1
+trad angdalsrovagen,0,1,1,"Trafikolycka,  singel",1
+trafikanterna efter kallaxvagen,0,1,1,Trafikkontroll,1
+trafiken avans byavag,0,1,1,Trafikkontroll,1
+trafiken efter smedsbyvagen,0,1,1,Trafikkontroll,1
+trafiken riksvag,0,1,1,Trafikkontroll,1
+trafiken rikvag,0,1,1,Trafikkontroll,1
+trafiken vid abergsleden,0,1,1,Trafikkontroll,1
+trafikkontroll efter bergandevagen,0,1,1,Trafikkontroll,1
+trafikkontroll efter kammenvagen,0,1,1,Trafikkontroll,1
+trafikkontroll efter riksvag,0,1,1,Trafikkontroll,1
+trafikkontroll langs haprandavagen,0,1,1,Trafikbrott,1
+trafikkontroll vid balingevagen,0,1,1,Trafikkontroll,1
+trafikkontroll vid bensbyvagen,0,1,1,Trafikkontroll,1
+trafikkontroll vid lansvag,0,1,1,Trafikkontroll,1
+trafikkontroll vid sinksundsbron,0,1,1,Trafikkontroll,1
+trafikolycka gammelstadsvagen,0,1,1,"Trafikolycka,  personskada",1
+tranbacksvagen,0,1,1,Bråk,1
+trapphuset hjortstigen,0,1,1,Fylleri/LOB,1
+trapphuset malmuddsvagen,0,1,1,Fylleri/LOB,1
+trollslandevagen,1,1,1,Trafikkontroll,1
+tva bilar flystationsvagen,0,1,1,Trafikolycka,1
+tva personbilar humergatan,0,1,1,"Trafikolycka,  personskada",1
+utan korkort assistentvagen,0,1,1,Trafikbrott,1
+utmarksvagen,1,1,1,Trafikolycka,1
+vagen efter rutviksvagen,0,1,1,Rattfylleri,1
+vagen nya gaddviksbron,0,1,1,Trafikolycka,1
+vagen riksvag,0,1,1,Trafikolycka,1
+vaktare ingripit tagstationen,0,1,1,Bråk,1
+varandra efter riksvag,0,1,1,Trafikbrott,1
+varvsgatan,0,1,1,Trafikolycka,1
+vastra brogatan,0,1,1,Bråk,1
+vespa till spovgrand,0,1,1,Misshandel,1
+via balkongen torsvagen,0,1,1,Fylleri/LOB,1
+via gammelstadsvagen,0,1,1,Trafikolycka,1
+vid barplockning degerbergsvagen,0,1,1,Försvunnen person,1
+vid busstationen,0,1,1,Stöld,1
+vid hagavikens bathamn,0,1,1,Inbrott,1
+vid korsningen kallaxvagen,0,1,1,Trafikolycka,1
+vid korsningen lansvag,0,1,1,Trafikolycka,1
+vid lilla bergvikstorget,0,1,1,Försvunnen person,1
+vid nya gaddviksbron,0,1,1,Trafikolycka,1
+vid olycksplatsen,0,1,1,"Trafikolycka,  personskada",1
+vid savast riksvag,0,1,1,Trafikkontroll,1
+vid sommargatan,0,1,1,Övrigt,1
