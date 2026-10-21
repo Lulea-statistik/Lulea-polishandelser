@@ -56,8 +56,8 @@ def partition(input_rows=(),bootstrap=False):
     byyear={}
     def add(row):
         year=year_for(row)
-        if year not in byyear:byyear[year]={}
-        byyear[year][identity(row)]=row
+        if year not in byyear:byyear[year]=[]
+        byyear[year].append(row)
     legacy_rows=0
     if first:
         for row in read_records(LEGACY):
@@ -70,7 +70,7 @@ def partition(input_rows=(),bootstrap=False):
     if not first and not incoming and MANIFEST.exists():return
     if first and legacy_rows==0 and LEGACY.exists() and LEGACY.stat().st_size:raise ValueError("Legacy was not read")
     for year,records in sorted(byyear.items()):
-        atomic_jsonl(PARTS/(year+".jsonl"),records.values())
+        atomic_jsonl(PARTS/(year+".jsonl"),records)
     total=sum(len(v) for v in byyear.values())
     manifest={"format":"raw-jsonl-by-year-v1","partition_record_count":total,
               "partition_count":len(byyear),"raw_source_rows_on_first_migration":legacy_rows,
@@ -83,7 +83,7 @@ def partition(input_rows=(),bootstrap=False):
     MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
     observed=sum(1 for f in PARTS.glob("*.jsonl") for _ in read_records(f))
     if observed!=total:raise ValueError(f"Raw partition QA failed: {observed} vs {total}")
-    print("Partition QA OK:",len(byyear),"years,",total,"unique records; legacy input",legacy_rows,", added",incoming)
+    print("Partition QA OK:",len(byyear),"years,",total,"raw rows; legacy input",legacy_rows,", added",incoming)
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument("--bootstrap",action="store_true")
