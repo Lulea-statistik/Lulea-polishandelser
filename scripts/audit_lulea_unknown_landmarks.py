@@ -17,6 +17,8 @@ TERMS={
 "Stadshuset":[r"stadshuset",r"lulea stadshus"],
 "ICA Maxi":[r"ica maxi"],
 "Willys":[r"willys"],
+"Systembolaget":[r"systembolaget",r"systembolag"],
+"Musikfestivalen i Luleå":[r"musikfestivalen i lulea"],
 "Coop Forum":[r"coop forum"],
 "Coop butik (ospecificerad)":[r"coop (?:butik|affar|stormarknad)"],
 "Luleå Hockey":[r"lulea hockey"],
