@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/audit_lulea_place_mentions.csv data/audit_lulea_place_summary.csv data/audit_lulea_unknown_candidates.csv data/audit_lulea_unknown_summary.csv data/audit_lulea_unknown_examples.csv
+          git add data/audit_lulea_place_mentions.csv data/audit_lulea_place_summary.csv data/audit_lulea_unknown_candidates.csv data/audit_lulea_unknown_summary.csv data/audit_lulea_unknown_examples.csv data/audit_lulea_unknown_geographic_names.csv
           if ! git diff --cached --quiet; then
             git commit -m "Auditera platsnamn i Luleas polishandelser"
             git pull --rebase origin main
