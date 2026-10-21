@@ -26,7 +26,29 @@ TERMS={
 "Storheden handelsområde":[r"storheden"],
 "Gymnasiebyn":[r"gymnasiebyn"],
 "Busstationen":[r"busstationen"],
-"Järnvägsstationen":[r"jarnvagsstationen",r"centralstationen"]
+"Järnvägsstationen":[r"jarnvagsstationen",r"centralstationen"],
+"Luleå Live":[r"lulea live",r"lulea-live"],
+"Splash Luleå":[r"splash lulea",r"splashfestivalen"],
+"Under Solen":[r"under solen",r"under-solen"],
+"RIX FM Festival":[r"rix fm festival",r"rixfm festival",r"rix fm-festival"],
+"Luleå Hamnfestival":[r"lulea hamnfestival",r"hamnfestivalen"],
+"Luleåkalaset":[r"luleakalaset",r"lulea kalaset"],
+"Musikens makt":[r"musikens makt"],
+"Coop Norrbotten Arena":[r"coop norrbotten arena"],
+"Shopping":[r"shoppinghuset",r"shopping galleria"],
+"Pontushallen":[r"pontushallen"],
+"Norrbottensteatern":[r"norrbottensteatern"],
+"Norrbottens museum":[r"norrbottens museum"],
+"Stadsbiblioteket":[r"stadsbiblioteket"],
+"Södra Hamnplan":[r"sodra hamnplan"],
+"Norra hamn":[r"norra hamn"],
+"Luleå Science Park":[r"lulea science park"],
+"Teknikens hus":[r"teknikens hus"],
+"Universitetet / LTU":[r"lulea tekniska universitet",r"ltu"],
+"Arcusområdet":[r"arcusomradet",r"arcusvagen"],
+"SSAB Luleå":[r"ssab"],
+"Luleå sjukhus / Sunderby sjukhus":[r"sunderby sjukhus",r"sunderbyns sjukhus"],
+"Storhedens handelsplats":[r"storhedens handelsplats"]
 }
 PAT={label:[re.compile(r"(?<![a-z])"+p+r"(?![a-z])") for p in terms] for label,terms in TERMS.items()}
 FIELDS=("title_location","location_string")
