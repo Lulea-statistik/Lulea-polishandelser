@@ -13,13 +13,18 @@ ROOT=Path(__file__).resolve().parents[1]
 LEGACY=ROOT/"data/events_raw.jsonl"
 PARTS=ROOT/"data/raw_by_year"
 MANIFEST=PARTS/"manifest.json"
-LIMIT=80*1024*1024
+LIMIT=40*1024*1024
 def year_for(row):
     for key in ("year","published_datetime","date"):
         s=str(row.get(key) or "")
         m=re.match(r"^(19|20)\d{2}",s)
         if m:return m.group(0)
     return "unknown"
+def month_for(row):
+    for key in ("published_datetime","date"):
+        m=re.match(r"^(19|20)\d{2}-(0[1-9]|1[0-2])",str(row.get(key) or ""))
+        if m:return m.group(0)
+    return year_for(row)+"-unknown"
 def identity(row):
     eid=str(row.get("event_id") or "").strip()
     if eid:return "id:"+eid
@@ -67,17 +72,39 @@ def partition(input_rows=(),bootstrap=False):
     incoming=0
     for row in input_rows:
         add(row);incoming+=1
-    if not first and not incoming and MANIFEST.exists():return
+    if not first and not incoming and MANIFEST.exists() and json.loads(MANIFEST.read_text(encoding="utf-8")).get("format")=="raw-jsonl-year-month-chunks-v2":return
     if first and legacy_rows==0 and LEGACY.exists() and LEGACY.stat().st_size:raise ValueError("Legacy was not read")
     if bootstrap and LEGACY.exists() and LEGACY.stat().st_size and not first and not json.loads(MANIFEST.read_text(encoding="utf-8")).get("legacy_sha256"):
         raise ValueError("Legacy migration not certified")
+    written={}
     for year,records in sorted(byyear.items()):
-        atomic_jsonl(PARTS/(year+".jsonl"),records)
+        estimated=sum(len((json.dumps(r,ensure_ascii=False,sort_keys=True)+"\n").encode("utf-8")) for r in records)
+        groups={year:records} if estimated<=LIMIT else {}
+        if not groups:
+            for row in records:
+                groups.setdefault(month_for(row),[]).append(row)
+        for key,group in sorted(groups.items()):
+            chunks=[[]]
+            size=0
+            for row in group:
+                n=len((json.dumps(row,ensure_ascii=False,sort_keys=True)+"\n").encode("utf-8"))
+                if n>LIMIT:raise ValueError("Single observation exceeds chunk limit")
+                if size+n>LIMIT and chunks[-1]:
+                    chunks.append([]);size=0
+                chunks[-1].append(row);size+=n
+            for idx,chunk in enumerate(chunks,1):
+                name=key+(("-part%02d"%idx) if len(chunks)>1 else "")
+                atomic_jsonl(PARTS/(name+".jsonl"),chunk)
+                written[name]=len(chunk)
     total=sum(len(v) for v in byyear.values())
-    manifest={"format":"raw-jsonl-by-year-v1","partition_record_count":total,
-              "partition_count":len(byyear),"raw_source_rows_on_first_migration":legacy_rows,
+    observed_new=sum(sum(1 for _ in read_records(PARTS/(k+".jsonl"))) for k in written)
+    if observed_new!=total:raise ValueError("Partition count mismatch")
+    for old in existing:
+        if old.stem not in written:old.unlink()
+    manifest={"format":"raw-jsonl-year-month-chunks-v2","partition_record_count":total,
+              "partition_count":len(written),"raw_source_rows_on_first_migration":legacy_rows,
               "legacy_sha256":checksum(LEGACY) if first and LEGACY.exists() else None,
-              "partitions":{y:{"records":len(r),"sha256":checksum(PARTS/(y+".jsonl"))} for y,r in sorted(byyear.items())}}
+              "partitions":{k:{"records":n,"sha256":checksum(PARTS/(k+".jsonl"))} for k,n in sorted(written.items())}}
     if MANIFEST.exists() and not first:
         older=json.loads(MANIFEST.read_text(encoding="utf-8"))
         manifest["raw_source_rows_on_first_migration"]=older.get("raw_source_rows_on_first_migration",0)
