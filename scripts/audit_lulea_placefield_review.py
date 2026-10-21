@@ -17,7 +17,8 @@ PLACE_TERMS = (
     "sunderbyn", "gammelstan", "gammelstad", "orarna", "kyrkbyn",
     "bjurstrask", "shell", "musikomat", "postnord"
 )
-TERM_PATTERNS = {term: re.compile(r"(?<![a-z])" + re.escape(term) + r"(?![a-z])") for term in PLACE_TERMS}
+ROAD_SUFFIXES = {"vagen", "gatan", "grand", "stigen", "leden", "bron"}
+TERM_PATTERNS = {term: re.compile((r"(?<![a-z])[a-z]{2,}" if term in ROAD_SUFFIXES else r"(?<![a-z])") + re.escape(term) + r"(?![a-z])") for term in PLACE_TERMS}
 def detect(value):
     value = normalize(value)
     return [term for term, pattern in TERM_PATTERNS.items() if pattern.search(value)]
