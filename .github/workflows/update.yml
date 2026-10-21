@@ -48,6 +48,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Refresh checkout to latest main before generating data
+        run: |
+          git fetch origin main
+          git checkout -B main origin/main
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -103,7 +107,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # Migration already checked source/partition row counts and hashes.
           # Git history keeps the original legacy blob; new HEAD uses partitions.
-          if test -f data/raw_by_year/manifest.json && test -f data/events_raw.jsonl; then
+          if test -f data/events_raw.jsonl; then
+            python -c 'import json, pathlib, hashlib; p=pathlib.Path("data/events_raw.jsonl"); m=json.loads(pathlib.Path("data/raw_by_year/manifest.json").read_text()); actual=hashlib.file_digest(p.open("rb"), "sha256").hexdigest(); assert m.get("legacy_sha256")==actual and m.get("raw_source_rows_on_first_migration",0)>0, "Legacy raw file not fully migrated"; print("Verified legacy backup checksum and row count")'
             git rm -- data/events_raw.jsonl
           fi
           git add -A -- data/ docs/data/lulea_district_monthly.csv docs/data/lulea_district_expanded_monthly.csv docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/local_police_area_pairs_monthly.csv docs/data/weekday_period_observations.csv docs/data/weekday_period_calendar.csv docs/data/theft_object_mentions.csv
