@@ -16,7 +16,7 @@ p{line-height:1.55}.sub{color:var(--muted);margin:7px 0 0}
 nav{display:flex;gap:9px;flex-wrap:wrap}nav a{padding:9px 12px;color:var(--blue);text-decoration:none;font-weight:650;border-radius:9px}nav a[aria-current]{background:#e7f0f9}
 .notice{padding:14px 16px;background:#fff6d8;border:1px solid #d9a400;border-radius:10px;margin-bottom:18px}
 .panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px;margin-bottom:16px}
-.filters{display:grid;grid-template-columns:repeat(3,minmax(175px,1fr));gap:14px}
+.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 label{display:block;font-size:.82rem;color:var(--muted);font-weight:650;margin-bottom:7px}
 select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radius:8px}
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.number{font-size:1.8rem;font-weight:700;display:block;margin-top:6px}
@@ -28,17 +28,17 @@ select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radi
 <nav aria-label="Huvudmeny"><a href="./">Statistik</a><a href="lulea.html" aria-current="page">Luleå</a><a href="info-metod.html">Info &amp; metod</a></nav></div></header>
 <main class="wrap">
 <div class="notice"><strong>Viktigt:</strong> Materialet visar bara händelser som Polisen valt att publicera, inte officiell brottsstatistik. Stadsdelskopplingen är en försiktig tolkning av publicerade platsfält, inte en geokodad adresspunkt eller ett bekräftat brottsläge.</div>
-<section class="panel"><h2>Polishändelser i Luleås delområden</h2><p>Välj <strong>Hela Luleå</strong> eller ett delområde. Osäkra platsangivelser tilldelas <strong>Okänt delområde</strong>, men ingår i kommunens totala antal. Endast händelser som är registrerade på Luleå kommun ingår. Denna stadsdelsserie avser ursprungliga händelseposter, och ska inte jämföras direkt med huvudsidans expanderade sammanfattningar.</p></section>
+<section class="panel"><h2>Polishändelser i Luleås delområden</h2><p>Välj <strong>Hela Luleå</strong> eller ett delområde. Osäkra platsangivelser tilldelas <strong>Okänt delområde</strong>, men ingår i kommunens totala antal. Endast händelser som är registrerade på Luleå kommun ingår. Välj dataserie nedan. I den expanderade serien klassificeras varje identifierad underhändelse utifrån sina egna platsuppgifter, inte hela sammanfattningens plats.</p></section>
 <div id="loading" class="panel">Läser in delområdesstatistik…</div>
 <div id="dashboard" hidden>
-<div class="panel filters"><div><label for="geo">Geografi</label><select id="geo"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
-<div class="kpis"><div class="panel"><span class="muted">Antal publicerade händelser</span><strong id="total" class="number">–</strong></div><div class="panel"><span class="muted">Första månaden</span><strong id="first" class="number">–</strong></div><div class="panel"><span class="muted">Sista månaden</span><strong id="last" class="number">–</strong></div></div>
+<div class="panel filters"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div><label for="geo">Geografi</label><select id="geo"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
+<p class="muted" id="seriesExplanation" aria-live="polite">Expanderade händelser. Identifierade underhändelser räknas separat; geografi som inte kan fastställas hamnar i Okänt delområde.</p><div class="kpis"><div class="panel"><span class="muted" id="totalLabel">Antal händelser</span><strong id="total" class="number">–</strong></div><div class="panel"><span class="muted">Första månaden</span><strong id="first" class="number">–</strong></div><div class="panel"><span class="muted">Sista månaden</span><strong id="last" class="number">–</strong></div></div>
 <div class="grid"><section class="panel"><h2>Händelser per år</h2><div class="chart"><canvas id="years"></canvas></div></section><section class="panel"><h2>Vanligaste händelsetyper</h2><div class="chart"><canvas id="types"></canvas></div></section></div>
 <div class="grid"><section class="panel"><h2>Händelser per månad</h2><div class="chart"><canvas id="months"></canvas></div></section><section class="panel"><h2>Geografisk fördelning inom Luleå</h2><div class="chart"><canvas id="districts"></canvas></div></section></div>
-<section class="panel"><h2>Metod och datakvalitet</h2><p>Stadsdelar känns igen genom entydiga namn i polisens platsfält. Händelser med otydliga eller motstridiga områdesuppgifter klassas som <strong>Okänt delområde</strong>. Stadsdelsgränser och koordinatsystem används inte, eftersom denna version inte har verifierade geometrier. Ett nämnt stadsdelsnamn är inte liktydigt med verifierad position inom stadsdelsgräns. Serien uppdateras av samma dagliga GitHub Actions-flöde som huvudsidan.</p></section>
+<section class="panel"><h2>Metod och datakvalitet</h2><p>Stadsdelar bestäms i första hand från platsfält. Mycket tydliga platsuttryck i beskrivningar kan användas när platsfältet inte räcker. I den expanderade serien bedöms platsen separat för varje underhändelse. Händelser med otydliga eller motstridiga områdesuppgifter klassas som <strong>Okänt delområde</strong>. Stadsdelsgränser och koordinatsystem används inte, eftersom denna version inte har verifierade geometrier. Ett nämnt stadsdelsnamn är inte liktydigt med verifierad position inom stadsdelsgräns. Serien uppdateras av samma dagliga GitHub Actions-flöde som huvudsidan.</p></section>
 </div></main>
 <script>
-const fmt=new Intl.NumberFormat('sv-SE');let data=[],charts={};
+const fmt=new Intl.NumberFormat('sv-SE');let data=[],originalData=[],expandedData=[],charts={};
 function csv(text){const rows=[];let row=[],field='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'&&text[i+1]==='"'){field+='"';i++}else if(c==='"')q=false;else field+=c}else if(c==='"')q=true;else if(c===','){row.push(field);field=''}else if(c==='\n'){row.push(field.replace(/\r$/,''));rows.push(row);row=[];field=''}else field+=c}if(field||row.length){row.push(field);rows.push(row)}const header=rows.shift();return rows.filter(r=>r.length===header.length).map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]])))}
 function setOptions(id,values,all){const el=document.getElementById(id);el.replaceChildren();const opt=document.createElement('option');opt.value='Alla';opt.textContent=all;el.append(opt);for(const v of values){const item=document.createElement('option');item.value=v;item.textContent=v;el.append(item)}}
 function filter(){const g=document.getElementById('geo').value,y=document.getElementById('year').value,t=document.getElementById('kind').value;return data.filter(r=>(g==='Alla'||r.geography_group===g)&&(y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t))}
@@ -49,5 +49,29 @@ draw('years',count(rows,'year').sort((a,b)=>a[0].localeCompare(b[0])));
 draw('types',count(rows,'type_original').slice(0,15),true);
 const ms=new Map();for(const r of rows){const k=r.year+'-'+r.month.padStart(2,'0');ms.set(k,(ms.get(k)||0)+r.event_count)}draw('months',[...ms.entries()].sort((a,b)=>a[0].localeCompare(b[0])));
 draw('districts',count(rows,'geography_group'),true);}
-fetch('data/lulea_district_monthly.csv',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Stadsdelsdata saknas ännu (HTTP '+r.status+')');return r.text()}).then(text=>{data=csv(text).map(r=>({...r,event_count:+r.event_count||0}));if(!data.length)throw Error('Tomt stadsdelsunderlag');setOptions('geo',[...new Set(data.map(r=>r.geography_group))].sort((a,b)=>a.localeCompare(b,'sv')),'Hela Luleå');setOptions('year',[...new Set(data.map(r=>r.year))].sort((a,b)=>b.localeCompare(a)),'Alla år');setOptions('kind',[...new Set(data.map(r=>r.type_original))].sort((a,b)=>a.localeCompare(b,'sv')),'Alla händelsetyper');for(const id of ['geo','year','kind'])document.getElementById(id).addEventListener('change',render);document.getElementById('loading').hidden=true;document.getElementById('dashboard').hidden=false;render()}).catch(err=>{document.getElementById('loading').textContent='Stadsdelsstatistik kan ännu inte visas: '+err.message});
+function applySeries(){
+ const mode=document.getElementById('seriesMode').value;
+ data=mode==='original'?originalData:expandedData;
+ const geo=document.getElementById('geo').value, year=document.getElementById('year').value,kind=document.getElementById('kind').value;
+ setOptions('geo',[...new Set(data.map(r=>r.geography_group))].sort((a,b)=>a.localeCompare(b,'sv')),'Hela Luleå');
+ setOptions('year',[...new Set(data.map(r=>r.year))].sort((a,b)=>b.localeCompare(a)),'Alla år');
+ setOptions('kind',[...new Set(data.map(r=>r.type_original))].sort((a,b)=>a.localeCompare(b,'sv')),'Alla händelsetyper');
+ for(const [id,value] of [['geo',geo],['year',year],['kind',kind]]){const el=document.getElementById(id);if([...el.options].some(o=>o.value===value))el.value=value}
+ document.getElementById('totalLabel').textContent=mode==='original'?'Antal ursprungliga publiceringar':'Antal expanderade händelser';
+ document.getElementById('seriesExplanation').textContent=mode==='original'?'Ursprungliga publiceringar: varje polisnotis räknas en gång, även en sammanfattning.':'Expanderade händelser: identifierade underhändelser räknas separat. Underhändelsernas egna platsuppgifter används; annars visas Okänt delområde.';
+ render();
+}
+Promise.all([
+ fetch('data/lulea_district_monthly.csv',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Ursprunglig stadsdelsdata HTTP '+r.status);return r.text()}),
+ fetch('data/lulea_district_expanded_monthly.csv',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Expanderad stadsdelsdata HTTP '+r.status);return r.text()})
+]).then(([original,expanded])=>{
+ originalData=csv(original).map(r=>({...r,event_count:+r.event_count||0}));
+ expandedData=csv(expanded).map(r=>({...r,event_count:+r.event_count||0}));
+ if(!originalData.length||!expandedData.length)throw Error('Tomt stadsdelsunderlag');
+ for(const id of ['geo','year','kind'])document.getElementById(id).addEventListener('change',render);
+ document.getElementById('seriesMode').addEventListener('change',applySeries);
+ document.getElementById('loading').hidden=true;
+ document.getElementById('dashboard').hidden=false;
+ applySeries();
+}).catch(err=>{document.getElementById('loading').textContent='Stadsdelsstatistik kan ännu inte visas: '+err.message});
 </script></body></html>
