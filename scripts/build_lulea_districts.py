@@ -18,7 +18,11 @@ ALIASES = {
  "Bergnäset": ["bergnaset", "bergnäset"],
  "Bergviken": ["bergviken"],
  "Björkskatan": ["bjorkskatan", "björkskatan"],
- "Centrum": ["centrum", "lulea centrum", "luleå centrum", "innerstaden", "lulea innerstad", "luleå innerstad"],
+ "Centrum": [
+  "centrum", "lulea centrum", "luleå centrum", "innerstaden", "lulea innerstad", "luleå innerstad",
+  "stadsviken", "charlottendal", "norra hamn", "norra hamnen", "sodra hamn", "södra hamn", "sodra hamnen", "södra hamnen", "ostermalm", "östermalm",
+  "gultzauudden", "gültzauudden", "gultzaudden", "gültsauudden", "vastra stranden", "västra stranden", "oscarsvarv",
+ ],
  "Gammelstad": ["gammelstad"],
  "Hertsön": ["hertson", "hertsön"],
  "Hertsöheden": ["hertsoheden", "hertsöheden"],
