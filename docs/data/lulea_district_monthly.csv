@@ -24,6 +24,7 @@ year,month,geography_group,type_original,event_count
 2016,11,Bergnäset,Trafikolycka,1
 2016,11,Bergviken,Trafikolycka,1
 2016,11,Bergviken,"Trafikolycka,  vilt",1
+2016,11,Centrum,Narkotikabrott,1
 2016,11,Gammelstad,Rattfylleri,1
 2016,11,Gammelstad,Trafikolycka,1
 2016,11,Hertsön,Bråk,1
@@ -41,7 +42,7 @@ year,month,geography_group,type_original,event_count
 2016,11,Okänt delområde,Fylleri/LOB,1
 2016,11,Okänt delområde,Kontroll person/fordon,1
 2016,11,Okänt delområde,Misshandel,1
-2016,11,Okänt delområde,Narkotikabrott,2
+2016,11,Okänt delområde,Narkotikabrott,1
 2016,11,Okänt delområde,Olaga hot,1
 2016,11,Okänt delområde,Olovlig körning,1
 2016,11,Okänt delområde,Rattfylleri,7
@@ -69,6 +70,8 @@ year,month,geography_group,type_original,event_count
 2016,12,Bergnäset,Inbrott,1
 2016,12,Bergnäset,Stöld/inbrott,1
 2016,12,Bergviken,"Misshandel,  grov",1
+2016,12,Centrum,Stöld/inbrott,1
+2016,12,Centrum,Trafikolycka,1
 2016,12,Hertsön,Rån,1
 2016,12,Hertsön,Sammanfattning kväll,1
 2016,12,Hertsön,Stöld/inbrott,1
@@ -86,9 +89,9 @@ year,month,geography_group,type_original,event_count
 2016,12,Okänt delområde,Olaga hot,1
 2016,12,Okänt delområde,Rattfylleri,8
 2016,12,Okänt delområde,Stöld,2
-2016,12,Okänt delområde,Stöld/inbrott,3
+2016,12,Okänt delområde,Stöld/inbrott,2
 2016,12,Okänt delområde,Trafikhinder,3
-2016,12,Okänt delområde,Trafikolycka,9
+2016,12,Okänt delområde,Trafikolycka,8
 2016,12,Okänt delområde,"Trafikolycka,  personskada",2
 2016,12,Okänt delområde,"Trafikolycka,  singel",5
 2016,12,Okänt delområde,"Trafikolycka,  vilt",5
@@ -106,6 +109,9 @@ year,month,geography_group,type_original,event_count
 2016,12,Sunderbyn,Trafikolycka,1
 2016,12,Sunderbyn,"Trafikolycka,  vilt",2
 2017,01,Bergnäset,Brand,1
+2017,01,Centrum,Knivlagen,1
+2017,01,Centrum,Kontroll person/fordon,1
+2017,01,Centrum,Rattfylleri,1
 2017,01,Centrum,Våld/hot mot tjänsteman,1
 2017,01,Gammelstad,Narkotikabrott,1
 2017,01,Gammelstad,Trafikolycka,1
@@ -119,12 +125,10 @@ year,month,geography_group,type_original,event_count
 2017,01,Okänt delområde,Arbetsplatsolycka,1
 2017,01,Okänt delområde,Brand,4
 2017,01,Okänt delområde,Djur skadat/omhändertaget,6
-2017,01,Okänt delområde,Knivlagen,1
-2017,01,Okänt delområde,Kontroll person/fordon,1
 2017,01,Okänt delområde,Misshandel,2
 2017,01,Okänt delområde,"Motorfordon,  anträffat stulet",1
 2017,01,Okänt delområde,Narkotikabrott,1
-2017,01,Okänt delområde,Rattfylleri,6
+2017,01,Okänt delområde,Rattfylleri,5
 2017,01,Okänt delområde,Sammanfattning eftermiddag,1
 2017,01,Okänt delområde,Sammanfattning kväll,1
 2017,01,Okänt delområde,Sammanfattning kväll och natt,2
@@ -159,6 +163,10 @@ year,month,geography_group,type_original,event_count
 2017,02,Bergviken,Misshandel,1
 2017,02,Bergviken,Trafikolycka,1
 2017,02,Björkskatan,Snatteri,1
+2017,02,Centrum,Fylleri/LOB,1
+2017,02,Centrum,Stöld,1
+2017,02,Centrum,Trafikhinder,1
+2017,02,Centrum,Övrigt,1
 2017,02,Hertsön,Fylleri/LOB,1
 2017,02,Hertsön,Narkotikabrott,1
 2017,02,Hertsön,Olaga hot,1
@@ -169,7 +177,6 @@ year,month,geography_group,type_original,event_count
 2017,02,Okänt delområde,Arbetsplatsolycka,2
 2017,02,Okänt delområde,Bedrägeri,1
 2017,02,Okänt delområde,Bråk,1
-2017,02,Okänt delområde,Fylleri/LOB,1
 2017,02,Okänt delområde,Inbrott,1
 2017,02,Okänt delområde,Larm Överfall,1
 2017,02,Okänt delområde,Misshandel,2
@@ -177,16 +184,15 @@ year,month,geography_group,type_original,event_count
 2017,02,Okänt delområde,Olaga hot,1
 2017,02,Okänt delområde,Rattfylleri,2
 2017,02,Okänt delområde,Sammanfattning natt,3
-2017,02,Okänt delområde,Stöld,3
+2017,02,Okänt delområde,Stöld,2
 2017,02,Okänt delområde,"Stöld,  försök",1
 2017,02,Okänt delområde,Stöld/inbrott,1
 2017,02,Okänt delområde,Trafikbrott,1
-2017,02,Okänt delområde,Trafikhinder,2
+2017,02,Okänt delområde,Trafikhinder,1
 2017,02,Okänt delområde,Trafikkontroll,1
 2017,02,Okänt delområde,Trafikolycka,7
 2017,02,Okänt delområde,"Trafikolycka,  personskada",2
 2017,02,Okänt delområde,"Trafikolycka,  vilt",6
-2017,02,Okänt delområde,Övrigt,1
 2017,02,Porsön,Trafikolycka,1
 2017,02,Råneå,Trafikolycka,1
 2017,02,Råneå,"Trafikolycka,  personskada",1
@@ -198,6 +204,7 @@ year,month,geography_group,type_original,event_count
 2017,03,Bergnäset,Trafikolycka,1
 2017,03,Bergviken,Bråk,1
 2017,03,Björkskatan,Brand,1
+2017,03,Centrum,Fylleri/LOB,1
 2017,03,Gammelstad,Trafikhinder,1
 2017,03,Hertsön,Brand,1
 2017,03,Hertsön,Bråk,1
@@ -209,7 +216,7 @@ year,month,geography_group,type_original,event_count
 2017,03,Okänt delområde,Bråk,1
 2017,03,Okänt delområde,Detonation,4
 2017,03,Okänt delområde,Djur skadat/omhändertaget,1
-2017,03,Okänt delområde,Fylleri/LOB,3
+2017,03,Okänt delområde,Fylleri/LOB,2
 2017,03,Okänt delområde,Kontroll person/fordon,1
 2017,03,Okänt delområde,Misshandel,2
 2017,03,Okänt delområde,Olaga hot,2
@@ -234,6 +241,7 @@ year,month,geography_group,type_original,event_count
 2017,04,Björkskatan,"Farligt föremål,  misstänkt",1
 2017,04,Björkskatan,Skadegörelse,1
 2017,04,Björkskatan,Uppdatering,1
+2017,04,Centrum,Narkotikabrott,1
 2017,04,Hertsön,Narkotikabrott,2
 2017,04,Hertsön,Trafikbrott,1
 2017,04,Mjölkudden,Sammanfattning förmiddag,1
@@ -242,7 +250,6 @@ year,month,geography_group,type_original,event_count
 2017,04,Okänt delområde,Brand,1
 2017,04,Okänt delområde,Fylleri/LOB,4
 2017,04,Okänt delområde,Kontroll person/fordon,2
-2017,04,Okänt delområde,Narkotikabrott,1
 2017,04,Okänt delområde,Rattfylleri,4
 2017,04,Okänt delområde,Sammanfattning natt,1
 2017,04,Okänt delområde,Skadegörelse,2
@@ -301,6 +308,7 @@ year,month,geography_group,type_original,event_count
 2017,05,Örnäset,Snatteri,1
 2017,06,Bergviken,Försvunnen person,1
 2017,06,Bergviken,Skadegörelse,1
+2017,06,Centrum,Trafikolycka,1
 2017,06,Hertsön,"Motorfordon,  stöld",1
 2017,06,Karlsvik,Trafikkontroll,1
 2017,06,Notviken,Trafikbrott,1
@@ -317,7 +325,7 @@ year,month,geography_group,type_original,event_count
 2017,06,Okänt delområde,Stöld,1
 2017,06,Okänt delområde,Stöld/inbrott,1
 2017,06,Okänt delområde,Trafikbrott,3
-2017,06,Okänt delområde,Trafikolycka,2
+2017,06,Okänt delområde,Trafikolycka,1
 2017,06,Okänt delområde,"Trafikolycka,  personskada",1
 2017,06,Okänt delområde,"Trafikolycka,  singel",1
 2017,06,Okänt delområde,"Trafikolycka,  smitning från",2
