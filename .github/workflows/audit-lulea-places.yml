@@ -8,6 +8,7 @@ on:
       - "scripts/audit_lulea_unknown_landmarks.py"
       - "scripts/audit_lulea_context.py"
       - "scripts/build_lulea_districts.py"
+      - "scripts/validate_lulea_innerstad_diff.py"
       - ".github/workflows/audit-lulea-places.yml"
 permissions:
   contents: write
@@ -22,6 +23,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Validate Innerstaden change against main
+        if: github.ref != 'refs/heads/main'
+        run: |
+          git fetch origin main
+          python scripts/validate_lulea_innerstad_diff.py
       - run: python scripts/audit_lulea_places.py
       - run: python scripts/audit_lulea_unknown.py
       - run: python scripts/audit_lulea_unknown_landmarks.py
