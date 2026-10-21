@@ -1,16 +1,7 @@
 event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
-16236,Willys,1,1,"Luleå Willys, Luleå, Norrbottens län",2017
-17760,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2017
-23113,Coop Norrbotten Arena / Coop Arena,1,1,"Luleå Coop Arena, Luleå, Norrbottens län",2017
 26080,Coop Forum,1,1,"Luleå Coop Forum, Storhedsvägen, Luleå, Norrbottens län",2017
-32157,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2017
-35153,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2017
 38987,Coop Forum,0,1,"Luleå Storhedsvägen, Luleå, Norrbottens län",2017
 41946,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2017
-42092,ICA Maxi,1,1,"Norrbotten Luleå, Ica Maxi, Norrbotten, Norrbottens län",2017
-64412,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2018
-69426,Coop Norrbotten Arena / Coop Arena,1,1,"Luleå Coop Arena, Norrbotten, Luleå, Norrbottens län",2018
-69485,Coop Norrbotten Arena / Coop Arena,1,1,"Luleå Coop Arena, Luleå, Norrbottens län",2018
 69718,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2018
 70008,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2018
 73502,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2018
@@ -18,16 +9,13 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 99014,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2018
 99941,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2018
 101895,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2019
-102363,Skutviken,1,1,"Luleå Delfingatan, Skutviken, Luleå, Norrbottens län",2019
 107218,Stadshuset,1,1,"Luleå Stadshuset, Luleå, Norrbottens län",2019
-109066,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2019
 110841,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 126104,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 126945,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 133010,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2019
 148053,Gymnasiebyn,0,1,"Luleå Café Samt, Luleå, Norrbottens län",2020
 163267,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2020
-214732,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2021
 234585,Luleå Hockey,0,1,"Norrbottens län Norrbotten, Luleå, Färjestad, Norrbottens län",2022
 266436,Busstationen,0,1,"Luleå Luleå, Norrbottens län",2023
 277192,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2023
@@ -43,7 +31,3 @@ event_id,platsnamn,platsfalt,loptext,ursprungligt_platsfalt,ar
 307144,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2025
 431025,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2025
 500967,Järnvägsstationen,0,1,"Luleå Luleå, Norrbottens län",2026
-501829,Skutviken,0,1,"Luleå Luleå, Norrbottens län",2026
-503211,Skutviken,1,1,"Luleå Skutviken, Luleå, Norrbottens län",2026
-509884,Skutviken,0,1,"Luleå Luleå, Norrbottens län",2026
-510713,Skutviken,0,1,"Norrbottens län Luleå, Norrbottens län",2026

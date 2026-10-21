@@ -16,25 +16,25 @@ sunderbyn,0,11,11,Sunderbyn,Endast löptext - osäkert
 bensbyvagen,1,8,9,,Verifiera händelseplats
 lulea gammelstadsvagen,9,0,9,,Verifiera händelseplats
 mariebergsvagen,2,9,9,,Verifiera händelseplats
-alvsbyvagen,4,8,8,,Verifiera händelseplats
 haparandavagen,1,7,8,,Verifiera händelseplats
 lulea bjorkskataleden,8,0,8,,Verifiera händelseplats
 lulea haparandavagen,8,0,8,,Verifiera händelseplats
-delfingatan,1,7,7,,Verifiera händelseplats
 gammelstadsvagen,4,7,7,,Verifiera händelseplats
 lulea mariebergsvagen,7,0,7,,Verifiera händelseplats
 smedsbyvagen,0,7,7,,Endast löptext - osäkert
-lulea delfingatan,6,0,6,,Verifiera händelseplats
+delfingatan,1,6,6,,Verifiera händelseplats
 lulea nya gaddviksbron,6,0,6,,Verifiera händelseplats
 nya gaddviksbron,1,5,6,,Verifiera händelseplats
 storsandsvagen,0,6,6,,Endast löptext - osäkert
 alvbrovagen,2,5,5,,Verifiera händelseplats
 bjorsbyvagen,1,5,5,,Verifiera händelseplats
 lulea bjorsbyvagen,5,0,5,,Verifiera händelseplats
+lulea delfingatan,5,0,5,,Verifiera händelseplats
 lulea gamla gaddviksbron,5,0,5,,Verifiera händelseplats
 lulea storsandsvagen,5,0,5,,Verifiera händelseplats
 lulea tunastigen,5,0,5,,Verifiera händelseplats
 lulevagen,1,5,5,,Verifiera händelseplats
+alvsbyvagen,1,4,4,,Verifiera händelseplats
 avans byavag,1,4,4,,Verifiera händelseplats
 balingevagen,1,4,4,,Verifiera händelseplats
 busstationen,0,4,4,Centrum,Endast löptext - osäkert
@@ -56,7 +56,6 @@ gaddviksbron,0,3,3,,Endast löptext - osäkert
 jarnvagsstationen,0,3,3,Centrum,Endast löptext - osäkert
 korsningen gammelstadsvagen,0,3,3,,Endast löptext - osäkert
 kronan,0,3,3,Kronan,Endast löptext - osäkert
-lulea alvsbyvagen,3,0,3,,Verifiera händelseplats
 lulea backgatan,3,0,3,,Verifiera händelseplats
 lulea svartskatavagen,3,0,3,,Verifiera händelseplats
 lulsundsgatan,1,3,3,,Verifiera händelseplats
@@ -79,13 +78,13 @@ ett flygplan,0,2,2,,Endast löptext - osäkert
 for drograttfylleri haparandavagen,0,2,2,,Endast löptext - osäkert
 for drograttfylleri mjolkuddsvagen,0,2,2,,Endast löptext - osäkert
 garage angesbyvagen,0,2,2,,Endast löptext - osäkert
-grusvag,0,2,2,,Endast löptext - osäkert
 hjortstigen,0,2,2,,Endast löptext - osäkert
 industrivagen industrivagen,0,2,2,,Endast löptext - osäkert
 klingsbovagen,0,2,2,,Endast löptext - osäkert
 korsningen bensbyvagen,0,2,2,,Endast löptext - osäkert
 langs gamla lovskarsgatan,0,2,2,,Endast löptext - osäkert
 lulea alviksvagen,2,0,2,,Verifiera händelseplats
+lulea alvsbyvagen,2,0,2,,Verifiera händelseplats
 lulea angesbyvagen,2,0,2,,Verifiera händelseplats
 lulea arcusvagen,2,0,2,,Verifiera händelseplats
 lulea avans byavag,2,0,2,,Verifiera händelseplats
@@ -104,7 +103,6 @@ lulea sunderbyvagen,2,0,2,,Verifiera händelseplats
 lulea universitetsvagen,2,0,2,,Verifiera händelseplats
 lulea valorvagen,2,0,2,,Verifiera händelseplats
 malmhamnsvagen,0,2,2,,Endast löptext - osäkert
-mattsundsvagen,1,2,2,,Verifiera händelseplats
 orarnavagen,1,2,2,,Verifiera händelseplats
 prastgatan,0,2,2,Centrum,Endast löptext - osäkert
 rikvag,0,2,2,,Endast löptext - osäkert
@@ -167,7 +165,6 @@ for rattfylleri tunastigen,0,1,1,,Endast löptext - osäkert
 forare tranbacksvagen,0,1,1,,Endast löptext - osäkert
 foretagslokaler langs bjorsbyvagen,0,1,1,,Endast löptext - osäkert
 forrad angesbyvagen,0,1,1,,Endast löptext - osäkert
-forrad snalltorpsvagen,0,1,1,,Endast löptext - osäkert
 forskarvagen,0,1,1,,Endast löptext - osäkert
 forvirrad herre mjolkuddsvagen,0,1,1,,Endast löptext - osäkert
 fraktarvagen,0,1,1,,Endast löptext - osäkert
@@ -187,6 +184,7 @@ gatan krusbarsstigen,0,1,1,,Endast löptext - osäkert
 genom isen likskarsvagen,0,1,1,,Endast löptext - osäkert
 grangatan,0,1,1,,Endast löptext - osäkert
 grasorvagen,0,1,1,,Endast löptext - osäkert
+grusvag,0,1,1,,Endast löptext - osäkert
 gunnarsbyvagen,0,1,1,,Endast löptext - osäkert
 halls efter timmerleden,0,1,1,,Endast löptext - osäkert
 handleden,0,1,1,,Endast löptext - osäkert
@@ -242,7 +240,6 @@ lag efter lejdevagen,0,1,1,,Endast löptext - osäkert
 lagenhet dvarggrand,0,1,1,,Endast löptext - osäkert
 lagenhet tunastigen,0,1,1,,Endast löptext - osäkert
 lan avans byavag,1,0,1,,Verifiera händelseplats
-lan mattsunds byavag,1,0,1,,Verifiera händelseplats
 langbackavagen,0,1,1,,Endast löptext - osäkert
 langmyrvagen,0,1,1,,Endast löptext - osäkert
 langnasvagen,0,1,1,,Endast löptext - osäkert
@@ -320,7 +317,6 @@ lulea rektorsgatan,1,0,1,,Verifiera händelseplats
 lulea repslagargatan,1,0,1,,Verifiera händelseplats
 lulea rudtjarnsvagen,1,0,1,,Verifiera händelseplats
 lulea sjukhusvagen,1,0,1,,Verifiera händelseplats
-lulea snalltorpsvagen,1,0,1,,Verifiera händelseplats
 lulea sommargatan,1,0,1,,Verifiera händelseplats
 lulea spovgrand,1,0,1,,Verifiera händelseplats
 lulea stadsotorget,1,0,1,,Verifiera händelseplats
@@ -331,7 +327,6 @@ lulea sundomsvagen,1,0,1,,Verifiera händelseplats
 lulea tallvagen,1,0,1,,Verifiera händelseplats
 lulea teknikergatan,1,0,1,,Verifiera händelseplats
 lulea timmermansgatan,1,0,1,,Verifiera händelseplats
-lulea tjardalsvagen,1,0,1,,Verifiera händelseplats
 lulea tomtebovagen,1,0,1,,Verifiera händelseplats
 lulea torsvagen,1,0,1,,Verifiera händelseplats
 lulea tranbacksvagen,1,0,1,,Verifiera händelseplats
@@ -342,7 +337,7 @@ magnetitvagen,0,1,1,,Endast löptext - osäkert
 malmudden,0,1,1,Malmudden,Endast löptext - osäkert
 marknadsvagen,1,1,1,,Verifiera händelseplats
 masshedsvagen,0,1,1,,Endast löptext - osäkert
-mattsunds byavag,0,1,1,,Endast löptext - osäkert
+mattsundsvagen,0,1,1,,Endast löptext - osäkert
 med fyrhjuling fiskehamnsvagen,0,1,1,,Endast löptext - osäkert
 midsommarvagen,0,1,1,,Endast löptext - osäkert
 mjolkudden,0,1,1,Mjölkudden,Endast löptext - osäkert
@@ -395,7 +390,6 @@ singelolycka haparandavagen,0,1,1,,Endast löptext - osäkert
 singelolycka ornviksvagen,0,1,1,,Endast löptext - osäkert
 sjukhusvagen,0,1,1,,Endast löptext - osäkert
 skurholmen,0,1,1,Skurholmen,Endast löptext - osäkert
-snalltorpsvagen,0,1,1,,Endast löptext - osäkert
 sodra hamnleden,0,1,1,Centrum,Endast löptext - osäkert
 sodra vretvagen,0,1,1,,Endast löptext - osäkert
 som voltat varvsleden,0,1,1,,Endast löptext - osäkert
@@ -417,7 +411,6 @@ till gamla malmkajen,0,1,1,,Endast löptext - osäkert
 timmerleden,1,0,1,,Verifiera händelseplats
 timmermansgatan,0,1,1,,Endast löptext - osäkert
 timmermansgatan timmermansgatan,0,1,1,,Endast löptext - osäkert
-tjardalsvagen,0,1,1,,Endast löptext - osäkert
 tomtebovagen,0,1,1,,Endast löptext - osäkert
 torsvagen,0,1,1,,Endast löptext - osäkert
 trad angdalsrovagen,0,1,1,,Endast löptext - osäkert
