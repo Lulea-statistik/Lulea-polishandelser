@@ -54,6 +54,11 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             "candidate_sources": " | ".join(field for field, terms in source_matches.items() if terms),
             "matched_terms": " | ".join(matched),
             "review_priority": priority,
+            "evidence_relation": "Ej granskad: platsen kan avse händelse, färdväg eller omnämnande",
+            "review_decision": "",
+            "verified_district": "",
+            "verification_source": "",
+            "reviewer_note": "",
             "existing_group": UNKNOWN, "proposed_group": "",
             "review_status": "Manuell geografisk kontroll krävs",
             "review_note": "Platsfält kan avse väg, by eller verksamhet; ingen automatisk placering",
@@ -62,10 +67,12 @@ out.parent.mkdir(exist_ok=True)
 with out.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [
         "event_id","year","title_location","location_string","headline",
-        "candidate_sources","matched_terms","review_priority","existing_group","proposed_group","review_status","review_note"])
+        "candidate_sources","matched_terms","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
     w.writeheader()
     w.writerows(rows)
 print("Unknown Lulea placefield review rows:", len(rows))
 print("Unique event IDs:", len({r["event_id"] for r in rows}))
 from collections import Counter
 print("Review groups:", dict(sorted(Counter(r["review_priority"] for r in rows).items())))
+assert len(rows) == len({r["event_id"] for r in rows}), "Duplicate event IDs in candidate review"
+assert all(not r["proposed_group"] and not r["verified_district"] for r in rows), "Review must not invent classification"
