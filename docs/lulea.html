@@ -63,15 +63,17 @@ function applySeries(){
 }
 Promise.all([
  fetch('data/lulea_district_monthly.csv',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Ursprunglig stadsdelsdata HTTP '+r.status);return r.text()}),
- fetch('data/lulea_district_expanded_monthly.csv',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Expanderad stadsdelsdata HTTP '+r.status);return r.text()})
+ fetch('data/lulea_district_expanded_monthly.csv',{cache:'no-store'}).then(r=>r.ok?r.text():'')
 ]).then(([original,expanded])=>{
  originalData=csv(original).map(r=>({...r,event_count:+r.event_count||0}));
  expandedData=csv(expanded).map(r=>({...r,event_count:+r.event_count||0}));
- if(!originalData.length||!expandedData.length)throw Error('Tomt stadsdelsunderlag');
+ if(!originalData.length)throw Error('Tomt stadsdelsunderlag');
+ if(!expandedData.length){document.getElementById('seriesMode').value='original';document.getElementById('seriesMode').querySelector('option[value="expanded"]').disabled=true;document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';}
  for(const id of ['geo','year','kind'])document.getElementById(id).addEventListener('change',render);
  document.getElementById('seriesMode').addEventListener('change',applySeries);
  document.getElementById('loading').hidden=true;
  document.getElementById('dashboard').hidden=false;
  applySeries();
+ if(!expandedData.length)document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';
 }).catch(err=>{document.getElementById('loading').textContent='Stadsdelsstatistik kan ännu inte visas: '+err.message});
 </script></body></html>
