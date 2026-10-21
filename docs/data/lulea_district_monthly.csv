@@ -609,6 +609,7 @@ year,month,geography_group,type_original,event_count
 2018,01,Bergnäset,Trafikkontroll,1
 2018,01,Björkskatan,Trafikkontroll,1
 2018,01,Centrum,"Motorfordon,  stöld",2
+2018,01,Centrum,Narkotikabrott,1
 2018,01,Centrum,Stöld,1
 2018,01,Centrum,Uppdatering,2
 2018,01,Flera stadsdelar i Luleå,Sammanfattning natt,1
@@ -627,7 +628,6 @@ year,month,geography_group,type_original,event_count
 2018,01,Okänt delområde,"Farligt föremål,  misstänkt",1
 2018,01,Okänt delområde,Fylleri/LOB,3
 2018,01,Okänt delområde,Kontroll person/fordon,1
-2018,01,Okänt delområde,Narkotikabrott,1
 2018,01,Okänt delområde,Olaga hot,1
 2018,01,Okänt delområde,Rattfylleri,2
 2018,01,Okänt delområde,Sammanfattning natt,2
@@ -659,6 +659,7 @@ year,month,geography_group,type_original,event_count
 2018,02,Björkskatan,Övrigt,1
 2018,02,Centrum,Fylleri/LOB,1
 2018,02,Centrum,Larm Överfall,1
+2018,02,Centrum,"Motorfordon,  stöld",1
 2018,02,Centrum,Stöld,1
 2018,02,Centrum,"Trafikolycka,  personskada",3
 2018,02,Hertsön,Rattfylleri,2
@@ -666,7 +667,6 @@ year,month,geography_group,type_original,event_count
 2018,02,Okänt delområde,Inbrott,1
 2018,02,Okänt delområde,Larm Överfall,1
 2018,02,Okänt delområde,Misshandel,1
-2018,02,Okänt delområde,"Motorfordon,  stöld",1
 2018,02,Okänt delområde,Olaga hot,1
 2018,02,Okänt delområde,Rattfylleri,2
 2018,02,Okänt delområde,Rån övrigt,1
