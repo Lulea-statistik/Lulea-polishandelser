@@ -110,6 +110,12 @@
     .type-option:hover,.type-option.selected{background:#eef3fb}
     .type-option.selected{font-weight:600}
     .type-empty{padding:10px;color:var(--muted);font-size:12px}
+    /* Behåll urval och nyckeltal synliga medan diagrammen skrollas. */
+    .sticky-summary{position:sticky;top:0;z-index:100;background:var(--bg);padding:8px 0 2px;box-shadow:0 7px 14px -12px rgba(17,32,49,.5)}
+    .sticky-summary .kpis{margin:10px 0 8px}
+    .sticky-summary .kpis .card{padding:10px 14px}
+    .sticky-summary .kpi-value{font-size:1.45rem;margin-top:3px}
+    @media(max-width:850px){.sticky-summary{position:static;box-shadow:none;padding:0}.sticky-summary .kpis{margin:18px 0}}
     .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:18px 0}
     .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
     .kpi-label{font-size:.8rem;color:var(--muted)}
@@ -209,6 +215,7 @@ button,input,select,textarea,table{font-family:var(--font-body)}
   <div id="loading" class="status">Läser in månadsdata…</div>
 
   <section id="dashboard" hidden>
+    <div class="sticky-summary">
     <div class="filters">
       <div>
         <label for="geo">Geografi</label>
@@ -246,6 +253,8 @@ button,input,select,textarea,table{font-family:var(--font-body)}
       </div>
     </div>
 
+    </div><!-- /sticky-summary -->
+
     <div class="grid2">
       <div class="card">
         <h2>Händelser per år</h2>
@@ -282,7 +291,7 @@ button,input,select,textarea,table{font-family:var(--font-body)}
         </div>
       </div>
       <div class="comparison-chartbox"><canvas id="areaComparisonChart"></canvas></div>
-      <p class="chart-note"><strong>OBS!</strong> Antalen per kommun är osäkra eftersom vissa polispubliceringar saknar säker kommunanknytning eller berör flera kommuner. Dessa kan inte fördelas entydigt mellan jämförelseområdena. Se diagrammet <a href="#unknownNorrbottenSection">Vad ingår i Okänd Norrbottenskommun?</a> längre ned. Norrbotten inkluderar dessutom Luleå, så de områdena är inte oberoende av varandra.</p>
+      <p class="chart-note"><strong>OBS!</strong> Antalen per kommun är osäkra eftersom vissa polispubliceringar saknar säker kommunanknytning eller berör flera kommuner. Dessa kan inte fördelas entydigt mellan jämförelseområdena. Se diagrammet <a href="#unknownNorrbottenSection">Händelser som inte kan tillskrivas endast en kommun</a> längre ned. Norrbotten inkluderar dessutom Luleå, så de områdena är inte oberoende av varandra.</p>
       <p class="chart-note">Diagrammet använder den expanderade serien och visar hur stor andel varje händelsekategori utgör av samtliga tolkade händelser i respektive jämförelseområde. <strong>Norrbotten</strong> avser hela länet, inklusive poster där kommunen inte kunnat bestämmas säkert, poster som berör flera kommuner i länet samt poster som samtidigt berör Norrbotten och övriga Sverige. Poster som säkert berör två eller fler Norrbottenskommuner redovisas gemensamt som <strong>Flera kommuner i Norrbotten</strong>. <strong>Norrbotten / Övriga Sverige</strong> används när posten tydligt spänner över länsgränsen men inte kan delas upp. <strong>Övriga Sverige</strong> är exkluderat ur statistik, diagram och nyckeltal eftersom gruppen även innehåller regional administration och historiska metadatafel. Posterna finns kvar i rådata för kvalitetskontroll. Diagrammet följer filtret År och vald kategorisering, men inte sidans vanliga Geografi- eller Händelsetypsfilter.</p>
     </div>
 
