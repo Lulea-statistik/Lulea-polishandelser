@@ -24,7 +24,8 @@ ALIASES = {
   "gultzauudden", "gültzauudden", "gultzaudden", "gültsauudden", "vastra stranden", "västra stranden", "oscarsvarv",
   "storgatan", "smedjegatan", "radstugatan", "rådstugatan", "radstugugatan", "rådstugugatan",
   "jarnvagsstation", "järnvägsstation", "jarnvagsstationen", "järnvägsstationen", "lulea centralstation", "luleå centralstation",
-  "kopmantorget", "köpmantorget",
+  "kopmantorget", "köpmantorget", "kungsgatan", "stationsgatan", "skeppsbrogatan", "sandviksgatan",
+  "busstationen", "busstation", "lulea busstation", "luleå busstation",
  ],
  "Gammelstad": ["gammelstad"],
  "Hertsön": ["hertson", "hertsön"],
@@ -33,7 +34,7 @@ ALIASES = {
  "Karlsvik": ["karlsvik"],
  "Kronan": ["kronan"],
  "Lerbäcken": ["lerbacken", "lerbäcken"],
- "Mjölkudden": ["mjolkudden", "mjölkudden"],
+ "Mjölkudden": ["mjolkudden", "mjölkudden", "lulea mjolkudden", "luleå mjölkudden"],
  "Munksund": ["munksund"],
  "Notviken": ["notviken"],
  "Porsön": ["porson", "porsön"],
@@ -45,16 +46,22 @@ ALIASES = {
  "Örnäset": ["ornaset", "örnäset"],
 }
 UNKNOWN = "Okänt delområde"
+MULTI = "Flera områden i Luleå"
+MULTI_ROADS = ["svartovagen", "hertsovagen"]
 def normalize(s):
  s = unicodedata.normalize("NFKD",str(s or "").casefold())
  s = "".join(c for c in s if not unicodedata.combining(c))
  return re.sub(r"\s+"," ",s)
+ROAD_PATTERNS = [re.compile(r"(?<![a-z])"+re.escape(normalize(road))+r"(?![a-z])") for road in MULTI_ROADS]
 PATTERNS = {name:[re.compile(r"(?<![a-z])"+re.escape(normalize(alias))+r"(?![a-z])") for alias in al] for name,al in ALIASES.items()}
 def district(row):
  # Do not use narrative / content: it may mention several places not at the event site.
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
- return next(iter(matches)) if len(matches)==1 else UNKNOWN
+ if len(matches)>1: return MULTI
+ if len(matches)==1: return next(iter(matches))
+ if any(p.search(text) for p in ROAD_PATTERNS): return MULTI
+ return UNKNOWN
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
  counts=defaultdict(int)
