@@ -17,7 +17,7 @@ LIMIT=80*1024*1024
 def year_for(row):
     for key in ("year","published_datetime","date"):
         s=str(row.get(key) or "")
-        m=re.match(r"^(19|20)\\d{2}",s)
+        m=re.match(r"^(19|20)\d{2}",s)
         if m:return m.group(0)
     return "unknown"
 def identity(row):
@@ -39,7 +39,7 @@ def atomic_jsonl(path,rows):
     fd,tmp=tempfile.mkstemp(prefix=".raw_",dir=path.parent)
     try:
         with os.fdopen(fd,"w",encoding="utf-8") as f:
-            for row in rows:f.write(json.dumps(row,ensure_ascii=False,sort_keys=True)+"\\n")
+            for row in rows:f.write(json.dumps(row,ensure_ascii=False,sort_keys=True)+"\n")
         if os.path.getsize(tmp)>LIMIT:raise ValueError(f"Partition too large ({path})")
         os.replace(tmp,path)
     finally:
@@ -80,7 +80,7 @@ def partition(input_rows=(),bootstrap=False):
         older=json.loads(MANIFEST.read_text(encoding="utf-8"))
         manifest["raw_source_rows_on_first_migration"]=older.get("raw_source_rows_on_first_migration",0)
         manifest["legacy_sha256"]=older.get("legacy_sha256")
-    MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     observed=sum(1 for f in PARTS.glob("*.jsonl") for _ in read_records(f))
     if observed!=total:raise ValueError(f"Raw partition QA failed: {observed} vs {total}")
     print("Partition QA OK:",len(byyear),"years,",total,"raw rows; legacy input",legacy_rows,", added",incoming)
