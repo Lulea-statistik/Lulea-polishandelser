@@ -1062,7 +1062,7 @@ function updateAreaComparisonChart(){
 function filteredQuietSummaryRows(){
   const g=selected('geo'), y=selected('year');
   return quietSummaryRows.filter(r=>
-    (g==='Alla'||r.geography_group===g) &&
+    geographyMatches(r,g) &&
     (y==='Alla'||r.year===y)
   );
 }
@@ -1112,7 +1112,7 @@ function updateCalendarPeriod(){
   if(!target||!info)return;
   const geo=selected('geo'),year=selected('year');
   const data=calendarPeriodRows.filter(r=>
-    (geo==='Alla'||r.geography_group===geo)&&(year==='Alla'||r.year===year));
+    geographyMatches(r,geo)&&(year==='Alla'||r.year===year));
   const periods=['Eftermiddag','Kväll','Kväll/natt','Natt'];
   const days=['Mån','Tis','Ons','Tor','Fre','Lör','Sön'];
   const records=periods.flatMap(period=>days.map((day,i)=>{
@@ -1144,7 +1144,7 @@ function updateWeekdayPeriod(){
   if(!grid||!coverage)return;
   const geo=selected('geo'), year=selected('year'), type=selected('type'), field=typeField();
   const candidates=weekdayPeriodRows.filter(r=>
-    (geo==='Alla'||r.geography_group===geo)&&
+    geographyMatches(r,geo)&&
     (year==='Alla'||r.year===year)
   );
   // Type filters only apply to incidents; quiet reports have no incident type.
