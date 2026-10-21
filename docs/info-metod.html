@@ -92,6 +92,7 @@ button,input,select,textarea,table{font-family:var(--font-body)}
       </div>
       <nav aria-label="Huvudmeny">
         <a href="./">Statistik</a>
+        <a href="lulea.html">Luleå</a>
         <a href="info-metod.html" aria-current="page">Info & metod</a>
       </nav>
     </div>
@@ -129,6 +130,13 @@ button,input,select,textarea,table{font-family:var(--font-body)}
       </ul>
     </section>
   </div>
+
+  <section class="card" id="lulea-stadsdelar">
+    <h2>Luleå – stadsdelar och delområden</h2>
+    <p>På sidan <a href="lulea.html">Luleå</a> visas publicerade polishändelser för Luleå kommun, fördelade på stadsdelar och delområden. Denna indelning baseras på uttryckliga platsnamn i händelsernas platsfält (<code>title_location</code> och <code>location_string</code>), inte på koordinater eller officiella stadsdelsgränser.</p>
+    <p>Exempelvis kopplas både <em>Centrum</em> och <em>Innerstaden</em> till kategorin Centrum. Om ett platsnamn saknas, är tvetydigt eller ger motstridiga träffar redovisas händelsen som <em>Okänt delområde</em>. Gatuadresser och namn som enbart förekommer i löpande händelsebeskrivningar används inte automatiskt för att bestämma stadsdel.</p>
+    <p>Stadsdelssidan räknar ursprungliga unika händelseposter. Den skiljer sig därmed från huvudsidans expanderade händelseserie, där konkreta underhändelser i sammanfattningar också kan räknas. Antalen på sidorna ska inte jämföras direkt. Osäker geografisk täckning innebär också att få registrerade händelser i en stadsdel inte behöver motsvara få faktiska händelser där.</p>
+  </section>
 
   <section class="card">
     <h2>Metod</h2>
