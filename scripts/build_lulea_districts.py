@@ -67,13 +67,26 @@ def normalize(s):
  return re.sub(r"\s+"," ",s)
 ROAD_PATTERNS = [re.compile(r"(?<![a-z])"+re.escape(normalize(road))+r"(?![a-z])") for road in MULTI_ROADS]
 PATTERNS = {name:[re.compile(r"(?<![a-z])"+re.escape(normalize(alias))+r"(?![a-z])") for alias in al] for name,al in ALIASES.items()}
+# Den snäva listan är uttryckligen godkänd för Centrum; ett naket omnämnande
+# i löptexten räcker inte. "till/från busstationen" ska inte räknas.
+NARRATIVE_CENTRUM = re.compile(
+ r"(?<![a-z])(?:i|pa|vid|intill|utanfor|inne i|omkring|kring)\\s+"
+ r"(?:lulea\\s+)?(?:innerstaden|centrum|busstationen|busstation)(?![a-z])"
+)
 def district(row):
- # Do not use narrative / content: it may mention several places not at the event site.
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
  if len(matches)>1: return MULTI
  if len(matches)==1: return next(iter(matches))
  if any(p.search(text) for p in ROAD_PATTERNS): return MULTI
+ # Använd löptext bara om platsfält inte redan ger säker stadsdel.
+ narrative=normalize(" ".join((row.get(k) or "") for k in ("headline","description","content")))
+ if NARRATIVE_CENTRUM.search(narrative):
+  # Om löptexten också innehåller en annan namngiven stadsdel lämnas
+  # händelsen okänd: vi vet inte vilken plats som avser händelsen.
+  others={name for name,pats in PATTERNS.items() if name!="Centrum" and any(p.search(narrative) for p in pats)}
+  if not others and not any(p.search(narrative) for p in ROAD_PATTERNS):
+   return "Centrum"
  return UNKNOWN
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
