@@ -62,9 +62,10 @@ def main():
    if eid:
     if eid in ids:continue
     ids.add(eid)
-   date=(row.get("date") or row.get("datetime") or row.get("event_time") or row.get("published") or "").strip()
-   if not re.match(r"^\d{4}-\d{2}",date):continue
-   year,month=date[:7].split("-")
+   year=(row.get("year") or "").strip()
+   month=(row.get("month") or "").strip()
+   if not year.isdigit() or not month.isdigit() or not (1<=int(month)<=12):continue
+   month=f"{int(month):02d}"
    typ=(row.get("type_original") or "Okänd händelsetyp").strip()
    counts[(year,month,district(row),typ)]+=1
  OUT.parent.mkdir(parents=True,exist_ok=True)
