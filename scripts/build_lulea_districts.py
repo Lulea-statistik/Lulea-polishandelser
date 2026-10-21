@@ -15,7 +15,8 @@ SOURCE = ROOT / "data/events.csv"
 OUT = ROOT / "docs/data/lulea_district_monthly.csv"
 
 ALIASES = {
- "Bergnäset": ["bergnaset", "bergnäset"],
+ "Bergnäset": ["bergnaset", "bergnäset", "lulea flygplats", "luleå flygplats", "kallax flygplats", "f21", "f 21", "flottilj f21", "flygplatsen"],
+ "Antnäs": ["antnas", "antnäs"],
  "Bergviken": ["bergviken", "midgardsvagen", "midgårdsvägen", "delfinvagen", "delfinvägen", "hummergatan"],
  "Björkskatan": ["bjorkskatan", "björkskatan", "vaderleden", "väderleden"],
  "Centrum": [
@@ -53,14 +54,15 @@ ALIASES = {
  "Porsön": ["porson", "porsön"],
  "Råneå": ["ranea", "råneå"],
  "Skurholmen": ["skurholmen"],
- "Storheden": ["storheden"],
+ "Storheden": ["storheden", "ica maxi", "ica maxi storheden", "coop forum storheden"],
+ "Skutviken": ["skutviken", "coop arena", "coop norrbotten arena"],
  "Sunderbyn": ["sunderbyn"],
  "Svartöstaden": ["svartostaden", "svartöstaden"],
  "Örnäset": ["ornaset", "örnäset"],
 }
 UNKNOWN = "Okänt delområde"
 MULTI = "Flera stadsdelar i Luleå"
-MULTI_ROADS = ["svartovagen", "hertsovagen", "bergnasbron", "bergnäsbron"]
+MULTI_ROADS = ["willys", "svartovagen", "hertsovagen", "bergnasbron", "bergnäsbron"]
 def normalize(s):
  s = unicodedata.normalize("NFKD",str(s or "").casefold())
  s = "".join(c for c in s if not unicodedata.combining(c))
@@ -76,7 +78,7 @@ NARRATIVE_CENTRUM = re.compile(
 # Snäva områdesnamn med tydlig platsinledning. Gatunamn från aliases
 # läggs inte automatiskt till här: de kräver särskild adressgranskning.
 NARRATIVE_DISTRICT_NAMES={
- "Bergnäset":["bergnaset"],"Bergviken":["bergviken"],
+ "Bergnäset":["bergnaset","flygplatsen","lulea flygplats","f21","f 21"],"Antnäs":["antnas"],"Skutviken":["skutviken","coop arena"],"Bergviken":["bergviken"],
  "Björkskatan":["bjorkskatan"],"Gammelstad":["gammelstad"],
  "Hertsön":["hertson"],"Hertsöheden":["hertsoheden"],
  "Kallkällan":["kallkallan"],"Karlsvik":["karlsvik"],
