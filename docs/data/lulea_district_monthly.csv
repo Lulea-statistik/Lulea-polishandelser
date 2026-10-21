@@ -117,6 +117,7 @@ year,month,geography_group,type_original,event_count
 2017,01,Centrum,Knivlagen,1
 2017,01,Centrum,Kontroll person/fordon,1
 2017,01,Centrum,Rattfylleri,3
+2017,01,Centrum,Stöld/inbrott,1
 2017,01,Centrum,Våld/hot mot tjänsteman,1
 2017,01,Flera områden i Luleå,Trafikhinder,1
 2017,01,Gammelstad,Narkotikabrott,1
@@ -140,7 +141,7 @@ year,month,geography_group,type_original,event_count
 2017,01,Okänt delområde,Sammanfattning kväll och natt,2
 2017,01,Okänt delområde,Sammanfattning natt,1
 2017,01,Okänt delområde,Sjukdom/olycksfall,1
-2017,01,Okänt delområde,Stöld/inbrott,2
+2017,01,Okänt delområde,Stöld/inbrott,1
 2017,01,Okänt delområde,Trafikkontroll,1
 2017,01,Okänt delområde,Trafikolycka,10
 2017,01,Okänt delområde,"Trafikolycka,  personskada",1
@@ -286,6 +287,7 @@ year,month,geography_group,type_original,event_count
 2017,05,Centrum,Bedrägeri,1
 2017,05,Centrum,Fylleri/LOB,1
 2017,05,Centrum,Misshandel,1
+2017,05,Centrum,Ofredande/förargelse,1
 2017,05,Centrum,Rån,1
 2017,05,Centrum,Sammanfattning kväll,1
 2017,05,Centrum,Sammanfattning natt,1
@@ -304,7 +306,6 @@ year,month,geography_group,type_original,event_count
 2017,05,Okänt delområde,Bråk,2
 2017,05,Okänt delområde,Fylleri/LOB,2
 2017,05,Okänt delområde,Misshandel,1
-2017,05,Okänt delområde,Ofredande/förargelse,1
 2017,05,Okänt delområde,Rattfylleri,6
 2017,05,Okänt delområde,Sammanfattning kväll och natt,1
 2017,05,Okänt delområde,Sammanfattning natt,1
@@ -486,6 +487,7 @@ year,month,geography_group,type_original,event_count
 2017,10,Bergnäset,Rattfylleri,1
 2017,10,Bergviken,Bråk,1
 2017,10,Flera områden i Luleå,Sammanfattning natt,1
+2017,10,Flera områden i Luleå,Trafikbrott,1
 2017,10,Gammelstad,Knivlagen,1
 2017,10,Gammelstad,Trafikkontroll,1
 2017,10,Gammelstad,Trafikolycka,1
@@ -515,7 +517,6 @@ year,month,geography_group,type_original,event_count
 2017,10,Okänt delområde,Övrigt,3
 2017,10,Porsön,Fylleri/LOB,1
 2017,10,Porsön,Misshandel,1
-2017,10,Porsön,Trafikbrott,1
 2017,10,Råneå,Övrigt,1
 2017,10,Skurholmen,Trafikbrott,1
 2017,10,Storheden,Försvunnen person,1
@@ -531,6 +532,7 @@ year,month,geography_group,type_original,event_count
 2017,11,Björkskatan,Trafikolycka,1
 2017,11,Björkskatan,"Trafikolycka,  personskada",1
 2017,11,Centrum,Bråk,1
+2017,11,Centrum,Rattfylleri,1
 2017,11,Centrum,Stöld,1
 2017,11,Centrum,Trafikbrott,1
 2017,11,Centrum,"Trafikolycka,  personskada",1
@@ -551,7 +553,7 @@ year,month,geography_group,type_original,event_count
 2017,11,Okänt delområde,Misshandel,1
 2017,11,Okänt delområde,"Motorfordon,  stöld",1
 2017,11,Okänt delområde,Olaga hot,1
-2017,11,Okänt delområde,Rattfylleri,3
+2017,11,Okänt delområde,Rattfylleri,2
 2017,11,Okänt delområde,Sammanfattning kväll,1
 2017,11,Okänt delområde,Sammanfattning natt,1
 2017,11,Okänt delområde,Skadegörelse,1
@@ -607,6 +609,7 @@ year,month,geography_group,type_original,event_count
 2018,01,Björkskatan,Trafikkontroll,1
 2018,01,Centrum,"Motorfordon,  stöld",2
 2018,01,Centrum,Stöld,1
+2018,01,Centrum,Uppdatering,2
 2018,01,Flera områden i Luleå,Sammanfattning natt,1
 2018,01,Flera områden i Luleå,Trafikolycka,1
 2018,01,Gammelstad,"Stöld,  ringa",1
@@ -635,7 +638,6 @@ year,month,geography_group,type_original,event_count
 2018,01,Okänt delområde,"Trafikolycka,  personskada",1
 2018,01,Okänt delområde,"Trafikolycka,  singel",1
 2018,01,Okänt delområde,"Trafikolycka,  vilt",2
-2018,01,Okänt delområde,Uppdatering,2
 2018,01,Okänt delområde,Våld/hot mot tjänsteman,1
 2018,01,Okänt delområde,Övrigt,2
 2018,01,Porsön,Misshandel,1
@@ -890,6 +892,7 @@ year,month,geography_group,type_original,event_count
 2018,08,Bergviken,Trafikkontroll,2
 2018,08,Centrum,"Stöld,  ringa",1
 2018,08,Centrum,Trafikkontroll,1
+2018,08,Centrum,Trafikolycka,1
 2018,08,Flera områden i Luleå,Trafikkontroll,2
 2018,08,Notviken,Trafikkontroll,1
 2018,08,Okänt delområde,Brand,1
@@ -905,7 +908,7 @@ year,month,geography_group,type_original,event_count
 2018,08,Okänt delområde,Trafikbrott,1
 2018,08,Okänt delområde,Trafikhinder,1
 2018,08,Okänt delområde,Trafikkontroll,6
-2018,08,Okänt delområde,Trafikolycka,2
+2018,08,Okänt delområde,Trafikolycka,1
 2018,08,Okänt delområde,"Trafikolycka,  vilt",1
 2018,08,Okänt delområde,Övrigt,1
 2018,08,Råneå,Uppdatering,1
@@ -1366,14 +1369,14 @@ year,month,geography_group,type_original,event_count
 2019,06,Storheden,Trafikolycka,1
 2019,06,Örnäset,Rattfylleri,1
 2019,07,Björkskatan,Narkotikabrott,1
-2019,07,Centrum,Fylleri/LOB,1
+2019,07,Centrum,Fylleri/LOB,2
 2019,07,Flera områden i Luleå,Trafikkontroll,1
 2019,07,Hertsön,Fylleri/LOB,1
 2019,07,Notviken,Olovlig körning,1
 2019,07,Notviken,Trafikbrott,1
 2019,07,Okänt delområde,Brand,2
 2019,07,Okänt delområde,Bråk,1
-2019,07,Okänt delområde,Fylleri/LOB,8
+2019,07,Okänt delområde,Fylleri/LOB,7
 2019,07,Okänt delområde,Försvunnen person,2
 2019,07,Okänt delområde,"Inbrott,  försök",2
 2019,07,Okänt delområde,Knivlagen,1
@@ -1556,6 +1559,7 @@ year,month,geography_group,type_original,event_count
 2019,12,Bergnäset,Inbrott,1
 2019,12,Bergnäset,"Mord/dråp,  försök",1
 2019,12,Björkskatan,Rattfylleri,1
+2019,12,Centrum,Fylleri/LOB,1
 2019,12,Centrum,Trafikbrott,1
 2019,12,Flera områden i Luleå,Trafikolycka,1
 2019,12,Gammelstad,Trafikhinder,1
@@ -1572,7 +1576,7 @@ year,month,geography_group,type_original,event_count
 2019,12,Notviken,"Trafikolycka,  singel",1
 2019,12,Okänt delområde,Arbetsplatsolycka,1
 2019,12,Okänt delområde,Bedrägeri,1
-2019,12,Okänt delområde,Fylleri/LOB,4
+2019,12,Okänt delområde,Fylleri/LOB,3
 2019,12,Okänt delområde,Försvunnen person,1
 2019,12,Okänt delområde,Inbrott,1
 2019,12,Okänt delområde,Misshandel,1
@@ -2305,7 +2309,7 @@ year,month,geography_group,type_original,event_count
 2021,07,Björkskatan,Trafikkontroll,1
 2021,07,Centrum,Försvunnen person,1
 2021,07,Centrum,Trafikkontroll,1
-2021,07,Centrum,Trafikolycka,1
+2021,07,Centrum,Trafikolycka,2
 2021,07,Flera områden i Luleå,Trafikkontroll,1
 2021,07,Gammelstad,Trafikbrott,1
 2021,07,Mjölkudden,"Motorfordon,  anträffat stulet",1
@@ -2321,7 +2325,7 @@ year,month,geography_group,type_original,event_count
 2021,07,Okänt delområde,Stöld,3
 2021,07,Okänt delområde,Trafikbrott,4
 2021,07,Okänt delområde,Trafikkontroll,1
-2021,07,Okänt delområde,Trafikolycka,2
+2021,07,Okänt delområde,Trafikolycka,1
 2021,07,Porsön,Försvunnen person,1
 2021,07,Skurholmen,Rån väpnat,1
 2021,07,Storheden,Fylleri/LOB,1
@@ -3129,6 +3133,7 @@ year,month,geography_group,type_original,event_count
 2023,09,Bergviken,Trafikkontroll,1
 2023,09,Björkskatan,Stöld,1
 2023,09,Centrum,Trafikolycka,1
+2023,09,Centrum,"Trafikolycka,  singel",1
 2023,09,Flera områden i Luleå,Sammanfattning natt,1
 2023,09,Hertsön,Stöld,1
 2023,09,Okänt delområde,Bråk,1
@@ -3144,7 +3149,6 @@ year,month,geography_group,type_original,event_count
 2023,09,Okänt delområde,Trafikkontroll,1
 2023,09,Okänt delområde,Trafikolycka,3
 2023,09,Okänt delområde,"Trafikolycka,  personskada",1
-2023,09,Okänt delområde,"Trafikolycka,  singel",1
 2023,09,Okänt delområde,"Trafikolycka,  vilt",1
 2023,09,Okänt delområde,Vapenlagen,1
 2023,09,Porsön,Skadegörelse,1
@@ -3952,6 +3956,7 @@ year,month,geography_group,type_original,event_count
 2026,05,Storheden,Stöld,1
 2026,05,Storheden,Trafikbrott,1
 2026,06,Centrum,Rattfylleri,1
+2026,06,Centrum,Trafikolycka,2
 2026,06,Gammelstad,Upphittat föremål,1
 2026,06,Mjölkudden,Brand,1
 2026,06,Mjölkudden,Narkotikabrott,1
@@ -3965,7 +3970,7 @@ year,month,geography_group,type_original,event_count
 2026,06,Okänt delområde,Skyddslagen,2
 2026,06,Okänt delområde,Stöld,1
 2026,06,Okänt delområde,Trafikbrott,1
-2026,06,Okänt delområde,Trafikolycka,7
+2026,06,Okänt delområde,Trafikolycka,5
 2026,06,Okänt delområde,"Trafikolycka,  vilt",2
 2026,06,Porsön,Olaga intrång,1
 2026,06,Porsön,Sammanfattning natt,1
