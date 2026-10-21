@@ -26,7 +26,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 2007,"Luleå Kallviken, Luleå, Norrbottens län",,,2016
 2040,"Luleå Kallviken, Luleå, Norrbottens län",,lansvag,2016
 2049,"Luleå Luleå, Norrbottens län",,,2016
-2069,"Luleå Älvsbyvägen, Alvik, Luleå, Norrbottens län",lulea alvsbyvagen,alvsbyvagen,2016
 2068,"Luleå Norrbottens Län, Luleå, Norrbottens län",,riktsvag,2016
 2583,"Luleå Luleå, Norrbottens län",,,2016
 2636,"Luleå Luleå, Norrbottens län",,fordes till polisstationen,2016
@@ -86,23 +85,19 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 9541,"Luleå Rutvik, Luleå, Norrbottens län",,,2016
 9798,"Luleå Jämtön, Luleå, Norrbottens län",,,2016
 9814,"Luleå Luleå, Norrbottens län",,riksvag,2016
-10023,"Luleå Ersnäs, Luleå, Norrbottens län",,lansvag,2016
 10032,"Luleå Luleå, Norrbottens län",,,2016
 10040,"Luleå Klöverträsk, Luleå, Norrbottens län",,,2016
 10077,"Luleå Luleå, Norrbottens län",,,2016
 10092,"Luleå Persön, Luleå, Norrbottens län",,,2016
 10168,"Luleå Malmuddsvägen, Luleå, Norrbottens län",lulea malmuddsvagen,for drograttfylleri malmuddsvagen | malmuddsvagen,2016
-10263,"Luleå Ersnäs, Luleå, Norrbottens län",,,2016
 10472,"Luleå Persön, Luleå, Norrbottens län",,,2016
 10471,"Luleå Luleå, Norrbottens län",,,2016
 10440,"Luleå Luleå, Norrbottens län",,gaddviksbron,2016
 10767,"Luleå Flarkenvägen, Rutvik, Luleå, Norrbottens län",lulea flarkenvagen,flarkenvagen,2017
-10783,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 10798,"Luleå Luleå, Norrbottens län",,,2017
 10896,"Luleå Luleå, Norrbottens län",,,2017
 11120,"Norrbotten Dalagatan, Luleå, Norrbotten, Norrbottens län",norrbotten dalagatan,dalagatan | den till polisstationen,2017
 11175,"Luleå Rutvik, Luleå, Norrbottens län",,,2017
-11233,"Luleå Måttsund, Luleå, Norrbottens län",,,2017
 11312,"Luleå Bälinge, Luleå, Norrbottens län",,,2017
 11409,"Luleå Luleå, Norrbottens län",,,2017
 11585,"Luleå Rutvik, Luleå, Norrbottens län",,,2017
@@ -115,7 +110,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 12109,"Luleå Luleå, Norrbottens län",,,2017
 12181,"Luleå Luleå, Norrbottens län",,olycka mellan gaddviksbron,2017
 12190,"Luleå Luleå, Norrbottens län",,,2017
-12193,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 12228,"Norrbotten Malmberget, Luleå, Norrbotten, Norrbottens län",,,2017
 12492,"Luleå Jämtön, Luleå, Norrbottens län",,,2017
 12516,"Luleå Jämtön, Luleå, Norrbottens län",,,2017
@@ -136,7 +130,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 14464,"Norrbotten Järpvägen, Luleå, Norrbotten, Norrbottens län",norrbotten jarpvagen,jarpvagen,2017
 14546,"Luleå Luleå, Norrbottens län",,,2017
 14560,"Luleå Repslagargatan, Luleå, Norrbottens län",lulea repslagargatan,repslagargatan,2017
-14852,"Luleå Måttsund, Luleå, Norrbottens län",,,2017
 15020,"Luleå Luleå, Norrbottens län",,,2017
 15019,"Luleå Luleå, Norrbottens län",,,2017
 14971,"Luleå Orrbyn, Luleå, Norrbottens län",,,2017
@@ -148,7 +141,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 15846,"Luleå Kallax, Flygplan, Luleå, Norrbottens län",flygplan,nekats borda flygplan | polisstationen,2017
 15975,"Luleå Luleå, Norrbottens län",,,2017
 16204,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
-16235,"Luleå Alvik, Luleå, Norrbottens län",,,2017
 16389,"Norrbotten Luleåvägen, Norrbotten, Norrbottens län",norrbotten luleavagen,luleavagen,2017
 16463,"Luleå Luleå, Norrbottens län",,varvsleden,2017
 16495,"Luleå Luleå, Norrbottens län",,,2017
@@ -163,11 +155,9 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 18022,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
 18133,"Luleå Haparandavägen, Luleå, Norrbottens län",lulea haparandavagen,haparandavagen | singelolycka haparandavagen,2017
 18135,"Luleå Bälingevägen, Luleå, Norrbottens län",lulea balingevagen,balingevagen | nykterhetskontroll balingevagen,2017
-18632,"Luleå Ersnäs, Filen, Luleå, Norrbottens län",,,2017
 18869,"Luleå Luleå, Norrbottens län",,centrum,2017
 19099,"Luleå Strömsund, Luleå, Norrbottens län",,,2017
 19143,"Luleå Luleå, Norrbottens län",,,2017
-19200,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 19418,"Luleå Jämtön, Luleå, Norrbottens län",,,2017
 19460,"Luleå Persön, Luleå, Norrbottens län",,,2017
 19475,"Luleå Luleå, Norrbottens län",,,2017
@@ -178,7 +168,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 20386,"Luleå Luleå, Norrbottens län",,den formodade detonationsplatsen | det att detonationsplatsen,2017
 20516,"Luleå Luleå, Norrbottens län",,,2017
 20642,"Luleå Isvägen, Norrbotten, Luleå, Norrbottens län",,,2017
-20805,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 20841,"Luleå Kallax, Luleå, Norrbottens län",,,2017
 20972,"Luleå Luleå, Norrbottens län",,,2017
 21031,"Luleå Luleå, Norrbottens län",,,2017
@@ -209,7 +198,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 24016,"Luleå Luleå, Norrbottens län",,,2017
 24140,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
 24344,"Luleå Luleå, Norrbottens län",,,2017
-24704,"Luleå Alvik, Luleå, Norrbottens län",,,2017
 24826,"Luleå Luleå, Norrbottens län",,for drograttfylleri josefinvagen | josefinvagen,2017
 24950,"Luleå Bjurträsk, Luleå, Norrbottens län",,,2017
 25047,"Luleå Niemisel, Luleå, Norrbottens län",,,2017
@@ -235,12 +223,7 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 28150,"Norrbotten Inpuls, Luleå, Norrbotten, Norrbottens län",,,2017
 28160,"Luleå Luleå, Norrbottens län",,,2017
 28501,"Luleå Luleå, Norrbottens län",,,2017
-28546,"Luleå People, Måttsund, Luleå, Norrbottens län",,,2017
-28609,"Luleå People, Nordkalotten, Måttsund, Luleå, Norrbottens län",,,2017
-28655,"Luleå Måttsund, Nordkalotten, Luleå, Norrbottens län",,,2017
 28659,"Luleå Luleå, Norrbottens län",,,2017
-28736,"Luleå Nordkalotten, Måttsund, Luleå, Norrbottens län",,,2017
-28825,"Luleå Måttsund, People, Luleå, Norrbottens län",,,2017
 28947,"Luleå Tunastigen, Luleå, Norrbottens län",lulea tunastigen,for rattfylleri tunastigen | tunastigen,2017
 28965,"Luleå Luleå, Norrbottens län",,,2017
 28967,"Luleå Luleå, Norrbottens län",,,2017
@@ -249,7 +232,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 30068,"Norrbotten Luleå, Riksgränsen, Norrbotten, Norrbottens län",,,2017
 30264,"Luleå Sunderby Sjukhus, Luleå, Norrbottens län",,,2017
 30349,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
-30429,"Luleå Måttsund, Luleå, Norrbottens län",,,2017
 30976,"Luleå Luleå, Norrbottens län",,,2017
 30993,"Luleå Luleå, Norrbottens län",,,2017
 31135,"Luleå Luleå, Norrbottens län",,,2017
@@ -290,7 +272,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 37645,"Norrbotten Luleå, Rutvik, Norrbotten, Norrbottens län",,,2017
 37661,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 37739,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
-37852,"Norrbotten Luleå, Alvik, Norrbotten, Norrbottens län",,,2017
 38098,"Luleå Luleå, Norrbottens län",,,2017
 38127,"Luleå Luleå, Norrbottens län",,,2017
 38239,"Luleå Örarna, Luleå, Norrbottens län",,,2017
@@ -299,14 +280,11 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 38759,"Luleå Luleå, Norrbottens län",,,2017
 38785,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 38987,"Luleå Storhedsvägen, Luleå, Norrbottens län",lulea storhedsvagen,storhedsvagen,2017
-39085,"Luleå Måttsund, Luleå, Norrbottens län",,,2017
 39155,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
 39230,"Luleå Luleå, Norrbottens län",,svartostaden,2017
 39264,"Luleå Luleå, Norrbottens län",,,2017
 39665,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
-39678,"Luleå Grustäkt, Öberget, Måttsund, Luleå, Norrbottens län",,,2017
 39732,"Luleå Kallax, Luleå, Norrbottens län",,,2017
-39857,"Luleå Måttsund, Luleå, Norrbottens län",,,2017
 39869,"Luleå Luleå, Norrbottens län",,,2017
 40360,"Norrbotten Skogsvallen, Luleå, Norrbotten, Norrbottens län",,,2017
 40471,"Norrbotten Luleå, Kronbacksvägen, Morjärv, Norrbotten, Norrbottens län",kronbacksvagen,gangtummel vid kronbacksvagen,2017
@@ -319,7 +297,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 41229,"Luleå Luleå, Norrbottens län",,,2017
 41231,"Luleå Luleå, Norrbottens län",,,2017
 41254,"Luleå Kronofogdemyndigheten, Fokus, Luleå, Norrbottens län",,,2017
-41359,"Luleå Alvik, Högsta, Luleå, Norrbottens län",,,2017
 41457,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 41591,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 41634,"Luleå Strömsund, Luleå, Norrbottens län",,,2017
@@ -332,7 +309,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 42176,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2017
 42230,"Luleå Luleå, Norrbottens län",,fastighet efter smedsbyvagen,2017
 42251,"Luleå Hertsötorget, Luleå, Norrbottens län",lulea hertsotorget,hertsotorget,2017
-42311,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 42379,"Luleå Luleå, Norrbottens län",,fors tilll polisstationen,2017
 42477,"Luleå Valörvägen, Luleå, Norrbottens län",lulea valorvagen,valorvagen,2017
 42516,"Luleå Degerbergsvägen, Rutvik, Luleå, Norrbottens län",lulea degerbergsvagen,degerbergsvagen | vid barplockning degerbergsvagen,2017
@@ -357,11 +333,9 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 44786,"Luleå Luleå, Norrbottens län",,polisstationen,2017
 45102,"Luleå Svartskatavägen, Luleå, Norrbottens län",lulea svartskatavagen,svartskatavagen,2017
 45265,"Luleå Luleå, Norrbottens län",,innerstaden,2017
-45272,"Luleå Alvik, Luleå, Norrbottens län",,hastighetskontroll efter riksvag,2017
 45310,"Luleå Luleå, Norrbottens län",,,2017
 45548,"Luleå Luleå, Norrbottens län",,,2017
 45699,"Luleå Luleå, Norrbottens län",,,2017
-45918,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 45927,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 46041,"Luleå Rutvik, Kammenvägen, Luleå, Norrbottens län",kammenvagen,trafikkontroll efter kammenvagen,2017
 46048,"Luleå Tomtebovägen, Luleå, Norrbottens län",lulea tomtebovagen,tomtebovagen,2017
@@ -370,7 +344,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 46577,"Luleå Luleå, Norrbottens län",,,2017
 46578,"Luleå Luleå, Norrbottens län",,,2017
 46789,"Luleå Selet, Luleå, Norrbottens län",,,2017
-46797,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 46905,"Luleå Luleå, Norrbottens län",,tagstationen | vaktare ingripit tagstationen,2017
 47114,"Luleå Luleå, Norrbottens län",,,2017
 47326,"Luleå Jämtön, Kalix, Örnsköldsvik, Luleå, Norrbottens län",,,2017
@@ -396,21 +369,17 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 49244,"Luleå Luleå, Norrbottens län",,,2017
 49438,"Luleå Luleå, Norrbottens län",,,2017
 49509,"Luleå Luleå, Norrbottens län",,innerstaden,2017
-49697,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 49740,"Luleå Luleå, Norrbottens län",,,2017
 49766,"Luleå Banvägen, Spantgatan, Luleå, Norrbottens län",lulea banvagen | spantgatan,korsningen banvagen | spantgatan,2017
 49778,"Luleå Bodenvägen, Piteå, Luleå, Norrbottens län",lulea bodenvagen,bodenvagen,2017
 49919,"Luleå Luleå, Norrbottens län",,,2017
 50003,"Luleå Hällbacken, Luleå, Norrbottens län",,lag efter lejdevagen,2017
-50244,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 50272,"Luleå Luleå, Norrbottens län",,,2017
-50300,"Luleå Måttsund, Luleå, Norrbottens län",,,2017
 50654,"Luleå Luleå, Norrbottens län",,,2017
 50799,"Luleå Luleå, Norrbottens län",,,2017
 50974,"Luleå Luleå, Norrbottens län",,,2017
 51020,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 51067,"Luleå Hällfors, Luleå, Norrbottens län",,,2017
-51125,"Luleå Ersnäs, Luleå, Norrbottens län",,,2017
 51282,"Luleå Bredviken, Luleå, Norrbottens län",,,2017
 51338,"Luleå Luleå, Norrbottens län",,innerstaden,2017
 51342,"Luleå Niemisel, Luleå, Norrbottens län",,trafikkontroll efter bergandevagen,2017
@@ -420,7 +389,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 51755,"Luleå Luleå, Norrbottens län",,,2017
 51860,"Luleå Kallax, Kallaxvägen, Luleå, Norrbottens län",kallaxvagen,intraffade efter kallaxvagen,2017
 51945,"Luleå Luleå, Norrbottens län",,innerstaden,2017
-52683,"Luleå Alvik, Luleå, Norrbottens län",,riksvag | vagen riksvag,2017
 52814,"Luleå Rutvik, Luleå, Norrbottens län",,att passera olycksplatsen,2017
 52888,"Luleå Hemmakväll, Luleå, Norrbottens län",,,2017
 53004,"Luleå Luleå, Norrbottens län",,,2017
@@ -457,7 +425,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 57868,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2018
 57967,"Luleå Ängesbyvägen, Luleå, Norrbottens län",lulea angesbyvagen,angesbyvagen | garage angesbyvagen,2018
 57972,"Luleå Luleå, Norrbottens län",,sunderbyn,2018
-57974,"Luleå Ersnäs, Luleå, Norrbottens län",,,2018
 57985,"Luleå Ängesbyvägen, Luleå, Norrbottens län",lulea angesbyvagen,angesbyvagen | forrad angesbyvagen | garage angesbyvagen,2018
 58028,"Norrbotten Luleå, Norrbotten, Norrbottens län",,,2018
 58094,"Luleå Luleå, Norrbottens län",,ford till polisstationen,2018
@@ -477,7 +444,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 59665,"Luleå Svartskatavägen, Luleå, Norrbottens län",lulea svartskatavagen,svartskatavagen,2018
 59812,"Luleå Björkskataleden, Luleå, Norrbottens län",lulea bjorkskataleden,bjorkskataleden,2018
 60190,"Luleå Maria, Luleå, Norrbottens län",,,2018
-60297,"Luleå Måttsund, Luleå, Norrbottens län",,,2018
 60453,"Luleå Luleå, Norrbottens län",,,2018
 60998,"Luleå Färjeledsvägen, Boden, Luleå, Norrbottens län",lulea farjeledsvagen,farjeledsvagen,2018
 61222,"Luleå Lulviksvägen, Luleå, Norrbottens län",lulea lulviksvagen,lulviksvagen,2018
@@ -535,7 +501,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 68935,"Luleå Luleå, Norrbottens län",,,2018
 69016,"Luleå Östra Malmgatan, Luleå, Norrbottens län",lulea ostra malmgatan,centrum | garage ostra malmgatan | ostra malmgatan,2018
 69301,"Luleå Universitetsområdet, Norrbotten, Luleå, Norrbottens län",,,2018
-69543,"Luleå Alvik, Luleå, Norrbottens län",,for rattfylleri riksvag | riksvag,2018
 69631,"Luleå Luleå, Norrbottens län",,,2018
 69661,"Luleå Luleå, Norrbottens län",,markte upp olycksplatsen,2018
 69693,"Luleå Bälingevägen, Luleå, Norrbottens län",lulea balingevagen,balingevagen,2018
@@ -573,10 +538,8 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 73973,"Luleå Luleå, Norrbottens län",,,2018
 74002,"Luleå Luleå, Norrbottens län",,,2018
 74228,"Luleå Luleå, Norrbottens län",,ornaset | svartostaden,2018
-74419,"Luleå Ersnäs, Luleå, Norrbottens län",,,2018
 74464,"Luleå Luleå, Norrbottens län",,,2018
 74483,"Luleå Luleå, Norrbottens län",,samt dokumenterat olycksplatsen,2018
-74617,"Luleå Ersnäs, Luleå, Norrbottens län",,,2018
 74678,"Luleå Bensbyvägen, Svartbyvägen, Luleå, Norrbottens län",lulea bensbyvagen | svartbyvagen,korsningen bensbyvagen | svartbyvagen,2018
 74871,"Luleå Luleå, Norrbottens län",,,2018
 75237,"Luleå Luleå, Norrbottens län",,,2018
@@ -594,7 +557,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 76053,"Luleå Luleå, Norrbottens län",,bjorbyvagen,2018
 76064,"Luleå Luleå, Norrbottens län",,,2018
 76248,"Luleå Gammelstadsvägen, Robertsviksgatan, Luleå, Norrbottens län",lulea gammelstadsvagen | robertsviksgatan,fordon inblandade riksvag | innerstaden | och robertsviksgatan | riksvag | via gammelstadsvagen,2018
-76332,"Luleå Ersnäs, Luleå, Norrbottens län",,angdalsrovagen | trad angdalsrovagen,2018
 76722,"Luleå Luleå, Norrbottens län",,innerstaden,2018
 76851,"Luleå Fiskehamnsvägen, Kallax, Luleå, Norrbottens län",lulea fiskehamnsvagen,fiskehamnsvagen | med fyrhjuling fiskehamnsvagen,2018
 77054,"Luleå Luleå, Norrbottens län",,,2018
@@ -655,8 +617,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 85774,"Luleå Luleå, Norrbottens län",,,2018
 85995,"Luleå Måttsundsvägen, Luleå, Norrbottens län",lulea mattsundsvagen,mattsundsvagen,2018
 86086,"Luleå Luleå, Norrbottens län",,,2018
-86147,"Luleå Kallax, Luleå, Norrbottens län",,,2018
-86451,"Luleå Måttsund, Luleå, Norrbottens län",,dirigeras via lansvag,2018
 86453,"Luleå Luleå, Norrbottens län",,,2018
 86463,"Luleå Sunderby Sjukhus, Luleå, Norrbottens län",,,2018
 86482,"Luleå Luleå, Norrbottens län",,riksvag | sunderbyn,2018
@@ -675,7 +635,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 88519,"Luleå Rutvik, Luleå, Norrbottens län",,,2018
 88759,"Luleå Luleå, Norrbottens län",,kronan,2018
 88768,"Luleå Luleå, Norrbottens län",,brottsplatsen | kronan,2018
-88843,"Luleå Alvik, Luleå, Norrbottens län",,,2018
 88932,"Luleå Arcusvägen, Luleå, Norrbottens län",lulea arcusvagen,arcusvagen,2018
 88938,"Luleå Luleå, Norrbottens län",,brottsplatsen,2018
 89110,"Luleå Bälinge, Luleå, Norrbottens län",,lansvag,2018
@@ -685,7 +644,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 89573,"Luleå Luleå, Norrbottens län",,,2018
 89580,"Luleå Klöverträsk, Luleå, Norrbottens län",,klovertrask riksvag,2018
 89617,"Luleå Klöverträsk, Luleå, Norrbottens län",,riksvag,2018
-89732,"Luleå Alvik, Luleå, Norrbottens län",,,2018
 89813,"Luleå Luleå, Norrbottens län",,,2018
 90105,"Luleå Porsövägen, Luleå, Norrbottens län",lulea porsovagen,porsovagen,2018
 90295,"Luleå Rutvik, Luleå, Norrbottens län",,,2018
@@ -768,7 +726,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 97315,"Luleå Luleå, Norrbottens län",,innerstaden,2018
 97728,"Luleå Luleå, Norrbottens län",,,2018
 97897,"Luleå Luleå, Norrbottens län",,till polisstationen,2018
-98079,"Luleå Ersnäs, Luleå, Norrbottens län",,,2018
 98179,"Luleå Luleå, Norrbottens län",,innerstaden,2018
 98193,"Luleå Luleå, Norrbottens län",,innerstaden | skjutsats till polisstationen,2018
 98293,"Luleå Luleå, Norrbottens län",,,2018
@@ -778,7 +735,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 98750,"Luleå Luleå, Norrbottens län",,,2018
 98793,"Luleå Lulsundet, Luleå, Norrbottens län",,,2018
 99014,"Luleå Luleå, Norrbottens län",,centralstationen,2018
-99334,"Luleå Ersnäs, Luleå, Norrbottens län",,,2018
 99530,"Luleå Avan, Luleå, Norrbottens län",,lansvag,2018
 99576,"Luleå Persön, Luleå, Norrbottens län",,,2018
 99860,"Luleå Luleå, Norrbottens län",,,2018
@@ -804,7 +760,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 102235,"Luleå Luleå, Norrbottens län",,fors till polisstationen,2019
 102472,"Luleå Niemisel, Luleå, Norrbottens län",,,2019
 102747,"Luleå Luleå, Norrbottens län",,,2019
-102813,"Norrbottens län Luleå, Ersnäs, Norrbottens län",,,2019
 102850,"Luleå Nya Gäddviksbron, Luleå, Norrbottens län",lulea nya gaddviksbron,vid nya gaddviksbron,2019
 102882,"Luleå Vitåfors, Luleå, Norrbottens län",,,2019
 103022,"Luleå Rutvik, Luleå, Norrbottens län",,,2019
@@ -827,7 +782,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 105376,"Luleå Luleå Kommun, Luleå, Norrbottens län",,ornnasvagen,2019
 105515,"Luleå Avan, Luleå, Norrbottens län",,,2019
 105642,"Luleå Klöverträsk, Luleå, Norrbottens län",,,2019
-105817,"Luleå Måttsund, Luleå, Norrbottens län",,,2019
 105825,"Luleå Luleå, Norrbottens län",,,2019
 105832,"Luleå Luleå, Norrbottens län",,,2019
 105831,"Luleå Luleå, Norrbottens län",,,2019
@@ -846,7 +800,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 106819,"Luleå Luleå, Norrbottens län",,riksvag | sunderbyn,2019
 106878,"Luleå Luleå, Norrbottens län",,,2019
 106980,"Luleå Luleå, Norrbottens län",,,2019
-107054,"Luleå Ersnäs, Luleå, Norrbottens län",,,2019
 107112,"Luleå Luleå, Norrbottens län",,,2019
 107144,"Luleå Luleå, Norrbottens län",,,2019
 107218,"Luleå Stadshuset, Luleå, Norrbottens län",,,2019
@@ -897,13 +850,11 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 112355,"Luleå Luleå, Norrbottens län",,,2019
 112595,"Luleå Luleå, Norrbottens län",,olycksplatsen,2019
 112784,"Luleå Långsel, Luleå, Norrbottens län",,lansvag,2019
-112794,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2019
 112884,"Luleå Luleå, Norrbottens län",,,2019
 112893,"Norrbottens län Luleå, Norrbottens län",,bergviken,2019
 112930,"Luleå Luleå, Norrbottens län",,,2019
 113066,"Norrbottens län Luleå, Norrbottens län",,,2019
 113134,"Luleå Kornettgatan, Frisörgatan, Luleå, Norrbottens län",frisorgatan | lulea kornettgatan,och frisorgatan | sig mot kornettgatan,2019
-113148,"Luleå Alvik, Luleå, Norrbottens län",,,2019
 113146,"Luleå Luleå, Norrbottens län",,,2019
 113243,"Luleå Luleå, Norrbottens län",,innerstaden,2019
 113367,"Luleå Luleå, Norrbottens län",,,2019
@@ -912,7 +863,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 113687,"Luleå Luleå, Norrbottens län",,,2019
 113811,"Luleå Luleå, Norrbottens län",,,2019
 113969,"Luleå Bensbyvägen, Luleå, Norrbottens län",lulea bensbyvagen,bensbyvagen,2019
-114156,"Norrbottens län Alvik, Norrbottens län",,riksvag,2019
 114254,"Luleå Luleå, Norrbottens län",,innerstaden,2019
 114271,"Luleå Luleå, Norrbottens län",,,2019
 114313,"Luleå Jämtön, Luleå, Norrbottens län",,,2019
@@ -943,10 +893,8 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 116468,"Luleå Luleå, Norrbottens län",,,2019
 116471,"Luleå Mjölkuddsvägen, Luleå, Norrbottens län",lulea mjolkuddsvagen,mjolkuddsvagen,2019
 116796,"Luleå Lulsundet, Luleå, Norrbottens län",,,2019
-116888,"Luleå Måttsund, Luleå, Norrbottens län",,,2019
 116896,"Luleå Luleå, Norrbottens län",,,2019
 116958,"Luleå Luleå, Norrbottens län",,,2019
-116987,"Luleå Måttsund, Luleå, Norrbottens län",,,2019
 116996,"Luleå Rutvik, Luleå, Norrbottens län",,,2019
 117021,"Luleå Kallaxön, Luleå, Norrbottens län",,isen fran lulnasudden,2019
 117030,"Luleå Sunderby Sjukhus, Luleå, Norrbottens län",,,2019
@@ -955,7 +903,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 117086,"Luleå Luleå, Norrbottens län",,,2019
 117143,"Luleå Luleå, Norrbottens län",,,2019
 117173,"Luleå Luleå, Norrbottens län",,riksvag | sunderbyn,2019
-117336,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2019
 117398,"Luleå Luleå, Norrbottens län",,,2019
 117841,"Luleå Luleå, Norrbottens län",,,2019
 117844,"Luleå Luleå, Norrbottens län",,,2019
@@ -977,7 +924,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 120556,"Luleå Luleå, Norrbottens län",,,2019
 120572,"Luleå Luleå, Norrbottens län",,,2019
 120787,"Luleå Luleå, Norrbottens län",,,2019
-120941,"Luleå Måttsund, Bergtäkt, Luleå, Norrbottens län",,,2019
 120940,"Luleå Luleå, Norrbottens län",,,2019
 120953,"Luleå Luleå, Norrbottens län",,innerstaden,2019
 120984,"Luleå Luleå, Norrbottens län",,,2019
@@ -1006,7 +952,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 123424,"Luleå Alviksvägen, Luleå, Norrbottens län",lulea alviksvagen,alviksvagen,2019
 123440,"Luleå Luleå, Norrbottens län",,,2019
 123534,"Luleå Persön, Luleå, Norrbottens län",,,2019
-123565,"Luleå Måttsund, Luleå, Norrbottens län",,,2019
 123662,"Luleå Paradvägen, Luleå, Norrbottens län",lulea paradvagen,langs med paradvagen,2019
 123753,"Luleå Luleå, Norrbottens län",,,2019
 124099,"Luleå Luleå, Norrbottens län",,,2019
@@ -1052,7 +997,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 127556,"Luleå Luleå, Norrbottens län",,,2019
 127563,"Luleå Luleå, Norrbottens län",,,2019
 127690,"Luleå Luleå, Norrbottens län",,,2019
-127787,"Luleå Ersnäs, Luleå Kommun, Boden, Luleå, Norrbottens län",,,2019
 127959,"Luleå Sinksundet, Luleå, Norrbottens län",,,2019
 127965,"Luleå Luleå, Norrbottens län",,,2019
 128056,"Luleå Rutvik, Luleå, Norrbottens län",,,2019
@@ -1061,7 +1005,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 128137,"Luleå Lulevägen, Kyrkbyn, Luleå, Norrbottens län",lulea lulevagen,lulevagen,2019
 128273,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2019
 128398,"Luleå Nya Gäddviksbron, Luleå, Norrbottens län",lulea nya gaddviksbron,nya gaddviksbron | vagen nya gaddviksbron,2019
-128419,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2019
 128583,"Luleå Sinksundet, Luleå, Norrbottens län",,lansvag,2019
 128627,"Luleå Kyrkbyn, Luleå, Norrbottens län",,,2019
 128707,"Luleå Kyrkbyn, Luleå, Norrbottens län",,,2019
@@ -1081,10 +1024,8 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 131253,"Luleå Luleå, Norrbottens län",,,2019
 131591,"Luleå Långbackavägen, Luleå, Norrbottens län",lulea langbackavagen,langbackavagen,2019
 131629,"Luleå Luleå, Norrbottens län",,,2019
-131642,"Luleå Alvik, Luleå, Norrbottens län",,,2019
 131849,"Luleå Luleå, Norrbottens län",,,2019
 131864,"Luleå Luleå, Norrbottens län",,,2019
-132591,"Luleå Ersnäs, Luleå, Norrbottens län",,,2019
 132623,"Luleå Luleå, Norrbottens län",,,2019
 132847,"Luleå Bjurå, Luleå, Norrbottens län",,,2019
 133010,"Luleå Luleå, Norrbottens län",,innerstaden | jarnvagsstationen | personer utanfor jarnvagsstationen,2019
@@ -1099,7 +1040,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 133706,"Luleå Luleå, Norrbottens län",,,2019
 133738,"Luleå Luleå, Norrbottens län",,,2019
 133777,"Luleå Luleå, Norrbottens län",,,2019
-134093,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2019
 134346,"Luleå Luleå, Norrbottens län",,,2019
 134453,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2019
 134567,"Norrbottens län Luleå, Norrbottens län",,centrum | ford till polisstationen | fordes till polisstationen,2019
@@ -1118,7 +1058,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 136368,"Luleå Luleå, Norrbottens län",,,2019
 136390,"Luleå Kyrkbyn, Luleå, Norrbottens län",,,2019
 136486,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2019
-136612,"Luleå Ersnäs, Luleå, Norrbottens län",,,2019
 136676,"Luleå Cementvägen, Luleå, Norrbottens län",lulea cementvagen,cementvagen,2019
 136741,"Luleå Luleå, Norrbottens län",,,2019
 136791,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2019
@@ -1146,7 +1085,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 140354,"Luleå Luleå, Norrbottens län",,,2019
 140477,"Luleå Luleå, Norrbottens län",,innerstaden,2019
 140536,"Luleå Luleå, Norrbottens län",,,2019
-140549,"Luleå Alhamn, Luleå, Norrbottens län",,,2019
 141220,"Luleå Luleå, Norrbottens län",,,2019
 141437,"Luleå Luleå, Norrbottens län",,riksvag,2019
 141481,"Luleå Luleå, Norrbottens län",,ford till polisstationen,2019
@@ -1154,7 +1092,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 141765,"Luleå Luleå, Norrbottens län",,,2019
 141905,"Luleå Skurholmsrondellen, Luleå, Norrbottens län",,,2019
 142135,"Luleå Luleå, Norrbottens län",,,2019
-142146,"Luleå Måttsund, Luleå, Norrbottens län",,,2019
 142261,"Luleå Bergvikstorget, Luleå, Norrbottens län",lulea bergvikstorget,vid lilla bergvikstorget,2019
 142322,"Luleå Luleå, Norrbottens län",,,2019
 142350,"Luleå Luleå, Norrbottens län",,innerstaden,2019
@@ -1206,7 +1143,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 147784,"Luleå Luleå, Norrbottens län",,,2020
 147787,"Luleå Luleå, Norrbottens län",,,2020
 147918,"Luleå Luleå, Norrbottens län",,innerstaden,2020
-147933,"Luleå Ersnäs, Luleå, Norrbottens län",,,2020
 147966,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 147965,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 148041,"Luleå Luleå, Norrbottens län",,och dokumenterat olycksplatsen,2020
@@ -1324,7 +1260,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 160449,"Luleå Luleå, Norrbottens län",,,2020
 160513,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 160552,"Luleå Luleå, Norrbottens län",,,2020
-160561,"Luleå Alvik, Luleå, Norrbottens län",,,2020
 160570,"Luleå Luleå, Norrbottens län",,,2020
 160580,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 160609,"Luleå Luleå, Norrbottens län",,,2020
@@ -1364,7 +1299,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 163471,"Luleå Luleå, Norrbottens län",,stannade vid olyksplatsen,2020
 163565,"Luleå Luleå, Norrbottens län",,,2020
 163649,"Luleå Luleå, Norrbottens län",,innerstaden,2020
-164336,"Luleå Ersnäs, Luleå, Norrbottens län",,,2020
 164515,"Luleå Luleå, Norrbottens län",,lansvag,2020
 164516,"Luleå Luleå, Norrbottens län",,lansvag,2020
 164574,"Luleå Sunderby Sjukhus, Boden, Luleå, Norrbottens län",,riksvag,2020
@@ -1390,7 +1324,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 167548,"Luleå Kyrkbyn, Luleå, Norrbottens län",,,2020
 168007,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 168348,"Norrbottens län Brändön, Luleå, Arnemark, Norrbottens län",,,2020
-168484,"Luleå Måttsund, Luleå, Norrbottens län",,,2020
 168496,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 168738,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 169092,"Luleå Luleå, Norrbottens län",,efter hastighetsovertradelse riksvag | riksvag,2020
@@ -1407,7 +1340,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 170825,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 170859,"Luleå Luleå, Norrbottens län",,,2020
 170990,"Luleå Luleå, Norrbottens län",,,2020
-171038,"Luleå Ersnäs, Luleå, Norrbottens län",,,2020
 171070,"Luleå Niemisel, Luleå, Norrbottens län",,,2020
 171102,"Luleå Luleå, Norrbottens län",,,2020
 171231,"Luleå Luleå, Norrbottens län",,,2020
@@ -1419,7 +1351,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 171407,"Luleå Bensbyn, Luleå, Norrbottens län",,lansvag,2020
 171487,"Luleå Lulsundet, Luleå, Norrbottens län",,,2020
 171514,"Luleå Kompanivägen, Luleå, Norrbottens län",lulea kompanivagen,kompanivagen,2020
-172005,"Luleå Ersnäs, Luleå, Norrbottens län",,,2020
 172015,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 172319,"Luleå Luleå, Norrbottens län",,,2020
 172420,"Luleå Luleå, Norrbottens län",,,2020
@@ -1449,7 +1380,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 174570,"Luleå Luleå, Norrbottens län",,,2020
 174681,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 174683,"Luleå Luleå, Norrbottens län",,innerstaden,2020
-174867,"Luleå Alvik, Luleå, Norrbottens län",,,2020
 174872,"Luleå Luleå, Norrbottens län",,,2020
 174956,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 174997,"Luleå Luleå, Norrbottens län",,,2020
@@ -1491,7 +1421,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 179017,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 179085,"Luleå Luleå, Norrbottens län",,,2020
 179123,"Luleå Luleå, Norrbottens län",,,2020
-179231,"Luleå Alvik, Bjurträsk, Klöverträsk, Luleå, Norrbottens län",,riksvag,2020
 179254,"Luleå Luleå, Norrbottens län",,innerstaden,2020
 179457,"Luleå Luleå, Norrbottens län",,,2020
 179472,"Luleå Luleå, Norrbottens län",,,2020
@@ -1544,7 +1473,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 184770,"Luleå Luleå, Norrbottens län",,,2021
 184816,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 184859,"Luleå Böle, Luleå, Norrbottens län",,lansvag,2021
-184997,"Luleå Ersnäs, Luleå, Norrbottens län",,,2021
 185013,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 185039,"Luleå Luleå, Norrbottens län",,,2021
 185139,"Luleå Ängesbyn, Luleå, Norrbottens län",,lansvag,2021
@@ -1562,8 +1490,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 186286,"Luleå Örarna, Luleå, Norrbottens län",,bistar vid brandplatsen,2021
 186741,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 186842,"Luleå Luleå, Norrbottens län",,,2021
-186921,"Luleå Ersnäs, Luleå, Norrbottens län",,,2021
-186966,"Luleå Alvik, Luleå, Norrbottens län",,,2021
 187160,"Luleå Gammelstadsvägen, Delfingatan, Luleå, Norrbottens län",delfingatan | lulea gammelstadsvagen,avvek fran olycksplatsen | delfingatan | korsningen langs gammelstadsvagen | och delfingatan | trafikolycka gammelstadsvagen,2021
 187264,"Luleå Luleå, Norrbottens län",,,2021
 187334,"Luleå Luleå, Norrbottens län",,,2021
@@ -1583,7 +1509,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 188901,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 188954,"Norrbottens län Boden, Kyrkbyn, Luleå, Norrbottens län",,korsningen lansvag | riksvag,2021
 189036,"Luleå Luleå, Norrbottens län",,,2021
-189146,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2021
 189174,"Luleå Lövskatan, Luleå, Norrbottens län",,,2021
 189259,"Luleå Fiskehamnsvägen, Kallax, Luleå, Norrbottens län",lulea fiskehamnsvagen,fiskehamnsvagen,2021
 189375,"Luleå Luleå, Norrbottens län",,innerstaden,2021
@@ -1659,7 +1584,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 197906,"Luleå Persön, Luleå, Norrbottens län",,,2021
 198146,"Luleå Gammelstadsvägen, Luleå, Norrbottens län",lulea gammelstadsvagen,beordras till gammelstadsvagen,2021
 198196,"Luleå Luleå, Norrbottens län",,,2021
-198528,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2021
 198568,"Luleå Luleå, Norrbottens län",,den troliga brottsplatsen,2021
 198615,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 198628,"Luleå Luleå, Norrbottens län",,,2021
@@ -1671,9 +1595,7 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 199597,"Luleå Lövskatan, Luleå, Norrbottens län",,,2021
 199661,"Luleå Luleå, Norrbottens län",,,2021
 199692,"Luleå Luleå, Norrbottens län",,innerstaden,2021
-199867,"Luleå Ersnäs, Luleå, Norrbottens län",,,2021
 199941,"Luleå Luleå, Norrbottens län",,,2021
-200227,"Luleå Måttsund, Luleå, Norrbottens län",,,2021
 200450,"Luleå Luleå, Norrbottens län",,,2021
 200448,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 200577,"Luleå Polisen I Luleå, Visionen, Luleå, Norrbottens län",,,2021
@@ -1741,7 +1663,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 209117,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 209120,"Luleå Luleå, Norrbottens län",,innerstaden,2021
 209131,"Luleå Luleå, Norrbottens län",,innerstaden,2021
-209253,"Luleå Ersnäs, Luleå, Norrbottens län",,,2021
 209467,"Norrbottens län Avans Byaväg, Luleå, Mjölkuddsvägen, Lulevägen, Norrbottens län",lan avans byavag | lulevagen | mjolkuddsvagen,avans byavag | centrum | kyrkgatan | lulevagen | mjolkuddsvagen,2021
 209524,"Luleå Bensbyvägen, Björkskatavägen, Lulsundet, Luleå, Norrbottens län",bjorkskatavagen | lulea bensbyvagen,bensbyvagen | bjorkskatavagen,2021
 209700,"Luleå Luleå, Norrbottens län",,,2021
@@ -1750,8 +1671,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 209966,"Luleå Luleå, Norrbottens län",,,2021
 210221,"Luleå Luleå, Norrbottens län",,,2021
 210243,"Luleå Luleå, Norrbottens län",,,2021
-210442,"Luleå Ersnäs, Luleå, Norrbottens län",,,2021
-210538,"Luleå Måttsund, Luleå, Norrbottens län",,,2021
 210647,"Luleå Luleå, Norrbottens län",,,2021
 210723,"Norrbottens län Niemisel, Norrbottens län",,,2021
 211010,"Luleå Luleå, Norrbottens län",,,2021
@@ -1793,9 +1712,7 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 214579,"Luleå Porsövägen, Björkskataleden, Luleå, Norrbottens län",bjorkskataleden | lulea porsovagen,bjorkskataleden | korsningen porsovagen,2021
 214597,"Luleå Luleå, Norrbottens län",,,2021
 214626,"Luleå Persön, Luleå, Norrbottens län",,,2021
-214641,"Luleå Måttsund, Luleå, Norrbottens län",,,2021
 214667,"Luleå Rutvik, Luleå, Norrbottens län",,,2021
-214781,"Luleå Måttsund, Luleå, Norrbottens län",,atervinningsstation,2021
 214853,"Luleå Luleå, Norrbottens län",,,2021
 215298,"Luleå Smedsbyn, Luleå, Norrbottens län",,,2021
 215318,"Luleå Luleå, Norrbottens län",,,2021
@@ -1853,7 +1770,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 223432,"Luleå Luleå, Norrbottens län",,bit fran brottsplatsen | brottsplatsen | innerstaden,2022
 223548,"Luleå Delfingatan, Luleå, Norrbottens län",lulea delfingatan,delfingatan,2022
 223593,"Luleå Luleå, Norrbottens län",,,2022
-223668,"Luleå Ersnäs, Luleå, Norrbottens län",,,2022
 223669,"Luleå Rutvik, Persön, Luleå, Norrbottens län",,,2022
 223685,"Luleå Avafors, Vitåfors, Luleå, Norrbottens län",,lansvag | som lamnat olycksplatsen,2022
 223775,"Luleå Luleå, Norrbottens län",,,2022
@@ -1906,16 +1822,13 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 227838,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2022
 227884,"Luleå Smedsbyn, Luleå, Norrbottens län",,,2022
 227980,"Luleå Luleå, Norrbottens län",,,2022
-228208,"Luleå Ersnäs, Luleå, Norrbottens län",,brandplatsen,2022
 228258,"Luleå Luleå, Norrbottens län",,olycksplatsen,2022
 228358,"Luleå Luleå, Norrbottens län",,innerstaden,2022
-228357,"Luleå Alvik, Luleå, Norrbottens län",,,2022
 228367,"Luleå Luleå, Norrbottens län",,,2022
 228464,"Luleå Sinksundet, Luleå, Norrbottens län",,efter trafikkontroll lansvag | lansvag,2022
 228588,"Luleå Luleå, Norrbottens län",,,2022
 228603,"Luleå Bensbyn, Luleå, Norrbottens län",,har kolliderat lansvag | lansvag,2022
 228639,"Luleå Luleå, Norrbottens län",,,2022
-228708,"Luleå Ersnäs, Luleå, Norrbottens län",,,2022
 228928,"Luleå Sinksundet, Luleå, Norrbottens län",,lansvag,2022
 229042,"Luleå Luleå, Norrbottens län",,,2022
 229131,"Luleå Boden, Luleå, Norrbottens län",,riksvag,2022
@@ -1952,7 +1865,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 233394,"Luleå Tunaskolan, Spränga, Luleå, Norrbottens län",,,2022
 233468,"Luleå Luleå, Norrbottens län",,innerstaden,2022
 233680,"Norrbottens län Luleå, Bredåker, Norrbottens län",,,2022
-233995,"Luleå Alvik, Luleå, Norrbottens län",,och dokumenterar olycksplatsen,2022
 234082,"Luleå Luleå, Norrbottens län",,,2022
 234097,"Luleå Luleå, Norrbottens län",,,2022
 234585,"Norrbottens län Norrbotten, Luleå, Färjestad, Norrbottens län",,,2022
@@ -2006,7 +1918,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 238874,"Luleå Luleå, Norrbottens län",,,2022
 239135,"Luleå Luleå, Norrbottens län",,,2022
 239138,"Luleå Båthamnen, Luleå, Norrbottens län",lulea bathamnen,parkeringen vid bathamnen,2022
-239410,"Luleå Svartskatavägen, Ersnäs, Luleå, Norrbottens län",lulea svartskatavagen,lansvag | svartskatavagen,2022
 239493,"Luleå Luleå, Norrbottens län",,,2022
 239612,"Luleå Luleå, Norrbottens län",,,2022
 239800,"Luleå Luleå, Norrbottens län",,,2022
@@ -2058,7 +1969,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 246059,"Luleå Luleå, Norrbottens län",,innerstaden,2022
 246066,"Luleå Jämtön, Luleå, Norrbottens län",,,2022
 246203,"Luleå Luleå, Norrbottens län",,,2022
-246340,"Luleå Alvik, Luleå, Norrbottens län",,,2022
 246365,"Luleå Luleå, Norrbottens län",,,2022
 246454,"Luleå Luleå, Norrbottens län",,,2022
 246549,"Luleå Luleå, Norrbottens län",,,2022
@@ -2098,7 +2008,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 250046,"Luleå Luleå, Norrbottens län",,,2022
 250148,"Luleå Luleå, Norrbottens län",,innerstaden,2022
 250239,"Luleå Luleå, Norrbottens län",,,2022
-250400,"Luleå Ersnäs, Luleå, Norrbottens län",,,2022
 250489,"Luleå Luleå, Norrbottens län",,,2022
 250504,"Luleå Luleå, Norrbottens län",,svartostaden,2022
 250815,"Luleå Luleå, Norrbottens län",,innerstaden,2022
@@ -2116,7 +2025,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 251648,"Luleå Luleå, Norrbottens län",,,2022
 251736,"Luleå Luleå, Norrbottens län",,,2022
 251885,"Luleå Lulsundet, Luleå, Norrbottens län",,,2022
-251926,"Luleå Ersnäs, Luleå, Norrbottens län",,,2022
 251959,"Luleå Luleå, Norrbottens län",,,2022
 252039,"Luleå Luleå, Norrbottens län",,innerstaden,2022
 252067,"Luleå Luleå, Norrbottens län",,,2022
@@ -2194,12 +2102,10 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 258727,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2023
 258868,"Luleå Granön, Luleå, Norrbottens län",,,2023
 258917,"Norrbottens län Vitå, Luleå, Norrbottens län",,snokant langs lansvag,2023
-258948,"Luleå Alvik, Selet, Luleå, Norrbottens län",,,2023
 258961,"Luleå Klöverträsk, Luleå, Norrbottens län",,,2023
 259085,"Luleå Kantgatan, Lövskatan, Luleå, Norrbottens län",lulea kantgatan,beordras till kantgatan,2023
 259161,"Luleå Robertsviksgatan, Luleå, Norrbottens län",lulea robertsviksgatan,robertsviksgatan,2023
 259165,"Luleå Kallaxvägen, Luleå, Norrbottens län",lulea kallaxvagen,kallaxvagen,2023
-259176,"Luleå Granön, Måttsund, Luleå Kommun, Luleå, Norrbottens län",,,2023
 259265,"Luleå Kyrkbyn, Luleå, Norrbottens län",,,2023
 259369,"Luleå Luleå, Norrbottens län",,,2023
 259375,"Luleå Luleå, Norrbottens län",,innerstaden,2023
@@ -2210,7 +2116,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 259640,"Luleå Luleå, Norrbottens län",,,2023
 260041,"Luleå Smedsbyn, Luleå, Norrbottens län",,,2023
 260185,"Norrbottens län Luleå, Marielund, Norrbottens län",,,2023
-260269,"Luleå Ersnäs, Luleå, Norrbottens län",,,2023
 260600,"Luleå Luleå, Norrbottens län",,,2023
 260804,"Luleå Persön, Luleå, Norrbottens län",,,2023
 260814,"Luleå Luleå, Norrbottens län",,,2023
@@ -2228,7 +2133,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 261715,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 261724,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 261736,"Luleå Bredviken, Luleå, Norrbottens län",,,2023
-261807,"Luleå Ersnäs, Luleå, Norrbottens län",,lansvag,2023
 262017,"Luleå Luleå, Norrbottens län",,,2023
 262094,"Luleå Luleå, Norrbottens län",,,2023
 262179,"Luleå Luleå, Norrbottens län",,,2023
@@ -2264,7 +2168,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 265644,"Luleå Luleå, Norrbottens län",,polisen till flygplatsen,2023
 265699,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 265708,"Luleå Luleå, Norrbottens län",,innerstaden,2023
-265795,"Luleå Ersnäs, Luleå, Norrbottens län",,,2023
 266063,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 266116,"Norrbottens län Luleå, Norrbottens län",,,2023
 266143,"Luleå Bredviken, Luleå, Norrbottens län",,,2023
@@ -2316,7 +2219,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 273588,"Luleå Bälinge, Luleå, Norrbottens län",,lansvag,2023
 273602,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 273692,"Luleå Luleå, Norrbottens län",,,2023
-273694,"Luleå Alvik, Luleå, Norrbottens län",,riksvag,2023
 273896,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 273985,"Luleå Luleå, Norrbottens län",,innerstaden,2023
 273999,"Luleå Luleå, Norrbottens län",,,2023
@@ -2324,7 +2226,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 274092,"Luleå Luleå, Norrbottens län",,,2023
 274184,"Luleå Luleå, Norrbottens län",,,2023
 274294,"Luleå Luleå, Norrbottens län",,innerstaden,2023
-274298,"Luleå Ersnäs, Luleå, Norrbottens län",,,2023
 274380,"Luleå Luleå, Norrbottens län",,,2023
 274562,"Luleå Luleå, Norrbottens län",,,2023
 274827,"Luleå Luleå, Norrbottens län",,innerstaden,2023
@@ -2386,7 +2287,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 280218,"Luleå Luleå, Norrbottens län",,,2023
 280223,"Luleå Luleå, Norrbottens län",,,2023
 280660,"Luleå Persön, Luleå, Norrbottens län",,,2023
-280711,"Luleå Ersnäs, Luleå, Norrbottens län",,,2023
 280766,"Luleå Luleå, Norrbottens län",,,2023
 280772,"Luleå Luleå, Norrbottens län",,,2023
 280858,"Luleå Luleå, Norrbottens län",,,2024
@@ -2410,13 +2310,10 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 282673,"Luleå Luleå, Norrbottens län",,,2024
 282680,"Luleå Luleå, Norrbottens län",,,2024
 282824,"Luleå Jämtön, Luleå, Norrbottens län",,,2024
-282914,"Luleå Måttsund, Luleå, Norrbottens län",,,2024
 282922,"Luleå Luleå, Norrbottens län",,,2024
 282980,"Luleå Luleå, Norrbottens län",,,2024
 283068,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 283323,"Luleå Jämtön, Luleå, Norrbottens län",,,2024
-283428,"Luleå Ersnäs, Luleå, Norrbottens län",,,2024
-283785,"Luleå Ersnäs, Luleå, Norrbottens län",,,2024
 283907,"Luleå Luleå, Norrbottens län",,,2024
 283937,"Luleå Rutvik, Luleå, Norrbottens län",,,2024
 283961,"Luleå Luleå, Norrbottens län",,,2024
@@ -2443,7 +2340,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 286007,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 286055,"Luleå Luleå, Norrbottens län",,centrum,2024
 286148,"Luleå Luleå, Norrbottens län",,,2024
-286227,"Luleå Ersnäs, Luleå, Norrbottens län",,,2024
 286283,"Norrbottens län Björkskataleden, Luleå, Norrbottens län",norrbottens lan bjorkskataleden,bjorkskataleden | centrum,2024
 286423,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 286527,"Luleå Luleå, Norrbottens län",,sunderbyn,2024
@@ -2480,7 +2376,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 289977,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 290339,"Luleå Rutviksvägen, Kyrkbyn, Luleå, Norrbottens län",lulea rutviksvagen,bilbrand vid rutviksvagen | personbil vid rutviksvagen,2024
 290364,"Luleå Luleå, Norrbottens län",,innerstaden,2024
-290376,"Luleå Ersnäs, Luleå, Norrbottens län",,lansvag,2024
 290388,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 290516,"Luleå Luleå, Norrbottens län",,,2024
 290834,"Luleå Smedsbyn, Luleå, Norrbottens län",,trafiken efter smedsbyvagen,2024
@@ -2490,7 +2385,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 291295,"Luleå Luleå, Norrbottens län",,,2024
 291304,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 291502,"Luleå Kronbacksvägen, Bredviken, Luleå, Norrbottens län",lulea kronbacksvagen,kronbacksvagen,2024
-291530,"Luleå Måttsund, Luleå, Norrbottens län",,,2024
 291571,"Norrbottens län Luleå, Jävre, Norrbottens län",,innerstaden,2024
 291825,"Luleå Persön, Luleå, Norrbottens län",,,2024
 291911,"Luleå Luleå, Norrbottens län",,,2024
@@ -2503,7 +2397,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 292784,"Luleå Luleå, Norrbottens län",,,2024
 292857,"Luleå Persön, Luleå, Norrbottens län",,,2024
 292926,"Norrbottens län Persön, Luleå, Norrbottens län",,,2024
-293055,"Luleå Alvik, Luleå, Norrbottens län",,,2024
 293044,"Luleå Luleå, Norrbottens län",,,2024
 293037,"Luleå Ormbergsvägen, Luleå, Norrbottens län",lulea ormbergsvagen,ormbergsvagen,2024
 293373,"Luleå Klöverträsk, Luleå, Norrbottens län",,brandplatsen,2024
@@ -2569,7 +2462,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 300707,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 300715,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 300717,"Luleå Luleå, Norrbottens län",,innerstaden,2024
-300806,"Luleå Ersnäs, Luleå, Norrbottens län",,,2024
 300805,"Luleå Luleå, Norrbottens län",,,2024
 300874,"Luleå Luleå, Norrbottens län",,,2024
 300968,"Luleå Luleå, Norrbottens län",,,2024
@@ -2587,7 +2479,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 302017,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 302018,"Luleå Luleå, Norrbottens län",,,2024
 302297,"Luleå Luleå, Norrbottens län",,,2024
-302430,"Luleå Ersnäs, Luleå, Norrbottens län",,,2024
 302464,"Luleå Luleå, Norrbottens län",,,2024
 302552,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 302723,"Luleå Luleå, Norrbottens län",,innerstaden,2024
@@ -2608,7 +2499,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 304809,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 304814,"Luleå Smedsbyn, Luleå, Norrbottens län",,lansvag,2024
 304825,"Luleå Luleå, Norrbottens län",,,2024
-304870,"Luleå Alvik, Luleå, Norrbottens län",,,2024
 304871,"Luleå Luleå, Norrbottens län",,innerstaden,2024
 305062,"Luleå Luleälven, Luleå, Norrbottens län",,,2024
 305406,"Luleå Luleå, Norrbottens län",,,2024
@@ -2624,7 +2514,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 306677,"Luleå Luleå, Norrbottens län",,,2025
 306710,"Luleå Luleå, Norrbottens län",,,2025
 306866,"Luleå Luleå, Norrbottens län",,,2025
-307116,"Luleå Ersnäs, Luleå, Norrbottens län",,,2025
 307144,"Luleå Luleå, Norrbottens län",,centralstationen,2025
 307198,"Luleå Luleå, Norrbottens län",,,2025
 307434,"Luleå Persön, Luleå, Norrbottens län",,,2025
@@ -2634,7 +2523,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 308360,"Luleå Luleå, Norrbottens län",,,2025
 308572,"Luleå Luleå, Norrbottens län",,centrum | med till polisstationen,2025
 308695,"Luleå Persön, Luleå, Norrbottens län",,,2025
-308700,"Luleå Måttsund, Luleå, Norrbottens län",,polisen dokumenterar olycksplatsen,2025
 308788,"Luleå Luleå, Norrbottens län",,innerstaden,2025
 308792,"Luleå Luleå, Norrbottens län",,innerstaden,2025
 308858,"Luleå Mjölkuddsvägen, Luleå, Norrbottens län",lulea mjolkuddsvagen,mjolkuddsvagen,2025
@@ -2665,7 +2553,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 311717,"Luleå Resecentrum, Luleå, Norrbottens län",,innerstaden,2025
 311879,"Luleå Sundom, Luleå, Norrbottens län",,,2025
 311990,"Luleå Luleå, Norrbottens län",,,2025
-311988,"Luleå Måttsund, Luleå, Norrbottens län",,,2025
 312282,"Luleå Luleå, Norrbottens län",,innerstaden,2025
 312305,"Luleå Kallax, Luleå, Norrbottens län",,,2025
 312374,"Luleå Persön, Luleå, Norrbottens län",,,2025
@@ -2680,8 +2567,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 313339,"Luleå Luleå, Norrbottens län",,,2025
 313464,"Luleå Luleå, Norrbottens län",,,2025
 313675,"Luleå Luleå, Norrbottens län",,innerstaden,2025
-313755,"Luleå Ersnäs, Luleå, Norrbottens län",,,2025
-313814,"Norrbottens län Luleå, Svartskatavägen, Ersnäs, Norrbottens län",svartskatavagen,morovagen | svartskatavagen,2025
 313848,"Luleå Niemisel, Luleå, Norrbottens län",,,2025
 314148,"Luleå Luleå, Norrbottens län",,,2025
 314158,"Luleå Rutvik, Luleå, Norrbottens län",,olycksplatsen,2025
@@ -2694,9 +2579,7 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 315028,"Norrbottens län Luleå, Norrbottens län",,,2025
 315136,"Luleå Luleå, Norrbottens län",,,2025
 315187,"Luleå Luleå, Norrbottens län",,centrum,2025
-315293,"Luleå Alvik, Luleå, Norrbottens län",,,2025
 315315,"Luleå Luleå, Norrbottens län",,,2025
-315393,"Luleå Måttsund, Luleå, Norrbottens län",,riksvag,2025
 315496,"Luleå Luleå, Norrbottens län",,,2025
 315625,"Luleå Luleå, Norrbottens län",,,2025
 315638,"Luleå Luleå, Norrbottens län",,,2025
@@ -2722,13 +2605,11 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 317457,"Luleå Luleå, Norrbottens län",,,2025
 317525,"Luleå Luleå, Norrbottens län",,innerstaden,2025
 317579,"Luleå Persön, Luleå, Norrbottens län",,,2025
-317661,"Luleå Ersnäs, Luleå, Norrbottens län",,,2025
 317751,"Norrbottens län Luleå, Norrbottens län",,,2025
 318103,"Luleå Luleå, Norrbottens län",,,2025
 318167,"Luleå Persön, Luleå, Norrbottens län",,,2025
 318245,"Luleå Luleå, Norrbottens län",,,2025
 318327,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2025
-318558,"Luleå Ersnäs, Luleå, Norrbottens län",,,2025
 318612,"Luleå Luleå, Norrbottens län",,innerstaden,2025
 318667,"Luleå Luleå, Norrbottens län",,innerstaden,2025
 318839,"Luleå Gant, Jumper, Luleå, Norrbottens län",,,2025
@@ -2804,7 +2685,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 431072,"Luleå Luleå, Norrbottens län",,,2025
 431844,"Luleå Bodenvägen, Gammelstadsvägen, Luleå, Norrbottens län",gammelstadsvagen | lulea bodenvagen,bodenvagen | gammelstadsvagen,2025
 432899,"Luleå Luleå, Norrbottens län",,,2025
-434082,"Luleå Ersnäs, Luleå Kommun, Luleå, Norrbottens län",,,2025
 436773,"Luleå Luleå, Norrbottens län",,brottsplatsen,2025
 437971,"Luleå Trafikplats Jämtön, Luleå, Norrbottens län",,,2025
 438209,"Luleå Luleå, Norrbottens län",,,2025
@@ -2856,7 +2736,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 498139,"Luleå Luleå, Norrbottens län",,,2026
 498146,"Luleå Luleå, Norrbottens län",,,2026
 498471,"Luleå Luleå, Norrbottens län",,innerstaden,2026
-498495,"Luleå Ersnäs, Luleå, Norrbottens län",,,2026
 498632,"Luleå Luleå, Norrbottens län",,innerstaden,2026
 498822,"Luleå Luleå, Norrbottens län",,trafikkontroll vid lansvag,2026
 498949,"Luleå Luleå, Norrbottens län",,,2026
@@ -2876,7 +2755,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 501848,"Luleå Luleå, Norrbottens län",,innerstaden,2026
 502000,"Luleå Luleå, Norrbottens län",,,2026
 502072,"Luleå Luleå, Norrbottens län",,,2026
-502094,"Norrbottens län Norrbotten, Måttsund, Luleå, Norrbottens län",,,2026
 502149,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2026
 502433,"Luleå Luleå, Norrbottens län",,olycksplatsen,2026
 502511,"Luleå Luleå, Norrbottens län",,,2026
@@ -2900,7 +2778,6 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 504885,"Luleå Luleå, Norrbottens län",,,2026
 504904,"Norrbottens län Luleå, Norrbottens län",,innerstaden,2026
 505010,"Luleå Boden, Luleå, Norrbottens län",,riksvag,2026
-505235,"Luleå Ersnäs, Luleå, Norrbottens län",,,2026
 505277,"Luleå Boden, Luleå, Norrbottens län",,,2026
 505360,"Luleå Maskinvägen, Luleå, Norrbottens län",lulea maskinvagen,maskinvagen,2026
 505391,"Luleå Luleå, Norrbottens län",,centrum,2026
@@ -2914,9 +2791,7 @@ event_id,platsfalt,kandidater_platsfalt,kandidater_loptext,ar
 506292,"Luleå Luleå, Norrbottens län",,,2026
 506752,"Luleå Luleå, Norrbottens län",,,2026
 506842,"Luleå Rutvik, Luleå, Norrbottens län",,,2026
-507150,"Luleå Ersnäs, Luleå, Norrbottens län",,,2026
 507627,"Luleå Rutvik, Luleå, Norrbottens län",,,2026
-507640,"Luleå Ersnäs, Luleå, Norrbottens län",,,2026
 507904,"Luleå Luleå, Norrbottens län",,,2026
 507936,"Norrbottens län Norrbotten, Luleå, Norrbottens län",,,2026
 508044,"Luleå Luleå, Norrbottens län",,,2026
