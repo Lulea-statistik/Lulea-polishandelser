@@ -1047,7 +1047,6 @@ function updateAreaComparisonChart(){
               const square=document.createElement('span');Object.assign(square.style,{display:'inline-block',width:'10px',height:'10px',minWidth:'10px',marginTop:'3px',backgroundColor:color,border:'1px solid rgba(255,255,255,.65)'});
               const t=document.createElement('span');t.textContent=msg;row.append(square,t);el.appendChild(row);
             };
-            addRow(ctx.dataset.backgroundColor,ctx.dataset.label+': '+percent(ctx.parsed.x)+' % ('+fmt.format(ctx.dataset.rawCounts?.[ctx.dataIndex]||0)+' händelser)');
             addRow('#9CCCF2',s1.value+': '+fmt.format(first)+' händelser ('+percent(share1)+' %)');
             addRow('#F2B183',s2.value+': '+fmt.format(second)+' händelser ('+percent(share2)+' %)');
             let msg;
