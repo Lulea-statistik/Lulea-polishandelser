@@ -1,0 +1,5082 @@
+year,month,geography_group,type_original,event_count
+2016,10,Bergviken,Rattfylleri,1
+2016,10,Centrum,Rattfylleri,1
+2016,10,Centrum,Övrigt,1
+2016,10,Gammelstad,"Trafikolycka,  personskada",1
+2016,10,Notviken,Stöld,1
+2016,10,Okänt delområde,Brand,1
+2016,10,Okänt delområde,Bråk,1
+2016,10,Okänt delområde,Fylleri/LOB,5
+2016,10,Okänt delområde,Inbrott,2
+2016,10,Okänt delområde,"Inbrott,  försök",1
+2016,10,Okänt delområde,Kontroll person/fordon,1
+2016,10,Okänt delområde,Misshandel,1
+2016,10,Okänt delområde,Narkotikabrott,1
+2016,10,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2016,10,Okänt delområde,Rattfylleri,5
+2016,10,Okänt delområde,Skadegörelse,3
+2016,10,Okänt delområde,Stöld,2
+2016,10,Okänt delområde,Trafikbrott,2
+2016,10,Okänt delområde,Trafikolycka,2
+2016,10,Okänt delområde,"Trafikolycka,  personskada",3
+2016,10,Okänt delområde,"Trafikolycka,  singel",1
+2016,10,Okänt delområde,"Trafikolycka,  vilt",5
+2016,10,Porsön,"Trafikolycka,  vilt",1
+2016,11,Bergnäset,Stöld,1
+2016,11,Bergnäset,Trafikolycka,1
+2016,11,Bergviken,Trafikolycka,1
+2016,11,Bergviken,"Trafikolycka,  vilt",1
+2016,11,Björkskatan,Rattfylleri,1
+2016,11,Björkskatan,Snatteri,1
+2016,11,Centrum,Fylleri/LOB,1
+2016,11,Centrum,Narkotikabrott,1
+2016,11,Centrum,Rattfylleri,1
+2016,11,Centrum,Trafikolycka,1
+2016,11,Flera stadsdelar i Luleå,Övrigt,1
+2016,11,Gammelstad,Rattfylleri,1
+2016,11,Gammelstad,Trafikolycka,1
+2016,11,Hertsön,Bråk,1
+2016,11,Hertsön,Kontroll person/fordon,1
+2016,11,Hertsön,Trafikolycka,1
+2016,11,Mjölkudden,Knivlagen,1
+2016,11,Notviken,Inbrott,1
+2016,11,Notviken,Trafikolycka,1
+2016,11,Notviken,Övrigt,1
+2016,11,Okänt delområde,Arbetsplatsolycka,1
+2016,11,Okänt delområde,Bedrägeri,1
+2016,11,Okänt delområde,Brand,2
+2016,11,Okänt delområde,Bråk,1
+2016,11,Okänt delområde,Djur skadat/omhändertaget,1
+2016,11,Okänt delområde,Fylleri/LOB,1
+2016,11,Okänt delområde,Inbrott,1
+2016,11,Okänt delområde,Kontroll person/fordon,1
+2016,11,Okänt delområde,Misshandel,1
+2016,11,Okänt delområde,Narkotikabrott,2
+2016,11,Okänt delområde,Olaga hot,1
+2016,11,Okänt delområde,Olovlig körning,1
+2016,11,Okänt delområde,Rattfylleri,8
+2016,11,Okänt delområde,Rån,1
+2016,11,Okänt delområde,Skadegörelse,2
+2016,11,Okänt delområde,Stöld,3
+2016,11,Okänt delområde,Stöld/inbrott,1
+2016,11,Okänt delområde,Trafikbrott,1
+2016,11,Okänt delområde,Trafikhinder,1
+2016,11,Okänt delområde,Trafikolycka,4
+2016,11,Okänt delområde,"Trafikolycka,  personskada",1
+2016,11,Okänt delområde,"Trafikolycka,  singel",1
+2016,11,Okänt delområde,"Trafikolycka,  smitning från",1
+2016,11,Okänt delområde,"Trafikolycka,  vilt",1
+2016,11,Okänt delområde,Övrigt/oklassificerad,3
+2016,11,Porsön,Arbetsplatsolycka,1
+2016,11,Porsön,Brand,1
+2016,11,Porsön,Bråk,1
+2016,11,Porsön,Kontroll person/fordon,1
+2016,11,Porsön,Olaga intrång/hemfridsbrott,1
+2016,11,Porsön,Rån,1
+2016,11,Porsön,Skadegörelse,1
+2016,11,Skurholmen,Rattfylleri,1
+2016,11,Sunderbyn,Trafikolycka,1
+2016,11,Sunderbyn,Övrigt/oklassificerad,1
+2016,12,Bergnäset,Inbrott,1
+2016,12,Bergnäset,Stöld/inbrott,1
+2016,12,Bergviken,"Misshandel,  grov",1
+2016,12,Björkskatan,"Trafikolycka,  personskada",1
+2016,12,Björkskatan,Övrigt/oklassificerad,1
+2016,12,Centrum,Fylleri/LOB,4
+2016,12,Centrum,Rattfylleri,1
+2016,12,Centrum,Stöld/inbrott,1
+2016,12,Centrum,Trafikolycka,1
+2016,12,Flera stadsdelar i Luleå,Rattfylleri,1
+2016,12,Flera stadsdelar i Luleå,Trafikolycka,1
+2016,12,Flera stadsdelar i Luleå,"Trafikolycka,  personskada",1
+2016,12,Hertsön,Misshandel,1
+2016,12,Hertsön,Rån,1
+2016,12,Hertsön,Stöld/inbrott,1
+2016,12,Mjölkudden,Stöld/inbrott,1
+2016,12,Notviken,Misshandel,1
+2016,12,Notviken,Trafikolycka,1
+2016,12,Notviken,"Trafikolycka,  personskada",1
+2016,12,Notviken,"Trafikolycka,  vilt",1
+2016,12,Okänt delområde,Brand,2
+2016,12,Okänt delområde,Fylleri/LOB,4
+2016,12,Okänt delområde,Kontroll person/fordon,2
+2016,12,Okänt delområde,Misshandel,1
+2016,12,Okänt delområde,Ofog barn/ungdom,1
+2016,12,Okänt delområde,Olaga hot,2
+2016,12,Okänt delområde,Rattfylleri,7
+2016,12,Okänt delområde,Skadegörelse,1
+2016,12,Okänt delområde,Stöld,2
+2016,12,Okänt delområde,Stöld/inbrott,2
+2016,12,Okänt delområde,Trafikbrott,1
+2016,12,Okänt delområde,Trafikhinder,3
+2016,12,Okänt delområde,Trafikolycka,7
+2016,12,Okänt delområde,"Trafikolycka,  singel",5
+2016,12,Okänt delområde,"Trafikolycka,  vilt",5
+2016,12,Porsön,Misshandel,1
+2016,12,Porsön,Narkotikabrott,1
+2016,12,Porsön,Skadegörelse,1
+2016,12,Råneå,Försvunnen person,1
+2016,12,Råneå,Trafikolycka,1
+2016,12,Råneå,"Trafikolycka,  singel",1
+2016,12,Råneå,"Trafikolycka,  vilt",1
+2016,12,Skurholmen,Brand,1
+2016,12,Skurholmen,Trafikolycka,1
+2016,12,Storheden,"Trafikolycka,  singel",1
+2016,12,Sunderbyn,Djur skadat/omhändertaget,1
+2016,12,Sunderbyn,Trafikolycka,1
+2016,12,Sunderbyn,"Trafikolycka,  vilt",2
+2017,01,Bergnäset,Brand,1
+2017,01,Centrum,Knivlagen,1
+2017,01,Centrum,Kontroll person/fordon,1
+2017,01,Centrum,Rattfylleri,3
+2017,01,Centrum,Stöld/inbrott,1
+2017,01,Centrum,Våld/hot mot tjänsteman,1
+2017,01,Flera stadsdelar i Luleå,Trafikhinder,1
+2017,01,Gammelstad,Narkotikabrott,1
+2017,01,Gammelstad,Trafikolycka,1
+2017,01,Hertsön,Rattfylleri,1
+2017,01,Hertsön,Trafikkontroll,2
+2017,01,Karlsvik,Brand automatlarm,1
+2017,01,Karlsvik,Stöld,1
+2017,01,Notviken,Stöld/inbrott,1
+2017,01,Notviken,Trafikolycka,1
+2017,01,Notviken,"Trafikolycka,  singel",1
+2017,01,Okänt delområde,Arbetsplatsolycka,1
+2017,01,Okänt delområde,Brand,6
+2017,01,Okänt delområde,Djur skadat/omhändertaget,6
+2017,01,Okänt delområde,Fylleri/LOB,1
+2017,01,Okänt delområde,Misshandel,2
+2017,01,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2017,01,Okänt delområde,Narkotikabrott,1
+2017,01,Okänt delområde,Rattfylleri,4
+2017,01,Okänt delområde,"Sammanfattning, ej uppdelad",1
+2017,01,Okänt delområde,Sjukdom/olycksfall,1
+2017,01,Okänt delområde,Stöld,2
+2017,01,Okänt delområde,Stöld/inbrott,1
+2017,01,Okänt delområde,Trafikkontroll,1
+2017,01,Okänt delområde,Trafikolycka,10
+2017,01,Okänt delområde,"Trafikolycka,  personskada",1
+2017,01,Okänt delområde,"Trafikolycka,  singel",2
+2017,01,Okänt delområde,"Trafikolycka,  vilt",1
+2017,01,Okänt delområde,Uppdatering,1
+2017,01,Okänt delområde,Övrigt,1
+2017,01,Porsön,Arbetsplatsolycka,1
+2017,01,Porsön,Narkotikabrott,1
+2017,01,Porsön,Rattfylleri,3
+2017,01,Porsön,Stöld,1
+2017,01,Råneå,Bedrägeri,1
+2017,01,Råneå,Trafikolycka,1
+2017,01,Råneå,"Trafikolycka,  vilt",1
+2017,01,Skurholmen,Trafikolycka,1
+2017,01,Storheden,Rattfylleri,1
+2017,01,Storheden,Trafikbrott,1
+2017,01,Storheden,Trafikolycka,1
+2017,01,Sunderbyn,"Trafikolycka,  vilt",1
+2017,01,Örnäset,Försvunnen person,2
+2017,02,Bergnäset,Arbetsplatsolycka,1
+2017,02,Bergnäset,Olaga hot,1
+2017,02,Bergnäset,Rattfylleri,1
+2017,02,Bergviken,Bedrägeri,1
+2017,02,Bergviken,Misshandel,1
+2017,02,Bergviken,Trafikolycka,1
+2017,02,Björkskatan,Skadegörelse,1
+2017,02,Björkskatan,Snatteri,1
+2017,02,Centrum,Fylleri/LOB,1
+2017,02,Centrum,Larm Överfall,1
+2017,02,Centrum,Ofredande/förargelse,1
+2017,02,Centrum,Rattfylleri,1
+2017,02,Centrum,Stöld,1
+2017,02,Centrum,Trafikhinder,1
+2017,02,Centrum,Övrigt,1
+2017,02,Flera stadsdelar i Luleå,Rattfylleri,1
+2017,02,Hertsön,Fylleri/LOB,2
+2017,02,Hertsön,Narkotikabrott,1
+2017,02,Hertsön,Olaga hot,1
+2017,02,Malmudden,Misshandel,1
+2017,02,Notviken,Brand,1
+2017,02,Notviken,Rattfylleri,1
+2017,02,Notviken,Trafikolycka,1
+2017,02,Notviken,"Trafikolycka,  singel",1
+2017,02,Okänt delområde,Arbetsplatsolycka,2
+2017,02,Okänt delområde,Brand,1
+2017,02,Okänt delområde,Bråk,1
+2017,02,Okänt delområde,Fylleri/LOB,1
+2017,02,Okänt delområde,Inbrott,1
+2017,02,Okänt delområde,Misshandel,2
+2017,02,Okänt delområde,"Motorfordon,  stöld",1
+2017,02,Okänt delområde,Narkotikabrott,2
+2017,02,Okänt delområde,Olaga hot,1
+2017,02,Okänt delområde,Rattfylleri,2
+2017,02,Okänt delområde,Skadegörelse,2
+2017,02,Okänt delområde,Stöld,2
+2017,02,Okänt delområde,"Stöld,  försök",1
+2017,02,Okänt delområde,Stöld/inbrott,1
+2017,02,Okänt delområde,Trafikbrott,1
+2017,02,Okänt delområde,Trafikhinder,1
+2017,02,Okänt delområde,Trafikkontroll,1
+2017,02,Okänt delområde,Trafikolycka,7
+2017,02,Okänt delområde,"Trafikolycka,  personskada",2
+2017,02,Okänt delområde,"Trafikolycka,  vilt",6
+2017,02,Porsön,Trafikolycka,1
+2017,02,Råneå,Trafikolycka,1
+2017,02,Råneå,"Trafikolycka,  personskada",1
+2017,02,Skurholmen,Rattfylleri,1
+2017,02,Storheden,Trafikbrott,1
+2017,02,Storheden,Trafikkontroll,1
+2017,02,Storheden,Trafikolycka,1
+2017,02,Sunderbyn,Övrigt,1
+2017,03,Bergnäset,Trafikolycka,1
+2017,03,Bergnäset,Övrigt/oklassificerad,1
+2017,03,Bergviken,Bråk,1
+2017,03,Björkskatan,Brand,1
+2017,03,Björkskatan,Rattfylleri,1
+2017,03,Centrum,Fylleri/LOB,1
+2017,03,Centrum,Stöld/inbrott,1
+2017,03,Centrum,Trafikhinder,1
+2017,03,Flera stadsdelar i Luleå,Trafikolycka,1
+2017,03,Gammelstad,Trafikhinder,1
+2017,03,Hertsön,Brand,1
+2017,03,Hertsön,Bråk,1
+2017,03,Hertsön,Misshandel,1
+2017,03,Hertsön,Övrigt,1
+2017,03,Okänt delområde,Arbetsplatsolycka,1
+2017,03,Okänt delområde,Brand,2
+2017,03,Okänt delområde,Bråk,1
+2017,03,Okänt delområde,Detonation,4
+2017,03,Okänt delområde,Djur skadat/omhändertaget,1
+2017,03,Okänt delområde,Fylleri/LOB,3
+2017,03,Okänt delområde,Kontroll person/fordon,1
+2017,03,Okänt delområde,Misshandel,6
+2017,03,Okänt delområde,Narkotikabrott,1
+2017,03,Okänt delområde,Olaga hot,2
+2017,03,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2017,03,Okänt delområde,Rattfylleri,4
+2017,03,Okänt delområde,Skadegörelse,1
+2017,03,Okänt delområde,Stöld,2
+2017,03,Okänt delområde,Trafikbrott,2
+2017,03,Okänt delområde,Trafikhinder,1
+2017,03,Okänt delområde,Trafikolycka,12
+2017,03,Okänt delområde,"Trafikolycka,  singel",1
+2017,03,Okänt delområde,"Trafikolycka,  vilt",2
+2017,03,Okänt delområde,Vapenlagen,1
+2017,03,Okänt delområde,Övrigt/oklassificerad,3
+2017,03,Porsön,Arbetsplatsolycka,1
+2017,03,Porsön,Trafikkontroll,1
+2017,03,Skurholmen,Fylleri/LOB,1
+2017,03,Skurholmen,Kontroll person/fordon,1
+2017,03,Storheden,Fylleri/LOB,1
+2017,03,Storheden,Rattfylleri,1
+2017,03,Storheden,Trafikolycka,1
+2017,04,Björkskatan,"Farligt föremål,  misstänkt",1
+2017,04,Björkskatan,Skadegörelse,1
+2017,04,Björkskatan,Uppdatering,1
+2017,04,Centrum,Narkotikabrott,1
+2017,04,Centrum,Skadegörelse,2
+2017,04,Centrum,Stöld,1
+2017,04,Flera stadsdelar i Luleå,Kontroll person/fordon,1
+2017,04,Flera stadsdelar i Luleå,"Trafikolycka,  personskada",1
+2017,04,Flera stadsdelar i Luleå,"Trafikolycka,  vilt",1
+2017,04,Hertsön,Narkotikabrott,2
+2017,04,Hertsön,Olovlig körning,1
+2017,04,Hertsön,Trafikbrott,1
+2017,04,Mjölkudden,Trafikkontroll,1
+2017,04,Mjölkudden,Övrigt,1
+2017,04,Notviken,Trafikolycka,1
+2017,04,Okänt delområde,Brand,2
+2017,04,Okänt delområde,Djur,1
+2017,04,Okänt delområde,Fjällräddning,1
+2017,04,Okänt delområde,Fylleri/LOB,7
+2017,04,Okänt delområde,Kontroll person/fordon,1
+2017,04,Okänt delområde,Misshandel,1
+2017,04,Okänt delområde,Narkotikabrott,3
+2017,04,Okänt delområde,Olovlig körning,1
+2017,04,Okänt delområde,Rattfylleri,7
+2017,04,Okänt delområde,Skadegörelse,3
+2017,04,Okänt delområde,Stöld,1
+2017,04,Okänt delområde,Stöld/inbrott,1
+2017,04,Okänt delområde,Trafikhinder,1
+2017,04,Okänt delområde,Trafikkontroll,2
+2017,04,Okänt delområde,Trafikolycka,5
+2017,04,Okänt delområde,"Trafikolycka,  singel",2
+2017,04,Okänt delområde,"Trafikolycka,  vilt",1
+2017,04,Okänt delområde,Uppdatering,2
+2017,04,Okänt delområde,Övrigt,1
+2017,04,Okänt delområde,Övrigt/oklassificerad,4
+2017,04,Porsön,Brand,1
+2017,04,Porsön,"Sammanfattning, ej uppdelad",1
+2017,04,Porsön,Skadegörelse,2
+2017,04,Porsön,Stöld,1
+2017,04,Storheden,Stöld,1
+2017,04,Örnäset,Stöld/inbrott,1
+2017,05,Bergnäset,Försvunnen person,1
+2017,05,Björkskatan,Snatteri,1
+2017,05,Björkskatan,Stöld/inbrott,1
+2017,05,Centrum,Bedrägeri,1
+2017,05,Centrum,Fylleri/LOB,2
+2017,05,Centrum,Misshandel,1
+2017,05,Centrum,Ofredande/förargelse,1
+2017,05,Centrum,Rån,1
+2017,05,Centrum,Skadegörelse,1
+2017,05,Centrum,Stöld,1
+2017,05,Centrum,Trafikolycka,1
+2017,05,Centrum,"Trafikolycka,  smitning från",1
+2017,05,Centrum,Övrigt/oklassificerad,1
+2017,05,Flera stadsdelar i Luleå,Trafikolycka,1
+2017,05,Flera stadsdelar i Luleå,Övrigt/oklassificerad,1
+2017,05,Gammelstad,Trafikkontroll,1
+2017,05,Hertsön,Ofredande/förargelse,1
+2017,05,Hertsön,Rattfylleri,2
+2017,05,Hertsön,Stöld/inbrott,1
+2017,05,Hertsön,"Trafikolycka,  vilt",1
+2017,05,Lerbäcken,Rattfylleri,1
+2017,05,Notviken,Stöld,1
+2017,05,Notviken,Trafikolycka,1
+2017,05,Notviken,Övrigt/oklassificerad,1
+2017,05,Okänt delområde,Arbetsplatsolycka,2
+2017,05,Okänt delområde,Bråk,2
+2017,05,Okänt delområde,Fylleri/LOB,2
+2017,05,Okänt delområde,Inbrott,1
+2017,05,Okänt delområde,Misshandel,1
+2017,05,Okänt delområde,Ofredande/förargelse,1
+2017,05,Okänt delområde,Olovlig körning,1
+2017,05,Okänt delområde,Rattfylleri,8
+2017,05,Okänt delområde,Rån,1
+2017,05,Okänt delområde,Trafikbrott,2
+2017,05,Okänt delområde,Trafikhinder,1
+2017,05,Okänt delområde,Trafikkontroll,1
+2017,05,Okänt delområde,Trafikolycka,1
+2017,05,Okänt delområde,"Trafikolycka,  personskada",1
+2017,05,Okänt delområde,"Trafikolycka,  singel",1
+2017,05,Okänt delområde,Uppdatering,6
+2017,05,Okänt delområde,Övrigt/oklassificerad,1
+2017,05,Porsön,Narkotikabrott,1
+2017,05,Porsön,Skottlossning,1
+2017,05,Råneå,Räddningsinsats,1
+2017,05,Råneå,Trafikolycka,1
+2017,05,Storheden,Misshandel,1
+2017,05,Storheden,Snatteri,1
+2017,05,Storheden,Trafikolycka,1
+2017,05,Örnäset,Snatteri,1
+2017,06,Bergviken,Försvunnen person,1
+2017,06,Bergviken,Skadegörelse,1
+2017,06,Bergviken,Stöld/inbrott,1
+2017,06,Bergviken,Övrigt/oklassificerad,1
+2017,06,Björkskatan,Rattfylleri,1
+2017,06,Centrum,Fylleri/LOB,2
+2017,06,Centrum,Misshandel,2
+2017,06,Centrum,Trafikolycka,3
+2017,06,Centrum,"Trafikolycka,  personskada",1
+2017,06,Flera stadsdelar i Luleå,"Trafikolycka,  smitning från",1
+2017,06,Flera stadsdelar i Luleå,Övrigt/oklassificerad,1
+2017,06,Gammelstad,Trafikbrott,1
+2017,06,Hertsön,"Motorfordon,  stöld",1
+2017,06,Karlsvik,Trafikkontroll,1
+2017,06,Malmudden,Trafikbrott,1
+2017,06,Notviken,Trafikbrott,1
+2017,06,Notviken,Trafikhinder,1
+2017,06,Okänt delområde,Bedrägeri,1
+2017,06,Okänt delområde,Brand,2
+2017,06,Okänt delområde,Bråk,1
+2017,06,Okänt delområde,Djur skadat/omhändertaget,1
+2017,06,Okänt delområde,Fylleri/LOB,3
+2017,06,Okänt delområde,Inbrott,1
+2017,06,Okänt delområde,Misshandel,2
+2017,06,Okänt delområde,Narkotikabrott,1
+2017,06,Okänt delområde,Rattfylleri,1
+2017,06,Okänt delområde,Rån,1
+2017,06,Okänt delområde,Skadegörelse,1
+2017,06,Okänt delområde,Stöld,4
+2017,06,Okänt delområde,"Stöld,  ringa",1
+2017,06,Okänt delområde,Trafikbrott,4
+2017,06,Okänt delområde,"Trafikolycka,  singel",1
+2017,06,Okänt delområde,"Trafikolycka,  smitning från",1
+2017,06,Okänt delområde,"Trafikolycka,  vilt",1
+2017,06,Okänt delområde,Övrigt/oklassificerad,4
+2017,06,Porsön,Skadegörelse,1
+2017,06,Porsön,Trafikolycka,2
+2017,06,Råneå,Rattfylleri,1
+2017,06,Skurholmen,Rån väpnat,1
+2017,06,Storheden,Djur skadat/omhändertaget,1
+2017,06,Storheden,Rattfylleri,1
+2017,06,Storheden,Trafikbrott,1
+2017,06,Storheden,Trafikkontroll,1
+2017,06,Storheden,Övrigt,1
+2017,06,Sunderbyn,Djur skadat/omhändertaget,1
+2017,06,Sunderbyn,Inbrott,1
+2017,06,Sunderbyn,Stöld/inbrott,1
+2017,07,Bergnäset,Trafikkontroll,1
+2017,07,Bergnäset,Våld/hot mot tjänsteman,1
+2017,07,Björkskatan,Fylleri/LOB,1
+2017,07,Centrum,Fylleri/LOB,2
+2017,07,Centrum,Försvunnen person,1
+2017,07,Centrum,Stöld,1
+2017,07,Centrum,Trafikolycka,1
+2017,07,Centrum,Övrigt,1
+2017,07,Flera stadsdelar i Luleå,"Motorfordon,  anträffat stulet",1
+2017,07,Flera stadsdelar i Luleå,Trafikhinder,1
+2017,07,Gammelstad,Brand,1
+2017,07,Gammelstad,"Motorfordon,  anträffat stulet",1
+2017,07,Gammelstad,Trafikbrott,1
+2017,07,Hertsön,Fylleri/LOB,1
+2017,07,Hertsön,Stöld/inbrott,1
+2017,07,Hertsön,Övrigt,1
+2017,07,Okänt delområde,Fylleri/LOB,3
+2017,07,Okänt delområde,Inbrott,1
+2017,07,Okänt delområde,"Inbrott,  försök",1
+2017,07,Okänt delområde,Knivlagen,1
+2017,07,Okänt delområde,Larm Överfall,1
+2017,07,Okänt delområde,Misshandel,4
+2017,07,Okänt delområde,Narkotikabrott,3
+2017,07,Okänt delområde,Ofredande/förargelse,1
+2017,07,Okänt delområde,Olaga hot,1
+2017,07,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2017,07,Okänt delområde,Rattfylleri,3
+2017,07,Okänt delområde,Snatteri,1
+2017,07,Okänt delområde,Stöld,3
+2017,07,Okänt delområde,"Stöld,  ringa",1
+2017,07,Okänt delområde,Stöld/inbrott,4
+2017,07,Okänt delområde,Trafikbrott,1
+2017,07,Okänt delområde,Trafikhinder,1
+2017,07,Okänt delområde,Trafikkontroll,1
+2017,07,Okänt delområde,Trafikolycka,4
+2017,07,Okänt delområde,"Trafikolycka,  personskada",1
+2017,07,Okänt delområde,"Trafikolycka,  singel",1
+2017,07,Okänt delområde,"Trafikolycka,  vilt",1
+2017,07,Okänt delområde,Våld/hot mot tjänsteman,1
+2017,07,Okänt delområde,Övrigt,1
+2017,07,Okänt delområde,Övrigt/oklassificerad,2
+2017,07,Råneå,Trafikkontroll,1
+2017,07,Storheden,Trafikolycka,1
+2017,08,Centrum,Fylleri/LOB,3
+2017,08,Centrum,Försvunnen person,1
+2017,08,Centrum,Rån,1
+2017,08,Centrum,Snatteri,1
+2017,08,Centrum,"Trafikolycka,  personskada",1
+2017,08,Flera stadsdelar i Luleå,Kontroll person/fordon,1
+2017,08,Flera stadsdelar i Luleå,Trafikolycka,1
+2017,08,Gammelstad,Stöld,1
+2017,08,Gammelstad,Övrigt,1
+2017,08,Hertsön,"Misshandel,  grov",1
+2017,08,Hertsön,Övrigt,1
+2017,08,Mjölkudden,"Motorfordon,  anträffat stulet",1
+2017,08,Mjölkudden,Ofredande/förargelse,1
+2017,08,Notviken,Misshandel,1
+2017,08,Notviken,Rattfylleri,1
+2017,08,Notviken,Trafikbrott,1
+2017,08,Okänt delområde,Arbetsplatsolycka,1
+2017,08,Okänt delområde,Bedrägeri,1
+2017,08,Okänt delområde,Brand,1
+2017,08,Okänt delområde,Fylleri/LOB,4
+2017,08,Okänt delområde,Försvunnen person,1
+2017,08,Okänt delområde,Inbrott,1
+2017,08,Okänt delområde,Misshandel,3
+2017,08,Okänt delområde,Rattfylleri,6
+2017,08,Okänt delområde,Skadegörelse,3
+2017,08,Okänt delområde,Stöld,3
+2017,08,Okänt delområde,Trafikbrott,1
+2017,08,Okänt delområde,Trafikolycka,3
+2017,08,Okänt delområde,"Trafikolycka,  personskada",1
+2017,08,Okänt delområde,Vållande till kroppsskada,1
+2017,08,Okänt delområde,Övrigt/oklassificerad,3
+2017,08,Porsön,Fylleri/LOB,1
+2017,08,Porsön,Skadegörelse,1
+2017,08,Råneå,"Motorfordon,  anträffat stulet",1
+2017,08,Råneå,Trafikkontroll,1
+2017,08,Storheden,Stöld,3
+2017,08,Storheden,Trafikkontroll,2
+2017,09,Bergnäset,"Misshandel,  grov",1
+2017,09,Bergnäset,Trafikkontroll,1
+2017,09,Björkskatan,Narkotikabrott,1
+2017,09,Björkskatan,Stöld/inbrott,1
+2017,09,Björkskatan,Trafikbrott,1
+2017,09,Centrum,Fylleri/LOB,1
+2017,09,Centrum,Inbrott,1
+2017,09,Centrum,Misshandel,1
+2017,09,Centrum,Rattfylleri,1
+2017,09,Centrum,Skottlossning,1
+2017,09,Flera stadsdelar i Luleå,Trafikolycka,1
+2017,09,Gammelstad,"Motorfordon,  stöld",1
+2017,09,Gammelstad,Rattfylleri,1
+2017,09,Hertsön,Olovlig körning,1
+2017,09,Hertsön,Rattfylleri,1
+2017,09,Hertsön,Skadegörelse,1
+2017,09,Malmudden,Brand,1
+2017,09,Malmudden,Uppdatering,1
+2017,09,Mjölkudden,Rattfylleri,1
+2017,09,Mjölkudden,"Trafikolycka,  personskada",1
+2017,09,Okänt delområde,Arbetsplatsolycka,1
+2017,09,Okänt delområde,Brand,1
+2017,09,Okänt delområde,Bråk,1
+2017,09,Okänt delområde,Fylleri/LOB,5
+2017,09,Okänt delområde,Försvunnen person,1
+2017,09,Okänt delområde,Inbrott,1
+2017,09,Okänt delområde,Larm Överfall,1
+2017,09,Okänt delområde,Misshandel,4
+2017,09,Okänt delområde,"Motorfordon,  stöld",1
+2017,09,Okänt delområde,Narkotikabrott,1
+2017,09,Okänt delområde,Olaga hot,1
+2017,09,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2017,09,Okänt delområde,Polisinsats/kommendering,1
+2017,09,Okänt delområde,Rattfylleri,5
+2017,09,Okänt delområde,Skadegörelse,4
+2017,09,Okänt delområde,Stöld,2
+2017,09,Okänt delområde,"Stöld,  ringa",1
+2017,09,Okänt delområde,Stöld/inbrott,6
+2017,09,Okänt delområde,Trafikbrott,1
+2017,09,Okänt delområde,Trafikkontroll,2
+2017,09,Okänt delområde,Trafikolycka,2
+2017,09,Okänt delområde,"Trafikolycka,  vilt",4
+2017,09,Okänt delområde,Uppdatering,2
+2017,09,Okänt delområde,Våld/hot mot tjänsteman,1
+2017,09,Okänt delområde,Övrigt,2
+2017,09,Okänt delområde,Övrigt/oklassificerad,1
+2017,09,Porsön,Djur skadat/omhändertaget,1
+2017,09,Råneå,Skadegörelse,1
+2017,09,Råneå,Trafikbrott,1
+2017,09,Råneå,Trafikkontroll,1
+2017,09,Skurholmen,Fylleri/LOB,1
+2017,09,Storheden,Bråk,1
+2017,09,Storheden,Narkotikabrott,1
+2017,09,Storheden,Trafikolycka,1
+2017,09,Sunderbyn,Brand,1
+2017,09,Sunderbyn,Övrigt,1
+2017,10,Bergnäset,Larm Inbrott,1
+2017,10,Bergnäset,Rattfylleri,1
+2017,10,Bergviken,Bråk,1
+2017,10,Centrum,Ordningslagen,1
+2017,10,Flera stadsdelar i Luleå,Olovlig körning,1
+2017,10,Flera stadsdelar i Luleå,Trafikbrott,1
+2017,10,Gammelstad,Knivlagen,1
+2017,10,Gammelstad,Trafikkontroll,1
+2017,10,Gammelstad,Trafikolycka,1
+2017,10,Hertsön,"Mord/dråp,  försök",1
+2017,10,Hertsön,Rattfylleri,1
+2017,10,Hertsön,"Stöld,  ringa",1
+2017,10,Mjölkudden,Rattfylleri,2
+2017,10,Mjölkudden,Stöld/inbrott,1
+2017,10,Notviken,Bråk,1
+2017,10,Notviken,Trafikkontroll,1
+2017,10,Notviken,Trafikolycka,1
+2017,10,Okänt delområde,Brand,1
+2017,10,Okänt delområde,Bråk,2
+2017,10,Okänt delområde,Fylleri/LOB,3
+2017,10,Okänt delområde,Larm Överfall,1
+2017,10,Okänt delområde,Misshandel,3
+2017,10,Okänt delområde,"Motorfordon,  stöld",1
+2017,10,Okänt delområde,Narkotikabrott,2
+2017,10,Okänt delområde,Ofredande/förargelse,1
+2017,10,Okänt delområde,Olaga hot,1
+2017,10,Okänt delområde,Rattfylleri,7
+2017,10,Okänt delområde,Räddningsinsats,1
+2017,10,Okänt delområde,Skadegörelse,2
+2017,10,Okänt delområde,Stöld,3
+2017,10,Okänt delområde,Trafikbrott,3
+2017,10,Okänt delområde,Trafikkontroll,3
+2017,10,Okänt delområde,Trafikolycka,4
+2017,10,Okänt delområde,"Trafikolycka,  personskada",1
+2017,10,Okänt delområde,"Trafikolycka,  smitning från",1
+2017,10,Okänt delområde,"Trafikolycka,  vilt",5
+2017,10,Okänt delområde,Övrigt,3
+2017,10,Okänt delområde,Övrigt/oklassificerad,2
+2017,10,Porsön,Fylleri/LOB,1
+2017,10,Porsön,Misshandel,1
+2017,10,Råneå,Övrigt,1
+2017,10,Skurholmen,Trafikbrott,1
+2017,10,Storheden,Försvunnen person,1
+2017,10,Storheden,Rattfylleri,1
+2017,10,Storheden,Stöld,1
+2017,10,Storheden,Trafikolycka,1
+2017,10,Sunderbyn,Trafikkontroll,1
+2017,10,Örnäset,"Stöld,  ringa",1
+2017,11,Bergnäset,Narkotikabrott,1
+2017,11,Bergnäset,Stöld,1
+2017,11,Bergviken,Trafikkontroll,1
+2017,11,Björkskatan,Inbrott,1
+2017,11,Björkskatan,Trafikolycka,2
+2017,11,Björkskatan,"Trafikolycka,  personskada",1
+2017,11,Centrum,Bråk,1
+2017,11,Centrum,Fylleri/LOB,2
+2017,11,Centrum,Rattfylleri,1
+2017,11,Centrum,Stöld,1
+2017,11,Centrum,Trafikbrott,1
+2017,11,Centrum,"Trafikolycka,  personskada",1
+2017,11,Flera stadsdelar i Luleå,Larm Överfall,1
+2017,11,Flera stadsdelar i Luleå,Trafikolycka,2
+2017,11,Gammelstad,Försvunnen person,1
+2017,11,Gammelstad,Trafikkontroll,1
+2017,11,Hertsön,"Trafikolycka,  personskada",1
+2017,11,Notviken,Kontroll person/fordon,2
+2017,11,Notviken,Trafikbrott,1
+2017,11,Notviken,Trafikhinder,1
+2017,11,Notviken,Trafikolycka,3
+2017,11,Okänt delområde,Arbetsplatsolycka,1
+2017,11,Okänt delområde,Bedrägeri,1
+2017,11,Okänt delområde,Brand,2
+2017,11,Okänt delområde,Fylleri/LOB,3
+2017,11,Okänt delområde,Inbrott,2
+2017,11,Okänt delområde,Larm Överfall,1
+2017,11,Okänt delområde,Misshandel,4
+2017,11,Okänt delområde,"Motorfordon,  stöld",1
+2017,11,Okänt delområde,Narkotikabrott,2
+2017,11,Okänt delområde,Olaga hot,1
+2017,11,Okänt delområde,Olovlig körning,1
+2017,11,Okänt delområde,Rattfylleri,7
+2017,11,Okänt delområde,Skadegörelse,3
+2017,11,Okänt delområde,"Stöld,  ringa",2
+2017,11,Okänt delområde,Stöld/inbrott,4
+2017,11,Okänt delområde,Trafikbrott,1
+2017,11,Okänt delområde,Trafikkontroll,3
+2017,11,Okänt delområde,Trafikolycka,12
+2017,11,Okänt delområde,"Trafikolycka,  personskada",2
+2017,11,Okänt delområde,"Trafikolycka,  vilt",7
+2017,11,Okänt delområde,Våld/hot mot tjänsteman,1
+2017,11,Okänt delområde,Övrigt,2
+2017,11,Porsön,Narkotikabrott,1
+2017,11,Skurholmen,"Motorfordon,  anträffat stulet",1
+2017,11,Storheden,Trafikkontroll,1
+2017,11,Storheden,Övrigt/oklassificerad,1
+2017,11,Örnäset,Misshandel,1
+2017,12,Bergnäset,Kontroll person/fordon,1
+2017,12,Bergviken,Bråk,1
+2017,12,Bergviken,Trafikolycka,1
+2017,12,Björkskatan,Stöld/inbrott,1
+2017,12,Centrum,Stöld,1
+2017,12,Hertsön,Fylleri/LOB,1
+2017,12,Hertsön,Misshandel,2
+2017,12,Hertsön,Stöld/inbrott,1
+2017,12,Mjölkudden,Brand,1
+2017,12,Mjölkudden,Trafikkontroll,1
+2017,12,Notviken,Rattfylleri,1
+2017,12,Notviken,Skadegörelse,1
+2017,12,Notviken,Trafikkontroll,1
+2017,12,Notviken,"Trafikolycka,  smitning från",1
+2017,12,Okänt delområde,Arbetsplatsolycka,1
+2017,12,Okänt delområde,Bråk,1
+2017,12,Okänt delområde,Fylleri/LOB,1
+2017,12,Okänt delområde,Larm Överfall,2
+2017,12,Okänt delområde,Misshandel,4
+2017,12,Okänt delområde,Narkotikabrott,2
+2017,12,Okänt delområde,Olaga hot,2
+2017,12,Okänt delområde,Olovlig körning,1
+2017,12,Okänt delområde,Rattfylleri,6
+2017,12,Okänt delområde,Rån,1
+2017,12,Okänt delområde,Skadegörelse,2
+2017,12,Okänt delområde,Stöld,2
+2017,12,Okänt delområde,"Stöld,  ringa",3
+2017,12,Okänt delområde,Trafikbrott,1
+2017,12,Okänt delområde,Trafikhinder,1
+2017,12,Okänt delområde,Trafikolycka,8
+2017,12,Okänt delområde,"Trafikolycka,  personskada",1
+2017,12,Okänt delområde,"Trafikolycka,  singel",1
+2017,12,Okänt delområde,"Trafikolycka,  vilt",4
+2017,12,Okänt delområde,Våld/hot mot tjänsteman,1
+2017,12,Okänt delområde,Övrigt,1
+2017,12,Okänt delområde,Övrigt/oklassificerad,1
+2017,12,Porsön,Narkotikabrott,1
+2017,12,Råneå,Trafikbrott,1
+2017,12,Råneå,Trafikkontroll,1
+2017,12,Storheden,Rattfylleri,2
+2017,12,Storheden,Trafikkontroll,2
+2017,12,Storheden,Trafikolycka,1
+2017,12,Örnäset,Bråk,1
+2017,12,Örnäset,"Stöld,  ringa",1
+2018,01,Bergnäset,Rattfylleri,1
+2018,01,Bergnäset,Trafikbrott,1
+2018,01,Bergnäset,Trafikkontroll,1
+2018,01,Bergviken,Rattfylleri,1
+2018,01,Björkskatan,Trafikkontroll,1
+2018,01,Centrum,Fylleri/LOB,1
+2018,01,Centrum,"Motorfordon,  stöld",2
+2018,01,Centrum,Narkotikabrott,1
+2018,01,Centrum,Stöld,1
+2018,01,Centrum,Uppdatering,2
+2018,01,Flera stadsdelar i Luleå,Rattfylleri,1
+2018,01,Flera stadsdelar i Luleå,Trafikolycka,1
+2018,01,Flera stadsdelar i Luleå,"Trafikolycka,  personskada",1
+2018,01,Gammelstad,"Stöld,  ringa",1
+2018,01,Gammelstad,"Trafikolycka,  personskada",1
+2018,01,Hertsön,Olovlig körning,2
+2018,01,Hertsön,Trafikbrott,1
+2018,01,Hertsön,"Trafikolycka,  personskada",1
+2018,01,Lerbäcken,Brand,1
+2018,01,Malmudden,Fylleri/LOB,1
+2018,01,Mjölkudden,Trafikolycka,1
+2018,01,Notviken,Fylleri/LOB,1
+2018,01,Notviken,Rån,1
+2018,01,Notviken,"Trafikolycka,  singel",1
+2018,01,Okänt delområde,Arbetsplatsolycka,1
+2018,01,Okänt delområde,Bråk,1
+2018,01,Okänt delområde,"Farligt föremål,  misstänkt",1
+2018,01,Okänt delområde,Fylleri/LOB,6
+2018,01,Okänt delområde,Kontroll person/fordon,1
+2018,01,Okänt delområde,Misshandel,4
+2018,01,Okänt delområde,Narkotikabrott,1
+2018,01,Okänt delområde,Ofredande/förargelse,1
+2018,01,Okänt delområde,Olaga hot,1
+2018,01,Okänt delområde,Rattfylleri,6
+2018,01,Okänt delområde,Rån,1
+2018,01,Okänt delområde,"Stöld,  ringa",1
+2018,01,Okänt delområde,Stöld/inbrott,2
+2018,01,Okänt delområde,Trafikbrott,3
+2018,01,Okänt delområde,Trafikhinder,2
+2018,01,Okänt delområde,Trafikkontroll,1
+2018,01,Okänt delområde,Trafikolycka,6
+2018,01,Okänt delområde,"Trafikolycka,  singel",1
+2018,01,Okänt delområde,"Trafikolycka,  vilt",2
+2018,01,Okänt delområde,Våld/hot mot tjänsteman,2
+2018,01,Okänt delområde,Övrigt,2
+2018,01,Okänt delområde,Övrigt/oklassificerad,1
+2018,01,Porsön,Misshandel,1
+2018,01,Porsön,Ofredande/förargelse,1
+2018,01,Porsön,"Trafikolycka,  personskada",1
+2018,01,Råneå,Trafikolycka,1
+2018,01,Storheden,Larm Överfall,1
+2018,01,Storheden,"Motorfordon,  stöld",1
+2018,01,Storheden,Olaga hot,1
+2018,01,Storheden,Rattfylleri,1
+2018,01,Storheden,"Stöld,  ringa",2
+2018,01,Storheden,Trafikkontroll,1
+2018,01,Storheden,Trafikolycka,1
+2018,01,Sunderbyn,Trafikkontroll,1
+2018,01,Sunderbyn,Trafikolycka,1
+2018,02,Bergnäset,Kontroll person/fordon,1
+2018,02,Bergviken,Misshandel,1
+2018,02,Bergviken,"Motorfordon,  stöld",1
+2018,02,Björkskatan,Övrigt,1
+2018,02,Centrum,Fylleri/LOB,1
+2018,02,Centrum,Larm Överfall,1
+2018,02,Centrum,"Motorfordon,  stöld",1
+2018,02,Centrum,Stöld,1
+2018,02,Centrum,"Trafikolycka,  personskada",3
+2018,02,Hertsön,Misshandel,1
+2018,02,Hertsön,Rattfylleri,2
+2018,02,Notviken,Rattfylleri,2
+2018,02,Okänt delområde,Brand,1
+2018,02,Okänt delområde,Fylleri/LOB,1
+2018,02,Okänt delområde,Inbrott,1
+2018,02,Okänt delområde,Larm Överfall,1
+2018,02,Okänt delområde,Misshandel,1
+2018,02,Okänt delområde,Narkotikabrott,7
+2018,02,Okänt delområde,Olaga hot,1
+2018,02,Okänt delområde,Rattfylleri,3
+2018,02,Okänt delområde,Rån övrigt,1
+2018,02,Okänt delområde,Skadegörelse,1
+2018,02,Okänt delområde,"Stöld,  ringa",6
+2018,02,Okänt delområde,Stöld/inbrott,1
+2018,02,Okänt delområde,Trafikhinder,1
+2018,02,Okänt delområde,Trafikkontroll,3
+2018,02,Okänt delområde,Trafikolycka,10
+2018,02,Okänt delområde,"Trafikolycka,  personskada",2
+2018,02,Okänt delområde,"Trafikolycka,  vilt",2
+2018,02,Okänt delområde,Övrigt/oklassificerad,1
+2018,02,Råneå,Olaga hot,2
+2018,02,Råneå,Stöld/inbrott,1
+2018,02,Råneå,"Trafikolycka,  personskada",1
+2018,02,Skurholmen,"Motorfordon,  stöld",1
+2018,02,Skurholmen,"Stöld,  försök",1
+2018,02,Storheden,Rattfylleri,1
+2018,02,Storheden,Stöld,1
+2018,02,Storheden,Trafikkontroll,1
+2018,02,Sunderbyn,Trafikbrott,1
+2018,03,Bergnäset,Trafikolycka,1
+2018,03,Bergviken,Rattfylleri,1
+2018,03,Bergviken,Trafikkontroll,1
+2018,03,Bergviken,"Trafikolycka,  personskada",1
+2018,03,Björkskatan,Rattfylleri,1
+2018,03,Björkskatan,Trafikolycka,1
+2018,03,Centrum,"Mord/dråp,  försök",1
+2018,03,Centrum,Rattfylleri,1
+2018,03,Flera stadsdelar i Luleå,Rattfylleri,1
+2018,03,Flera stadsdelar i Luleå,Övrigt,1
+2018,03,Hertsön,Rattfylleri,1
+2018,03,Hertsön,Trafikbrott,1
+2018,03,Mjölkudden,Brand,1
+2018,03,Notviken,Stöld/inbrott,1
+2018,03,Okänt delområde,Brand,2
+2018,03,Okänt delområde,Fylleri/LOB,3
+2018,03,Okänt delområde,Larm Överfall,1
+2018,03,Okänt delområde,Misshandel,5
+2018,03,Okänt delområde,Narkotikabrott,1
+2018,03,Okänt delområde,Olaga hot,3
+2018,03,Okänt delområde,Rattfylleri,3
+2018,03,Okänt delområde,Rån,1
+2018,03,Okänt delområde,Skadegörelse,2
+2018,03,Okänt delområde,"Stöld,  ringa",3
+2018,03,Okänt delområde,Stöld/inbrott,2
+2018,03,Okänt delområde,Trafikbrott,1
+2018,03,Okänt delområde,Trafikkontroll,3
+2018,03,Okänt delområde,Trafikolycka,12
+2018,03,Okänt delområde,"Trafikolycka,  vilt",1
+2018,03,Okänt delområde,Uppdatering,4
+2018,03,Okänt delområde,Övrigt,1
+2018,03,Porsön,Rattfylleri,1
+2018,03,Porsön,Stöld/inbrott,1
+2018,03,Porsön,Trafikolycka,1
+2018,03,Storheden,Stöld,1
+2018,03,Storheden,"Stöld,  ringa",1
+2018,03,Storheden,Trafikkontroll,2
+2018,03,Örnäset,"Stöld,  ringa",1
+2018,03,Örnäset,Övrigt/oklassificerad,1
+2018,04,Bergnäset,Trafikolycka,1
+2018,04,Bergviken,Trafikkontroll,1
+2018,04,Bergviken,Uppdatering,2
+2018,04,Bergviken,"Våldtäkt,  försök",1
+2018,04,Björkskatan,Trafikkontroll,1
+2018,04,Centrum,Fylleri/LOB,1
+2018,04,Centrum,Misshandel,2
+2018,04,Centrum,Olovlig körning,1
+2018,04,Centrum,Rattfylleri,2
+2018,04,Flera stadsdelar i Luleå,Rattfylleri,1
+2018,04,Flera stadsdelar i Luleå,Trafikkontroll,2
+2018,04,Gammelstad,Trafikhinder,1
+2018,04,Hertsön,Fylleri/LOB,1
+2018,04,Hertsön,Skadegörelse,1
+2018,04,Notviken,Brand,1
+2018,04,Notviken,Rattfylleri,1
+2018,04,Notviken,Trafikkontroll,4
+2018,04,Notviken,"Trafikolycka,  vilt",1
+2018,04,Okänt delområde,Arbetsplatsolycka,1
+2018,04,Okänt delområde,Brand,2
+2018,04,Okänt delområde,Bråk,2
+2018,04,Okänt delområde,Fylleri/LOB,6
+2018,04,Okänt delområde,Misshandel,2
+2018,04,Okänt delområde,"Motorfordon,  stöld",1
+2018,04,Okänt delområde,Ofredande/förargelse,1
+2018,04,Okänt delområde,Olovlig körning,1
+2018,04,Okänt delområde,Rattfylleri,8
+2018,04,Okänt delområde,Skadegörelse,3
+2018,04,Okänt delområde,Stöld,2
+2018,04,Okänt delområde,"Stöld,  ringa",3
+2018,04,Okänt delområde,Stöld/inbrott,1
+2018,04,Okänt delområde,Trafikbrott,1
+2018,04,Okänt delområde,Trafikkontroll,1
+2018,04,Okänt delområde,Trafikolycka,3
+2018,04,Okänt delområde,"Trafikolycka,  vilt",1
+2018,04,Okänt delområde,Övrigt,3
+2018,04,Okänt delområde,Övrigt/oklassificerad,2
+2018,04,Porsön,Rattfylleri,1
+2018,04,Porsön,Skadegörelse,1
+2018,04,Råneå,Stöld/inbrott,1
+2018,04,Skurholmen,Larm Överfall,1
+2018,04,Storheden,"Stöld,  ringa",3
+2018,04,Storheden,Stöld/inbrott,1
+2018,04,Storheden,Trafikhinder,1
+2018,04,Storheden,Trafikkontroll,3
+2018,04,Sunderbyn,Fylleri/LOB,1
+2018,04,Sunderbyn,Misshandel,1
+2018,04,Sunderbyn,Rattfylleri,1
+2018,04,Sunderbyn,Trafikkontroll,1
+2018,04,Örnäset,Misshandel,1
+2018,04,Örnäset,Skadegörelse,1
+2018,04,Örnäset,"Stöld,  ringa",2
+2018,04,Örnäset,Stöld/inbrott,1
+2018,04,Örnäset,Trafikkontroll,1
+2018,05,Bergnäset,Trafikkontroll,2
+2018,05,Bergnäset,Vapenlagen,1
+2018,05,Bergviken,Uppdatering,1
+2018,05,Björkskatan,Trafikkontroll,1
+2018,05,Centrum,Fylleri/LOB,3
+2018,05,Centrum,Misshandel,1
+2018,05,Centrum,Skadegörelse,1
+2018,05,Centrum,"Stöld,  ringa",2
+2018,05,Centrum,Stöld/inbrott,1
+2018,05,Centrum,Trafikolycka,1
+2018,05,Flera stadsdelar i Luleå,Rattfylleri,2
+2018,05,Flera stadsdelar i Luleå,Trafikkontroll,1
+2018,05,Hertsön,Arbetsplatsolycka,1
+2018,05,Hertsön,Fylleri/LOB,1
+2018,05,Hertsön,Knivlagen,1
+2018,05,Hertsön,Kontroll person/fordon,1
+2018,05,Hertsön,Rattfylleri,1
+2018,05,Hertsön,"Stöld,  ringa",1
+2018,05,Karlsvik,Stöld/inbrott,1
+2018,05,Mjölkudden,Rattfylleri,1
+2018,05,Notviken,Rattfylleri,1
+2018,05,Notviken,Stöld,1
+2018,05,Notviken,Trafikbrott,1
+2018,05,Okänt delområde,Brand,1
+2018,05,Okänt delområde,Fylleri/LOB,6
+2018,05,Okänt delområde,Inbrott,2
+2018,05,Okänt delområde,Kontroll person/fordon,1
+2018,05,Okänt delområde,Misshandel,10
+2018,05,Okänt delområde,Ofredande/förargelse,1
+2018,05,Okänt delområde,Olaga hot,1
+2018,05,Okänt delområde,Rattfylleri,8
+2018,05,Okänt delområde,Skadegörelse,3
+2018,05,Okänt delområde,Stöld,2
+2018,05,Okänt delområde,"Stöld,  ringa",2
+2018,05,Okänt delområde,Stöld/inbrott,2
+2018,05,Okänt delområde,Trafikbrott,4
+2018,05,Okänt delområde,Trafikkontroll,4
+2018,05,Okänt delområde,Trafikolycka,2
+2018,05,Okänt delområde,"Trafikolycka,  personskada",1
+2018,05,Okänt delområde,Övrigt,1
+2018,05,Porsön,Brand,1
+2018,05,Råneå,Trafikhinder,1
+2018,05,Skurholmen,Trafikbrott,1
+2018,05,Storheden,Fylleri/LOB,1
+2018,05,Storheden,Stöld,2
+2018,05,Storheden,"Stöld,  försök",1
+2018,05,Storheden,"Stöld,  ringa",3
+2018,05,Sunderbyn,Rattfylleri,1
+2018,05,Sunderbyn,Trafikbrott,1
+2018,05,Örnäset,Skadegörelse,1
+2018,05,Örnäset,"Stöld,  ringa",2
+2018,06,Bergnäset,Brand,1
+2018,06,Bergnäset,Trafikkontroll,3
+2018,06,Bergviken,Fylleri/LOB,1
+2018,06,Bergviken,Trafikkontroll,2
+2018,06,Björkskatan,Trafikkontroll,1
+2018,06,Centrum,Misshandel,1
+2018,06,Centrum,Narkotikabrott,1
+2018,06,Centrum,Rattfylleri,1
+2018,06,Centrum,Räddningsinsats,1
+2018,06,Centrum,Skadegörelse,1
+2018,06,Centrum,"Stöld,  ringa",1
+2018,06,Centrum,Trafikkontroll,1
+2018,06,Centrum,Övrigt/oklassificerad,1
+2018,06,Flera stadsdelar i Luleå,"Mord/dråp,  försök",1
+2018,06,Flera stadsdelar i Luleå,Rattfylleri,1
+2018,06,Flera stadsdelar i Luleå,Trafikkontroll,1
+2018,06,Flera stadsdelar i Luleå,Trafikolycka,1
+2018,06,Gammelstad,Larm Överfall,1
+2018,06,Hertsön,"Motorfordon,  anträffat stulet",1
+2018,06,Hertsön,Narkotikabrott,1
+2018,06,Hertsön,Rattfylleri,1
+2018,06,Hertsön,Trafikbrott,1
+2018,06,Mjölkudden,Rattfylleri,1
+2018,06,Notviken,Rattfylleri,2
+2018,06,Notviken,Rån,1
+2018,06,Notviken,Trafikbrott,1
+2018,06,Notviken,Trafikkontroll,1
+2018,06,Notviken,"Trafikolycka,  vilt",1
+2018,06,Okänt delområde,Arbetsplatsolycka,1
+2018,06,Okänt delområde,Brand,2
+2018,06,Okänt delområde,Fylleri/LOB,4
+2018,06,Okänt delområde,Försvunnen person,1
+2018,06,Okänt delområde,Inbrott,2
+2018,06,Okänt delområde,Misshandel,2
+2018,06,Okänt delområde,Narkotikabrott,2
+2018,06,Okänt delområde,Olaga hot,1
+2018,06,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2018,06,Okänt delområde,Olovlig körning,1
+2018,06,Okänt delområde,Rattfylleri,6
+2018,06,Okänt delområde,Skadegörelse,1
+2018,06,Okänt delområde,Stöld,4
+2018,06,Okänt delområde,"Stöld,  ringa",1
+2018,06,Okänt delområde,Stöld/inbrott,1
+2018,06,Okänt delområde,Trafikbrott,3
+2018,06,Okänt delområde,Trafikhinder,1
+2018,06,Okänt delområde,Trafikolycka,6
+2018,06,Okänt delområde,"Trafikolycka,  personskada",1
+2018,06,Okänt delområde,"Trafikolycka,  singel",1
+2018,06,Okänt delområde,Övrigt,1
+2018,06,Okänt delområde,Övrigt/oklassificerad,1
+2018,06,Porsön,Skadegörelse,1
+2018,06,Råneå,Trafikkontroll,1
+2018,06,Skurholmen,Narkotikabrott,1
+2018,06,Skurholmen,Rattfylleri,1
+2018,06,Storheden,Stöld,1
+2018,06,Storheden,"Stöld,  ringa",2
+2018,06,Storheden,Trafikbrott,1
+2018,06,Storheden,Trafikkontroll,1
+2018,06,Sunderbyn,Trafikkontroll,1
+2018,06,Örnäset,Brand,1
+2018,07,Bergviken,"Trafikolycka,  personskada",1
+2018,07,Centrum,Fylleri/LOB,1
+2018,07,Centrum,Övrigt,1
+2018,07,Flera stadsdelar i Luleå,Narkotikabrott,1
+2018,07,Flera stadsdelar i Luleå,Rattfylleri,2
+2018,07,Flera stadsdelar i Luleå,Trafikhinder,1
+2018,07,Gammelstad,Trafikbrott,1
+2018,07,Hertsön,Bråk,1
+2018,07,Hertsön,Inbrott,1
+2018,07,Hertsön,Olaga intrång/hemfridsbrott,1
+2018,07,Hertsön,Rattfylleri,1
+2018,07,Hertsön,Trafikbrott,1
+2018,07,Mjölkudden,"Stöld,  ringa",1
+2018,07,Okänt delområde,Brand,3
+2018,07,Okänt delområde,"Farligt föremål,  misstänkt",1
+2018,07,Okänt delområde,Fylleri/LOB,8
+2018,07,Okänt delområde,Försvunnen person,1
+2018,07,Okänt delområde,Inbrott,3
+2018,07,Okänt delområde,Misshandel,6
+2018,07,Okänt delområde,"Motorfordon,  stöld",1
+2018,07,Okänt delområde,Narkotikabrott,4
+2018,07,Okänt delområde,Olaga hot,1
+2018,07,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2018,07,Okänt delområde,Rattfylleri,3
+2018,07,Okänt delområde,Skadegörelse,2
+2018,07,Okänt delområde,Stöld,3
+2018,07,Okänt delområde,"Stöld,  försök",1
+2018,07,Okänt delområde,"Stöld,  ringa",2
+2018,07,Okänt delområde,Trafikhinder,1
+2018,07,Okänt delområde,Trafikkontroll,1
+2018,07,Okänt delområde,Trafikolycka,10
+2018,07,Okänt delområde,"Trafikolycka,  personskada",1
+2018,07,Okänt delområde,"Trafikolycka,  vilt",1
+2018,07,Okänt delområde,Våldtäkt,1
+2018,07,Okänt delområde,Övrigt/oklassificerad,3
+2018,07,Porsön,Rattfylleri,1
+2018,07,Porsön,Skadegörelse,1
+2018,07,Råneå,Trafikhinder,1
+2018,07,Råneå,"Trafikolycka,  vilt",1
+2018,07,Storheden,Brand,1
+2018,07,Storheden,Rattfylleri,1
+2018,07,Storheden,Stöld/inbrott,1
+2018,07,Storheden,Trafikbrott,1
+2018,07,Storheden,Trafikolycka,1
+2018,07,Sunderbyn,Trafikkontroll,1
+2018,07,Örnäset,Misshandel,1
+2018,08,Bergnäset,Trafikkontroll,1
+2018,08,Bergviken,Narkotikabrott,1
+2018,08,Bergviken,Trafikkontroll,3
+2018,08,Centrum,Fylleri/LOB,1
+2018,08,Centrum,Misshandel,2
+2018,08,Centrum,Ofredande/förargelse,1
+2018,08,Centrum,Stöld,1
+2018,08,Centrum,"Stöld,  ringa",1
+2018,08,Centrum,Trafikkontroll,1
+2018,08,Centrum,Trafikolycka,1
+2018,08,Flera stadsdelar i Luleå,Trafikkontroll,2
+2018,08,Notviken,Trafikkontroll,1
+2018,08,Okänt delområde,Brand,3
+2018,08,Okänt delområde,Fylleri/LOB,3
+2018,08,Okänt delområde,Inbrott,4
+2018,08,Okänt delområde,Misshandel,19
+2018,08,Okänt delområde,"Mord/dråp,  försök",1
+2018,08,Okänt delområde,Narkotikabrott,3
+2018,08,Okänt delområde,Ofredande/förargelse,1
+2018,08,Okänt delområde,Rattfylleri,8
+2018,08,Okänt delområde,Räddningsinsats,2
+2018,08,Okänt delområde,Skadegörelse,2
+2018,08,Okänt delområde,"Stöld,  ringa",1
+2018,08,Okänt delområde,Stöld/inbrott,1
+2018,08,Okänt delområde,Trafikbrott,3
+2018,08,Okänt delområde,Trafikhinder,1
+2018,08,Okänt delområde,Trafikkontroll,5
+2018,08,Okänt delområde,Trafikolycka,5
+2018,08,Okänt delområde,"Trafikolycka,  vilt",2
+2018,08,Okänt delområde,Övrigt,1
+2018,08,Okänt delområde,Övrigt/oklassificerad,1
+2018,08,Råneå,Uppdatering,1
+2018,08,Råneå,"Våldtäkt,  försök",2
+2018,08,Skurholmen,Trafikbrott,1
+2018,08,Storheden,Trafikolycka,1
+2018,09,Bergnäset,Fylleri/LOB,1
+2018,09,Bergnäset,"Motorfordon,  anträffat stulet",1
+2018,09,Bergnäset,Olaga hot,1
+2018,09,Bergnäset,Skadegörelse,1
+2018,09,Bergviken,Rattfylleri,1
+2018,09,Bergviken,Trafikkontroll,1
+2018,09,Bergviken,"Trafikolycka,  singel",1
+2018,09,Björkskatan,Trafikkontroll,1
+2018,09,Centrum,Fylleri/LOB,1
+2018,09,Centrum,Rån,1
+2018,09,Centrum,Våld/hot mot tjänsteman,1
+2018,09,Flera stadsdelar i Luleå,Trafikkontroll,2
+2018,09,Hertsön,Stöld/inbrott,1
+2018,09,Lerbäcken,Trafikolycka,1
+2018,09,Mjölkudden,Trafikkontroll,2
+2018,09,Notviken,Rattfylleri,1
+2018,09,Notviken,Trafikbrott,3
+2018,09,Notviken,Trafikkontroll,1
+2018,09,Notviken,"Trafikolycka,  vilt",1
+2018,09,Okänt delområde,Arbetsplatsolycka,1
+2018,09,Okänt delområde,Brand,1
+2018,09,Okänt delområde,Fylleri/LOB,4
+2018,09,Okänt delområde,Försvunnen person,1
+2018,09,Okänt delområde,Inbrott,2
+2018,09,Okänt delområde,Knivlagen,1
+2018,09,Okänt delområde,Misshandel,3
+2018,09,Okänt delområde,Narkotikabrott,3
+2018,09,Okänt delområde,Ofredande/förargelse,1
+2018,09,Okänt delområde,Rattfylleri,7
+2018,09,Okänt delområde,Rån,2
+2018,09,Okänt delområde,Skadegörelse,2
+2018,09,Okänt delområde,Stöld,2
+2018,09,Okänt delområde,Stöld/inbrott,3
+2018,09,Okänt delområde,Trafikbrott,5
+2018,09,Okänt delområde,Trafikkontroll,8
+2018,09,Okänt delområde,Trafikolycka,6
+2018,09,Okänt delområde,"Trafikolycka,  smitning från",1
+2018,09,Okänt delområde,"Trafikolycka,  vilt",1
+2018,09,Okänt delområde,Våld/hot mot tjänsteman,1
+2018,09,Okänt delområde,Övrigt/oklassificerad,2
+2018,09,Porsön,"Stöld,  ringa",2
+2018,09,Råneå,Trafikkontroll,1
+2018,09,Skurholmen,Rattfylleri,1
+2018,09,Skurholmen,Trafikolycka,1
+2018,09,Storheden,Trafikbrott,1
+2018,09,Storheden,Trafikkontroll,1
+2018,09,Sunderbyn,Stöld,1
+2018,09,Örnäset,"Stöld,  ringa",2
+2018,10,Bergnäset,Stöld/inbrott,1
+2018,10,Bergnäset,Trafikkontroll,2
+2018,10,Bergviken,Stöld,1
+2018,10,Bergviken,Trafikkontroll,2
+2018,10,Björkskatan,Brand,1
+2018,10,Björkskatan,Stöld/inbrott,1
+2018,10,Centrum,Bedrägeri,1
+2018,10,Centrum,Fylleri/LOB,2
+2018,10,Centrum,Narkotikabrott,1
+2018,10,Centrum,Trafikbrott,1
+2018,10,Centrum,Trafikkontroll,1
+2018,10,Flera stadsdelar i Luleå,Trafikkontroll,4
+2018,10,Gammelstad,Trafikkontroll,2
+2018,10,Gammelstad,Trafikolycka,1
+2018,10,Hertsön,"Mord/dråp,  försök",1
+2018,10,Hertsön,Rattfylleri,2
+2018,10,Hertsön,Skadegörelse,1
+2018,10,Hertsön,Trafikbrott,1
+2018,10,Hertsön,Trafikolycka,1
+2018,10,Hertsön,Uppdatering,1
+2018,10,Hertsön,Vapenlagen,1
+2018,10,Mjölkudden,Anträffat gods,1
+2018,10,Mjölkudden,Stöld/inbrott,1
+2018,10,Notviken,Arbetsplatsolycka,1
+2018,10,Notviken,Djur,1
+2018,10,Notviken,Fylleri/LOB,1
+2018,10,Notviken,Trafikbrott,3
+2018,10,Notviken,Trafikkontroll,2
+2018,10,Notviken,Trafikolycka,1
+2018,10,Notviken,"Trafikolycka,  vilt",1
+2018,10,Okänt delområde,Arbetsplatsolycka,1
+2018,10,Okänt delområde,Brand,2
+2018,10,Okänt delområde,Fylleri/LOB,8
+2018,10,Okänt delområde,Försvunnen person,1
+2018,10,Okänt delområde,Inbrott,1
+2018,10,Okänt delområde,Kontroll person/fordon,2
+2018,10,Okänt delområde,Misshandel,4
+2018,10,Okänt delområde,Narkotikabrott,6
+2018,10,Okänt delområde,Olovlig körning,1
+2018,10,Okänt delområde,Rattfylleri,6
+2018,10,Okänt delområde,Rån,2
+2018,10,Okänt delområde,Skadegörelse,2
+2018,10,Okänt delområde,Stöld,1
+2018,10,Okänt delområde,Stöld/inbrott,2
+2018,10,Okänt delområde,Trafikbrott,7
+2018,10,Okänt delområde,Trafikkontroll,6
+2018,10,Okänt delområde,Trafikolycka,4
+2018,10,Okänt delområde,"Trafikolycka,  singel",3
+2018,10,Okänt delområde,"Trafikolycka,  vilt",7
+2018,10,Okänt delområde,Övrigt,1
+2018,10,Okänt delområde,Övrigt/oklassificerad,2
+2018,10,Porsön,Djur,1
+2018,10,Porsön,Fylleri/LOB,1
+2018,10,Porsön,Rattfylleri,1
+2018,10,Porsön,Övrigt/oklassificerad,1
+2018,10,Råneå,Stöld/inbrott,2
+2018,10,Råneå,Trafikkontroll,1
+2018,10,Råneå,Trafikolycka,2
+2018,10,Storheden,"Stöld,  ringa",2
+2018,10,Storheden,Trafikkontroll,4
+2018,10,Storheden,"Trafikolycka,  vilt",1
+2018,10,Örnäset,Misshandel,1
+2018,10,Örnäset,Stöld,3
+2018,10,Örnäset,Trafikbrott,1
+2018,10,Örnäset,Trafikkontroll,1
+2018,11,Bergnäset,Trafikkontroll,1
+2018,11,Bergviken,Trafikkontroll,1
+2018,11,Björkskatan,Rattfylleri,1
+2018,11,Björkskatan,Trafikkontroll,2
+2018,11,Centrum,Fylleri/LOB,2
+2018,11,Centrum,Narkotikabrott,1
+2018,11,Centrum,Stöld,2
+2018,11,Centrum,Trafikkontroll,1
+2018,11,Centrum,"Trafikolycka,  singel",1
+2018,11,Flera stadsdelar i Luleå,Trafikkontroll,4
+2018,11,Flera stadsdelar i Luleå,"Trafikolycka,  vilt",1
+2018,11,Gammelstad,Olaga hot,1
+2018,11,Gammelstad,Trafikolycka,1
+2018,11,Gammelstad,"Trafikolycka,  vilt",1
+2018,11,Hertsön,Fylleri/LOB,1
+2018,11,Hertsön,Misshandel,1
+2018,11,Hertsön,Olaga hot,1
+2018,11,Hertsön,Trafikbrott,1
+2018,11,Hertsön,Trafikkontroll,1
+2018,11,Karlsvik,"Trafikolycka,  vilt",1
+2018,11,Mjölkudden,Stöld/inbrott,1
+2018,11,Notviken,Rattfylleri,1
+2018,11,Notviken,Trafikkontroll,1
+2018,11,Okänt delområde,Anträffat gods,1
+2018,11,Okänt delområde,Brand,3
+2018,11,Okänt delområde,Fylleri/LOB,7
+2018,11,Okänt delområde,Inbrott,1
+2018,11,Okänt delområde,Knivlagen,2
+2018,11,Okänt delområde,Misshandel,7
+2018,11,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2018,11,Okänt delområde,Narkotikabrott,5
+2018,11,Okänt delområde,Olaga hot,1
+2018,11,Okänt delområde,Olovlig körning,1
+2018,11,Okänt delområde,Rattfylleri,9
+2018,11,Okänt delområde,Rån,2
+2018,11,Okänt delområde,Skadegörelse,2
+2018,11,Okänt delområde,Stöld,7
+2018,11,Okänt delområde,Stöld/inbrott,1
+2018,11,Okänt delområde,Trafikbrott,4
+2018,11,Okänt delområde,Trafikkontroll,7
+2018,11,Okänt delområde,Trafikolycka,4
+2018,11,Okänt delområde,"Trafikolycka,  smitning från",1
+2018,11,Okänt delområde,"Trafikolycka,  vilt",5
+2018,11,Okänt delområde,Våld/hot mot tjänsteman,3
+2018,11,Okänt delområde,Övrigt,2
+2018,11,Okänt delområde,Övrigt/oklassificerad,3
+2018,11,Porsön,Trafikkontroll,1
+2018,11,Råneå,Djur,1
+2018,11,Råneå,"Trafikolycka,  personskada",1
+2018,11,Storheden,Rån övrigt,1
+2018,11,Storheden,Skadegörelse,1
+2018,11,Storheden,Trafikkontroll,2
+2018,11,Storheden,Trafikolycka,1
+2018,11,Sunderbyn,Trafikbrott,1
+2018,11,Sunderbyn,Trafikkontroll,1
+2018,11,Örnäset,Brand,1
+2018,11,Örnäset,Fylleri/LOB,1
+2018,11,Örnäset,Stöld,4
+2018,11,Örnäset,Stöld/inbrott,1
+2018,11,Örnäset,Våld/hot mot tjänsteman,1
+2018,12,Bergnäset,Rattfylleri,2
+2018,12,Bergnäset,Skadegörelse,2
+2018,12,Bergnäset,Trafikkontroll,6
+2018,12,Bergviken,Skadegörelse,1
+2018,12,Bergviken,Trafikkontroll,1
+2018,12,Björkskatan,Brand,1
+2018,12,Björkskatan,Fylleri/LOB,1
+2018,12,Björkskatan,Olaga hot,1
+2018,12,Björkskatan,Trafikkontroll,1
+2018,12,Centrum,Fylleri/LOB,3
+2018,12,Centrum,Skadegörelse,2
+2018,12,Centrum,Stöld,1
+2018,12,Centrum,Övrigt/oklassificerad,1
+2018,12,Flera stadsdelar i Luleå,Stöld/inbrott,1
+2018,12,Flera stadsdelar i Luleå,Trafikhinder,1
+2018,12,Flera stadsdelar i Luleå,Trafikkontroll,4
+2018,12,Flera stadsdelar i Luleå,Trafikolycka,1
+2018,12,Gammelstad,Djur,1
+2018,12,Gammelstad,Skadegörelse,1
+2018,12,Gammelstad,"Stöld,  försök",1
+2018,12,Gammelstad,Stöld/inbrott,1
+2018,12,Hertsön,Misshandel,1
+2018,12,Hertsön,Rattfylleri,1
+2018,12,Hertsön,Skadegörelse,1
+2018,12,Hertsön,Stöld/inbrott,1
+2018,12,Hertsön,Trafikbrott,1
+2018,12,Hertsön,Trafikkontroll,2
+2018,12,Hertsön,"Trafikolycka,  personskada",1
+2018,12,Karlsvik,"Trafikolycka,  personskada",1
+2018,12,Lerbäcken,Inbrott,1
+2018,12,Lerbäcken,Stöld/inbrott,1
+2018,12,Mjölkudden,Misshandel,1
+2018,12,Notviken,Fylleri/LOB,3
+2018,12,Notviken,Rattfylleri,3
+2018,12,Notviken,Trafikkontroll,3
+2018,12,Okänt delområde,Alkohollagen,1
+2018,12,Okänt delområde,Arbetsplatsolycka,1
+2018,12,Okänt delområde,Brand,1
+2018,12,Okänt delområde,Djur,2
+2018,12,Okänt delområde,Fylleri/LOB,7
+2018,12,Okänt delområde,Häleri,1
+2018,12,Okänt delområde,Inbrott,1
+2018,12,Okänt delområde,Misshandel,5
+2018,12,Okänt delområde,Narkotikabrott,1
+2018,12,Okänt delområde,Rattfylleri,7
+2018,12,Okänt delområde,Stöld,4
+2018,12,Okänt delområde,Trafikbrott,3
+2018,12,Okänt delområde,Trafikolycka,6
+2018,12,Okänt delområde,"Trafikolycka,  singel",1
+2018,12,Okänt delområde,"Trafikolycka,  vilt",7
+2018,12,Okänt delområde,"Trafikolycka, vilt",2
+2018,12,Porsön,Misshandel,1
+2018,12,Råneå,Stöld/inbrott,1
+2018,12,Skurholmen,Trafikkontroll,1
+2018,12,Storheden,Larm Överfall,1
+2018,12,Storheden,Rattfylleri,2
+2018,12,Storheden,Stöld,1
+2018,12,Storheden,Trafikbrott,1
+2018,12,Storheden,Trafikkontroll,3
+2018,12,Sunderbyn,Fylleri/LOB,2
+2018,12,Örnäset,Stöld,1
+2019,01,Bergnäset,Inbrott,1
+2019,01,Bergnäset,Olaga intrång/hemfridsbrott,1
+2019,01,Bergnäset,Trafikkontroll,1
+2019,01,Bergnäset,Trafikolycka,1
+2019,01,Bergnäset,"Trafikolycka,  vilt",1
+2019,01,Bergviken,Rattfylleri,1
+2019,01,Bergviken,Trafikbrott,1
+2019,01,Björkskatan,"Trafikolycka,  vilt",1
+2019,01,Centrum,Fylleri/LOB,3
+2019,01,Centrum,Misshandel,2
+2019,01,Centrum,Narkotikabrott,3
+2019,01,Centrum,Rattfylleri,1
+2019,01,Centrum,Stöld,1
+2019,01,Centrum,Våld/hot mot tjänsteman,1
+2019,01,Flera stadsdelar i Luleå,Trafikkontroll,2
+2019,01,Flera stadsdelar i Luleå,Trafikolycka,1
+2019,01,Gammelstad,Trafikkontroll,1
+2019,01,Gammelstad,Övrigt/oklassificerad,1
+2019,01,Malmudden,Rattfylleri,1
+2019,01,Notviken,Rattfylleri,1
+2019,01,Notviken,Trafikolycka,1
+2019,01,Notviken,"Trafikolycka,  vilt",1
+2019,01,Okänt delområde,Anträffat gods,1
+2019,01,Okänt delområde,Fylleri/LOB,5
+2019,01,Okänt delområde,Inbrott,1
+2019,01,Okänt delområde,Larm Överfall,1
+2019,01,Okänt delområde,Misshandel,6
+2019,01,Okänt delområde,Narkotikabrott,6
+2019,01,Okänt delområde,Ofredande/förargelse,1
+2019,01,Okänt delområde,Olaga hot,1
+2019,01,Okänt delområde,Rattfylleri,5
+2019,01,Okänt delområde,Rån,1
+2019,01,Okänt delområde,Skadegörelse,5
+2019,01,Okänt delområde,Stöld,4
+2019,01,Okänt delområde,Trafikkontroll,6
+2019,01,Okänt delområde,Trafikolycka,9
+2019,01,Okänt delområde,"Trafikolycka,  vilt",8
+2019,01,Okänt delområde,"Trafikolycka, vilt",13
+2019,01,Okänt delområde,Våld/hot mot tjänsteman,1
+2019,01,Porsön,Stöld,2
+2019,01,Råneå,Trafikkontroll,2
+2019,01,Råneå,Trafikolycka,1
+2019,01,Storheden,Djur,1
+2019,01,Storheden,Fylleri/LOB,1
+2019,01,Storheden,Skadegörelse,1
+2019,01,Storheden,Stöld,2
+2019,01,Storheden,Trafikkontroll,1
+2019,01,Storheden,Trafikolycka,1
+2019,01,Sunderbyn,Fylleri/LOB,2
+2019,01,Sunderbyn,Trafikbrott,1
+2019,01,Sunderbyn,Trafikkontroll,2
+2019,01,Sunderbyn,Trafikolycka,1
+2019,01,Örnäset,Stöld,1
+2019,01,Örnäset,Trafikolycka,1
+2019,02,Bergnäset,Trafikkontroll,1
+2019,02,Bergviken,Trafikkontroll,1
+2019,02,Björkskatan,Trafikkontroll,1
+2019,02,Björkskatan,Trafikolycka,1
+2019,02,Centrum,Inbrott,1
+2019,02,Centrum,Larm Överfall,1
+2019,02,Centrum,Stöld,1
+2019,02,Centrum,Trafikbrott,1
+2019,02,Centrum,Trafikolycka,1
+2019,02,Flera stadsdelar i Luleå,Trafikbrott,1
+2019,02,Flera stadsdelar i Luleå,Trafikkontroll,3
+2019,02,Flera stadsdelar i Luleå,Trafikolycka,2
+2019,02,Gammelstad,Djur,1
+2019,02,Gammelstad,Fylleri/LOB,1
+2019,02,Gammelstad,Stöld/inbrott,1
+2019,02,Gammelstad,Trafikkontroll,1
+2019,02,Hertsön,Fylleri/LOB,2
+2019,02,Hertsön,Misshandel,1
+2019,02,Hertsön,Rattfylleri,2
+2019,02,Hertsön,Trafikbrott,1
+2019,02,Karlsvik,Olovlig körning,1
+2019,02,Notviken,Trafikolycka,2
+2019,02,Okänt delområde,Brand,3
+2019,02,Okänt delområde,Fylleri/LOB,6
+2019,02,Okänt delområde,Inbrott,3
+2019,02,Okänt delområde,Misshandel,8
+2019,02,Okänt delområde,Narkotikabrott,3
+2019,02,Okänt delområde,Rattfylleri,1
+2019,02,Okänt delområde,Stöld,3
+2019,02,Okänt delområde,Stöld/inbrott,1
+2019,02,Okänt delområde,Trafikbrott,2
+2019,02,Okänt delområde,Trafikhinder,1
+2019,02,Okänt delområde,Trafikkontroll,14
+2019,02,Okänt delområde,Trafikolycka,15
+2019,02,Okänt delområde,"Trafikolycka,  smitning från",1
+2019,02,Okänt delområde,"Trafikolycka,  vilt",5
+2019,02,Okänt delområde,"Trafikolycka, vilt",20
+2019,02,Porsön,Fylleri/LOB,1
+2019,02,Porsön,Trafikkontroll,1
+2019,02,Porsön,Trafikolycka,1
+2019,02,Råneå,Trafikkontroll,3
+2019,02,Råneå,Trafikolycka,1
+2019,02,Storheden,Stöld,1
+2019,02,Storheden,Trafikkontroll,2
+2019,02,Sunderbyn,Fylleri/LOB,1
+2019,02,Sunderbyn,Trafikkontroll,2
+2019,02,Örnäset,Trafikbrott,1
+2019,03,Bergnäset,Trafikkontroll,2
+2019,03,Bergviken,Rattfylleri,1
+2019,03,Bergviken,Trafikkontroll,1
+2019,03,Björkskatan,Rattfylleri,1
+2019,03,Björkskatan,Stöld,1
+2019,03,Centrum,Fylleri/LOB,1
+2019,03,Centrum,Narkotikabrott,1
+2019,03,Centrum,Trafikbrott,2
+2019,03,Centrum,Trafikkontroll,1
+2019,03,Centrum,Trafikolycka,2
+2019,03,Flera stadsdelar i Luleå,Trafikkontroll,3
+2019,03,Flera stadsdelar i Luleå,Trafikolycka,1
+2019,03,Gammelstad,Brand,1
+2019,03,Gammelstad,Rattfylleri,1
+2019,03,Gammelstad,Trafikbrott,1
+2019,03,Hertsön,Trafikkontroll,3
+2019,03,Lerbäcken,Trafikkontroll,1
+2019,03,Notviken,Arbetsplatsolycka,1
+2019,03,Notviken,Brand,1
+2019,03,Notviken,Trafikkontroll,1
+2019,03,Notviken,Trafikolycka,1
+2019,03,Okänt delområde,Fylleri/LOB,7
+2019,03,Okänt delområde,Försvunnen person,1
+2019,03,Okänt delområde,Inbrott,1
+2019,03,Okänt delområde,Knivlagen,2
+2019,03,Okänt delområde,Kontroll person/fordon,1
+2019,03,Okänt delområde,Misshandel,2
+2019,03,Okänt delområde,Narkotikabrott,4
+2019,03,Okänt delområde,Olaga hot,2
+2019,03,Okänt delområde,Rattfylleri,6
+2019,03,Okänt delområde,Räddningsinsats,1
+2019,03,Okänt delområde,Skadegörelse,1
+2019,03,Okänt delområde,Stöld,6
+2019,03,Okänt delområde,Trafikbrott,4
+2019,03,Okänt delområde,Trafikhinder,2
+2019,03,Okänt delområde,Trafikkontroll,6
+2019,03,Okänt delområde,Trafikolycka,11
+2019,03,Okänt delområde,"Trafikolycka,  vilt",4
+2019,03,Okänt delområde,"Trafikolycka, vilt",9
+2019,03,Okänt delområde,Övrigt,1
+2019,03,Okänt delområde,Övrigt/oklassificerad,1
+2019,03,Porsön,Inbrott,1
+2019,03,Porsön,Rattfylleri,1
+2019,03,Porsön,Trafikbrott,1
+2019,03,Porsön,Trafikolycka,2
+2019,03,Skurholmen,Arbetsplatsolycka,1
+2019,03,Skurholmen,Rattfylleri,1
+2019,03,Storheden,Arbetsplatsolycka,1
+2019,03,Storheden,Fylleri/LOB,2
+2019,03,Storheden,Rattfylleri,1
+2019,03,Storheden,Stöld,2
+2019,03,Storheden,Trafikkontroll,1
+2019,03,Sunderbyn,Trafikkontroll,1
+2019,03,Örnäset,Misshandel,1
+2019,03,Örnäset,Rattfylleri,1
+2019,03,Örnäset,Trafikbrott,1
+2019,04,Bergnäset,Narkotikabrott,1
+2019,04,Bergnäset,Rattfylleri,1
+2019,04,Bergnäset,Räddningsinsats,1
+2019,04,Bergnäset,Trafikkontroll,3
+2019,04,Bergviken,Brand,1
+2019,04,Bergviken,Luftfartslagen,1
+2019,04,Bergviken,Narkotikabrott,1
+2019,04,Björkskatan,Trafikbrott,1
+2019,04,Björkskatan,Trafikkontroll,1
+2019,04,Björkskatan,Övrigt/oklassificerad,1
+2019,04,Centrum,Misshandel,2
+2019,04,Centrum,Stöld,1
+2019,04,Centrum,Trafikolycka,1
+2019,04,Flera stadsdelar i Luleå,Rattfylleri,1
+2019,04,Flera stadsdelar i Luleå,Trafikkontroll,3
+2019,04,Gammelstad,Bråk,1
+2019,04,Gammelstad,Trafikbrott,1
+2019,04,Kallkällan,Brand,1
+2019,04,Karlsvik,"Motorfordon,  anträffat stulet",1
+2019,04,Malmudden,Misshandel,1
+2019,04,Notviken,Trafikbrott,3
+2019,04,Notviken,Trafikolycka,1
+2019,04,Okänt delområde,Arbetsplatsolycka,1
+2019,04,Okänt delområde,Bedrägeri,1
+2019,04,Okänt delområde,Brand,3
+2019,04,Okänt delområde,Fylleri/LOB,9
+2019,04,Okänt delområde,Inbrott,1
+2019,04,Okänt delområde,Knivlagen,1
+2019,04,Okänt delområde,Misshandel,6
+2019,04,Okänt delområde,Narkotikabrott,3
+2019,04,Okänt delområde,Olovlig körning,1
+2019,04,Okänt delområde,Rattfylleri,10
+2019,04,Okänt delområde,Räddningsinsats,2
+2019,04,Okänt delområde,Skadegörelse,1
+2019,04,Okänt delområde,Stöld,4
+2019,04,Okänt delområde,Stöld/inbrott,2
+2019,04,Okänt delområde,Trafikbrott,3
+2019,04,Okänt delområde,Trafikkontroll,13
+2019,04,Okänt delområde,Trafikolycka,6
+2019,04,Okänt delområde,"Trafikolycka,  personskada",1
+2019,04,Okänt delområde,"Trafikolycka,  singel",1
+2019,04,Okänt delområde,"Trafikolycka,  smitning från",1
+2019,04,Okänt delområde,"Trafikolycka,  vilt",5
+2019,04,Okänt delområde,"Trafikolycka, vilt",12
+2019,04,Okänt delområde,Våld/hot mot tjänsteman,1
+2019,04,Okänt delområde,Övrigt,1
+2019,04,Okänt delområde,Övrigt/oklassificerad,1
+2019,04,Porsön,Bråk,1
+2019,04,Porsön,Misshandel,1
+2019,04,Porsön,Trafikbrott,2
+2019,04,Råneå,Trafikbrott,1
+2019,04,Råneå,Trafikkontroll,1
+2019,04,Råneå,Trafikolycka,2
+2019,04,Storheden,Misshandel,1
+2019,04,Storheden,Stöld,1
+2019,04,Storheden,Stöld/inbrott,1
+2019,04,Storheden,Trafikhinder,1
+2019,04,Storheden,Trafikkontroll,1
+2019,04,Storheden,Trafikolycka,2
+2019,04,Sunderbyn,Rattfylleri,1
+2019,04,Sunderbyn,Stöld/inbrott,1
+2019,04,Örnäset,Rattfylleri,1
+2019,05,Bergnäset,Trafikbrott,2
+2019,05,Bergnäset,"Trafikolycka,  vilt",1
+2019,05,Bergnäset,Våld/hot mot tjänsteman,1
+2019,05,Bergviken,Trafikolycka,1
+2019,05,Björkskatan,Trafikbrott,1
+2019,05,Centrum,Fylleri/LOB,1
+2019,05,Centrum,Misshandel,2
+2019,05,Centrum,Ofredande/förargelse,1
+2019,05,Centrum,Stöld/inbrott,1
+2019,05,Centrum,Trafikbrott,2
+2019,05,Centrum,Trafikkontroll,1
+2019,05,Centrum,Trafikolycka,1
+2019,05,Flera stadsdelar i Luleå,Trafikkontroll,1
+2019,05,Flera stadsdelar i Luleå,Trafikolycka,1
+2019,05,Gammelstad,Trafikbrott,3
+2019,05,Gammelstad,Trafikolycka,1
+2019,05,Hertsön,Rattfylleri,1
+2019,05,Hertsön,Stöld,1
+2019,05,Malmudden,Rattfylleri,1
+2019,05,Malmudden,Trafikbrott,1
+2019,05,Mjölkudden,Brand,1
+2019,05,Notviken,Larm Överfall,1
+2019,05,Notviken,Rattfylleri,1
+2019,05,Notviken,Trafikkontroll,1
+2019,05,Notviken,Trafikolycka,1
+2019,05,Notviken,"Trafikolycka,  vilt",1
+2019,05,Notviken,Övrigt,1
+2019,05,Okänt delområde,Brand,2
+2019,05,Okänt delområde,Djur,1
+2019,05,Okänt delområde,Fylleri/LOB,4
+2019,05,Okänt delområde,Inbrott,1
+2019,05,Okänt delområde,Misshandel,6
+2019,05,Okänt delområde,Narkotikabrott,2
+2019,05,Okänt delområde,Olovlig körning,1
+2019,05,Okänt delområde,Rattfylleri,5
+2019,05,Okänt delområde,Rån,1
+2019,05,Okänt delområde,Skadegörelse,2
+2019,05,Okänt delområde,Stöld,7
+2019,05,Okänt delområde,Stöld/inbrott,1
+2019,05,Okänt delområde,Trafikbrott,7
+2019,05,Okänt delområde,Trafikkontroll,4
+2019,05,Okänt delområde,Trafikolycka,3
+2019,05,Okänt delområde,"Trafikolycka,  smitning från",1
+2019,05,Okänt delområde,"Trafikolycka,  vilt",2
+2019,05,Okänt delområde,"Trafikolycka, vilt",11
+2019,05,Okänt delområde,Övrigt/oklassificerad,1
+2019,05,Porsön,Arbetsplatsolycka,1
+2019,05,Porsön,Trafikbrott,1
+2019,05,Råneå,Rattfylleri,1
+2019,05,Råneå,Trafikkontroll,1
+2019,05,Skurholmen,Misshandel,1
+2019,05,Skurholmen,Stöld,1
+2019,05,Storheden,Fylleri/LOB,1
+2019,05,Storheden,Inbrott,1
+2019,05,Storheden,Rattfylleri,2
+2019,05,Storheden,Stöld,4
+2019,05,Storheden,Trafikbrott,1
+2019,05,Storheden,Trafikkontroll,4
+2019,05,Sunderbyn,Fylleri/LOB,1
+2019,05,Sunderbyn,Trafikbrott,1
+2019,05,Örnäset,Stöld,2
+2019,05,Örnäset,Trafikbrott,1
+2019,05,Örnäset,Trafikkontroll,2
+2019,06,Bergnäset,Olovlig körning,1
+2019,06,Bergnäset,Trafikkontroll,1
+2019,06,Bergviken,Rattfylleri,1
+2019,06,Bergviken,Stöld/inbrott,1
+2019,06,Centrum,Fylleri/LOB,3
+2019,06,Centrum,Narkotikabrott,1
+2019,06,Centrum,Ofredande/förargelse,1
+2019,06,Centrum,Rattfylleri,1
+2019,06,Centrum,Skadegörelse,1
+2019,06,Centrum,Stöld/inbrott,1
+2019,06,Flera stadsdelar i Luleå,Trafikbrott,1
+2019,06,Flera stadsdelar i Luleå,Trafikkontroll,5
+2019,06,Gammelstad,Brand,1
+2019,06,Gammelstad,Trafikbrott,2
+2019,06,Hertsön,Arbetsplatsolycka,1
+2019,06,Hertsön,Skadegörelse,1
+2019,06,Hertsön,Stöld/inbrott,1
+2019,06,Hertsön,Trafikolycka,1
+2019,06,Malmudden,Rattfylleri,1
+2019,06,Mjölkudden,Stöld,1
+2019,06,Notviken,Trafikbrott,1
+2019,06,Okänt delområde,Brand,1
+2019,06,Okänt delområde,Fjällräddning,1
+2019,06,Okänt delområde,Fylleri/LOB,4
+2019,06,Okänt delområde,Misshandel,7
+2019,06,Okänt delområde,"Mord/dråp,  försök",1
+2019,06,Okänt delområde,Narkotikabrott,1
+2019,06,Okänt delområde,Ofredande/förargelse,1
+2019,06,Okänt delområde,Olovlig körning,2
+2019,06,Okänt delområde,Rattfylleri,12
+2019,06,Okänt delområde,"Rån,  försök",1
+2019,06,Okänt delområde,Skadegörelse,2
+2019,06,Okänt delområde,"Stöld,  ringa",1
+2019,06,Okänt delområde,Stöld/inbrott,2
+2019,06,Okänt delområde,Trafikbrott,5
+2019,06,Okänt delområde,Trafikkontroll,6
+2019,06,Okänt delområde,Trafikolycka,6
+2019,06,Okänt delområde,"Trafikolycka,  personskada",1
+2019,06,Okänt delområde,"Trafikolycka,  vilt",5
+2019,06,Okänt delområde,"Trafikolycka, vilt",7
+2019,06,Okänt delområde,Våld/hot mot tjänsteman,1
+2019,06,Okänt delområde,Övrigt,1
+2019,06,Skurholmen,Olovlig körning,1
+2019,06,Storheden,Stöld,2
+2019,06,Storheden,Trafikolycka,1
+2019,06,Svartöstaden,Skadegörelse,1
+2019,06,Örnäset,Rattfylleri,1
+2019,07,Bergnäset,Rattfylleri,1
+2019,07,Bergviken,Knivlagen,1
+2019,07,Björkskatan,Narkotikabrott,1
+2019,07,Centrum,Fylleri/LOB,4
+2019,07,Centrum,Rattfylleri,1
+2019,07,Centrum,Trafikkontroll,1
+2019,07,Centrum,Trafikolycka,1
+2019,07,Flera stadsdelar i Luleå,Trafikkontroll,1
+2019,07,Hertsön,Fylleri/LOB,1
+2019,07,Hertsön,"Stöld,  ringa",1
+2019,07,Notviken,Olaga hot,1
+2019,07,Notviken,Olovlig körning,1
+2019,07,Notviken,Trafikbrott,1
+2019,07,Okänt delområde,Arbetsplatsolycka,1
+2019,07,Okänt delområde,Brand,3
+2019,07,Okänt delområde,Bråk,1
+2019,07,Okänt delområde,Fylleri/LOB,12
+2019,07,Okänt delområde,Försvunnen person,2
+2019,07,Okänt delområde,"Inbrott,  försök",2
+2019,07,Okänt delområde,Knivlagen,1
+2019,07,Okänt delområde,Misshandel,3
+2019,07,Okänt delområde,"Motorfordon,  anträffat stulet",2
+2019,07,Okänt delområde,Narkotikabrott,4
+2019,07,Okänt delområde,Ofredande/förargelse,1
+2019,07,Okänt delområde,Olovlig körning,1
+2019,07,Okänt delområde,Polisinsats/kommendering,1
+2019,07,Okänt delområde,Rattfylleri,8
+2019,07,Okänt delområde,"Sammanfattning, ej uppdelad",1
+2019,07,Okänt delområde,Skadegörelse,2
+2019,07,Okänt delområde,Stöld,3
+2019,07,Okänt delområde,Stöld/inbrott,1
+2019,07,Okänt delområde,Trafikbrott,3
+2019,07,Okänt delområde,Trafikkontroll,6
+2019,07,Okänt delområde,Trafikolycka,6
+2019,07,Okänt delområde,"Trafikolycka,  singel",1
+2019,07,Okänt delområde,"Trafikolycka,  vilt",6
+2019,07,Okänt delområde,"Trafikolycka, vilt",8
+2019,07,Okänt delområde,Uppdatering,2
+2019,07,Okänt delområde,Övrigt,1
+2019,07,Okänt delområde,Övrigt/oklassificerad,1
+2019,07,Porsön,Larm Överfall,1
+2019,07,Råneå,Trafikkontroll,1
+2019,07,Råneå,"Trafikolycka,  personskada",1
+2019,07,Storheden,Trafikbrott,1
+2019,07,Storheden,Trafikkontroll,1
+2019,07,Sunderbyn,Rattfylleri,1
+2019,07,Sunderbyn,Trafikolycka,1
+2019,07,Örnäset,Fylleri/LOB,2
+2019,07,Örnäset,Stöld,1
+2019,08,Bergnäset,"Motorfordon,  anträffat stulet",1
+2019,08,Bergnäset,Trafikhinder,1
+2019,08,Bergnäset,Trafikkontroll,2
+2019,08,Bergnäset,"Trafikolycka,  vilt",1
+2019,08,Bergviken,Trafikkontroll,1
+2019,08,Centrum,Fylleri/LOB,2
+2019,08,Centrum,Misshandel,1
+2019,08,Centrum,Rattfylleri,1
+2019,08,Centrum,Stöld,2
+2019,08,Centrum,Trafikbrott,2
+2019,08,Flera stadsdelar i Luleå,Trafikkontroll,1
+2019,08,Flera stadsdelar i Luleå,Trafikolycka,1
+2019,08,Hertsön,Skadegörelse,1
+2019,08,Karlsvik,"Motorfordon,  anträffat stulet",1
+2019,08,Notviken,Trafikkontroll,1
+2019,08,Okänt delområde,Bedrägeri,1
+2019,08,Okänt delområde,Brand,1
+2019,08,Okänt delområde,Fylleri/LOB,4
+2019,08,Okänt delområde,Inbrott,4
+2019,08,Okänt delområde,Misshandel,1
+2019,08,Okänt delområde,"Motorfordon,  stöld",1
+2019,08,Okänt delområde,Narkotikabrott,2
+2019,08,Okänt delområde,Olovlig körning,1
+2019,08,Okänt delområde,Rattfylleri,4
+2019,08,Okänt delområde,Skadegörelse,2
+2019,08,Okänt delområde,Stöld,3
+2019,08,Okänt delområde,Stöld/inbrott,2
+2019,08,Okänt delområde,Trafikbrott,5
+2019,08,Okänt delområde,Trafikkontroll,11
+2019,08,Okänt delområde,Trafikolycka,4
+2019,08,Okänt delområde,"Trafikolycka,  personskada",1
+2019,08,Okänt delområde,"Trafikolycka,  vilt",2
+2019,08,Okänt delområde,"Trafikolycka, vilt",10
+2019,08,Okänt delområde,Våld/hot mot tjänsteman,1
+2019,08,Okänt delområde,Övrigt/oklassificerad,1
+2019,08,Porsön,Bråk,1
+2019,08,Porsön,Stöld,1
+2019,08,Porsön,Stöld/inbrott,1
+2019,08,Storheden,Arbetsplatsolycka,1
+2019,08,Storheden,Rattfylleri,1
+2019,08,Storheden,Stöld,1
+2019,08,Storheden,Trafikkontroll,2
+2019,08,Sunderbyn,"Trafikolycka,  personskada",1
+2019,08,Örnäset,Fylleri/LOB,1
+2019,08,Örnäset,Stöld,1
+2019,09,Bergnäset,Trafikkontroll,2
+2019,09,Bergviken,Trafikolycka,1
+2019,09,Björkskatan,Stöld,1
+2019,09,Björkskatan,Stöld/inbrott,1
+2019,09,Centrum,Fylleri/LOB,1
+2019,09,Centrum,Misshandel,1
+2019,09,Centrum,Narkotikabrott,1
+2019,09,Centrum,Ofredande/förargelse,1
+2019,09,Centrum,Sedlighetsbrott,1
+2019,09,Centrum,Stöld,1
+2019,09,Flera stadsdelar i Luleå,Trafikhinder,1
+2019,09,Flera stadsdelar i Luleå,Trafikkontroll,2
+2019,09,Flera stadsdelar i Luleå,"Trafikolycka,  personskada",1
+2019,09,Gammelstad,Larm Överfall,1
+2019,09,Gammelstad,Trafikhinder,1
+2019,09,Hertsön,Skadegörelse,1
+2019,09,Hertsön,Trafikbrott,1
+2019,09,Mjölkudden,Trafikbrott,2
+2019,09,Notviken,Försvunnen person,1
+2019,09,Notviken,Narkotikabrott,1
+2019,09,Notviken,Trafikkontroll,1
+2019,09,Notviken,Våldtäkt,1
+2019,09,Okänt delområde,Brand,1
+2019,09,Okänt delområde,Fylleri/LOB,6
+2019,09,Okänt delområde,Inbrott,2
+2019,09,Okänt delområde,Misshandel,5
+2019,09,Okänt delområde,Narkotikabrott,4
+2019,09,Okänt delområde,Olaga hot,1
+2019,09,Okänt delområde,Olovlig körning,1
+2019,09,Okänt delområde,Rattfylleri,8
+2019,09,Okänt delområde,Sexualbrott,1
+2019,09,Okänt delområde,Skadegörelse,2
+2019,09,Okänt delområde,Stöld/inbrott,1
+2019,09,Okänt delområde,Trafikbrott,3
+2019,09,Okänt delområde,Trafikkontroll,5
+2019,09,Okänt delområde,Trafikolycka,4
+2019,09,Okänt delområde,"Trafikolycka,  smitning från",1
+2019,09,Okänt delområde,"Trafikolycka,  vilt",5
+2019,09,Okänt delområde,"Trafikolycka, vilt",9
+2019,09,Okänt delområde,Uppdatering,1
+2019,09,Okänt delområde,Våld/hot mot tjänsteman,1
+2019,09,Okänt delområde,Övrigt/oklassificerad,1
+2019,09,Porsön,Fylleri/LOB,1
+2019,09,Skurholmen,Larm Överfall,1
+2019,09,Skurholmen,"Trafikolycka,  smitning från",1
+2019,09,Storheden,Fylleri/LOB,1
+2019,09,Storheden,Skadegörelse,1
+2019,09,Storheden,Stöld,1
+2019,09,Storheden,Trafikkontroll,1
+2019,09,Storheden,"Trafikolycka,  vilt",1
+2019,09,Sunderbyn,Rattfylleri,1
+2019,09,Sunderbyn,"Stöld,  försök",1
+2019,09,Sunderbyn,Trafikkontroll,3
+2019,09,Örnäset,Misshandel,1
+2019,09,Örnäset,Rattfylleri,1
+2019,09,Örnäset,Stöld,1
+2019,10,Bergnäset,Brand,1
+2019,10,Bergviken,Rån väpnat,1
+2019,10,Bergviken,Stöld/inbrott,1
+2019,10,Bergviken,Trafikkontroll,2
+2019,10,Bergviken,Trafikolycka,2
+2019,10,Björkskatan,Larm Överfall,1
+2019,10,Björkskatan,Trafikolycka,1
+2019,10,Centrum,Brand,1
+2019,10,Centrum,Fylleri/LOB,4
+2019,10,Centrum,Misshandel,2
+2019,10,Centrum,"Stöld,  försök",1
+2019,10,Centrum,Trafikbrott,1
+2019,10,Centrum,Trafikkontroll,2
+2019,10,Centrum,Övrigt/oklassificerad,1
+2019,10,Flera stadsdelar i Luleå,Trafikolycka,1
+2019,10,Gammelstad,Trafikkontroll,1
+2019,10,Mjölkudden,Trafikkontroll,1
+2019,10,Notviken,Olovlig körning,1
+2019,10,Notviken,Trafikbrott,1
+2019,10,Notviken,Trafikhinder,1
+2019,10,Okänt delområde,Bedrägeri,1
+2019,10,Okänt delområde,Brand,3
+2019,10,Okänt delområde,Fylleri/LOB,5
+2019,10,Okänt delområde,Förfalskningsbrott,1
+2019,10,Okänt delområde,Knivlagen,1
+2019,10,Okänt delområde,Misshandel,8
+2019,10,Okänt delområde,"Mord/dråp,  försök",1
+2019,10,Okänt delområde,Narkotikabrott,1
+2019,10,Okänt delområde,Olaga hot,1
+2019,10,Okänt delområde,Olaga intrång/hemfridsbrott,2
+2019,10,Okänt delområde,Olovlig körning,1
+2019,10,Okänt delområde,Rattfylleri,6
+2019,10,Okänt delområde,Rån,2
+2019,10,Okänt delområde,Skadegörelse,1
+2019,10,Okänt delområde,Stöld,2
+2019,10,Okänt delområde,Stöld/inbrott,1
+2019,10,Okänt delområde,Trafikbrott,9
+2019,10,Okänt delområde,Trafikkontroll,2
+2019,10,Okänt delområde,Trafikolycka,3
+2019,10,Okänt delområde,"Trafikolycka,  vilt",4
+2019,10,Okänt delområde,"Trafikolycka, vilt",29
+2019,10,Okänt delområde,Vapenlagen,1
+2019,10,Okänt delområde,Våld/hot mot tjänsteman,3
+2019,10,Okänt delområde,Övrigt/oklassificerad,1
+2019,10,Storheden,Fylleri/LOB,1
+2019,10,Storheden,Larm Överfall,1
+2019,10,Storheden,Rån övrigt,1
+2019,10,Storheden,Stöld,3
+2019,10,Sunderbyn,Fylleri/LOB,1
+2019,10,Sunderbyn,Stöld,1
+2019,10,Sunderbyn,Trafikkontroll,2
+2019,10,Sunderbyn,"Trafikolycka,  singel",1
+2019,10,Örnäset,Larm Överfall,1
+2019,10,Örnäset,Stöld,2
+2019,10,Örnäset,Trafikbrott,1
+2019,11,Bergnäset,Rån,1
+2019,11,Bergnäset,Trafikkontroll,1
+2019,11,Bergviken,Knivlagen,1
+2019,11,Bergviken,Trafikbrott,2
+2019,11,Centrum,Fylleri/LOB,1
+2019,11,Centrum,Misshandel,1
+2019,11,Centrum,Narkotikabrott,1
+2019,11,Centrum,Rattfylleri,3
+2019,11,Centrum,Skadegörelse,1
+2019,11,Centrum,Stöld,2
+2019,11,Hertsön,Fylleri/LOB,1
+2019,11,Hertsön,Rattfylleri,1
+2019,11,Malmudden,Brand,1
+2019,11,Malmudden,Fylleri/LOB,1
+2019,11,Notviken,Rån,1
+2019,11,Okänt delområde,Arbetsplatsolycka,1
+2019,11,Okänt delområde,Fylleri/LOB,4
+2019,11,Okänt delområde,Försvunnen person,2
+2019,11,Okänt delområde,Inbrott,2
+2019,11,Okänt delområde,Knivlagen,1
+2019,11,Okänt delområde,Misshandel,6
+2019,11,Okänt delområde,Narkotikabrott,4
+2019,11,Okänt delområde,Olaga hot,1
+2019,11,Okänt delområde,Olovlig körning,1
+2019,11,Okänt delområde,Rattfylleri,8
+2019,11,Okänt delområde,Räddningsinsats,1
+2019,11,Okänt delområde,Rån,1
+2019,11,Okänt delområde,Skadegörelse,1
+2019,11,Okänt delområde,Stöld,5
+2019,11,Okänt delområde,Stöld/inbrott,1
+2019,11,Okänt delområde,Trafikbrott,6
+2019,11,Okänt delområde,Trafikolycka,6
+2019,11,Okänt delområde,"Trafikolycka,  vilt",2
+2019,11,Okänt delområde,"Trafikolycka, vilt",41
+2019,11,Okänt delområde,Våld/hot mot tjänsteman,1
+2019,11,Okänt delområde,Våldtäkt,1
+2019,11,Porsön,Stöld/inbrott,1
+2019,11,Råneå,Trafikkontroll,1
+2019,11,Storheden,"Trafikolycka,  vilt",1
+2019,11,Sunderbyn,Trafikkontroll,1
+2019,12,Bergnäset,Inbrott,1
+2019,12,Bergnäset,"Mord/dråp,  försök",1
+2019,12,Bergviken,Stöld,1
+2019,12,Bergviken,Trafikolycka,1
+2019,12,Björkskatan,Rattfylleri,1
+2019,12,Centrum,Fylleri/LOB,1
+2019,12,Centrum,Stöld,2
+2019,12,Centrum,Trafikbrott,2
+2019,12,Flera stadsdelar i Luleå,Trafikolycka,1
+2019,12,Gammelstad,Trafikhinder,1
+2019,12,Hertsön,Narkotikabrott,1
+2019,12,Hertsön,Trafikolycka,1
+2019,12,Malmudden,Stöld,1
+2019,12,Mjölkudden,Narkotikabrott,1
+2019,12,Mjölkudden,Trafikkontroll,1
+2019,12,Mjölkudden,Trafikolycka,1
+2019,12,Notviken,Rattfylleri,1
+2019,12,Notviken,Trafikbrott,1
+2019,12,Notviken,"Trafikolycka,  singel",1
+2019,12,Okänt delområde,Arbetsplatsolycka,1
+2019,12,Okänt delområde,Bedrägeri,1
+2019,12,Okänt delområde,Fylleri/LOB,5
+2019,12,Okänt delområde,Försvunnen person,1
+2019,12,Okänt delområde,Inbrott,3
+2019,12,Okänt delområde,Misshandel,6
+2019,12,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2019,12,Okänt delområde,Narkotikabrott,2
+2019,12,Okänt delområde,Olaga hot,1
+2019,12,Okänt delområde,Rattfylleri,7
+2019,12,Okänt delområde,Skadegörelse,1
+2019,12,Okänt delområde,Stöld,6
+2019,12,Okänt delområde,Stöld/inbrott,2
+2019,12,Okänt delområde,Trafikbrott,3
+2019,12,Okänt delområde,Trafikkontroll,5
+2019,12,Okänt delområde,Trafikolycka,8
+2019,12,Okänt delområde,"Trafikolycka,  vilt",6
+2019,12,Okänt delområde,"Trafikolycka, vilt",39
+2019,12,Okänt delområde,Övrigt/oklassificerad,2
+2019,12,Porsön,Arbetsplatsolycka,1
+2019,12,Porsön,Brand,1
+2019,12,Porsön,Trafikolycka,1
+2019,12,Råneå,Trafikolycka,1
+2019,12,Skurholmen,Trafikolycka,1
+2019,12,Storheden,Rattfylleri,1
+2019,12,Storheden,Stöld,1
+2019,12,Storheden,Trafikbrott,1
+2019,12,Storheden,Trafikkontroll,2
+2019,12,Storheden,Trafikolycka,1
+2019,12,Storheden,"Trafikolycka,  personskada",1
+2019,12,Sunderbyn,Trafikbrott,1
+2019,12,Sunderbyn,Trafikkontroll,1
+2019,12,Sunderbyn,Trafikolycka,1
+2019,12,Örnäset,Narkotikabrott,1
+2020,01,Bergnäset,Rattfylleri,1
+2020,01,Bergviken,Fylleri/LOB,1
+2020,01,Björkskatan,Stöld,1
+2020,01,Centrum,Fylleri/LOB,2
+2020,01,Centrum,Olaga hot,1
+2020,01,Centrum,Rattfylleri,1
+2020,01,Centrum,Skadegörelse,1
+2020,01,Centrum,Trafikolycka,1
+2020,01,Flera stadsdelar i Luleå,Trafikbrott,1
+2020,01,Flera stadsdelar i Luleå,Trafikhinder,1
+2020,01,Flera stadsdelar i Luleå,Trafikolycka,2
+2020,01,Gammelstad,Stöld,2
+2020,01,Gammelstad,Trafikolycka,1
+2020,01,Hertsön,Trafikbrott,2
+2020,01,Hertsön,Vapenlagen,1
+2020,01,Lerbäcken,"Motorfordon,  anträffat stulet",1
+2020,01,Notviken,Narkotikabrott,1
+2020,01,Notviken,Rattfylleri,1
+2020,01,Notviken,Skadegörelse,1
+2020,01,Notviken,Trafikbrott,1
+2020,01,Notviken,Trafikolycka,2
+2020,01,Okänt delområde,Arbetsplatsolycka,2
+2020,01,Okänt delområde,Brand,3
+2020,01,Okänt delområde,Fylleri/LOB,7
+2020,01,Okänt delområde,Inbrott,9
+2020,01,Okänt delområde,Knivlagen,1
+2020,01,Okänt delområde,Misshandel,7
+2020,01,Okänt delområde,Narkotikabrott,7
+2020,01,Okänt delområde,Olovlig körning,1
+2020,01,Okänt delområde,Rattfylleri,9
+2020,01,Okänt delområde,Rån,1
+2020,01,Okänt delområde,Rån övrigt,1
+2020,01,Okänt delområde,Skadegörelse,4
+2020,01,Okänt delområde,Stöld,6
+2020,01,Okänt delområde,Stöld/inbrott,2
+2020,01,Okänt delområde,Trafikbrott,6
+2020,01,Okänt delområde,Trafikolycka,2
+2020,01,Okänt delområde,"Trafikolycka,  singel",1
+2020,01,Okänt delområde,"Trafikolycka,  vilt",2
+2020,01,Okänt delområde,"Trafikolycka, vilt",19
+2020,01,Okänt delområde,Övrigt,2
+2020,01,Porsön,"Motorfordon,  anträffat stulet",1
+2020,01,Råneå,Trafikolycka,1
+2020,01,Storheden,Rattfylleri,1
+2020,01,Storheden,Stöld,1
+2020,01,Storheden,Trafikkontroll,2
+2020,02,Bergnäset,Trafikkontroll,1
+2020,02,Bergviken,Trafikolycka,1
+2020,02,Björkskatan,Rattfylleri,1
+2020,02,Björkskatan,Stöld,1
+2020,02,Björkskatan,Trafikkontroll,1
+2020,02,Centrum,Rattfylleri,1
+2020,02,Centrum,Stöld,1
+2020,02,Centrum,Trafikbrott,1
+2020,02,Centrum,Trafikolycka,1
+2020,02,Centrum,Övrigt/oklassificerad,1
+2020,02,Flera stadsdelar i Luleå,Trafikolycka,1
+2020,02,Gammelstad,Brand,1
+2020,02,Gammelstad,"Motorfordon,  anträffat stulet",1
+2020,02,Gammelstad,Stöld,1
+2020,02,Hertsön,Rattfylleri,1
+2020,02,Hertsön,Trafikbrott,1
+2020,02,Hertsön,Trafikolycka,1
+2020,02,Lerbäcken,Trafikbrott,1
+2020,02,Mjölkudden,Rattfylleri,1
+2020,02,Mjölkudden,Trafikbrott,1
+2020,02,Notviken,Rattfylleri,1
+2020,02,Notviken,Trafikbrott,1
+2020,02,Okänt delområde,Arbetsplatsolycka,1
+2020,02,Okänt delområde,Brand,1
+2020,02,Okänt delområde,Djur,1
+2020,02,Okänt delområde,Fylleri/LOB,1
+2020,02,Okänt delområde,Inbrott,1
+2020,02,Okänt delområde,Knivlagen,1
+2020,02,Okänt delområde,Misshandel,1
+2020,02,Okänt delområde,Narkotikabrott,4
+2020,02,Okänt delområde,Olovlig körning,1
+2020,02,Okänt delområde,Rattfylleri,6
+2020,02,Okänt delområde,Skadegörelse,2
+2020,02,Okänt delområde,Stöld,1
+2020,02,Okänt delområde,Trafikbrott,3
+2020,02,Okänt delområde,Trafikkontroll,4
+2020,02,Okänt delområde,Trafikolycka,8
+2020,02,Okänt delområde,"Trafikolycka,  vilt",2
+2020,02,Okänt delområde,"Trafikolycka, vilt",26
+2020,02,Okänt delområde,Övrigt/oklassificerad,3
+2020,02,Porsön,Fylleri/LOB,1
+2020,02,Råneå,Trafikolycka,1
+2020,02,Skurholmen,Trafikolycka,1
+2020,02,Storheden,Rattfylleri,1
+2020,02,Storheden,Trafikbrott,1
+2020,02,Storheden,Trafikkontroll,5
+2020,02,Storheden,Trafikolycka,1
+2020,02,Sunderbyn,Trafikkontroll,2
+2020,02,Örnäset,Stöld,2
+2020,02,Örnäset,Trafikolycka,1
+2020,03,Bergnäset,Fylleri/LOB,1
+2020,03,Bergnäset,"Motorfordon,  anträffat stulet",1
+2020,03,Bergviken,Olovlig körning,1
+2020,03,Bergviken,Trafikkontroll,1
+2020,03,Björkskatan,Trafikolycka,1
+2020,03,Centrum,Fylleri/LOB,1
+2020,03,Centrum,Rattfylleri,1
+2020,03,Centrum,Skadegörelse,1
+2020,03,Centrum,Stöld,2
+2020,03,Centrum,Trafikkontroll,2
+2020,03,Flera stadsdelar i Luleå,Trafikbrott,1
+2020,03,Flera stadsdelar i Luleå,Trafikolycka,2
+2020,03,Gammelstad,Stöld,1
+2020,03,Gammelstad,Trafikbrott,3
+2020,03,Hertsön,Inbrott,1
+2020,03,Hertsön,Stöld,1
+2020,03,Mjölkudden,Skadegörelse,1
+2020,03,Notviken,Rattfylleri,1
+2020,03,Notviken,"Trafikolycka,  vilt",1
+2020,03,Notviken,"Trafikolycka, vilt",1
+2020,03,Okänt delområde,Arbetsplatsolycka,1
+2020,03,Okänt delområde,Bedrägeri,1
+2020,03,Okänt delområde,Fylleri/LOB,5
+2020,03,Okänt delområde,Inbrott,1
+2020,03,Okänt delområde,Misshandel,7
+2020,03,Okänt delområde,Narkotikabrott,5
+2020,03,Okänt delområde,Olovlig körning,1
+2020,03,Okänt delområde,Rattfylleri,8
+2020,03,Okänt delområde,Sexualbrott,1
+2020,03,Okänt delområde,Skadegörelse,1
+2020,03,Okänt delområde,Stöld,4
+2020,03,Okänt delområde,Stöld/inbrott,1
+2020,03,Okänt delområde,Trafikbrott,10
+2020,03,Okänt delområde,Trafikhinder,1
+2020,03,Okänt delområde,Trafikkontroll,1
+2020,03,Okänt delområde,Trafikolycka,6
+2020,03,Okänt delområde,"Trafikolycka,  vilt",2
+2020,03,Okänt delområde,"Trafikolycka, vilt",1
+2020,03,Okänt delområde,Vapenlagen,1
+2020,03,Okänt delområde,Våldtäkt,1
+2020,03,Okänt delområde,Övrigt/oklassificerad,1
+2020,03,Porsön,Fylleri/LOB,1
+2020,03,Porsön,Skadegörelse,1
+2020,03,Porsön,Stöld,1
+2020,03,Råneå,Trafikkontroll,1
+2020,03,Råneå,Trafikolycka,1
+2020,03,Skurholmen,Rattfylleri,1
+2020,03,Storheden,Rattfylleri,1
+2020,03,Storheden,Stöld,1
+2020,03,Storheden,Trafikbrott,1
+2020,03,Storheden,Trafikkontroll,1
+2020,03,Sunderbyn,Trafikkontroll,2
+2020,03,Sunderbyn,"Trafikolycka,  vilt",1
+2020,03,Örnäset,Rattfylleri,1
+2020,04,Bergnäset,Fylleri/LOB,1
+2020,04,Bergnäset,"Motorfordon,  anträffat stulet",1
+2020,04,Bergviken,Försvunnen person,1
+2020,04,Bergviken,Övrigt/oklassificerad,1
+2020,04,Björkskatan,Misshandel,1
+2020,04,Björkskatan,Rattfylleri,2
+2020,04,Centrum,Rattfylleri,1
+2020,04,Centrum,Stöld,2
+2020,04,Centrum,Trafikbrott,1
+2020,04,Centrum,Trafikolycka,1
+2020,04,Centrum,"Våldtäkt,  försök",1
+2020,04,Flera stadsdelar i Luleå,Trafikkontroll,1
+2020,04,Hertsön,"Motorfordon,  anträffat stulet",1
+2020,04,Hertsön,Stöld,1
+2020,04,Mjölkudden,Rattfylleri,1
+2020,04,Notviken,Misshandel,1
+2020,04,Notviken,Trafikbrott,3
+2020,04,Notviken,Trafikkontroll,1
+2020,04,Okänt delområde,Arbetsplatsolycka,3
+2020,04,Okänt delområde,Brand,3
+2020,04,Okänt delområde,Bråk,1
+2020,04,Okänt delområde,Fylleri/LOB,3
+2020,04,Okänt delområde,Misshandel,4
+2020,04,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2020,04,Okänt delområde,Narkotikabrott,4
+2020,04,Okänt delområde,Olaga intrång,1
+2020,04,Okänt delområde,Olovlig körning,2
+2020,04,Okänt delområde,Rattfylleri,5
+2020,04,Okänt delområde,Räddningsinsats,1
+2020,04,Okänt delområde,Skadegörelse,3
+2020,04,Okänt delområde,Stöld,2
+2020,04,Okänt delområde,Trafikbrott,4
+2020,04,Okänt delområde,Trafikkontroll,8
+2020,04,Okänt delområde,Trafikolycka,3
+2020,04,Okänt delområde,"Trafikolycka,  vilt",5
+2020,04,Okänt delområde,"Trafikolycka, vilt",5
+2020,04,Porsön,Inbrott,1
+2020,04,Porsön,"Motorfordon,  anträffat stulet",1
+2020,04,Råneå,Trafikolycka,1
+2020,04,Skurholmen,"Trafikolycka,  vilt",1
+2020,04,Storheden,Bedrägeri,1
+2020,04,Storheden,Stöld,2
+2020,04,Storheden,Trafikbrott,1
+2020,04,Sunderbyn,Trafikbrott,1
+2020,04,Sunderbyn,Trafikkontroll,1
+2020,04,Örnäset,"Motorfordon,  anträffat stulet",1
+2020,04,Örnäset,"Stöld,  försök",1
+2020,05,Bergnäset,Trafikkontroll,1
+2020,05,Björkskatan,Olovlig körning,1
+2020,05,Björkskatan,Stöld/inbrott,1
+2020,05,Centrum,Stöld,2
+2020,05,Centrum,Trafikolycka,1
+2020,05,Gammelstad,Misshandel,2
+2020,05,Gammelstad,Rattfylleri,1
+2020,05,Gammelstad,Trafikolycka,1
+2020,05,Hertsön,Inbrott,1
+2020,05,Hertsön,Narkotikabrott,1
+2020,05,Hertsön,Olaga hot,1
+2020,05,Hertsön,Trafikbrott,2
+2020,05,Lerbäcken,"Trafikolycka,  vilt",1
+2020,05,Notviken,Fylleri/LOB,1
+2020,05,Notviken,Knivlagen,1
+2020,05,Notviken,Rattfylleri,1
+2020,05,Notviken,Trafikbrott,1
+2020,05,Notviken,"Trafikolycka,  vilt",1
+2020,05,Okänt delområde,Brand,3
+2020,05,Okänt delområde,Djur,1
+2020,05,Okänt delområde,Fylleri/LOB,1
+2020,05,Okänt delområde,Misshandel,8
+2020,05,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2020,05,Okänt delområde,Narkotikabrott,5
+2020,05,Okänt delområde,Ofredande/förargelse,1
+2020,05,Okänt delområde,Olovlig körning,3
+2020,05,Okänt delområde,Rattfylleri,8
+2020,05,Okänt delområde,Rån,1
+2020,05,Okänt delområde,Skadegörelse,3
+2020,05,Okänt delområde,Stöld,4
+2020,05,Okänt delområde,Trafikbrott,7
+2020,05,Okänt delområde,Trafikkontroll,8
+2020,05,Okänt delområde,Trafikolycka,5
+2020,05,Okänt delområde,"Trafikolycka,  vilt",2
+2020,05,Okänt delområde,"Trafikolycka, vilt",4
+2020,05,Okänt delområde,Övrigt/oklassificerad,1
+2020,05,Skurholmen,Fylleri/LOB,1
+2020,05,Skurholmen,Skadegörelse,1
+2020,05,Skurholmen,Stöld/inbrott,2
+2020,05,Storheden,Rattfylleri,1
+2020,05,Storheden,Stöld,1
+2020,05,Sunderbyn,Försvunnen person,1
+2020,05,Sunderbyn,Trafikbrott,1
+2020,05,Örnäset,Rattfylleri,1
+2020,05,Örnäset,Sexualbrott,1
+2020,05,Örnäset,Trafikbrott,1
+2020,06,Bergnäset,Trafikolycka,1
+2020,06,Bergviken,Olovlig körning,1
+2020,06,Björkskatan,Försvunnen person,1
+2020,06,Björkskatan,"Trafikolycka,  singel",1
+2020,06,Centrum,Fylleri/LOB,1
+2020,06,Centrum,Misshandel,1
+2020,06,Centrum,Rattfylleri,1
+2020,06,Centrum,Trafikbrott,1
+2020,06,Flera stadsdelar i Luleå,Olovlig körning,1
+2020,06,Flera stadsdelar i Luleå,Trafikolycka,1
+2020,06,Gammelstad,Djur,1
+2020,06,Gammelstad,Stöld,1
+2020,06,Hertsön,Fylleri/LOB,1
+2020,06,Mjölkudden,Anträffat gods,1
+2020,06,Mjölkudden,"Misshandel,  grov",1
+2020,06,Notviken,Trafikkontroll,1
+2020,06,Okänt delområde,Bedrägeri,1
+2020,06,Okänt delområde,Brand,1
+2020,06,Okänt delområde,Fylleri/LOB,4
+2020,06,Okänt delområde,Inbrott,3
+2020,06,Okänt delområde,Misshandel,10
+2020,06,Okänt delområde,Narkotikabrott,6
+2020,06,Okänt delområde,Olovlig körning,4
+2020,06,Okänt delområde,Rattfylleri,7
+2020,06,Okänt delområde,Rån,3
+2020,06,Okänt delområde,"Sammanfattning, ej uppdelad",1
+2020,06,Okänt delområde,Skadegörelse,4
+2020,06,Okänt delområde,Stöld,3
+2020,06,Okänt delområde,Stöld/inbrott,1
+2020,06,Okänt delområde,Trafikbrott,4
+2020,06,Okänt delområde,Trafikhinder,1
+2020,06,Okänt delområde,Trafikkontroll,3
+2020,06,Okänt delområde,Trafikolycka,1
+2020,06,Okänt delområde,"Trafikolycka,  singel",1
+2020,06,Okänt delområde,"Trafikolycka,  vilt",5
+2020,06,Okänt delområde,"Trafikolycka, vilt",7
+2020,06,Okänt delområde,Övrigt,1
+2020,06,Porsön,Anträffat gods,1
+2020,06,Porsön,Misshandel,1
+2020,06,Porsön,"Stöld,  försök",1
+2020,06,Råneå,Rattfylleri,1
+2020,06,Råneå,Trafikkontroll,1
+2020,06,Storheden,Larm Överfall,2
+2020,06,Storheden,Stöld,3
+2020,07,Bergnäset,"Motorfordon,  anträffat stulet",1
+2020,07,Bergviken,Brand,1
+2020,07,Bergviken,Stöld/inbrott,1
+2020,07,Björkskatan,Skadegörelse,1
+2020,07,Centrum,Ofredande/förargelse,1
+2020,07,Centrum,Olovlig körning,1
+2020,07,Centrum,Stöld,1
+2020,07,Hertsön,Olovlig körning,1
+2020,07,Hertsön,Rattfylleri,1
+2020,07,Hertsön,"Stöld,  försök",1
+2020,07,Mjölkudden,Fylleri/LOB,1
+2020,07,Notviken,Rattfylleri,1
+2020,07,Notviken,Trafikkontroll,1
+2020,07,Notviken,Trafikolycka,1
+2020,07,Notviken,"Trafikolycka,  singel",1
+2020,07,Okänt delområde,Arbetsplatsolycka,1
+2020,07,Okänt delområde,Bedrägeri,1
+2020,07,Okänt delområde,Brand,1
+2020,07,Okänt delområde,Djur,1
+2020,07,Okänt delområde,Inbrott,3
+2020,07,Okänt delområde,Misshandel,8
+2020,07,Okänt delområde,Mord/dråp,1
+2020,07,Okänt delområde,Narkotikabrott,5
+2020,07,Okänt delområde,Ofredande/förargelse,1
+2020,07,Okänt delområde,Olovlig körning,2
+2020,07,Okänt delområde,Rattfylleri,2
+2020,07,Okänt delområde,Rån,1
+2020,07,Okänt delområde,Skadegörelse,1
+2020,07,Okänt delområde,Stöld,2
+2020,07,Okänt delområde,Trafikbrott,5
+2020,07,Okänt delområde,Trafikkontroll,2
+2020,07,Okänt delområde,Trafikolycka,5
+2020,07,Okänt delområde,"Trafikolycka,  vilt",2
+2020,07,Okänt delområde,"Trafikolycka, vilt",1
+2020,07,Okänt delområde,Uppdatering,1
+2020,07,Porsön,Anträffat gods,1
+2020,07,Porsön,Olovlig körning,1
+2020,07,Porsön,Rattfylleri,1
+2020,07,Råneå,Trafikbrott,1
+2020,07,Råneå,Trafikolycka,1
+2020,07,Råneå,"Trafikolycka,  singel",1
+2020,07,Skurholmen,Stöld,1
+2020,07,Storheden,Arbetsplatsolycka,1
+2020,07,Storheden,Larm Överfall,1
+2020,07,Storheden,Olaga hot,1
+2020,07,Storheden,Trafikolycka,1
+2020,07,Sunderbyn,Trafikkontroll,1
+2020,07,Örnäset,Rattfylleri,1
+2020,07,Örnäset,"Trafikolycka,  singel",1
+2020,08,Bergnäset,"Motorfordon,  anträffat stulet",1
+2020,08,Bergnäset,Olaga intrång,1
+2020,08,Bergnäset,Trafikkontroll,1
+2020,08,Bergviken,Trafikkontroll,1
+2020,08,Björkskatan,Trafikkontroll,1
+2020,08,Centrum,Brand,1
+2020,08,Centrum,Fylleri/LOB,1
+2020,08,Centrum,Misshandel,1
+2020,08,Centrum,Narkotikabrott,1
+2020,08,Centrum,Skadegörelse,1
+2020,08,Centrum,Stöld,1
+2020,08,Centrum,Trafikkontroll,2
+2020,08,Flera stadsdelar i Luleå,Trafikkontroll,2
+2020,08,Gammelstad,Trafikolycka,1
+2020,08,Hertsön,Narkotikabrott,1
+2020,08,Hertsön,Rattfylleri,1
+2020,08,Hertsön,Trafikbrott,1
+2020,08,Mjölkudden,Rattfylleri,1
+2020,08,Notviken,Brand,1
+2020,08,Notviken,Trafikbrott,2
+2020,08,Notviken,Trafikolycka,1
+2020,08,Okänt delområde,Arbetsplatsolycka,1
+2020,08,Okänt delområde,Bedrägeri,1
+2020,08,Okänt delområde,Brand,3
+2020,08,Okänt delområde,Fylleri/LOB,8
+2020,08,Okänt delområde,Försvunnen person,1
+2020,08,Okänt delområde,Misshandel,4
+2020,08,Okänt delområde,Mord/dråp,1
+2020,08,Okänt delområde,"Motorfordon,  stöld",1
+2020,08,Okänt delområde,Narkotikabrott,3
+2020,08,Okänt delområde,Ofredande/förargelse,1
+2020,08,Okänt delområde,Olaga hot,3
+2020,08,Okänt delområde,Olovlig körning,2
+2020,08,Okänt delområde,Rattfylleri,4
+2020,08,Okänt delområde,Rån,1
+2020,08,Okänt delområde,Skadegörelse,3
+2020,08,Okänt delområde,Stöld,4
+2020,08,Okänt delområde,Stöld/inbrott,1
+2020,08,Okänt delområde,Trafikbrott,4
+2020,08,Okänt delområde,Trafikkontroll,3
+2020,08,Okänt delområde,Trafikolycka,2
+2020,08,Okänt delområde,"Trafikolycka,  vilt",6
+2020,08,Okänt delområde,"Trafikolycka, vilt",7
+2020,08,Okänt delområde,Övrigt,1
+2020,08,Okänt delområde,Övrigt/oklassificerad,2
+2020,08,Porsön,Brand,1
+2020,08,Porsön,Misshandel,1
+2020,08,Råneå,"Motorfordon,  anträffat stulet",1
+2020,08,Skurholmen,Stöld,1
+2020,08,Storheden,Stöld/inbrott,1
+2020,08,Sunderbyn,Trafikolycka,1
+2020,08,Örnäset,Brand,1
+2020,09,Björkskatan,Narkotikabrott,1
+2020,09,Björkskatan,Olovlig körning,1
+2020,09,Centrum,Brand,1
+2020,09,Centrum,Narkotikabrott,2
+2020,09,Centrum,Olovlig körning,1
+2020,09,Centrum,Rattfylleri,1
+2020,09,Centrum,"Trafikolycka,  smitning från",1
+2020,09,Centrum,Våld/hot mot tjänsteman,1
+2020,09,Gammelstad,Stöld,1
+2020,09,Gammelstad,Trafikkontroll,1
+2020,09,Karlsvik,Stöld/inbrott,1
+2020,09,Malmudden,Rattfylleri,1
+2020,09,Notviken,Trafikbrott,2
+2020,09,Notviken,Trafikolycka,1
+2020,09,Okänt delområde,Arbetsplatsolycka,1
+2020,09,Okänt delområde,Brand,1
+2020,09,Okänt delområde,Fylleri/LOB,2
+2020,09,Okänt delområde,Inbrott,3
+2020,09,Okänt delområde,Knivlagen,1
+2020,09,Okänt delområde,Misshandel,3
+2020,09,Okänt delområde,Narkotikabrott,5
+2020,09,Okänt delområde,Olovlig körning,1
+2020,09,Okänt delområde,Rattfylleri,9
+2020,09,Okänt delområde,Skadegörelse,3
+2020,09,Okänt delområde,Stöld,2
+2020,09,Okänt delområde,Trafikbrott,2
+2020,09,Okänt delområde,Trafikkontroll,8
+2020,09,Okänt delområde,Trafikolycka,5
+2020,09,Okänt delområde,"Trafikolycka,  personskada",1
+2020,09,Okänt delområde,"Trafikolycka,  singel",1
+2020,09,Okänt delområde,"Trafikolycka,  vilt",2
+2020,09,Okänt delområde,"Trafikolycka, vilt",7
+2020,09,Okänt delområde,Övrigt/oklassificerad,1
+2020,09,Porsön,Arbetsplatsolycka,1
+2020,09,Porsön,"Motorfordon,  stöld",1
+2020,09,Porsön,Stöld/inbrott,1
+2020,09,Råneå,Trafikolycka,2
+2020,09,Storheden,"Motorfordon,  stöld",1
+2020,09,Storheden,Stöld,3
+2020,09,Storheden,Trafikolycka,2
+2020,09,Sunderbyn,"Motorfordon,  anträffat stulet",1
+2020,09,Sunderbyn,Olovlig körning,1
+2020,09,Sunderbyn,Trafikbrott,2
+2020,09,Örnäset,Misshandel,1
+2020,10,Bergnäset,Knivlagen,1
+2020,10,Bergnäset,Trafikkontroll,1
+2020,10,Bergnäset,"Trafikolycka,  vilt",1
+2020,10,Bergviken,Trafikolycka,1
+2020,10,Centrum,Fylleri/LOB,1
+2020,10,Centrum,Narkotikabrott,1
+2020,10,Centrum,Rattfylleri,1
+2020,10,Centrum,Stöld,3
+2020,10,Flera stadsdelar i Luleå,Trafikkontroll,1
+2020,10,Hertsön,"Stöld,  försök",1
+2020,10,Hertsön,Stöld/inbrott,1
+2020,10,Hertsön,Trafikolycka,1
+2020,10,Lerbäcken,Trafikkontroll,1
+2020,10,Malmudden,Stöld,1
+2020,10,Mjölkudden,Stöld,1
+2020,10,Notviken,Trafikbrott,2
+2020,10,Okänt delområde,Fylleri/LOB,3
+2020,10,Okänt delområde,Inbrott,4
+2020,10,Okänt delområde,Misshandel,6
+2020,10,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2020,10,Okänt delområde,Narkotikabrott,9
+2020,10,Okänt delområde,Olovlig körning,1
+2020,10,Okänt delområde,Rattfylleri,6
+2020,10,Okänt delområde,Stöld,2
+2020,10,Okänt delområde,Trafikbrott,2
+2020,10,Okänt delområde,Trafikkontroll,3
+2020,10,Okänt delområde,Trafikolycka,8
+2020,10,Okänt delområde,"Trafikolycka,  vilt",2
+2020,10,Okänt delområde,"Trafikolycka, vilt",10
+2020,10,Okänt delområde,Våld/hot mot tjänsteman,1
+2020,10,Okänt delområde,Våldtäkt,1
+2020,10,Okänt delområde,Övrigt/oklassificerad,2
+2020,10,Porsön,Stöld/inbrott,2
+2020,10,Porsön,Trafikolycka,1
+2020,10,Råneå,Djur,1
+2020,10,Råneå,Trafikolycka,1
+2020,10,Storheden,Fylleri/LOB,1
+2020,10,Storheden,Stöld,3
+2020,10,Storheden,Trafikkontroll,1
+2020,10,Storheden,Trafikolycka,1
+2020,10,Örnäset,Fylleri/LOB,1
+2020,10,Örnäset,Stöld,1
+2020,10,Örnäset,Stöld/inbrott,1
+2020,10,Örnäset,Trafikkontroll,1
+2020,10,Örnäset,Trafikolycka,1
+2020,11,Bergviken,Rån,1
+2020,11,Björkskatan,Trafikbrott,1
+2020,11,Björkskatan,Trafikkontroll,1
+2020,11,Centrum,Knivlagen,1
+2020,11,Centrum,Misshandel,1
+2020,11,Centrum,Narkotikabrott,1
+2020,11,Centrum,Trafikbrott,2
+2020,11,Centrum,Övrigt/oklassificerad,1
+2020,11,Flera stadsdelar i Luleå,Rattfylleri,1
+2020,11,Flera stadsdelar i Luleå,Trafikhinder,1
+2020,11,Flera stadsdelar i Luleå,Trafikkontroll,1
+2020,11,Flera stadsdelar i Luleå,Trafikolycka,1
+2020,11,Gammelstad,Stöld/inbrott,1
+2020,11,Gammelstad,Trafikbrott,3
+2020,11,Gammelstad,Trafikkontroll,1
+2020,11,Hertsön,"Motorfordon,  stöld",1
+2020,11,Okänt delområde,Arbetsplatsolycka,1
+2020,11,Okänt delområde,Brand,2
+2020,11,Okänt delområde,Fylleri/LOB,3
+2020,11,Okänt delområde,Inbrott,2
+2020,11,Okänt delområde,"Inbrott,  försök",1
+2020,11,Okänt delområde,Misshandel,1
+2020,11,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2020,11,Okänt delområde,"Motorfordon,  stöld",1
+2020,11,Okänt delområde,Narkotikabrott,4
+2020,11,Okänt delområde,Olovlig körning,2
+2020,11,Okänt delområde,Rattfylleri,6
+2020,11,Okänt delområde,Rån,1
+2020,11,Okänt delområde,Stöld,8
+2020,11,Okänt delområde,"Stöld,  försök",1
+2020,11,Okänt delområde,Stöld/inbrott,1
+2020,11,Okänt delområde,Trafikbrott,8
+2020,11,Okänt delområde,Trafikkontroll,7
+2020,11,Okänt delområde,"Trafikolycka,  vilt",3
+2020,11,Okänt delområde,"Trafikolycka, vilt",5
+2020,11,Okänt delområde,Våld/hot mot tjänsteman,1
+2020,11,Okänt delområde,Övrigt/oklassificerad,2
+2020,11,Råneå,"Trafikolycka,  vilt",1
+2020,11,Skurholmen,Brand,1
+2020,11,Skurholmen,Trafikolycka,1
+2020,11,Storheden,"Motorfordon,  anträffat stulet",1
+2020,11,Storheden,Stöld,5
+2020,11,Storheden,Trafikkontroll,1
+2020,11,Örnäset,Inbrott,1
+2020,11,Örnäset,Trafikbrott,1
+2020,11,Örnäset,Trafikkontroll,1
+2020,12,Bergnäset,Trafikkontroll,2
+2020,12,Centrum,Fylleri/LOB,1
+2020,12,Centrum,Försvunnen person,1
+2020,12,Centrum,Rattfylleri,2
+2020,12,Centrum,Skadegörelse,1
+2020,12,Centrum,Trafikbrott,1
+2020,12,Flera stadsdelar i Luleå,Trafikbrott,1
+2020,12,Flera stadsdelar i Luleå,Trafikkontroll,1
+2020,12,Gammelstad,Misshandel,1
+2020,12,Gammelstad,Stöld,1
+2020,12,Hertsön,Stöld,1
+2020,12,Malmudden,Stöld/inbrott,1
+2020,12,Mjölkudden,Trafikbrott,2
+2020,12,Notviken,Brand,1
+2020,12,Notviken,Olovlig körning,1
+2020,12,Notviken,Trafikkontroll,1
+2020,12,Okänt delområde,Arbetsplatsolycka,1
+2020,12,Okänt delområde,Brand,5
+2020,12,Okänt delområde,Fylleri/LOB,1
+2020,12,Okänt delområde,Försvunnen person,1
+2020,12,Okänt delområde,Inbrott,2
+2020,12,Okänt delområde,Knivlagen,1
+2020,12,Okänt delområde,Misshandel,1
+2020,12,Okänt delområde,Narkotikabrott,5
+2020,12,Okänt delområde,Rattfylleri,5
+2020,12,Okänt delområde,Rån,1
+2020,12,Okänt delområde,Stöld,5
+2020,12,Okänt delområde,Trafikbrott,4
+2020,12,Okänt delområde,Trafikkontroll,8
+2020,12,Okänt delområde,Trafikolycka,9
+2020,12,Okänt delområde,"Trafikolycka,  vilt",4
+2020,12,Okänt delområde,"Trafikolycka, vilt",8
+2020,12,Skurholmen,Trafikkontroll,1
+2020,12,Storheden,Rattfylleri,1
+2020,12,Storheden,Stöld,3
+2020,12,Sunderbyn,Trafikkontroll,1
+2020,12,Örnäset,Stöld,2
+2020,12,Örnäset,Trafikolycka,1
+2021,01,Bergnäset,Trafikkontroll,2
+2021,01,Bergviken,Trafikkontroll,1
+2021,01,Centrum,Fylleri/LOB,1
+2021,01,Centrum,Trafikkontroll,3
+2021,01,Centrum,Trafikolycka,1
+2021,01,Centrum,Våld/hot mot tjänsteman,1
+2021,01,Flera stadsdelar i Luleå,Trafikolycka,1
+2021,01,Gammelstad,Stöld,1
+2021,01,Gammelstad,Trafikkontroll,1
+2021,01,Hertsön,Fylleri/LOB,1
+2021,01,Notviken,Rattfylleri,1
+2021,01,Notviken,Trafikkontroll,2
+2021,01,Okänt delområde,Anträffad död,1
+2021,01,Okänt delområde,Brand,5
+2021,01,Okänt delområde,Fylleri/LOB,4
+2021,01,Okänt delområde,Inbrott,1
+2021,01,Okänt delområde,Misshandel,4
+2021,01,Okänt delområde,Narkotikabrott,3
+2021,01,Okänt delområde,Rattfylleri,9
+2021,01,Okänt delområde,Skadegörelse,1
+2021,01,Okänt delområde,Stöld,3
+2021,01,Okänt delområde,Trafikbrott,2
+2021,01,Okänt delområde,Trafikkontroll,9
+2021,01,Okänt delområde,Trafikolycka,4
+2021,01,Okänt delområde,"Trafikolycka,  personskada",1
+2021,01,Okänt delområde,"Trafikolycka,  singel",1
+2021,01,Okänt delområde,"Trafikolycka,  vilt",4
+2021,01,Okänt delområde,"Trafikolycka, vilt",19
+2021,01,Okänt delområde,Våld/hot mot tjänsteman,1
+2021,01,Porsön,Arbetsplatsolycka,1
+2021,01,Porsön,Brand,1
+2021,01,Råneå,Trafikbrott,1
+2021,01,Råneå,Trafikkontroll,1
+2021,01,Storheden,Olovlig körning,1
+2021,01,Storheden,Rattfylleri,1
+2021,01,Storheden,Stöld,1
+2021,01,Storheden,Trafikkontroll,1
+2021,01,Storheden,Trafikolycka,1
+2021,01,Sunderbyn,Trafikbrott,1
+2021,01,Örnäset,Stöld,1
+2021,01,Örnäset,"Stöld,  försök",1
+2021,01,Örnäset,Trafikbrott,1
+2021,02,Bergnäset,Trafikkontroll,2
+2021,02,Björkskatan,Rattfylleri,1
+2021,02,Björkskatan,Rån,1
+2021,02,Björkskatan,Trafikolycka,1
+2021,02,Centrum,Rattfylleri,1
+2021,02,Centrum,Stöld,2
+2021,02,Centrum,Trafikbrott,1
+2021,02,Flera stadsdelar i Luleå,Trafikhinder,1
+2021,02,Flera stadsdelar i Luleå,Trafikkontroll,1
+2021,02,Flera stadsdelar i Luleå,Trafikolycka,2
+2021,02,Gammelstad,Skadegörelse,1
+2021,02,Hertsön,Stöld,2
+2021,02,Hertsön,"Trafikolycka,  vilt",1
+2021,02,Mjölkudden,"Motorfordon,  anträffat stulet",1
+2021,02,Notviken,"Mord/dråp,  försök",1
+2021,02,Notviken,Stöld,2
+2021,02,Notviken,Trafikkontroll,1
+2021,02,Notviken,Trafikolycka,1
+2021,02,Okänt delområde,Arbetsplatsolycka,2
+2021,02,Okänt delområde,Brand,2
+2021,02,Okänt delområde,Bråk,1
+2021,02,Okänt delområde,Knivlagen,1
+2021,02,Okänt delområde,Misshandel,1
+2021,02,Okänt delområde,"Misshandel,  grov",1
+2021,02,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2021,02,Okänt delområde,"Motorfordon,  stöld",1
+2021,02,Okänt delområde,Narkotikabrott,1
+2021,02,Okänt delområde,Olaga hot,1
+2021,02,Okänt delområde,Olovlig körning,1
+2021,02,Okänt delområde,Rattfylleri,2
+2021,02,Okänt delområde,Skadegörelse,3
+2021,02,Okänt delområde,Stöld,6
+2021,02,Okänt delområde,Trafikbrott,5
+2021,02,Okänt delområde,Trafikkontroll,3
+2021,02,Okänt delområde,Trafikolycka,5
+2021,02,Okänt delområde,"Trafikolycka,  vilt",4
+2021,02,Okänt delområde,"Trafikolycka, vilt",7
+2021,02,Okänt delområde,Vapenlagen,1
+2021,02,Okänt delområde,Våld/hot mot tjänsteman,1
+2021,02,Porsön,Arbetsplatsolycka,1
+2021,02,Storheden,"Motorfordon,  anträffat stulet",1
+2021,02,Storheden,Stöld,1
+2021,02,Storheden,Trafikkontroll,1
+2021,02,Sunderbyn,Trafikbrott,2
+2021,02,Sunderbyn,Trafikolycka,1
+2021,02,Sunderbyn,"Trafikolycka, vilt",1
+2021,02,Örnäset,"Motorfordon,  anträffat stulet",1
+2021,02,Örnäset,Trafikkontroll,1
+2021,03,Bergnäset,Rattfylleri,1
+2021,03,Bergnäset,Trafikbrott,1
+2021,03,Bergnäset,Trafikkontroll,2
+2021,03,Bergviken,Trafikkontroll,1
+2021,03,Centrum,Fylleri/LOB,1
+2021,03,Centrum,Skadegörelse,1
+2021,03,Centrum,Stöld,2
+2021,03,Flera stadsdelar i Luleå,Trafikbrott,1
+2021,03,Flera stadsdelar i Luleå,Trafikhinder,1
+2021,03,Flera stadsdelar i Luleå,Trafikkontroll,1
+2021,03,Flera stadsdelar i Luleå,Trafikolycka,2
+2021,03,Lerbäcken,Trafikkontroll,2
+2021,03,Mjölkudden,Trafikkontroll,1
+2021,03,Notviken,Försvunnen person,1
+2021,03,Notviken,Trafikbrott,1
+2021,03,Okänt delområde,Brand,1
+2021,03,Okänt delområde,"Farligt föremål,  misstänkt",1
+2021,03,Okänt delområde,Fylleri/LOB,1
+2021,03,Okänt delområde,Inbrott,2
+2021,03,Okänt delområde,Misshandel,2
+2021,03,Okänt delområde,Narkotikabrott,5
+2021,03,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2021,03,Okänt delområde,Olovlig körning,1
+2021,03,Okänt delområde,Rattfylleri,9
+2021,03,Okänt delområde,Sedlighetsbrott,2
+2021,03,Okänt delområde,Skadegörelse,1
+2021,03,Okänt delområde,Stöld,1
+2021,03,Okänt delområde,"Stöld,  försök",1
+2021,03,Okänt delområde,Trafikbrott,7
+2021,03,Okänt delområde,Trafikkontroll,3
+2021,03,Okänt delområde,"Trafikolycka,  vilt",2
+2021,03,Okänt delområde,"Trafikolycka, vilt",1
+2021,03,Okänt delområde,Övrigt/oklassificerad,1
+2021,03,Porsön,Misshandel,1
+2021,03,Storheden,Stöld,3
+2021,03,Sunderbyn,Trafikkontroll,2
+2021,03,Sunderbyn,Trafikolycka,2
+2021,03,Örnäset,Inbrott,1
+2021,03,Örnäset,Stöld,1
+2021,03,Örnäset,Stöld/inbrott,1
+2021,04,Bergnäset,Brand,1
+2021,04,Bergnäset,Trafikolycka,1
+2021,04,Centrum,Rattfylleri,2
+2021,04,Centrum,Stöld,3
+2021,04,Centrum,Trafikolycka,1
+2021,04,Gammelstad,Trafikbrott,1
+2021,04,Hertsön,Narkotikabrott,1
+2021,04,Hertsön,Rattfylleri,1
+2021,04,Hertsön,Stöld/inbrott,1
+2021,04,Malmudden,Trafikbrott,1
+2021,04,Mjölkudden,Olovlig körning,1
+2021,04,Mjölkudden,Skadegörelse,1
+2021,04,Notviken,Trafikbrott,1
+2021,04,Notviken,Trafikolycka,1
+2021,04,Okänt delområde,Alkohollagen,2
+2021,04,Okänt delområde,Bedrägeri,1
+2021,04,Okänt delområde,Fylleri/LOB,7
+2021,04,Okänt delområde,Inbrott,2
+2021,04,Okänt delområde,Misshandel,5
+2021,04,Okänt delområde,Mord/dråp,2
+2021,04,Okänt delområde,"Mord/dråp,  försök",1
+2021,04,Okänt delområde,Olaga hot,1
+2021,04,Okänt delområde,Olovlig körning,3
+2021,04,Okänt delområde,Rattfylleri,3
+2021,04,Okänt delområde,Sedlighetsbrott,1
+2021,04,Okänt delområde,Skadegörelse,4
+2021,04,Okänt delområde,Stöld,2
+2021,04,Okänt delområde,Stöld/inbrott,1
+2021,04,Okänt delområde,Trafikbrott,3
+2021,04,Okänt delområde,Trafikkontroll,6
+2021,04,Okänt delområde,Trafikolycka,1
+2021,04,Okänt delområde,"Trafikolycka,  vilt",2
+2021,04,Okänt delområde,"Trafikolycka, vilt",4
+2021,04,Okänt delområde,Övrigt/oklassificerad,1
+2021,04,Porsön,Brand,1
+2021,04,Porsön,Olaga hot,1
+2021,04,Porsön,Olaga intrång,1
+2021,04,Porsön,Trafikbrott,1
+2021,04,Råneå,Trafikkontroll,1
+2021,04,Skurholmen,"Motorfordon,  anträffat stulet",1
+2021,04,Storheden,Knivlagen,1
+2021,04,Storheden,Stöld,2
+2021,04,Storheden,Trafikkontroll,2
+2021,04,Sunderbyn,Rattfylleri,1
+2021,04,Örnäset,Trafikbrott,1
+2021,05,Bergnäset,Trafikkontroll,1
+2021,05,Bergviken,Trafikkontroll,1
+2021,05,Centrum,Arbetsplatsolycka,1
+2021,05,Centrum,Fylleri/LOB,1
+2021,05,Centrum,Misshandel,1
+2021,05,Centrum,Olovlig körning,1
+2021,05,Centrum,Rattfylleri,1
+2021,05,Centrum,Stöld,2
+2021,05,Centrum,Trafikbrott,1
+2021,05,Centrum,"Trafikolycka,  smitning från",1
+2021,05,Flera stadsdelar i Luleå,Trafikkontroll,2
+2021,05,Flera stadsdelar i Luleå,Trafikolycka,1
+2021,05,Gammelstad,Stöld,1
+2021,05,Gammelstad,Trafikkontroll,3
+2021,05,Gammelstad,Trafikolycka,1
+2021,05,Hertsön,"Motorfordon,  anträffat stulet",1
+2021,05,Hertsön,Olaga intrång,1
+2021,05,Hertsön,Stöld,1
+2021,05,Hertsön,Trafikkontroll,1
+2021,05,Mjölkudden,Inbrott,1
+2021,05,Mjölkudden,Rattfylleri,1
+2021,05,Notviken,Rattfylleri,1
+2021,05,Notviken,Stöld,1
+2021,05,Okänt delområde,Brand,1
+2021,05,Okänt delområde,Fylleri/LOB,1
+2021,05,Okänt delområde,Inbrott,2
+2021,05,Okänt delområde,Knivlagen,1
+2021,05,Okänt delområde,Misshandel,3
+2021,05,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2021,05,Okänt delområde,Narkotikabrott,4
+2021,05,Okänt delområde,Olaga hot,1
+2021,05,Okänt delområde,Olovlig körning,1
+2021,05,Okänt delområde,Rattfylleri,3
+2021,05,Okänt delområde,Sexualbrott,1
+2021,05,Okänt delområde,Stöld,5
+2021,05,Okänt delområde,Stöld/inbrott,1
+2021,05,Okänt delområde,Trafikbrott,3
+2021,05,Okänt delområde,Trafikkontroll,6
+2021,05,Okänt delområde,Trafikolycka,6
+2021,05,Okänt delområde,"Trafikolycka,  vilt",2
+2021,05,Okänt delområde,Övrigt,1
+2021,05,Porsön,Inbrott,1
+2021,05,Porsön,Trafikkontroll,1
+2021,05,Råneå,Trafikbrott,1
+2021,05,Skurholmen,"Motorfordon,  anträffat stulet",1
+2021,05,Skurholmen,Olaga intrång,1
+2021,05,Storheden,Inbrott,1
+2021,05,Storheden,Ordningslagen,1
+2021,05,Storheden,Stöld,3
+2021,05,Sunderbyn,Misshandel,1
+2021,05,Sunderbyn,Narkotikabrott,1
+2021,05,Örnäset,Rattfylleri,1
+2021,05,Örnäset,Trafikkontroll,1
+2021,06,Bergnäset,Trafikolycka,1
+2021,06,Centrum,Fylleri/LOB,1
+2021,06,Centrum,Misshandel,1
+2021,06,Centrum,Olovlig körning,1
+2021,06,Centrum,Rån,1
+2021,06,Centrum,Skadegörelse,1
+2021,06,Centrum,Stöld,6
+2021,06,Centrum,Trafikolycka,1
+2021,06,Centrum,Övrigt/oklassificerad,1
+2021,06,Flera stadsdelar i Luleå,Stöld,1
+2021,06,Flera stadsdelar i Luleå,Trafikhinder,1
+2021,06,Flera stadsdelar i Luleå,Trafikkontroll,1
+2021,06,Gammelstad,Stöld,3
+2021,06,Gammelstad,Trafikkontroll,1
+2021,06,Gammelstad,Trafikolycka,2
+2021,06,Hertsön,Anträffat gods,1
+2021,06,Hertsön,Trafikkontroll,1
+2021,06,Hertsön,"Trafikolycka,  singel",1
+2021,06,Mjölkudden,Rån,1
+2021,06,Mjölkudden,Trafikbrott,1
+2021,06,Notviken,Arbetsplatsolycka,1
+2021,06,Notviken,Fylleri/LOB,1
+2021,06,Notviken,Stöld,1
+2021,06,Notviken,Trafikbrott,1
+2021,06,Okänt delområde,Brand,3
+2021,06,Okänt delområde,Fylleri/LOB,4
+2021,06,Okänt delområde,Misshandel,6
+2021,06,Okänt delområde,Narkotikabrott,2
+2021,06,Okänt delområde,Olovlig körning,2
+2021,06,Okänt delområde,Rattfylleri,1
+2021,06,Okänt delområde,Skadegörelse,4
+2021,06,Okänt delområde,Stöld,6
+2021,06,Okänt delområde,Trafikbrott,7
+2021,06,Okänt delområde,Trafikkontroll,6
+2021,06,Okänt delområde,Trafikolycka,7
+2021,06,Okänt delområde,"Trafikolycka,  vilt",4
+2021,06,Okänt delområde,"Trafikolycka, vilt",3
+2021,06,Okänt delområde,Övrigt/oklassificerad,1
+2021,06,Porsön,Brand,1
+2021,06,Porsön,Inbrott,1
+2021,06,Porsön,"Misshandel,  grov",1
+2021,06,Råneå,Trafikolycka,2
+2021,06,Skurholmen,Brand,1
+2021,06,Skurholmen,Trafikkontroll,1
+2021,06,Storheden,Stöld,1
+2021,06,Storheden,Trafikbrott,1
+2021,06,Storheden,"Trafikolycka,  smitning från",1
+2021,06,Storheden,Våld/hot mot tjänsteman,1
+2021,06,Sunderbyn,Trafikkontroll,2
+2021,06,Örnäset,Misshandel,1
+2021,06,Örnäset,"Motorfordon,  anträffat stulet",1
+2021,06,Örnäset,Olovlig körning,1
+2021,06,Örnäset,Stöld,2
+2021,06,Örnäset,Stöld/inbrott,1
+2021,06,Örnäset,Trafikbrott,1
+2021,07,Bergnäset,Trafikkontroll,3
+2021,07,Björkskatan,Trafikkontroll,1
+2021,07,Centrum,Fylleri/LOB,1
+2021,07,Centrum,Försvunnen person,1
+2021,07,Centrum,Stöld,2
+2021,07,Centrum,Trafikkontroll,1
+2021,07,Centrum,Trafikolycka,2
+2021,07,Flera stadsdelar i Luleå,Trafikkontroll,1
+2021,07,Gammelstad,Trafikbrott,1
+2021,07,Mjölkudden,"Motorfordon,  anträffat stulet",1
+2021,07,Mjölkudden,Skadegörelse,1
+2021,07,Notviken,Mord/dråp,1
+2021,07,Okänt delområde,Fylleri/LOB,2
+2021,07,Okänt delområde,Hemfridsbrott,1
+2021,07,Okänt delområde,Inbrott,4
+2021,07,Okänt delområde,Misshandel,6
+2021,07,Okänt delområde,Narkotikabrott,2
+2021,07,Okänt delområde,Olovlig körning,2
+2021,07,Okänt delområde,Rattfylleri,10
+2021,07,Okänt delområde,Skadegörelse,3
+2021,07,Okänt delområde,Stöld,3
+2021,07,Okänt delområde,Trafikbrott,5
+2021,07,Okänt delområde,Trafikkontroll,2
+2021,07,Okänt delområde,Trafikolycka,1
+2021,07,Okänt delområde,"Trafikolycka,  vilt",3
+2021,07,Okänt delområde,"Trafikolycka, vilt",3
+2021,07,Okänt delområde,Våld/hot mot tjänsteman,1
+2021,07,Porsön,Försvunnen person,1
+2021,07,Skurholmen,Rån väpnat,1
+2021,07,Storheden,Fylleri/LOB,1
+2021,07,Storheden,Stöld,1
+2021,07,Sunderbyn,Trafikbrott,1
+2021,07,Örnäset,Stöld,1
+2021,08,Bergviken,Försvunnen person,1
+2021,08,Centrum,Fylleri/LOB,1
+2021,08,Centrum,Rattfylleri,1
+2021,08,Centrum,Stöld,1
+2021,08,Centrum,Trafikbrott,1
+2021,08,Flera stadsdelar i Luleå,Trafikkontroll,2
+2021,08,Gammelstad,Trafikbrott,1
+2021,08,Gammelstad,Trafikolycka,1
+2021,08,Hertsön,Inbrott,1
+2021,08,Hertsön,Rattfylleri,1
+2021,08,Hertsön,"Skottlossning,  misstänkt",1
+2021,08,Hertsön,Stöld,1
+2021,08,Malmudden,Skadegörelse,1
+2021,08,Mjölkudden,Misshandel,1
+2021,08,Mjölkudden,"Trafikolycka,  smitning från",1
+2021,08,Notviken,Arbetsplatsolycka,1
+2021,08,Notviken,Uppdatering,1
+2021,08,Okänt delområde,Arbetsplatsolycka,2
+2021,08,Okänt delområde,Bedrägeri,1
+2021,08,Okänt delområde,Fylleri/LOB,3
+2021,08,Okänt delområde,Inbrott,1
+2021,08,Okänt delområde,Misshandel,2
+2021,08,Okänt delområde,"Misshandel,  grov",1
+2021,08,Okänt delområde,Narkotikabrott,5
+2021,08,Okänt delområde,Ofredande/förargelse,1
+2021,08,Okänt delområde,Olaga hot,1
+2021,08,Okänt delområde,Olovlig körning,3
+2021,08,Okänt delområde,Rattfylleri,1
+2021,08,Okänt delområde,Räddningsinsats,1
+2021,08,Okänt delområde,Skadegörelse,2
+2021,08,Okänt delområde,Stöld,4
+2021,08,Okänt delområde,"Stöld,  försök",3
+2021,08,Okänt delområde,Trafikbrott,8
+2021,08,Okänt delområde,Trafikkontroll,4
+2021,08,Okänt delområde,Trafikolycka,5
+2021,08,Okänt delområde,"Trafikolycka,  vilt",2
+2021,08,Okänt delområde,"Trafikolycka, vilt",4
+2021,08,Okänt delområde,Våldtäkt,1
+2021,08,Okänt delområde,Övrigt/oklassificerad,1
+2021,08,Porsön,Inbrott,1
+2021,08,Porsön,Misshandel,1
+2021,08,Porsön,Trafikkontroll,2
+2021,08,Porsön,Trafikolycka,1
+2021,08,Råneå,Trafikolycka,1
+2021,08,Skurholmen,Trafikbrott,1
+2021,08,Skurholmen,Trafikkontroll,1
+2021,08,Storheden,Stöld,2
+2021,08,Storheden,Trafikbrott,1
+2021,08,Örnäset,Stöld,1
+2021,08,Örnäset,Våld/hot mot tjänsteman,1
+2021,09,Bergviken,Trafikkontroll,1
+2021,09,Centrum,Fylleri/LOB,1
+2021,09,Centrum,Misshandel,2
+2021,09,Centrum,"Motorfordon,  anträffat stulet",1
+2021,09,Centrum,Olaga intrång,1
+2021,09,Centrum,Stöld,3
+2021,09,Centrum,Trafikolycka,2
+2021,09,Flera stadsdelar i Luleå,Trafikolycka,1
+2021,09,Gammelstad,Bedrägeri,1
+2021,09,Gammelstad,Trafikkontroll,1
+2021,09,Gammelstad,Trafikolycka,1
+2021,09,Hertsön,Skadegörelse,1
+2021,09,Hertsön,Trafikbrott,1
+2021,09,Malmudden,Trafikkontroll,1
+2021,09,Mjölkudden,Stöld,1
+2021,09,Notviken,Brand,3
+2021,09,Notviken,Olovlig körning,1
+2021,09,Notviken,Trafikkontroll,1
+2021,09,Okänt delområde,Brand,1
+2021,09,Okänt delområde,Fylleri/LOB,2
+2021,09,Okänt delområde,Försvunnen person,1
+2021,09,Okänt delområde,Inbrott,1
+2021,09,Okänt delområde,Knivlagen,1
+2021,09,Okänt delområde,Misshandel,4
+2021,09,Okänt delområde,"Mord/dråp,  försök",1
+2021,09,Okänt delområde,Narkotikabrott,1
+2021,09,Okänt delområde,Olovlig körning,2
+2021,09,Okänt delområde,Rattfylleri,6
+2021,09,Okänt delområde,Stöld,8
+2021,09,Okänt delområde,Trafikbrott,4
+2021,09,Okänt delområde,Trafikkontroll,4
+2021,09,Okänt delområde,Trafikolycka,6
+2021,09,Okänt delområde,"Trafikolycka,  singel",1
+2021,09,Okänt delområde,"Trafikolycka,  vilt",1
+2021,09,Okänt delområde,"Trafikolycka, vilt",1
+2021,09,Porsön,Anträffat gods,1
+2021,09,Porsön,Stöld/inbrott,1
+2021,09,Porsön,Trafikbrott,1
+2021,09,Porsön,Trafikkontroll,3
+2021,09,Skurholmen,Olovlig körning,1
+2021,09,Skurholmen,Skadegörelse,1
+2021,09,Storheden,Arbetsplatsolycka,1
+2021,09,Storheden,Stöld,5
+2021,09,Storheden,Trafikkontroll,2
+2021,09,Sunderbyn,"Motorfordon,  anträffat stulet",2
+2021,09,Örnäset,Bråk,1
+2021,09,Örnäset,Stöld,1
+2021,09,Örnäset,Trafikolycka,1
+2021,10,Bergnäset,"Stöld,  försök",1
+2021,10,Bergnäset,Trafikkontroll,1
+2021,10,Bergnäset,Trafikolycka,1
+2021,10,Bergnäset,Uppdatering,2
+2021,10,Bergviken,Skadegörelse,1
+2021,10,Bergviken,Trafikkontroll,1
+2021,10,Centrum,Skadegörelse,2
+2021,10,Centrum,Stöld,1
+2021,10,Centrum,Stöld/inbrott,1
+2021,10,Flera stadsdelar i Luleå,Trafikhinder,1
+2021,10,Flera stadsdelar i Luleå,Trafikkontroll,1
+2021,10,Gammelstad,Inbrott,1
+2021,10,Gammelstad,Trafikkontroll,1
+2021,10,Hertsön,Trafikkontroll,1
+2021,10,Notviken,Trafikkontroll,1
+2021,10,Okänt delområde,Brand,3
+2021,10,Okänt delområde,Fylleri/LOB,2
+2021,10,Okänt delområde,Kontroll person/fordon,1
+2021,10,Okänt delområde,Misshandel,5
+2021,10,Okänt delområde,"Misshandel,  grov",2
+2021,10,Okänt delområde,Narkotikabrott,4
+2021,10,Okänt delområde,Olovlig körning,1
+2021,10,Okänt delområde,Rattfylleri,7
+2021,10,Okänt delområde,Rån,1
+2021,10,Okänt delområde,Skadegörelse,2
+2021,10,Okänt delområde,Stöld,2
+2021,10,Okänt delområde,"Stöld,  försök",1
+2021,10,Okänt delområde,Trafikbrott,6
+2021,10,Okänt delområde,Trafikkontroll,5
+2021,10,Okänt delområde,Trafikolycka,9
+2021,10,Okänt delområde,"Trafikolycka,  vilt",1
+2021,10,Okänt delområde,"Trafikolycka, vilt",1
+2021,10,Okänt delområde,Våld/hot mot tjänsteman,1
+2021,10,Okänt delområde,Övrigt,1
+2021,10,Råneå,Försvunnen person,1
+2021,10,Råneå,Rattfylleri,2
+2021,10,Råneå,Trafikkontroll,1
+2021,10,Råneå,Trafikolycka,2
+2021,10,Skurholmen,Trafikolycka,1
+2021,10,Storheden,Olovlig körning,1
+2021,10,Storheden,Rån övrigt,1
+2021,10,Storheden,Stöld,4
+2021,10,Storheden,Trafikkontroll,4
+2021,10,Sunderbyn,Trafikolycka,1
+2021,10,Sunderbyn,"Trafikolycka,  vilt",1
+2021,10,Örnäset,Misshandel,1
+2021,10,Örnäset,Stöld,2
+2021,11,Bergnäset,Trafikkontroll,1
+2021,11,Björkskatan,Trafikkontroll,2
+2021,11,Centrum,Brand,1
+2021,11,Centrum,"Inbrott,  försök",1
+2021,11,Centrum,Knivlagen,1
+2021,11,Centrum,Misshandel,1
+2021,11,Centrum,Narkotikabrott,1
+2021,11,Centrum,Ofredande/förargelse,1
+2021,11,Centrum,Olovlig körning,1
+2021,11,Centrum,Trafikolycka,1
+2021,11,Flera stadsdelar i Luleå,Olovlig körning,1
+2021,11,Flera stadsdelar i Luleå,"Trafikolycka,  vilt",1
+2021,11,Gammelstad,Trafikkontroll,2
+2021,11,Hertsön,Misshandel,1
+2021,11,Lerbäcken,Trafikkontroll,1
+2021,11,Malmudden,Rattfylleri,1
+2021,11,Malmudden,Trafikkontroll,1
+2021,11,Mjölkudden,Trafikkontroll,1
+2021,11,Okänt delområde,Brand,1
+2021,11,Okänt delområde,Fylleri/LOB,4
+2021,11,Okänt delområde,Inbrott,1
+2021,11,Okänt delområde,Misshandel,1
+2021,11,Okänt delområde,Narkotikabrott,6
+2021,11,Okänt delområde,Rattfylleri,1
+2021,11,Okänt delområde,Skadegörelse,2
+2021,11,Okänt delområde,Stöld,1
+2021,11,Okänt delområde,"Stöld,  ringa",1
+2021,11,Okänt delområde,Stöld/inbrott,1
+2021,11,Okänt delområde,Trafikbrott,3
+2021,11,Okänt delområde,Trafikkontroll,9
+2021,11,Okänt delområde,Trafikolycka,6
+2021,11,Okänt delområde,"Trafikolycka,  vilt",1
+2021,11,Okänt delområde,Våld/hot mot tjänsteman,1
+2021,11,Porsön,Narkotikabrott,1
+2021,11,Porsön,Olaga intrång,1
+2021,11,Porsön,Olovlig körning,1
+2021,11,Porsön,Trafikkontroll,3
+2021,11,Storheden,Stöld,4
+2021,11,Sunderbyn,Trafikbrott,1
+2021,11,Örnäset,Rattfylleri,1
+2021,11,Örnäset,Stöld,1
+2021,11,Örnäset,Trafikkontroll,1
+2021,11,Örnäset,Trafikolycka,1
+2021,12,Bergnäset,Olovlig körning,1
+2021,12,Bergnäset,Trafikkontroll,1
+2021,12,Bergnäset,Trafikolycka,1
+2021,12,Björkskatan,"Trafikolycka,  personskada",1
+2021,12,Centrum,Misshandel,1
+2021,12,Centrum,Narkotikabrott,1
+2021,12,Centrum,Skadegörelse,1
+2021,12,Centrum,Stöld,5
+2021,12,Centrum,Trafikbrott,3
+2021,12,Centrum,Trafikkontroll,1
+2021,12,Centrum,Övrigt/oklassificerad,1
+2021,12,Flera stadsdelar i Luleå,Trafikbrott,1
+2021,12,Flera stadsdelar i Luleå,Trafikkontroll,2
+2021,12,Hertsön,Olovlig körning,2
+2021,12,Mjölkudden,Trafikkontroll,1
+2021,12,Notviken,Trafikolycka,1
+2021,12,Okänt delområde,Fylleri/LOB,8
+2021,12,Okänt delområde,Inbrott,2
+2021,12,Okänt delområde,Knivlagen,1
+2021,12,Okänt delområde,Larm Överfall,1
+2021,12,Okänt delområde,Misshandel,7
+2021,12,Okänt delområde,"Motorfordon,  stöld",1
+2021,12,Okänt delområde,Narkotikabrott,8
+2021,12,Okänt delområde,Olovlig körning,1
+2021,12,Okänt delområde,Rattfylleri,2
+2021,12,Okänt delområde,Skadegörelse,1
+2021,12,Okänt delområde,Stöld,3
+2021,12,Okänt delområde,Stöld/inbrott,1
+2021,12,Okänt delområde,Trafikbrott,4
+2021,12,Okänt delområde,Trafikkontroll,9
+2021,12,Okänt delområde,Trafikolycka,7
+2021,12,Okänt delområde,"Trafikolycka, vilt",1
+2021,12,Okänt delområde,Övrigt,1
+2021,12,Okänt delområde,Övrigt/oklassificerad,1
+2021,12,Porsön,Trafikkontroll,3
+2021,12,Porsön,Trafikolycka,1
+2021,12,Råneå,Trafikkontroll,1
+2021,12,Råneå,Övrigt,1
+2021,12,Storheden,Stöld,4
+2021,12,Storheden,Trafikkontroll,7
+2021,12,Storheden,Trafikolycka,1
+2021,12,Örnäset,Stöld,1
+2022,01,Bergnäset,Trafikbrott,2
+2022,01,Bergnäset,Trafikkontroll,1
+2022,01,Bergnäset,Trafikolycka,1
+2022,01,Bergviken,Fylleri/LOB,1
+2022,01,Bergviken,Olovlig körning,1
+2022,01,Bergviken,Skadegörelse,2
+2022,01,Bergviken,Trafikkontroll,1
+2022,01,Centrum,Trafikbrott,1
+2022,01,Flera stadsdelar i Luleå,Trafikolycka,1
+2022,01,Gammelstad,Trafikkontroll,3
+2022,01,Hertsön,Hemfridsbrott,1
+2022,01,Hertsön,Trafikkontroll,1
+2022,01,Lerbäcken,"Motorfordon,  anträffat stulet",1
+2022,01,Mjölkudden,Misshandel,1
+2022,01,Notviken,Rattfylleri,2
+2022,01,Notviken,Trafikkontroll,1
+2022,01,Notviken,Trafikolycka,1
+2022,01,Notviken,"Trafikolycka,  smitning från",1
+2022,01,Okänt delområde,Djur,1
+2022,01,Okänt delområde,Fylleri/LOB,6
+2022,01,Okänt delområde,Misshandel,2
+2022,01,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2022,01,Okänt delområde,"Motorfordon,  stöld",1
+2022,01,Okänt delområde,Narkotikabrott,4
+2022,01,Okänt delområde,Olovlig körning,1
+2022,01,Okänt delområde,Rattfylleri,4
+2022,01,Okänt delområde,Skadegörelse,4
+2022,01,Okänt delområde,Stöld,4
+2022,01,Okänt delområde,Trafikbrott,3
+2022,01,Okänt delområde,Trafikkontroll,11
+2022,01,Okänt delområde,Trafikolycka,7
+2022,01,Okänt delområde,"Trafikolycka,  vilt",1
+2022,01,Okänt delområde,"Trafikolycka, vilt",1
+2022,01,Okänt delområde,Övrigt,1
+2022,01,Porsön,Trafikkontroll,4
+2022,01,Råneå,Försvunnen person,1
+2022,01,Råneå,Trafikkontroll,1
+2022,01,Råneå,Trafikolycka,2
+2022,01,Storheden,Olovlig körning,1
+2022,01,Storheden,Stöld,2
+2022,01,Storheden,Trafikbrott,1
+2022,01,Storheden,Trafikkontroll,2
+2022,01,Sunderbyn,Brand,1
+2022,01,Sunderbyn,Trafikhinder,1
+2022,01,Örnäset,Trafikbrott,1
+2022,02,Bergnäset,Trafikkontroll,1
+2022,02,Bergviken,Trafikkontroll,2
+2022,02,Centrum,Narkotikabrott,1
+2022,02,Centrum,Rattfylleri,1
+2022,02,Centrum,Trafikhinder,1
+2022,02,Centrum,Trafikolycka,1
+2022,02,Flera stadsdelar i Luleå,Trafikolycka,2
+2022,02,Gammelstad,Misshandel,1
+2022,02,Gammelstad,Trafikbrott,1
+2022,02,Gammelstad,Trafikkontroll,1
+2022,02,Hertsön,Fylleri/LOB,2
+2022,02,Hertsön,Trafikkontroll,1
+2022,02,Mjölkudden,Trafikolycka,1
+2022,02,Notviken,Trafikbrott,1
+2022,02,Okänt delområde,Arbetsplatsolycka,1
+2022,02,Okänt delområde,Fylleri/LOB,3
+2022,02,Okänt delområde,Inbrott,1
+2022,02,Okänt delområde,Knivlagen,1
+2022,02,Okänt delområde,Misshandel,6
+2022,02,Okänt delområde,"Mord/dråp,  försök",1
+2022,02,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2022,02,Okänt delområde,Narkotikabrott,1
+2022,02,Okänt delområde,Olaga frihetsberövande/människorov,1
+2022,02,Okänt delområde,Olaga hot,1
+2022,02,Okänt delområde,Olovlig körning,1
+2022,02,Okänt delområde,Rattfylleri,6
+2022,02,Okänt delområde,Skadegörelse,1
+2022,02,Okänt delområde,Stöld,2
+2022,02,Okänt delområde,Trafikbrott,7
+2022,02,Okänt delområde,Trafikkontroll,7
+2022,02,Okänt delområde,Trafikolycka,5
+2022,02,Okänt delområde,"Trafikolycka,  singel",1
+2022,02,Okänt delområde,Övrigt/oklassificerad,1
+2022,02,Porsön,Trafikolycka,1
+2022,02,Råneå,Trafikbrott,1
+2022,02,Råneå,Trafikkontroll,1
+2022,02,Storheden,Stöld,1
+2022,02,Storheden,Trafikkontroll,1
+2022,02,Sunderbyn,Trafikkontroll,1
+2022,02,Örnäset,Stöld,1
+2022,02,Örnäset,Trafikbrott,1
+2022,02,Örnäset,Trafikkontroll,1
+2022,03,Centrum,Misshandel,2
+2022,03,Centrum,Narkotikabrott,1
+2022,03,Centrum,Rattfylleri,1
+2022,03,Centrum,Stöld,1
+2022,03,Gammelstad,Inbrott,1
+2022,03,Gammelstad,Trafikkontroll,1
+2022,03,Hertsön,Fylleri/LOB,1
+2022,03,Hertsön,Misshandel,2
+2022,03,Malmudden,Räddningsinsats,1
+2022,03,Mjölkudden,Trafikbrott,1
+2022,03,Notviken,Rattfylleri,1
+2022,03,Okänt delområde,Arbetsplatsolycka,1
+2022,03,Okänt delområde,Brand,3
+2022,03,Okänt delområde,Fylleri/LOB,3
+2022,03,Okänt delområde,Misshandel,3
+2022,03,Okänt delområde,Narkotikabrott,2
+2022,03,Okänt delområde,Olaga hot,1
+2022,03,Okänt delområde,Rattfylleri,5
+2022,03,Okänt delområde,Skadegörelse,1
+2022,03,Okänt delområde,Stöld,1
+2022,03,Okänt delområde,Trafikbrott,1
+2022,03,Okänt delområde,Trafikkontroll,5
+2022,03,Okänt delområde,Trafikolycka,3
+2022,03,Okänt delområde,"Trafikolycka,  vilt",3
+2022,03,Okänt delområde,"Trafikolycka, vilt",3
+2022,03,Okänt delområde,Vapenlagen,1
+2022,03,Okänt delområde,Våld/hot mot tjänsteman,1
+2022,03,Porsön,Trafikkontroll,1
+2022,03,Råneå,Brand,1
+2022,03,Skurholmen,Trafikkontroll,1
+2022,03,Skurholmen,Trafikolycka,1
+2022,03,Storheden,Olovlig körning,1
+2022,03,Storheden,Stöld,3
+2022,03,Sunderbyn,Trafikolycka,1
+2022,03,Örnäset,Inbrott,1
+2022,03,Örnäset,Stöld,2
+2022,04,Bergnäset,Stöld/inbrott,1
+2022,04,Bergnäset,Trafikkontroll,2
+2022,04,Bergnäset,Trafikolycka,2
+2022,04,Bergviken,Brand,1
+2022,04,Centrum,Fylleri/LOB,1
+2022,04,Centrum,Misshandel,2
+2022,04,Centrum,Ofredande/förargelse,1
+2022,04,Flera stadsdelar i Luleå,"Motorfordon,  stöld",1
+2022,04,Flera stadsdelar i Luleå,Rattfylleri,1
+2022,04,Flera stadsdelar i Luleå,Trafikkontroll,2
+2022,04,Flera stadsdelar i Luleå,Trafikolycka,2
+2022,04,Gammelstad,Skadegörelse,1
+2022,04,Hertsön,Fylleri/LOB,1
+2022,04,Hertsön,Rattfylleri,1
+2022,04,Hertsön,Trafikolycka,1
+2022,04,Okänt delområde,Bombhot,1
+2022,04,Okänt delområde,Brand,4
+2022,04,Okänt delområde,Fylleri/LOB,5
+2022,04,Okänt delområde,Häleri,1
+2022,04,Okänt delområde,"Inbrott,  försök",1
+2022,04,Okänt delområde,Misshandel,5
+2022,04,Okänt delområde,Narkotikabrott,3
+2022,04,Okänt delområde,Rattfylleri,8
+2022,04,Okänt delområde,Skadegörelse,2
+2022,04,Okänt delområde,Stöld,2
+2022,04,Okänt delområde,Trafikbrott,5
+2022,04,Okänt delområde,Trafikkontroll,1
+2022,04,Okänt delområde,Trafikolycka,4
+2022,04,Okänt delområde,"Trafikolycka,  vilt",2
+2022,04,Okänt delområde,"Trafikolycka, vilt",1
+2022,04,Okänt delområde,Våld/hot mot tjänsteman,1
+2022,04,Råneå,Trafikolycka,1
+2022,04,Skurholmen,Trafikkontroll,1
+2022,04,Storheden,Rån,1
+2022,04,Storheden,Stöld,2
+2022,04,Örnäset,Narkotikabrott,1
+2022,04,Örnäset,Stöld,1
+2022,05,Bergviken,Brand,1
+2022,05,Centrum,Fylleri/LOB,2
+2022,05,Centrum,Häleri,1
+2022,05,Centrum,Misshandel,2
+2022,05,Centrum,Sexualbrott,1
+2022,05,Centrum,Skadegörelse,2
+2022,05,Centrum,Trafikbrott,1
+2022,05,Centrum,Övrigt/oklassificerad,1
+2022,05,Flera stadsdelar i Luleå,Fylleri/LOB,1
+2022,05,Flera stadsdelar i Luleå,Trafikbrott,1
+2022,05,Gammelstad,Rattfylleri,1
+2022,05,Gammelstad,"Trafikolycka, vilt",1
+2022,05,Hertsön,Brand,1
+2022,05,Hertsön,"Motorfordon,  anträffat stulet",1
+2022,05,Okänt delområde,Arbetsplatsolycka,2
+2022,05,Okänt delområde,Bedrägeri,1
+2022,05,Okänt delområde,Brand,1
+2022,05,Okänt delområde,Fylleri/LOB,9
+2022,05,Okänt delområde,Inbrott,2
+2022,05,Okänt delområde,Knivlagen,1
+2022,05,Okänt delområde,Misshandel,4
+2022,05,Okänt delområde,"Motorfordon,  stöld",1
+2022,05,Okänt delområde,Narkotikabrott,2
+2022,05,Okänt delområde,Ofredande/förargelse,2
+2022,05,Okänt delområde,Olaga hot,1
+2022,05,Okänt delområde,Olaga intrång,1
+2022,05,Okänt delområde,Olovlig körning,1
+2022,05,Okänt delområde,Rattfylleri,9
+2022,05,Okänt delområde,Skadegörelse,1
+2022,05,Okänt delområde,Stöld,4
+2022,05,Okänt delområde,Trafikbrott,1
+2022,05,Okänt delområde,Trafikkontroll,5
+2022,05,Okänt delområde,Trafikolycka,4
+2022,05,Okänt delområde,"Trafikolycka,  singel",1
+2022,05,Okänt delområde,"Trafikolycka,  vilt",2
+2022,05,Okänt delområde,"Trafikolycka, vilt",3
+2022,05,Okänt delområde,Våld/hot mot tjänsteman,2
+2022,05,Okänt delområde,Övrigt/oklassificerad,1
+2022,05,Porsön,Fylleri/LOB,1
+2022,05,Porsön,Trafikolycka,1
+2022,05,Skurholmen,Trafikolycka,1
+2022,05,Storheden,Rattfylleri,1
+2022,05,Storheden,Rån övrigt,1
+2022,05,Storheden,Stöld,1
+2022,05,Storheden,Trafikkontroll,2
+2022,05,Sunderbyn,Fylleri/LOB,1
+2022,05,Örnäset,Fylleri/LOB,1
+2022,05,Örnäset,Rattfylleri,1
+2022,06,Bergnäset,Arbetsplatsolycka,1
+2022,06,Bergviken,Försvunnen person,1
+2022,06,Centrum,Fylleri/LOB,1
+2022,06,Centrum,Misshandel,1
+2022,06,Centrum,"Motorfordon,  anträffat stulet",1
+2022,06,Centrum,Stöld,1
+2022,06,Centrum,Trafikkontroll,1
+2022,06,Centrum,Trafikolycka,2
+2022,06,Flera stadsdelar i Luleå,Trafikkontroll,1
+2022,06,Gammelstad,Stöld,1
+2022,06,Lerbäcken,Brand,1
+2022,06,Malmudden,Stöld,1
+2022,06,Mjölkudden,Olovlig körning,1
+2022,06,Mjölkudden,Skadegörelse,1
+2022,06,Mjölkudden,Trafikkontroll,1
+2022,06,Okänt delområde,Arbetsplatsolycka,1
+2022,06,Okänt delområde,Brand,2
+2022,06,Okänt delområde,Fylleri/LOB,5
+2022,06,Okänt delområde,Inbrott,1
+2022,06,Okänt delområde,Misshandel,9
+2022,06,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2022,06,Okänt delområde,Narkotikabrott,11
+2022,06,Okänt delområde,Olovlig körning,2
+2022,06,Okänt delområde,Rattfylleri,4
+2022,06,Okänt delområde,Rån,1
+2022,06,Okänt delområde,Skadegörelse,5
+2022,06,Okänt delområde,Stöld,2
+2022,06,Okänt delområde,Stöld/inbrott,1
+2022,06,Okänt delområde,Trafikbrott,5
+2022,06,Okänt delområde,Trafikkontroll,2
+2022,06,Okänt delområde,Trafikolycka,3
+2022,06,Okänt delområde,"Trafikolycka,  personskada",1
+2022,06,Okänt delområde,"Trafikolycka,  singel",1
+2022,06,Okänt delområde,"Trafikolycka,  vilt",5
+2022,06,Okänt delområde,"Trafikolycka, vilt",3
+2022,06,Okänt delområde,Våld/hot mot tjänsteman,1
+2022,06,Okänt delområde,Övrigt,1
+2022,06,Porsön,Stöld/inbrott,1
+2022,06,Råneå,"Trafikolycka, vilt",1
+2022,06,Storheden,Rattfylleri,1
+2022,06,Storheden,Stöld,3
+2022,06,Sunderbyn,Trafikolycka,1
+2022,06,Örnäset,Knivlagen,1
+2022,07,Bergnäset,Trafikkontroll,1
+2022,07,Bergviken,Bråk,1
+2022,07,Bergviken,Trafikkontroll,1
+2022,07,Björkskatan,Trafikkontroll,1
+2022,07,Björkskatan,Trafikolycka,1
+2022,07,Centrum,Knivlagen,1
+2022,07,Centrum,Misshandel,1
+2022,07,Centrum,Rattfylleri,2
+2022,07,Centrum,Trafikolycka,1
+2022,07,Hertsön,Stöld,1
+2022,07,Karlsvik,Trafikkontroll,1
+2022,07,Mjölkudden,"Motorfordon,  anträffat stulet",1
+2022,07,Notviken,Trafikkontroll,1
+2022,07,Okänt delområde,Brand,1
+2022,07,Okänt delområde,Fylleri/LOB,3
+2022,07,Okänt delområde,Häleri,1
+2022,07,Okänt delområde,Inbrott,3
+2022,07,Okänt delområde,Misshandel,3
+2022,07,Okänt delområde,"Misshandel,  grov",1
+2022,07,Okänt delområde,"Mord/dråp,  försök",1
+2022,07,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2022,07,Okänt delområde,Narkotikabrott,3
+2022,07,Okänt delområde,Olaga intrång/hemfridsbrott,2
+2022,07,Okänt delområde,Olovlig körning,2
+2022,07,Okänt delområde,Rattfylleri,3
+2022,07,Okänt delområde,Rån,1
+2022,07,Okänt delområde,"Sammanfattning, ej uppdelad",1
+2022,07,Okänt delområde,Skadegörelse,2
+2022,07,Okänt delområde,Stöld,4
+2022,07,Okänt delområde,Trafikkontroll,2
+2022,07,Okänt delområde,Trafikolycka,2
+2022,07,Okänt delområde,"Trafikolycka,  personskada",2
+2022,07,Okänt delområde,"Trafikolycka,  vilt",1
+2022,07,Okänt delområde,Uppdatering,1
+2022,07,Okänt delområde,Våld/hot mot tjänsteman,1
+2022,07,Okänt delområde,Övrigt/oklassificerad,1
+2022,07,Porsön,Fylleri/LOB,1
+2022,07,Porsön,Trafikkontroll,1
+2022,07,Storheden,Stöld,1
+2022,07,Storheden,Trafikbrott,1
+2022,07,Storheden,Trafikkontroll,3
+2022,08,Bergnäset,Arbetsplatsolycka,1
+2022,08,Bergviken,Olovlig körning,1
+2022,08,Centrum,Fylleri/LOB,1
+2022,08,Centrum,Stöld,1
+2022,08,Centrum,Trafikkontroll,1
+2022,08,Centrum,Trafikolycka,1
+2022,08,Flera stadsdelar i Luleå,Anträffad död,1
+2022,08,Flera stadsdelar i Luleå,Rattfylleri,1
+2022,08,Flera stadsdelar i Luleå,Trafikkontroll,1
+2022,08,Hertsön,Misshandel,1
+2022,08,Hertsön,"Misshandel,  grov",1
+2022,08,Hertsön,Olovlig körning,1
+2022,08,Hertsön,Trafikkontroll,1
+2022,08,Malmudden,Stöld,1
+2022,08,Mjölkudden,"Trafikolycka,  smitning från",1
+2022,08,Okänt delområde,Arbetsplatsolycka,2
+2022,08,Okänt delområde,Brand,1
+2022,08,Okänt delområde,Fylleri/LOB,12
+2022,08,Okänt delområde,Försvunnen person,1
+2022,08,Okänt delområde,Inbrott,1
+2022,08,Okänt delområde,Misshandel,4
+2022,08,Okänt delområde,"Motorfordon,  stöld",1
+2022,08,Okänt delområde,Narkotikabrott,6
+2022,08,Okänt delområde,Ofredande/förargelse,1
+2022,08,Okänt delområde,Olaga hot,2
+2022,08,Okänt delområde,Rattfylleri,2
+2022,08,Okänt delområde,Skadegörelse,2
+2022,08,Okänt delområde,Stöld,4
+2022,08,Okänt delområde,Trafikbrott,2
+2022,08,Okänt delområde,Trafikkontroll,2
+2022,08,Okänt delområde,"Trafikolycka,  vilt",1
+2022,08,Okänt delområde,"Trafikolycka, vilt",1
+2022,08,Okänt delområde,Våldtäkt,1
+2022,08,Storheden,Fylleri/LOB,1
+2022,08,Sunderbyn,Skadegörelse,1
+2022,08,Örnäset,Trafikbrott,1
+2022,09,Bergnäset,Trafikkontroll,1
+2022,09,Centrum,Fylleri/LOB,4
+2022,09,Centrum,Olaga intrång,1
+2022,09,Centrum,Rattfylleri,1
+2022,09,Centrum,Skadegörelse,1
+2022,09,Centrum,Stöld,1
+2022,09,Flera stadsdelar i Luleå,Trafikolycka,1
+2022,09,Gammelstad,Brand,1
+2022,09,Hertsön,Fylleri/LOB,1
+2022,09,Hertsön,"Motorfordon,  anträffat stulet",1
+2022,09,Hertsön,Stöld/inbrott,1
+2022,09,Malmudden,Brand,1
+2022,09,Notviken,Trafikolycka,1
+2022,09,Okänt delområde,Anträffad död,1
+2022,09,Okänt delområde,Arbetsplatsolycka,2
+2022,09,Okänt delområde,Brand,2
+2022,09,Okänt delområde,Fylleri/LOB,7
+2022,09,Okänt delområde,Inbrott,1
+2022,09,Okänt delområde,Knivlagen,2
+2022,09,Okänt delområde,Misshandel,4
+2022,09,Okänt delområde,"Mord/dråp,  försök",2
+2022,09,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2022,09,Okänt delområde,Narkotikabrott,1
+2022,09,Okänt delområde,Ofredande/förargelse,3
+2022,09,Okänt delområde,Olaga hot,2
+2022,09,Okänt delområde,Rattfylleri,1
+2022,09,Okänt delområde,"Rån,  försök",1
+2022,09,Okänt delområde,Sedlighetsbrott,1
+2022,09,Okänt delområde,Skadegörelse,2
+2022,09,Okänt delområde,Stöld,3
+2022,09,Okänt delområde,Trafikbrott,2
+2022,09,Okänt delområde,Trafikkontroll,3
+2022,09,Okänt delområde,Trafikolycka,6
+2022,09,Okänt delområde,"Trafikolycka,  vilt",3
+2022,09,Okänt delområde,"Trafikolycka, vilt",2
+2022,09,Okänt delområde,Vapenlagen,1
+2022,09,Okänt delområde,Övrigt,1
+2022,09,Porsön,Trafikolycka,1
+2022,09,Porsön,"Trafikolycka,  vilt",1
+2022,09,Porsön,"Trafikolycka, vilt",1
+2022,09,Råneå,Trafikbrott,1
+2022,09,Skurholmen,Trafikkontroll,1
+2022,09,Storheden,Stöld,4
+2022,09,Sunderbyn,Inbrott,1
+2022,10,Bergnäset,Rån,1
+2022,10,Bergnäset,Trafikkontroll,4
+2022,10,Björkskatan,Olaga intrång,1
+2022,10,Centrum,Fylleri/LOB,1
+2022,10,Centrum,Skadegörelse,1
+2022,10,Centrum,Stöld,1
+2022,10,Centrum,Trafikbrott,1
+2022,10,Centrum,Trafikkontroll,2
+2022,10,Centrum,Trafikolycka,2
+2022,10,Flera stadsdelar i Luleå,Trafikolycka,1
+2022,10,Hertsön,Trafikkontroll,3
+2022,10,Hertsön,Trafikolycka,1
+2022,10,Malmudden,Stöld,2
+2022,10,Mjölkudden,Stöld,1
+2022,10,Mjölkudden,Trafikkontroll,1
+2022,10,Notviken,Trafikkontroll,1
+2022,10,Notviken,Trafikolycka,1
+2022,10,Okänt delområde,Brand,2
+2022,10,Okänt delområde,Fylleri/LOB,4
+2022,10,Okänt delområde,Häleri,1
+2022,10,Okänt delområde,Misshandel,7
+2022,10,Okänt delområde,Narkotikabrott,4
+2022,10,Okänt delområde,Ofredande/förargelse,1
+2022,10,Okänt delområde,Olaga hot,1
+2022,10,Okänt delområde,Rattfylleri,5
+2022,10,Okänt delområde,Skadegörelse,3
+2022,10,Okänt delområde,Stöld,3
+2022,10,Okänt delområde,Stöld/inbrott,1
+2022,10,Okänt delområde,Trafikbrott,1
+2022,10,Okänt delområde,Trafikkontroll,8
+2022,10,Okänt delområde,Trafikolycka,3
+2022,10,Okänt delområde,"Trafikolycka,  vilt",3
+2022,10,Okänt delområde,Våld/hot mot tjänsteman,1
+2022,10,Okänt delområde,Övrigt,1
+2022,10,Okänt delområde,Övrigt/oklassificerad,2
+2022,10,Skurholmen,Trafikkontroll,2
+2022,10,Skurholmen,Trafikolycka,1
+2022,10,Storheden,Stöld,3
+2022,10,Storheden,Trafikkontroll,2
+2022,10,Sunderbyn,Trafikkontroll,1
+2022,10,Örnäset,Olaga hot,1
+2022,10,Örnäset,Skadegörelse,1
+2022,11,Bergnäset,Brand,1
+2022,11,Bergnäset,Stöld,1
+2022,11,Bergnäset,Stöld/inbrott,1
+2022,11,Centrum,Fylleri/LOB,4
+2022,11,Centrum,Misshandel,2
+2022,11,Centrum,Trafikolycka,1
+2022,11,Flera stadsdelar i Luleå,Rattfylleri,1
+2022,11,Flera stadsdelar i Luleå,Trafikolycka,1
+2022,11,Gammelstad,Trafikkontroll,1
+2022,11,Hertsön,Trafikkontroll,1
+2022,11,Hertsön,Trafikolycka,1
+2022,11,Malmudden,Stöld,1
+2022,11,Malmudden,Trafikolycka,1
+2022,11,Mjölkudden,Stöld,1
+2022,11,Mjölkudden,Trafikolycka,1
+2022,11,Notviken,Fylleri/LOB,1
+2022,11,Notviken,Trafikbrott,1
+2022,11,Okänt delområde,Arbetsplatsolycka,1
+2022,11,Okänt delområde,Brand,1
+2022,11,Okänt delområde,Fylleri/LOB,6
+2022,11,Okänt delområde,Försvunnen person,2
+2022,11,Okänt delområde,Inbrott,1
+2022,11,Okänt delområde,Misshandel,6
+2022,11,Okänt delområde,"Misshandel,  grov",1
+2022,11,Okänt delområde,Narkotikabrott,1
+2022,11,Okänt delområde,Olovlig körning,1
+2022,11,Okänt delområde,Rattfylleri,6
+2022,11,Okänt delområde,Skadegörelse,2
+2022,11,Okänt delområde,Stöld,12
+2022,11,Okänt delområde,Trafikbrott,1
+2022,11,Okänt delområde,Trafikhinder,1
+2022,11,Okänt delområde,Trafikkontroll,5
+2022,11,Okänt delområde,Trafikolycka,6
+2022,11,Okänt delområde,"Trafikolycka,  vilt",4
+2022,11,Okänt delområde,"Trafikolycka, vilt",4
+2022,11,Okänt delområde,Övrigt,1
+2022,11,Råneå,Arbetsplatsolycka,1
+2022,11,Storheden,Narkotikabrott,1
+2022,11,Storheden,Stöld,6
+2022,11,Storheden,Trafikkontroll,1
+2022,11,Sunderbyn,Brand,1
+2022,11,Sunderbyn,Fylleri/LOB,1
+2022,11,Sunderbyn,Inbrott,1
+2022,11,Sunderbyn,Stöld/inbrott,1
+2022,11,Sunderbyn,Trafikolycka,2
+2022,12,Bergnäset,Trafikkontroll,1
+2022,12,Bergnäset,Våld/hot mot tjänsteman,1
+2022,12,Centrum,Fylleri/LOB,1
+2022,12,Centrum,Misshandel,2
+2022,12,Centrum,Olovlig körning,2
+2022,12,Centrum,Rattfylleri,1
+2022,12,Centrum,Rån,1
+2022,12,Centrum,Stöld,2
+2022,12,Centrum,Trafikolycka,1
+2022,12,Centrum,Våld/hot mot tjänsteman,1
+2022,12,Centrum,Övrigt/oklassificerad,2
+2022,12,Flera stadsdelar i Luleå,Trafikolycka,1
+2022,12,Hertsön,Inbrott,1
+2022,12,Hertsön,Trafikolycka,1
+2022,12,Hertsön,Övrigt,1
+2022,12,Okänt delområde,Brand,1
+2022,12,Okänt delområde,Fylleri/LOB,4
+2022,12,Okänt delområde,Misshandel,4
+2022,12,Okänt delområde,Narkotikabrott,3
+2022,12,Okänt delområde,Olaga hot,1
+2022,12,Okänt delområde,Olovlig körning,2
+2022,12,Okänt delområde,Rattfylleri,3
+2022,12,Okänt delområde,Skadegörelse,2
+2022,12,Okänt delområde,Stöld,4
+2022,12,Okänt delområde,Trafikbrott,2
+2022,12,Okänt delområde,Trafikkontroll,6
+2022,12,Okänt delområde,Trafikolycka,9
+2022,12,Okänt delområde,"Trafikolycka,  vilt",1
+2022,12,Okänt delområde,Uppdatering,1
+2022,12,Okänt delområde,Övrigt/oklassificerad,2
+2022,12,Råneå,Trafikkontroll,1
+2022,12,Storheden,Stöld,1
+2022,12,Storheden,Trafikkontroll,3
+2022,12,Storheden,Trafikolycka,1
+2022,12,Storheden,"Trafikolycka,  singel",1
+2022,12,Sunderbyn,Fylleri/LOB,1
+2022,12,Sunderbyn,Trafikolycka,1
+2022,12,Örnäset,Brand,1
+2023,01,Bergnäset,"Trafikolycka,  personskada",1
+2023,01,Bergviken,"Motorfordon,  anträffat stulet",1
+2023,01,Bergviken,Trafikolycka,1
+2023,01,Björkskatan,Trafikkontroll,1
+2023,01,Björkskatan,Trafikolycka,1
+2023,01,Centrum,Fylleri/LOB,3
+2023,01,Centrum,Knivlagen,1
+2023,01,Centrum,Misshandel,1
+2023,01,Centrum,Rattfylleri,1
+2023,01,Centrum,Skadegörelse,2
+2023,01,Centrum,Stöld,3
+2023,01,Centrum,Stöld/inbrott,1
+2023,01,Centrum,Trafikolycka,2
+2023,01,Centrum,Övrigt/oklassificerad,1
+2023,01,Flera stadsdelar i Luleå,Trafikkontroll,2
+2023,01,Malmudden,Stöld,1
+2023,01,Mjölkudden,Trafikolycka,1
+2023,01,Notviken,Trafikkontroll,1
+2023,01,Okänt delområde,Anträffad död,1
+2023,01,Okänt delområde,Brand,1
+2023,01,Okänt delområde,Fylleri/LOB,9
+2023,01,Okänt delområde,Misshandel,3
+2023,01,Okänt delområde,Mord/dråp,1
+2023,01,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2023,01,Okänt delområde,Narkotikabrott,5
+2023,01,Okänt delområde,Olaga frihetsberövande/människorov,1
+2023,01,Okänt delområde,Olaga hot,1
+2023,01,Okänt delområde,Olovlig körning,1
+2023,01,Okänt delområde,Rattfylleri,3
+2023,01,Okänt delområde,Stöld,8
+2023,01,Okänt delområde,Trafikbrott,1
+2023,01,Okänt delområde,Trafikkontroll,5
+2023,01,Okänt delområde,Trafikolycka,8
+2023,01,Okänt delområde,"Trafikolycka,  vilt",2
+2023,01,Okänt delområde,Övrigt,1
+2023,01,Okänt delområde,Övrigt/oklassificerad,1
+2023,01,Porsön,Narkotikabrott,1
+2023,01,Skurholmen,Trafikkontroll,1
+2023,01,Storheden,Stöld,4
+2023,01,Storheden,Trafikolycka,1
+2023,02,Bergnäset,Skadegörelse,1
+2023,02,Bergviken,Trafikolycka,1
+2023,02,Björkskatan,Trafikkontroll,1
+2023,02,Centrum,Misshandel,1
+2023,02,Centrum,Stöld,1
+2023,02,Flera stadsdelar i Luleå,Trafikhinder,1
+2023,02,Gammelstad,"Motorfordon,  anträffat stulet",1
+2023,02,Gammelstad,Stöld,1
+2023,02,Hertsön,"Farligt föremål,  misstänkt",1
+2023,02,Hertsön,Trafikkontroll,1
+2023,02,Mjölkudden,Rattfylleri,1
+2023,02,Mjölkudden,Stöld/inbrott,1
+2023,02,Notviken,"Trafikolycka, vilt",2
+2023,02,Okänt delområde,Brand,1
+2023,02,Okänt delområde,Djur,1
+2023,02,Okänt delområde,Fylleri/LOB,6
+2023,02,Okänt delområde,Försvunnen person,3
+2023,02,Okänt delområde,Misshandel,3
+2023,02,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2023,02,Okänt delområde,Narkotikabrott,4
+2023,02,Okänt delområde,Olaga hot,1
+2023,02,Okänt delområde,Rattfylleri,3
+2023,02,Okänt delområde,Rån,1
+2023,02,Okänt delområde,Stöld,10
+2023,02,Okänt delområde,Trafikbrott,2
+2023,02,Okänt delområde,Trafikkontroll,1
+2023,02,Okänt delområde,Trafikolycka,4
+2023,02,Okänt delområde,"Trafikolycka,  vilt",1
+2023,02,Okänt delområde,"Trafikolycka, vilt",3
+2023,02,Porsön,"Motorfordon,  anträffat stulet",1
+2023,02,Porsön,Olovlig körning,1
+2023,02,Porsön,Trafikolycka,1
+2023,02,Råneå,Trafikkontroll,1
+2023,02,Storheden,Misshandel,1
+2023,02,Storheden,Rattfylleri,1
+2023,02,Storheden,Stöld,1
+2023,02,Storheden,Trafikolycka,2
+2023,02,Sunderbyn,Stöld,1
+2023,02,Örnäset,Brand,1
+2023,02,Örnäset,Stöld,1
+2023,02,Örnäset,Stöld/inbrott,1
+2023,03,Bergnäset,Trafikolycka,1
+2023,03,Centrum,Fylleri/LOB,2
+2023,03,Centrum,Misshandel,1
+2023,03,Centrum,Stöld,2
+2023,03,Centrum,Trafikolycka,2
+2023,03,Centrum,"Trafikolycka,  smitning från",1
+2023,03,Centrum,Våld/hot mot tjänsteman,1
+2023,03,Flera stadsdelar i Luleå,Fylleri/LOB,1
+2023,03,Flera stadsdelar i Luleå,Trafikkontroll,1
+2023,03,Flera stadsdelar i Luleå,Trafikolycka,1
+2023,03,Gammelstad,Inbrott,1
+2023,03,Hertsön,Brand,1
+2023,03,Hertsön,Fylleri/LOB,1
+2023,03,Hertsön,Trafikolycka,2
+2023,03,Okänt delområde,Brand,5
+2023,03,Okänt delområde,Bråk,1
+2023,03,Okänt delområde,"Farligt föremål,  misstänkt",1
+2023,03,Okänt delområde,Fylleri/LOB,8
+2023,03,Okänt delområde,Inbrott,1
+2023,03,Okänt delområde,Misshandel,3
+2023,03,Okänt delområde,Mord/dråp,1
+2023,03,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2023,03,Okänt delområde,Narkotikabrott,3
+2023,03,Okänt delområde,Rattfylleri,4
+2023,03,Okänt delområde,Sabotage mot blåljusverksamhet,1
+2023,03,Okänt delområde,Stöld,3
+2023,03,Okänt delområde,Trafikbrott,1
+2023,03,Okänt delområde,Trafikkontroll,6
+2023,03,Okänt delområde,Trafikolycka,6
+2023,03,Okänt delområde,Våld/hot mot tjänsteman,1
+2023,03,Okänt delområde,Övrigt,2
+2023,03,Okänt delområde,Övrigt/oklassificerad,2
+2023,03,Porsön,Brand,1
+2023,03,Storheden,Rattfylleri,1
+2023,03,Örnäset,Olaga hot,1
+2023,03,Örnäset,Stöld,2
+2023,04,Centrum,Fylleri/LOB,1
+2023,04,Centrum,Misshandel,1
+2023,04,Centrum,Narkotikabrott,2
+2023,04,Centrum,Stöld,2
+2023,04,Flera stadsdelar i Luleå,Våld/hot mot tjänsteman,1
+2023,04,Gammelstad,Trafikkontroll,1
+2023,04,Hertsön,"Misshandel,  grov",1
+2023,04,Hertsön,Stöld,1
+2023,04,Malmudden,Stöld,1
+2023,04,Mjölkudden,Stöld/inbrott,1
+2023,04,Notviken,Brand,1
+2023,04,Okänt delområde,Brand,1
+2023,04,Okänt delområde,Fylleri/LOB,16
+2023,04,Okänt delområde,Misshandel,5
+2023,04,Okänt delområde,Narkotikabrott,5
+2023,04,Okänt delområde,Olovlig körning,2
+2023,04,Okänt delområde,Rattfylleri,5
+2023,04,Okänt delområde,Skadegörelse,1
+2023,04,Okänt delområde,Stöld,9
+2023,04,Okänt delområde,Stöld/inbrott,1
+2023,04,Okänt delområde,Trafikbrott,1
+2023,04,Okänt delområde,Trafikkontroll,7
+2023,04,Okänt delområde,Trafikolycka,7
+2023,04,Okänt delområde,"Trafikolycka,  vilt",1
+2023,04,Okänt delområde,Våld/hot mot tjänsteman,1
+2023,04,Okänt delområde,Övrigt,1
+2023,04,Skurholmen,Fylleri/LOB,1
+2023,04,Storheden,Stöld,3
+2023,04,Örnäset,Rattfylleri,1
+2023,05,Bergnäset,Brand,1
+2023,05,Bergviken,Narkotikabrott,1
+2023,05,Bergviken,Olaga hot,1
+2023,05,Centrum,Fylleri/LOB,2
+2023,05,Centrum,Misshandel,4
+2023,05,Centrum,"Motorfordon,  stöld",1
+2023,05,Centrum,Narkotikabrott,1
+2023,05,Centrum,Ofredande/förargelse,1
+2023,05,Centrum,Trafikolycka,1
+2023,05,Hertsön,Bråk,1
+2023,05,Hertsön,"Motorfordon,  stöld",1
+2023,05,Hertsön,"Trafikolycka,  singel",1
+2023,05,Mjölkudden,Försvunnen person,1
+2023,05,Mjölkudden,Misshandel,1
+2023,05,Notviken,Trafikolycka,2
+2023,05,Notviken,"Trafikolycka,  vilt",1
+2023,05,Notviken,"Trafikolycka, vilt",1
+2023,05,Okänt delområde,Brand,2
+2023,05,Okänt delområde,Fylleri/LOB,15
+2023,05,Okänt delområde,Inbrott,1
+2023,05,Okänt delområde,Misshandel,5
+2023,05,Okänt delområde,Narkotikabrott,4
+2023,05,Okänt delområde,Ofredande/förargelse,2
+2023,05,Okänt delområde,Olaga hot,1
+2023,05,Okänt delområde,Olovlig körning,1
+2023,05,Okänt delområde,Rattfylleri,3
+2023,05,Okänt delområde,Skadegörelse,1
+2023,05,Okänt delområde,Stöld,2
+2023,05,Okänt delområde,"Stöld,  försök",1
+2023,05,Okänt delområde,Trafikbrott,2
+2023,05,Okänt delområde,Trafikkontroll,2
+2023,05,Okänt delområde,Trafikolycka,5
+2023,05,Okänt delområde,"Trafikolycka,  vilt",1
+2023,05,Okänt delområde,"Trafikolycka, vilt",1
+2023,05,Okänt delområde,Våld/hot mot tjänsteman,1
+2023,05,Porsön,Brand,1
+2023,05,Porsön,"Motorfordon,  anträffat stulet",1
+2023,05,Råneå,Trafikolycka,2
+2023,05,Skurholmen,Brand,1
+2023,05,Storheden,Brand,1
+2023,05,Storheden,Stöld,1
+2023,05,Sunderbyn,Stöld/inbrott,1
+2023,05,Örnäset,Fylleri/LOB,1
+2023,05,Örnäset,Stöld,1
+2023,05,Örnäset,Trafikolycka,1
+2023,06,Bergnäset,Trafikkontroll,1
+2023,06,Bergviken,Stöld,1
+2023,06,Bergviken,Stöld/inbrott,1
+2023,06,Centrum,Fylleri/LOB,5
+2023,06,Centrum,Skadegörelse,1
+2023,06,Centrum,Trafikbrott,2
+2023,06,Centrum,"Trafikolycka,  singel",1
+2023,06,Gammelstad,Brand,1
+2023,06,Gammelstad,Rattfylleri,1
+2023,06,Gammelstad,Rån övrigt,1
+2023,06,Gammelstad,Trafikkontroll,2
+2023,06,Malmudden,Fylleri/LOB,1
+2023,06,Mjölkudden,Brand,1
+2023,06,Mjölkudden,Försvunnen person,1
+2023,06,Mjölkudden,Skadegörelse,1
+2023,06,Okänt delområde,Brand,5
+2023,06,Okänt delområde,"Farligt föremål,  misstänkt",1
+2023,06,Okänt delområde,Fylleri/LOB,7
+2023,06,Okänt delområde,Inbrott,1
+2023,06,Okänt delområde,Knivlagen,1
+2023,06,Okänt delområde,Misshandel,6
+2023,06,Okänt delområde,Narkotikabrott,9
+2023,06,Okänt delområde,Olovlig körning,1
+2023,06,Okänt delområde,Rattfylleri,3
+2023,06,Okänt delområde,Stöld,4
+2023,06,Okänt delområde,Trafikkontroll,5
+2023,06,Okänt delområde,Trafikolycka,2
+2023,06,Okänt delområde,"Trafikolycka,  vilt",1
+2023,06,Okänt delområde,Övrigt/oklassificerad,2
+2023,06,Porsön,Trafikolycka,1
+2023,06,Råneå,Brand,1
+2023,06,Storheden,Brand,1
+2023,07,Björkskatan,Skadegörelse,1
+2023,07,Centrum,Misshandel,1
+2023,07,Centrum,Övrigt/oklassificerad,1
+2023,07,Flera stadsdelar i Luleå,Trafikkontroll,1
+2023,07,Gammelstad,Brand,1
+2023,07,Gammelstad,"Trafikolycka,  singel",1
+2023,07,Mjölkudden,Försvunnen person,1
+2023,07,Notviken,Försvunnen person,1
+2023,07,Notviken,"Trafikolycka,  singel",1
+2023,07,Okänt delområde,Fylleri/LOB,6
+2023,07,Okänt delområde,Misshandel,6
+2023,07,Okänt delområde,Mord/dråp,1
+2023,07,Okänt delområde,Narkotikabrott,3
+2023,07,Okänt delområde,Olaga intrång/hemfridsbrott,2
+2023,07,Okänt delområde,Olovlig körning,1
+2023,07,Okänt delområde,Rattfylleri,3
+2023,07,Okänt delområde,Stöld,4
+2023,07,Okänt delområde,Trafikbrott,3
+2023,07,Okänt delområde,Trafikkontroll,1
+2023,07,Okänt delområde,Trafikolycka,1
+2023,07,Okänt delområde,"Trafikolycka,  vilt",3
+2023,07,Okänt delområde,"Trafikolycka, vilt",2
+2023,07,Okänt delområde,Övrigt/oklassificerad,2
+2023,08,Bergviken,Fylleri/LOB,1
+2023,08,Bergviken,Knivlagen,1
+2023,08,Bergviken,Skadegörelse,1
+2023,08,Björkskatan,Rattfylleri,1
+2023,08,Björkskatan,Stöld,1
+2023,08,Björkskatan,Trafikkontroll,1
+2023,08,Centrum,Misshandel,3
+2023,08,Centrum,Olaga intrång/hemfridsbrott,1
+2023,08,Centrum,Trafikolycka,1
+2023,08,Flera stadsdelar i Luleå,Trafikkontroll,1
+2023,08,Flera stadsdelar i Luleå,Trafikolycka,1
+2023,08,Malmudden,Stöld,1
+2023,08,Notviken,Rattfylleri,1
+2023,08,Okänt delområde,Brand,2
+2023,08,Okänt delområde,Fylleri/LOB,10
+2023,08,Okänt delområde,Försvunnen person,1
+2023,08,Okänt delområde,Hemfridsbrott,1
+2023,08,Okänt delområde,Inbrott,2
+2023,08,Okänt delområde,Misshandel,2
+2023,08,Okänt delområde,Narkotikabrott,5
+2023,08,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2023,08,Okänt delområde,Olovlig körning,2
+2023,08,Okänt delområde,Rattfylleri,1
+2023,08,Okänt delområde,Skadegörelse,4
+2023,08,Okänt delområde,Stöld,3
+2023,08,Okänt delområde,Trafikbrott,1
+2023,08,Okänt delområde,Trafikkontroll,2
+2023,08,Okänt delområde,"Trafikolycka,  personskada",1
+2023,08,Okänt delområde,"Trafikolycka,  vilt",1
+2023,08,Okänt delområde,Vapenlagen,1
+2023,08,Porsön,Narkotikabrott,1
+2023,08,Porsön,Trafikolycka,1
+2023,08,Råneå,"Motorfordon,  stöld",1
+2023,08,Skurholmen,Narkotikabrott,1
+2023,08,Storheden,Rattfylleri,1
+2023,08,Storheden,Trafikbrott,1
+2023,08,Örnäset,Stöld,2
+2023,09,Bergviken,Trafikkontroll,1
+2023,09,Björkskatan,Stöld,1
+2023,09,Centrum,Fylleri/LOB,1
+2023,09,Centrum,Stöld,2
+2023,09,Centrum,Trafikolycka,1
+2023,09,Centrum,"Trafikolycka,  singel",1
+2023,09,Centrum,Vapenlagen,1
+2023,09,Hertsön,Stöld,1
+2023,09,Lerbäcken,Misshandel,1
+2023,09,Okänt delområde,Arbetsplatsolycka,1
+2023,09,Okänt delområde,Bråk,1
+2023,09,Okänt delområde,Fylleri/LOB,2
+2023,09,Okänt delområde,Misshandel,2
+2023,09,Okänt delområde,"Misshandel,  grov",1
+2023,09,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2023,09,Okänt delområde,Narkotikabrott,5
+2023,09,Okänt delområde,Rattfylleri,8
+2023,09,Okänt delområde,Rån övrigt,1
+2023,09,Okänt delområde,Skadegörelse,1
+2023,09,Okänt delområde,Stöld,6
+2023,09,Okänt delområde,Trafikbrott,1
+2023,09,Okänt delområde,Trafikkontroll,4
+2023,09,Okänt delområde,Trafikolycka,6
+2023,09,Okänt delområde,"Trafikolycka,  personskada",1
+2023,09,Okänt delområde,"Trafikolycka,  vilt",2
+2023,09,Okänt delområde,Våld/hot mot tjänsteman,1
+2023,09,Okänt delområde,Övrigt/oklassificerad,1
+2023,09,Porsön,Skadegörelse,1
+2023,09,Råneå,Stöld,1
+2023,09,Storheden,Fylleri/LOB,1
+2023,09,Storheden,Olovlig körning,1
+2023,09,Storheden,Stöld,3
+2023,09,Storheden,Trafikolycka,1
+2023,09,Storheden,"Trafikolycka,  vilt",1
+2023,09,Örnäset,Stöld,1
+2023,10,Bergviken,Trafikolycka,1
+2023,10,Björkskatan,Försvunnen person,1
+2023,10,Centrum,Alkohollagen,1
+2023,10,Centrum,Djur,1
+2023,10,Centrum,Olovlig körning,1
+2023,10,Centrum,Trafikolycka,1
+2023,10,Flera stadsdelar i Luleå,Trafikhinder,1
+2023,10,Gammelstad,Stöld,1
+2023,10,Hertsön,Fylleri/LOB,2
+2023,10,Mjölkudden,Trafikolycka,1
+2023,10,Notviken,Trafikolycka,1
+2023,10,Okänt delområde,Bedrägeri,1
+2023,10,Okänt delområde,Brand,2
+2023,10,Okänt delområde,Fylleri/LOB,3
+2023,10,Okänt delområde,Misshandel,4
+2023,10,Okänt delområde,"Misshandel,  grov",1
+2023,10,Okänt delområde,Narkotikabrott,6
+2023,10,Okänt delområde,Olaga hot,1
+2023,10,Okänt delområde,Olovlig körning,1
+2023,10,Okänt delområde,Rattfylleri,7
+2023,10,Okänt delområde,Räddningsinsats,1
+2023,10,Okänt delområde,Skadegörelse,2
+2023,10,Okänt delområde,Stöld,2
+2023,10,Okänt delområde,Stöld/inbrott,1
+2023,10,Okänt delområde,Trafikolycka,1
+2023,10,Okänt delområde,"Trafikolycka,  vilt",3
+2023,10,Okänt delområde,"Trafikolycka, vilt",1
+2023,10,Okänt delområde,Övrigt/oklassificerad,1
+2023,10,Porsön,Brand,1
+2023,10,Porsön,Trafikkontroll,1
+2023,10,Porsön,Trafikolycka,1
+2023,10,Råneå,Trafikolycka,1
+2023,10,Skurholmen,Trafikolycka,1
+2023,10,Storheden,Stöld,2
+2023,10,Sunderbyn,Trafikolycka,1
+2023,10,Örnäset,Stöld,1
+2023,10,Örnäset,Trafikolycka,1
+2023,11,Bergnäset,Fylleri/LOB,1
+2023,11,Centrum,Narkotikabrott,1
+2023,11,Centrum,Olovlig körning,1
+2023,11,Centrum,Trafikbrott,2
+2023,11,Centrum,Trafikkontroll,1
+2023,11,Centrum,Trafikolycka,1
+2023,11,Flera stadsdelar i Luleå,Trafikolycka,1
+2023,11,Hertsön,Brand,1
+2023,11,Notviken,Fylleri/LOB,1
+2023,11,Notviken,Trafikolycka,1
+2023,11,Okänt delområde,Arbetsplatsolycka,1
+2023,11,Okänt delområde,Brand,1
+2023,11,Okänt delområde,Fylleri/LOB,9
+2023,11,Okänt delområde,Misshandel,2
+2023,11,Okänt delområde,Narkotikabrott,5
+2023,11,Okänt delområde,Olovlig körning,1
+2023,11,Okänt delområde,Ordningslagen,1
+2023,11,Okänt delområde,Rattfylleri,6
+2023,11,Okänt delområde,Stöld,1
+2023,11,Okänt delområde,Stöld/inbrott,1
+2023,11,Okänt delområde,Trafikbrott,3
+2023,11,Okänt delområde,Trafikkontroll,1
+2023,11,Okänt delområde,Trafikolycka,7
+2023,11,Okänt delområde,"Trafikolycka,  vilt",4
+2023,11,Okänt delområde,"Trafikolycka, vilt",2
+2023,11,Råneå,Brand,1
+2023,11,Råneå,Inbrott,1
+2023,11,Råneå,"Motorfordon,  anträffat stulet",1
+2023,11,Sunderbyn,"Trafikolycka, vilt",2
+2023,12,Centrum,Fylleri/LOB,1
+2023,12,Centrum,Misshandel,1
+2023,12,Centrum,Narkotikabrott,1
+2023,12,Centrum,Olaga intrång,1
+2023,12,Centrum,Olovlig körning,1
+2023,12,Centrum,Rattfylleri,1
+2023,12,Centrum,Stöld,2
+2023,12,Gammelstad,Stöld,1
+2023,12,Hertsön,Brand,1
+2023,12,Hertsön,Stöld,1
+2023,12,Hertsön,"Trafikolycka,  singel",1
+2023,12,Malmudden,Fylleri/LOB,1
+2023,12,Mjölkudden,"Motorfordon,  stöld",1
+2023,12,Notviken,Trafikolycka,2
+2023,12,Okänt delområde,Arbetsplatsolycka,1
+2023,12,Okänt delområde,Bedrägeri,1
+2023,12,Okänt delområde,Brand,1
+2023,12,Okänt delområde,Fylleri/LOB,9
+2023,12,Okänt delområde,Knivlagen,1
+2023,12,Okänt delområde,Misshandel,6
+2023,12,Okänt delområde,"Misshandel,  grov",1
+2023,12,Okänt delområde,Narkotikabrott,7
+2023,12,Okänt delområde,Ofredande/förargelse,1
+2023,12,Okänt delområde,Olaga hot,2
+2023,12,Okänt delområde,Olovlig körning,2
+2023,12,Okänt delområde,Rattfylleri,4
+2023,12,Okänt delområde,Stöld,2
+2023,12,Okänt delområde,Trafikbrott,1
+2023,12,Okänt delområde,Trafikkontroll,1
+2023,12,Okänt delområde,Trafikolycka,7
+2023,12,Okänt delområde,"Trafikolycka,  vilt",2
+2023,12,Okänt delområde,Övrigt/oklassificerad,1
+2023,12,Porsön,Rattfylleri,1
+2023,12,Porsön,Övrigt,1
+2023,12,Skurholmen,Trafikkontroll,1
+2023,12,Storheden,Stöld,1
+2023,12,Sunderbyn,Trafikolycka,1
+2024,01,Bergnäset,Stöld,1
+2024,01,Bergnäset,Trafikolycka,1
+2024,01,Bergviken,Rattfylleri,1
+2024,01,Björkskatan,Stöld,1
+2024,01,Centrum,Hemfridsbrott,1
+2024,01,Centrum,Rattfylleri,1
+2024,01,Centrum,Skadegörelse,1
+2024,01,Centrum,Stöld,1
+2024,01,Centrum,Våld/hot mot tjänsteman,1
+2024,01,Mjölkudden,Trafikolycka,1
+2024,01,Notviken,Trafikbrott,1
+2024,01,Okänt delområde,Brand,2
+2024,01,Okänt delområde,Fylleri/LOB,7
+2024,01,Okänt delområde,Knivlagen,2
+2024,01,Okänt delområde,Misshandel,1
+2024,01,Okänt delområde,Mord/dråp,1
+2024,01,Okänt delområde,Narkotikabrott,6
+2024,01,Okänt delområde,Ofredande/förargelse,1
+2024,01,Okänt delområde,Olaga hot,2
+2024,01,Okänt delområde,Olovlig körning,1
+2024,01,Okänt delområde,Rattfylleri,4
+2024,01,Okänt delområde,Rån,1
+2024,01,Okänt delområde,Stöld,1
+2024,01,Okänt delområde,Trafikbrott,3
+2024,01,Okänt delområde,Trafikkontroll,1
+2024,01,Okänt delområde,Trafikolycka,7
+2024,01,Okänt delområde,"Trafikolycka,  smitning från",1
+2024,01,Okänt delområde,"Trafikolycka, vilt",1
+2024,01,Okänt delområde,Våld/hot mot tjänsteman,1
+2024,01,Porsön,Inbrott,2
+2024,01,Skurholmen,Brand,1
+2024,01,Storheden,Stöld,5
+2024,01,Storheden,Trafikbrott,1
+2024,01,Sunderbyn,Brand,1
+2024,01,Sunderbyn,Trafikolycka,1
+2024,01,Örnäset,Stöld,3
+2024,01,Örnäset,Trafikkontroll,2
+2024,02,Bergnäset,Brand,1
+2024,02,Bergnäset,Trafikkontroll,1
+2024,02,Bergviken,Brand,1
+2024,02,Centrum,Knivlagen,1
+2024,02,Centrum,Misshandel,1
+2024,02,Centrum,Narkotikabrott,1
+2024,02,Centrum,Trafikolycka,2
+2024,02,Gammelstad,Trafikolycka,1
+2024,02,Hertsön,Anträffat gods,1
+2024,02,Mjölkudden,Trafikolycka,1
+2024,02,Notviken,Misshandel,1
+2024,02,Okänt delområde,Arbetsplatsolycka,1
+2024,02,Okänt delområde,Bedrägeri,1
+2024,02,Okänt delområde,Fylleri/LOB,8
+2024,02,Okänt delområde,Knivlagen,2
+2024,02,Okänt delområde,Misshandel,6
+2024,02,Okänt delområde,Narkotikabrott,5
+2024,02,Okänt delområde,Rattfylleri,2
+2024,02,Okänt delområde,Skadegörelse,1
+2024,02,Okänt delområde,Stöld,2
+2024,02,Okänt delområde,Trafikbrott,1
+2024,02,Okänt delområde,Trafikkontroll,1
+2024,02,Okänt delområde,Trafikolycka,5
+2024,02,Okänt delområde,"Trafikolycka,  singel",1
+2024,02,Okänt delområde,"Trafikolycka, vilt",1
+2024,02,Okänt delområde,Våld/hot mot tjänsteman,1
+2024,02,Okänt delområde,Övrigt/oklassificerad,2
+2024,02,Porsön,Arbetsplatsolycka,1
+2024,02,Storheden,Stöld,2
+2024,02,Örnäset,Rattfylleri,1
+2024,03,Centrum,Fylleri/LOB,3
+2024,03,Centrum,Misshandel,1
+2024,03,Centrum,Narkotikabrott,1
+2024,03,Centrum,Stöld,2
+2024,03,Centrum,Trafikkontroll,1
+2024,03,Gammelstad,Trafikolycka,1
+2024,03,Hertsön,Stöld,2
+2024,03,Mjölkudden,Misshandel,1
+2024,03,Okänt delområde,Brand,1
+2024,03,Okänt delområde,Fylleri/LOB,10
+2024,03,Okänt delområde,Misshandel,3
+2024,03,Okänt delområde,Narkotikabrott,6
+2024,03,Okänt delområde,Olaga hot,1
+2024,03,Okänt delområde,Olovlig körning,1
+2024,03,Okänt delområde,Rattfylleri,5
+2024,03,Okänt delområde,Stöld,8
+2024,03,Okänt delområde,Trafikbrott,4
+2024,03,Okänt delområde,Trafikkontroll,2
+2024,03,Okänt delområde,Trafikolycka,3
+2024,03,Okänt delområde,"Trafikolycka,  vilt",2
+2024,03,Okänt delområde,"Trafikolycka, vilt",2
+2024,03,Okänt delområde,Våld/hot mot tjänsteman,1
+2024,03,Okänt delområde,Övrigt/oklassificerad,1
+2024,03,Porsön,Trafikkontroll,1
+2024,03,Porsön,Trafikolycka,1
+2024,03,Storheden,Stöld,1
+2024,03,Örnäset,Narkotikabrott,1
+2024,04,Bergnäset,Övrigt,1
+2024,04,Björkskatan,Stöld,1
+2024,04,Centrum,Brand,1
+2024,04,Centrum,Knivlagen,1
+2024,04,Centrum,Olovlig körning,1
+2024,04,Centrum,Skadegörelse,1
+2024,04,Centrum,Stöld,1
+2024,04,Centrum,Trafikkontroll,2
+2024,04,Centrum,Våld/hot mot tjänsteman,1
+2024,04,Flera stadsdelar i Luleå,Trafikolycka,1
+2024,04,Gammelstad,Häleri,1
+2024,04,Gammelstad,Trafikkontroll,1
+2024,04,Gammelstad,Trafikolycka,1
+2024,04,Hertsön,Trafikkontroll,1
+2024,04,Okänt delområde,Brand,1
+2024,04,Okänt delområde,Djur,1
+2024,04,Okänt delområde,Fylleri/LOB,10
+2024,04,Okänt delområde,Knivlagen,1
+2024,04,Okänt delområde,Misshandel,4
+2024,04,Okänt delområde,Ofredande/förargelse,1
+2024,04,Okänt delområde,Olaga hot,2
+2024,04,Okänt delområde,Olaga intrång,1
+2024,04,Okänt delområde,Rattfylleri,1
+2024,04,Okänt delområde,Skadegörelse,2
+2024,04,Okänt delområde,Stöld,3
+2024,04,Okänt delområde,Stöld/inbrott,1
+2024,04,Okänt delområde,Trafikkontroll,4
+2024,04,Okänt delområde,Trafikolycka,5
+2024,04,Okänt delområde,"Trafikolycka,  vilt",1
+2024,04,Okänt delområde,"Trafikolycka, vilt",4
+2024,04,Okänt delområde,Vapenlagen,1
+2024,04,Okänt delområde,Övrigt/oklassificerad,1
+2024,04,Porsön,Fylleri/LOB,1
+2024,04,Porsön,Våldtäkt,1
+2024,04,Råneå,Trafikolycka,2
+2024,04,Storheden,Stöld,3
+2024,04,Storheden,Trafikkontroll,1
+2024,04,Örnäset,Brand,1
+2024,04,Örnäset,Trafikkontroll,1
+2024,05,Björkskatan,Fylleri/LOB,1
+2024,05,Centrum,Fylleri/LOB,4
+2024,05,Centrum,Misshandel,1
+2024,05,Centrum,Olaga intrång/hemfridsbrott,1
+2024,05,Centrum,Olovlig körning,1
+2024,05,Centrum,Stöld,1
+2024,05,Centrum,Trafikolycka,1
+2024,05,Hertsön,Brand,1
+2024,05,Hertsön,Fylleri/LOB,1
+2024,05,Hertsön,Stöld,1
+2024,05,Mjölkudden,Stöld,1
+2024,05,Mjölkudden,Övrigt,1
+2024,05,Notviken,Rån,1
+2024,05,Okänt delområde,Brand,5
+2024,05,Okänt delområde,Fylleri/LOB,9
+2024,05,Okänt delområde,Miljöbrott,1
+2024,05,Okänt delområde,Misshandel,6
+2024,05,Okänt delområde,Narkotikabrott,7
+2024,05,Okänt delområde,Ofredande/förargelse,2
+2024,05,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2024,05,Okänt delområde,Rattfylleri,2
+2024,05,Okänt delområde,Skadegörelse,1
+2024,05,Okänt delområde,Skyddslagen,1
+2024,05,Okänt delområde,Stöld,2
+2024,05,Okänt delområde,"Stöld,  ringa",1
+2024,05,Okänt delområde,Trafikbrott,1
+2024,05,Okänt delområde,Trafikkontroll,6
+2024,05,Okänt delområde,"Trafikolycka, vilt",1
+2024,05,Okänt delområde,Våld/hot mot tjänsteman,2
+2024,05,Okänt delområde,Övrigt,1
+2024,05,Okänt delområde,Övrigt/oklassificerad,1
+2024,05,Porsön,Olaga intrång,1
+2024,05,Porsön,Stöld,1
+2024,05,Skurholmen,"Motorfordon,  anträffat stulet",1
+2024,05,Storheden,Stöld,1
+2024,05,Örnäset,Ofredande/förargelse,1
+2024,05,Örnäset,Stöld,2
+2024,06,Björkskatan,Stöld,1
+2024,06,Centrum,Brand,1
+2024,06,Centrum,Fylleri/LOB,1
+2024,06,Centrum,Inbrott,1
+2024,06,Centrum,Misshandel,4
+2024,06,Centrum,Narkotikabrott,1
+2024,06,Centrum,Ofredande/förargelse,1
+2024,06,Centrum,Rattfylleri,1
+2024,06,Centrum,Stöld,1
+2024,06,Centrum,Trafikbrott,1
+2024,06,Centrum,Trafikkontroll,2
+2024,06,Centrum,Övrigt/oklassificerad,1
+2024,06,Hertsön,Brand,1
+2024,06,Hertsön,Inbrott,1
+2024,06,Hertsön,Misshandel,1
+2024,06,Hertsön,Stöld,2
+2024,06,Hertsön,Trafikolycka,1
+2024,06,Okänt delområde,Anträffat gods,1
+2024,06,Okänt delområde,Bedrägeri,1
+2024,06,Okänt delområde,Brand,5
+2024,06,Okänt delområde,Fylleri/LOB,4
+2024,06,Okänt delområde,Försvunnen person,1
+2024,06,Okänt delområde,Inbrott,3
+2024,06,Okänt delområde,Misshandel,8
+2024,06,Okänt delområde,Narkotikabrott,3
+2024,06,Okänt delområde,Olaga intrång/hemfridsbrott,2
+2024,06,Okänt delområde,Olovlig körning,1
+2024,06,Okänt delområde,Rattfylleri,3
+2024,06,Okänt delområde,Sexualbrott,1
+2024,06,Okänt delområde,Stöld,4
+2024,06,Okänt delområde,Trafikbrott,1
+2024,06,Okänt delområde,Trafikhinder,1
+2024,06,Okänt delområde,Trafikkontroll,1
+2024,06,Okänt delområde,Trafikolycka,7
+2024,06,Okänt delområde,Övrigt/oklassificerad,2
+2024,06,Porsön,Trafikbrott,1
+2024,06,Storheden,Stöld,2
+2024,06,Sunderbyn,Knivlagen,1
+2024,06,Sunderbyn,Rattfylleri,1
+2024,06,Örnäset,Stöld,1
+2024,07,Bergviken,Misshandel,1
+2024,07,Centrum,Arbetsplatsolycka,1
+2024,07,Centrum,Fylleri/LOB,1
+2024,07,Centrum,Misshandel,1
+2024,07,Centrum,Rattfylleri,1
+2024,07,Centrum,Skadegörelse,1
+2024,07,Okänt delområde,Anträffad död,2
+2024,07,Okänt delområde,Bedrägeri,2
+2024,07,Okänt delområde,Brand,2
+2024,07,Okänt delområde,Fylleri/LOB,6
+2024,07,Okänt delområde,Inbrott,1
+2024,07,Okänt delområde,Misshandel,7
+2024,07,Okänt delområde,"Mord/dråp,  försök",1
+2024,07,Okänt delområde,Narkotikabrott,3
+2024,07,Okänt delområde,Olovlig körning,1
+2024,07,Okänt delområde,Rattfylleri,6
+2024,07,Okänt delområde,Skadegörelse,3
+2024,07,Okänt delområde,Stöld,2
+2024,07,Okänt delområde,Trafikbrott,1
+2024,07,Okänt delområde,Trafikkontroll,3
+2024,07,Okänt delområde,Trafikolycka,6
+2024,07,Okänt delområde,"Trafikolycka, vilt",1
+2024,07,Okänt delområde,Våld/hot mot tjänsteman,1
+2024,07,Okänt delområde,Övrigt/oklassificerad,1
+2024,07,Porsön,Olaga intrång,1
+2024,07,Storheden,"Trafikolycka,  vilt",1
+2024,07,Storheden,"Trafikolycka, vilt",1
+2024,08,Bergviken,Fylleri/LOB,1
+2024,08,Björkskatan,Trafikolycka,1
+2024,08,Centrum,Fylleri/LOB,1
+2024,08,Centrum,Inbrott,1
+2024,08,Centrum,Narkotikabrott,1
+2024,08,Centrum,Skadegörelse,1
+2024,08,Centrum,Trafikolycka,1
+2024,08,Gammelstad,Stöld,1
+2024,08,Gammelstad,Övrigt/oklassificerad,1
+2024,08,Hertsön,Bedrägeri,2
+2024,08,Karlsvik,Trafikbrott,1
+2024,08,Notviken,Trafikkontroll,1
+2024,08,Notviken,Övrigt/oklassificerad,1
+2024,08,Okänt delområde,Anträffad död,1
+2024,08,Okänt delområde,Arbetsplatsolycka,1
+2024,08,Okänt delområde,Brand,1
+2024,08,Okänt delområde,Fylleri/LOB,3
+2024,08,Okänt delområde,Inbrott,1
+2024,08,Okänt delområde,Misshandel,5
+2024,08,Okänt delområde,Narkotikabrott,4
+2024,08,Okänt delområde,Olovlig körning,1
+2024,08,Okänt delområde,Rattfylleri,2
+2024,08,Okänt delområde,Stöld,3
+2024,08,Okänt delområde,Trafikbrott,1
+2024,08,Okänt delområde,Trafikolycka,4
+2024,08,Okänt delområde,"Trafikolycka,  vilt",1
+2024,08,Porsön,Inbrott,1
+2024,08,Skurholmen,Trafikkontroll,1
+2024,08,Storheden,Stöld,3
+2024,08,Sunderbyn,Fylleri/LOB,1
+2024,08,Örnäset,Fylleri/LOB,2
+2024,08,Örnäset,Stöld,2
+2024,09,Bergviken,Rattfylleri,1
+2024,09,Centrum,Fylleri/LOB,1
+2024,09,Centrum,Misshandel,1
+2024,09,Centrum,Narkotikabrott,1
+2024,09,Centrum,Ofredande/förargelse,1
+2024,09,Centrum,Trafikolycka,1
+2024,09,Hertsön,Misshandel,2
+2024,09,Mjölkudden,Narkotikabrott,1
+2024,09,Mjölkudden,Olovlig körning,1
+2024,09,Mjölkudden,Trafikolycka,1
+2024,09,Notviken,Olovlig körning,1
+2024,09,Okänt delområde,Arbetsplatsolycka,1
+2024,09,Okänt delområde,Fylleri/LOB,7
+2024,09,Okänt delområde,Misshandel,7
+2024,09,Okänt delområde,"Misshandel,  grov",1
+2024,09,Okänt delområde,"Mord/dråp,  försök",1
+2024,09,Okänt delområde,Narkotikabrott,2
+2024,09,Okänt delområde,Olaga intrång,1
+2024,09,Okänt delområde,Rattfylleri,3
+2024,09,Okänt delområde,Rån,1
+2024,09,Okänt delområde,"Sammanfattning, ej uppdelad",1
+2024,09,Okänt delområde,Skadegörelse,1
+2024,09,Okänt delområde,Stöld,5
+2024,09,Okänt delområde,Trafikbrott,2
+2024,09,Okänt delområde,Trafikolycka,4
+2024,09,Okänt delområde,"Trafikolycka,  singel",1
+2024,09,Okänt delområde,Övrigt/oklassificerad,2
+2024,09,Porsön,Trafikkontroll,1
+2024,09,Porsön,Trafikolycka,1
+2024,09,Storheden,Brand,1
+2024,09,Storheden,Rån,1
+2024,09,Storheden,Stöld,3
+2024,09,Sunderbyn,Rattfylleri,1
+2024,09,Örnäset,Stöld,1
+2024,10,Bergnäset,Trafikolycka,1
+2024,10,Bergviken,Skadegörelse,1
+2024,10,Björkskatan,Brand,1
+2024,10,Centrum,Brand,1
+2024,10,Centrum,Fylleri/LOB,1
+2024,10,Centrum,Knivlagen,1
+2024,10,Centrum,Misshandel,3
+2024,10,Centrum,Olaga hot,1
+2024,10,Centrum,Olovlig körning,1
+2024,10,Centrum,Stöld,2
+2024,10,Centrum,Trafikolycka,1
+2024,10,Flera stadsdelar i Luleå,Trafikolycka,1
+2024,10,Hertsön,Rattfylleri,1
+2024,10,Malmudden,Rattfylleri,1
+2024,10,Mjölkudden,Trafikkontroll,1
+2024,10,Notviken,Trafikbrott,1
+2024,10,Okänt delområde,Anträffad död,1
+2024,10,Okänt delområde,Arbetsplatsolycka,1
+2024,10,Okänt delområde,Brand,2
+2024,10,Okänt delområde,Explosion,1
+2024,10,Okänt delområde,Fylleri/LOB,6
+2024,10,Okänt delområde,Försvunnen person,1
+2024,10,Okänt delområde,Häleri,1
+2024,10,Okänt delområde,Knivlagen,1
+2024,10,Okänt delområde,Misshandel,1
+2024,10,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2024,10,Okänt delområde,Narkotikabrott,6
+2024,10,Okänt delområde,Rattfylleri,5
+2024,10,Okänt delområde,Skadegörelse,1
+2024,10,Okänt delområde,Stöld,9
+2024,10,Okänt delområde,Trafikolycka,6
+2024,10,Okänt delområde,"Trafikolycka,  vilt",1
+2024,10,Okänt delområde,Våld/hot mot tjänsteman,1
+2024,10,Okänt delområde,Övrigt/oklassificerad,1
+2024,10,Porsön,Ofredande/förargelse,1
+2024,10,Porsön,Trafikolycka,1
+2024,10,Skurholmen,Stöld/inbrott,1
+2024,10,Storheden,Stöld,3
+2024,10,Sunderbyn,Trafikkontroll,1
+2024,10,Örnäset,Misshandel,1
+2024,10,Örnäset,Trafikolycka,1
+2024,11,Bergnäset,Fylleri/LOB,2
+2024,11,Centrum,Misshandel,3
+2024,11,Centrum,Narkotikabrott,2
+2024,11,Centrum,Rattfylleri,2
+2024,11,Centrum,Våld/hot mot tjänsteman,1
+2024,11,Gammelstad,Stöld,1
+2024,11,Hertsön,"Motorfordon,  stöld",1
+2024,11,Hertsön,Stöld/inbrott,1
+2024,11,Hertsön,Trafikolycka,1
+2024,11,Notviken,Trafikolycka,1
+2024,11,Okänt delområde,Fylleri/LOB,2
+2024,11,Okänt delområde,Misshandel,5
+2024,11,Okänt delområde,Narkotikabrott,2
+2024,11,Okänt delområde,Ofredande/förargelse,1
+2024,11,Okänt delområde,Olaga hot,1
+2024,11,Okänt delområde,Olovlig körning,1
+2024,11,Okänt delområde,Rattfylleri,5
+2024,11,Okänt delområde,Skadegörelse,1
+2024,11,Okänt delområde,Skyddslagen,1
+2024,11,Okänt delområde,Stöld,4
+2024,11,Okänt delområde,Trafikbrott,3
+2024,11,Okänt delområde,Trafikolycka,4
+2024,11,Okänt delområde,"Trafikolycka,  vilt",3
+2024,11,Porsön,Trafikolycka,1
+2024,11,Råneå,Brand,1
+2024,11,Råneå,Trafikolycka,1
+2024,11,Storheden,Stöld,1
+2024,11,Sunderbyn,Trafikkontroll,1
+2024,11,Sunderbyn,Trafikolycka,1
+2024,11,Örnäset,Narkotikabrott,1
+2024,12,Bergnäset,Arbetsplatsolycka,1
+2024,12,Centrum,Fylleri/LOB,1
+2024,12,Centrum,Misshandel,1
+2024,12,Centrum,"Motorfordon,  stöld",1
+2024,12,Centrum,Olovlig körning,1
+2024,12,Centrum,Skadegörelse,1
+2024,12,Centrum,Stöld,2
+2024,12,Centrum,Trafikolycka,1
+2024,12,Flera stadsdelar i Luleå,Trafikolycka,1
+2024,12,Malmudden,Rattfylleri,1
+2024,12,Notviken,Brand,1
+2024,12,Notviken,Trafikolycka,4
+2024,12,Okänt delområde,Arbetsplatsolycka,1
+2024,12,Okänt delområde,Bedrägeri,1
+2024,12,Okänt delområde,Brand,4
+2024,12,Okänt delområde,Bråk,1
+2024,12,Okänt delområde,Fylleri/LOB,13
+2024,12,Okänt delområde,Hemfridsbrott,1
+2024,12,Okänt delområde,Knivlagen,1
+2024,12,Okänt delområde,Misshandel,1
+2024,12,Okänt delområde,Narkotikabrott,6
+2024,12,Okänt delområde,Ofredande/förargelse,1
+2024,12,Okänt delområde,Olovlig körning,2
+2024,12,Okänt delområde,Rattfylleri,1
+2024,12,Okänt delområde,Stöld,2
+2024,12,Okänt delområde,Trafikbrott,3
+2024,12,Okänt delområde,Trafikkontroll,1
+2024,12,Okänt delområde,Trafikolycka,4
+2024,12,Okänt delområde,"Trafikolycka,  vilt",1
+2024,12,Okänt delområde,"Trafikolycka, vilt",1
+2024,12,Okänt delområde,Övrigt/oklassificerad,1
+2024,12,Storheden,Rattfylleri,2
+2024,12,Storheden,Stöld,2
+2024,12,Storheden,Trafikolycka,2
+2025,01,Bergnäset,Trafikkontroll,2
+2025,01,Bergviken,Rattfylleri,1
+2025,01,Bergviken,Trafikolycka,1
+2025,01,Björkskatan,Fylleri/LOB,1
+2025,01,Centrum,Olovlig körning,2
+2025,01,Centrum,Trafikolycka,1
+2025,01,Flera stadsdelar i Luleå,Trafikolycka,1
+2025,01,Gammelstad,Trafikkontroll,1
+2025,01,Hertsön,Trafikolycka,1
+2025,01,Mjölkudden,Trafikolycka,1
+2025,01,Okänt delområde,Fylleri/LOB,12
+2025,01,Okänt delområde,Misshandel,3
+2025,01,Okänt delområde,"Motorfordon,  stöld",1
+2025,01,Okänt delområde,Narkotikabrott,3
+2025,01,Okänt delområde,Olaga hot,1
+2025,01,Okänt delområde,Olovlig körning,1
+2025,01,Okänt delområde,Rattfylleri,6
+2025,01,Okänt delområde,Skadegörelse,1
+2025,01,Okänt delområde,Stöld,1
+2025,01,Okänt delområde,Trafikkontroll,2
+2025,01,Okänt delområde,Trafikolycka,6
+2025,01,Okänt delområde,"Trafikolycka,  singel",2
+2025,01,Okänt delområde,"Trafikolycka, vilt",2
+2025,01,Storheden,Stöld,1
+2025,01,Sunderbyn,Trafikkontroll,1
+2025,01,Örnäset,Narkotikabrott,2
+2025,02,Bergnäset,Trafikolycka,1
+2025,02,Bergnäset,Övrigt/oklassificerad,1
+2025,02,Bergviken,Stöld,1
+2025,02,Björkskatan,Stöld,1
+2025,02,Centrum,Brand,1
+2025,02,Centrum,Misshandel,3
+2025,02,Centrum,Rattfylleri,1
+2025,02,Centrum,Trafikolycka,1
+2025,02,Gammelstad,Trafikbrott,1
+2025,02,Gammelstad,Trafikkontroll,1
+2025,02,Hertsön,Vapenlagen,1
+2025,02,Okänt delområde,Arbetsplatsolycka,1
+2025,02,Okänt delområde,Brand,1
+2025,02,Okänt delområde,Fylleri/LOB,3
+2025,02,Okänt delområde,Inbrott,1
+2025,02,Okänt delområde,Misshandel,2
+2025,02,Okänt delområde,Narkotikabrott,5
+2025,02,Okänt delområde,Ofredande/förargelse,1
+2025,02,Okänt delområde,Olaga hot,1
+2025,02,Okänt delområde,Rattfylleri,3
+2025,02,Okänt delområde,Stöld,6
+2025,02,Okänt delområde,Trafikkontroll,4
+2025,02,Okänt delområde,Trafikolycka,4
+2025,02,Okänt delområde,"Trafikolycka,  singel",1
+2025,02,Okänt delområde,"Trafikolycka, vilt",1
+2025,02,Porsön,Rattfylleri,1
+2025,02,Skurholmen,Bedrägeri,1
+2025,02,Storheden,Stöld,1
+2025,03,Bergnäset,Trafikolycka,1
+2025,03,Centrum,Fylleri/LOB,2
+2025,03,Centrum,Rattfylleri,1
+2025,03,Centrum,Rån,1
+2025,03,Centrum,Stöld,1
+2025,03,Centrum,Trafikkontroll,1
+2025,03,Centrum,Trafikolycka,1
+2025,03,Centrum,Övrigt/oklassificerad,1
+2025,03,Flera stadsdelar i Luleå,Fylleri/LOB,1
+2025,03,Flera stadsdelar i Luleå,Trafikkontroll,1
+2025,03,Hertsön,Fylleri/LOB,3
+2025,03,Okänt delområde,Bedrägeri,3
+2025,03,Okänt delområde,Brand,2
+2025,03,Okänt delområde,Fylleri/LOB,4
+2025,03,Okänt delområde,Inbrott,1
+2025,03,Okänt delområde,Misshandel,5
+2025,03,Okänt delområde,"Motorfordon,  stöld",1
+2025,03,Okänt delområde,Narkotikabrott,14
+2025,03,Okänt delområde,Olaga hot,1
+2025,03,Okänt delområde,Olovlig körning,1
+2025,03,Okänt delområde,Rattfylleri,1
+2025,03,Okänt delområde,Rån,1
+2025,03,Okänt delområde,Stöld,3
+2025,03,Okänt delområde,Trafikbrott,1
+2025,03,Okänt delområde,Trafikkontroll,2
+2025,03,Okänt delområde,Trafikolycka,3
+2025,03,Okänt delområde,"Trafikolycka,  singel",1
+2025,03,Okänt delområde,"Trafikolycka, vilt",1
+2025,03,Okänt delområde,Våld/hot mot tjänsteman,2
+2025,03,Porsön,Trafikbrott,1
+2025,03,Porsön,Trafikkontroll,1
+2025,03,Skurholmen,"Mord/dråp,  försök",1
+2025,03,Storheden,Stöld,4
+2025,03,Sunderbyn,Rattfylleri,1
+2025,03,Örnäset,Stöld,1
+2025,03,Örnäset,Trafikbrott,1
+2025,03,Örnäset,Trafikolycka,1
+2025,04,Bergviken,Brand,1
+2025,04,Björkskatan,Fylleri/LOB,1
+2025,04,Centrum,Fylleri/LOB,2
+2025,04,Centrum,Knivlagen,1
+2025,04,Centrum,Misshandel,2
+2025,04,Centrum,Narkotikabrott,2
+2025,04,Centrum,Ofredande/förargelse,1
+2025,04,Centrum,Rattfylleri,1
+2025,04,Centrum,Trafikbrott,1
+2025,04,Gammelstad,Trafikolycka,1
+2025,04,Hertsön,Stöld,1
+2025,04,Hertsön,Trafikolycka,1
+2025,04,Malmudden,Stöld,1
+2025,04,Okänt delområde,Anträffad död,1
+2025,04,Okänt delområde,Arbetsplatsolycka,1
+2025,04,Okänt delområde,Bedrägeri,2
+2025,04,Okänt delområde,Fylleri/LOB,8
+2025,04,Okänt delområde,Häleri,1
+2025,04,Okänt delområde,Inbrott,1
+2025,04,Okänt delområde,Misshandel,1
+2025,04,Okänt delområde,Narkotikabrott,1
+2025,04,Okänt delområde,Ofredande/förargelse,1
+2025,04,Okänt delområde,Olaga hot,1
+2025,04,Okänt delområde,Olovlig körning,1
+2025,04,Okänt delområde,Rattfylleri,1
+2025,04,Okänt delområde,Skadegörelse,1
+2025,04,Okänt delområde,Stöld,4
+2025,04,Okänt delområde,Trafikbrott,3
+2025,04,Okänt delområde,Trafikkontroll,1
+2025,04,Okänt delområde,Trafikolycka,5
+2025,04,Okänt delområde,"Trafikolycka,  vilt",1
+2025,04,Storheden,Stöld,1
+2025,04,Sunderbyn,Narkotikabrott,1
+2025,04,Sunderbyn,Trafikolycka,1
+2025,04,Örnäset,Skadegörelse,1
+2025,05,Bergnäset,Brand,1
+2025,05,Bergnäset,Inbrott,1
+2025,05,Bergnäset,Olovlig körning,1
+2025,05,Bergnäset,Stöld,1
+2025,05,Bergnäset,Trafikbrott,1
+2025,05,Bergnäset,Trafikkontroll,1
+2025,05,Centrum,"Inbrott,  försök",1
+2025,05,Centrum,Knivlagen,1
+2025,05,Centrum,Misshandel,2
+2025,05,Centrum,Rattfylleri,1
+2025,05,Centrum,Trafikolycka,1
+2025,05,Centrum,Våld/hot mot tjänsteman,1
+2025,05,Gammelstad,Skadegörelse,1
+2025,05,Karlsvik,Vållande till kroppsskada,1
+2025,05,Malmudden,Rattfylleri,1
+2025,05,Malmudden,"Stöld,  försök",1
+2025,05,Mjölkudden,Stöld,1
+2025,05,Notviken,Trafikkontroll,1
+2025,05,Okänt delområde,Fylleri/LOB,4
+2025,05,Okänt delområde,Kontroll person/fordon,2
+2025,05,Okänt delområde,Misshandel,6
+2025,05,Okänt delområde,Narkotikabrott,4
+2025,05,Okänt delområde,Olaga hot,1
+2025,05,Okänt delområde,Olaga intrång,1
+2025,05,Okänt delområde,Rattfylleri,5
+2025,05,Okänt delområde,Rån,1
+2025,05,Okänt delområde,Skadegörelse,5
+2025,05,Okänt delområde,Stöld,6
+2025,05,Okänt delområde,Trafikbrott,5
+2025,05,Okänt delområde,Trafikkontroll,2
+2025,05,Okänt delområde,Trafikolycka,2
+2025,05,Okänt delområde,"Trafikolycka,  vilt",1
+2025,05,Okänt delområde,Våld/hot mot tjänsteman,2
+2025,05,Okänt delområde,Våldtäkt,1
+2025,05,Okänt delområde,Övrigt/oklassificerad,1
+2025,05,Porsön,Trafikkontroll,1
+2025,05,Porsön,"Trafikolycka, vilt",1
+2025,05,Storheden,Stöld,3
+2025,06,Bergnäset,Fylleri/LOB,1
+2025,06,Bergnäset,Trafikkontroll,1
+2025,06,Bergnäset,Trafikolycka,1
+2025,06,Bergviken,Trafikolycka,1
+2025,06,Centrum,Misshandel,2
+2025,06,Centrum,Narkotikabrott,2
+2025,06,Centrum,Ofredande/förargelse,3
+2025,06,Centrum,Rattfylleri,1
+2025,06,Centrum,Rån,1
+2025,06,Centrum,Stöld,2
+2025,06,Centrum,Trafikbrott,1
+2025,06,Centrum,Trafikolycka,1
+2025,06,Gammelstad,Rån,1
+2025,06,Gammelstad,Trafikbrott,1
+2025,06,Hertsön,Brand,1
+2025,06,Hertsön,Skadegörelse,1
+2025,06,Notviken,Trafikolycka,1
+2025,06,Okänt delområde,Fylleri/LOB,3
+2025,06,Okänt delområde,Misshandel,3
+2025,06,Okänt delområde,Narkotikabrott,3
+2025,06,Okänt delområde,Ofredande/förargelse,2
+2025,06,Okänt delområde,Olaga intrång,1
+2025,06,Okänt delområde,Rattfylleri,3
+2025,06,Okänt delområde,Räddningsinsats,1
+2025,06,Okänt delområde,Stöld,8
+2025,06,Okänt delområde,Trafikbrott,3
+2025,06,Okänt delområde,Trafikkontroll,4
+2025,06,Okänt delområde,Trafikolycka,3
+2025,06,Okänt delområde,"Trafikolycka,  singel",1
+2025,06,Okänt delområde,"Trafikolycka,  vilt",2
+2025,06,Okänt delområde,Vapenlagen,1
+2025,06,Okänt delområde,Våld/hot mot tjänsteman,1
+2025,06,Råneå,"Trafikolycka,  vilt",1
+2025,06,Skurholmen,"Trafikolycka,  smitning från",1
+2025,06,Storheden,Olovlig körning,1
+2025,06,Storheden,Rattfylleri,1
+2025,06,Storheden,Stöld,1
+2025,06,Storheden,Trafikbrott,1
+2025,06,Storheden,"Trafikolycka,  smitning från",1
+2025,06,Sunderbyn,Trafikolycka,2
+2025,07,Bergnäset,Trafikkontroll,1
+2025,07,Centrum,Fylleri/LOB,1
+2025,07,Centrum,Försvunnen person,1
+2025,07,Centrum,Misshandel,3
+2025,07,Centrum,Olaga intrång/hemfridsbrott,1
+2025,07,Gammelstad,Trafikolycka,1
+2025,07,Lerbäcken,Trafikolycka,1
+2025,07,Notviken,Trafikolycka,1
+2025,07,Okänt delområde,Brand,3
+2025,07,Okänt delområde,Fylleri/LOB,8
+2025,07,Okänt delområde,Försvunnen person,1
+2025,07,Okänt delområde,Inbrott,1
+2025,07,Okänt delområde,Misshandel,6
+2025,07,Okänt delområde,Olaga hot,1
+2025,07,Okänt delområde,Olovlig körning,2
+2025,07,Okänt delområde,Rattfylleri,4
+2025,07,Okänt delområde,Räddningsinsats,1
+2025,07,Okänt delområde,Stöld,1
+2025,07,Okänt delområde,Trafikbrott,3
+2025,07,Okänt delområde,Trafikolycka,3
+2025,07,Okänt delområde,"Trafikolycka,  vilt",2
+2025,07,Okänt delområde,"Trafikolycka, vilt",1
+2025,07,Okänt delområde,Våld/hot mot tjänsteman,1
+2025,07,Porsön,Brand,1
+2025,07,Råneå,Trafikolycka,1
+2025,07,Storheden,Trafikolycka,1
+2025,07,Sunderbyn,Vapenlagen,1
+2025,07,Örnäset,Stöld,1
+2025,08,Bergviken,Stöld,1
+2025,08,Bergviken,Trafikkontroll,2
+2025,08,Björkskatan,Brand,1
+2025,08,Centrum,Brand,2
+2025,08,Centrum,Knivlagen,1
+2025,08,Centrum,Misshandel,3
+2025,08,Centrum,Ofredande/förargelse,1
+2025,08,Centrum,Rån,1
+2025,08,Gammelstad,Trafikolycka,1
+2025,08,Hertsön,Trafikolycka,1
+2025,08,Notviken,Rattfylleri,1
+2025,08,Notviken,Trafikolycka,1
+2025,08,Okänt delområde,Fylleri/LOB,3
+2025,08,Okänt delområde,Misshandel,6
+2025,08,Okänt delområde,"Misshandel,  grov",1
+2025,08,Okänt delområde,Narkotikabrott,2
+2025,08,Okänt delområde,Ofredande/förargelse,1
+2025,08,Okänt delområde,Olovlig körning,4
+2025,08,Okänt delområde,Rattfylleri,2
+2025,08,Okänt delområde,Skadegörelse,2
+2025,08,Okänt delområde,Stöld,4
+2025,08,Okänt delområde,"Stöld,  ringa",1
+2025,08,Okänt delområde,Trafikbrott,4
+2025,08,Okänt delområde,Trafikkontroll,2
+2025,08,Okänt delområde,Trafikolycka,3
+2025,08,Okänt delområde,Uppdatering,1
+2025,08,Okänt delområde,Våld/hot mot tjänsteman,1
+2025,08,Okänt delområde,Övrigt,1
+2025,08,Skurholmen,Fylleri/LOB,1
+2025,08,Storheden,Arbetsplatsolycka,1
+2025,08,Storheden,Stöld,1
+2025,08,Storheden,Trafikolycka,1
+2025,08,Sunderbyn,"Trafikolycka,  vilt",1
+2025,08,Sunderbyn,"Trafikolycka, vilt",1
+2025,08,Örnäset,"Motorfordon,  stöld",1
+2025,09,Björkskatan,Stöld,1
+2025,09,Centrum,Fylleri/LOB,2
+2025,09,Centrum,Knivlagen,1
+2025,09,Centrum,Misshandel,1
+2025,09,Centrum,Skadegörelse,2
+2025,09,Centrum,Stöld,2
+2025,09,Centrum,Trafikkontroll,1
+2025,09,Gammelstad,Misshandel,1
+2025,09,Mjölkudden,Trafikolycka,1
+2025,09,Okänt delområde,Arbetsplatsolycka,2
+2025,09,Okänt delområde,Bedrägeri,2
+2025,09,Okänt delområde,Brand,1
+2025,09,Okänt delområde,Fylleri/LOB,7
+2025,09,Okänt delområde,Häleri,1
+2025,09,Okänt delområde,Knivlagen,1
+2025,09,Okänt delområde,Luftfartslagen,1
+2025,09,Okänt delområde,Misshandel,2
+2025,09,Okänt delområde,Narkotikabrott,3
+2025,09,Okänt delområde,Olaga hot,1
+2025,09,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2025,09,Okänt delområde,Olovlig körning,1
+2025,09,Okänt delområde,Rattfylleri,5
+2025,09,Okänt delområde,Skadegörelse,2
+2025,09,Okänt delområde,Stöld,1
+2025,09,Okänt delområde,"Stöld,  försök",1
+2025,09,Okänt delområde,Trafikbrott,2
+2025,09,Okänt delområde,Trafikkontroll,2
+2025,09,Okänt delområde,Trafikolycka,5
+2025,09,Okänt delområde,"Trafikolycka,  vilt",3
+2025,09,Okänt delområde,"Trafikolycka, vilt",1
+2025,09,Okänt delområde,Våld/hot mot tjänsteman,1
+2025,09,Råneå,Rattfylleri,1
+2025,09,Råneå,Stöld,1
+2025,09,Råneå,"Trafikolycka, vilt",1
+2025,09,Storheden,Stöld,1
+2025,09,Sunderbyn,Rattfylleri,1
+2025,09,Örnäset,Stöld,1
+2025,09,Örnäset,"Trafikolycka, vilt",1
+2025,10,Bergnäset,Inbrott,1
+2025,10,Bergnäset,Stöld/inbrott,1
+2025,10,Bergviken,Trafikolycka,1
+2025,10,Centrum,Fylleri/LOB,2
+2025,10,Centrum,Misshandel,2
+2025,10,Centrum,Narkotikabrott,1
+2025,10,Centrum,Ofredande/förargelse,1
+2025,10,Centrum,Olovlig körning,1
+2025,10,Centrum,Övrigt/oklassificerad,1
+2025,10,Flera stadsdelar i Luleå,Trafikkontroll,1
+2025,10,Gammelstad,Trafikolycka,2
+2025,10,Hertsön,Stöld,1
+2025,10,Hertsön,Trafikolycka,1
+2025,10,Notviken,Trafikkontroll,1
+2025,10,Notviken,Trafikolycka,1
+2025,10,Notviken,"Trafikolycka,  vilt",1
+2025,10,Notviken,"Trafikolycka, vilt",1
+2025,10,Okänt delområde,Arbetsplatsolycka,2
+2025,10,Okänt delområde,Brand,2
+2025,10,Okänt delområde,Bråk,1
+2025,10,Okänt delområde,Djur,1
+2025,10,Okänt delområde,Fylleri/LOB,1
+2025,10,Okänt delområde,Försvunnen person,1
+2025,10,Okänt delområde,Inbrott,1
+2025,10,Okänt delområde,Misshandel,5
+2025,10,Okänt delområde,"Motorfordon,  anträffat stulet",1
+2025,10,Okänt delområde,Narkotikabrott,1
+2025,10,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2025,10,Okänt delområde,Olovlig körning,1
+2025,10,Okänt delområde,Rattfylleri,1
+2025,10,Okänt delområde,Stöld,4
+2025,10,Okänt delområde,Trafikkontroll,1
+2025,10,Okänt delområde,Trafikolycka,3
+2025,10,Okänt delområde,"Trafikolycka,  vilt",3
+2025,10,Okänt delområde,Våld/hot mot tjänsteman,2
+2025,10,Porsön,Brand,1
+2025,10,Porsön,Stöld,1
+2025,10,Porsön,Trafikkontroll,1
+2025,10,Råneå,Trafikolycka,1
+2025,10,Skurholmen,"Stöld,  försök",1
+2025,10,Storheden,Miljöbrott,1
+2025,10,Storheden,Rån,1
+2025,10,Storheden,Stöld,1
+2025,10,Storheden,Trafikolycka,1
+2025,10,Sunderbyn,Trafikkontroll,1
+2025,10,Örnäset,Olovlig körning,1
+2025,11,Bergnäset,Narkotikabrott,1
+2025,11,Bergnäset,Stöld/inbrott,1
+2025,11,Centrum,Fylleri/LOB,1
+2025,11,Centrum,Misshandel,3
+2025,11,Centrum,Narkotikabrott,1
+2025,11,Centrum,Olovlig körning,1
+2025,11,Centrum,Stöld,1
+2025,11,Centrum,Trafikolycka,1
+2025,11,Flera stadsdelar i Luleå,Trafikhinder,1
+2025,11,Flera stadsdelar i Luleå,Trafikkontroll,1
+2025,11,Gammelstad,Rattfylleri,1
+2025,11,Hertsön,Brand,2
+2025,11,Hertsön,Skadegörelse,1
+2025,11,Hertsön,Smällar,1
+2025,11,Hertsön,Stöld,1
+2025,11,Okänt delområde,Bråk,1
+2025,11,Okänt delområde,Fylleri/LOB,4
+2025,11,Okänt delområde,Inbrott,1
+2025,11,Okänt delområde,Information,1
+2025,11,Okänt delområde,Misshandel,12
+2025,11,Okänt delområde,Narkotikabrott,3
+2025,11,Okänt delområde,Olaga hot,1
+2025,11,Okänt delområde,Rattfylleri,2
+2025,11,Okänt delområde,Skadegörelse,3
+2025,11,Okänt delområde,Stöld,4
+2025,11,Okänt delområde,Trafikbrott,2
+2025,11,Okänt delområde,Trafikkontroll,2
+2025,11,Okänt delområde,Trafikolycka,6
+2025,11,Okänt delområde,"Trafikolycka,  personskada",1
+2025,11,Okänt delområde,"Trafikolycka,  vilt",2
+2025,11,Okänt delområde,"Trafikolycka, vilt",41
+2025,11,Porsön,Trafikolycka,1
+2025,11,Råneå,Brand,1
+2025,11,Råneå,Trafikolycka,1
+2025,11,Storheden,Trafikkontroll,1
+2025,11,Sunderbyn,"Stöld,  ringa",1
+2025,11,Örnäset,Trafikolycka,1
+2025,12,Bergviken,Trafikkontroll,1
+2025,12,Bergviken,"Trafikolycka,  singel",1
+2025,12,Centrum,Fylleri/LOB,2
+2025,12,Centrum,Kontroll,1
+2025,12,Centrum,Trafikkontroll,1
+2025,12,Centrum,Trafikolycka,1
+2025,12,Flera stadsdelar i Luleå,Trafikhinder,1
+2025,12,Flera stadsdelar i Luleå,Trafikkontroll,2
+2025,12,Gammelstad,Trafikolycka,3
+2025,12,Hertsön,Rattfylleri,1
+2025,12,Karlsvik,Trafikolycka,1
+2025,12,Notviken,Rattfylleri,1
+2025,12,Notviken,Trafikolycka,1
+2025,12,Okänt delområde,Bråk,1
+2025,12,Okänt delområde,Försvunnen person,1
+2025,12,Okänt delområde,Misshandel,2
+2025,12,Okänt delområde,Narkotikabrott,3
+2025,12,Okänt delområde,Ofredande/förargelse,1
+2025,12,Okänt delområde,Olaga intrång/hemfridsbrott,1
+2025,12,Okänt delområde,Rattfylleri,5
+2025,12,Okänt delområde,Stöld,3
+2025,12,Okänt delområde,Trafikkontroll,1
+2025,12,Okänt delområde,Trafikolycka,8
+2025,12,Okänt delområde,"Trafikolycka,  vilt",2
+2025,12,Okänt delområde,"Trafikolycka, vilt",1
+2025,12,Okänt delområde,Övrigt/oklassificerad,1
+2025,12,Råneå,Rån,1
+2025,12,Råneå,"Trafikolycka, vilt",4
+2025,12,Skurholmen,Ofredande/förargelse,1
+2025,12,Storheden,Fylleri/LOB,1
+2025,12,Storheden,Olovlig körning,1
+2025,12,Sunderbyn,Trafikolycka,1
+2026,01,Bergnäset,Stöld,1
+2026,01,Bergnäset,Trafikkontroll,1
+2026,01,Bergviken,Brand,1
+2026,01,Björkskatan,Fylleri/LOB,1
+2026,01,Björkskatan,Stöld,1
+2026,01,Centrum,Misshandel,1
+2026,01,Centrum,Olaga intrång,1
+2026,01,Centrum,Trafikkontroll,1
+2026,01,Centrum,"Trafikolycka,  smitning från",1
+2026,01,Gammelstad,Stöld,1
+2026,01,Gammelstad,Trafikolycka,1
+2026,01,Notviken,Trafikkontroll,1
+2026,01,Okänt delområde,Arbetsplatsolycka,1
+2026,01,Okänt delområde,Bedrägeri,1
+2026,01,Okänt delområde,Brand,3
+2026,01,Okänt delområde,Fylleri/LOB,4
+2026,01,Okänt delområde,Misshandel,4
+2026,01,Okänt delområde,Narkotikabrott,3
+2026,01,Okänt delområde,Rattfylleri,7
+2026,01,Okänt delområde,Stöld,3
+2026,01,Okänt delområde,Trafikkontroll,5
+2026,01,Okänt delområde,Trafikolycka,4
+2026,01,Okänt delområde,"Trafikolycka,  vilt",1
+2026,01,Okänt delområde,"Trafikolycka, vilt",1
+2026,01,Okänt delområde,Vapenlagen,1
+2026,01,Porsön,Brand,1
+2026,01,Porsön,Stöld,1
+2026,01,Storheden,Fylleri/LOB,1
+2026,01,Storheden,Stöld,2
+2026,01,Sunderbyn,Trafikbrott,1
+2026,01,Sunderbyn,Trafikolycka,1
+2026,01,Örnäset,Knivlagen,1
+2026,02,Björkskatan,Brand,1
+2026,02,Centrum,Narkotikabrott,1
+2026,02,Centrum,Skadegörelse,1
+2026,02,Centrum,Trafikolycka,1
+2026,02,Flera stadsdelar i Luleå,Trafikkontroll,1
+2026,02,Flera stadsdelar i Luleå,Trafikolycka,1
+2026,02,Hertsön,Trafikolycka,2
+2026,02,Lerbäcken,Brand,1
+2026,02,Okänt delområde,Arbetsplatsolycka,1
+2026,02,Okänt delområde,Bedrägeri,1
+2026,02,Okänt delområde,Brand,2
+2026,02,Okänt delområde,Fylleri/LOB,8
+2026,02,Okänt delområde,Knivlagen,2
+2026,02,Okänt delområde,Misshandel,3
+2026,02,Okänt delområde,Narkotikabrott,4
+2026,02,Okänt delområde,Rattfylleri,2
+2026,02,Okänt delområde,Skadegörelse,1
+2026,02,Okänt delområde,Stöld,3
+2026,02,Okänt delområde,Trafikbrott,1
+2026,02,Okänt delområde,Trafikkontroll,6
+2026,02,Okänt delområde,Trafikolycka,4
+2026,02,Okänt delområde,"Trafikolycka,  singel",2
+2026,02,Okänt delområde,"Trafikolycka,  vilt",2
+2026,02,Okänt delområde,Övrigt,1
+2026,02,Porsön,Ofredande/förargelse,1
+2026,02,Porsön,Stöld,1
+2026,02,Porsön,Trafikolycka,1
+2026,02,Skurholmen,Rattfylleri,1
+2026,02,Storheden,Stöld,2
+2026,02,Sunderbyn,Trafikolycka,1
+2026,02,Örnäset,Stöld,1
+2026,03,Bergviken,Övrigt/oklassificerad,1
+2026,03,Björkskatan,Stöld,1
+2026,03,Centrum,Knivlagen,1
+2026,03,Centrum,Misshandel,3
+2026,03,Centrum,Narkotikabrott,1
+2026,03,Centrum,Skadegörelse,1
+2026,03,Centrum,Trafikbrott,1
+2026,03,Hertsön,Brand,1
+2026,03,Karlsvik,Trafikolycka,1
+2026,03,Notviken,Brand,1
+2026,03,Notviken,Trafikbrott,2
+2026,03,Okänt delområde,Brand,1
+2026,03,Okänt delområde,Fylleri,1
+2026,03,Okänt delområde,Fylleri/LOB,4
+2026,03,Okänt delområde,Häleri,1
+2026,03,Okänt delområde,Inbrott,3
+2026,03,Okänt delområde,Misshandel,3
+2026,03,Okänt delområde,"Misshandel,  grov",1
+2026,03,Okänt delområde,Narkotikabrott,3
+2026,03,Okänt delområde,Olovlig körning,1
+2026,03,Okänt delområde,Rattfylleri,1
+2026,03,Okänt delområde,Skadegörelse,1
+2026,03,Okänt delområde,Stöld,1
+2026,03,Okänt delområde,Trafikkontroll,6
+2026,03,Okänt delområde,Trafikolycka,6
+2026,03,Okänt delområde,"Trafikolycka,  personskada",1
+2026,03,Okänt delområde,Övrigt/oklassificerad,1
+2026,03,Skurholmen,Brand,1
+2026,03,Sunderbyn,Trafikhinder,1
+2026,03,Örnäset,Hemfridsbrott,1
+2026,04,Bergnäset,Stöld,1
+2026,04,Bergnäset,Trafikkontroll,1
+2026,04,Centrum,Brand,1
+2026,04,Centrum,Fylleri,1
+2026,04,Centrum,Fylleri/LOB,1
+2026,04,Centrum,Narkotikabrott,1
+2026,04,Centrum,Ofredande/förargelse,2
+2026,04,Centrum,Rattfylleri,1
+2026,04,Centrum,"Stöld,  ringa",1
+2026,04,Flera stadsdelar i Luleå,Trafikolycka,1
+2026,04,Gammelstad,Brand,1
+2026,04,Notviken,Fylleri,1
+2026,04,Notviken,Trafikkontroll,1
+2026,04,Notviken,Trafikolycka,3
+2026,04,Okänt delområde,Arbetsplatsolycka,2
+2026,04,Okänt delområde,Brand,1
+2026,04,Okänt delområde,Fylleri,1
+2026,04,Okänt delområde,Fylleri/LOB,2
+2026,04,Okänt delområde,Misshandel,7
+2026,04,Okänt delområde,Narkotikabrott,7
+2026,04,Okänt delområde,Ofredande/förargelse,1
+2026,04,Okänt delområde,Olovlig körning,2
+2026,04,Okänt delområde,Skadegörelse,2
+2026,04,Okänt delområde,Trafikbrott,4
+2026,04,Okänt delområde,Trafikkontroll,9
+2026,04,Okänt delområde,Trafikolycka,2
+2026,04,Okänt delområde,"Trafikolycka,  vilt",1
+2026,04,Okänt delområde,"Trafikolycka, vilt",1
+2026,04,Porsön,Trafikolycka,1
+2026,04,Storheden,Stöld,1
+2026,04,Storheden,Trafikkontroll,1
+2026,04,Storheden,"Trafikolycka, vilt",1
+2026,04,Sunderbyn,Brand,1
+2026,05,Bergviken,Fylleri,1
+2026,05,Centrum,Fylleri,1
+2026,05,Centrum,Misshandel,3
+2026,05,Centrum,Stöld,2
+2026,05,Centrum,Trafikkontroll,2
+2026,05,Flera stadsdelar i Luleå,Trafikolycka,1
+2026,05,Lerbäcken,Arbetsplatsolycka,1
+2026,05,Mjölkudden,Stöld,1
+2026,05,Okänt delområde,Arbetsplatsolycka,1
+2026,05,Okänt delområde,Bedrägeri,1
+2026,05,Okänt delområde,Brand,1
+2026,05,Okänt delområde,Fylleri,2
+2026,05,Okänt delområde,Fylleri/LOB,1
+2026,05,Okänt delområde,Inbrott,1
+2026,05,Okänt delområde,Knivlagen,1
+2026,05,Okänt delområde,Misshandel,6
+2026,05,Okänt delområde,Narkotikabrott,6
+2026,05,Okänt delområde,Ofredande/förargelse,1
+2026,05,Okänt delområde,Olovlig körning,1
+2026,05,Okänt delområde,Rattfylleri,4
+2026,05,Okänt delområde,Rån,2
+2026,05,Okänt delområde,Skadegörelse,2
+2026,05,Okänt delområde,Stöld,2
+2026,05,Okänt delområde,Stöld/inbrott,1
+2026,05,Okänt delområde,Trafikbrott,5
+2026,05,Okänt delområde,Trafikkontroll,4
+2026,05,Okänt delområde,Trafikolycka,7
+2026,05,Okänt delområde,"Trafikolycka,  vilt",4
+2026,05,Okänt delområde,"Trafikolycka, vilt",2
+2026,05,Okänt delområde,Vapenlagen,1
+2026,05,Okänt delområde,Övrigt/oklassificerad,1
+2026,05,Porsön,Inbrott,1
+2026,05,Råneå,Rån,1
+2026,05,Storheden,Stöld,1
+2026,05,Storheden,Trafikbrott,1
+2026,06,Centrum,Fylleri,2
+2026,06,Centrum,Inbrott,1
+2026,06,Centrum,Knivlagen,1
+2026,06,Centrum,Ofredande/förargelse,1
+2026,06,Centrum,Rattfylleri,1
+2026,06,Centrum,Skadegörelse,1
+2026,06,Centrum,Trafikolycka,3
+2026,06,Gammelstad,Upphittat föremål,1
+2026,06,Mjölkudden,Brand,1
+2026,06,Mjölkudden,Narkotikabrott,1
+2026,06,Okänt delområde,Bedrägeri,1
+2026,06,Okänt delområde,Brand,1
+2026,06,Okänt delområde,Fylleri,1
+2026,06,Okänt delområde,Fylleri/LOB,6
+2026,06,Okänt delområde,Inbrott,1
+2026,06,Okänt delområde,Knivlagen,1
+2026,06,Okänt delområde,Misshandel,6
+2026,06,Okänt delområde,Narkotikabrott,3
+2026,06,Okänt delområde,Olovlig körning,2
+2026,06,Okänt delområde,Ordningslagen,1
+2026,06,Okänt delområde,Rattfylleri,1
+2026,06,Okänt delområde,Sabotage mot blåljusverksamhet,1
+2026,06,Okänt delområde,Skadegörelse,2
+2026,06,Okänt delområde,Skyddslagen,2
+2026,06,Okänt delområde,Stöld,1
+2026,06,Okänt delområde,Trafikbrott,1
+2026,06,Okänt delområde,Trafikkontroll,3
+2026,06,Okänt delområde,Trafikolycka,6
+2026,06,Okänt delområde,"Trafikolycka,  vilt",2
+2026,06,Porsön,Olaga intrång,1
+2026,06,Storheden,Sexualbrott,1
+2026,06,Storheden,Stöld,3
+2026,06,Sunderbyn,Trafikkontroll,1
+2026,07,Centrum,Knivlagen,1
+2026,07,Centrum,Trafikolycka,1
+2026,07,Flera stadsdelar i Luleå,Trafikolycka,1
+2026,07,Gammelstad,Trafikkontroll,1
+2026,07,Gammelstad,Trafikolycka,1
+2026,07,Notviken,Trafikolycka,1
+2026,07,Okänt delområde,Arbetsplatsolycka,1
+2026,07,Okänt delområde,Fylleri,1
+2026,07,Okänt delområde,Fylleri/LOB,17
+2026,07,Okänt delområde,Inbrott,1
+2026,07,Okänt delområde,Knivlagen,3
+2026,07,Okänt delområde,Misshandel,4
+2026,07,Okänt delområde,Narkotikabrott,3
+2026,07,Okänt delområde,Ofredande/förargelse,1
+2026,07,Okänt delområde,Olovlig körning,1
+2026,07,Okänt delområde,Rattfylleri,1
+2026,07,Okänt delområde,Skadegörelse,3
+2026,07,Okänt delområde,Stöld,3
+2026,07,Okänt delområde,Trafikbrott,2
+2026,07,Okänt delområde,Trafikkontroll,5
+2026,07,Okänt delområde,Trafikolycka,5
+2026,07,Okänt delområde,"Trafikolycka,  vilt",1
+2026,07,Okänt delområde,Uppdatering,1
+2026,07,Skurholmen,Trafikolycka,1
+2026,07,Storheden,Arbetsplatsolycka,1
+2026,08,Bergnäset,Arbetsplatsolycka,1
+2026,08,Bergnäset,Stöld/inbrott,1
+2026,08,Bergnäset,Trafikbrott,1
+2026,08,Centrum,Brand,1
+2026,08,Centrum,Fylleri/LOB,1
+2026,08,Centrum,Misshandel,1
+2026,08,Centrum,Narkotikabrott,1
+2026,08,Centrum,Ofredande/förargelse,1
+2026,08,Centrum,Rattfylleri,1
+2026,08,Centrum,Trafikolycka,1
+2026,08,Gammelstad,"Trafikolycka,  singel",1
+2026,08,Notviken,Trafikolycka,1
+2026,08,Okänt delområde,Arbetsplatsolycka,1
+2026,08,Okänt delområde,Fylleri,1
+2026,08,Okänt delområde,Fylleri/LOB,7
+2026,08,Okänt delområde,Knivlagen,1
+2026,08,Okänt delområde,Misshandel,6
+2026,08,Okänt delområde,Ofredande/förargelse,1
+2026,08,Okänt delområde,Olaga intrång,1
+2026,08,Okänt delområde,Olovlig körning,1
+2026,08,Okänt delområde,Rattfylleri,2
+2026,08,Okänt delområde,Stöld,1
+2026,08,Okänt delområde,Trafikbrott,1
+2026,08,Okänt delområde,Trafikkontroll,7
+2026,08,Okänt delområde,Trafikolycka,3
+2026,08,Okänt delområde,"Trafikolycka,  singel",2
+2026,08,Okänt delområde,"Trafikolycka,  vilt",3
+2026,08,Okänt delområde,"Trafikolycka, vilt",1
+2026,08,Okänt delområde,Övrigt,2
+2026,08,Porsön,Fylleri,1
+2026,08,Porsön,Knivlagen,1
+2026,08,Råneå,Trafikolycka,1
+2026,08,Storheden,Stöld,3
+2026,08,Storheden,Trafikolycka,1
+2026,09,Centrum,Fylleri,2
+2026,09,Centrum,Misshandel,2
+2026,09,Centrum,Ofredande/förargelse,2
+2026,09,Centrum,Olaga hot,1
+2026,09,Centrum,Rån,1
+2026,09,Centrum,Stöld,1
+2026,09,Flera stadsdelar i Luleå,Trafikhinder,1
+2026,09,Gammelstad,"Motorfordon,  anträffat stulet",1
+2026,09,Notviken,Trafikbrott,1
+2026,09,Notviken,"Trafikolycka,  smitning från",1
+2026,09,Okänt delområde,Arbetsplatsolycka,1
+2026,09,Okänt delområde,Brand,2
+2026,09,Okänt delområde,Fylleri,3
+2026,09,Okänt delområde,Fylleri/LOB,1
+2026,09,Okänt delområde,Inbrott,1
+2026,09,Okänt delområde,Knivlagen,1
+2026,09,Okänt delområde,Misshandel,3
+2026,09,Okänt delområde,Narkotikabrott,3
+2026,09,Okänt delområde,Rattfylleri,5
+2026,09,Okänt delområde,Skadegörelse,1
+2026,09,Okänt delområde,Stöld,2
+2026,09,Okänt delområde,Trafikbrott,1
+2026,09,Okänt delområde,Trafikkontroll,5
+2026,09,Okänt delområde,Trafikolycka,4
+2026,09,Okänt delområde,"Trafikolycka,  vilt",1
+2026,09,Okänt delområde,Övrigt,1
+2026,09,Storheden,Arbetsplatsolycka,1
+2026,09,Storheden,Misshandel,1
+2026,09,Sunderbyn,Fylleri,1
+2026,09,Örnäset,Olaga hot,1
+2026,10,Centrum,Försvunnen person,1
+2026,10,Centrum,Misshandel,1
+2026,10,Centrum,Skadegörelse,1
+2026,10,Centrum,Stöld,2
+2026,10,Centrum,Trafikkontroll,1
+2026,10,Gammelstad,Stöld,1
+2026,10,Okänt delområde,Fylleri,1
+2026,10,Okänt delområde,Fylleri/LOB,2
+2026,10,Okänt delområde,Häleri,1
+2026,10,Okänt delområde,Misshandel,4
+2026,10,Okänt delområde,Narkotikabrott,1
+2026,10,Okänt delområde,Olovlig körning,1
+2026,10,Okänt delområde,Skadegörelse,1
+2026,10,Okänt delområde,Trafikkontroll,1
+2026,10,Okänt delområde,Trafikolycka,3
+2026,10,Okänt delområde,Våld/hot mot tjänsteman,1
+2026,10,Okänt delområde,Övrigt/oklassificerad,1
+2026,10,Sunderbyn,Trafikolycka,1
+2026,10,Sunderbyn,"Trafikolycka,  vilt",1
+2026,10,Sunderbyn,"Trafikolycka, vilt",1
