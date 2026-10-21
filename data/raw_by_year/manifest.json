@@ -1,13 +1,53 @@
 {
   "format": "raw-jsonl-by-year-v1",
-  "partition_record_count": 500,
-  "partition_count": 1,
-  "raw_source_rows_on_first_migration": 0,
-  "legacy_sha256": null,
+  "partition_record_count": 73838,
+  "partition_count": 11,
+  "raw_source_rows_on_first_migration": 72838,
+  "legacy_sha256": "712b7ccff3151747ecffc7849ddd386a1efba46bbe5a09eba0207a89ed6ac0fd",
   "partitions": {
+    "2016": {
+      "records": 649,
+      "sha256": "9798161d09ad2d25e00fe72797253510c57fa2860c685fa063969fefc1c3ab83"
+    },
+    "2017": {
+      "records": 3052,
+      "sha256": "10485c694ad168ae464b304987985d0eda4af81df85263ea7478089a696c9a2e"
+    },
+    "2018": {
+      "records": 3651,
+      "sha256": "81ac285bf7f2a6a95563fd0b72a626f2eace1ecb856ec0e239e2f88e647c8569"
+    },
+    "2019": {
+      "records": 3675,
+      "sha256": "37465b09dd8402673ebb580af9dc154d9fbfaa510ee5c0c82f1d58bdfe199f26"
+    },
+    "2020": {
+      "records": 3155,
+      "sha256": "d3b688e17673d67a447cb6d9a8054c0cdcace89bbd7cca4cf6aed20a3b946f5f"
+    },
+    "2021": {
+      "records": 2723,
+      "sha256": "4e0328983953aa64d0dbdb6bca9ca68ebbd6f6cae63423b83b1f6a21d147cefd"
+    },
+    "2022": {
+      "records": 2539,
+      "sha256": "20bf23e10786de53757f0d6f7e697be2966a686ce10ab0ac75a3780d275f8144"
+    },
+    "2023": {
+      "records": 1978,
+      "sha256": "73e0845ab1c74177dd4421aaeb2a4d9ad1c5cf7348e91cf747618820499ca5cf"
+    },
+    "2024": {
+      "records": 1870,
+      "sha256": "b1c11bc4cddd6e23e3b349078f4ed5bcdc574e76de58a65ee1b9b56c9d6842d6"
+    },
+    "2025": {
+      "records": 1822,
+      "sha256": "6862d63f930d556f47550becce3c7dd276b31dee4ed8c08a57c0e22e08194e61"
+    },
     "2026": {
-      "records": 500,
-      "sha256": "19e99480aed2061a1380f04deca5351c622bc55b468e1b83cb6ae86966771c98"
+      "records": 48724,
+      "sha256": "5107e79dfda5078413b59c85c95369e178a7d7dbbd5fabcb4bf475a2a69c0a21"
     }
   }
 }
