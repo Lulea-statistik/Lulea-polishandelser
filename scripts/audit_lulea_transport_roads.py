@@ -4,7 +4,7 @@ import csv
 import re
 from collections import Counter
 from pathlib import Path
-from build_transport_categories import norm, district, UNKNOWN
+from build_lulea_districts import district, UNKNOWN, normalize as norm
 
 ROOT = Path(__file__).resolve().parents[1]
 PATTERNS = {
@@ -30,7 +30,7 @@ for event in csv.DictReader((ROOT / "data/events.csv").open(encoding="utf-8-sig"
     # Distinct aliases in one report must never imply distinct events.
     precision = "Lång vägsträcka – oprecis"
     text = norm(" ".join(event.get(field) or "" for field in FIELDS[:3]))
-    if re.search(r"(?<![a-z])(?:rondell\\w*|cirkulationsplats\\w*|trafikplats\\w*|korsning\\w*)(?![a-z])", text):
+    if re.search(r"(?<![a-z])(?:rondell\w*|cirkulationsplats\w*|trafikplats\w*|korsning\w*)(?![a-z])", text):
         precision = "Trafikplats omnämns – kontrollera om avgränsad"
     rows.append({
         "event_id": eid, "year": event.get("year", ""), "road_mentions": " | ".join(matched),
