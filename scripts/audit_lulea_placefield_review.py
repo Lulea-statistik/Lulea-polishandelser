@@ -22,6 +22,14 @@ TERM_PATTERNS = {term: re.compile((r"(?<![a-z])[a-z]{2,}" if term in ROAD_SUFFIX
 def detect(value):
     value = normalize(value)
     return [term for term, pattern in TERM_PATTERNS.items() if pattern.search(value)]
+PLACE_CATEGORIES = {
+    "ort_eller_by": {"rutvik", "smedsbyn", "kallax", "bensbyn", "sinksundet",
+        "borjelslandet", "balinge", "stromsund", "bjorsbyn", "jamton",
+        "niemisel", "sunderbyn", "gammelstan", "gammelstad",
+        "orarna", "kyrkbyn", "bjurstrask"},
+    "verksamhet": {"shell", "musikomat", "postnord"},
+    "vag_eller_bro": {"vagen", "gatan", "grand", "stigen", "leden", "bron"},
+}
 rows = []
 seen = set()
 with source.open(encoding="utf-8-sig", newline="") as f:
@@ -46,6 +54,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
         source_matches = {field: detect(value) for field, value in (("title_location", title), ("location_string", loc), ("headline", headline))}
         matched = sorted(set(term for terms in source_matches.values() for term in terms))
         field_count = sum(bool(terms) for terms in source_matches.values())
+        categories = sorted(kind for kind, names in PLACE_CATEGORIES.items() if any(term in names for term in matched))
         priority = "Flera källfält" if field_count >= 2 else ("Platsfält" if source_matches["title_location"] or source_matches["location_string"] else "Endast rubrik")
         rows.append({
             "event_id": eid, "year": event.get("year", ""),
@@ -53,6 +62,8 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             "headline": headline[:250],
             "candidate_sources": " | ".join(field for field, terms in source_matches.items() if terms),
             "matched_terms": " | ".join(matched),
+            "candidate_categories": " | ".join(categories),
+            "needs_geographic_verification": "Ja",
             "review_priority": priority,
             "evidence_relation": "Ej granskad: platsen kan avse händelse, färdväg eller omnämnande",
             "review_decision": "",
@@ -67,12 +78,13 @@ out.parent.mkdir(exist_ok=True)
 with out.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [
         "event_id","year","title_location","location_string","headline",
-        "candidate_sources","matched_terms","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
+        "candidate_sources","matched_terms","candidate_categories","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
     w.writeheader()
     w.writerows(rows)
 print("Unknown Lulea placefield review rows:", len(rows))
 print("Unique event IDs:", len({r["event_id"] for r in rows}))
 from collections import Counter
 print("Review groups:", dict(sorted(Counter(r["review_priority"] for r in rows).items())))
+print("Candidate categories:", dict(sorted(Counter(category for r in rows for category in r["candidate_categories"].split(" | ")).items())))
 assert len(rows) == len({r["event_id"] for r in rows}), "Duplicate event IDs in candidate review"
 assert all(not r["proposed_group"] and not r["verified_district"] for r in rows), "Review must not invent classification"
