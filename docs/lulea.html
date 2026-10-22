@@ -47,7 +47,7 @@ function filter(){
  const district=document.getElementById('transportDistrict').value;
  return data.filter(r=>{
   const placeOk=!transport?(g==='Alla'||r.geography_group===g):
-    (g==='Alla'||g==='road:'+r.road_reference||g==='junction:'+r.junction_reference||g==='stop:'+r.bus_stop_reference);
+    (g==='Alla'||g==='road:'+r.road_reference||(g==='junction:known'&&r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven')||(g==='junction:unknown'&&r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'))||g==='stop:'+r.bus_stop_reference);
   return placeOk&&(!transport||district==='Alla'||r.geography_group===district)&&(y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t);
  });
 }
@@ -57,14 +57,16 @@ function locationOptions(rows,isTransport,mode){
  const option=(value,label)=>{const o=document.createElement('option');o.value=value;o.textContent=label;e.append(o)};
  option('Alla','Alla sträckor och platser');
  const roads=[...new Set(rows.map(r=>r.road_reference))].filter(v=>v&&v!=='Väg ej angiven').sort((a,b)=>a.localeCompare(b,'sv'));
- const junctions=[...new Set(rows.map(r=>r.junction_reference))].filter(v=>v&&v!=='Trafikplats ej angiven').sort((a,b)=>a.localeCompare(b,'sv'));
+ const knownJunctions=rows.some(r=>r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven');
+ const unknownJunctions=rows.some(r=>r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'));
  const stops=mode==='Kollektivtrafik'?[...new Set(rows.map(r=>r.bus_stop_reference))].filter(v=>v&&v!=='Hållplats ej angiven'):[];
- for(const [label,values,prefix] of [['Vägsträckor',roads,'road:'],['Trafikplatser och korsningar',junctions,'junction:'],['Busshållplatser',stops,'stop:']]){
+ for(const [label,values,prefix] of [['Vägsträckor',roads,'road:'],['Busshållplatser',stops,'stop:']]){
   if(!values.length)continue;
   const group=document.createElement('optgroup');group.label=label;
   for(const value of values){const o=document.createElement('option');o.value=prefix+value;o.textContent=value;group.append(o)}
   e.append(group);
  }
+ if(knownJunctions||unknownJunctions){const group=document.createElement('optgroup');group.label='Trafikplatser och korsningar';for(const [value,label] of [['junction:known','Trafikplats, känd plats'],['junction:unknown','Trafikplats, okänd plats']]){if(value==='junction:known'&&!knownJunctions||value==='junction:unknown'&&!unknownJunctions)continue;const o=document.createElement('option');o.value=value;o.textContent=label;group.append(o)}e.append(group)}
 }
 function count(rows,key){const m=new Map();for(const r of rows)m.set(r[key],(m.get(r[key])||0)+r.event_count);return [...m.entries()].sort((a,b)=>b[1]-a[1])}
 function draw(id,values,vertical=false){const canvas=document.getElementById(id);if(charts[id])charts[id].destroy();charts[id]=new Chart(canvas,{type:'bar',data:{labels:values.map(x=>x[0]),datasets:[{data:values.map(x=>x[1]),backgroundColor:id==='months'?'#9CCCF2':id==='districts'?'#e0b400':id==='types'?'#2f855a':'#a7dca0'}]},options:{indexAxis:vertical?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'Antal: '+fmt.format(vertical?c.parsed.x:c.parsed.y)}}},scales:{[vertical?'x':'y']:{beginAtZero:true}}}})}
