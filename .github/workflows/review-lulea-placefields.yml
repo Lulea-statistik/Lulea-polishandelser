@@ -28,4 +28,5 @@ jobs:
             data/audit_lulea_placefield_review.csv
             data/audit_lulea_expanded_unknown.csv
             data/audit_lulea_unknown_triage_summary.csv
+            data/audit_lulea_placefield_frequencies.csv
           if-no-files-found: error
