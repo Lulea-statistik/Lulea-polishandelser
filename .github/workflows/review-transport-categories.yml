@@ -51,6 +51,7 @@ jobs:
             data/audit_police_duplicate_review_priority.csv
             data/audit_police_duplicate_text_differences.csv
             data/review_police_duplicate_text_cases.csv
+            data/audit_police_summary_update_groups.csv
             docs/data/lulea_transport_monthly.csv
       - name: Publish monthly dataset on main only
         if: github.ref == 'refs/heads/main'
