@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Exploratory transport taxonomy; never overwrites the police's event type or geography."""
 import csv
+from police_publication_dedup import is_superseded
 import re
 import unicodedata
 from collections import Counter, defaultdict
@@ -55,13 +56,13 @@ def transport_location_precision(row, transport_modes):
 rows = []
 unique = set()
 # Verified same-incident publication pair: 107414 contains the subsequent update.
-REPLACED_PUBLICATIONS = {"107404": "107414"}
+REPLACED_PUBLICATIONS = {"107404": "107414"}  # Keep reporting stable; shared rules are authoritative
 aggregated = defaultdict(int)
 for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     if (row.get("geography_group") or "").strip() != "Luleå kommun":
         continue
     eid = (row.get("event_id") or "").strip()
-    if eid in REPLACED_PUBLICATIONS:
+    if is_superseded(row):
         continue
     if eid and eid in unique:
         continue
