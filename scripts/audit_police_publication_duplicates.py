@@ -38,3 +38,36 @@ for group in groups[:20]:
         f"{eid}: "+str(event_by_id[eid].get("date") or "")+" / "+
         str(event_by_id[eid].get("headline") or "")[:110]+" / text_len="+str(len(event_by_id[eid].get("content") or ""))
         for eid in group if eid in event_by_id))
+
+# Row-level review artifact. All source publication IDs remain available.
+group_out=ROOT/"data/audit_police_publication_groups.csv"
+from police_publication_dedup import normalized
+review_rows=[]
+for n,group in enumerate(groups,1):
+    group_rows=[event_by_id[eid] for eid in group if eid in event_by_id]
+    contents=[normalized(r.get("content")) for r in group_rows]
+    distinct_texts=len(set(contents))
+    for r in group_rows:
+        content=normalized(r.get("content"))
+        other=[x for x in contents if x!=content]
+        review_rows.append({
+            "group_id":f"G{n:03d}","group_size":len(group),"event_id":r.get("event_id",""),
+            "date":r.get("date",""),"type_original":r.get("type_original",""),
+            "headline":(r.get("headline") or "")[:300],
+            "location_string":(r.get("location_string") or "")[:250],
+            "content_length":len(content),
+            "identical_content_in_group":"Ja" if distinct_texts==1 else "Nej",
+            "content_preview":content[:650],
+            "all_event_ids":" | ".join(group),
+            "review_decision":"Ej granskad",
+            "keep_as_canonical":"","reason":"",
+        })
+with group_out.open("w",encoding="utf-8",newline="") as stream:
+    writer=csv.DictWriter(stream,fieldnames=list(review_rows[0]) if review_rows else [
+        "group_id","group_size","event_id","date","type_original","headline","location_string",
+        "content_length","identical_content_in_group","content_preview","all_event_ids",
+        "review_decision","keep_as_canonical","reason"])
+    writer.writeheader();writer.writerows(review_rows)
+print("Granskningstabell grupper:","grupper",len(groups),"publiceringar",len(review_rows))
+print("Grupper med identisk löptext:",sum(len({normalized(event_by_id[eid].get("content")) for eid in group})==1 for group in groups))
+print("Grupper med olika löptext:",sum(len({normalized(event_by_id[eid].get("content")) for eid in group})>1 for group in groups))
