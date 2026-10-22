@@ -20,5 +20,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: lulea-unknown-road-candidates
-          path: data/audit_lulea_unknown_road_names.csv
+          path: |
+            data/audit_lulea_unknown_road_names.csv
+            data/audit_lulea_gis_road_numbers.csv
           if-no-files-found: error
