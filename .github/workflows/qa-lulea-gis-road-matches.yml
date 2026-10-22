@@ -20,5 +20,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: lulea-gis-road-match-qa
-          path: data/audit_lulea_gis_road_match_qa.csv
+          path: |
+            data/audit_lulea_gis_road_match_qa.csv
+            data/audit_lulea_gis_road_priority.csv
           if-no-files-found: error

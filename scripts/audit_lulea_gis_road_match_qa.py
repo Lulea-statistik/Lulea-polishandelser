@@ -50,3 +50,20 @@ with out.open("w",encoding="utf-8",newline="") as f:
 print("GIS_DICTIONARY",{"named_roads":len(named),"area_clues":len(areas)})
 print("GIS_UNKNOWN_ROAD_MATCH",dict(statuses),"total",len(rows))
 print("PREVIEW ONLY; no public CSV updated")
+
+# Priority report by name with distinct incident IDs and evidence examples.
+from collections import defaultdict
+by_name=defaultdict(list)
+for x in rows:
+ if x["review_status"].startswith("En GIS-väg"):
+  by_name[x["gis_road_candidates"]].append(x)
+priority=ROOT/"data/audit_lulea_gis_road_priority.csv"
+with priority.open("w",encoding="utf-8",newline="") as f:
+ w=csv.writer(f);w.writerow(["gis_road_name","candidate_events","display_group_if_reviewed","example_event_ids","qa_status"])
+ for name,group in sorted(by_name.items(),key=lambda kv:(-len(kv[1]),kv[0])):
+  label=name if len(group)>=10 else "Övrig väg, känd väg"
+  w.writerow([name,len(group),label," | ".join(str(x["event_id"]) for x in group[:8]),"Ej verifierad - granska händelserelation"])
+assert sum(len(x) for x in by_name.values())==statuses["En GIS-väg i eget platsfält – kontrollera händelserelation"]
+print("GIS_PRIORITY_TOP",[(name,len(group)) for name,group in sorted(by_name.items(),key=lambda kv:-len(kv[1]))[:25]])
+print("GIS_PRIORITY_ROADS",len(by_name))
+print("PREVIEW ONLY; no public CSV updated")
