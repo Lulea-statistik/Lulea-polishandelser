@@ -89,38 +89,37 @@ function transportGeography(rows){
   if(groups.reduce((n,x)=>n+x[1],0)!==rows.reduce((n,r)=>n+r.event_count,0))throw Error('Övriga trafikgrupper summerar inte till totalantal');
   return groups;
  }
- // The 30-event threshold uses the whole available history, independent of year filters.
- const roadTotals=new Map();
- for(const r of transportData){
-  if(r.transport_mode!==mode||!r.road_reference||r.road_reference==='Väg ej angiven')continue;
-  roadTotals.set(r.road_reference,(roadTotals.get(r.road_reference)||0)+r.event_count);
- }
- const pinned=new Set(['E4','Väg 94','Väg 97']);
- const out=new Map();
- for(const r of rows){
-  const road=r.road_reference,geo=r.geography_group;
-  let label;
-  if(road&&road!=='Väg ej angiven'){
-   label=pinned.has(road)||((roadTotals.get(road)||0)>=30)?road:'Övriga, kända vägsträckor';
-  } else if(geo==='Vägsträcka – område ej fastställt'){
-   label='Övriga, okända vägsträckor';
-  } else if(geo==='Okänt delområde'){
-   label='Okänt delområde';
-  } else {
-   label=geo||'Okänt delområde';
+ // Separate roadway events from place-bound geography in the selected road mode.
+ // The threshold is always measured across all years, not the currently chosen year.
+ if(mode==='Vägtrafik'){
+  const totals=new Map();
+  for(const r of transportData){
+   if(r.transport_mode!=='Vägtrafik'||!r.road_reference||r.road_reference==='Väg ej angiven')continue;
+   totals.set(r.road_reference,(totals.get(r.road_reference)||0)+r.event_count);
   }
-  out.set(label,(out.get(label)||0)+r.event_count);
+  const result=new Map();
+  for(const r of rows){
+   const road=r.road_reference;
+   const label=road&&road!=='Väg ej angiven'?
+    ((totals.get(road)||0)>=10?road:'Övrig väg, känd väg'):
+    'Övrig väg, okänd väg';
+   result.set(label,(result.get(label)||0)+r.event_count);
+  }
+  const counts=[...result].sort((a,b)=>b[1]-a[1]);
+  if(counts.reduce((n,x)=>n+x[1],0)!==rows.reduce((n,r)=>n+r.event_count,0))throw Error('Väggeografi summerar inte till totalantal');
+  return counts;
  }
- const result=[...out].sort((a,b)=>b[1]-a[1]);
- if(result.reduce((a,x)=>a+x[1],0)!==rows.reduce((a,r)=>a+r.event_count,0))throw Error('Geografiska väggrupper summerar inte till totalantal');
- return result;
+ // Other transport categories retain their pre-existing district grouping.
+ const out=new Map();
+ for(const r of rows){const name=r.geography_group||'Okänt delområde';out.set(name,(out.get(name)||0)+r.event_count)}
+ return [...out].sort((a,b)=>b[1]-a[1]);
 }
-function draw(id,values,vertical=false){const canvas=document.getElementById(id);if(charts[id])charts[id].destroy();charts[id]=new Chart(canvas,{type:'bar',data:{labels:values.map(x=>x[0]),datasets:[{data:values.map(x=>x[1]),backgroundColor:id==='districts'?values.map(x=>(['E4','Väg 94','Väg 97','Bodenvägen','Övriga, kända vägsträckor','Övriga, okända vägsträckor'].includes(x[0])||x[0].endsWith(' (vägtrafik)'))?'#ca5e59':'#e0b400'):id==='months'?'#9CCCF2':id==='types'?'#2f855a':'#a7dca0'}]},options:{indexAxis:vertical?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'Antal: '+fmt.format(vertical?c.parsed.x:c.parsed.y)}}},scales:{[vertical?'x':'y']:{beginAtZero:true}}}})}
+function draw(id,values,vertical=false){const canvas=document.getElementById(id);if(charts[id])charts[id].destroy();charts[id]=new Chart(canvas,{type:'bar',data:{labels:values.map(x=>x[0]),datasets:[{data:values.map(x=>x[1]),backgroundColor:id==='districts'?values.map(x=>(['E4','Väg 94','Väg 97','Bodenvägen','Övrig väg, känd väg','Övrig väg, okänd väg','Övriga, kända vägsträckor','Övriga, okända vägsträckor'].includes(x[0])||x[0].endsWith(' (vägtrafik)'))?'#ca5e59':'#e0b400'):id==='months'?'#9CCCF2':id==='types'?'#2f855a':'#a7dca0'}]},options:{indexAxis:vertical?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'Antal: '+fmt.format(vertical?c.parsed.x:c.parsed.y)}}},scales:{[vertical?'x':'y']:{beginAtZero:true}}}})}
 function render(){const rows=filter(),sum=rows.reduce((n,r)=>n+r.event_count,0),months=[...new Set(rows.map(r=>r.year+'-'+r.month.padStart(2,'0')))].sort();document.getElementById('total').textContent=fmt.format(sum);document.getElementById('first').textContent=months[0]||'–';document.getElementById('last').textContent=months.at(-1)||'–';
 draw('years',count(rows,'year').sort((a,b)=>a[0].localeCompare(b[0])));
 draw('types',count(rows,'type_original').slice(0,15),true);
 const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];const byCalendarMonth=Array(12).fill(0);for(const r of rows){const m=Number(r.month);if(Number.isInteger(m)&&m>=1&&m<=12)byCalendarMonth[m-1]+=r.event_count;}draw('months',monthNames.map((name,i)=>[name,byCalendarMonth[i]]));
-const transportActive=document.getElementById('transportMode').value!=='Alla';const otherTransport=['Godstransporter','Flygtrafik','Järnväg','Sjöfart'].includes(document.getElementById('transportMode').value);document.getElementById('geographyExplanation').textContent=otherTransport?'För detta trafikslag visas två kompletterande grupper: känd plats och okänd plats. Känd innebär att en väg, korsning eller ett specifikt delområde nämns, inte en verifierad koordinat. Varje kandidat räknas en gång.':transportActive?'Röda staplar visar vägsträckor. E4, väg 94 och väg 97 särredovisas. Andra kända vägar under 30 händelser under hela perioden samlas i Övriga, kända vägsträckor. Okända vägsträckor hålls skilda från Okänt delområde. Varje kandidat räknas endast en gång.' :document.getElementById('geo').value==='Alla'?'Gula staplar: stadsdelar. Röda staplar: kompletterande, preliminära vägreferenser inom hela Luleå kommun. Vägstaplarna ska inte summeras med stadsdelarna.':'Endast valt geografiskt område visas. Kommunövergripande vägstaplar visas enbart för Hela Luleå.';const geography=transportActive?transportGeography(rows):count(rows,'geography_group');if(!transportActive&&document.getElementById('geo').value==='Alla'){const y=document.getElementById('year').value;const roadRows=transportData.filter(r=>r.transport_mode==='Vägtrafik'&&(y==='Alla'||r.year===y));const byRoad=new Map();for(const r of roadRows){if(['E4','Väg 94','Väg 97'].includes(r.road_reference))byRoad.set(r.road_reference,(byRoad.get(r.road_reference)||0)+r.event_count)}for(const name of ['E4','Väg 97','Väg 94'])if(byRoad.has(name))geography.push([name+' (vägtrafik)',byRoad.get(name)]);}draw('districts',geography.sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'sv')).slice(0,15),true);}
+const transportActive=document.getElementById('transportMode').value!=='Alla';const otherTransport=['Godstransporter','Flygtrafik','Järnväg','Sjöfart'].includes(document.getElementById('transportMode').value);document.getElementById('geographyExplanation').textContent=otherTransport?'För detta trafikslag visas två kompletterande grupper: känd plats och okänd plats. Känd innebär att en väg, korsning eller ett specifikt delområde nämns, inte en verifierad koordinat. Varje kandidat räknas en gång.':transportActive?'Vägtrafik visas som väggeografi: namngivna vägar med minst 10 händelser under hela perioden visas var för sig, mindre vägar under Övrig väg, känd väg och övriga vägtrafikhändelser under Övrig väg, okänd väg. Varje kandidat räknas en gång.' :document.getElementById('geo').value==='Alla'?'Gula staplar: stadsdelar. Röda staplar: kompletterande, preliminära vägreferenser inom hela Luleå kommun. Vägstaplarna ska inte summeras med stadsdelarna.':'Endast valt geografiskt område visas. Kommunövergripande vägstaplar visas enbart för Hela Luleå.';const geography=transportActive?transportGeography(rows):count(rows,'geography_group');if(!transportActive&&document.getElementById('geo').value==='Alla'){const y=document.getElementById('year').value;const roadRows=transportData.filter(r=>r.transport_mode==='Vägtrafik'&&(y==='Alla'||r.year===y));const byRoad=new Map();for(const r of roadRows){if(['E4','Väg 94','Väg 97'].includes(r.road_reference))byRoad.set(r.road_reference,(byRoad.get(r.road_reference)||0)+r.event_count)}for(const name of ['E4','Väg 97','Väg 94'])if(byRoad.has(name))geography.push([name+' (vägtrafik)',byRoad.get(name)]);}draw('districts',geography.sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0],'sv')).slice(0,15),true);}
 function applySeries(){
  const selectedTransport=document.getElementById('transportMode').value;
  const isTransport=selectedTransport!=='Alla';
