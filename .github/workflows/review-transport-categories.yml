@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install expanded-series dependencies
+        run: python -m pip install pandas
       - name: Build transport candidates
         run: python scripts/build_transport_categories.py
       - name: Audit major roads
