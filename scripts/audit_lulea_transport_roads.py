@@ -16,6 +16,8 @@ FIELDS = ["title_location", "location_string", "headline", "description", "conte
 out = ROOT / "data/audit_lulea_transport_roads.csv"
 rows = []
 seen = set()
+DUPLICATE_REVIEW_IDS = {"107404", "107414"}
+
 for event in csv.DictReader((ROOT / "data/events.csv").open(encoding="utf-8-sig", newline="")):
     if (event.get("geography_group") or "").strip() != "Luleå kommun":
         continue
@@ -23,6 +25,19 @@ for event in csv.DictReader((ROOT / "data/events.csv").open(encoding="utf-8-sig"
     if eid in seen:
         continue
     seen.add(eid)
+    if eid in DUPLICATE_REVIEW_IDS:
+        print("DUPLICATE_EVIDENCE", repr({
+            "event_id": eid,
+            "date": event.get("date"),
+            "datetime": event.get("datetime"),
+            "published": event.get("published"),
+            "timestamp": event.get("timestamp"),
+            "headline": event.get("headline"),
+            "description": (event.get("description") or "")[:1200],
+            "content": (event.get("content") or "")[:2200],
+            "location_string": event.get("location_string"),
+            "type_original": event.get("type_original"),
+        }))
     matches = {name: [field for field in FIELDS if pat.search(norm(event.get(field))) ] for name, pat in PATTERNS.items()}
     matched = [name for name, fields in matches.items() if fields]
     if not matched:
