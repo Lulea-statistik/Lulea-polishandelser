@@ -48,7 +48,7 @@ with out.open("w",encoding="utf-8",newline="") as f:
   w.writerow([name,kind,n," | ".join(examples[(name,kind)]),"Ej geografiskt verifierad"])
 print("UNKNOWN_ROAD_DISCOVERY",dict(hits))
 print("Top candidates",[(k,v) for k,v in results.most_common(35)])
-for n in (596,599,607,970,616,583,584,582,573,960,563,577,576,575,580,581,600,383,687,601,692,691):
+for n in (596,599,607,970,616,583,584,582,573,960,563,577,576,575,580,581,600,383,687,601,692,691,768,356,780,695):
  print("NUMBERED_ROAD",n,"own_field",results.get(("Väg "+str(n),"Eget platsfält"),0),"other_text",results.get(("Väg "+str(n),"Bara övrig text - måste verifieras"),0))
 assert not any(name.casefold() in ("riksväg","länsväg") for name,_ in results),"Generic road type falsely detected as named road"
 print("Saved",out)
