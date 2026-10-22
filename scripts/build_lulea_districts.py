@@ -5,6 +5,7 @@ Ingen geokodning eller implicit stadsdelsgissning: bara platsfälten används.
 Osäkra / motstridiga platsuppgifter redovisas som Okänt delområde.
 """
 import csv
+from police_publication_dedup import is_superseded
 import re
 import unicodedata
 from collections import defaultdict
@@ -130,6 +131,7 @@ def main():
   if not required.issubset(reader.fieldnames or []):raise SystemExit("Unexpected events.csv columns")
   for row in reader:
    if (row.get("geography_group") or "").strip()!="Luleå kommun":continue
+   if is_superseded(row):continue
    eid=(row.get("event_id") or "").strip()
    if eid:
     if eid in ids:continue
