@@ -78,6 +78,13 @@ def junction_reference(row):
     for name, needle in JUNCTION_NAMES:
         if needle in compact:
             return name
+    # Explicit street/street pairs in police headings; a reference, not a verified coordinate.
+    explicit = re.search(r"(?:korsning(?:en)?\\s+|vid\\s+)([a-z0-9åäö-]+(?:vägen|gatan|leden))\\s*/\\s*([a-z0-9åäö-]+(?:vägen|gatan|leden))", place)
+    if explicit:
+        return explicit.group(1).capitalize() + "/" + explicit.group(2).capitalize()
+    # Named interchanges with an explicit location marker, not a vague proximity phrase.
+    if "trafikplats norra sunderbyn" in place:
+        return "Trafikplats Norra Sunderbyn"
     return "Trafikplats ej angiven"
 
 def transport_location_precision(row, transport_modes):
