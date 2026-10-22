@@ -1,0 +1,91 @@
+name: Review Lulea transport categories
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '25 9 * * *'
+  push:
+    branches:
+      - feature/transport-categories-20261022
+      - main
+    paths:
+      - scripts/build_transport_categories.py
+      - scripts/audit_lulea_transport_roads.py
+      - scripts/audit_police_publication_duplicates.py
+      - scripts/police_publication_dedup.py
+      - scripts/build_lulea_districts.py
+      - scripts/build_lulea_districts_expanded.py
+      - .github/workflows/review-transport-categories.yml
+      - docs/transport.html
+      - docs/lulea.html
+      - data/events.csv
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install expanded-series dependencies
+        run: python -m pip install pandas
+      - name: Build transport candidates
+        run: python scripts/build_transport_categories.py
+      - name: Validate Lulea transport dropdown and aggregate
+        run: |
+          python - <<'PY'
+          import csv
+          from collections import Counter
+          from pathlib import Path
+          page=Path("docs/lulea.html").read_text(encoding="utf-8")
+          assert 'id="transportMode"' in page
+          assert "lulea_transport_monthly.csv" in page
+          assert "r.transport_mode===selectedTransport" in page
+          assert "r.event_kind" in page
+          rows=list(csv.DictReader(Path("docs/data/lulea_transport_monthly.csv").open(encoding="utf-8")))
+          assert rows
+          assert {"year","month","geography_group","transport_mode","event_kind","event_count","road_reference","junction_reference"} <= rows[0].keys()
+          keys=[tuple(r[k] for k in ("year","month","geography_group","location_precision","road_reference","junction_reference","transport_mode","event_kind","review_status")) for r in rows]
+          assert len(keys)==len(set(keys)), "Duplicerade aggregatnycklar"
+          assert all(int(r["event_count"])>0 for r in rows)
+          modes=Counter()
+          for r in rows: modes[r["transport_mode"]]+=int(r["event_count"])
+          assert modes
+          print("Luleå transportfilter QA, trafikslag och antal:",dict(modes))
+          print("Luleå transportfilter QA, aggregerade rader:",len(rows))
+          PY
+      - name: Audit major roads
+        run: python scripts/audit_lulea_transport_roads.py
+      - name: Audit potential duplicate publications
+        run: python scripts/audit_police_publication_duplicates.py
+      - name: Validate district series with shared deduplication
+        run: |
+          python scripts/build_lulea_districts.py
+          python scripts/build_lulea_districts_expanded.py
+      - name: Upload review datasets
+        uses: actions/upload-artifact@v4
+        with:
+          name: transport-review-datasets
+          path: |
+            data/audit_lulea_transport_candidates.csv
+            data/audit_lulea_transport_roads.csv
+            data/audit_police_publication_duplicates.csv
+            data/audit_police_publication_groups.csv
+            data/audit_police_duplicate_review_priority.csv
+            data/audit_police_duplicate_text_differences.csv
+            data/review_police_duplicate_text_cases.csv
+            data/audit_police_summary_update_groups.csv
+            data/audit_police_summary_update_deltas.csv
+            docs/data/lulea_transport_monthly.csv
+      - name: Publish monthly dataset on main only
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/lulea_transport_monthly.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Lulea transport aggregate"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi

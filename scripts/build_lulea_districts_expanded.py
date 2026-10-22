@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Skapa expanderad stadsdelsserie utan att ärva sammanfattningens plats."""
 import csv
+from police_publication_dedup import is_superseded
 from collections import defaultdict
 from pathlib import Path
 import sys
@@ -23,7 +24,7 @@ parsed_ids={str(r.get("parent_event_id","")).strip() for r in details}
 counts=defaultdict(int)
 seen=set()
 for row in events:
- if not is_lulea(row) or not valid(row):continue
+ if not is_lulea(row) or not valid(row) or is_superseded(row):continue
  eid=str(row.get("event_id","")).strip()
  if eid and eid in seen:continue
  if eid:seen.add(eid)
@@ -38,6 +39,7 @@ for row in events:
  counts[key(row,typ,district(row))]+=1
 for row in details:
  if not yes(row.get("include_as_extra")) or not is_lulea(row) or not valid(row):continue
+ if str(row.get("parent_event_id") or "").strip() in ("107404",):continue
  # Plats från denna underhändelse, ALDRIG från föräldersammanfattningen.
  specific={"title_location":row.get("place_text") or "",
            "location_string":"","headline":"",
