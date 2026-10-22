@@ -211,3 +211,30 @@ with summary_out.open("w",encoding="utf-8",newline="") as stream:
 print("Sammanfattningspubliceringar att granska:",len(summary_rows))
 for r in summary_rows:
     print("SUMMARY_REVIEW",r["group_id"],r["event_id"],repr(r["headline"][:90]),repr(r["content_excerpt"][:180]))
+
+# Compare summary updates at word level and flag possible new incident headings.
+summary_delta_out=ROOT/"data/audit_police_summary_update_deltas.csv"
+summary_deltas=[]
+import re
+for n,group in enumerate(groups,1):
+    rr=[event_by_id[eid] for eid in group if eid in event_by_id]
+    if not any(summary_notice(r) for r in rr):continue
+    base=min(rr,key=lambda r:len(normalized(r.get("content"))))
+    base_words=normalized(base.get("content")).split()
+    for r in rr:
+        if r is base:continue
+        candidate_words=normalized(r.get("content")).split()
+        ops=SequenceMatcher(None,base_words,candidate_words,autojunk=False).get_opcodes()
+        added=" | ".join(" ".join(candidate_words[j1:j2]) for tag,i1,i2,j1,j2 in ops if tag in ("insert","replace"))
+        removed=" | ".join(" ".join(base_words[i1:i2]) for tag,i1,i2,j1,j2 in ops if tag in ("delete","replace"))
+        new_event_signal=bool(re.search(r"\\b(?:[01]?\\d|2[0-3]):[0-5]\\d\\s+(?!lugnt\\b|inget\\b)",added))
+        summary_deltas.append({"group_id":f"G{n:03d}","base_event_id":base.get("event_id",""),
+            "compared_event_id":r.get("event_id",""),"added_text":added[:2000],
+            "removed_text":removed[:800],"possible_new_timed_subevent":"Ja" if new_event_signal else "Nej",
+            "decision":"Underhändelsekontroll krävs – ingen automatisk sammanslagning"})
+with summary_delta_out.open("w",encoding="utf-8",newline="") as stream:
+    cols=["group_id","base_event_id","compared_event_id","added_text","removed_text","possible_new_timed_subevent","decision"]
+    writer=csv.DictWriter(stream,fieldnames=cols);writer.writeheader();writer.writerows(summary_deltas)
+print("Skillnader mellan sammanfattningsversioner:",len(summary_deltas))
+for r in summary_deltas:
+    print("SUMMARY_DELTA",r["group_id"],r["base_event_id"],r["compared_event_id"],"new_timed=",r["possible_new_timed_subevent"],"added=",repr(r["added_text"][:550]),"removed=",repr(r["removed_text"][:180]))
