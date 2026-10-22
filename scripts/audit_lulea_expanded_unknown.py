@@ -45,3 +45,41 @@ print("Unknown candidate audit rows:",len(rows))
 print("By source:",dict(Counter(r["source"] for r in rows)))
 print("By event type:",Counter(r["event_type"] for r in rows).most_common(15))
 print("No new geographic decisions applied.")
+
+# Prioritize evidence, not an assumed district. Classifications below are review queues.
+import re
+def triage(row):
+    place=(row.get("place_text") or row.get("title_location") or row.get("location_string") or "").strip()
+    context=" ".join((row.get("headline") or "",row.get("text_excerpt") or "")).lower()
+    if place and not re.fullmatch(r"luleå(?: kommun)?|norrbotten|okänd(?: plats)?",place,flags=re.I):
+        priority="1 – specifikt platsfält att kontrollera"
+    elif re.search(r"(?:korsning(?:en)?|trafikplats|rondell|väg [0-9]+|e4|e10|sjukhus|hållplats)",context):
+        priority="2 – platsledtråd i text att kontrollera"
+    elif context and re.search(r"(?:vid|på|i närheten av) ",context):
+        priority="3 – möjlig platsrelation i text"
+    else:
+        priority="4 – otillräcklig platsuppgift"
+    if re.search(r"(?:fördes|transporterades|kördes|togs) till sjukhus",context):
+        warning="Sjukhus kan vara vårdmål, inte händelseplats"
+    elif "trafikplats" in context or "väg" in context:
+        warning="Vägomnämnande ger inte automatiskt delområde"
+    else:
+        warning=""
+    return priority,warning
+for row in rows:
+    row["review_priority"],row["interpretation_warning"]=triage(row)
+    row["proposed_district"]=""
+out=ROOT/"data/audit_lulea_expanded_unknown.csv"
+with out.open("w",encoding="utf-8",newline="") as stream:
+    cols=list(rows[0]) if rows else ["source","event_id","review_priority","interpretation_warning","proposed_district"]
+    writer=csv.DictWriter(stream,fieldnames=cols);writer.writeheader();writer.writerows(rows)
+summary=Counter((r["source"],r["review_priority"]) for r in rows)
+summary_path=ROOT/"data/audit_lulea_unknown_triage_summary.csv"
+with summary_path.open("w",encoding="utf-8",newline="") as stream:
+    writer=csv.writer(stream)
+    writer.writerow(["source","review_priority","review_rows"])
+    for (source,priority),count in sorted(summary.items()):
+        writer.writerow([source,priority,count])
+print("Unknown geography triage by source and priority:",dict(sorted(summary.items())))
+assert len(rows)==sum(summary.values())
+assert all(not r["proposed_district"] for r in rows)
