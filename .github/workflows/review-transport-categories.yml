@@ -10,6 +10,10 @@ on:
     paths:
       - scripts/build_transport_categories.py
       - scripts/audit_lulea_transport_roads.py
+      - scripts/audit_police_publication_duplicates.py
+      - scripts/police_publication_dedup.py
+      - scripts/build_lulea_districts.py
+      - scripts/build_lulea_districts_expanded.py
       - .github/workflows/review-transport-categories.yml
       - docs/transport.html
       - data/events.csv
@@ -27,6 +31,12 @@ jobs:
         run: python scripts/build_transport_categories.py
       - name: Audit major roads
         run: python scripts/audit_lulea_transport_roads.py
+      - name: Audit potential duplicate publications
+        run: python scripts/audit_police_publication_duplicates.py
+      - name: Validate district series with shared deduplication
+        run: |
+          python scripts/build_lulea_districts.py
+          python scripts/build_lulea_districts_expanded.py
       - name: Upload review datasets
         uses: actions/upload-artifact@v4
         with:
@@ -34,6 +44,7 @@ jobs:
           path: |
             data/audit_lulea_transport_candidates.csv
             data/audit_lulea_transport_roads.csv
+            data/audit_police_publication_duplicates.csv
             docs/data/lulea_transport_monthly.csv
       - name: Publish monthly dataset on main only
         if: github.ref == 'refs/heads/main'
