@@ -18,17 +18,17 @@ def valid(r):return r.get("geography_group")=="Luleå kommun" and str(r.get("yea
 # Conservative: classification by event type, not incidental road mention.
 ROAD_TYPES=re.compile(r"trafikolycka|trafikbrott|rattfylleri|trafikkontroll|olovlig körning|smitning",re.I)
 ROAD_REFERENCES=[
- ("E4",r"(?<!\\w)e\\s*4(?!\\w)"),
- ("E10",r"(?<!\\w)e\\s*10(?!\\w)"),
- ("Väg 97",r"\\b(?:väg|vag)(?:en)?\\s*97\\b"),
- ("Väg 94",r"\\b(?:väg|vag)(?:en)?\\s*94\\b"),
- ("Bodenvägen",r"\\bbodenväg(?:en)?\\b"),
- ("Svartövägen",r"\\bsvartöväg(?:en)?\\b"),
- ("Storhedenvägen",r"\\bstorhedenväg(?:en)?\\b"),
- ("Björkskataleden",r"\\bbjörkskataled(?:en)?\\b"),
- ("Björkskatabanken",r"\\bbjörkskatabank(?:en)?\\b"),
- ("Bensbyvägen",r"\\bbensbyväg(?:en)?\\b"),
- ("Kallaxvägen",r"\\bkallaxväg(?:en)?\\b")
+ ("E4",r"(?<!\w)e\s*4(?!\w)"),
+ ("E10",r"(?<!\w)e\s*10(?!\w)"),
+ ("Väg 97",r"\b(?:väg|vag)(?:en)?\s*97\b"),
+ ("Väg 94",r"\b(?:väg|vag)(?:en)?\s*94\b"),
+ ("Bodenvägen",r"\bbodenväg(?:en)?\b"),
+ ("Svartövägen",r"\bsvartöväg(?:en)?\b"),
+ ("Storhedenvägen",r"\bstorhedenväg(?:en)?\b"),
+ ("Björkskataleden",r"\bbjörkskataled(?:en)?\b"),
+ ("Björkskatabanken",r"\bbjörkskatabank(?:en)?\b"),
+ ("Bensbyvägen",r"\bbensbyväg(?:en)?\b"),
+ ("Kallaxvägen",r"\bkallaxväg(?:en)?\b")
 ]
 
 def classify(typ,place,geo):
@@ -70,6 +70,8 @@ print("Unified preview total:",len(records))
 print("Original unknown:",before[UNKNOWN],"unified unknown:",after[UNKNOWN])
 print("Road classifications:",{k:v for k,v in after.items() if k.startswith(("E4","Väg","Bodenvägen","Övrig väg"))})
 print("Classification quality:",dict(Counter(r["classification"] for r in records)))
-print("Named roads:",dict(sorted(((k,v) for k,v in after.items() if k in {x[0] for x in ROAD_REFERENCES}),key=lambda p:-p[1])))
+named=dict(sorted(((k,v) for k,v in after.items() if k in {x[0] for x in ROAD_REFERENCES}),key=lambda p:-p[1]))
+print("Named roads:",named)
+assert sum(named.values())>0,"No named road matches: check regular expressions before accepting audit"
 print("Known-road candidates requiring text review:",sum(r["classification"]=="väg-känd" for r in records))
 print("PREVIEW ONLY: no published data modified")
