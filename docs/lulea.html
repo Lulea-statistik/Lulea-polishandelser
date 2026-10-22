@@ -71,6 +71,24 @@ function locationOptions(rows,isTransport,mode){
 function count(rows,key){const m=new Map();for(const r of rows)m.set(r[key],(m.get(r[key])||0)+r.event_count);return [...m.entries()].sort((a,b)=>b[1]-a[1])}
 function transportGeography(rows){
  const mode=document.getElementById('transportMode').value;
+ // Other motorized transport modes use two mutually exclusive location-quality groups.
+ // A named road/junction or one specific district is evidence of a known reference,
+ // but not evidence of a verified coordinate.
+ const groupedModes=new Set(['Godstransporter','Flygtrafik','Järnväg','Sjöfart']);
+ if(groupedModes.has(mode)){
+  const counts=new Map();
+  for(const r of rows){
+   const geo=r.geography_group||'';
+   const knownRoad=r.road_reference&&r.road_reference!=='Väg ej angiven';
+   const knownJunction=r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven';
+   const knownDistrict=geo&&geo!=='Okänt delområde'&&geo!=='Vägsträcka – område ej fastställt'&&geo!=='Flera stadsdelar i Luleå';
+   const name=knownRoad||knownJunction||knownDistrict?'Övriga trafikhändelser, känd plats':'Övriga trafikhändelser, okänd plats';
+   counts.set(name,(counts.get(name)||0)+r.event_count);
+  }
+  const groups=[...counts].sort((a,b)=>b[1]-a[1]);
+  if(groups.reduce((n,x)=>n+x[1],0)!==rows.reduce((n,r)=>n+r.event_count,0))throw Error('Övriga trafikgrupper summerar inte till totalantal');
+  return groups;
+ }
  // The 30-event threshold uses the whole available history, independent of year filters.
  const roadTotals=new Map();
  for(const r of transportData){
@@ -102,7 +120,7 @@ function render(){const rows=filter(),sum=rows.reduce((n,r)=>n+r.event_count,0),
 draw('years',count(rows,'year').sort((a,b)=>a[0].localeCompare(b[0])));
 draw('types',count(rows,'type_original').slice(0,15),true);
 const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];const byCalendarMonth=Array(12).fill(0);for(const r of rows){const m=Number(r.month);if(Number.isInteger(m)&&m>=1&&m<=12)byCalendarMonth[m-1]+=r.event_count;}draw('months',monthNames.map((name,i)=>[name,byCalendarMonth[i]]));
-const transportActive=document.getElementById('transportMode').value!=='Alla';document.getElementById('geographyExplanation').textContent=transportActive?'Röda staplar visar vägsträckor. E4, väg 94 och väg 97 särredovisas. Andra kända vägar under 30 händelser under hela perioden samlas i Övriga, kända vägsträckor. Okända vägsträckor hålls skilda från Okänt delområde. Varje kandidat räknas endast en gång.':'Stadsdelar och okända delområden.';draw('districts',transportActive?transportGeography(rows):count(rows,'geography_group'),true);}
+const transportActive=document.getElementById('transportMode').value!=='Alla';const otherTransport=['Godstransporter','Flygtrafik','Järnväg','Sjöfart'].includes(document.getElementById('transportMode').value);document.getElementById('geographyExplanation').textContent=otherTransport?'För detta trafikslag visas två kompletterande grupper: känd plats och okänd plats. Känd innebär att en väg, korsning eller ett specifikt delområde nämns, inte en verifierad koordinat. Varje kandidat räknas en gång.':transportActive?'Röda staplar visar vägsträckor. E4, väg 94 och väg 97 särredovisas. Andra kända vägar under 30 händelser under hela perioden samlas i Övriga, kända vägsträckor. Okända vägsträckor hålls skilda från Okänt delområde. Varje kandidat räknas endast en gång.':'Stadsdelar och okända delområden.';draw('districts',transportActive?transportGeography(rows):count(rows,'geography_group'),true);}
 function applySeries(){
  const selectedTransport=document.getElementById('transportMode').value;
  const isTransport=selectedTransport!=='Alla';
