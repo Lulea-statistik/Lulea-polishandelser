@@ -1,5 +1,5 @@
 event_id,place_reference,review_class,review_reason,coordinate_verified
-"17462","Trafikplats Måttsund / E4 Antnäs","Kontrollera konflikt","Platsfält anger trafikplats Måttsund medan rubriken anger E4 Antnäs; inte verifierad punkt","Nej"
+"17462","E4 strax norr om trafikplats Måttsund","Vägsträcka nära namngiven trafikplats","Löptext anger att bilen står strax norr om trafikplatsen; ska inte klassas som punkt i trafikplatsen","Nej"
 "17902","Trafikplats Råneå södra","Namngiven trafikplats","Trafikplats Råneå södra i rubrik","Nej"
 "32154","Svartövägen/Bodenvägen","Namngiven korsning","Båda korsande vägar namngivna","Nej"
 "55290","Mjölkuddsvägen/väg 97","Namngiven korsning","Båda korsande vägar namngivna","Nej"
@@ -7,7 +7,7 @@ event_id,place_reference,review_class,review_reason,coordinate_verified
 "107404","Gammelstadsvägen/Bodenvägen","Namngiven korsning","Båda korsande vägar namngivna","Nej"
 "107414","Gammelstadsvägen/Bodenvägen","Namngiven korsning","Båda korsande vägar namngivna; kontrollera om separat händelse från 107404","Nej"
 "149887","E4 vid Börjelslandet","Ej namngiven korsning","Texten säger endast en korsning på E4 vid Börjelslandet","Nej"
-"228304","Trafikplats Notviken","Kontrollera händelserelation","Trafikplats i platsfält men rubriken anger endast E4 Luleå","Nej"
+"228304","Trafikplats Notviken","Namngiven trafikplats","Löptext bekräftar att fordonskontrollen skedde vid trafikplats Notviken","Nej"
 "247331","Trafikplats Notviken","Namngiven trafikplats","Trafikplats explicit i rubrik och platsfält","Nej"
 "248711","Trafikplats Antnäs","Namngiven trafikplats","Kontroll av stopplikt vid trafikplats; gäller kontroll snarare än trafikolycka","Nej"
 "258588","Trafikplats Gäddvik","Namngiven trafikplats","Trafikplats explicit i rubrik","Nej"
