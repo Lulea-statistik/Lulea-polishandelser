@@ -52,6 +52,8 @@ with out.open("w", encoding="utf-8", newline="") as stream:
     writer.writerows(rows)
 print("Vägomnämnanden – unika händelser:", len(rows))
 print("Per väg (överlapp tillåtet):", dict(Counter(name for r in rows for name in r["road_mentions"].split(" | "))))
+print("Överlapp per vägpar:", dict(Counter(" + ".join(sorted((a,b))) for r in rows for i,a in enumerate(r["road_mentions"].split(" | ")) for b in r["road_mentions"].split(" | ")[i+1:])))
+print("Avgränsade trafikplatser, händelse-ID:", [r["event_id"] for r in rows if r["location_precision"].startswith("Trafikplats")])
 print("Väg 97 och Bodenvägen i samma händelse:", sum(bool(r["road97"] and r["bodenvagen"]) for r in rows))
 print("Vägomnämnanden med okänt delområde:", sum(r["geography_group"] == UNKNOWN for r in rows))
 print("Precisionsgrupper:", dict(Counter(r["location_precision"] for r in rows)))
