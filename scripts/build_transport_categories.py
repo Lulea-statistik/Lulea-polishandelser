@@ -40,13 +40,14 @@ EVENT_KINDS = {
 INCIDENT_CONTEXT = [r"forts till sjukhus", r"fordes till sjukhus", r"transporterades till sjukhus", r"ambulans till sjukhus"]
 # These are precision classes, not new administrative districts.
 LONG_ROAD = re.compile(r"(?<![a-z0-9])(?:e ?4|e ?10|vag(?:en)? ?(?:97|94|968|596))(?![0-9])")
-JUNCTION = re.compile(r"(?<![a-z])(?:rondell\\w*|cirkulationsplats\\w*|korsning\\w*|trafikplats\\w*)(?![a-z])")
+JUNCTION = re.compile(r"(?<![a-z])(?:rondell\w*|cirkulationsplats\w*|korsning\w*|trafikplats\w*)(?![a-z])")
 def transport_location_precision(row, transport_modes):
     if not transport_modes:
         return "Ej transport"
     place = norm(" ".join(str(row.get(k) or "") for k in ("title_location", "location_string", "headline")))
+    # Merely mentioning a junction is not proof that the incident happened at it.
     if JUNCTION.search(place):
-        return "Avgränsad trafikplats – verifiera"
+        return "Trafikplats omnämns – verifiera händelseplats"
     if LONG_ROAD.search(place):
         return "Lång vägsträcka – oprecis"
     if district(row) == UNKNOWN:
@@ -56,7 +57,8 @@ def transport_location_precision(row, transport_modes):
 rows = []
 unique = set()
 # Verified same-incident publication pair: 107414 contains the subsequent update.
-REPLACED_PUBLICATIONS = {"107404": "107414"}  # Keep reporting stable; shared rules are authoritative
+from police_publication_dedup import REPLACED_BY
+REPLACED_PUBLICATIONS = REPLACED_BY
 aggregated = defaultdict(int)
 for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     if (row.get("geography_group") or "").strip() != "Luleå kommun":
@@ -88,7 +90,7 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
         relation = "Överlappande trafikslag – kontroll krävs"
     if not strong and match(narrative, INCIDENT_CONTEXT):
         relation = "Transport till vård omnämns – kontroll krävs"
-    if "Flygtrafik" in modes and match(primary, [r"flygplats\\w*"]) and not match(primary, [r"flygplan\\w*", r"flygtrafik\\w*"]):
+    if "Flygtrafik" in modes and match(primary, [r"flygplats\w*"]) and not match(primary, [r"flygplan\w*", r"flygtrafik\w*"]):
         relation = "Flygplats kan vara enbart platsangivelse – kontroll krävs"
     if "Sjöfart" in modes and not strong:
         relation = "Sjöfart endast i löptext – kontroll krävs"
