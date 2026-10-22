@@ -169,6 +169,16 @@ print("Deduplicerade uppdateringspubliceringar:", REPLACED_PUBLICATIONS)
 print("Transportkandidater:", len(rows), "unika händelser")
 print("Platsnoggrannhet:", dict(Counter(r["location_precision"] for r in rows)))
 print("Namngivna trafikplatsreferenser:", dict(Counter(r["junction_reference"] for r in rows if r["junction_reference"] != "Trafikplats ej angiven")))
+# Audit coverage explicitly; the 51 broad junction mentions are not all named sites.
+mentioned = [r for r in rows if r["location_precision"] == "Trafikplats omnämns – verifiera händelseplats"]
+unnamed = [r for r in mentioned if r["junction_reference"] == "Trafikplats ej angiven"]
+named = [r for r in rows if r["junction_reference"] != "Trafikplats ej angiven"]
+print("Trafikplats QA: omnämnanden", len(mentioned), "namngivna inom omnämnanden", len(mentioned)-len(unnamed), "utan namngiven matchning", len(unnamed))
+print("Trafikplats QA: namngivna oavsett precisionsklass", len(named))
+for r in unnamed[:35]:
+    print("UNNAMED_JUNCTION_REVIEW",r["event_id"],repr(r["headline"][:170]),repr(r["road_reference"]))
+for r in named:
+    print("NAMED_JUNCTION_REVIEW",r["event_id"],repr(r["junction_reference"]),repr(r["road_reference"]),repr(r["location_precision"]))
 print("Trafikslag:", dict(Counter(mode for r in rows for mode in r["modes"].split(" | "))))
 print("Transportkandidater med Okänt delområde:", sum(r["geography_group"] == UNKNOWN for r in rows))
 print("Okänt delområde per trafikslag:", dict(Counter(mode for r in rows if r["geography_group"] == UNKNOWN for mode in r["modes"].split(" | "))))
