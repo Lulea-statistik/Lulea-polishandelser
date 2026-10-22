@@ -227,7 +227,7 @@ for n,group in enumerate(groups,1):
         ops=SequenceMatcher(None,base_words,candidate_words,autojunk=False).get_opcodes()
         added=" | ".join(" ".join(candidate_words[j1:j2]) for tag,i1,i2,j1,j2 in ops if tag in ("insert","replace"))
         removed=" | ".join(" ".join(base_words[i1:i2]) for tag,i1,i2,j1,j2 in ops if tag in ("delete","replace"))
-        new_event_signal=bool(re.search(r"\\b(?:[01]?\\d|2[0-3]):[0-5]\\d\\s+(?!lugnt\\b|inget\\b)",added))
+        new_event_signal=bool(re.search(r"\b(?:[01]?\d|2[0-3]):[0-5]\d\s+(?!lugnt\b|inget\b)",added))
         summary_deltas.append({"group_id":f"G{n:03d}","base_event_id":base.get("event_id",""),
             "compared_event_id":r.get("event_id",""),"added_text":added[:2000],
             "removed_text":removed[:800],"possible_new_timed_subevent":"Ja" if new_event_signal else "Nej",
