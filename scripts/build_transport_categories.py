@@ -85,7 +85,7 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     })
     # Multiple modes can refer to one event. Count distinct events per mode.
     for mode in modes:
-        aggregated[(year, month.zfill(2), mode, kind, relation)] += 1
+        aggregated[(year, month.zfill(2), geo, mode, kind, relation)] += 1
 
 AUDIT.parent.mkdir(parents=True, exist_ok=True)
 OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -96,13 +96,14 @@ with AUDIT.open("w", encoding="utf-8", newline="") as f:
     writer.writerows(rows)
 with OUT.open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["year", "month", "transport_mode", "event_kind", "review_status", "event_count"])
+    writer.writerow(["year", "month", "geography_group", "transport_mode", "event_kind", "review_status", "event_count"])
     for key, n in sorted(aggregated.items()):
         writer.writerow([*key, n])
 print("Transportkandidater:", len(rows), "unika händelser")
 print("Trafikslag:", dict(Counter(mode for r in rows for mode in r["modes"].split(" | "))))
 print("Transportkandidater med Okänt delområde:", sum(r["geography_group"] == UNKNOWN for r in rows))
 print("Okänt delområde per trafikslag:", dict(Counter(mode for r in rows if r["geography_group"] == UNKNOWN for mode in r["modes"].split(" | "))))
+print("Andel okänd geografi bland transportkandidater:", round(100 * sum(r["geography_group"] == UNKNOWN for r in rows) / max(len(rows), 1), 1), "%")
 print("Granskningsstatus:", dict(Counter(r["review_status"] for r in rows)))
 print("Obs: trafikslag överlappar; summera inte olika trafikslag till antal unika händelser")
 assert len(rows) == len({r["event_id"] for r in rows}), "Dubblerade händelser"
