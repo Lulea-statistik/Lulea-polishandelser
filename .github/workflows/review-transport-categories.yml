@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - scripts/build_transport_categories.py
+      - scripts/audit_lulea_transport_roads.py
       - .github/workflows/review-transport-categories.yml
       - docs/transport.html
       - data/events.csv
@@ -24,12 +25,15 @@ jobs:
           python-version: '3.12'
       - name: Build transport candidates
         run: python scripts/build_transport_categories.py
+      - name: Audit major roads
+        run: python scripts/audit_lulea_transport_roads.py
       - name: Upload review datasets
         uses: actions/upload-artifact@v4
         with:
           name: transport-review-datasets
           path: |
             data/audit_lulea_transport_candidates.csv
+            data/audit_lulea_transport_roads.csv
             docs/data/lulea_transport_monthly.csv
       - name: Publish monthly dataset on main only
         if: github.ref == 'refs/heads/main'
