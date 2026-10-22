@@ -187,3 +187,27 @@ print("Skyddade separata händelsepar:",3)
 
 print("Skyddade kandidatgrupper:",sum("Verifierat separata" in group_warning(group) for group in groups))
 print("Sammanfattningsgrupper för underhändelsekontroll:",sum("Sammanfattning" in group_warning(group) for group in groups))
+
+# Detail evidence for summary-group review; preserve every child/parent source.
+summary_out=ROOT/"data/audit_police_summary_update_groups.csv"
+summary_rows=[]
+for n,group in enumerate(groups,1):
+    rr=[event_by_id[eid] for eid in group if eid in event_by_id]
+    if not any(summary_notice(r) for r in rr):continue
+    for r in rr:
+        eid=str(r.get("event_id") or "")
+        narrative=normalized(r.get("content"))
+        summary_rows.append({
+            "group_id":f"G{n:03d}","event_id":eid,
+            "date":r.get("date",""),"headline":r.get("headline",""),
+            "location_string":r.get("location_string",""),
+            "summary_flag":r.get("is_summary",""),
+            "content_length":len(narrative),"content_excerpt":narrative[:1500],
+            "requires_child_event_check":"Ja",
+            "dedup_decision":"Ej beslutad"})
+with summary_out.open("w",encoding="utf-8",newline="") as stream:
+    cols=["group_id","event_id","date","headline","location_string","summary_flag","content_length","content_excerpt","requires_child_event_check","dedup_decision"]
+    writer=csv.DictWriter(stream,fieldnames=cols);writer.writeheader();writer.writerows(summary_rows)
+print("Sammanfattningspubliceringar att granska:",len(summary_rows))
+for r in summary_rows:
+    print("SUMMARY_REVIEW",r["group_id"],r["event_id"],repr(r["headline"][:90]),repr(r["content_excerpt"][:180]))
