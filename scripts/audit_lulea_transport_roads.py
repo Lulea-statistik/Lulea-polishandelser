@@ -42,7 +42,7 @@ for event in csv.DictReader((ROOT / "data/events.csv").open(encoding="utf-8-sig"
         "location_string": (event.get("location_string") or "")[:180],
         "headline": (event.get("headline") or "")[:240],
         "junction_review": "Kräver namngiven och avgränsbar plats; inte automatiskt punktbestämd" if precision.startswith("Trafikplats") else "",
-        "junction_evidence": " | ".join((field + ": " + (event.get(field) or "")[:260]) for field in FIELDS if re.search(r"(?<![a-z])(?:rondell\\w*|cirkulationsplats\\w*|trafikplats\\w*|korsning\\w*)(?![a-z])", norm(event.get(field))))[:850],
+        "junction_evidence": " | ".join((field + ": " + (event.get(field) or "")[:260]) for field in FIELDS if re.search(r"(?<![a-z])(?:rondell\w*|cirkulationsplats\w*|trafikplats\w*|korsning\w*)(?![a-z])", norm(event.get(field))))[:850],
         "verification": "Ej verifierad",
     })
 out.parent.mkdir(exist_ok=True, parents=True)
