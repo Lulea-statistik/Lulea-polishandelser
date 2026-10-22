@@ -152,6 +152,10 @@ from collections import Counter
 print("Review groups:", dict(sorted(Counter(r["review_priority"] for r in rows).items())))
 print("Settlement mentions (not approved districts):", dict(sorted(Counter(term for r in rows for term in r["settlement_terms"].split(" | ") if term).items(), key=lambda p: (-p[1], p[0]))))
 print("Events requiring special review:", sum(bool(r["review_flags"]) for r in rows))
+print("Hospital potential scene evidence (manual review required):")
+for r in rows:
+    if r["hospital_relation"] == "Möjlig händelseplats":
+        print("HOSPITAL_REVIEW", r["event_id"], "location=", repr(r["title_location"][:100]), "place=", repr(r["location_string"][:100]), "headline=", repr(r["headline"][:180]), "context=", repr(r["hospital_evidence"][:260]))
 print("Hospital potential scene candidate IDs:", [r["event_id"] for r in rows if r["hospital_relation"] == "Möjlig händelseplats"])
 print("Hospital context categories:", dict(sorted(Counter(r["hospital_relation"] for r in rows if r["hospital_relation"]).items())))
 print("Candidate categories:", dict(sorted(Counter(category for r in rows for category in r["candidate_categories"].split(" | ")).items())))
