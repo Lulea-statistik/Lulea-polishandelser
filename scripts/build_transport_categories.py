@@ -54,11 +54,15 @@ def transport_location_precision(row, transport_modes):
 
 rows = []
 unique = set()
+# Verified same-incident publication pair: 107414 contains the subsequent update.
+REPLACED_PUBLICATIONS = {"107404": "107414"}
 aggregated = defaultdict(int)
 for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     if (row.get("geography_group") or "").strip() != "Luleå kommun":
         continue
     eid = (row.get("event_id") or "").strip()
+    if eid in REPLACED_PUBLICATIONS:
+        continue
     if eid and eid in unique:
         continue
     if eid:
@@ -117,6 +121,7 @@ with OUT.open("w", encoding="utf-8", newline="") as f:
     writer.writerow(["year", "month", "geography_group", "location_precision", "transport_mode", "event_kind", "review_status", "event_count"])
     for key, n in sorted(aggregated.items()):
         writer.writerow([*key, n])
+print("Deduplicerade uppdateringspubliceringar:", REPLACED_PUBLICATIONS)
 print("Transportkandidater:", len(rows), "unika händelser")
 print("Platsnoggrannhet:", dict(Counter(r["location_precision"] for r in rows)))
 print("Trafikslag:", dict(Counter(mode for r in rows for mode in r["modes"].split(" | "))))
