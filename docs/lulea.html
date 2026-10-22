@@ -34,7 +34,7 @@ select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radi
 <div class="panel filters"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div><label for="transportMode">Transportkategori</label><select id="transportMode"><option value="Alla" selected>Alla polishändelser</option></select></div><div><label for="geo" id="geoLabel">Geografi</label><select id="geo"></select></div><div id="districtFilter" hidden><label for="transportDistrict">Stadsdel (kompletterande)</label><select id="transportDistrict"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
 <p class="muted" id="seriesExplanation" aria-live="polite">Expanderade händelser. Identifierade underhändelser räknas separat; geografi som inte kan fastställas hamnar i Okänt delområde.</p><div class="kpis"><div class="panel"><span class="muted" id="totalLabel">Antal händelser</span><strong id="total" class="number">–</strong></div><div class="panel"><span class="muted">Första månaden</span><strong id="first" class="number">–</strong></div><div class="panel"><span class="muted">Sista månaden</span><strong id="last" class="number">–</strong></div></div>
 <div class="grid"><section class="panel"><h2>Händelser per år</h2><div class="chart"><canvas id="years"></canvas></div></section><section class="panel"><h2>Vanligaste händelsetyper</h2><div class="chart"><canvas id="types"></canvas></div></section></div>
-<div class="grid"><section class="panel"><h2>Händelser per månad</h2><p class="muted">Januari–december summerat över vald tidsperiod. Välj ett enskilt år för månadsfördelningen det året.</p><div class="chart"><canvas id="months"></canvas></div></section><section class="panel"><h2>Geografisk fördelning inom Luleå</h2><div class="chart"><canvas id="districts"></canvas></div></section></div>
+<div class="grid"><section class="panel"><h2>Händelser per månad</h2><p class="muted">Januari–december summerat över vald tidsperiod. Välj ett enskilt år för månadsfördelningen det året.</p><div class="chart"><canvas id="months"></canvas></div></section><section class="panel"><h2>Geografisk fördelning inom Luleå</h2><p class="muted" id="geographyExplanation">Stadsdelar och okända delområden.</p><div class="chart"><canvas id="districts"></canvas></div></section></div>
 <section class="panel"><h2>Metod och datakvalitet</h2><p>Stadsdelar bestäms i första hand från platsfält. Mycket tydliga platsuttryck i beskrivningar kan användas när platsfältet inte räcker. I den expanderade serien bedöms platsen separat för varje underhändelse. Händelser med otydliga eller motstridiga områdesuppgifter klassas som <strong>Okänt delområde</strong>. Stadsdelsgränser och koordinatsystem används inte, eftersom denna version inte har verifierade geometrier. Ett nämnt stadsdelsnamn är inte liktydigt med verifierad position inom stadsdelsgräns. Serien uppdateras av samma dagliga GitHub Actions-flöde som huvudsidan.</p></section>
 </div></main>
 <script>
@@ -69,12 +69,40 @@ function locationOptions(rows,isTransport,mode){
  if(knownJunctions||unknownJunctions){const group=document.createElement('optgroup');group.label='Trafikplatser och korsningar';for(const [value,label] of [['junction:known','Trafikplats, känd plats'],['junction:unknown','Trafikplats, okänd plats']]){if(value==='junction:known'&&!knownJunctions||value==='junction:unknown'&&!unknownJunctions)continue;const o=document.createElement('option');o.value=value;o.textContent=label;group.append(o)}e.append(group)}
 }
 function count(rows,key){const m=new Map();for(const r of rows)m.set(r[key],(m.get(r[key])||0)+r.event_count);return [...m.entries()].sort((a,b)=>b[1]-a[1])}
-function draw(id,values,vertical=false){const canvas=document.getElementById(id);if(charts[id])charts[id].destroy();charts[id]=new Chart(canvas,{type:'bar',data:{labels:values.map(x=>x[0]),datasets:[{data:values.map(x=>x[1]),backgroundColor:id==='months'?'#9CCCF2':id==='districts'?'#e0b400':id==='types'?'#2f855a':'#a7dca0'}]},options:{indexAxis:vertical?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'Antal: '+fmt.format(vertical?c.parsed.x:c.parsed.y)}}},scales:{[vertical?'x':'y']:{beginAtZero:true}}}})}
+function transportGeography(rows){
+ const mode=document.getElementById('transportMode').value;
+ // The 30-event threshold uses the whole available history, independent of year filters.
+ const roadTotals=new Map();
+ for(const r of transportData){
+  if(r.transport_mode!==mode||!r.road_reference||r.road_reference==='Väg ej angiven')continue;
+  roadTotals.set(r.road_reference,(roadTotals.get(r.road_reference)||0)+r.event_count);
+ }
+ const pinned=new Set(['E4','Väg 94','Väg 97']);
+ const out=new Map();
+ for(const r of rows){
+  const road=r.road_reference,geo=r.geography_group;
+  let label;
+  if(road&&road!=='Väg ej angiven'){
+   label=pinned.has(road)||((roadTotals.get(road)||0)>=30)?road:'Övriga, kända vägsträckor';
+  } else if(geo==='Vägsträcka – område ej fastställt'){
+   label='Övriga, okända vägsträckor';
+  } else if(geo==='Okänt delområde'){
+   label='Okänt delområde';
+  } else {
+   label=geo||'Okänt delområde';
+  }
+  out.set(label,(out.get(label)||0)+r.event_count);
+ }
+ const result=[...out].sort((a,b)=>b[1]-a[1]);
+ if(result.reduce((a,x)=>a+x[1],0)!==rows.reduce((a,r)=>a+r.event_count,0))throw Error('Geografiska väggrupper summerar inte till totalantal');
+ return result;
+}
+function draw(id,values,vertical=false){const canvas=document.getElementById(id);if(charts[id])charts[id].destroy();charts[id]=new Chart(canvas,{type:'bar',data:{labels:values.map(x=>x[0]),datasets:[{data:values.map(x=>x[1]),backgroundColor:id==='districts'?values.map(x=>['E4','Väg 94','Väg 97','Bodenvägen','Övriga, kända vägsträckor','Övriga, okända vägsträckor'].includes(x[0])?'#ca5e59':'#e0b400'):id==='months'?'#9CCCF2':id==='types'?'#2f855a':'#a7dca0'}]},options:{indexAxis:vertical?'y':'x',responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>'Antal: '+fmt.format(vertical?c.parsed.x:c.parsed.y)}}},scales:{[vertical?'x':'y']:{beginAtZero:true}}}})}
 function render(){const rows=filter(),sum=rows.reduce((n,r)=>n+r.event_count,0),months=[...new Set(rows.map(r=>r.year+'-'+r.month.padStart(2,'0')))].sort();document.getElementById('total').textContent=fmt.format(sum);document.getElementById('first').textContent=months[0]||'–';document.getElementById('last').textContent=months.at(-1)||'–';
 draw('years',count(rows,'year').sort((a,b)=>a[0].localeCompare(b[0])));
 draw('types',count(rows,'type_original').slice(0,15),true);
 const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];const byCalendarMonth=Array(12).fill(0);for(const r of rows){const m=Number(r.month);if(Number.isInteger(m)&&m>=1&&m<=12)byCalendarMonth[m-1]+=r.event_count;}draw('months',monthNames.map((name,i)=>[name,byCalendarMonth[i]]));
-draw('districts',count(rows,'geography_group'),true);}
+const transportActive=document.getElementById('transportMode').value!=='Alla';document.getElementById('geographyExplanation').textContent=transportActive?'Röda staplar visar vägsträckor. E4, väg 94 och väg 97 särredovisas. Andra kända vägar under 30 händelser under hela perioden samlas i Övriga, kända vägsträckor. Okända vägsträckor hålls skilda från Okänt delområde. Varje kandidat räknas endast en gång.':'Stadsdelar och okända delområden.';draw('districts',transportActive?transportGeography(rows):count(rows,'geography_group'),true);}
 function applySeries(){
  const selectedTransport=document.getElementById('transportMode').value;
  const isTransport=selectedTransport!=='Alla';
