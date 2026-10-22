@@ -112,9 +112,13 @@ for n,group in enumerate(groups,1):
     for r in rr:
         if r is base:continue
         candidate=normalized(r.get("content"))
-        matcher=SequenceMatcher(None,base_text,candidate,autojunk=False)
-        added=" ".join(candidate[j1:j2] for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag in ("insert","replace")).strip()
-        removed=" ".join(base_text[i1:i2] for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag in ("delete","replace")).strip()
+        # Compare full words, not characters: character fragments falsely suggest
+        # unrelated incidents share updated facts.
+        base_words=base_text.split()
+        candidate_words=candidate.split()
+        matcher=SequenceMatcher(None,base_words,candidate_words,autojunk=False)
+        added=" | ".join(" ".join(candidate_words[j1:j2]) for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag in ("insert","replace")).strip()
+        removed=" | ".join(" ".join(base_words[i1:i2]) for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag in ("delete","replace")).strip()
         diff_rows.append({
           "group_id":f"G{n:03d}","base_event_id":base.get("event_id",""),
           "compared_event_id":r.get("event_id",""),
