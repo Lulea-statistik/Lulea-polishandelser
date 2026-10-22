@@ -41,18 +41,24 @@ for event in csv.DictReader((ROOT / "data/events.csv").open(encoding="utf-8-sig"
         "geography_group": district(event), "location_precision": precision,
         "location_string": (event.get("location_string") or "")[:180],
         "headline": (event.get("headline") or "")[:240],
+        "junction_review": "Kräver namngiven och avgränsbar plats; inte automatiskt punktbestämd" if precision.startswith("Trafikplats") else "",
+        "junction_evidence": " | ".join((field + ": " + (event.get(field) or "")[:260]) for field in FIELDS if re.search(r"(?<![a-z])(?:rondell\\w*|cirkulationsplats\\w*|trafikplats\\w*|korsning\\w*)(?![a-z])", norm(event.get(field))))[:850],
         "verification": "Ej verifierad",
     })
 out.parent.mkdir(exist_ok=True, parents=True)
 with out.open("w", encoding="utf-8", newline="") as stream:
     writer = csv.DictWriter(stream, fieldnames=list(rows[0]) if rows else [
         "event_id", "year", "road_mentions", "fields", "e4", "road97", "bodenvagen",
-        "geography_group", "location_precision", "location_string", "headline", "verification"])
+        "geography_group", "location_precision", "location_string", "headline", "junction_review", "junction_evidence", "verification"])
     writer.writeheader()
     writer.writerows(rows)
 print("Vägomnämnanden – unika händelser:", len(rows))
 print("Per väg (överlapp tillåtet):", dict(Counter(name for r in rows for name in r["road_mentions"].split(" | "))))
 print("Överlapp per vägpar:", dict(Counter(" + ".join(sorted((a,b))) for r in rows for i,a in enumerate(r["road_mentions"].split(" | ")) for b in r["road_mentions"].split(" | ")[i+1:])))
+print("Trafikplatskandidater med källutdrag:")
+for r in rows:
+    if r["location_precision"].startswith("Trafikplats"):
+        print("JUNCTION_REVIEW", r["event_id"], repr(r["road_mentions"]), repr(r["location_string"]), repr(r["headline"]), repr(r["junction_evidence"][:300]))
 print("Avgränsade trafikplatser, händelse-ID:", [r["event_id"] for r in rows if r["location_precision"].startswith("Trafikplats")])
 print("Väg 97 och Bodenvägen i samma händelse:", sum(bool(r["road97"] and r["bodenvagen"]) for r in rows))
 print("Vägomnämnanden med okänt delområde:", sum(r["geography_group"] == UNKNOWN for r in rows))
