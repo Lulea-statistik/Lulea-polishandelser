@@ -87,6 +87,15 @@ def junction_reference(row):
         return "Trafikplats Norra Sunderbyn"
     return "Trafikplats ej angiven"
 
+def bus_stop_reference(row):
+    # Bus station is deliberately not classified as a bus stop.
+    place = norm(" ".join(str(row.get(k) or "") for k in ("title_location", "location_string", "headline")))
+    if "busstation" in place or "bussterminal" in place:
+        return "Hållplats ej angiven"
+    if re.search(r"busshallplats|hallplats", place):
+        return "Busshållplats – namn ej verifierat"
+    return "Hållplats ej angiven"
+
 def transport_location_precision(row, transport_modes):
     if not transport_modes:
         return "Ej transport"
@@ -145,11 +154,12 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     precision = transport_location_precision(row, modes)
     road = road_reference(row)
     junction = junction_reference(row)
+    bus_stop = bus_stop_reference(row) if "Kollektivtrafik" in modes else "Hållplats ej angiven"
     display_geography = "Vägsträcka – område ej fastställt" if precision == "Lång vägsträcka – oprecis" else geo
     rows.append({
         "event_id": eid, "year": year, "month": month.zfill(2),
         "geography_group": geo, "display_geography": display_geography,
-        "location_precision": precision, "road_reference": road, "junction_reference": junction,
+        "location_precision": precision, "road_reference": road, "junction_reference": junction, "bus_stop_reference": bus_stop,
         "type_original": row.get("type_original") or "",
         "headline": (row.get("headline") or "")[:250],
         "modes": " | ".join(modes), "event_kind": kind,
@@ -158,18 +168,18 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     })
     # Multiple modes can refer to one event. Count distinct events per mode.
     for mode in modes:
-        aggregated[(year, month.zfill(2), display_geography, precision, road, junction, mode, kind, relation)] += 1
+        aggregated[(year, month.zfill(2), display_geography, precision, road, junction, bus_stop if mode == "Kollektivtrafik" else "Hållplats ej angiven", mode, kind, relation)] += 1
 
 AUDIT.parent.mkdir(parents=True, exist_ok=True)
 OUT.parent.mkdir(parents=True, exist_ok=True)
-fields = ["event_id", "year", "month", "geography_group", "display_geography", "location_precision", "road_reference", "junction_reference", "type_original", "headline", "modes", "event_kind", "review_status", "candidate_sources", "verified"]
+fields = ["event_id", "year", "month", "geography_group", "display_geography", "location_precision", "road_reference", "junction_reference", "bus_stop_reference", "type_original", "headline", "modes", "event_kind", "review_status", "candidate_sources", "verified"]
 with AUDIT.open("w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fields)
     writer.writeheader()
     writer.writerows(rows)
 with OUT.open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["year", "month", "geography_group", "location_precision", "road_reference", "junction_reference", "transport_mode", "event_kind", "review_status", "event_count"])
+    writer.writerow(["year", "month", "geography_group", "location_precision", "road_reference", "junction_reference", "bus_stop_reference", "transport_mode", "event_kind", "review_status", "event_count"])
     for key, n in sorted(aggregated.items()):
         writer.writerow([*key, n])
 print("Deduplicerade uppdateringspubliceringar:", REPLACED_PUBLICATIONS)
