@@ -16,7 +16,7 @@ p{line-height:1.55}.sub{color:var(--muted);margin:7px 0 0}
 nav{display:flex;gap:9px;flex-wrap:wrap}nav a{padding:9px 12px;color:var(--blue);text-decoration:none;font-weight:650;border-radius:9px}nav a[aria-current]{background:#e7f0f9}
 .notice{padding:14px 16px;background:#fff6d8;border:1px solid #d9a400;border-radius:10px;margin-bottom:18px}
 .panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:17px;margin-bottom:16px}
-.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.road-option{background:#f9dddd;color:#8e3131} .filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 label{display:block;font-size:.82rem;color:var(--muted);font-weight:650;margin-bottom:7px}
 select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radius:8px}
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.number{font-size:1.8rem;font-weight:700;display:block;margin-top:6px}
@@ -31,7 +31,7 @@ select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radi
 <section class="panel"><h2>Polishändelser i Luleås delområden</h2><p>Välj <strong>Hela Luleå</strong> eller ett delområde. Osäkra platsangivelser tilldelas <strong>Okänt delområde</strong>, men ingår i kommunens totala antal. Endast händelser som är registrerade på Luleå kommun ingår. Välj dataserie eller en separat transportkategori nedan. Transportläge visar endast kandidater i valt trafikslag och byter inte namn på polisens ursprungliga händelser. I den expanderade serien klassificeras varje identifierad underhändelse utifrån sina egna platsuppgifter, inte hela sammanfattningens plats.</p></section>
 <div id="loading" class="panel">Läser in delområdesstatistik…</div>
 <div id="dashboard" hidden>
-<div class="panel filters" id="transportfilter"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div><label for="transportMode">Transportkategori</label><select id="transportMode"><option value="Alla" selected>Alla polishändelser</option></select></div><div><label for="geo" id="geoLabel">Geografi</label><select id="geo"></select></div><div id="districtFilter" hidden><label for="transportDistrict">Stadsdel (kompletterande)</label><select id="transportDistrict"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
+<div class="panel filters" id="transportfilter"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div hidden><label for="transportMode">Transportkategori</label><select id="transportMode"><option value="Alla" selected>Alla polishändelser</option></select></div><div><label for="geo" id="geoLabel">Geografi</label><select id="geo"></select></div><div id="districtFilter" hidden><label for="transportDistrict">Stadsdel (kompletterande)</label><select id="transportDistrict"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
 <p class="muted" id="seriesExplanation" aria-live="polite">Expanderade händelser. Identifierade underhändelser räknas separat; geografi som inte kan fastställas hamnar i Okänt delområde.</p><div class="kpis"><div class="panel"><span class="muted" id="totalLabel">Antal händelser</span><strong id="total" class="number">–</strong></div><div class="panel"><span class="muted">Första månaden</span><strong id="first" class="number">–</strong></div><div class="panel"><span class="muted">Sista månaden</span><strong id="last" class="number">–</strong></div></div>
 <div class="grid"><section class="panel"><h2>Händelser per år</h2><div class="chart"><canvas id="years"></canvas></div></section><section class="panel"><h2>Vanligaste händelsetyper</h2><div class="chart"><canvas id="types"></canvas></div></section></div>
 <div class="grid"><section class="panel"><h2>Händelser per månad</h2><p class="muted">Januari–december summerat över vald tidsperiod. Välj ett enskilt år för månadsfördelningen det året.</p><div class="chart"><canvas id="months"></canvas></div></section><section class="panel"><h2>Geografisk fördelning inom Luleå</h2><p class="muted" id="geographyExplanation">Stadsdelar och okända delområden.</p><div class="chart"><canvas id="districts"></canvas></div></section></div>
@@ -41,32 +41,34 @@ select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radi
 const fmt=new Intl.NumberFormat('sv-SE');let data=[],originalData=[],expandedData=[],transportData=[],charts={};
 function csv(text){const rows=[];let row=[],field='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'&&text[i+1]==='"'){field+='"';i++}else if(c==='"')q=false;else field+=c}else if(c==='"')q=true;else if(c===','){row.push(field);field=''}else if(c==='\n'){row.push(field.replace(/\r$/,''));rows.push(row);row=[];field=''}else field+=c}if(field||row.length){row.push(field);rows.push(row)}const header=rows.shift();return rows.filter(r=>r.length===header.length).map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]])))}
 function setOptions(id,values,all){const el=document.getElementById(id);el.replaceChildren();const opt=document.createElement('option');opt.value='Alla';opt.textContent=all;el.append(opt);for(const v of values){const item=document.createElement('option');item.value=v;item.textContent=v;el.append(item)}}
+let roadNameTotals=new Map();
 function filter(){
  const g=document.getElementById('geo').value,y=document.getElementById('year').value,t=document.getElementById('kind').value;
  const transport=document.getElementById('transportMode').value!=='Alla';
  const district=document.getElementById('transportDistrict').value;
  return data.filter(r=>{
   const placeOk=!transport?(g==='Alla'||r.geography_group===g):
-    (g==='Alla'||g==='road:'+r.road_reference||(g==='junction:known'&&r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven')||(g==='junction:unknown'&&r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'))||g==='stop:'+r.bus_stop_reference);
+    (g==='Alla'||g==='road:'+r.road_reference||(g==='road:other-known'&&r.road_reference!=='Väg ej angiven'&&roadNameTotals.get(r.road_reference)<10)||(g==='road:unknown'&&(!r.road_reference||r.road_reference==='Väg ej angiven'))||(g==='junction:known'&&r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven')||(g==='junction:unknown'&&r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'))||g==='stop:'+r.bus_stop_reference);
   return placeOk&&(!transport||district==='Alla'||r.geography_group===district)&&(y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t);
  });
 }
 function locationOptions(rows,isTransport,mode){
- if(!isTransport){setOptions('geo',[...new Set(rows.map(r=>r.geography_group))].sort((a,b)=>a.localeCompare(b,'sv')),'Hela Luleå');return;}
  const e=document.getElementById('geo');e.replaceChildren();
- const option=(value,label)=>{const o=document.createElement('option');o.value=value;o.textContent=label;e.append(o)};
- option('Alla','Alla sträckor och platser');
- const roads=[...new Set(rows.map(r=>r.road_reference))].filter(v=>v&&v!=='Väg ej angiven').sort((a,b)=>a.localeCompare(b,'sv'));
- const knownJunctions=rows.some(r=>r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven');
- const unknownJunctions=rows.some(r=>r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'));
- const stops=mode==='Kollektivtrafik'?[...new Set(rows.map(r=>r.bus_stop_reference))].filter(v=>v&&v!=='Hållplats ej angiven'):[];
- for(const [label,values,prefix] of [['Vägsträckor',roads,'road:'],['Busshållplatser',stops,'stop:']]){
-  if(!values.length)continue;
-  const group=document.createElement('optgroup');group.label=label;
-  for(const value of values){const o=document.createElement('option');o.value=prefix+value;o.textContent=value;group.append(o)}
-  e.append(group);
+ const add=(parent,value,label,road=false)=>{const o=document.createElement('option');o.value=value;o.textContent=label;if(road){o.className='road-option';o.style.backgroundColor='#f9dddd';o.style.color='#8e3131'}parent.append(o)};
+ add(e,'Alla','Hela Luleå');
+ const areas=document.createElement('optgroup');areas.label='Stadsdelar och områden';
+ for(const name of [...new Set([...originalData,...expandedData].map(r=>r.geography_group))].filter(Boolean).sort((a,b)=>a.localeCompare(b,'sv')))add(areas,name,name);
+ e.append(areas);
+ if(transportData.length){
+  const roads=document.createElement('optgroup');roads.label='Väggeografi (preliminära vägtrafikhändelser)';
+  const rt=transportData.filter(r=>r.transport_mode==='Vägtrafik');
+  const totals=new Map();
+  for(const r of rt)if(r.road_reference&&r.road_reference!=='Väg ej angiven')totals.set(r.road_reference,(totals.get(r.road_reference)||0)+r.event_count);
+  for(const name of [...totals.keys()].filter(name=>totals.get(name)>=10).sort((a,b)=>a.localeCompare(b,'sv')))add(roads,'road:'+name,name+' – vägtrafik',true);
+  if([...totals.values()].some(n=>n<10))add(roads,'road:other-known','Övrig väg, känd väg',true);
+  if(rt.some(r=>!r.road_reference||r.road_reference==='Väg ej angiven'))add(roads,'road:unknown','Övrig väg, okänd väg',true);
+  e.append(roads);
  }
- if(knownJunctions||unknownJunctions){const group=document.createElement('optgroup');group.label='Trafikplatser och korsningar';for(const [value,label] of [['junction:known','Trafikplats, känd plats'],['junction:unknown','Trafikplats, okänd plats']]){if(value==='junction:known'&&!knownJunctions||value==='junction:unknown'&&!unknownJunctions)continue;const o=document.createElement('option');o.value=value;o.textContent=label;group.append(o)}e.append(group)}
 }
 function count(rows,key){const m=new Map();for(const r of rows)m.set(r[key],(m.get(r[key])||0)+r.event_count);return [...m.entries()].sort((a,b)=>b[1]-a[1])}
 function transportGeography(rows){
@@ -132,8 +134,8 @@ function applySeries(){
  const previousTransport=applySeries.previousTransport;
  const kind=previousTransport!==undefined && previousTransport!==isTransport?'Alla':document.getElementById('kind').value;
  applySeries.previousTransport=isTransport;
- document.getElementById('geoLabel').textContent=isTransport?'Sträcka / trafikplats / hållplats':'Geografi';
- document.getElementById('districtFilter').hidden=!isTransport;
+ document.getElementById('geoLabel').textContent='Geografi';
+ document.getElementById('districtFilter').hidden=true;
  locationOptions(data,isTransport,selectedTransport);
  setOptions('transportDistrict',[...new Set(data.map(r=>r.geography_group))].sort((a,b)=>a.localeCompare(b,'sv')),'Hela Luleå');
  setOptions('year',[...new Set(data.map(r=>r.year))].sort((a,b)=>b.localeCompare(a)),'Alla år');
@@ -151,13 +153,15 @@ Promise.all([
  originalData=csv(original).map(r=>({...r,event_count:+r.event_count||0}));
  expandedData=csv(expanded).map(r=>({...r,event_count:+r.event_count||0}));
  transportData=transport?csv(transport).map(r=>({...r,event_count:+r.event_count||0,type_original:r.event_kind})):[];
+ roadNameTotals=new Map();for(const r of transportData)if(r.transport_mode==='Vägtrafik'&&r.road_reference&&r.road_reference!=='Väg ej angiven')roadNameTotals.set(r.road_reference,(roadNameTotals.get(r.road_reference)||0)+r.event_count);
  if(!originalData.length)throw Error('Tomt stadsdelsunderlag');
  if(!expandedData.length){document.getElementById('seriesMode').value='original';document.getElementById('seriesMode').querySelector('option[value="expanded"]').disabled=true;document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';}
  const transportSelect=document.getElementById('transportMode');
  if(transportData.length){setOptions('transportMode',[...new Set(transportData.map(r=>r.transport_mode))].sort((a,b)=>a.localeCompare(b,'sv')),'Alla polishändelser');}
  else {transportSelect.disabled=true;transportSelect.title='Transportdata inväntar publicering';}
  transportSelect.addEventListener('change',applySeries);
- for(const id of ['geo','transportDistrict','year','kind'])document.getElementById(id).addEventListener('change',render);
+ document.getElementById('geo').addEventListener('change',()=>{const v=document.getElementById('geo').value;const target=v.startsWith('road:')?'Vägtrafik':'Alla';if(document.getElementById('transportMode').value!==target){document.getElementById('transportMode').value=target;applySeries()}else render()});
+ for(const id of ['transportDistrict','year','kind'])document.getElementById(id).addEventListener('change',render);
  document.getElementById('seriesMode').addEventListener('change',applySeries);
  document.getElementById('loading').hidden=true;
  document.getElementById('dashboard').hidden=false;
