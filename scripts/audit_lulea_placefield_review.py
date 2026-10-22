@@ -106,6 +106,12 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             review_flags.append("Ortnamn endast i rubrik")
         suggested_area = "Sunderbyn (lokal platsledtråd, händelserelation ej verifierad)" if canonical_settlements == ["sunderbyn"] else ("Rutvik (områdesgräns ej verifierad)" if canonical_settlements == ["rutvik"] else "")
         hospital_relation, hospital_excerpts = hospital_context(event)
+        if hospital_relation == "Möjlig händelseplats":
+            review_flags.append("Sjukhus som möjlig händelseplats: kontrollera originaltext innan beslut")
+        elif hospital_relation == "Transport/vård – ej händelseplats":
+            review_flags.append("Sjukhus omnämns i transport/vård-kontext: får inte ensamt styra områdesklassning")
+        elif hospital_relation == "Oklart omnämnande":
+            review_flags.append("Sjukhusomnämnande utan tydlig händelserelation")
         priority = "Flera källfält" if field_count >= 2 else ("Platsfält" if source_matches["title_location"] or source_matches["location_string"] else "Endast rubrik")
         rows.append({
             "event_id": eid, "year": event.get("year", ""),
@@ -120,6 +126,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             "candidate_area": suggested_area,
             "hospital_relation": hospital_relation,
             "hospital_evidence": hospital_excerpts,
+            "hospital_review_action": ("Granska som möjlig händelseplats" if hospital_relation == "Möjlig händelseplats" else ("Uteslut sjukhus som ensam platsgrund" if hospital_relation == "Transport/vård – ej händelseplats" else ("Kontrollera ursprunglig händelsetext" if hospital_relation else ""))),
             "review_flags": " | ".join(review_flags),
             "needs_geographic_verification": "Ja",
             "review_priority": priority,
@@ -136,7 +143,7 @@ out.parent.mkdir(exist_ok=True)
 with out.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [
         "event_id","year","title_location","location_string","headline",
-        "candidate_sources","matched_terms","candidate_categories","settlement_terms","canonical_settlements","settlement_review","candidate_area","hospital_relation","hospital_evidence","review_flags","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
+        "candidate_sources","matched_terms","candidate_categories","settlement_terms","canonical_settlements","settlement_review","candidate_area","hospital_relation","hospital_evidence","hospital_review_action","review_flags","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
     w.writeheader()
     w.writerows(rows)
 print("Unknown Lulea placefield review rows:", len(rows))
@@ -145,6 +152,7 @@ from collections import Counter
 print("Review groups:", dict(sorted(Counter(r["review_priority"] for r in rows).items())))
 print("Settlement mentions (not approved districts):", dict(sorted(Counter(term for r in rows for term in r["settlement_terms"].split(" | ") if term).items(), key=lambda p: (-p[1], p[0]))))
 print("Events requiring special review:", sum(bool(r["review_flags"]) for r in rows))
+print("Hospital potential scene candidate IDs:", [r["event_id"] for r in rows if r["hospital_relation"] == "Möjlig händelseplats"])
 print("Hospital context categories:", dict(sorted(Counter(r["hospital_relation"] for r in rows if r["hospital_relation"]).items())))
 print("Candidate categories:", dict(sorted(Counter(category for r in rows for category in r["candidate_categories"].split(" | ")).items())))
 assert len(rows) == len({r["event_id"] for r in rows}), "Duplicate event IDs in candidate review"
