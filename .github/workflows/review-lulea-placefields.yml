@@ -1,0 +1,25 @@
+name: Review unknown Lulea place fields
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/audit_lulea_placefield_review.py"
+      - ".github/workflows/review-lulea-placefields.yml"
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate location-field candidate review
+        run: python scripts/audit_lulea_placefield_review.py
+      - name: Upload review as artifact (no changes to published data)
+        uses: actions/upload-artifact@v4
+        with:
+          name: lulea-placefield-review
+          path: data/audit_lulea_placefield_review.csv
+          if-no-files-found: error
