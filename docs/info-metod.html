@@ -77,6 +77,16 @@ body{font-family:var(--font-body)}
 h1,h2,h3,h4,h5,h6,nav a{font-family:var(--font-heading)}
 a{font-family:var(--font-heading)}
 button,input,select,textarea,table{font-family:var(--font-body)}
+.method-flow{display:flex;flex-direction:column;align-items:center;gap:3px;margin:18px auto 20px;max-width:890px}
+.flow-node{width:100%;max-width:480px;padding:13px 17px;border:1.5px solid #a97827;border-radius:9px;background:#ffe7ac;text-align:center;font-size:.93rem;line-height:1.45}
+.flow-start,.flow-end{border-radius:45px;background:#f8d4d0;border-color:#af5d5a}
+.flow-decision{background:#f8d6b5;border-color:#aa6630;font-weight:650}
+.flow-arrow{font-size:24px;line-height:1.15;color:#6b7280}
+.flow-split{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative}
+.flow-branch{display:flex;align-items:center;flex-direction:column;gap:8px;border-top:2px solid #9aa4b2;padding:11px 10px 4px}
+.flow-branch .flow-node{min-height:105px;max-width:none}
+.flow-branchlabel{font-weight:700;font-size:.85rem;text-align:center;color:#324356}
+@media(max-width:650px){.flow-split{grid-template-columns:1fr}.flow-branch{border-left:2px solid #9aa4b2;border-top:none}.flow-branch .flow-node{min-height:0}}
 </style>
 </head>
 <body>
@@ -100,6 +110,33 @@ button,input,select,textarea,table{font-family:var(--font-body)}
 </header>
 
 <main class="wrap">
+<section class="card" id="handelseflode">
+  <h2>Så behandlas en polishändelse</h2>
+  <p>Flödet visar hur polisens publiceringar blir till statistik på webbplatsen. Transport är ett <strong>separat analysläge</strong> och inte en tredje typ av originalhändelse.</p>
+  <div class="method-flow" role="img" aria-label="Polisens publicering hämtas och lagras. Sedan väljs antingen ursprungliga publiceringar eller expanderade händelser. Geografi bedöms separat. Transportläge klassificerar trafikslag samt väg och trafikplats. Kvalitetskontroll sker före diagrammen.">
+    <div class="flow-node flow-start">Polisen publicerar händelse eller sammanfattning</div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node">Import, datum och ursprunglig text sparas</div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node flow-decision">Vilken dataserie väljs?</div>
+    <div class="flow-split">
+      <div class="flow-branch"><div class="flow-branchlabel">Ursprungliga publiceringar</div><div class="flow-node">En publicering som statistisk post. Sammanfattningen behålls som en post.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Expanderade händelser</div><div class="flow-node">Identifiera konkreta underhändelser, kontrollera överlapp och exkludera tomma lägesrapporter.</div></div>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node">Geografisk klassning: platsfält, delområde eller <strong>Okänt delområde</strong></div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node flow-decision">Väljs en transportkategori?</div>
+    <div class="flow-split">
+      <div class="flow-branch"><div class="flow-branchlabel">Nej – Alla polishändelser</div><div class="flow-node">Visa vald original- eller expanderad serie, filtrerad på geografi, år och händelsetyp.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Ja – Transportläge</div><div class="flow-node">Byt till separat, preliminär transportserie. Koda trafikslag, vägsträcka, trafikplats eller hållplats och osäkerhet. En kandidat räknas en gång <em>inom valt trafikslag</em>.</div></div>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node flow-end">Diagram, urval och redovisade antal</div>
+  </div>
+  <p class="muted">Viktiga regler: Väg- eller trafikplatsomnämnande ger inte automatiskt säker stadsdel. Samma händelse kan ha flera trafikslag. Transportserien utgår från maskinellt identifierade kandidater och är inte direkt jämförbar med den expanderade serien. Kompletterande röda vägstaplar i kommunöversikten ska inte adderas till de gula stadsdelsstaplarna.</p>
+</section>
+
   <div class="notice"><strong>Viktigt:</strong> materialet är inte officiell statistik över anmälda brott. För sådan statistik ska BRÅ användas.</div>
 
   <section class="card">
