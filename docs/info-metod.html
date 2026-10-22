@@ -111,30 +111,36 @@ button,input,select,textarea,table{font-family:var(--font-body)}
 
 <main class="wrap">
 <section class="card" id="handelseflode">
-  <h2>Så behandlas en polishändelse</h2>
-  <p>Flödet visar hur polisens publiceringar blir till statistik på webbplatsen. Transport är ett <strong>separat analysläge</strong> och inte en tredje typ av originalhändelse.</p>
-  <div class="method-flow" role="img" aria-label="Polisens publicering hämtas och lagras. Sedan väljs antingen ursprungliga publiceringar eller expanderade händelser. Geografi bedöms separat. Transportläge klassificerar trafikslag samt väg och trafikplats. Kvalitetskontroll sker före diagrammen.">
-    <div class="flow-node flow-start">Polisen publicerar händelse eller sammanfattning</div>
+  <h2>Så behandlas en polishändelse – data, plats och transport</h2>
+  <p>Metoden har två delvis separata klassningar: <strong>geografiskt delområde</strong> och <strong>transport/vägreferens</strong>. När diagrammet för hela Luleå kombinerar dessa får vägreferenser en egen redovisning, men det innebär inte att stadsdelsuppgiften skrivs över.</p>
+  <div class="method-flow" aria-label="Flödesschema från polisens publicering genom dataserie, platskontroll, väg- och transportklassning till diagram">
+    <div class="flow-node flow-start">Publicerad polisnotis eller sammanfattning</div>
     <div class="flow-arrow">↓</div>
-    <div class="flow-node">Import, datum och ursprunglig text sparas</div>
+    <div class="flow-node">Import och bevarande av originaltext, tid, platsfält och händelsetyp</div>
     <div class="flow-arrow">↓</div>
-    <div class="flow-node flow-decision">Vilken dataserie väljs?</div>
+    <div class="flow-node flow-decision">Vald dataserie</div>
     <div class="flow-split">
-      <div class="flow-branch"><div class="flow-branchlabel">Ursprungliga publiceringar</div><div class="flow-node">En publicering som statistisk post. Sammanfattningen behålls som en post.</div></div>
-      <div class="flow-branch"><div class="flow-branchlabel">Expanderade händelser</div><div class="flow-node">Identifiera konkreta underhändelser, kontrollera överlapp och exkludera tomma lägesrapporter.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Ursprunglig serie</div><div class="flow-node">En publicering räknas som en post</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Expanderad serie</div><div class="flow-node">Konkreta underhändelser särskiljs; dubbletter och tomma lägesrapporter kontrolleras. Underhändelsen måste bära egen platsgrund.</div></div>
     </div>
     <div class="flow-arrow">↓</div>
-    <div class="flow-node">Geografisk klassning: platsfält, delområde eller <strong>Okänt delområde</strong></div>
+    <div class="flow-node flow-decision">Granska platsinformationen</div>
+    <div class="flow-node">Skilj faktisk händelseplats från omnämnd väg, färdväg, vårddestination och annan bakgrundsinformation. Motstridiga eller vaga ledtrådar ger ingen säker stadsdel.</div>
     <div class="flow-arrow">↓</div>
-    <div class="flow-node flow-decision">Väljs en transportkategori?</div>
     <div class="flow-split">
-      <div class="flow-branch"><div class="flow-branchlabel">Nej – Alla polishändelser</div><div class="flow-node">Visa vald original- eller expanderad serie, filtrerad på geografi, år och händelsetyp.</div></div>
-      <div class="flow-branch"><div class="flow-branchlabel">Ja – Transportläge</div><div class="flow-node">Byt till separat, preliminär transportserie. Koda trafikslag, vägsträcka, trafikplats eller hållplats och osäkerhet. En kandidat räknas en gång <em>inom valt trafikslag</em>.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Geografisk klassning</div><div class="flow-node">En tydlig och entydig platsuppgift → stadsdel/område. Oprecis eller motstridig uppgift → <strong>Okänt delområde</strong> eller särskild kategori för flera områden. En lång vägsträcka är inte automatiskt en stadsdel.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Parallell transportklassning</div><div class="flow-node">Pröva om själva händelsen rör vägtrafik, gods, kollektivtrafik, flyg med mera. Identifiera dokumenterad vägreferens, trafikplats eller hållplats – utan att anta en exakt punkt.</div></div>
     </div>
     <div class="flow-arrow">↓</div>
-    <div class="flow-node flow-end">Diagram, urval och redovisade antal</div>
+    <div class="flow-node flow-decision">Vilket diagram och urval visas?</div>
+    <div class="flow-split">
+      <div class="flow-branch"><div class="flow-branchlabel">Alla polishändelser</div><div class="flow-node">Ordinarie ursprunglig/expanderad stadsdelsserie. I <strong>Hela Luleå</strong> visas E4, väg 97 och väg 94 även som kompletterande röda vägtrafikstaplar. De sorteras ihop med stadsdelarna i topp 15, men är <strong>inte additiva</strong>.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Vald transportkategori</div><div class="flow-node">Den preliminära transportserien används i stället. I dess geografiska diagram ges en dokumenterad vägreferens företräde som <strong>visningskategori</strong>. Annars visas känt område eller okänd vägsträcka/okänt delområde. Varje rad får en diagramkategori.</div></div>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-node flow-end">Diagram och antal – med dokumenterad geografisk osäkerhet</div>
   </div>
-  <p class="muted">Viktiga regler: Väg- eller trafikplatsomnämnande ger inte automatiskt säker stadsdel. Samma händelse kan ha flera trafikslag. Transportserien utgår från maskinellt identifierade kandidater och är inte direkt jämförbar med den expanderade serien. Kompletterande röda vägstaplar i kommunöversikten ska inte adderas till de gula stadsdelsstaplarna.</p>
+  <p class="muted"><strong>Vägarnas prioritet gäller diagramindelningen, inte en ändring av källdatats stadsdel.</strong> Vid val av en viss stadsdel döljs kommunövergripande vägstaplar. I transportläget samlas mindre kända vägsträckor och okända vägsträckor i särskilda kategorier. En väghänvisning är inte ensam bevis för att händelsen skedde där. Samma händelse kan förekomma i flera trafikslag; summera därför inte trafikslagen eller de kompletterande röda och gula staplarna.</p>
 </section>
 
   <div class="notice"><strong>Viktigt:</strong> materialet är inte officiell statistik över anmälda brott. För sådan statistik ska BRÅ användas.</div>
