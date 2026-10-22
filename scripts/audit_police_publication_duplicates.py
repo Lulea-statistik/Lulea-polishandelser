@@ -134,3 +134,19 @@ with diff_out.open("w",encoding="utf-8",newline="") as stream:
 print("Förändrade textjämförelser:",len(diff_rows))
 for r in diff_rows[:15]:
     print("TEXT_DIFF_REVIEW",r["base_event_id"],r["compared_event_id"],repr(r["headline"][:90]),repr(r["added_or_replaced_excerpt"][:350]),repr(r["removed_or_replaced_excerpt"][:140]))
+
+# Human-reviewed triage notes. These are not production dedup decisions.
+triage_out=ROOT/"data/review_police_duplicate_text_cases.csv"
+triage=[
+ ("105825 | 105831 | 105832","Stark kandidat – granska full text","E4 Rönningen: one notice adds vehicle recovery; likely updated publication chain","Nej"),
+ ("172103 | 172106","Sammanfattning – kontrollera underhändelser","A later night summary adds a quiet-period report; do not discard separately extracted incidents","Nej"),
+ ("245223 | 245225","Sammanfattning – kontrollera underhändelser","Different detail level including assault report; inspect parent/child extraction","Nej"),
+ ("251321 | 251346","Risk för olika händelser","Generic shoplifting headline, differing persons and circumstances; no automatic merge","Nej"),
+ ("257284 | 257299","Risk för olika händelser","Generic grocery theft headline, differing details; no automatic merge","Nej"),
+ ("107404 | 107414","Verifierad sammanslagning","2019-02-14 same taxi-car crash with later 12:55 update; keep 107414","Ja"),
+]
+with triage_out.open("w",encoding="utf-8",newline="") as stream:
+    writer=csv.writer(stream)
+    writer.writerow(["event_ids","review_class","rationale","approved_for_dedup"])
+    writer.writerows(triage)
+print("Fördjupade granskningsfall:",len(triage),"varav redan verifierad sammanslagning:",sum(r[-1]=="Ja" for r in triage))
