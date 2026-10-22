@@ -74,7 +74,7 @@ JUNCTION_NAMES = [
 ]
 def junction_reference(row):
     place = norm(" ".join(str(row.get(k) or "") for k in ("title_location","location_string","headline")))
-    compact = re.sub(r"\\s*/\\s*", "/", place)
+    compact = re.sub(r"\s*/\s*", "/", place)
     for name, needle in JUNCTION_NAMES:
         if needle in compact:
             return name
