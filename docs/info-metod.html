@@ -129,18 +129,18 @@ button,input,select,textarea,table{font-family:var(--font-body)}
     <div class="flow-arrow">↓</div>
     <div class="flow-split">
       <div class="flow-branch"><div class="flow-branchlabel">Geografisk klassning</div><div class="flow-node">En tydlig och entydig platsuppgift → stadsdel/område. Oprecis eller motstridig uppgift → <strong>Okänt delområde</strong> eller särskild kategori för flera områden. En lång vägsträcka är inte automatiskt en stadsdel.</div></div>
-      <div class="flow-branch"><div class="flow-branchlabel">Parallell transportklassning</div><div class="flow-node">Pröva om själva händelsen rör vägtrafik, gods, kollektivtrafik, flyg med mera. Identifiera dokumenterad vägreferens, trafikplats eller hållplats – utan att anta en exakt punkt.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Parallell transportklassning</div><div class="flow-node">Fråga: gäller själva händelsen vägtrafik? Om ja används väggeografi i vägtrafikläget; om nej behålls platsbunden geografi i den ordinarie serien. Gods, buss, flyg och andra trafikslag klassas separat och kan överlappa. Identifiera vägreferens utan att anta exakt punkt.</div></div>
     </div>
     <div class="flow-arrow">↓</div>
     <div class="flow-node flow-decision">Vilket diagram och urval visas?</div>
     <div class="flow-split">
       <div class="flow-branch"><div class="flow-branchlabel">Alla polishändelser</div><div class="flow-node">Ordinarie ursprunglig/expanderad stadsdelsserie. I <strong>Hela Luleå</strong> visas E4, väg 97 och väg 94 även som kompletterande röda vägtrafikstaplar. De sorteras ihop med stadsdelarna i topp 15, men är <strong>inte additiva</strong>.</div></div>
-      <div class="flow-branch"><div class="flow-branchlabel">Vald transportkategori</div><div class="flow-node">Den preliminära transportserien används i stället. I dess geografiska diagram ges en dokumenterad vägreferens företräde som <strong>visningskategori</strong>. Annars visas känt område eller okänd vägsträcka/okänt delområde. Varje rad får en diagramkategori.</div></div>
+      <div class="flow-branch"><div class="flow-branchlabel">Vald transportkategori</div><div class="flow-node">En separat preliminär serie används. <strong>Vägtrafik:</strong> känd väg med minst 10 händelser under hela datasetets tidsperiod får en egen stapel (t.ex. E4, väg 97, väg 94, Bodenvägen); mindre kända vägar grupperas som <em>Övrig väg, känd väg</em>. Utan namngiven väg blir det <em>Övrig väg, okänd väg</em>, även om ett delområde är känt. Varje vägtrafikkandidat får exakt en vägkategori.</div></div>
     </div>
     <div class="flow-arrow">↓</div>
     <div class="flow-node flow-end">Diagram och antal – med dokumenterad geografisk osäkerhet</div>
   </div>
-  <p class="muted"><strong>Vägarnas prioritet gäller diagramindelningen, inte en ändring av källdatats stadsdel.</strong> Vid val av en viss stadsdel döljs kommunövergripande vägstaplar. I transportläget samlas mindre kända vägsträckor och okända vägsträckor i särskilda kategorier. En väghänvisning är inte ensam bevis för att händelsen skedde där. Samma händelse kan förekomma i flera trafikslag; summera därför inte trafikslagen eller de kompletterande röda och gula staplarna.</p>
+  <p class="muted"><strong>Vägarnas prioritet gäller diagramindelningen, inte en ändring av källdatats stadsdel.</strong> Vid val av en viss stadsdel döljs kommunövergripande vägstaplar. I transportlägets vägtrafikdiagram skiljs namngivna vägar med minst 10 händelser från små kända och okända vägar. Det här är en <strong>visningsprioritet</strong>, inte en påstådd säker position: originaluppgift om stadsdel bevaras. Vägtrafikkandidater kan inte utan en händelse-ID-baserad sammanfogning ersätta platskategorierna i hela den expanderade serien. En väghänvisning är inte ensam bevis för att händelsen skedde där. Samma händelse kan förekomma i flera trafikslag; summera därför inte trafikslagen eller de kompletterande röda och gula staplarna.</p>
 </section>
 
   <div class="notice"><strong>Viktigt:</strong> materialet är inte officiell statistik över anmälda brott. För sådan statistik ska BRÅ användas.</div>
