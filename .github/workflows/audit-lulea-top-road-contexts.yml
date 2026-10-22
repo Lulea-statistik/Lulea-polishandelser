@@ -1,0 +1,24 @@
+name: Audit Lulea top road contexts
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_top_eight_road_context.py
+      - .github/workflows/audit-lulea-top-road-contexts.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_top_eight_road_context.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lulea-top-eight-road-contexts
+          path: data/audit_lulea_top_eight_road_context.csv
+          if-no-files-found: error
