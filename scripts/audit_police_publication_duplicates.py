@@ -71,3 +71,30 @@ with group_out.open("w",encoding="utf-8",newline="") as stream:
 print("Granskningstabell grupper:","grupper",len(groups),"publiceringar",len(review_rows))
 print("Grupper med identisk löptext:",sum(len({normalized(event_by_id[eid].get("content")) for eid in group})==1 for group in groups))
 print("Grupper med olika löptext:",sum(len({normalized(event_by_id[eid].get("content")) for eid in group})>1 for group in groups))
+
+# Prioritise review without turning textual identity into automatic dedup.
+priority_out=ROOT/"data/audit_police_duplicate_review_priority.csv"
+priorities=[]
+for n,group in enumerate(groups,1):
+    rr=[event_by_id[eid] for eid in group if eid in event_by_id]
+    identical=len({normalized(r.get("content")) for r in rr})==1
+    has_geo=len({normalized(r.get("location_string")) for r in rr})>1
+    transport=any(any(x in normalized(r.get("type_original")+" "+(r.get("headline") or "")) for x in ("trafik","olycka","rattfylleri")) for r in rr)
+    already_reviewed=set(group)=={"107404","107414"}
+    priorities.append({"group_id":f"G{n:03d}","event_ids":" | ".join(group),
+        "number_of_publications":len(group),
+        "text_relation":"Identisk löptext" if identical else "Textskillnader",
+        "different_location_fields":"Ja" if has_geo else "Nej",
+        "transport_related":"Ja" if transport else "Nej",
+        "review_priority":"Redan verifierad" if already_reviewed else
+            ("Hög – geografisk skillnad" if has_geo else
+             "Hög – uppdaterad text" if not identical else
+             "Medel – identisk text"),
+        "review_decision":"Verifierad sammanslagning" if already_reviewed else "Ej granskad"})
+with priority_out.open("w",encoding="utf-8",newline="") as stream:
+    writer=csv.DictWriter(stream,fieldnames=list(priorities[0]) if priorities else [
+       "group_id","event_ids","number_of_publications","text_relation",
+       "different_location_fields","transport_related","review_priority","review_decision"])
+    writer.writeheader();writer.writerows(priorities)
+from collections import Counter
+print("Prioriteringsklasser:",dict(Counter(r["review_priority"] for r in priorities)))
