@@ -13,6 +13,18 @@ import unicodedata
 # 107414 is the updated notice; 107404 is its earlier version.
 REPLACED_BY = {"107404": "107414"}
 
+# Distinct incidents despite generic or near-identical police headlines.
+# A negative review decision is not an automatic positive dedup decision.
+DO_NOT_MERGE = [
+    {"243612", "243613"},  # Innerstaden woman vs Skutviken man
+    {"251321", "251346"},  # differing people and offences
+    {"257284", "257299"},  # teenager vs adult man
+]
+
+def prohibited_merge(a, b):
+    return any({str(a), str(b)} <= group for group in DO_NOT_MERGE)
+
+
 def canonical_event_id(event_id):
     key = str(event_id or "").strip()
     return REPLACED_BY.get(key, key)
