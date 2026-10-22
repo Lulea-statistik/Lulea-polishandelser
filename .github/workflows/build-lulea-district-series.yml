@@ -22,7 +22,21 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/build_lulea_districts.py
       - run: python scripts/build_lulea_districts_expanded.py
-      - name: Commit district data
+      - name: Verify generated series in test branch
+        if: github.ref != 'refs/heads/main'
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          p=Path("docs/data/lulea_district_expanded_monthly.csv")
+          rows=list(csv.DictReader(p.open(encoding="utf-8")))
+          n=sum(int(x["event_count"]) for x in rows)
+          unknown=sum(int(x["event_count"]) for x in rows if x["geography_group"]=="Okänt delområde")
+          assert n==9743,(n,unknown)
+          print("Validated expanded series total:",n,"unknown:",unknown)
+          PY
+      - name: Commit district data (main only)
+        if: github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
