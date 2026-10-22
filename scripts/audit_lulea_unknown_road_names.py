@@ -13,7 +13,7 @@ details=[]
 with (ROOT/"data/summary_details_dedup.csv").open(encoding="utf-8-sig",newline="") as f:details=list(csv.DictReader(f))
 # Capture complete place names, not generic 'väg' and not arbitrary narrative.
 ROAD_WORD=re.compile(r"(?<!\w)([A-Za-zÅÄÖåäö][A-Za-zÅÄÖåäö\-]{2,}(?:vägen|väg|leden|led|gatan|gata|gränd|granden|bron|banken))\b",re.I)
-ROAD_NO=re.compile(r"\b(?:väg(?:en)?\s*|rv\s*|länsväg\s*)(\d{2,4})\b",re.I)
+ROAD_NO=re.compile(r"\b(?:(?:riks|läns)?väg(?:en)?\s*(?:nr\.?\s*)?|rv\s*)(\d{2,4})\b",re.I)
 ALIASES={"svartöleden":"Svartövägen / Svartöleden"}
 results=Counter(); examples=defaultdict(list); hits=Counter()
 for row in records:
@@ -28,9 +28,9 @@ for row in records:
   d=events.get(eid,{})
   primary=" ".join(d.get(k) or "" for k in ("title_location","location_string"))
   extra=" ".join(d.get(k) or "" for k in ("headline","description"))
- found_primary={ALIASES.get(x.casefold(),x.casefold()) for x in ROAD_WORD.findall(primary)}
+ found_primary={ALIASES.get(x.casefold(),x.casefold()) for x in ROAD_WORD.findall(primary) if x.casefold() not in ("riksväg","länsväg","landsväg")}
  found_primary.update("Väg "+x for x in ROAD_NO.findall(primary))
- found_extra={ALIASES.get(x.casefold(),x.casefold()) for x in ROAD_WORD.findall(extra)}
+ found_extra={ALIASES.get(x.casefold(),x.casefold()) for x in ROAD_WORD.findall(extra) if x.casefold() not in ("riksväg","länsväg","landsväg")}
  found_extra.update("Väg "+x for x in ROAD_NO.findall(extra))
  for name in found_primary:
   results[(name,"Eget platsfält")]+=1
@@ -48,4 +48,7 @@ with out.open("w",encoding="utf-8",newline="") as f:
   w.writerow([name,kind,n," | ".join(examples[(name,kind)]),"Ej geografiskt verifierad"])
 print("UNKNOWN_ROAD_DISCOVERY",dict(hits))
 print("Top candidates",[(k,v) for k,v in results.most_common(35)])
+for n in (596,599,607,970,616,583,584,582):
+ print("NUMBERED_ROAD",n,"own_field",results.get(("Väg "+str(n),"Eget platsfält"),0),"other_text",results.get(("Väg "+str(n),"Bara övrig text - måste verifieras"),0))
+assert not any(name.casefold() in ("riksväg","länsväg") for name,_ in results),"Generic road type falsely detected as named road"
 print("Saved",out)
