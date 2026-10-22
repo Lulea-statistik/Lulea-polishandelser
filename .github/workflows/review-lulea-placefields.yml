@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - "scripts/audit_lulea_placefield_review.py"
+      - "scripts/audit_lulea_expanded_unknown.py"
       - ".github/workflows/review-lulea-placefields.yml"
 permissions:
   contents: read
@@ -17,9 +18,13 @@ jobs:
           python-version: "3.12"
       - name: Generate location-field candidate review
         run: python scripts/audit_lulea_placefield_review.py
+      - name: Audit unknown expanded-series locations
+        run: python scripts/audit_lulea_expanded_unknown.py
       - name: Upload review as artifact (no changes to published data)
         uses: actions/upload-artifact@v4
         with:
           name: lulea-placefield-review
-          path: data/audit_lulea_placefield_review.csv
+          path: |
+            data/audit_lulea_placefield_review.csv
+            data/audit_lulea_expanded_unknown.csv
           if-no-files-found: error
