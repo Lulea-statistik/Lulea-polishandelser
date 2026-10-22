@@ -15,7 +15,7 @@ PLACE_TERMS = (
     "smedsbyn", "kallax", "bensbyn", "sinksundet", "borjelslandet",
     "balinge", "stromsund", "bjorsbyn", "jamton", "niemisel",
     "sunderbyn", "gammelstan", "gammelstad", "orarna", "kyrkbyn",
-    "bjurstrask", "sunderby sjukhus", "sunderbyns sjukhus", "shell", "musikomat", "postnord"
+    "bjurstrask", "sunderby sjukhus", "sunderbyns sjukhus", "sjukhuset", "sjukhus", "shell", "musikomat", "postnord"
 )
 ROAD_SUFFIXES = {"vagen", "gatan", "grand", "stigen", "leden", "bron"}
 TERM_PATTERNS = {term: re.compile((r"(?<![a-z])[a-z]{2,}" if term in ROAD_SUFFIXES else r"(?<![a-z])") + re.escape(term) + r"(?![a-z])") for term in PLACE_TERMS}
@@ -26,7 +26,7 @@ PLACE_CATEGORIES = {
     "ort_eller_by": {"rutvik", "smedsbyn", "kallax", "bensbyn", "sinksundet",
         "borjelslandet", "balinge", "stromsund", "bjorsbyn", "jamton",
         "niemisel", "sunderbyn", "gammelstan", "gammelstad",
-        "orarna", "kyrkbyn", "bjurstrask", "sunderby sjukhus", "sunderbyns sjukhus"},
+        "orarna", "kyrkbyn", "bjurstrask", "sunderby sjukhus", "sunderbyns sjukhus", "sjukhuset", "sjukhus"},
     "verksamhet": {"shell", "musikomat", "postnord"},
     "vag_eller_bro": {"vagen", "gatan", "grand", "stigen", "leden", "bron"},
 }
@@ -57,7 +57,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
         categories = sorted(kind for kind, names in PLACE_CATEGORIES.items() if any(term in names for term in matched))
         # Candidate only: don't infer official district from a place name.
         settlement_terms = sorted(set(matched) & PLACE_CATEGORIES["ort_eller_by"])
-        canonical_settlements = sorted(set("sunderbyn" if term in {"sunderby sjukhus", "sunderbyns sjukhus"} else term for term in settlement_terms))
+        canonical_settlements = sorted(set("sunderbyn" if term in {"sunderby sjukhus", "sunderbyns sjukhus", "sjukhuset", "sjukhus"} else term for term in settlement_terms))
         settlement_review = (
             "Kontrollera ortens kommuntillhörighet, områdesindelning och händelseplats"
             if settlement_terms else ""
@@ -69,6 +69,8 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             review_flags.append("Kallax kan avse by, flygplats eller större område")
         # Sunderby sjukhus och orten Sunderbyn tillhör samma analysområde.
         # Enbart omnämnande av sjukhuset styr dock inte händelseplatsen.
+        if any(term in matched for term in {"sjukhus", "sjukhuset"}):
+            review_flags.append("Generiskt sjukhusord: lokal Sunderbyn-ledtråd, men verifiera att händelsen inträffade på sjukhuset")
         if "sunderbyn" in canonical_settlements and len(canonical_settlements) > 1:
             review_flags.append("Sunderbyn tillsammans med annan ort: verifiera händelseplats")
         if "rutvik" in settlement_terms and any(term in matched for term in ROAD_SUFFIXES):
@@ -81,7 +83,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             review_flags.append("Verksamhetens läge och händelserelation måste verifieras")
         if settlement_terms and not (source_matches["title_location"] or source_matches["location_string"]):
             review_flags.append("Ortnamn endast i rubrik")
-        suggested_area = "Sunderbyn" if canonical_settlements == ["sunderbyn"] else ("Rutvik (områdesgräns ej verifierad)" if canonical_settlements == ["rutvik"] else "")
+        suggested_area = "Sunderbyn (lokal platsledtråd, händelserelation ej verifierad)" if canonical_settlements == ["sunderbyn"] else ("Rutvik (områdesgräns ej verifierad)" if canonical_settlements == ["rutvik"] else "")
         priority = "Flera källfält" if field_count >= 2 else ("Platsfält" if source_matches["title_location"] or source_matches["location_string"] else "Endast rubrik")
         rows.append({
             "event_id": eid, "year": event.get("year", ""),
