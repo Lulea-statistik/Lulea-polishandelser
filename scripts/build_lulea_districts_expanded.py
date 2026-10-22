@@ -14,6 +14,25 @@ OUT=ROOT/"docs/data/lulea_district_expanded_monthly.csv"
 def yes(v):return str(v or "").strip().casefold() in ("true","1")
 def is_lulea(r):return (r.get("geography_group") or "").strip()=="Luleå kommun"
 def valid(r):return str(r.get("year","")).isdigit() and str(r.get("month","")).isdigit() and 1<=int(r["month"])<=12
+# Only an exact location field from the individual subevent can use these aliases.
+# Never infer from a parent summary, longer narrative, or road mention.
+EXPLICIT_PLACE_ALIASES={"centrala luleå":"Centrum","skutvikens industriområde":"Skutviken"}
+def subevent_district(row):
+ specific={"title_location":row.get("place_text") or "",
+           "location_string":"","headline":"",
+           "description":row.get("description") or "","content":""}
+ current=district(specific)
+ if current!=UNKNOWN:return current
+ place=(row.get("place_text") or "").strip().casefold()
+ target=EXPLICIT_PLACE_ALIASES.get(place)
+ if not target:return current
+ # Contradictory explicit district or long road elsewhere in the text
+ # must remain unknown pending source review.
+ from build_lulea_districts import PATTERNS,ROAD_PATTERNS,normalize
+ description=normalize(row.get("description") or "")
+ if any(name!=target and any(p.search(description) for p in pats) for name,pats in PATTERNS.items()):return UNKNOWN
+ if any(p.search(description) for p in ROAD_PATTERNS):return UNKNOWN
+ return target
 def key(r,typ,geo):return (str(r["year"]),f'{int(r["month"]):02d}',geo,typ)
 with EVENTS.open(encoding="utf-8-sig",newline="") as f:
  events=list(csv.DictReader(f))
@@ -38,11 +57,8 @@ for row in events:
  counts[key(row,typ,district(row))]+=1
 for row in details:
  if not yes(row.get("include_as_extra")) or not is_lulea(row) or not valid(row):continue
- # Plats från denna underhändelse, ALDRIG från föräldersammanfattningen.
- specific={"title_location":row.get("place_text") or "",
-           "location_string":"","headline":"",
-           "description":row.get("description") or "","content":""}
- geo=district(specific)
+ # Plats från underhändelsen, aldrig från föräldersammanfattningen.
+ geo=subevent_district(row)
  counts[key(row,row.get("event_type_extracted") or "Okänd händelsetyp",geo)]+=1
 OUT.parent.mkdir(parents=True,exist_ok=True)
 with OUT.open("w",encoding="utf-8",newline="") as f:
