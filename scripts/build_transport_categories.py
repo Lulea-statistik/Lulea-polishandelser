@@ -5,6 +5,7 @@ import re
 import unicodedata
 from collections import Counter, defaultdict
 from pathlib import Path
+from build_lulea_districts import district, UNKNOWN
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/events.csv"
@@ -68,8 +69,10 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     if not strong and match(narrative, INCIDENT_CONTEXT):
         relation = "Transport till vård omnämns – kontroll krävs"
     kind = kinds[0] if len(kinds) == 1 else ("Flera händelsetyper" if kinds else "Annan/oklar")
+    geo = district(row)
     rows.append({
         "event_id": eid, "year": year, "month": month.zfill(2),
+        "geography_group": geo,
         "type_original": row.get("type_original") or "",
         "headline": (row.get("headline") or "")[:250],
         "modes": " | ".join(modes), "event_kind": kind,
@@ -82,7 +85,7 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
 
 AUDIT.parent.mkdir(parents=True, exist_ok=True)
 OUT.parent.mkdir(parents=True, exist_ok=True)
-fields = ["event_id", "year", "month", "type_original", "headline", "modes", "event_kind", "review_status", "candidate_sources", "verified"]
+fields = ["event_id", "year", "month", "geography_group", "type_original", "headline", "modes", "event_kind", "review_status", "candidate_sources", "verified"]
 with AUDIT.open("w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fields)
     writer.writeheader()
@@ -94,6 +97,8 @@ with OUT.open("w", encoding="utf-8", newline="") as f:
         writer.writerow([*key, n])
 print("Transportkandidater:", len(rows), "unika händelser")
 print("Trafikslag:", dict(Counter(mode for r in rows for mode in r["modes"].split(" | "))))
+print("Transportkandidater med Okänt delområde:", sum(r["geography_group"] == UNKNOWN for r in rows))
+print("Okänt delområde per trafikslag:", dict(Counter(mode for r in rows if r["geography_group"] == UNKNOWN for mode in r["modes"].split(" | "))))
 print("Granskningsstatus:", dict(Counter(r["review_status"] for r in rows)))
 print("Obs: trafikslag överlappar; summera inte olika trafikslag till antal unika händelser")
 assert len(rows) == len({r["event_id"] for r in rows}), "Dubblerade händelser"
