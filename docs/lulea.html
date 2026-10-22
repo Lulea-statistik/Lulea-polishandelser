@@ -55,10 +55,10 @@ function applySeries(){
  document.getElementById('seriesMode').disabled=isTransport;
  const mode=document.getElementById('seriesMode').value;
  data=isTransport?transportData.filter(r=>r.transport_mode===selectedTransport):(mode==='original'?originalData:expandedData);
- const geo=document.getElementById('geo').value, year=document.getElementById('year').value,kind=document.getElementById('kind').value;
+ const geo=document.getElementById('geo').value, year=document.getElementById('year').value;
  // Switching statistical bases must not reuse a previous series' event-kind selection.
  const previousTransport=applySeries.previousTransport;
- if(previousTransport!==undefined && previousTransport!==isTransport){document.getElementById('kind').value='Alla';}
+ const kind=previousTransport!==undefined && previousTransport!==isTransport?'Alla':document.getElementById('kind').value;
  applySeries.previousTransport=isTransport;
  setOptions('geo',[...new Set(data.map(r=>r.geography_group))].sort((a,b)=>a.localeCompare(b,'sv')),'Hela Luleå');
  setOptions('year',[...new Set(data.map(r=>r.year))].sort((a,b)=>b.localeCompare(a)),'Alla år');
