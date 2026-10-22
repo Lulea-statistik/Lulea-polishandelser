@@ -98,3 +98,39 @@ with priority_out.open("w",encoding="utf-8",newline="") as stream:
     writer.writeheader();writer.writerows(priorities)
 from collections import Counter
 print("Prioriteringsklasser:",dict(Counter(r["review_priority"] for r in priorities)))
+
+# Compact source-text comparison for changed groups, including location mentions.
+from difflib import SequenceMatcher
+diff_out=ROOT/"data/audit_police_duplicate_text_differences.csv"
+diff_rows=[]
+for n,group in enumerate(groups,1):
+    rr=[event_by_id[eid] for eid in group if eid in event_by_id]
+    bodies=[normalized(r.get("content")) for r in rr]
+    if len(set(bodies))<2:continue
+    base=min(rr,key=lambda r:len(normalized(r.get("content"))))
+    base_text=normalized(base.get("content"))
+    for r in rr:
+        if r is base:continue
+        candidate=normalized(r.get("content"))
+        matcher=SequenceMatcher(None,base_text,candidate,autojunk=False)
+        added=" ".join(candidate[j1:j2] for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag in ("insert","replace")).strip()
+        removed=" ".join(base_text[i1:i2] for tag,i1,i2,j1,j2 in matcher.get_opcodes() if tag in ("delete","replace")).strip()
+        diff_rows.append({
+          "group_id":f"G{n:03d}","base_event_id":base.get("event_id",""),
+          "compared_event_id":r.get("event_id",""),
+          "date":r.get("date",""),"headline":r.get("headline","")[:250],
+          "location_string_base":base.get("location_string","")[:180],
+          "location_string_compared":r.get("location_string","")[:180],
+          "base_length":len(base_text),"compared_length":len(candidate),
+          "added_or_replaced_excerpt":added[:900],
+          "removed_or_replaced_excerpt":removed[:500],
+          "review_decision":"Ej granskad"})
+with diff_out.open("w",encoding="utf-8",newline="") as stream:
+    columns=["group_id","base_event_id","compared_event_id","date","headline",
+       "location_string_base","location_string_compared","base_length","compared_length",
+       "added_or_replaced_excerpt","removed_or_replaced_excerpt","review_decision"]
+    writer=csv.DictWriter(stream,fieldnames=columns)
+    writer.writeheader();writer.writerows(diff_rows)
+print("Förändrade textjämförelser:",len(diff_rows))
+for r in diff_rows[:15]:
+    print("TEXT_DIFF_REVIEW",r["base_event_id"],r["compared_event_id"],repr(r["headline"][:90]),repr(r["added_or_replaced_excerpt"][:350]),repr(r["removed_or_replaced_excerpt"][:140]))
