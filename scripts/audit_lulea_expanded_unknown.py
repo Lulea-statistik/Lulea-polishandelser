@@ -83,3 +83,23 @@ with summary_path.open("w",encoding="utf-8",newline="") as stream:
 print("Unknown geography triage by source and priority:",dict(sorted(summary.items())))
 assert len(rows)==sum(summary.values())
 assert all(not r["proposed_district"] for r in rows)
+
+# Describe the actual evidence behind priority one before any district reassignment.
+from collections import defaultdict
+place_groups=defaultdict(list)
+for row in rows:
+    if row["source"]!="expanded_subevent" or not row["review_priority"].startswith("1 "):
+        continue
+    phrase=(row["place_text"] or "").strip().casefold()
+    place_groups[phrase].append(row)
+ranked=sorted(place_groups.items(),key=lambda pair:(-len(pair[1]),pair[0]))
+queue=ROOT/"data/audit_lulea_placefield_frequencies.csv"
+with queue.open("w",encoding="utf-8",newline="") as stream:
+    writer=csv.writer(stream)
+    writer.writerow(["place_text","review_rows","example_parent_ids","review_decision"])
+    for phrase,group in ranked:
+        writer.writerow([phrase,len(group)," | ".join(str(x["parent_event_id"]) for x in group[:4]),"Ej granskad"])
+print("Distinct specified unknown subevent place expressions:",len(ranked))
+for phrase,group in ranked[:35]:
+    print("UNKNOWN_PLACE_FREQUENCY",len(group),repr(phrase[:110]),"example_parent_ids=",[x["parent_event_id"] for x in group[:3]])
+print("All proposed geographic decisions remain blank.")
