@@ -68,6 +68,10 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
         relation = "Överlappande trafikslag – kontroll krävs"
     if not strong and match(narrative, INCIDENT_CONTEXT):
         relation = "Transport till vård omnämns – kontroll krävs"
+    if "Flygtrafik" in modes and match(primary, [r"flygplats\\w*"]) and not match(primary, [r"flygplan\\w*", r"flygtrafik\\w*"]):
+        relation = "Flygplats kan vara enbart platsangivelse – kontroll krävs"
+    if "Sjöfart" in modes and not strong:
+        relation = "Sjöfart endast i löptext – kontroll krävs"
     kind = kinds[0] if len(kinds) == 1 else ("Flera händelsetyper" if kinds else "Annan/oklar")
     geo = district(row)
     rows.append({
