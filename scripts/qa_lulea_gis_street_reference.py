@@ -25,7 +25,7 @@ for x in rows:
  target[name]=int(x["gis_segments"])
 assert not duplicates,("Duplicate GIS reference names",duplicates[:10])
 print("GIS_REFERENCE",{"named_roads":len(roads),"locality_clues":len(areas),"total_unique":len(rows)})
-assert len(roads)+len(areas)==len(rows)
+assert len(roads)==1106 and len(areas)==184 and len(rows)==1290, "Incomplete GIS register: require all 1290 unique names"
 # The source is *only* a vocabulary; never automatically assign a police event to a district or road.
 
 # Run a conservative dictionary review against the existing own-field road QA.
