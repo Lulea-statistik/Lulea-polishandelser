@@ -1,0 +1,24 @@
+name: QA Lulea own-place road candidates
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_own_place_road_qa.py
+      - .github/workflows/qa-lulea-own-place-roads.yml
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_own_place_road_qa.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lulea-own-place-road-qa
+          path: data/audit_lulea_own_place_road_qa.csv
+          if-no-files-found: error
