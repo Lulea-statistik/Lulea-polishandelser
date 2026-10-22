@@ -39,6 +39,22 @@ for group in groups[:20]:
         str(event_by_id[eid].get("headline") or "")[:110]+" / text_len="+str(len(event_by_id[eid].get("content") or ""))
         for eid in group if eid in event_by_id))
 
+# Summary notices may contain multiple independently countable subevents.
+def summary_notice(row):
+    heading=normalized(row.get("headline") or "")
+    typ=normalized(row.get("type_original") or "")
+    return str(row.get("is_summary") or "").lower() in ("true","1") or "sammanfattning" in typ or any(
+        term in heading for term in ("urval av nattens", "urval av kvallens", "nattens handelser", "polisverksamhet")
+    )
+
+def group_warning(group):
+    rr=[event_by_id[eid] for eid in group if eid in event_by_id]
+    if any(prohibited_merge(a,b) for a in group for b in group if a!=b):
+        return "Verifierat separata händelser – slå inte ihop"
+    if any(summary_notice(row) for row in rr):
+        return "Sammanfattning – kontrollera nytillkomna underhändelser"
+    return "Manuell verifiering krävs"
+
 # Row-level review artifact. All source publication IDs remain available.
 group_out=ROOT/"data/audit_police_publication_groups.csv"
 from police_publication_dedup import normalized
@@ -59,7 +75,7 @@ for n,group in enumerate(groups,1):
             "identical_content_in_group":"Ja" if distinct_texts==1 else "Nej",
             "content_preview":content[:650],
             "all_event_ids":" | ".join(group),
-            "review_decision":"Ej granskad",
+            "review_decision":group_warning(group),
             "keep_as_canonical":"","reason":"",
         })
 with group_out.open("w",encoding="utf-8",newline="") as stream:
@@ -89,8 +105,8 @@ for n,group in enumerate(groups,1):
         "review_priority":"Redan verifierad" if already_reviewed else
             ("Hög – geografisk skillnad" if has_geo else
              "Hög – uppdaterad text" if not identical else
-             "Medel – identisk text"),
-        "review_decision":"Verifierad sammanslagning" if already_reviewed else "Ej granskad"})
+             "Medel – identisk text")),
+        "review_decision":"Verifierad sammanslagning" if already_reviewed else group_warning(group)})
 with priority_out.open("w",encoding="utf-8",newline="") as stream:
     writer=csv.DictWriter(stream,fieldnames=list(priorities[0]) if priorities else [
        "group_id","event_ids","number_of_publications","text_relation",
@@ -159,3 +175,6 @@ print("Fördjupade granskningsfall:",len(triage),"varav redan verifierad sammans
 
 assert all(prohibited_merge(*pair) for pair in [("243612","243613"),("251321","251346"),("257284","257299")])
 print("Skyddade separata händelsepar:",3)
+
+print("Skyddade kandidatgrupper:",sum("Verifierat separata" in group_warning(group) for group in groups))
+print("Sammanfattningsgrupper för underhändelsekontroll:",sum("Sammanfattning" in group_warning(group) for group in groups))
