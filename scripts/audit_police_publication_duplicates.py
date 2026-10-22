@@ -97,15 +97,24 @@ for n,group in enumerate(groups,1):
     has_geo=len({normalized(r.get("location_string")) for r in rr})>1
     transport=any(any(x in normalized(r.get("type_original")+" "+(r.get("headline") or "")) for x in ("trafik","olycka","rattfylleri")) for r in rr)
     already_reviewed=set(group)=={"107404","107414"}
+    if already_reviewed:
+        review_priority="Redan verifierad"
+    elif any(prohibited_merge(a,b) for a in group for b in group if a!=b):
+        review_priority="Skyddad – separata händelser"
+    elif any(summary_notice(r) for r in rr):
+        review_priority="Hög – sammanfattning"
+    elif has_geo:
+        review_priority="Hög – geografisk skillnad"
+    elif not identical:
+        review_priority="Hög – uppdaterad text"
+    else:
+        review_priority="Medel – identisk text"
     priorities.append({"group_id":f"G{n:03d}","event_ids":" | ".join(group),
         "number_of_publications":len(group),
         "text_relation":"Identisk löptext" if identical else "Textskillnader",
         "different_location_fields":"Ja" if has_geo else "Nej",
         "transport_related":"Ja" if transport else "Nej",
-        "review_priority":"Redan verifierad" if already_reviewed else
-            ("Hög – geografisk skillnad" if has_geo else
-             "Hög – uppdaterad text" if not identical else
-             "Medel – identisk text")),
+        "review_priority":review_priority,
         "review_decision":"Verifierad sammanslagning" if already_reviewed else group_warning(group)})
 with priority_out.open("w",encoding="utf-8",newline="") as stream:
     writer=csv.DictWriter(stream,fieldnames=list(priorities[0]) if priorities else [
