@@ -25,6 +25,12 @@ def prohibited_merge(a, b):
     return any({str(a), str(b)} <= group for group in DO_NOT_MERGE)
 
 
+def validate_decisions():
+    for old, current in REPLACED_BY.items():
+        assert old != current, "A publication cannot supersede itself"
+        assert current not in REPLACED_BY, "Canonical version must not be superseded"
+        assert not prohibited_merge(old, current), "Protected separate events must never be merged"
+
 def canonical_event_id(event_id):
     key = str(event_id or "").strip()
     return REPLACED_BY.get(key, key)
@@ -72,3 +78,5 @@ def candidate_pairs(rows):
                            "headline_similarity":round(similarity,3),
                            "a_shorter_content":len(normalized(a[2].get("content")))<len(normalized(b[2].get("content"))),
                            "review_status":"Möjlig uppdatering – manuellt beslut krävs"}
+
+validate_decisions()
