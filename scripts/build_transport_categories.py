@@ -41,6 +41,22 @@ INCIDENT_CONTEXT = [r"forts till sjukhus", r"fordes till sjukhus", r"transporter
 # These are precision classes, not new administrative districts.
 LONG_ROAD = re.compile(r"(?<![a-z0-9])(?:e ?4|e ?10|vag(?:en)? ?(?:97|94|968|596))(?![0-9])")
 JUNCTION = re.compile(r"(?<![a-z])(?:rondell\w*|cirkulationsplats\w*|korsning\w*|trafikplats\w*)(?![a-z])")
+
+# Independent road reference; never infer a district from the road name.
+ROAD_PATTERNS = [
+    ("E4", r"(?<![a-z0-9])e ?4(?![0-9])"),
+    ("E10", r"(?<![a-z0-9])e ?10(?![0-9])"),
+    ("Väg 97", r"vag(?:en)? ?97(?![0-9])"),
+    ("Väg 94", r"vag(?:en)? ?94(?![0-9])"),
+    ("Bodenvägen", r"bodenvag(?:en)?"),
+]
+def road_reference(row):
+    primary = norm(" ".join(str(row.get(k) or "") for k in ("title_location","location_string","headline")))
+    for name, pattern in ROAD_PATTERNS:
+        if re.search(pattern, primary):
+            return name
+    return "Väg ej angiven"
+
 def transport_location_precision(row, transport_modes):
     if not transport_modes:
         return "Ej transport"
@@ -97,11 +113,12 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     kind = kinds[0] if len(kinds) == 1 else ("Flera händelsetyper" if kinds else "Annan/oklar")
     geo = district(row)
     precision = transport_location_precision(row, modes)
+    road = road_reference(row)
     display_geography = "Vägsträcka – område ej fastställt" if precision == "Lång vägsträcka – oprecis" else geo
     rows.append({
         "event_id": eid, "year": year, "month": month.zfill(2),
         "geography_group": geo, "display_geography": display_geography,
-        "location_precision": precision,
+        "location_precision": precision, "road_reference": road,
         "type_original": row.get("type_original") or "",
         "headline": (row.get("headline") or "")[:250],
         "modes": " | ".join(modes), "event_kind": kind,
@@ -110,18 +127,18 @@ for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig", newline="")):
     })
     # Multiple modes can refer to one event. Count distinct events per mode.
     for mode in modes:
-        aggregated[(year, month.zfill(2), display_geography, precision, mode, kind, relation)] += 1
+        aggregated[(year, month.zfill(2), display_geography, precision, road, mode, kind, relation)] += 1
 
 AUDIT.parent.mkdir(parents=True, exist_ok=True)
 OUT.parent.mkdir(parents=True, exist_ok=True)
-fields = ["event_id", "year", "month", "geography_group", "display_geography", "location_precision", "type_original", "headline", "modes", "event_kind", "review_status", "candidate_sources", "verified"]
+fields = ["event_id", "year", "month", "geography_group", "display_geography", "location_precision", "road_reference", "type_original", "headline", "modes", "event_kind", "review_status", "candidate_sources", "verified"]
 with AUDIT.open("w", encoding="utf-8", newline="") as f:
     writer = csv.DictWriter(f, fieldnames=fields)
     writer.writeheader()
     writer.writerows(rows)
 with OUT.open("w", encoding="utf-8", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["year", "month", "geography_group", "location_precision", "transport_mode", "event_kind", "review_status", "event_count"])
+    writer.writerow(["year", "month", "geography_group", "location_precision", "road_reference", "transport_mode", "event_kind", "review_status", "event_count"])
     for key, n in sorted(aggregated.items()):
         writer.writerow([*key, n])
 print("Deduplicerade uppdateringspubliceringar:", REPLACED_PUBLICATIONS)
