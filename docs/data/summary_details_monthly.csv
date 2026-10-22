@@ -6795,6 +6795,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Haparanda kommun,"Trafikolycka, vilt",1
 2026,10,Kalix kommun,Misshandel,1
 2026,10,Kalix kommun,Trafikolycka,1
+2026,10,Kalix kommun,"Trafikolycka, vilt",1
 2026,10,Kiruna kommun,Övrigt/oklassificerad,3
 2026,10,Kiruna kommun,Trafikbrott,2
 2026,10,Kiruna kommun,Misshandel,1
@@ -6816,7 +6817,10 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,"Norrbotten, okänd kommun",Misshandel,1
 2026,10,"Norrbotten, okänd kommun",Narkotikabrott,1
 2026,10,"Norrbotten, okänd kommun",Skadegörelse,1
+2026,10,"Norrbotten, okänd kommun",Övrigt/oklassificerad,1
+2026,10,Pajala kommun,"Trafikolycka, vilt",1
 2026,10,Piteå kommun,Ofredande/förargelse,5
+2026,10,Piteå kommun,Inbrott,1
 2026,10,Piteå kommun,Trafikbrott,1
 2026,10,Piteå kommun,Trafikkontroll,1
 2026,10,Piteå kommun,Övrigt/oklassificerad,1

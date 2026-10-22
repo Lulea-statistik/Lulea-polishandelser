@@ -14035,6 +14035,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kalix kommun,Händelse,,"Trafikolycka,  vilt",5,0,1
 2026,Kalix kommun,Händelse,,"Trafikolycka, vilt",0,0,2
 2026,Kalix kommun,Händelse,,"Trafikolycka, vilt",1,0,2
+2026,Kalix kommun,Händelse,,"Trafikolycka, vilt",3,0,1
 2026,Kalix kommun,Händelse,,"Trafikolycka, vilt",5,0,1
 2026,Kalix kommun,Händelse,,Övrigt,1,0,1
 2026,Kalix kommun,Händelse,,Övrigt,4,0,1
@@ -14447,6 +14448,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,"Norrbotten, okänd kommun",Händelse,Natt,Misshandel,6,1,3
 2026,"Norrbotten, okänd kommun",Händelse,Natt,Narkotikabrott,6,1,1
 2026,"Norrbotten, okänd kommun",Händelse,Natt,Skadegörelse,2,1,1
+2026,"Norrbotten, okänd kommun",Händelse,Natt,Övrigt/oklassificerad,3,1,1
 2026,"Norrbotten, okänd kommun",Icke-händelse,Natt,Lugn sammanfattning,0,1,2
 2026,"Norrbotten, okänd kommun",Icke-händelse,Natt,Lugn sammanfattning,1,1,3
 2026,"Norrbotten, okänd kommun",Icke-händelse,Natt,Lugn sammanfattning,2,1,2
@@ -14472,6 +14474,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Pajala kommun,Händelse,,"Trafikolycka,  vilt",6,0,1
 2026,Pajala kommun,Händelse,,"Trafikolycka, vilt",1,0,1
 2026,Pajala kommun,Händelse,,"Trafikolycka, vilt",2,0,1
+2026,Pajala kommun,Händelse,,"Trafikolycka, vilt",3,0,1
 2026,Pajala kommun,Händelse,,"Trafikolycka, vilt",5,0,1
 2026,Pajala kommun,Händelse,,"Trafikolycka, vilt",6,0,1
 2026,Pajala kommun,Händelse,Kväll,Olaga hot,3,1,1
@@ -14555,6 +14558,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Piteå kommun,Händelse,Natt,Brand,4,1,1
 2026,Piteå kommun,Händelse,Natt,Brand,5,1,4
 2026,Piteå kommun,Händelse,Natt,Fylleri/LOB,4,1,1
+2026,Piteå kommun,Händelse,Natt,Inbrott,3,1,1
 2026,Piteå kommun,Händelse,Natt,Misshandel,3,1,1
 2026,Piteå kommun,Händelse,Natt,Misshandel,5,1,5
 2026,Piteå kommun,Händelse,Natt,Misshandel,6,1,8
