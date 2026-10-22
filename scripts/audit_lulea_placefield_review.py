@@ -64,6 +64,12 @@ with source.open(encoding="utf-8-sig", newline="") as f:
         review_flags = []
         if len(settlement_terms) > 1:
             review_flags.append("Flera ortnamn – kontrollera vilken plats som avser händelsen")
+        if "kallax" in settlement_terms:
+            review_flags.append("Kallax kan avse by, flygplats eller större område")
+        if "sunderbyn" in settlement_terms:
+            review_flags.append("Sunderbyn kan avse ort eller sjukhus")
+        if "rutvik" in settlement_terms and any(term in matched for term in ROAD_SUFFIXES):
+            review_flags.append("Rutvik samt väg: verifiera exakt händelseplats")
         if set(settlement_terms) & {"kyrkbyn", "gammelstan", "gammelstad"}:
             review_flags.append("Gammelstad/Kyrkbyn – verifiera platsens innebörd")
         if any(term in matched for term in ROAD_SUFFIXES):
