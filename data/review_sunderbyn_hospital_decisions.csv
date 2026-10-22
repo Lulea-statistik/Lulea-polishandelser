@@ -1,0 +1,9 @@
+event_id,review_decision,verified_district,verification_source,reviewer_note
+20972,Avvisa Sunderbyn,,Polishändelse headline/description,Sjukhus omnämns som vårdplats och inte som händelseplats
+36527,Godkänn Sunderbyn,Sunderbyn,Polishändelse headline/description + lokal områdeskunskap,Hund instängd i bil vid sjukhuset
+38525,Godkänn Sunderbyn,Sunderbyn,Polishändelse headline/description,Skadegörelse på Sunderbyns sjukhus
+52814,Avvisa Sunderbyn,,Polishändelse location_string/headline/content,Trafikolycka E4 Rutvik; sjukhus är efterföljande vårdplats och Rutviks områdesgräns prövas separat
+107390,Godkänn Sunderbyn,Sunderbyn,Polishändelse headline/content + lokal områdeskunskap,Berusad man befinner sig på sjukhuset där polis beordras
+181849,Godkänn Sunderbyn,Sunderbyn,Polishändelse headline/content,Brand i lokaler tillhörande Sunderbyns sjukhus
+243272,Godkänn Sunderbyn,Sunderbyn,Polishändelse headline/description + lokal områdeskunskap,Berusad man vid sjukhuset i Luleå
+250822,Godkänn Sunderbyn,Sunderbyn,Polishändelse headline/content,Polis beordras till Sunderbyn; skadegörelse på sjukhusdörr
