@@ -103,3 +103,29 @@ print("Distinct specified unknown subevent place expressions:",len(ranked))
 for phrase,group in ranked[:35]:
     print("UNKNOWN_PLACE_FREQUENCY",len(group),repr(phrase[:110]),"example_parent_ids=",[x["parent_event_id"] for x in group[:3]])
 print("All proposed geographic decisions remain blank.")
+
+# Separate plausible geographical expressions from event narratives in place_text.
+PLACE_DESCRIPTION_WORDS=("omhändertagits","viltolyckor","anmält","misstänkt","medtagits",
+ "för fylleri","har inträffat","polispatrull","provtagning","ingen person",
+ "har utfört","trafikkontroll","misshandel, luleå")
+def expression_kind(phrase):
+    phrase=(phrase or "").strip().casefold()
+    if not phrase:return "Tom platsuppgift"
+    if any(word in phrase for word in PLACE_DESCRIPTION_WORDS) or len(phrase)>130:
+        return "Händelsebeskrivning, inte verifierad plats"
+    if phrase in ("centrala luleå","skutvikens industriområde"):
+        return "Konkret ort-/områdesuttryck – verifiera"
+    if len(phrase.split())<=5:
+        return "Kort platsuttryck – kontrollera relation"
+    return "Oklart uttryck – manuell kontroll"
+for row in rows:
+    if row["source"]=="expanded_subevent":
+        row["place_expression_kind"]=expression_kind(row["place_text"])
+    else:
+        row["place_expression_kind"]="Originalpublicering, separat granskning"
+kind_counts=Counter(r["place_expression_kind"] for r in rows if r["source"]=="expanded_subevent")
+print("Underhändelser per verklig platsledtrådsklass:",dict(kind_counts))
+# Update the candidate artifact without changing geographic assignments.
+with out.open("w",encoding="utf-8",newline="") as stream:
+    writer=csv.DictWriter(stream,fieldnames=list(rows[0]))
+    writer.writeheader();writer.writerows(rows)
