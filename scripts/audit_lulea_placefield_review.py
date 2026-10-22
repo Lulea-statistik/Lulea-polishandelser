@@ -66,10 +66,12 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             review_flags.append("Flera ortnamn – kontrollera vilken plats som avser händelsen")
         if "kallax" in settlement_terms:
             review_flags.append("Kallax kan avse by, flygplats eller större område")
-        if "sunderbyn" in settlement_terms:
-            review_flags.append("Sunderbyn kan avse ort eller sjukhus")
+        # Sunderby sjukhus och orten Sunderbyn tillhör samma analysområde.
+        # Enbart omnämnande av sjukhuset styr dock inte händelseplatsen.
+        if "sunderbyn" in settlement_terms and len(settlement_terms) > 1:
+            review_flags.append("Sunderbyn tillsammans med annan ort: verifiera händelseplats")
         if "rutvik" in settlement_terms and any(term in matched for term in ROAD_SUFFIXES):
-            review_flags.append("Rutvik samt väg: verifiera exakt händelseplats")
+            review_flags.append("Rutviks större område kan omfatta vägen: kontrollera händelseplats och områdesgräns")
         if set(settlement_terms) & {"kyrkbyn", "gammelstan", "gammelstad"}:
             review_flags.append("Gammelstad/Kyrkbyn – verifiera platsens innebörd")
         if any(term in matched for term in ROAD_SUFFIXES):
@@ -78,6 +80,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             review_flags.append("Verksamhetens läge och händelserelation måste verifieras")
         if settlement_terms and not (source_matches["title_location"] or source_matches["location_string"]):
             review_flags.append("Ortnamn endast i rubrik")
+        suggested_area = "Sunderbyn" if settlement_terms == ["sunderbyn"] else ("Rutvik (områdesgräns ej verifierad)" if settlement_terms == ["rutvik"] else "")
         priority = "Flera källfält" if field_count >= 2 else ("Platsfält" if source_matches["title_location"] or source_matches["location_string"] else "Endast rubrik")
         rows.append({
             "event_id": eid, "year": event.get("year", ""),
@@ -88,6 +91,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             "candidate_categories": " | ".join(categories),
             "settlement_terms": " | ".join(settlement_terms),
             "settlement_review": settlement_review,
+            "candidate_area": suggested_area,
             "review_flags": " | ".join(review_flags),
             "needs_geographic_verification": "Ja",
             "review_priority": priority,
@@ -104,7 +108,7 @@ out.parent.mkdir(exist_ok=True)
 with out.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [
         "event_id","year","title_location","location_string","headline",
-        "candidate_sources","matched_terms","candidate_categories","settlement_terms","settlement_review","review_flags","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
+        "candidate_sources","matched_terms","candidate_categories","settlement_terms","settlement_review","candidate_area","review_flags","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
     w.writeheader()
     w.writerows(rows)
 print("Unknown Lulea placefield review rows:", len(rows))
