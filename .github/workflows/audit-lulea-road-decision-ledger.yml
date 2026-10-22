@@ -1,0 +1,24 @@
+name: Audit Lulea road decision ledger
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_road_decision_ledger.py
+      - .github/workflows/audit-lulea-road-decision-ledger.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_road_decision_ledger.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lulea-road-decision-ledger
+          path: data/audit_lulea_road_decision_ledger.csv
+          if-no-files-found: error
