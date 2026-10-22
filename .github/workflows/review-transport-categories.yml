@@ -16,6 +16,7 @@ on:
       - scripts/build_lulea_districts_expanded.py
       - .github/workflows/review-transport-categories.yml
       - docs/transport.html
+      - docs/lulea.html
       - data/events.csv
 jobs:
   review:
@@ -31,6 +32,29 @@ jobs:
         run: python -m pip install pandas
       - name: Build transport candidates
         run: python scripts/build_transport_categories.py
+      - name: Validate Lulea transport dropdown and aggregate
+        run: |
+          python - <<'PY'
+          import csv
+          from collections import Counter
+          from pathlib import Path
+          page=Path("docs/lulea.html").read_text(encoding="utf-8")
+          assert 'id="transportMode"' in page
+          assert "lulea_transport_monthly.csv" in page
+          assert "r.transport_mode===selectedTransport" in page
+          assert "r.event_kind" in page
+          rows=list(csv.DictReader(Path("docs/data/lulea_transport_monthly.csv").open(encoding="utf-8")))
+          assert rows
+          assert {"year","month","geography_group","transport_mode","event_kind","event_count","road_reference","junction_reference"} <= rows[0].keys()
+          keys=[tuple(r[k] for k in ("year","month","geography_group","location_precision","road_reference","junction_reference","transport_mode","event_kind","review_status")) for r in rows]
+          assert len(keys)==len(set(keys)), "Duplicerade aggregatnycklar"
+          assert all(int(r["event_count"])>0 for r in rows)
+          modes=Counter()
+          for r in rows: modes[r["transport_mode"]]+=int(r["event_count"])
+          assert modes
+          print("Luleå transportfilter QA, trafikslag och antal:",dict(modes))
+          print("Luleå transportfilter QA, aggregerade rader:",len(rows))
+          PY
       - name: Audit major roads
         run: python scripts/audit_lulea_transport_roads.py
       - name: Audit potential duplicate publications
