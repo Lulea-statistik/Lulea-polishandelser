@@ -25,20 +25,20 @@ select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radi
 @media(max-width:760px){.grid,.filters,.kpis{grid-template-columns:1fr}}
 </style></head><body>
 <header><div class="wrap top"><div class="brand"><img src="https://lulea-statistik.github.io/BR-brottsstatistik/lulea-kommun-mark.png?v=3" alt="Luleå Statistik"><div><h1>Luleå</h1><p class="sub">Polishändelser efter stadsdel och delområde i Luleå kommun</p></div></div>
-<nav aria-label="Huvudmeny"><a href="./">Statistik</a><a href="lulea.html" aria-current="page">Luleå</a><a href="info-metod.html">Info &amp; metod</a></nav></div></header>
+<nav aria-label="Huvudmeny"><a href="./">Statistik</a><a href="lulea.html" aria-current="page">Luleå</a><a href="transport.html">Transport</a><a href="info-metod.html">Info &amp; metod</a></nav></div></header>
 <main class="wrap">
 <div class="notice"><strong>Viktigt:</strong> Materialet visar bara händelser som Polisen valt att publicera, inte officiell brottsstatistik. Stadsdelskopplingen är en försiktig tolkning av publicerade platsfält, inte en geokodad adresspunkt eller ett bekräftat brottsläge.</div>
-<section class="panel"><h2>Polishändelser i Luleås delområden</h2><p>Välj <strong>Hela Luleå</strong> eller ett delområde. Osäkra platsangivelser tilldelas <strong>Okänt delområde</strong>, men ingår i kommunens totala antal. Endast händelser som är registrerade på Luleå kommun ingår. Välj dataserie nedan. I den expanderade serien klassificeras varje identifierad underhändelse utifrån sina egna platsuppgifter, inte hela sammanfattningens plats.</p></section>
+<section class="panel"><h2>Polishändelser i Luleås delområden</h2><p>Välj <strong>Hela Luleå</strong> eller ett delområde. Osäkra platsangivelser tilldelas <strong>Okänt delområde</strong>, men ingår i kommunens totala antal. Endast händelser som är registrerade på Luleå kommun ingår. Välj dataserie eller en separat transportkategori nedan. Transportläge visar endast kandidater i valt trafikslag och byter inte namn på polisens ursprungliga händelser. I den expanderade serien klassificeras varje identifierad underhändelse utifrån sina egna platsuppgifter, inte hela sammanfattningens plats.</p></section>
 <div id="loading" class="panel">Läser in delområdesstatistik…</div>
 <div id="dashboard" hidden>
-<div class="panel filters"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div><label for="geo">Geografi</label><select id="geo"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
+<div class="panel filters"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div><label for="transportMode">Transportkategori</label><select id="transportMode"><option value="Alla" selected>Alla polishändelser</option></select></div><div><label for="geo">Geografi</label><select id="geo"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
 <p class="muted" id="seriesExplanation" aria-live="polite">Expanderade händelser. Identifierade underhändelser räknas separat; geografi som inte kan fastställas hamnar i Okänt delområde.</p><div class="kpis"><div class="panel"><span class="muted" id="totalLabel">Antal händelser</span><strong id="total" class="number">–</strong></div><div class="panel"><span class="muted">Första månaden</span><strong id="first" class="number">–</strong></div><div class="panel"><span class="muted">Sista månaden</span><strong id="last" class="number">–</strong></div></div>
 <div class="grid"><section class="panel"><h2>Händelser per år</h2><div class="chart"><canvas id="years"></canvas></div></section><section class="panel"><h2>Vanligaste händelsetyper</h2><div class="chart"><canvas id="types"></canvas></div></section></div>
 <div class="grid"><section class="panel"><h2>Händelser per månad</h2><p class="muted">Januari–december summerat över vald tidsperiod. Välj ett enskilt år för månadsfördelningen det året.</p><div class="chart"><canvas id="months"></canvas></div></section><section class="panel"><h2>Geografisk fördelning inom Luleå</h2><div class="chart"><canvas id="districts"></canvas></div></section></div>
 <section class="panel"><h2>Metod och datakvalitet</h2><p>Stadsdelar bestäms i första hand från platsfält. Mycket tydliga platsuttryck i beskrivningar kan användas när platsfältet inte räcker. I den expanderade serien bedöms platsen separat för varje underhändelse. Händelser med otydliga eller motstridiga områdesuppgifter klassas som <strong>Okänt delområde</strong>. Stadsdelsgränser och koordinatsystem används inte, eftersom denna version inte har verifierade geometrier. Ett nämnt stadsdelsnamn är inte liktydigt med verifierad position inom stadsdelsgräns. Serien uppdateras av samma dagliga GitHub Actions-flöde som huvudsidan.</p></section>
 </div></main>
 <script>
-const fmt=new Intl.NumberFormat('sv-SE');let data=[],originalData=[],expandedData=[],charts={};
+const fmt=new Intl.NumberFormat('sv-SE');let data=[],originalData=[],expandedData=[],transportData=[],charts={};
 function csv(text){const rows=[];let row=[],field='',q=false;for(let i=0;i<text.length;i++){const c=text[i];if(q){if(c==='"'&&text[i+1]==='"'){field+='"';i++}else if(c==='"')q=false;else field+=c}else if(c==='"')q=true;else if(c===','){row.push(field);field=''}else if(c==='\n'){row.push(field.replace(/\r$/,''));rows.push(row);row=[];field=''}else field+=c}if(field||row.length){row.push(field);rows.push(row)}const header=rows.shift();return rows.filter(r=>r.length===header.length).map(r=>Object.fromEntries(header.map((h,i)=>[h,r[i]])))}
 function setOptions(id,values,all){const el=document.getElementById(id);el.replaceChildren();const opt=document.createElement('option');opt.value='Alla';opt.textContent=all;el.append(opt);for(const v of values){const item=document.createElement('option');item.value=v;item.textContent=v;el.append(item)}}
 function filter(){const g=document.getElementById('geo').value,y=document.getElementById('year').value,t=document.getElementById('kind').value;return data.filter(r=>(g==='Alla'||r.geography_group===g)&&(y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t))}
@@ -50,30 +50,43 @@ draw('types',count(rows,'type_original').slice(0,15),true);
 const monthNames=['Jan','Feb','Mar','Apr','Maj','Jun','Jul','Aug','Sep','Okt','Nov','Dec'];const byCalendarMonth=Array(12).fill(0);for(const r of rows){const m=Number(r.month);if(Number.isInteger(m)&&m>=1&&m<=12)byCalendarMonth[m-1]+=r.event_count;}draw('months',monthNames.map((name,i)=>[name,byCalendarMonth[i]]));
 draw('districts',count(rows,'geography_group'),true);}
 function applySeries(){
+ const selectedTransport=document.getElementById('transportMode').value;
+ const isTransport=selectedTransport!=='Alla';
+ document.getElementById('seriesMode').disabled=isTransport;
  const mode=document.getElementById('seriesMode').value;
- data=mode==='original'?originalData:expandedData;
- const geo=document.getElementById('geo').value, year=document.getElementById('year').value,kind=document.getElementById('kind').value;
+ data=isTransport?transportData.filter(r=>r.transport_mode===selectedTransport):(mode==='original'?originalData:expandedData);
+ const geo=document.getElementById('geo').value, year=document.getElementById('year').value;
+ // Switching statistical bases must not reuse a previous series' event-kind selection.
+ const previousTransport=applySeries.previousTransport;
+ const kind=previousTransport!==undefined && previousTransport!==isTransport?'Alla':document.getElementById('kind').value;
+ applySeries.previousTransport=isTransport;
  setOptions('geo',[...new Set(data.map(r=>r.geography_group))].sort((a,b)=>a.localeCompare(b,'sv')),'Hela Luleå');
  setOptions('year',[...new Set(data.map(r=>r.year))].sort((a,b)=>b.localeCompare(a)),'Alla år');
  setOptions('kind',[...new Set(data.map(r=>r.type_original))].sort((a,b)=>a.localeCompare(b,'sv')),'Alla händelsetyper');
  for(const [id,value] of [['geo',geo],['year',year],['kind',kind]]){const el=document.getElementById(id);if([...el.options].some(o=>o.value===value))el.value=value}
- document.getElementById('totalLabel').textContent=mode==='original'?'Antal ursprungliga publiceringar':'Antal expanderade händelser';
- document.getElementById('seriesExplanation').textContent=mode==='original'?'Ursprungliga publiceringar: varje polisnotis räknas en gång, även en sammanfattning.':'Expanderade händelser: identifierade underhändelser räknas separat. Underhändelsernas egna platsuppgifter används; annars visas Okänt delområde.';
+ document.getElementById('totalLabel').textContent=isTransport?'Antal transportkandidater':mode==='original'?'Antal ursprungliga publiceringar':'Antal expanderade händelser';
+ document.getElementById('seriesExplanation').textContent=isTransport?'Transportläge (preliminärt): maskinellt identifierade kandidater inom valt trafikslag. Detta är en separat statistikserie; händelsetypen grupperas efter transportkodning och är inte jämförbar direkt med expanderade underhändelser. En händelse räknas en gång inom ett valt trafikslag. Vägsträckor med okänt delområde redovisas separat.':mode==='original'?'Ursprungliga publiceringar: varje polisnotis räknas en gång, även en sammanfattning.':'Expanderade händelser: identifierade underhändelser räknas separat. Underhändelsernas egna platsuppgifter används; annars visas Okänt delområde.';
  render();
 }
 Promise.all([
  fetch('data/lulea_district_monthly.csv',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Ursprunglig stadsdelsdata HTTP '+r.status);return r.text()}),
- fetch('data/lulea_district_expanded_monthly.csv',{cache:'no-store'}).then(r=>r.ok?r.text():'')
-]).then(([original,expanded])=>{
+ fetch('data/lulea_district_expanded_monthly.csv',{cache:'no-store'}).then(r=>r.ok?r.text():''),
+ fetch('data/lulea_transport_monthly.csv',{cache:'no-store'}).then(r=>r.ok?r.text():'')
+]).then(([original,expanded,transport])=>{
  originalData=csv(original).map(r=>({...r,event_count:+r.event_count||0}));
  expandedData=csv(expanded).map(r=>({...r,event_count:+r.event_count||0}));
+ transportData=transport?csv(transport).map(r=>({...r,event_count:+r.event_count||0,type_original:r.event_kind})):[];
  if(!originalData.length)throw Error('Tomt stadsdelsunderlag');
  if(!expandedData.length){document.getElementById('seriesMode').value='original';document.getElementById('seriesMode').querySelector('option[value="expanded"]').disabled=true;document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';}
+ const transportSelect=document.getElementById('transportMode');
+ if(transportData.length){setOptions('transportMode',[...new Set(transportData.map(r=>r.transport_mode))].sort((a,b)=>a.localeCompare(b,'sv')),'Alla polishändelser');}
+ else {transportSelect.disabled=true;transportSelect.title='Transportdata inväntar publicering';}
+ transportSelect.addEventListener('change',applySeries);
  for(const id of ['geo','year','kind'])document.getElementById(id).addEventListener('change',render);
  document.getElementById('seriesMode').addEventListener('change',applySeries);
  document.getElementById('loading').hidden=true;
  document.getElementById('dashboard').hidden=false;
  applySeries();
- if(!expandedData.length)document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';
+ if(!expandedData.length&&document.getElementById('transportMode').value==='Alla')document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';
 }).catch(err=>{document.getElementById('loading').textContent='Stadsdelsstatistik kan ännu inte visas: '+err.message});
 </script></body></html>
