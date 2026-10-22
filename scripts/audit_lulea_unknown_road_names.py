@@ -46,9 +46,20 @@ with out.open("w",encoding="utf-8",newline="") as f:
  w=csv.writer(f);w.writerow(["road_candidate","evidence_location","event_count","example_event_ids","decision"])
  for (name,kind),n in sorted(results.items(),key=lambda x:(-x[1],x[0][0])):
   w.writerow([name,kind,n," | ".join(examples[(name,kind)]),"Ej geografiskt verifierad"])
+# GIS-derived inventory, reference for reporting; not proof of an event's location.
+GIS_ROAD_NUMBERS=(1543,1544,356,383,563,573,575,577,578,579,580,581,582,583,584,585,587,590,591,592,593,594,595,596,597,599,600,601,607,616,684,687,689,691,692,693,694,695,760,761,762,768,770,772,960,961,963,964,965,968,969,970,974)
+assert len(GIS_ROAD_NUMBERS)==len(set(GIS_ROAD_NUMBERS))
+gis_out=ROOT/"data/audit_lulea_gis_road_numbers.csv"
+with gis_out.open("w",encoding="utf-8",newline="") as f:
+ w=csv.writer(f)
+ w.writerow(["road_number","own_place_field","other_text_only","total_mentions","qa_status"])
+ for n in GIS_ROAD_NUMBERS:
+  own=results.get(("Väg "+str(n),"Eget platsfält"),0)
+  other=results.get(("Väg "+str(n),"Bara övrig text - måste verifieras"),0)
+  w.writerow([n,own,other,own+other,"Textträff – ej verifierad händelseplats"])
 print("UNKNOWN_ROAD_DISCOVERY",dict(hits))
 print("Top candidates",[(k,v) for k,v in results.most_common(35)])
-for n in (596,599,607,970,616,583,584,582,573,960,563,577,576,575,580,581,600,383,687,601,692,691,768,356,780,695):
- print("NUMBERED_ROAD",n,"own_field",results.get(("Väg "+str(n),"Eget platsfält"),0),"other_text",results.get(("Väg "+str(n),"Bara övrig text - måste verifieras"),0))
+for n in GIS_ROAD_NUMBERS:
+ print("GIS_ROAD",n,"own_field",results.get(("Väg "+str(n),"Eget platsfält"),0),"other_text",results.get(("Väg "+str(n),"Bara övrig text - måste verifieras"),0))
 assert not any(name.casefold() in ("riksväg","länsväg") for name,_ in results),"Generic road type falsely detected as named road"
 print("Saved",out)
