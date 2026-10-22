@@ -2,7 +2,7 @@
 """Generate conservative candidate review for all Lulea police publications."""
 import csv
 from pathlib import Path
-from police_publication_dedup import candidate_pairs, REPLACED_BY
+from police_publication_dedup import candidate_pairs, REPLACED_BY, prohibited_merge
 
 ROOT=Path(__file__).resolve().parents[1]
 with (ROOT/"data/events.csv").open(encoding="utf-8-sig",newline="") as stream:
@@ -143,10 +143,12 @@ for r in diff_rows[:15]:
 triage_out=ROOT/"data/review_police_duplicate_text_cases.csv"
 triage=[
  ("105825 | 105831 | 105832","Stark kandidat – granska full text","E4 Rönningen: one notice adds vehicle recovery; likely updated publication chain","Nej"),
+ ("243612 | 243613","Separata händelser – skyddad grupp","Innerstaden woman vs Skutviken man; distinct incidents despite generic headline","Nej"),
+ ("23232 | 23251","Risk för olika händelser","Different suspected offences and narrative; needs further source verification","Nej"),
  ("172103 | 172106","Sammanfattning – kontrollera underhändelser","A later night summary adds a quiet-period report; do not discard separately extracted incidents","Nej"),
  ("245223 | 245225","Sammanfattning – kontrollera underhändelser","Different detail level including assault report; inspect parent/child extraction","Nej"),
- ("251321 | 251346","Risk för olika händelser","Generic shoplifting headline, differing persons and circumstances; no automatic merge","Nej"),
- ("257284 | 257299","Risk för olika händelser","Generic grocery theft headline, differing details; no automatic merge","Nej"),
+ ("251321 | 251346","Separata händelser – skyddad grupp","Different persons and alleged offences; prohibited_merge safeguard","Nej"),
+ ("257284 | 257299","Separata händelser – skyddad grupp","Teenager and adult man in different narrative; prohibited_merge safeguard","Nej"),
  ("107404 | 107414","Verifierad sammanslagning","2019-02-14 same taxi-car crash with later 12:55 update; keep 107414","Ja"),
 ]
 with triage_out.open("w",encoding="utf-8",newline="") as stream:
@@ -154,3 +156,6 @@ with triage_out.open("w",encoding="utf-8",newline="") as stream:
     writer.writerow(["event_ids","review_class","rationale","approved_for_dedup"])
     writer.writerows(triage)
 print("Fördjupade granskningsfall:",len(triage),"varav redan verifierad sammanslagning:",sum(r[-1]=="Ja" for r in triage))
+
+assert all(prohibited_merge(*pair) for pair in [("243612","243613"),("251321","251346"),("257284","257299")])
+print("Skyddade separata händelsepar:",3)
