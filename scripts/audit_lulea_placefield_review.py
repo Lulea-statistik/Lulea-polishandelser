@@ -61,6 +61,17 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             "Kontrollera ortens kommuntillhörighet, områdesindelning och händelseplats"
             if settlement_terms else ""
         )
+        review_flags = []
+        if len(settlement_terms) > 1:
+            review_flags.append("Flera ortnamn – kontrollera vilken plats som avser händelsen")
+        if set(settlement_terms) & {"kyrkbyn", "gammelstan", "gammelstad"}:
+            review_flags.append("Gammelstad/Kyrkbyn – verifiera platsens innebörd")
+        if any(term in matched for term in ROAD_SUFFIXES):
+            review_flags.append("Väg eller bro kan sträcka sig över flera områden")
+        if "verksamhet" in categories:
+            review_flags.append("Verksamhetens läge och händelserelation måste verifieras")
+        if settlement_terms and not (source_matches["title_location"] or source_matches["location_string"]):
+            review_flags.append("Ortnamn endast i rubrik")
         priority = "Flera källfält" if field_count >= 2 else ("Platsfält" if source_matches["title_location"] or source_matches["location_string"] else "Endast rubrik")
         rows.append({
             "event_id": eid, "year": event.get("year", ""),
@@ -71,6 +82,7 @@ with source.open(encoding="utf-8-sig", newline="") as f:
             "candidate_categories": " | ".join(categories),
             "settlement_terms": " | ".join(settlement_terms),
             "settlement_review": settlement_review,
+            "review_flags": " | ".join(review_flags),
             "needs_geographic_verification": "Ja",
             "review_priority": priority,
             "evidence_relation": "Ej granskad: platsen kan avse händelse, färdväg eller omnämnande",
@@ -86,7 +98,7 @@ out.parent.mkdir(exist_ok=True)
 with out.open("w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=list(rows[0]) if rows else [
         "event_id","year","title_location","location_string","headline",
-        "candidate_sources","matched_terms","candidate_categories","settlement_terms","settlement_review","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
+        "candidate_sources","matched_terms","candidate_categories","settlement_terms","settlement_review","review_flags","needs_geographic_verification","review_priority","evidence_relation","review_decision","verified_district","verification_source","reviewer_note","existing_group","proposed_group","review_status","review_note"])
     w.writeheader()
     w.writerows(rows)
 print("Unknown Lulea placefield review rows:", len(rows))
@@ -94,6 +106,7 @@ print("Unique event IDs:", len({r["event_id"] for r in rows}))
 from collections import Counter
 print("Review groups:", dict(sorted(Counter(r["review_priority"] for r in rows).items())))
 print("Settlement mentions (not approved districts):", dict(sorted(Counter(term for r in rows for term in r["settlement_terms"].split(" | ") if term).items(), key=lambda p: (-p[1], p[0]))))
+print("Events requiring special review:", sum(bool(r["review_flags"]) for r in rows))
 print("Candidate categories:", dict(sorted(Counter(category for r in rows for category in r["candidate_categories"].split(" | ")).items())))
 assert len(rows) == len({r["event_id"] for r in rows}), "Duplicate event IDs in candidate review"
 assert all(not r["proposed_group"] and not r["verified_district"] for r in rows), "Review must not invent classification"
