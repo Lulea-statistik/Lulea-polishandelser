@@ -1,6 +1,10 @@
 name: Audit archived OSM roads against DeSO
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_osm_eight_roads_deso.py
+      - .github/workflows/audit-osm-eight-roads-deso.yml
 permissions:
   contents: read
   actions: read
