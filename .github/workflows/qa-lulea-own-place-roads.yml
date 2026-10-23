@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - scripts/audit_lulea_own_place_road_qa.py
+      - scripts/audit_lulea_own_place_deso_pilot.py
       - .github/workflows/qa-lulea-own-place-roads.yml
 permissions:
   contents: read
@@ -17,8 +18,11 @@ jobs:
           python-version: '3.12'
       - run: pip install -r requirements.txt
       - run: python scripts/audit_lulea_own_place_road_qa.py
+      - run: python scripts/audit_lulea_own_place_deso_pilot.py
       - uses: actions/upload-artifact@v4
         with:
           name: lulea-own-place-road-qa
-          path: data/audit_lulea_own_place_road_qa.csv
+          path: |
+            data/audit_lulea_own_place_road_qa.csv
+            data/audit_lulea_own_place_deso_pilot.csv
           if-no-files-found: error
