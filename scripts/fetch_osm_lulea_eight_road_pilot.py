@@ -31,18 +31,21 @@ def fetch_osm(bbox,selected_roads):
   query=f'[out:json][timeout:45];way["highway"]["name"="{qname}"]({south},{west},{north},{east});out geom;'
   payload=urllib.parse.urlencode({"data":query}).encode()
   succeeded=False
-  for endpoint in endpoints:
-   try:
-    req=urllib.request.Request(endpoint,data=payload,headers={"User-Agent":"lulea-statistik-geodata-pilot/1.0"})
-    with urllib.request.urlopen(req,timeout=65) as res:
-     data=json.load(res)
-    if "remark" in data and not data.get("elements"):raise RuntimeError(data["remark"])
-    collected.extend(data.get("elements",[]))
-    print("ROAD_OVERPASS_FETCH",json.dumps({"road":name,"endpoint":endpoint,"ways":len(data.get("elements",[]))},ensure_ascii=False))
-    succeeded=True
-    break
-   except (OSError,ValueError,RuntimeError) as e:
-    print("ROAD_OVERPASS_RETRY",json.dumps({"road":name,"endpoint":endpoint,"error":str(e)[:160]},ensure_ascii=False),flush=True)
+  for attempt in range(2):
+   if succeeded:break
+   for endpoint in endpoints:
+    try:
+     req=urllib.request.Request(endpoint,data=payload,headers={"User-Agent":"lulea-statistik-geodata-pilot/1.0"})
+     with urllib.request.urlopen(req,timeout=50) as res:
+      data=json.load(res)
+     if "remark" in data and not data.get("elements"):raise RuntimeError(data["remark"])
+     collected.extend(data.get("elements",[]))
+     print("ROAD_OVERPASS_FETCH",json.dumps({"road":name,"endpoint":endpoint,"attempt":attempt+1,"ways":len(data.get("elements",[]))},ensure_ascii=False),flush=True)
+     succeeded=True
+     break
+    except (OSError,ValueError,RuntimeError) as exc:
+     print("ROAD_OVERPASS_RETRY",json.dumps({"road":name,"endpoint":endpoint,"attempt":attempt+1,"error":str(exc)[:160]},ensure_ascii=False),flush=True)
+   if not succeeded and attempt==0:time.sleep(8)
   if not succeeded:failures.append(name)
   time.sleep(1)
  if failures:raise RuntimeError("Incomplete Overpass download for roads: "+", ".join(failures))
