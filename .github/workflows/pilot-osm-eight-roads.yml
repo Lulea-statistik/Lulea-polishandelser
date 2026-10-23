@@ -25,7 +25,6 @@ permissions:
   contents: read
 jobs:
   pilot:
-    if: github.event_name != 'workflow_dispatch' || inputs.road == 'Alla' || inputs.road == matrix.road
     runs-on: ubuntu-latest
     timeout-minutes: 8
     strategy:
@@ -55,9 +54,10 @@ jobs:
         with:
           python-version: '3.12'
       - name: Fetch one OSM road
+        if: github.event_name != 'workflow_dispatch' || inputs.road == 'Alla' || inputs.road == matrix.road
         run: python scripts/fetch_osm_lulea_eight_road_pilot.py --road "${{ matrix.road }}"
       - uses: actions/upload-artifact@v4
-        if: success()
+        if: success() && (github.event_name != 'workflow_dispatch' || inputs.road == 'Alla' || inputs.road == matrix.road)
         with:
           name: osm-lulea-road-${{ matrix.number }}
           path: data/gis/osm_lulea_${{ matrix.number }}_road_candidates.geojson
