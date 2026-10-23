@@ -10,15 +10,37 @@ permissions:
 jobs:
   pilot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - road: Hertsövägen
+            number: 1
+          - road: Älvbrovägen
+            number: 2
+          - road: Haparandavägen
+            number: 3
+          - road: Storhedsvägen
+            number: 4
+          - road: Mariebergsvägen
+            number: 5
+          - road: Mjölkuddsvägen
+            number: 6
+          - road: Storsandsvägen
+            number: 7
+          - road: Väderleden
+            number: 8
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/fetch_osm_lulea_eight_road_pilot.py
+      - name: Fetch one OSM road
+        run: python scripts/fetch_osm_lulea_eight_road_pilot.py --road "${{ matrix.road }}"
       - uses: actions/upload-artifact@v4
+        if: success()
         with:
-          name: osm-lulea-eight-road-candidates
-          path: data/gis/osm_lulea_eight_road_candidates.geojson
+          name: osm-lulea-road-${{ matrix.number }}
+          path: data/gis/osm_lulea_${{ matrix.number }}_road_candidates.geojson
           if-no-files-found: error
