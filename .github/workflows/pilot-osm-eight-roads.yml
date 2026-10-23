@@ -1,6 +1,22 @@
 name: Pilot OSM eight road geometries
 on:
   workflow_dispatch:
+    inputs:
+      road:
+        description: 'Välj en väg att hämta (eller alla)'
+        type: choice
+        required: true
+        default: 'Älvbrovägen'
+        options:
+          - Älvbrovägen
+          - Hertsövägen
+          - Haparandavägen
+          - Storhedsvägen
+          - Mariebergsvägen
+          - Mjölkuddsvägen
+          - Storsandsvägen
+          - Väderleden
+          - Alla
   push:
     paths:
       - scripts/fetch_osm_lulea_eight_road_pilot.py
@@ -9,6 +25,7 @@ permissions:
   contents: read
 jobs:
   pilot:
+    if: github.event_name != 'workflow_dispatch' || inputs.road == 'Alla' || inputs.road == matrix.road
     runs-on: ubuntu-latest
     timeout-minutes: 8
     strategy:
