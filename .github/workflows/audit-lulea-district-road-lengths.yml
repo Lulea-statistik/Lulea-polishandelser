@@ -1,0 +1,49 @@
+name: Audit Lulea district road lengths
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_district_road_lengths.py
+      - .github/workflows/audit-lulea-district-road-lengths.yml
+permissions:
+  contents: read
+  actions: read
+jobs:
+  district:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install "geopandas>=1,<2" "pyogrio>=0.9" "shapely>=2,<3"
+      - run: python scripts/fetch_scb_deso_2025_lulea.py
+      - name: Retrieve eight archived road geometries
+        shell: bash
+        run: |
+          set -euo pipefail
+          while read -r number run; do
+            mkdir -p "data/gis/osm_archived/road_${number}"
+            gh run download "${run}" -R "${GH_REPO}" -n "osm-lulea-road-${number}" -D "data/gis/osm_archived/road_${number}"
+          done <<'ROADS'
+          1 39939493805
+          2 39940928508
+          3 39938662295
+          4 39938662295
+          5 39939493805
+          6 39939493805
+          7 39939493805
+          8 39939493805
+          ROADS
+      - run: python scripts/audit_osm_eight_roads_deso.py
+      - run: python scripts/audit_lulea_district_road_lengths.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: district-road-lengths-qa
+          path: docs/data/road_lengths_stadsdel_pilot.json
+          if-no-files-found: warn
