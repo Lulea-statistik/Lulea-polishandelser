@@ -1,0 +1,49 @@
+name: Audit archived OSM roads against DeSO
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  overlay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install geospatial dependencies
+        run: pip install "geopandas>=1,<2" "pyogrio>=0.9" "shapely>=2,<3"
+      - name: Fetch validated SCB DeSO geometry
+        run: python scripts/fetch_scb_deso_2025_lulea.py
+      - name: Retrieve one successful archived artifact per road
+        shell: bash
+        run: |
+          set -euo pipefail
+          while read -r number run; do
+            mkdir -p "data/gis/osm_archived/road_${number}"
+            gh run download "${run}" -R "${GH_REPO}" -n "osm-lulea-road-${number}" -D "data/gis/osm_archived/road_${number}"
+          done <<'ROADS'
+          1 39939493805
+          2 39940928508
+          3 39938662295
+          4 39938662295
+          5 39939493805
+          6 39939493805
+          7 39939493805
+          8 39939493805
+          ROADS
+      - name: Validate archive, clip to Lulea, and intersect DeSO
+        run: python scripts/audit_osm_eight_roads_deso.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: osm-eight-roads-deso-overlap-qa
+          path: |
+            data/gis/audit_osm_eight_roads_deso_2025.csv
+            data/gis/audit_osm_eight_roads_sources.json
+            data/gis/osm_eight_roads_lulea_clipped.geojson
+          if-no-files-found: error
