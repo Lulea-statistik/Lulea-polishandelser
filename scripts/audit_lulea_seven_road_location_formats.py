@@ -18,6 +18,7 @@ def classify(raw,name):
  if re.fullmatch(n+r"\s*,\s*luleå\s*,\s*norrbottens län",p):return "B – väg + kommun + län"
  if re.fullmatch(n+r"\s*,\s*luleå",p):return "B – väg + kommun"
  if re.fullmatch(n+r"\s*,\s*[^,]+\s*,\s*luleå\s*,\s*norrbottens län",p):return "C – väg + plats/verksamhet + kommun + län"
+ if re.fullmatch(r"(?:luleå|norrbotten)\s+[^,]+\s*,\s*"+n+r"\s*,\s*(?:luleå|norrbotten)\s*,\s*norrbottens län",p):return "G – område före väg + kommun/län"
  if re.search(r"\b(?:korsning|rondell|trafikplats|mot|från|till|mellan|via)\b",p):return "D – färdväg/korsning eller flertydigt"
  if re.search(r"\b(?:på|vid|längs|utmed)\s+"+n+r"\b",p):return "E – explicit platsrelation"
  return "F – annan platsform, granska"
