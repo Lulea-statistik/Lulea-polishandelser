@@ -7,8 +7,8 @@ from shapely.ops import unary_union
 ROOT=Path(__file__).resolve().parents[1]
 SERVICE="https://services2.arcgis.com/AaIlmJZ51IGi5ZeC/ArcGIS/rest/services/Omr%C3%A5desindelningTemp/FeatureServer/151"
 G=ROOT/"data/gis"
-def get(params):
- req=urllib.request.Request(SERVICE+"?"+urllib.parse.urlencode(params),headers={"User-Agent":"lulea-statistik-district-geography-qa/1.0"})
+def get(params,path=""):
+ req=urllib.request.Request(SERVICE+path+"?"+urllib.parse.urlencode(params),headers={"User-Agent":"lulea-statistik-district-geography-qa/1.0"})
  with urllib.request.urlopen(req,timeout=80) as response:return json.load(response)
 def main():
  meta=get({"f":"json"})
@@ -19,13 +19,14 @@ def main():
  candidates=["namn","Namn","NAMN","Name","name","Stadsdel","stadsdel","STADSDEL","omr_namn","OMR_NAMN","Summeringsomrade","summeringsomrade","omradesnamn","Omradesnamn"]
  namefield=next((x for x in candidates if x in fields),None)
  if not namefield:raise ValueError("No verified district name field; inspect metadata instead of inferring")
- ids=get({"f":"json","returnIdsOnly":"true","where":"1=1","outFields":"*"})
+ ids=get({"f":"json","returnIdsOnly":"true","where":"1=1"},"/query")
+ if "error" in ids:raise RuntimeError("ArcGIS object ID query failed: "+json.dumps(ids["error"],ensure_ascii=False))
  objectids=ids.get("objectIds") or []
  if not objectids:raise ValueError("No polygon object IDs")
  features=[]
  for pos in range(0,len(objectids),100):
-  q=get({"f":"geojson","objectIds":",".join(map(str,objectids[pos:pos+100])),"outFields":"*","outSR":"4326"})
-  if q.get("type")!="FeatureCollection":raise ValueError("ArcGIS endpoint not GeoJSON")
+  q=get({"f":"geojson","objectIds":",".join(map(str,objectids[pos:pos+100])),"outFields":"*","outSR":"4326"},"/query")
+  if q.get("type")!="FeatureCollection":raise ValueError("ArcGIS query did not return GeoJSON: "+str(q)[:400])
   features.extend(q.get("features",[]))
  if len(features)!=len(objectids):raise ValueError(("Incomplete features",len(features),len(objectids)))
  district=gpd.GeoDataFrame.from_features(features,crs=4326)
