@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """QA-only: ArcGIS municipality district polygon source and OSM road-length overlay."""
-import csv,json,urllib.request,urllib.parse
+import csv,json,urllib.request,urllib.parse,os
 from pathlib import Path
 import geopandas as gpd
 from shapely.ops import unary_union
 ROOT=Path(__file__).resolve().parents[1]
-SERVICE="https://services2.arcgis.com/AaIlmJZ51IGi5ZeC/ArcGIS/rest/services/Omr%C3%A5desindelningTemp/FeatureServer/151"
+SERVICE=os.environ.get("LULEA_DISTRICT_FEATURE_LAYER","").strip()
+if not SERVICE:
+ raise SystemExit("Stadsdelslager för Luleå saknas. Det tidigare lagret tillhör Gävle. Ange ett kontrollerat LULEA_DISTRICT_FEATURE_LAYER från Luleå kommuns geodataportal.")
 G=ROOT/"data/gis"
 def get(params,path=""):
  req=urllib.request.Request(SERVICE+path+"?"+urllib.parse.urlencode(params),headers={"User-Agent":"lulea-statistik-district-geography-qa/1.0"})
