@@ -21,7 +21,7 @@ def main():
  p.add_argument("--roads",required=True)
  p.add_argument("--deso",required=True)
  p.add_argument("--road-column",default="gatunamn")
- p.add_argument("--deso-column",default="DeSO")
+ p.add_argument("--deso-column",default="desokod")
  p.add_argument("--output",default="data/audit_lulea_road_deso_crossings.csv")
  p.add_argument("--min-meters",type=float,default=50)
  p.add_argument("--min-share",type=float,default=0.02)
