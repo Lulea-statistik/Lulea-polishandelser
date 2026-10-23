@@ -1,10 +1,11 @@
 name: Audit Lulea district road lengths
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - scripts/audit_lulea_district_road_lengths.py
-      - .github/workflows/audit-lulea-district-road-lengths.yml
+    inputs:
+      district_layer_url:
+        description: 'Verifierad ArcGIS FeatureServer layer URL for Lulea, ending in layer number'
+        required: true
+        type: string
 permissions:
   contents: read
   actions: read
@@ -15,6 +16,7 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GH_REPO: ${{ github.repository }}
+      LULEA_DISTRICT_FEATURE_LAYER: ${{ inputs.district_layer_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
