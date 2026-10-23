@@ -22,7 +22,7 @@ def review(row):
  # Text mentions of address numbers are prompts for manual evidence verification,
  # not proof of the incident's precise location.
  numbered=bool(re.search(r"\b\d{1,4}\s*[a-z]?\b",place,re.I))
- locality=bool(re.search(r"\b(?:vid|i|på|intill|nära|korsningen|rondellen|avfarten|mellan)\b",norm(place)))
+ locality=bool(re.search(r"\b(?:vid|i|pa|intill|nara|korsningen|rondellen|avfarten|mellan)\b",norm(place)))
  if status=="konflikt_eller_flera_vägar":
   priority,reason="P1","Flera eller motstridiga vägar; jämför originalnotis"
  elif status=="kansligt_granskningsfall":
@@ -46,5 +46,8 @@ def main():
  with OUT.open("w",encoding="utf-8",newline="") as f:
   w=csv.DictWriter(f,fieldnames=list(selected[0]));w.writeheader();w.writerows(selected)
  print("ROAD_EVENT_REVIEW_SUMMARY",json.dumps({"input":len(rows),"pilot":len(selected),"priority":dict(Counter(x["review_priority"] for x in selected)),"road":dict(Counter(x["pilot_road_name"] for x in selected)),"source_status":dict(Counter(x["deso_test_status"] for x in selected))},ensure_ascii=False))
+ p1=[{"event_id":x["event_id"],"road":x["pilot_road_name"],"place_text":x["place_text"],"other_text_roads":x.get("other_text_roads",""),"review_reason":x["review_reason"],"original_geo":x.get("original_geo","")} for x in selected if x["review_priority"]=="P1"]
+ with (ROOT/"data/audit_lulea_road_p1_evidence.json").open("w",encoding="utf-8") as f:json.dump(p1,f,ensure_ascii=False,indent=2)
+ print("ROAD_P1_EVIDENCE_COUNT",len(p1))
  print("NO_PUBLICATION: Manual evidence review only")
 if __name__=="__main__":main()
