@@ -215,7 +215,58 @@ button,input,select,textarea,table{font-family:var(--font-body)}
     <p>För Luleå låg manuellt räknade händelser och parserträffar mycket nära varandra, 103 respektive 101. Den observerade serien bör därför användas som huvudserie. Ett bootstraptest på sammanfattningsnivå gav ett indikativt 95-procentigt intervall motsvarande ungefär <strong>−1,8&nbsp;% till +6,5&nbsp;%</strong> runt parserns Luleå-nivå. Intervallet beskriver osäkerheten i extraktionen av sammanfattningshändelser och omfattar inte alla andra möjliga felkällor, exempelvis deduplicering mot vanliga notiser.</p>
   </section>
 
-  <section class="card">
+  
+<section class="card" id="vaglangder-omraden">
+  <h2>Väglängder per geografiskt område – GIS-pilot</h2>
+  <p>Undersök hur långa delar av namngivna vägar som ligger inom ett valt <strong>DeSO 2025</strong>. Tabellen visar endast sträckor <strong>längre än 1 km och högst 5 km</strong> inom det valda området. Den omfattar för närvarande åtta pilotvägar, inte alla vägar i kommunen.</p>
+  <p class="muted">DeSO är inte samma sak som en stadsdel. Stadsdelar som Bergnäset kan läggas till först när deras gränser har verifierats. En lång lokal väg blir inte automatiskt en egen väggeografi.</p>
+  <div style="display:flex;gap:12px;align-items:flex-end;flex-wrap:wrap;margin:14px 0">
+    <label for="roadAreaFilter" style="font-weight:650;display:grid;gap:4px">Välj geografiskt område (DeSO)
+      <select id="roadAreaFilter" style="padding:9px;border:1px solid var(--line);border-radius:8px;min-width:230px;background:white">
+        <option value="">Laddar områden…</option>
+      </select>
+    </label>
+    <span id="roadAreaCount" class="muted" aria-live="polite"></span>
+  </div>
+  <div style="overflow-x:auto">
+    <table style="border-collapse:collapse;width:100%;min-width:510px" aria-label="Vägsträckor mellan 1 och 5 kilometer inom valt DeSO">
+      <thead><tr style="background:#eef3f8"><th scope="col" style="text-align:left;padding:10px;border-bottom:1px solid var(--line)">Väg</th><th scope="col" style="text-align:right;padding:10px;border-bottom:1px solid var(--line)">Km inom området</th><th scope="col" style="text-align:right;padding:10px;border-bottom:1px solid var(--line)">Vägens totallängd (km)</th></tr></thead>
+      <tbody id="roadAreaRows"><tr><td colspan="3" style="padding:12px">Laddar GIS-underlag…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="muted" id="roadAreaSource">Källor: OpenStreetMap och SCB DeSO 2025. Längd inom området är inte alltid samma sak som vägens totala längd. Ingen klassificering i polisstatistiken ändras av denna tabell.</p>
+</section>
+<script>
+(function(){
+ const select=document.getElementById('roadAreaFilter'),body=document.getElementById('roadAreaRows'),count=document.getElementById('roadAreaCount');
+ const fmt=n=>(n/1000).toLocaleString('sv-SE',{minimumFractionDigits:2,maximumFractionDigits:2});
+ function notice(t){body.replaceChildren();const tr=document.createElement('tr'),td=document.createElement('td');td.colSpan=3;td.style.padding='12px';td.textContent=t;tr.append(td);body.append(tr)}
+ fetch('data/road_lengths_deso_pilot.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(dataset=>{
+  const rows=dataset.rows||[];
+  const codes=[...new Set(rows.map(x=>x.geography_code))].sort('sv');
+  select.replaceChildren();
+  for(const code of codes){const o=document.createElement('option');o.value=code;o.textContent='DeSO '+code;select.append(o)}
+  function redraw(){
+   const code=select.value;
+   const selected=rows.filter(x=>x.geography_code===code&&x.length_in_geography_m>1000&&x.length_in_geography_m<=5000)
+    .sort((a,b)=>b.length_in_geography_m-a.length_in_geography_m||a.road.localeCompare(b.road,'sv'));
+   count.textContent=selected.length+' väg'+(selected.length===1?'':'ar')+' i intervallet';
+   if(!selected.length){notice('Inga av de åtta pilotvägarna har mer än 1 km och högst 5 km inom detta DeSO. Det betyder inte att andra vägar saknas.');return}
+   body.replaceChildren();
+   for(const row of selected){
+    const tr=document.createElement('tr');
+    for(const val of [row.road,fmt(row.length_in_geography_m),fmt(row.road_total_m)]){
+     const td=document.createElement('td');td.style.padding='9px 10px';td.style.borderBottom='1px solid var(--line)';td.style.textAlign=val===row.road?'left':'right';td.textContent=val;tr.append(td)
+    }
+    body.append(tr)
+   }
+  }
+  select.addEventListener('change',redraw);redraw();
+ }).catch(e=>{select.replaceChildren();notice('GIS-tabellen kunde inte laddas: '+e.message);count.textContent='Data saknas'});
+})();
+</script>
+
+<section class="card">
     <h2>Datakällor</h2>
     <ul>
       <li><strong>Primär källa:</strong> Polisens offentliga händelsenotiser och API.</li>

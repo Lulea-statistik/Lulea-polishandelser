@@ -1,0 +1,342 @@
+{
+  "metadata": {
+    "as_of": "2026-10-23",
+    "scope": "Endast åtta pilotvägar, inte fullständigt vägnät",
+    "source": "SCB DeSO 2025 + OpenStreetMap, kontrollerad GitHub Actions-körning 39943357987",
+    "threshold_min_m_exclusive": 1000,
+    "threshold_max_m_inclusive": 5000,
+    "method": "Längden är delsträckan inom valt DeSO, inte hela vägens längd. Stadsdelsgeometrier saknas."
+  },
+  "rows": [
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580A0030",
+      "geography_label": "DeSO 2580A0030",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 2088.9,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1010",
+      "geography_label": "DeSO 2580C1010",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 19.5,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1050",
+      "geography_label": "DeSO 2580C1050",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 51.1,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1060",
+      "geography_label": "DeSO 2580C1060",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 1524.7,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1090",
+      "geography_label": "DeSO 2580C1090",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 1430.5,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1110",
+      "geography_label": "DeSO 2580C1110",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 1381.9,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1120",
+      "geography_label": "DeSO 2580C1120",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 743.6,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1130",
+      "geography_label": "DeSO 2580C1130",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 328.6,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1150",
+      "geography_label": "DeSO 2580C1150",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 698.4,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1160",
+      "geography_label": "DeSO 2580C1160",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 1786,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1180",
+      "geography_label": "DeSO 2580C1180",
+      "road": "Hertsövägen",
+      "road_total_m": 11395.6,
+      "length_in_geography_m": 1342.6,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580A0030",
+      "geography_label": "DeSO 2580A0030",
+      "road": "Älvbrovägen",
+      "road_total_m": 5383,
+      "length_in_geography_m": 1780.4,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1020",
+      "geography_label": "DeSO 2580C1020",
+      "road": "Älvbrovägen",
+      "road_total_m": 5383,
+      "length_in_geography_m": 2527.1,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1030",
+      "geography_label": "DeSO 2580C1030",
+      "road": "Älvbrovägen",
+      "road_total_m": 5383,
+      "length_in_geography_m": 1075.6,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580A0060",
+      "geography_label": "DeSO 2580A0060",
+      "road": "Haparandavägen",
+      "road_total_m": 8515.3,
+      "length_in_geography_m": 3967.1,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1230",
+      "geography_label": "DeSO 2580C1230",
+      "road": "Haparandavägen",
+      "road_total_m": 8515.3,
+      "length_in_geography_m": 2481.3,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1240",
+      "geography_label": "DeSO 2580C1240",
+      "road": "Haparandavägen",
+      "road_total_m": 8515.3,
+      "length_in_geography_m": 262.4,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1300",
+      "geography_label": "DeSO 2580C1300",
+      "road": "Haparandavägen",
+      "road_total_m": 8515.3,
+      "length_in_geography_m": 1804.5,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1240",
+      "geography_label": "DeSO 2580C1240",
+      "road": "Storhedsvägen",
+      "road_total_m": 4304.2,
+      "length_in_geography_m": 2610.7,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1260",
+      "geography_label": "DeSO 2580C1260",
+      "road": "Storhedsvägen",
+      "road_total_m": 4304.2,
+      "length_in_geography_m": 1693.5,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1260",
+      "geography_label": "DeSO 2580C1260",
+      "road": "Mariebergsvägen",
+      "road_total_m": 5649.7,
+      "length_in_geography_m": 1081.3,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1320",
+      "geography_label": "DeSO 2580C1320",
+      "road": "Mariebergsvägen",
+      "road_total_m": 5649.7,
+      "length_in_geography_m": 1342.5,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1330",
+      "geography_label": "DeSO 2580C1330",
+      "road": "Mariebergsvägen",
+      "road_total_m": 5649.7,
+      "length_in_geography_m": 1039.1,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1340",
+      "geography_label": "DeSO 2580C1340",
+      "road": "Mariebergsvägen",
+      "road_total_m": 5649.7,
+      "length_in_geography_m": 1796.6,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1350",
+      "geography_label": "DeSO 2580C1350",
+      "road": "Mariebergsvägen",
+      "road_total_m": 5649.7,
+      "length_in_geography_m": 390.1,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1170",
+      "geography_label": "DeSO 2580C1170",
+      "road": "Mjölkuddsvägen",
+      "road_total_m": 3760.1,
+      "length_in_geography_m": 1479.8,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1200",
+      "geography_label": "DeSO 2580C1200",
+      "road": "Mjölkuddsvägen",
+      "road_total_m": 3760.1,
+      "length_in_geography_m": 884.6,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1220",
+      "geography_label": "DeSO 2580C1220",
+      "road": "Mjölkuddsvägen",
+      "road_total_m": 3760.1,
+      "length_in_geography_m": 292.7,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1240",
+      "geography_label": "DeSO 2580C1240",
+      "road": "Mjölkuddsvägen",
+      "road_total_m": 3760.1,
+      "length_in_geography_m": 1103.1,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1260",
+      "geography_label": "DeSO 2580C1260",
+      "road": "Storsandsvägen",
+      "road_total_m": 5098.8,
+      "length_in_geography_m": 5098.8,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1250",
+      "geography_label": "DeSO 2580C1250",
+      "road": "Väderleden",
+      "road_total_m": 2556.2,
+      "length_in_geography_m": 64.5,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1280",
+      "geography_label": "DeSO 2580C1280",
+      "road": "Väderleden",
+      "road_total_m": 2556.2,
+      "length_in_geography_m": 523.3,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    },
+    {
+      "geography_type": "DeSO 2025",
+      "geography_code": "2580C1292",
+      "geography_label": "DeSO 2580C1292",
+      "road": "Väderleden",
+      "road_total_m": 2556.2,
+      "length_in_geography_m": 1968.4,
+      "data_quality": "Pilot - OSM och SCB DeSO",
+      "source_run": "39943357987"
+    }
+  ]
+}
