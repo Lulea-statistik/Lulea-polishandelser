@@ -1,0 +1,27 @@
+name: Audit priority road original evidence
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_road_priority_original_evidence.py
+      - .github/workflows/audit-priority-road-original-evidence.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_own_place_road_qa.py
+      - run: python scripts/audit_lulea_own_place_deso_pilot.py
+      - run: python scripts/audit_lulea_road_event_review_queue.py
+      - run: python scripts/audit_lulea_road_priority_original_evidence.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lulea-road-priority-original-evidence
+          path: data/audit_lulea_road_priority_original_evidence.csv
+          if-no-files-found: error
