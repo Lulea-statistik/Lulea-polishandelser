@@ -1,0 +1,50 @@
+name: Audit road DeSO classification sensitivity
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_road_deso_sensitivity.py
+      - .github/workflows/audit-road-deso-sensitivity.yml
+permissions:
+  contents: read
+  actions: read
+jobs:
+  sensitivity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install "geopandas>=1,<2" "pyogrio>=0.9" "shapely>=2,<3"
+      - run: python scripts/fetch_scb_deso_2025_lulea.py
+      - name: Get successful road archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          while read -r number run; do
+            mkdir -p "data/gis/osm_archived/road_${number}"
+            gh run download "${run}" -R "${GH_REPO}" -n "osm-lulea-road-${number}" -D "data/gis/osm_archived/road_${number}"
+          done <<'ROADS'
+          1 39939493805
+          2 39940928508
+          3 39938662295
+          4 39938662295
+          5 39939493805
+          6 39939493805
+          7 39939493805
+          8 39939493805
+          ROADS
+      - run: python scripts/audit_osm_eight_roads_deso.py
+      - run: python scripts/audit_road_deso_sensitivity.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: deso-road-classification-sensitivity
+          path: |
+            data/gis/audit_road_deso_sensitivity.csv
+            data/gis/audit_road_deso_sensitivity_summary.csv
+          if-no-files-found: error
