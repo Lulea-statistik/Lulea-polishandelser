@@ -1,0 +1,28 @@
+name: Audit priority road evidence triage
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_road_priority_evidence_triage.py
+      - .github/workflows/audit-priority-road-evidence-triage.yml
+permissions:
+  contents: read
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_own_place_road_qa.py
+      - run: python scripts/audit_lulea_own_place_deso_pilot.py
+      - run: python scripts/audit_lulea_road_event_review_queue.py
+      - run: python scripts/audit_lulea_road_priority_original_evidence.py
+      - run: python scripts/audit_lulea_road_priority_evidence_triage.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lulea-priority-road-evidence-triage
+          path: data/audit_lulea_road_priority_evidence_triage.csv
+          if-no-files-found: error
