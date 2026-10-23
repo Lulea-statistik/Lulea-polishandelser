@@ -17,10 +17,6 @@ on:
           - Storsandsvägen
           - Väderleden
           - Alla
-  push:
-    paths:
-      - scripts/fetch_osm_lulea_eight_road_pilot.py
-      - .github/workflows/pilot-osm-eight-roads.yml
 permissions:
   contents: read
 jobs:
@@ -54,7 +50,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Fetch one OSM road
-        if: github.event_name != 'workflow_dispatch' || inputs.road == 'Alla' || inputs.road == matrix.road
+        if: inputs.road == 'Alla' || inputs.road == matrix.road
         run: python scripts/fetch_osm_lulea_eight_road_pilot.py --road "${{ matrix.road }}"
       - uses: actions/upload-artifact@v4
         if: success() && (github.event_name != 'workflow_dispatch' || inputs.road == 'Alla' || inputs.road == matrix.road)
