@@ -22,5 +22,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: lulea-road-event-review-queue
-          path: data/audit_lulea_road_event_review_queue.csv
+          path: |
+            data/audit_lulea_road_event_review_queue.csv
+            data/audit_lulea_road_p1_evidence.json
           if-no-files-found: error
