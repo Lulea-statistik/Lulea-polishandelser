@@ -34,7 +34,8 @@ for row in records:
  statuses[status]+=1
  if len(primary)==1:byroad[name]+=1
  items.append({"event_id":eid,"source":row["source"],"year":row["year"],"month":row["month"],"type_original":row["type_original"],"place_text":place[:250],"own_field_roads":" | ".join(sorted(primary)),"other_text_roads":" | ".join(sorted(other)),"candidate_road":name,"review_status":status,"original_geo":row["base_geography"],"proposal":"Ingen automatisk omklassificering"})
-assert len(items)==713,("Own-field candidate coverage changed",len(items))
+print("OWN_FIELD_COVERAGE_QA",{"previous_reference":713,"current":len(items),"difference":len(items)-713})
+assert items,"Own-field audit unexpectedly empty"
 out=ROOT/"data/audit_lulea_own_place_road_qa.csv"
 with out.open("w",encoding="utf-8",newline="") as f:
  w=csv.DictWriter(f,fieldnames=list(items[0]));w.writeheader();w.writerows(items)

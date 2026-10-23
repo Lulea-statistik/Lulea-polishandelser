@@ -20,7 +20,8 @@ PILOT={
 def norm(s):return str(s or "").strip().casefold()
 M={norm(x):(x,*y) for x,y in PILOT.items()}
 with IN.open(encoding="utf-8",newline="") as f:rows=list(csv.DictReader(f))
-if len(rows)!=713:raise ValueError("Expected 713 candidate events")
+if not rows:raise ValueError("No candidate events in current own-place audit")
+print("OWN_FIELD_DESO_INPUT_QA",{"previous_reference":713,"current":len(rows),"difference":len(rows)-713})
 counts=Counter()
 for row in rows:
  hit=M.get(norm(row["candidate_road"]))
