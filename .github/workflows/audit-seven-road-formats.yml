@@ -1,0 +1,24 @@
+name: Audit seven Lulea road location formats
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/audit_lulea_seven_road_location_formats.py
+      - .github/workflows/audit-seven-road-formats.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_seven_road_location_formats.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: lulea-seven-road-location-formats
+          path: data/audit_lulea_seven_road_location_formats.csv
+          if-no-files-found: error
