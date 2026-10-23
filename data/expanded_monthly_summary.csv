@@ -14436,11 +14436,11 @@ year,month,geography_group,event_type,event_count
 2026,10,Kiruna kommun,Trafikkontroll,1
 2026,10,Kiruna kommun,Trafikolycka,1
 2026,10,Luleå kommun,Misshandel,5
-2026,10,Luleå kommun,Trafikolycka,4
+2026,10,Luleå kommun,Trafikolycka,5
 2026,10,Luleå kommun,Stöld,3
+2026,10,Luleå kommun,Trafikkontroll,3
 2026,10,Luleå kommun,Fylleri/LOB,2
 2026,10,Luleå kommun,Skadegörelse,2
-2026,10,Luleå kommun,Trafikkontroll,2
 2026,10,Luleå kommun,Fylleri,1
 2026,10,Luleå kommun,Försvunnen person,1
 2026,10,Luleå kommun,Häleri,1
@@ -14462,6 +14462,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Piteå kommun,Ofredande/förargelse,5
 2026,10,Piteå kommun,Trafikbrott,2
 2026,10,Piteå kommun,Inbrott,1
+2026,10,Piteå kommun,Misshandel,1
 2026,10,Piteå kommun,Olaga hot,1
 2026,10,Piteå kommun,Olaga intrång,1
 2026,10,Piteå kommun,Rattfylleri,1
