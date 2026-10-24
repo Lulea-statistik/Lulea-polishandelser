@@ -5556,13 +5556,14 @@ year,month,geography_group,type_original,event_count
 2026,09,Örnäset,Olaga hot,1
 2026,10,Centrum,Fylleri,1
 2026,10,Centrum,Försvunnen person,1
-2026,10,Centrum,Misshandel,1
+2026,10,Centrum,Misshandel,2
 2026,10,Centrum,Skadegörelse,1
 2026,10,Centrum,Stöld,2
+2026,10,Centrum,Trafikbrott,1
 2026,10,Centrum,Trafikkontroll,1
 2026,10,Centrum,Trafikolycka,1
 2026,10,Gammelstad,Stöld,1
-2026,10,Okänt delområde,Fylleri/LOB,2
+2026,10,Okänt delområde,Fylleri/LOB,3
 2026,10,Okänt delområde,Häleri,1
 2026,10,Okänt delområde,Misshandel,4
 2026,10,Okänt delområde,Narkotikabrott,1

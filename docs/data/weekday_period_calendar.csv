@@ -7297,3 +7297,7 @@ date,year,weekday,geography_group,period,event_count,quiet_count,status
 2026-10-21,2026,2,"Norrbotten, okänd kommun",Natt,1,0,Händelse
 2026-10-22,2026,3,"Norrbotten, okänd kommun",Natt,1,0,Händelse
 2026-10-22,2026,3,Piteå kommun,Natt,1,0,Händelse
+2026-10-24,2026,5,Arvidsjaurs kommun,Natt,1,0,Händelse
+2026-10-24,2026,5,Luleå kommun,Natt,2,0,Händelse
+2026-10-24,2026,5,Pajala kommun,Natt,1,0,Händelse
+2026-10-24,2026,5,Piteå kommun,Natt,1,0,Händelse
