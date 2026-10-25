@@ -13737,7 +13737,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Stöld,4,0,2
 2026,Bodens kommun,Händelse,,Stöld,5,0,2
 2026,Bodens kommun,Händelse,,Trafikbrott,1,0,1
-2026,Bodens kommun,Händelse,,Trafikbrott,5,0,1
+2026,Bodens kommun,Händelse,,Trafikbrott,5,0,2
 2026,Bodens kommun,Händelse,,Trafikbrott,6,0,1
 2026,Bodens kommun,Händelse,,Trafikkontroll,0,0,4
 2026,Bodens kommun,Händelse,,Trafikkontroll,1,0,1
@@ -13788,7 +13788,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,Natt,Rattfylleri,3,1,1
 2026,Bodens kommun,Händelse,Natt,Rattfylleri,4,1,1
 2026,Bodens kommun,Händelse,Natt,Rattfylleri,5,1,3
-2026,Bodens kommun,Händelse,Natt,Rattfylleri,6,1,3
+2026,Bodens kommun,Händelse,Natt,Rattfylleri,6,1,4
 2026,Bodens kommun,Händelse,Natt,Skadegörelse,3,1,1
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,1,1,1
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,2,1,1
@@ -13889,7 +13889,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,Natt,Inbrott,3,1,1
 2026,Gällivare kommun,Händelse,Natt,Misshandel,3,1,2
 2026,Gällivare kommun,Händelse,Natt,Misshandel,5,1,1
-2026,Gällivare kommun,Händelse,Natt,Misshandel,6,1,1
+2026,Gällivare kommun,Händelse,Natt,Misshandel,6,1,2
 2026,Gällivare kommun,Händelse,Natt,Mord/dråp,4,1,1
 2026,Gällivare kommun,Händelse,Natt,Narkotikabrott,5,1,1
 2026,Gällivare kommun,Händelse,Natt,Ofredande/förargelse,5,1,1
@@ -14053,6 +14053,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kalix kommun,Händelse,Natt,Rattfylleri,3,1,1
 2026,Kalix kommun,Händelse,Natt,Rattfylleri,4,1,1
 2026,Kalix kommun,Händelse,Natt,Rattfylleri,6,1,1
+2026,Kalix kommun,Händelse,Natt,Rån,6,1,1
 2026,Kalix kommun,Händelse,Natt,Skadegörelse,1,1,1
 2026,Kalix kommun,Händelse,Natt,Skadegörelse,2,1,1
 2026,Kalix kommun,Händelse,Natt,Skadegörelse,4,1,1
@@ -14090,6 +14091,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,Fylleri,4,0,1
 2026,Kiruna kommun,Händelse,,Försvunnen person,0,0,1
 2026,Kiruna kommun,Händelse,,Försvunnen person,4,0,2
+2026,Kiruna kommun,Händelse,,Försvunnen person,5,0,1
 2026,Kiruna kommun,Händelse,,Inbrott,3,0,1
 2026,Kiruna kommun,Händelse,,Inbrott,5,0,1
 2026,Kiruna kommun,Händelse,,Knivlagen,6,0,1
@@ -14164,7 +14166,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,Natt,Misshandel,1,1,1
 2026,Kiruna kommun,Händelse,Natt,Misshandel,4,1,1
 2026,Kiruna kommun,Händelse,Natt,Misshandel,5,1,3
-2026,Kiruna kommun,Händelse,Natt,Misshandel,6,1,6
+2026,Kiruna kommun,Händelse,Natt,Misshandel,6,1,8
 2026,Kiruna kommun,Händelse,Natt,Narkotikabrott,0,1,1
 2026,Kiruna kommun,Händelse,Natt,Ofredande/förargelse,4,1,1
 2026,Kiruna kommun,Händelse,Natt,Ofredande/förargelse,5,1,5
@@ -14318,6 +14320,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,"Trafikolycka,  singel",5,0,2
 2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",0,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",4,0,1
+2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",5,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",0,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",1,0,2
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",4,0,1
@@ -14364,7 +14367,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Misshandel,3,1,3
 2026,Luleå kommun,Händelse,Natt,Misshandel,4,1,3
 2026,Luleå kommun,Händelse,Natt,Misshandel,5,1,20
-2026,Luleå kommun,Händelse,Natt,Misshandel,6,1,16
+2026,Luleå kommun,Händelse,Natt,Misshandel,6,1,17
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,2,1,1
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,3,1,2
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,4,1,1

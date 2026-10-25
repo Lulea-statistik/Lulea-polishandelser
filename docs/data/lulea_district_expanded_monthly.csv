@@ -5556,7 +5556,7 @@ year,month,geography_group,type_original,event_count
 2026,09,Örnäset,Olaga hot,1
 2026,10,Centrum,Fylleri,1
 2026,10,Centrum,Försvunnen person,1
-2026,10,Centrum,Misshandel,2
+2026,10,Centrum,Misshandel,3
 2026,10,Centrum,Skadegörelse,1
 2026,10,Centrum,Stöld,2
 2026,10,Centrum,Trafikbrott,1
@@ -5573,6 +5573,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Okänt delområde,Trafikolycka,2
 2026,10,Okänt delområde,Våld/hot mot tjänsteman,1
 2026,10,Okänt delområde,Övrigt/oklassificerad,1
+2026,10,Storheden,"Trafikolycka,  smitning från",1
 2026,10,Sunderbyn,Trafikolycka,1
 2026,10,Sunderbyn,"Trafikolycka,  vilt",1
 2026,10,Sunderbyn,"Trafikolycka, vilt",1

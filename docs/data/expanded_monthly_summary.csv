@@ -14394,8 +14394,8 @@ year,month,geography_group,event_type,event_count
 2026,10,Arvidsjaurs kommun,Skadegörelse,1
 2026,10,Arvidsjaurs kommun,Trafikolycka,1
 2026,10,Arvidsjaurs kommun,Vapenlagen,1
-2026,10,Bodens kommun,Rattfylleri,4
-2026,10,Bodens kommun,Trafikbrott,3
+2026,10,Bodens kommun,Rattfylleri,5
+2026,10,Bodens kommun,Trafikbrott,4
 2026,10,Bodens kommun,Trafikkontroll,3
 2026,10,Bodens kommun,Arbetsplatsolycka,2
 2026,10,Bodens kommun,Brand,2
@@ -14407,8 +14407,8 @@ year,month,geography_group,event_type,event_count
 2026,10,Bodens kommun,Övrigt/oklassificerad,1
 2026,10,Flera kommuner i Norrbotten,Trafikkontroll,20
 2026,10,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",2
+2026,10,Gällivare kommun,Misshandel,3
 2026,10,Gällivare kommun,Brand,2
-2026,10,Gällivare kommun,Misshandel,2
 2026,10,Gällivare kommun,Narkotikabrott,1
 2026,10,Gällivare kommun,Rattfylleri,1
 2026,10,Gällivare kommun,Trafikbrott,1
@@ -14426,19 +14426,20 @@ year,month,geography_group,event_type,event_count
 2026,10,Kalix kommun,Trafikolycka,2
 2026,10,Kalix kommun,Misshandel,1
 2026,10,Kalix kommun,Narkotikabrott,1
+2026,10,Kalix kommun,Rån,1
 2026,10,Kalix kommun,Stöld,1
 2026,10,Kalix kommun,"Trafikolycka, vilt",1
+2026,10,Kiruna kommun,Misshandel,3
 2026,10,Kiruna kommun,Övrigt/oklassificerad,3
+2026,10,Kiruna kommun,Försvunnen person,2
 2026,10,Kiruna kommun,Trafikbrott,2
 2026,10,Kiruna kommun,Arbetsplatsolycka,1
-2026,10,Kiruna kommun,Försvunnen person,1
-2026,10,Kiruna kommun,Misshandel,1
 2026,10,Kiruna kommun,Olaga intrång,1
 2026,10,Kiruna kommun,Rattfylleri,1
 2026,10,Kiruna kommun,Skadegörelse,1
 2026,10,Kiruna kommun,Trafikkontroll,1
 2026,10,Kiruna kommun,Trafikolycka,1
-2026,10,Luleå kommun,Misshandel,6
+2026,10,Luleå kommun,Misshandel,7
 2026,10,Luleå kommun,Trafikolycka,5
 2026,10,Luleå kommun,Fylleri/LOB,3
 2026,10,Luleå kommun,Stöld,3
@@ -14450,6 +14451,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Luleå kommun,Narkotikabrott,1
 2026,10,Luleå kommun,Olovlig körning,1
 2026,10,Luleå kommun,Trafikbrott,1
+2026,10,Luleå kommun,"Trafikolycka,  smitning från",1
 2026,10,Luleå kommun,"Trafikolycka,  vilt",1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
 2026,10,Luleå kommun,Våld/hot mot tjänsteman,1
