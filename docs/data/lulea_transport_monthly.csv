@@ -2299,5 +2299,6 @@ year,month,geography_group,location_precision,road_reference,junction_reference,
 2026,10,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Kollektivtrafik,Olycka,Överlappande trafikslag – kontroll krävs,1
 2026,10,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Kontextträff – kontroll krävs,1
 2026,10,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Olycka,Överlappande trafikslag – kontroll krävs,1
+2026,10,Storheden,Områdesanknuten – ej punktverifierad,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Olycka,Högre träffsäkerhet,1
 2026,10,Sunderbyn,Områdesanknuten – ej punktverifierad,Väg 97,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Högre träffsäkerhet,1
 2026,10,Vägsträcka – område ej fastställt,Lång vägsträcka – oprecis,E4,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Högre träffsäkerhet,1
