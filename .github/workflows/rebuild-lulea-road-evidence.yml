@@ -1,0 +1,69 @@
+name: Rebuild Lulea road evidence review chain
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - .github/workflows/rebuild-lulea-road-evidence.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install existing project dependencies
+        run: pip install -r requirements.txt
+      - name: Verify Väderleden geometry snapshot (non-publishing)
+        run: python scripts/check_vaderleden_audit_dependencies.py
+      - name: Rebuild own-place road candidates
+        run: python scripts/audit_lulea_own_place_road_qa.py
+      - name: Join to existing eight-road DeSO pilot
+        run: python scripts/audit_lulea_own_place_deso_pilot.py
+      - name: Rebuild event-ID review queue
+        run: python scripts/audit_lulea_road_event_review_queue.py
+      - name: Rebuild original source evidence
+        run: python scripts/audit_lulea_road_priority_original_evidence.py
+      - name: Rebuild evidence triage
+        run: python scripts/audit_lulea_road_priority_evidence_triage.py
+      - name: Verify generated chain
+        run: |
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          paths=[
+            "data/audit_lulea_own_place_road_qa.csv",
+            "data/audit_lulea_own_place_deso_pilot.csv",
+            "data/audit_lulea_road_event_review_queue.csv",
+            "data/audit_lulea_road_priority_original_evidence.csv",
+            "data/audit_lulea_road_priority_evidence_triage.csv",
+          ]
+          for p in paths:
+            with Path(p).open(encoding="utf-8-sig",newline="") as f:
+              rows=list(csv.DictReader(f))
+            assert rows, f"No review rows in {p}"
+            assert len(rows)==len({r["event_id"] for r in rows}),f"Duplicate IDs in {p}"
+            print(p,len(rows))
+          with Path(paths[-1]).open(encoding="utf-8-sig",newline="") as f:
+            rows=list(csv.DictReader(f))
+          assert all(r.get("publish")=="NEJ" for r in rows)
+          assert all(r.get("geographical_decision","").startswith("Ej styrkt") for r in rows)
+          print("PASS: read-only audit chain; no geography approved")
+          PY
+      - name: Upload private-to-run QA artifacts (not Pages or main)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lulea-road-evidence-complete
+          path: |
+            data/audit_lulea_own_place_road_qa.csv
+            data/audit_lulea_own_place_deso_pilot.csv
+            data/audit_lulea_road_event_review_queue.csv
+            data/audit_lulea_road_p1_evidence.json
+            data/audit_lulea_road_priority_original_evidence.csv
+            data/audit_lulea_road_priority_evidence_triage.csv
+          if-no-files-found: warn
+          retention-days: 30
