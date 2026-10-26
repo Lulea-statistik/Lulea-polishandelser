@@ -1,0 +1,20 @@
+name: Test road mention triage
+on:
+  pull_request:
+    paths:
+      - scripts/road_mentions_qa.py
+      - scripts/audit_lulea_road_priority_evidence_triage.py
+      - tests/test_road_mentions_qa.py
+      - .github/workflows/test-road-mention-triage.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_road_mentions_qa.py -v
