@@ -1,0 +1,3 @@
+serie,kalla,git_blob_sha,antal_aggregatrader,handelser,okant_delomrade,ovriga_kategorier,andel_okant_procent,formatfel,dubbletter,negativa_antal
+ursprunglig,docs/data/lulea_district_monthly.csv,f39c85cba4382ce0b9ae627abd36be4a8bfbac91,4440,6224,2469,3755,39.6690,0,0,0
+expanderad,docs/data/lulea_district_expanded_monthly.csv,330c093de97ef3be3fd44df6480395a1a0df6a98,5579,9750,5309,4441,54.4513,0,0,0
