@@ -7306,3 +7306,5 @@ date,year,weekday,geography_group,period,event_count,quiet_count,status
 2026-10-25,2026,6,Kalix kommun,Natt,1,0,Händelse
 2026-10-25,2026,6,Kiruna kommun,Natt,2,0,Händelse
 2026-10-25,2026,6,Luleå kommun,Natt,1,0,Händelse
+2026-10-26,2026,0,Luleå kommun,Natt,1,0,Händelse
+2026-10-26,2026,0,Överkalix kommun,Natt,1,0,Händelse

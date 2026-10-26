@@ -5571,10 +5571,11 @@ year,month,geography_group,type_original,event_count
 2026,10,Okänt delområde,Skadegörelse,1
 2026,10,Okänt delområde,Trafikkontroll,2
 2026,10,Okänt delområde,Trafikolycka,2
+2026,10,Okänt delområde,"Trafikolycka,  vilt",1
 2026,10,Okänt delområde,Våld/hot mot tjänsteman,1
 2026,10,Okänt delområde,Övrigt/oklassificerad,1
 2026,10,Storheden,"Trafikolycka,  smitning från",1
 2026,10,Sunderbyn,Trafikolycka,1
 2026,10,Sunderbyn,"Trafikolycka,  vilt",1
 2026,10,Sunderbyn,"Trafikolycka, vilt",1
-2026,10,Sörbyarna,Trafikolycka,1
+2026,10,Sörbyarna,Trafikolycka,2
