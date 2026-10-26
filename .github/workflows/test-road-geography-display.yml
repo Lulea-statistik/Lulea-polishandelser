@@ -1,0 +1,34 @@
+name: Test road geography display policy
+on:
+  pull_request:
+    paths:
+      - docs/lulea.html
+      - docs/road-display-policy.js
+      - tests/road-display-policy.test.cjs
+      - .github/workflows/test-road-geography-display.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run road threshold regression tests
+        run: node --test tests/road-display-policy.test.cjs
+      - name: Assert Lulea page consumes shared policy
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          page = Path('docs/lulea.html').read_text(encoding='utf-8')
+          assert '<script src="road-display-policy.js"></script>' in page
+          assert 'LuleaRoadDisplay.visible(' in page
+          assert 'LuleaRoadDisplay.category(' in page
+          assert 'LuleaRoadDisplay.totalsAcrossAllYears(' in page
+          assert 'roadNameTotals.get(r.road_reference)<10' not in page
+          assert '(totals.get(road)||0)>=10' not in page
+          print('PASS shared display policy wired into page')
+          PY
