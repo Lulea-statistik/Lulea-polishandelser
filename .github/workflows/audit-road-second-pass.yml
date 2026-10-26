@@ -1,0 +1,29 @@
+name: Audit road exceptions second pass
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_road_second_pass.py'
+      - 'tests/test_audit_road_second_pass.py'
+      - '.github/workflows/audit-road-second-pass.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s tests -p test_audit_road_second_pass.py -v
+      - run: python scripts/audit_lulea_own_place_road_qa.py
+      - run: python scripts/audit_road_second_pass.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: road-exception-second-pass
+          path: |
+            data/audit_road_exceptions_second_pass.csv
+            data/audit_road_normal_sample.csv
+          if-no-files-found: error
