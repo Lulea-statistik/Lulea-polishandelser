@@ -3,6 +3,7 @@
 import csv, json, re
 from collections import Counter
 from pathlib import Path
+from road_mentions_qa import distinct_mentions
 ROOT=Path(__file__).resolve().parents[1]
 src=ROOT/"data/audit_lulea_road_priority_original_evidence.csv"
 with src.open(encoding="utf-8",newline="") as f: rows=list(csv.DictReader(f))
@@ -14,11 +15,12 @@ for row in rows:
  audit_place=(row.get("audit_place_field") or "").strip()
  narrative=(row.get("original_narrative") or "").strip()
  other=(row.get("other_road_mentions") or "").strip()
+ distinct=distinct_mentions(other,road)
  place_l=place.casefold()
  if not place:
   status="saknat_originalplatsfält"
   reason="Originalets platsfält saknas"
- elif other:
+ elif distinct:
   status="flera_vaguppgifter"
   reason="Ytterligare vägnamn i beskrivningen; kontrollera motsägelser"
  elif road not in place_l:
@@ -35,7 +37,8 @@ for row in rows:
   reason="Ingen ytterligare verifierbar position i ursprungligt platsfält"
  if road=="väderleden":
   reason+="; Väderledens vägklass är känslig för tröskelvärden"
- out.append({**row,"evidence_class":status,"evidence_explanation":reason,
+ out.append({**row,"distinct_other_mentions":" | ".join(distinct),
+   "evidence_class":status,"evidence_explanation":reason,
    "original_place_matches_pilot_road":"Ja" if road in place_l else "Nej",
    "narrative_available":"Ja" if narrative else "Nej",
    "geographical_decision":"Ej styrkt – oförändrad geografi",
