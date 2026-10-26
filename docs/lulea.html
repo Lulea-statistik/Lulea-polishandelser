@@ -3,6 +3,7 @@
 <link rel="icon" href="https://lulea-statistik.github.io/BR-brottsstatistik/kommun-favicon.ico?v=2">
 <title>Polishändelser – Luleås stadsdelar | Luleå Statistik</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<script src="road-display-policy.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--line:#d9e0e7;--bg:#f5f7fa;--blue:#0b5cab;--muted:#66717d}*{box-sizing:border-box}
@@ -48,7 +49,7 @@ function filter(){
  const district=document.getElementById('transportDistrict').value;
  return data.filter(r=>{
   const placeOk=!transport?(g==='Alla'||r.geography_group===g):
-    (g==='Alla'||g==='road:'+r.road_reference||(g==='road:other-known'&&r.road_reference!=='Väg ej angiven'&&roadNameTotals.get(r.road_reference)<10)||(g==='road:unknown'&&(!r.road_reference||r.road_reference==='Väg ej angiven'))||(g==='junction:known'&&r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven')||(g==='junction:unknown'&&r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'))||g==='stop:'+r.bus_stop_reference);
+    (g==='Alla'||g==='road:'+r.road_reference||(g==='road:other-known'&&r.road_reference!=='Väg ej angiven'&&!LuleaRoadDisplay.visible(r.road_reference,roadNameTotals))||(g==='road:unknown'&&(!r.road_reference||r.road_reference==='Väg ej angiven'))||(g==='junction:known'&&r.junction_reference&&r.junction_reference!=='Trafikplats ej angiven')||(g==='junction:unknown'&&r.location_precision==='Trafikplats omnämns – verifiera händelseplats'&&(!r.junction_reference||r.junction_reference==='Trafikplats ej angiven'))||g==='stop:'+r.bus_stop_reference);
   return placeOk&&(!transport||district==='Alla'||r.geography_group===district)&&(y==='Alla'||r.year===y)&&(t==='Alla'||r.type_original===t);
  });
 }
@@ -64,8 +65,8 @@ function locationOptions(rows,isTransport,mode){
   const rt=transportData.filter(r=>r.transport_mode==='Vägtrafik');
   const totals=new Map();
   for(const r of rt)if(r.road_reference&&r.road_reference!=='Väg ej angiven')totals.set(r.road_reference,(totals.get(r.road_reference)||0)+r.event_count);
-  for(const name of [...totals.keys()].filter(name=>totals.get(name)>=10).sort((a,b)=>a.localeCompare(b,'sv')))add(roads,'road:'+name,name+' – väg',true);
-  if([...totals.values()].some(n=>n<10))add(roads,'road:other-known','Övrig väg, känd väg',true);
+  for(const name of [...totals.keys()].filter(name=>LuleaRoadDisplay.visible(name,totals)).sort((a,b)=>a.localeCompare(b,'sv')))add(roads,'road:'+name,name+' – väg',true);
+  if([...totals.keys()].some(name=>!LuleaRoadDisplay.visible(name,totals)))add(roads,'road:other-known','Övrig väg, känd väg',true);
   if(rt.some(r=>!r.road_reference||r.road_reference==='Väg ej angiven'))add(roads,'road:unknown','Övrig väg, okänd väg',true);
   e.append(roads);
  }
@@ -103,7 +104,7 @@ function transportGeography(rows){
   for(const r of rows){
    const road=r.road_reference;
    const label=road&&road!=='Väg ej angiven'?
-    ((totals.get(road)||0)>=10?road:'Övrig väg, känd väg'):
+    LuleaRoadDisplay.category(road,totals):
     'Övrig väg, okänd väg';
    result.set(label,(result.get(label)||0)+r.event_count);
   }
@@ -153,7 +154,7 @@ Promise.all([
  originalData=csv(original).map(r=>({...r,event_count:+r.event_count||0}));
  expandedData=csv(expanded).map(r=>({...r,event_count:+r.event_count||0}));
  transportData=transport?csv(transport).map(r=>({...r,event_count:+r.event_count||0,type_original:r.event_kind})):[];
- roadNameTotals=new Map();for(const r of transportData)if(r.transport_mode==='Vägtrafik'&&r.road_reference&&r.road_reference!=='Väg ej angiven')roadNameTotals.set(r.road_reference,(roadNameTotals.get(r.road_reference)||0)+r.event_count);
+ roadNameTotals=LuleaRoadDisplay.totalsAcrossAllYears(transportData);
  if(!originalData.length)throw Error('Tomt stadsdelsunderlag');
  if(!expandedData.length){document.getElementById('seriesMode').value='original';document.getElementById('seriesMode').querySelector('option[value="expanded"]').disabled=true;document.getElementById('seriesExplanation').textContent='Expanderad stadsdelsdata inväntar publicering; ursprungliga publiceringar visas tills vidare.';}
  const transportSelect=document.getElementById('transportMode');
