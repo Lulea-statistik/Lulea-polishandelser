@@ -33,6 +33,7 @@ select{width:100%;font:inherit;padding:10px;border:1px solid #b8c2cc;border-radi
 <div id="loading" class="panel">Läser in delområdesstatistik…</div>
 <div id="dashboard" hidden>
 <div class="panel filters" id="transportfilter"><div><label for="seriesMode">Dataserie</label><select id="seriesMode"><option value="expanded" selected>Expanderade händelser</option><option value="original">Ursprungliga publiceringar</option></select></div><div hidden><label for="transportMode">Transportkategori</label><select id="transportMode"><option value="Alla" selected>Alla polishändelser</option></select></div><div><label for="geo" id="geoLabel">Geografi</label><select id="geo"></select></div><div id="districtFilter" hidden><label for="transportDistrict">Stadsdel (kompletterande)</label><select id="transportDistrict"></select></div><div><label for="year">År</label><select id="year"></select></div><div><label for="kind">Händelsetyp</label><select id="kind"></select></div></div>
+<div id="transportReturn" hidden style="margin:0 0 12px"><button id="returnToDistricts" type="button" style="font:inherit;padding:9px 13px;border:1px solid #b8c2cc;border-radius:8px;background:#fff;color:#0b5cab;cursor:pointer">Visa alla polishändelser och stadsdelar</button></div>
 <p class="muted" id="seriesExplanation" aria-live="polite">Expanderade händelser. Identifierade underhändelser räknas separat; geografi som inte kan fastställas hamnar i Okänt delområde.</p><div class="kpis"><div class="panel"><span class="muted" id="totalLabel">Antal händelser</span><strong id="total" class="number">–</strong></div><div class="panel"><span class="muted">Första månaden</span><strong id="first" class="number">–</strong></div><div class="panel"><span class="muted">Sista månaden</span><strong id="last" class="number">–</strong></div></div>
 <div class="grid"><section class="panel"><h2>Händelser per år</h2><div class="chart"><canvas id="years"></canvas></div></section><section class="panel"><h2>Vanligaste händelsetyper</h2><div class="chart"><canvas id="types"></canvas></div></section></div>
 <div class="grid"><section class="panel"><h2>Händelser per månad</h2><p class="muted">Januari–december summerat över vald tidsperiod. Välj ett enskilt år för månadsfördelningen det året.</p><div class="chart"><canvas id="months"></canvas></div></section><section class="panel"><h2>Geografisk fördelning inom Luleå</h2><p class="muted" id="geographyExplanation">Stadsdelar och okända delområden.</p><div class="chart"><canvas id="districts"></canvas></div></section></div>
@@ -135,6 +136,7 @@ function applySeries(){
  const previousTransport=applySeries.previousTransport;
  const kind=previousTransport!==undefined && previousTransport!==isTransport?'Alla':document.getElementById('kind').value;
  applySeries.previousTransport=isTransport;
+ document.getElementById('transportReturn').hidden=!isTransport;
  document.getElementById('geoLabel').textContent='Geografi';
  document.getElementById('districtFilter').hidden=true;
  locationOptions(data,isTransport,selectedTransport);
@@ -161,6 +163,7 @@ Promise.all([
  if(transportData.length){setOptions('transportMode',[...new Set(transportData.map(r=>r.transport_mode))].sort((a,b)=>a.localeCompare(b,'sv')),'Alla polishändelser');}
  else {transportSelect.disabled=true;transportSelect.title='Transportdata inväntar publicering';}
  transportSelect.addEventListener('change',applySeries);
+ document.getElementById('returnToDistricts').addEventListener('click',()=>{transportSelect.value='Alla';document.getElementById('geo').value='Alla';applySeries();});
  document.getElementById('geo').addEventListener('change',()=>{const v=document.getElementById('geo').value;const target=v.startsWith('road:')?'Vägtrafik':'Alla';if(document.getElementById('transportMode').value!==target){document.getElementById('transportMode').value=target;applySeries()}else render()});
  for(const id of ['transportDistrict','year','kind'])document.getElementById(id).addEventListener('change',render);
  document.getElementById('seriesMode').addEventListener('change',applySeries);
