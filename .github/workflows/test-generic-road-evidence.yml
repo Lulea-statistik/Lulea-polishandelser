@@ -1,0 +1,20 @@
+name: Test generic road evidence rules
+on:
+  pull_request:
+    paths:
+      - scripts/road_description_review.py
+      - scripts/audit_lulea_road_priority_evidence_triage.py
+      - tests/test_road_description_review.py
+      - .github/workflows/test-generic-road-evidence.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests -p test_road_description_review.py -v
