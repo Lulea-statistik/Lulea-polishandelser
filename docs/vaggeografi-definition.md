@@ -15,3 +15,12 @@ Väggeografi är **en geografityp på Luleåsidan**, inte en separat transportsi
 För varje vägnamn: verifiera lokala vägsträckningar mot pålitligt vägnät och faktiska delområdesgränser; inga antaganden enbart utifrån namnet. Kontrollera vägarnas och områdesgeometriers käll-CRS (EPSG) innan transformation/overlay. En stadsdelsgräns kan inte ersättas med en DeSO-gräns utan särskilt beslut.
 
 Ingen geografisk omklassificering har gjorts i denna PR. Den här ändringen tar bara bort den fristående transportsidan och behåller väggeografin på Luleåsidan.
+
+
+## Tekniskt nuläge (reviderat 2026-10-26)
+
+Luleåsidans vägval läser för närvarande `docs/data/lulea_transport_monthly.csv`, som genereras av `scripts/build_transport_categories.py` via arbetsflödet `publish-lulea-transport-preliminary.yml`. Filens namn och tekniska ursprung gör **inte** väggeografi till en separat transportsida eller en egen statistisk händelsetyp. Arbetsflödet måste behållas tills vägkategorierna kan produceras direkt ur en verifierad geografisk vägmodell.
+
+Nuvarande vägnamn i dropdownen baseras delvis på frekvenströskel (minst 10 kategoriträffar), **inte på verifierad områdesutbredning**. Därför märks dessa preliminära vägreferenser. En frekvent väg blir inte automatiskt områdesöverskridande. Den framtida godkända väglistan ska inkludera E4, väg 94 och väg 97 samt andra vägsträckor som verifierats mot delområdesgränser; behåll annars osäker plats.
+
+**Återstående tekniskt arbete:** skapa verifierad vägförteckning med väg-ID, geometristöd, berörda delområden, beslutsstatus och källhänvisning; skilj sedan väggeografi från maskinell trafikslagsklassificering i aggregeringen utan att ändra publicerade historiska antal före regressionsprov.
