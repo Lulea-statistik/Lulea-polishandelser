@@ -14396,7 +14396,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Arvidsjaurs kommun,Vapenlagen,1
 2026,10,Bodens kommun,Rattfylleri,5
 2026,10,Bodens kommun,Trafikbrott,4
-2026,10,Bodens kommun,Trafikkontroll,3
+2026,10,Bodens kommun,Trafikkontroll,4
 2026,10,Bodens kommun,Arbetsplatsolycka,2
 2026,10,Bodens kommun,Brand,2
 2026,10,Bodens kommun,"Trafikolycka, vilt",2
@@ -14405,14 +14405,14 @@ year,month,geography_group,event_type,event_count
 2026,10,Bodens kommun,Trafikolycka,1
 2026,10,Bodens kommun,"Trafikolycka,  vilt",1
 2026,10,Bodens kommun,Övrigt/oklassificerad,1
-2026,10,Flera kommuner i Norrbotten,Trafikkontroll,20
+2026,10,Flera kommuner i Norrbotten,Trafikkontroll,21
 2026,10,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",2
 2026,10,Gällivare kommun,Misshandel,3
 2026,10,Gällivare kommun,Brand,2
+2026,10,Gällivare kommun,Rattfylleri,2
+2026,10,Gällivare kommun,Trafikbrott,2
+2026,10,Gällivare kommun,Trafikkontroll,2
 2026,10,Gällivare kommun,Narkotikabrott,1
-2026,10,Gällivare kommun,Rattfylleri,1
-2026,10,Gällivare kommun,Trafikbrott,1
-2026,10,Gällivare kommun,Trafikkontroll,1
 2026,10,Gällivare kommun,Trafikolycka,1
 2026,10,Gällivare kommun,"Trafikolycka,  vilt",1
 2026,10,Gällivare kommun,Övrigt/oklassificerad,1
@@ -14442,9 +14442,9 @@ year,month,geography_group,event_type,event_count
 2026,10,Luleå kommun,Misshandel,7
 2026,10,Luleå kommun,Trafikolycka,6
 2026,10,Luleå kommun,Fylleri/LOB,3
+2026,10,Luleå kommun,Skadegörelse,3
 2026,10,Luleå kommun,Stöld,3
 2026,10,Luleå kommun,Trafikkontroll,3
-2026,10,Luleå kommun,Skadegörelse,2
 2026,10,Luleå kommun,"Trafikolycka,  vilt",2
 2026,10,Luleå kommun,Fylleri,1
 2026,10,Luleå kommun,Försvunnen person,1

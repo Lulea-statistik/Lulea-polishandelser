@@ -13740,7 +13740,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Trafikbrott,5,0,2
 2026,Bodens kommun,Händelse,,Trafikbrott,6,0,1
 2026,Bodens kommun,Händelse,,Trafikkontroll,0,0,4
-2026,Bodens kommun,Händelse,,Trafikkontroll,1,0,1
+2026,Bodens kommun,Händelse,,Trafikkontroll,1,0,2
 2026,Bodens kommun,Händelse,,Trafikkontroll,2,0,3
 2026,Bodens kommun,Händelse,,Trafikkontroll,3,0,2
 2026,Bodens kommun,Händelse,,Trafikkontroll,4,0,5
@@ -13813,7 +13813,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Stöld,4,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,1,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,5,0,1
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,41
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,42
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,34
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,31
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
@@ -13897,6 +13897,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,Natt,Olovlig körning,2,1,1
 2026,Gällivare kommun,Händelse,Natt,Olovlig körning,4,1,2
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,0,1,1
+2026,Gällivare kommun,Händelse,Natt,Rattfylleri,1,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,3,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,6,1,1
 2026,Gällivare kommun,Händelse,Natt,Skadegörelse,1,1,1
@@ -13905,10 +13906,10 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,Natt,Stöld,4,1,1
 2026,Gällivare kommun,Händelse,Natt,Stöld,5,1,1
 2026,Gällivare kommun,Händelse,Natt,Trafikbrott,0,1,1
-2026,Gällivare kommun,Händelse,Natt,Trafikbrott,1,1,1
+2026,Gällivare kommun,Händelse,Natt,Trafikbrott,1,1,2
 2026,Gällivare kommun,Händelse,Natt,Trafikbrott,2,1,1
 2026,Gällivare kommun,Händelse,Natt,Trafikbrott,6,1,1
-2026,Gällivare kommun,Händelse,Natt,Trafikkontroll,1,1,1
+2026,Gällivare kommun,Händelse,Natt,Trafikkontroll,1,1,2
 2026,Gällivare kommun,Händelse,Natt,Trafikkontroll,2,1,3
 2026,Gällivare kommun,Händelse,Natt,Trafikkontroll,5,1,1
 2026,Gällivare kommun,Händelse,Natt,Trafikkontroll,6,1,2
@@ -14390,6 +14391,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Rån,4,1,1
 2026,Luleå kommun,Händelse,Natt,Rån,6,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,0,1,1
+2026,Luleå kommun,Händelse,Natt,Skadegörelse,1,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,3,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,4,1,3
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,5,1,1
