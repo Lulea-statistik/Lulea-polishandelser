@@ -13668,7 +13668,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Arvidsjaurs kommun,Händelse,,Rattfylleri,5,0,2
 2026,Arvidsjaurs kommun,Händelse,,Skyddslagen,4,0,1
 2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,0,0,1
-2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,1,0,1
+2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,1,0,2
 2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,6,0,1
 2026,Arvidsjaurs kommun,Händelse,,Trafikolycka,0,0,1
 2026,Arvidsjaurs kommun,Händelse,,Trafikolycka,1,0,1
@@ -13814,7 +13814,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,1,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,5,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,42
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,34
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,35
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,31
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,30
@@ -13849,6 +13849,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,,Narkotikabrott,4,0,1
 2026,Gällivare kommun,Händelse,,Ofredande/förargelse,5,0,1
 2026,Gällivare kommun,Händelse,,Olaga hot,6,0,1
+2026,Gällivare kommun,Händelse,,Olovlig körning,1,0,1
 2026,Gällivare kommun,Händelse,,Rattfylleri,2,0,1
 2026,Gällivare kommun,Händelse,,Rattfylleri,3,0,2
 2026,Gällivare kommun,Händelse,,Rattfylleri,6,0,2
@@ -13935,6 +13936,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Haparanda kommun,Händelse,,Stöld,3,0,1
 2026,Haparanda kommun,Händelse,,Stöld,4,0,1
 2026,Haparanda kommun,Händelse,,Stöld/inbrott,4,0,1
+2026,Haparanda kommun,Händelse,,Trafikbrott,1,0,1
 2026,Haparanda kommun,Händelse,,Trafikbrott,2,0,1
 2026,Haparanda kommun,Händelse,,Trafikolycka,0,0,1
 2026,Haparanda kommun,Händelse,,Trafikolycka,2,0,1
@@ -14397,6 +14399,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,5,1,1
 2026,Luleå kommun,Händelse,Natt,Skadegörelse,6,1,5
 2026,Luleå kommun,Händelse,Natt,Stöld,0,1,1
+2026,Luleå kommun,Händelse,Natt,Stöld,2,1,1
 2026,Luleå kommun,Händelse,Natt,Stöld,3,1,1
 2026,Luleå kommun,Händelse,Natt,Stöld,4,1,1
 2026,Luleå kommun,Händelse,Natt,Stöld,6,1,1
@@ -14464,6 +14467,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,"Norrbotten, okänd kommun",Icke-händelse,Natt,Lugn sammanfattning,6,1,1
 2026,Pajala kommun,Händelse,,Arbetsplatsolycka,3,0,2
 2026,Pajala kommun,Händelse,,Försvunnen person,0,0,1
+2026,Pajala kommun,Händelse,,Rattfylleri,1,0,1
 2026,Pajala kommun,Händelse,,Rattfylleri,3,0,1
 2026,Pajala kommun,Händelse,,Rattfylleri,6,0,1
 2026,Pajala kommun,Händelse,,Trafikkontroll,0,0,1
@@ -14568,6 +14572,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Piteå kommun,Händelse,Natt,Brand,5,1,4
 2026,Piteå kommun,Händelse,Natt,Fylleri/LOB,4,1,1
 2026,Piteå kommun,Händelse,Natt,Inbrott,3,1,1
+2026,Piteå kommun,Händelse,Natt,Misshandel,2,1,1
 2026,Piteå kommun,Händelse,Natt,Misshandel,3,1,1
 2026,Piteå kommun,Händelse,Natt,Misshandel,5,1,5
 2026,Piteå kommun,Händelse,Natt,Misshandel,6,1,8
