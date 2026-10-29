@@ -13815,14 +13815,14 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikbrott,5,0,1
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,42
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,35
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,31
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,33
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,30
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,5,0,22
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,6,0,19
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",0,0,2
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",1,0,3
-2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",2,0,3
+2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",2,0,4
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",3,0,3
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",4,0,4
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",5,0,1
@@ -14098,7 +14098,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,Inbrott,3,0,1
 2026,Kiruna kommun,Händelse,,Inbrott,5,0,1
 2026,Kiruna kommun,Händelse,,Knivlagen,6,0,1
-2026,Kiruna kommun,Händelse,,Misshandel,2,0,1
+2026,Kiruna kommun,Händelse,,Misshandel,2,0,2
 2026,Kiruna kommun,Händelse,,Misshandel,3,0,1
 2026,Kiruna kommun,Händelse,,"Mord/dråp,  försök",3,0,1
 2026,Kiruna kommun,Händelse,,Narkotikabrott,5,0,1
@@ -14188,7 +14188,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,Natt,Trafikbrott,0,1,1
 2026,Kiruna kommun,Händelse,Natt,Trafikbrott,1,1,1
 2026,Kiruna kommun,Händelse,Natt,Trafikbrott,2,1,2
-2026,Kiruna kommun,Händelse,Natt,Trafikbrott,3,1,4
+2026,Kiruna kommun,Händelse,Natt,Trafikbrott,3,1,5
 2026,Kiruna kommun,Händelse,Natt,Trafikbrott,5,1,11
 2026,Kiruna kommun,Händelse,Natt,Trafikbrott,6,1,11
 2026,Kiruna kommun,Händelse,Natt,Trafikkontroll,0,1,2
@@ -14372,7 +14372,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Misshandel,5,1,20
 2026,Luleå kommun,Händelse,Natt,Misshandel,6,1,17
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,2,1,1
-2026,Luleå kommun,Händelse,Natt,Narkotikabrott,3,1,2
+2026,Luleå kommun,Händelse,Natt,Narkotikabrott,3,1,3
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,4,1,1
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,5,1,2
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,6,1,1
@@ -14444,7 +14444,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",0,0,13
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",1,0,16
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",2,0,13
-2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",3,0,17
+2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",3,0,21
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",4,0,10
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",5,0,15
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",6,0,5
@@ -14535,6 +14535,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Piteå kommun,Händelse,,Skadegörelse,5,0,1
 2026,Piteå kommun,Händelse,,Stöld,0,0,2
 2026,Piteå kommun,Händelse,,Stöld,1,0,2
+2026,Piteå kommun,Händelse,,Stöld,2,0,1
 2026,Piteå kommun,Händelse,,Stöld,3,0,1
 2026,Piteå kommun,Händelse,,Trafikbrott,0,0,1
 2026,Piteå kommun,Händelse,,Trafikbrott,3,0,2
