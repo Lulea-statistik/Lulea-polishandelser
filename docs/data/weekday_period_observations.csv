@@ -13839,6 +13839,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,,Fylleri,4,0,1
 2026,Gällivare kommun,Händelse,,Fylleri/LOB,1,0,2
 2026,Gällivare kommun,Händelse,,Försvunnen person,2,0,1
+2026,Gällivare kommun,Händelse,,Försvunnen person,3,0,1
 2026,Gällivare kommun,Händelse,,Misshandel,0,0,1
 2026,Gällivare kommun,Händelse,,Misshandel,3,0,2
 2026,Gällivare kommun,Händelse,,Misshandel,4,0,1
@@ -14200,6 +14201,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,Natt,Trafikolycka,0,1,2
 2026,Kiruna kommun,Händelse,Natt,Trafikolycka,1,1,1
 2026,Kiruna kommun,Händelse,Natt,Trafikolycka,2,1,2
+2026,Kiruna kommun,Händelse,Natt,Trafikolycka,4,1,1
 2026,Kiruna kommun,Händelse,Natt,Trafikolycka,5,1,1
 2026,Kiruna kommun,Händelse,Natt,Trafikolycka,6,1,1
 2026,Kiruna kommun,Händelse,Natt,"Trafikolycka,  vilt",0,1,1
@@ -14230,7 +14232,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Fylleri,0,0,6
 2026,Luleå kommun,Händelse,,Fylleri,1,0,2
 2026,Luleå kommun,Händelse,,Fylleri,2,0,5
-2026,Luleå kommun,Händelse,,Fylleri,3,0,5
+2026,Luleå kommun,Händelse,,Fylleri,3,0,6
 2026,Luleå kommun,Händelse,,Fylleri,4,0,1
 2026,Luleå kommun,Händelse,,Fylleri,5,0,2
 2026,Luleå kommun,Händelse,,Fylleri/LOB,0,0,8
@@ -14368,7 +14370,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Misshandel,1,1,1
 2026,Luleå kommun,Händelse,Natt,Misshandel,2,1,1
 2026,Luleå kommun,Händelse,Natt,Misshandel,3,1,3
-2026,Luleå kommun,Händelse,Natt,Misshandel,4,1,3
+2026,Luleå kommun,Händelse,Natt,Misshandel,4,1,4
 2026,Luleå kommun,Händelse,Natt,Misshandel,5,1,20
 2026,Luleå kommun,Händelse,Natt,Misshandel,6,1,17
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,2,1,1
@@ -14470,6 +14472,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Pajala kommun,Händelse,,Rattfylleri,1,0,1
 2026,Pajala kommun,Händelse,,Rattfylleri,3,0,1
 2026,Pajala kommun,Händelse,,Rattfylleri,6,0,1
+2026,Pajala kommun,Händelse,,Trafikbrott,3,0,1
 2026,Pajala kommun,Händelse,,Trafikkontroll,0,0,1
 2026,Pajala kommun,Händelse,,Trafikkontroll,2,0,1
 2026,Pajala kommun,Händelse,,Trafikkontroll,3,0,1

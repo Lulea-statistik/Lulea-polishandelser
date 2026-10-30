@@ -6,7 +6,7 @@
 - Täckningsgrad/recall: **97.4 %** (95 % Wilson 95.3 %–98.5 %).
 - Korrigeringsfaktor för extraherat antal: **0.954** (konservativt Wilson-baserat intervall 0.915–0.996; bootstrap på sammanfattningsnivå 0.925–0.985).
 - Luleå: manuellt räknade underhändelser/parserträffar i kontrollerade rader: **103/140**, faktor **0.736** (bootstrap 95 % 0.633–0.838).
-- Luleå, extra sammanfattningshändelser efter deduplicering: observerat **3867**; indikativt korrigerat **2845** (bootstrap 95 % cirka **2448–3242**).
+- Luleå, extra sammanfattningshändelser efter deduplicering: observerat **3868**; indikativt korrigerat **2846** (bootstrap 95 % cirka **2449–3243**).
 
 ## Tolkning
 

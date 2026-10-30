@@ -11238,6 +11238,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",3
 2026,10,Gällivare kommun,Sammanfattning natt,2
 2026,10,Gällivare kommun,Brand,1
+2026,10,Gällivare kommun,Försvunnen person,1
 2026,10,Gällivare kommun,Misshandel,1
 2026,10,Gällivare kommun,Olovlig körning,1
 2026,10,Gällivare kommun,Trafikbrott,1
@@ -11252,8 +11253,8 @@ year,month,geography_group,type_original,event_count
 2026,10,Kalix kommun,Sammanfattning natt,1
 2026,10,Kalix kommun,Stöld,1
 2026,10,Kalix kommun,Trafikolycka,1
+2026,10,Kiruna kommun,Sammanfattning natt,3
 2026,10,Kiruna kommun,Försvunnen person,2
-2026,10,Kiruna kommun,Sammanfattning natt,2
 2026,10,Kiruna kommun,Arbetsplatsolycka,1
 2026,10,Kiruna kommun,Misshandel,1
 2026,10,Kiruna kommun,Olaga intrång,1
@@ -11261,7 +11262,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Luleå kommun,Trafikolycka,5
 2026,10,Luleå kommun,Sammanfattning natt,3
 2026,10,Luleå kommun,Stöld,3
-2026,10,Luleå kommun,Fylleri,1
+2026,10,Luleå kommun,Fylleri,2
 2026,10,Luleå kommun,Försvunnen person,1
 2026,10,Luleå kommun,Häleri,1
 2026,10,Luleå kommun,Trafikkontroll,1
@@ -11269,6 +11270,7 @@ year,month,geography_group,type_original,event_count
 2026,10,"Norrbotten, okänd kommun",Sammanfattning natt,6
 2026,10,Pajala kommun,Rattfylleri,2
 2026,10,Pajala kommun,Trafikolycka,2
+2026,10,Pajala kommun,Trafikbrott,1
 2026,10,Pajala kommun,Trafikkontroll,1
 2026,10,Piteå kommun,Misshandel,1
 2026,10,Piteå kommun,Olaga hot,1
