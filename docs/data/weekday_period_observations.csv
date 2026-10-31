@@ -13709,6 +13709,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Bråk,4,0,1
 2026,Bodens kommun,Händelse,,Fylleri,2,0,1
 2026,Bodens kommun,Händelse,,Fylleri,3,0,2
+2026,Bodens kommun,Händelse,,Fylleri,4,0,1
 2026,Bodens kommun,Händelse,,Fylleri/LOB,6,0,1
 2026,Bodens kommun,Händelse,,Försvunnen person,3,0,1
 2026,Bodens kommun,Händelse,,Misshandel,0,0,2
@@ -13817,14 +13818,14 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,35
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,33
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,30
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,5,0,22
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,32
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,5,0,23
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,6,0,19
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",0,0,2
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",1,0,3
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",2,0,4
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",3,0,3
-2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",4,0,4
+2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",4,0,5
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",5,0,1
 2026,Gällivare kommun,Händelse,,Arbetsplatsolycka,1,0,2
 2026,Gällivare kommun,Händelse,,Arbetsplatsolycka,3,0,3
@@ -14048,6 +14049,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kalix kommun,Händelse,Natt,Brand,0,1,1
 2026,Kalix kommun,Händelse,Natt,Brand,2,1,1
 2026,Kalix kommun,Händelse,Natt,Brand,3,1,1
+2026,Kalix kommun,Händelse,Natt,Brand,5,1,1
 2026,Kalix kommun,Händelse,Natt,Brand,6,1,1
 2026,Kalix kommun,Händelse,Natt,Misshandel,5,1,3
 2026,Kalix kommun,Händelse,Natt,Misshandel,6,1,1
@@ -14098,6 +14100,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,Försvunnen person,5,0,1
 2026,Kiruna kommun,Händelse,,Inbrott,3,0,1
 2026,Kiruna kommun,Händelse,,Inbrott,5,0,1
+2026,Kiruna kommun,Händelse,,Knivlagen,5,0,1
 2026,Kiruna kommun,Händelse,,Knivlagen,6,0,1
 2026,Kiruna kommun,Händelse,,Misshandel,2,0,2
 2026,Kiruna kommun,Händelse,,Misshandel,3,0,1
@@ -14135,7 +14138,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,Trafikolycka,1,0,5
 2026,Kiruna kommun,Händelse,,Trafikolycka,2,0,4
 2026,Kiruna kommun,Händelse,,Trafikolycka,3,0,2
-2026,Kiruna kommun,Händelse,,Trafikolycka,4,0,1
+2026,Kiruna kommun,Händelse,,Trafikolycka,4,0,3
 2026,Kiruna kommun,Händelse,,Trafikolycka,5,0,2
 2026,Kiruna kommun,Händelse,,Trafikolycka,6,0,1
 2026,Kiruna kommun,Händelse,,"Trafikolycka,  smitning från",3,0,1
@@ -14324,7 +14327,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,"Trafikolycka,  singel",3,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  singel",5,0,2
 2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",0,0,1
-2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",4,0,1
+2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",4,0,2
 2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",5,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",0,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",1,0,2
@@ -14371,7 +14374,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Misshandel,2,1,1
 2026,Luleå kommun,Händelse,Natt,Misshandel,3,1,3
 2026,Luleå kommun,Händelse,Natt,Misshandel,4,1,4
-2026,Luleå kommun,Händelse,Natt,Misshandel,5,1,20
+2026,Luleå kommun,Händelse,Natt,Misshandel,5,1,21
 2026,Luleå kommun,Händelse,Natt,Misshandel,6,1,17
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,2,1,1
 2026,Luleå kommun,Händelse,Natt,Narkotikabrott,3,1,3
@@ -14431,6 +14434,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,"Trafikolycka,  vilt",5,1,1
 2026,Luleå kommun,Händelse,Natt,Vapenlagen,6,1,1
 2026,Luleå kommun,Händelse,Natt,Våld/hot mot tjänsteman,0,1,1
+2026,Luleå kommun,Händelse,Natt,Våld/hot mot tjänsteman,5,1,1
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,3,1,1
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,6,1,2
 2026,Norrbotten / Övriga Sverige,Händelse,,Bedrägeri,4,0,1

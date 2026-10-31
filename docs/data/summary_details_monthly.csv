@@ -6796,6 +6796,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Gällivare kommun,Övrigt/oklassificerad,1
 2026,10,Haparanda kommun,Rattfylleri,1
 2026,10,Haparanda kommun,"Trafikolycka, vilt",1
+2026,10,Kalix kommun,Brand,1
 2026,10,Kalix kommun,Misshandel,1
 2026,10,Kalix kommun,Rån,1
 2026,10,Kalix kommun,Trafikolycka,1
@@ -6807,18 +6808,18 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Kiruna kommun,Skadegörelse,1
 2026,10,Kiruna kommun,Trafikkontroll,1
 2026,10,Kiruna kommun,Trafikolycka,1
-2026,10,Luleå kommun,Misshandel,8
+2026,10,Luleå kommun,Misshandel,9
 2026,10,Luleå kommun,Fylleri/LOB,3
 2026,10,Luleå kommun,Skadegörelse,3
 2026,10,Luleå kommun,Narkotikabrott,2
 2026,10,Luleå kommun,Trafikkontroll,2
 2026,10,Luleå kommun,"Trafikolycka,  vilt",2
+2026,10,Luleå kommun,Våld/hot mot tjänsteman,2
 2026,10,Luleå kommun,Olovlig körning,1
 2026,10,Luleå kommun,Stöld,1
 2026,10,Luleå kommun,Trafikbrott,1
 2026,10,Luleå kommun,Trafikolycka,1
 2026,10,Luleå kommun,"Trafikolycka, vilt",1
-2026,10,Luleå kommun,Våld/hot mot tjänsteman,1
 2026,10,Luleå kommun,Övrigt/oklassificerad,1
 2026,10,"Norrbotten, okänd kommun","Trafikolycka, vilt",14
 2026,10,"Norrbotten, okänd kommun",Misshandel,1
