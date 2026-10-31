@@ -62,3 +62,6 @@ checked_at,source,http_status,kind,item_count,fields,error
 2026-10-30T13:11:21.176526+00:00,vma_all,200,json,0,,
 2026-10-30T13:11:21.176526+00:00,vma_norrbotten,200,json,0,,
 2026-10-30T13:11:21.176526+00:00,sos_inblick_lulea,,,,,HTTP Error 403: Forbidden
+2026-10-31T12:47:58.025497+00:00,vma_all,200,json,0,,
+2026-10-31T12:47:58.025497+00:00,vma_norrbotten,200,json,0,,
+2026-10-31T12:47:58.025497+00:00,sos_inblick_lulea,,,,,HTTP Error 403: Forbidden
