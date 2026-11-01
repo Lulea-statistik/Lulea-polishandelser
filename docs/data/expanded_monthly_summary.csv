@@ -14432,6 +14432,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Kalix kommun,Brand,1
 2026,10,Kalix kommun,Misshandel,1
 2026,10,Kalix kommun,Narkotikabrott,1
+2026,10,Kalix kommun,Olovlig körning,1
 2026,10,Kalix kommun,Rån,1
 2026,10,Kalix kommun,Stöld,1
 2026,10,Kalix kommun,"Trafikolycka, vilt",1
@@ -14488,6 +14489,7 @@ year,month,geography_group,event_type,event_count
 2026,10,Piteå kommun,"Trafikolycka,  singel",1
 2026,10,Piteå kommun,Övrigt/oklassificerad,1
 2026,10,Älvsbyns kommun,Rattfylleri,2
+2026,10,Älvsbyns kommun,Inbrott,1
 2026,10,Älvsbyns kommun,Trafikolycka,1
 2026,10,Överkalix kommun,"Trafikolycka,  vilt",1
 2026,10,Övertorneå kommun,"Trafikolycka,  vilt",2
@@ -14495,3 +14497,9 @@ year,month,geography_group,event_type,event_count
 2026,10,Övertorneå kommun,Trafikkontroll,1
 2026,10,Övertorneå kommun,Trafikolycka,1
 2026,10,Övertorneå kommun,Övrigt/oklassificerad,1
+2026,11,Bodens kommun,Rattfylleri,1
+2026,11,Gällivare kommun,Trafikkontroll,2
+2026,11,Kiruna kommun,Ofredande/förargelse,1
+2026,11,Kiruna kommun,Rattfylleri,1
+2026,11,Luleå kommun,Misshandel,2
+2026,11,Piteå kommun,Misshandel,1

@@ -11251,6 +11251,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Haparanda kommun,Trafikolycka,1
 2026,10,Jokkmokks kommun,Trafikkontroll,1
 2026,10,Kalix kommun,Narkotikabrott,1
+2026,10,Kalix kommun,Olovlig körning,1
 2026,10,Kalix kommun,Sammanfattning natt,1
 2026,10,Kalix kommun,Stöld,1
 2026,10,Kalix kommun,Trafikolycka,1
@@ -11284,7 +11285,9 @@ year,month,geography_group,type_original,event_count
 2026,10,Piteå kommun,Trafikolycka,1
 2026,10,Piteå kommun,"Trafikolycka,  singel",1
 2026,10,Älvsbyns kommun,Rattfylleri,2
+2026,10,Älvsbyns kommun,Inbrott,1
 2026,10,Älvsbyns kommun,Trafikolycka,1
 2026,10,Övertorneå kommun,Rattfylleri,1
 2026,10,Övertorneå kommun,Trafikkontroll,1
 2026,10,Övertorneå kommun,Trafikolycka,1
+2026,11,Flera kommuner i Norrbotten,Sammanfattning natt,1
