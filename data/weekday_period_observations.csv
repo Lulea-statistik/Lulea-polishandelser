@@ -13728,7 +13728,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Rattfylleri,3,0,1
 2026,Bodens kommun,Händelse,,Rattfylleri,4,0,3
 2026,Bodens kommun,Händelse,,Rattfylleri,5,0,2
-2026,Bodens kommun,Händelse,,Rattfylleri,6,0,1
+2026,Bodens kommun,Händelse,,Rattfylleri,6,0,2
 2026,Bodens kommun,Händelse,,Skadegörelse,1,0,1
 2026,Bodens kommun,Händelse,,Skadegörelse,2,0,1
 2026,Bodens kommun,Händelse,,Skadegörelse,4,0,1
@@ -13789,7 +13789,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,Natt,Rattfylleri,3,1,1
 2026,Bodens kommun,Händelse,Natt,Rattfylleri,4,1,1
 2026,Bodens kommun,Händelse,Natt,Rattfylleri,5,1,3
-2026,Bodens kommun,Händelse,Natt,Rattfylleri,6,1,5
+2026,Bodens kommun,Händelse,Natt,Rattfylleri,6,1,4
 2026,Bodens kommun,Händelse,Natt,Skadegörelse,3,1,1
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,1,1,1
 2026,Bodens kommun,Händelse,Natt,Trafikbrott,2,1,1
@@ -14036,7 +14036,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kalix kommun,Händelse,,Trafikolycka,2,0,4
 2026,Kalix kommun,Händelse,,Trafikolycka,3,0,2
 2026,Kalix kommun,Händelse,,Trafikolycka,4,0,3
-2026,Kalix kommun,Händelse,,Trafikolycka,6,0,2
+2026,Kalix kommun,Händelse,,Trafikolycka,6,0,3
 2026,Kalix kommun,Händelse,,"Trafikolycka,  personskada",6,0,1
 2026,Kalix kommun,Händelse,,"Trafikolycka,  vilt",1,0,1
 2026,Kalix kommun,Händelse,,"Trafikolycka,  vilt",2,0,1
@@ -14279,6 +14279,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Olovlig körning,1,0,1
 2026,Luleå kommun,Händelse,,Olovlig körning,2,0,3
 2026,Luleå kommun,Händelse,,Ordningslagen,6,0,1
+2026,Luleå kommun,Händelse,,Rattfylleri,0,0,1
 2026,Luleå kommun,Händelse,,Rattfylleri,1,0,3
 2026,Luleå kommun,Händelse,,Rattfylleri,2,0,3
 2026,Luleå kommun,Händelse,,Rattfylleri,4,0,2

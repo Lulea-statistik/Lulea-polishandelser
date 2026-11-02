@@ -17,7 +17,7 @@ correction_factor_bootstrap_95_low,0.9283859953461071
 correction_factor_bootstrap_95_high,0.9875629606310877
 all_extracted_subevents,12302.0
 lulea_extracted_subevents,4050.0
-all_extra_after_dedup,11884.0
+all_extra_after_dedup,11883.0
 lulea_extra_after_dedup,3872.0
 lulea_checked_rows,170.0
 lulea_manual_events,102.0
