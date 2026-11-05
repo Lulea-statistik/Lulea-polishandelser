@@ -13707,7 +13707,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Brand,6,0,2
 2026,Bodens kommun,Händelse,,Bråk,3,0,1
 2026,Bodens kommun,Händelse,,Bråk,4,0,1
-2026,Bodens kommun,Händelse,,Fylleri,2,0,1
+2026,Bodens kommun,Händelse,,Fylleri,2,0,2
 2026,Bodens kommun,Händelse,,Fylleri,3,0,2
 2026,Bodens kommun,Händelse,,Fylleri,4,0,1
 2026,Bodens kommun,Händelse,,Fylleri/LOB,6,0,1
@@ -13738,6 +13738,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Stöld,4,0,2
 2026,Bodens kommun,Händelse,,Stöld,5,0,2
 2026,Bodens kommun,Händelse,,Trafikbrott,1,0,1
+2026,Bodens kommun,Händelse,,Trafikbrott,2,0,1
 2026,Bodens kommun,Händelse,,Trafikbrott,5,0,2
 2026,Bodens kommun,Händelse,,Trafikbrott,6,0,1
 2026,Bodens kommun,Händelse,,Trafikkontroll,0,0,4
@@ -13819,7 +13820,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,0,0,43
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,1,0,35
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,2,0,34
-2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,32
+2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,3,0,33
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,32
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,5,0,23
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,6,0,19
@@ -14160,6 +14161,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,"Trafikolycka, vilt",6,0,1
 2026,Kiruna kommun,Händelse,,Vapenlagen,6,0,1
 2026,Kiruna kommun,Händelse,,Våld/hot mot tjänsteman,4,0,1
+2026,Kiruna kommun,Händelse,,Övrigt,2,0,1
 2026,Kiruna kommun,Händelse,,Övrigt,3,0,1
 2026,Kiruna kommun,Händelse,,Övrigt,4,0,1
 2026,Kiruna kommun,Händelse,,Övrigt,5,0,1
@@ -14428,7 +14430,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Trafikkontroll,0,1,11
 2026,Luleå kommun,Händelse,Natt,Trafikkontroll,1,1,5
 2026,Luleå kommun,Händelse,Natt,Trafikkontroll,2,1,5
-2026,Luleå kommun,Händelse,Natt,Trafikkontroll,3,1,6
+2026,Luleå kommun,Händelse,Natt,Trafikkontroll,3,1,7
 2026,Luleå kommun,Händelse,Natt,Trafikkontroll,4,1,4
 2026,Luleå kommun,Händelse,Natt,Trafikkontroll,5,1,7
 2026,Luleå kommun,Händelse,Natt,Trafikkontroll,6,1,5
@@ -14690,11 +14692,11 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Övertorneå kommun,Händelse,,Brand,4,0,1
 2026,Övertorneå kommun,Händelse,,Fylleri,2,0,1
 2026,Övertorneå kommun,Händelse,,Mordbrand,2,0,1
-2026,Övertorneå kommun,Händelse,,Olovlig körning,1,0,1
 2026,Övertorneå kommun,Händelse,,Rattfylleri,0,0,1
 2026,Övertorneå kommun,Händelse,,Rattfylleri,4,0,2
 2026,Övertorneå kommun,Händelse,,Rattfylleri,6,0,1
 2026,Övertorneå kommun,Händelse,,Trafikbrott,1,0,1
+2026,Övertorneå kommun,Händelse,,Trafikbrott,2,0,1
 2026,Övertorneå kommun,Händelse,,Trafikkontroll,4,0,1
 2026,Övertorneå kommun,Händelse,,Trafikkontroll,5,0,1
 2026,Övertorneå kommun,Händelse,,Trafikolycka,0,0,1
