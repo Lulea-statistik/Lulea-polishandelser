@@ -6723,15 +6723,16 @@ year,month,geography_group,event_type_extracted,event_count
 2026,10,Övertorneå kommun,"Trafikolycka,  vilt",2
 2026,10,Övertorneå kommun,Övrigt/oklassificerad,1
 2026,11,Bodens kommun,Trafikkontroll,1
-2026,11,Gällivare kommun,Trafikkontroll,3
+2026,11,Gällivare kommun,Trafikkontroll,4
 2026,11,Gällivare kommun,"Trafikolycka, vilt",1
 2026,11,Haparanda kommun,Rattfylleri,1
 2026,11,Haparanda kommun,Trafikolycka,1
 2026,11,Kalix kommun,Brand,1
 2026,11,Kalix kommun,"Trafikolycka,  vilt",1
 2026,11,Kalix kommun,"Trafikolycka, vilt",1
-2026,11,Kiruna kommun,Rattfylleri,2
+2026,11,Kiruna kommun,Rattfylleri,3
 2026,11,Kiruna kommun,Ofredande/förargelse,1
+2026,11,Kiruna kommun,Trafikbrott,1
 2026,11,Luleå kommun,Misshandel,2
 2026,11,Luleå kommun,Trafikkontroll,1
 2026,11,Luleå kommun,"Trafikolycka, vilt",1
