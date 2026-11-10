@@ -13638,6 +13638,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Arjeplogs kommun,Händelse,,Mord/dråp,4,0,1
 2026,Arjeplogs kommun,Händelse,,Olovlig körning,5,0,1
 2026,Arjeplogs kommun,Händelse,,Trafikkontroll,3,0,1
+2026,Arjeplogs kommun,Händelse,,Trafikolycka,0,0,1
 2026,Arjeplogs kommun,Händelse,,Trafikolycka,1,0,1
 2026,Arjeplogs kommun,Händelse,,Trafikolycka,2,0,1
 2026,Arjeplogs kommun,Händelse,,Trafikolycka,3,0,1
@@ -13667,6 +13668,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Arvidsjaurs kommun,Händelse,,Rattfylleri,4,0,1
 2026,Arvidsjaurs kommun,Händelse,,Rattfylleri,5,0,2
 2026,Arvidsjaurs kommun,Händelse,,Skyddslagen,4,0,1
+2026,Arvidsjaurs kommun,Händelse,,Trafikbrott,0,0,1
 2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,0,0,1
 2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,1,0,2
 2026,Arvidsjaurs kommun,Händelse,,Trafikkontroll,6,0,1
@@ -13742,7 +13744,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Trafikbrott,2,0,1
 2026,Bodens kommun,Händelse,,Trafikbrott,5,0,2
 2026,Bodens kommun,Händelse,,Trafikbrott,6,0,1
-2026,Bodens kommun,Händelse,,Trafikkontroll,0,0,4
+2026,Bodens kommun,Händelse,,Trafikkontroll,0,0,5
 2026,Bodens kommun,Händelse,,Trafikkontroll,1,0,2
 2026,Bodens kommun,Händelse,,Trafikkontroll,2,0,3
 2026,Bodens kommun,Händelse,,Trafikkontroll,3,0,2
@@ -14319,7 +14321,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Stöld,6,0,1
 2026,Luleå kommun,Händelse,,Stöld/inbrott,0,0,1
 2026,Luleå kommun,Händelse,,Stöld/inbrott,3,0,1
-2026,Luleå kommun,Händelse,,Trafikbrott,0,0,4
+2026,Luleå kommun,Händelse,,Trafikbrott,0,0,5
 2026,Luleå kommun,Händelse,,Trafikbrott,1,0,5
 2026,Luleå kommun,Händelse,,Trafikbrott,3,0,3
 2026,Luleå kommun,Händelse,,Trafikhinder,1,0,1
@@ -14347,7 +14349,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",4,0,2
 2026,Luleå kommun,Händelse,,"Trafikolycka,  smitning från",5,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",0,0,1
-2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",1,0,2
+2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",1,0,3
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",4,0,1
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",5,0,2
 2026,Luleå kommun,Händelse,,"Trafikolycka,  vilt",6,0,1
@@ -14455,13 +14457,13 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,3,1,1
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,6,1,2
 2026,Norrbotten / Övriga Sverige,Händelse,,Bedrägeri,4,0,1
-2026,"Norrbotten, okänd kommun",Händelse,,Bedrägeri,0,0,1
+2026,"Norrbotten, okänd kommun",Händelse,,Bedrägeri,0,0,2
 2026,"Norrbotten, okänd kommun",Händelse,,Polisinsats/kommendering,2,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",0,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",1,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",2,0,2
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",3,0,1
-2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,1,0,1
+2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,1,0,2
 2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,3,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,6,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",0,0,13
@@ -14641,6 +14643,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Piteå kommun,Händelse,Natt,Trafikolycka,3,1,1
 2026,Piteå kommun,Händelse,Natt,Trafikolycka,4,1,1
 2026,Piteå kommun,Händelse,Natt,Trafikolycka,5,1,1
+2026,Piteå kommun,Händelse,Natt,"Trafikolycka,  vilt",1,1,1
 2026,Piteå kommun,Händelse,Natt,"Trafikolycka,  vilt",4,1,1
 2026,Piteå kommun,Händelse,Natt,Våld/hot mot tjänsteman,5,1,1
 2026,Piteå kommun,Händelse,Natt,Övrigt/oklassificerad,5,1,1
@@ -14662,7 +14665,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Älvsbyns kommun,Händelse,,Trafikolycka,2,0,1
 2026,Älvsbyns kommun,Händelse,,Trafikolycka,3,0,1
 2026,Älvsbyns kommun,Händelse,,"Trafikolycka,  singel",1,0,1
-2026,Älvsbyns kommun,Händelse,,"Trafikolycka,  vilt",1,0,2
+2026,Älvsbyns kommun,Händelse,,"Trafikolycka,  vilt",1,0,3
 2026,Älvsbyns kommun,Händelse,,"Trafikolycka,  vilt",3,0,1
 2026,Älvsbyns kommun,Händelse,,"Trafikolycka,  vilt",4,0,1
 2026,Älvsbyns kommun,Händelse,,"Trafikolycka, vilt",0,0,1
