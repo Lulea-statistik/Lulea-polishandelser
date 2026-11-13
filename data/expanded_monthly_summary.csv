@@ -14499,8 +14499,8 @@ year,month,geography_group,event_type,event_count
 2026,10,Övertorneå kommun,Övrigt/oklassificerad,1
 2026,11,Arjeplogs kommun,Trafikolycka,1
 2026,11,Arvidsjaurs kommun,Trafikbrott,1
+2026,11,Bodens kommun,Stöld,3
 2026,11,Bodens kommun,Rattfylleri,2
-2026,11,Bodens kommun,Stöld,2
 2026,11,Bodens kommun,Trafikkontroll,2
 2026,11,Bodens kommun,Fylleri,1
 2026,11,Bodens kommun,Inbrott,1
@@ -14508,9 +14508,10 @@ year,month,geography_group,event_type,event_count
 2026,11,Bodens kommun,Trafikolycka,1
 2026,11,Bodens kommun,"Trafikolycka, vilt",1
 2026,11,Flera kommuner i Norrbotten,Trafikkontroll,8
-2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",2
+2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",3
 2026,11,Gällivare kommun,Trafikkontroll,5
 2026,11,Gällivare kommun,Trafikolycka,2
+2026,11,Gällivare kommun,Rattfylleri,1
 2026,11,Gällivare kommun,"Trafikolycka, vilt",1
 2026,11,Haparanda kommun,Trafikolycka,2
 2026,11,Haparanda kommun,Rattfylleri,1
@@ -14533,6 +14534,7 @@ year,month,geography_group,event_type,event_count
 2026,11,Luleå kommun,Trafikkontroll,3
 2026,11,Luleå kommun,Trafikbrott,2
 2026,11,Luleå kommun,"Trafikolycka, vilt",2
+2026,11,Luleå kommun,Brand,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Rattfylleri,1
 2026,11,Luleå kommun,Trafikolycka,1

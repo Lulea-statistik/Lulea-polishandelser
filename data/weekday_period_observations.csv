@@ -13737,7 +13737,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Skadegörelse,4,0,1
 2026,Bodens kommun,Händelse,,Stöld,1,0,2
 2026,Bodens kommun,Händelse,,Stöld,2,0,1
-2026,Bodens kommun,Händelse,,Stöld,3,0,1
+2026,Bodens kommun,Händelse,,Stöld,3,0,2
 2026,Bodens kommun,Händelse,,Stöld,4,0,2
 2026,Bodens kommun,Händelse,,Stöld,5,0,3
 2026,Bodens kommun,Händelse,,Trafikbrott,1,0,1
@@ -13830,7 +13830,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",0,0,2
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",1,0,3
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",2,0,4
-2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",3,0,4
+2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",3,0,5
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",4,0,5
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",5,0,2
 2026,Gällivare kommun,Händelse,,Arbetsplatsolycka,1,0,2
@@ -13909,6 +13909,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,0,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,1,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,3,1,1
+2026,Gällivare kommun,Händelse,Natt,Rattfylleri,4,1,1
 2026,Gällivare kommun,Händelse,Natt,Rattfylleri,6,1,1
 2026,Gällivare kommun,Händelse,Natt,Skadegörelse,1,1,1
 2026,Gällivare kommun,Händelse,Natt,Skadegörelse,5,1,3
@@ -14246,7 +14247,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Brand,0,0,2
 2026,Luleå kommun,Händelse,,Brand,1,0,1
 2026,Luleå kommun,Händelse,,Brand,2,0,4
-2026,Luleå kommun,Händelse,,Brand,3,0,2
+2026,Luleå kommun,Händelse,,Brand,3,0,3
 2026,Luleå kommun,Händelse,,Brand,4,0,4
 2026,Luleå kommun,Händelse,,Brand,5,0,1
 2026,Luleå kommun,Händelse,,Brand,6,0,1
