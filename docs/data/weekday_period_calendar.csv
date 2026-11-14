@@ -7342,3 +7342,5 @@ date,year,weekday,geography_group,period,event_count,quiet_count,status
 2026-11-11,2026,2,Luleå kommun,Natt,1,0,Händelse
 2026-11-12,2026,3,Luleå kommun,Natt,1,0,Händelse
 2026-11-13,2026,4,Gällivare kommun,Natt,1,0,Händelse
+2026-11-14,2026,5,Kiruna kommun,Natt,1,0,Händelse
+2026-11-14,2026,5,Piteå kommun,Natt,2,0,Händelse
