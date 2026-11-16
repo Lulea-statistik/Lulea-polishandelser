@@ -14537,11 +14537,11 @@ year,month,geography_group,event_type,event_count
 2026,11,Luleå kommun,Misshandel,6
 2026,11,Luleå kommun,Trafikbrott,3
 2026,11,Luleå kommun,Trafikkontroll,3
-2026,11,Luleå kommun,Trafikolycka,2
+2026,11,Luleå kommun,Trafikolycka,3
+2026,11,Luleå kommun,Fylleri,2
 2026,11,Luleå kommun,"Trafikolycka, vilt",2
 2026,11,Luleå kommun,Arbetsplatsolycka,1
 2026,11,Luleå kommun,Brand,1
-2026,11,Luleå kommun,Fylleri,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Mord/dråp,1
 2026,11,Luleå kommun,Rattfylleri,1
@@ -14553,11 +14553,12 @@ year,month,geography_group,event_type,event_count
 2026,11,Pajala kommun,"Trafikolycka,  vilt",1
 2026,11,Pajala kommun,"Trafikolycka, vilt",1
 2026,11,Piteå kommun,Trafikbrott,3
+2026,11,Piteå kommun,"Trafikolycka,  vilt",2
 2026,11,Piteå kommun,Arbetsplatsolycka,1
 2026,11,Piteå kommun,Knivlagen,1
 2026,11,Piteå kommun,Misshandel,1
 2026,11,Piteå kommun,Sexualbrott,1
-2026,11,Piteå kommun,"Trafikolycka,  vilt",1
+2026,11,Piteå kommun,"Trafikolycka, vilt",1
 2026,11,Älvsbyns kommun,"Trafikolycka,  singel",1
 2026,11,Älvsbyns kommun,"Trafikolycka,  vilt",1
 2026,11,Överkalix kommun,"Trafikolycka,  vilt",1

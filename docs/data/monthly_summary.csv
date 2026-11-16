@@ -11313,10 +11313,10 @@ year,month,geography_group,type_original,event_count
 2026,11,Kiruna kommun,Brand,1
 2026,11,Kiruna kommun,Trafikolycka,1
 2026,11,Kiruna kommun,Övrigt,1
-2026,11,Luleå kommun,Trafikolycka,2
+2026,11,Luleå kommun,Trafikolycka,3
+2026,11,Luleå kommun,Fylleri,2
 2026,11,Luleå kommun,Arbetsplatsolycka,1
 2026,11,Luleå kommun,Brand,1
-2026,11,Luleå kommun,Fylleri,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Mord/dråp,1
 2026,11,Luleå kommun,Rattfylleri,1
@@ -11328,8 +11328,8 @@ year,month,geography_group,type_original,event_count
 2026,11,"Norrbotten, okänd kommun",Trafikkontroll,1
 2026,11,Pajala kommun,Sammanfattning natt,1
 2026,11,Pajala kommun,Trafikolycka,1
+2026,11,Piteå kommun,Sammanfattning natt,2
 2026,11,Piteå kommun,Arbetsplatsolycka,1
 2026,11,Piteå kommun,Knivlagen,1
-2026,11,Piteå kommun,Sammanfattning natt,1
 2026,11,Älvsbyns kommun,"Trafikolycka,  singel",1
 2026,11,Övertorneå kommun,Trafikbrott,2
