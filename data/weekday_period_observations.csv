@@ -14135,6 +14135,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Kiruna kommun,Händelse,,Rattfylleri,5,0,2
 2026,Kiruna kommun,Händelse,,Rattfylleri,6,0,1
 2026,Kiruna kommun,Händelse,,Sabotage mot blåljusverksamhet,6,0,1
+2026,Kiruna kommun,Händelse,,"Sammanfattning, ej uppdelad",1,0,1
 2026,Kiruna kommun,Händelse,,Skadegörelse,0,0,1
 2026,Kiruna kommun,Händelse,,Skadegörelse,3,0,1
 2026,Kiruna kommun,Händelse,,Skadegörelse,4,0,2
@@ -14341,7 +14342,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Trafikkontroll,4,0,6
 2026,Luleå kommun,Händelse,,Trafikkontroll,5,0,1
 2026,Luleå kommun,Händelse,,Trafikkontroll,6,0,2
-2026,Luleå kommun,Händelse,,Trafikolycka,0,0,12
+2026,Luleå kommun,Händelse,,Trafikolycka,0,0,13
 2026,Luleå kommun,Händelse,,Trafikolycka,1,0,12
 2026,Luleå kommun,Händelse,,Trafikolycka,2,0,12
 2026,Luleå kommun,Händelse,,Trafikolycka,3,0,9
@@ -14580,7 +14581,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Piteå kommun,Händelse,,Trafikbrott,4,0,2
 2026,Piteå kommun,Händelse,,Trafikbrott,6,0,1
 2026,Piteå kommun,Händelse,,Trafikhinder,0,0,1
-2026,Piteå kommun,Händelse,,Trafikkontroll,0,0,1
+2026,Piteå kommun,Händelse,,Trafikkontroll,0,0,2
 2026,Piteå kommun,Händelse,,Trafikkontroll,1,0,3
 2026,Piteå kommun,Händelse,,Trafikkontroll,2,0,2
 2026,Piteå kommun,Händelse,,Trafikkontroll,3,0,2
@@ -14593,6 +14594,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Piteå kommun,Händelse,,Trafikolycka,4,0,3
 2026,Piteå kommun,Händelse,,Trafikolycka,5,0,1
 2026,Piteå kommun,Händelse,,Trafikolycka,6,0,2
+2026,Piteå kommun,Händelse,,"Trafikolycka,  singel",0,0,1
 2026,Piteå kommun,Händelse,,"Trafikolycka,  singel",3,0,1
 2026,Piteå kommun,Händelse,,"Trafikolycka,  singel",4,0,1
 2026,Piteå kommun,Händelse,,"Trafikolycka,  smitning från",6,0,1
