@@ -14500,9 +14500,9 @@ year,month,geography_group,event_type,event_count
 2026,11,Arjeplogs kommun,Trafikolycka,1
 2026,11,Arvidsjaurs kommun,Trafikbrott,2
 2026,11,Bodens kommun,Stöld,3
+2026,11,Bodens kommun,Trafikolycka,3
 2026,11,Bodens kommun,Rattfylleri,2
 2026,11,Bodens kommun,Trafikkontroll,2
-2026,11,Bodens kommun,Trafikolycka,2
 2026,11,Bodens kommun,Fylleri,1
 2026,11,Bodens kommun,Inbrott,1
 2026,11,Bodens kommun,Trafikbrott,1
@@ -14518,6 +14518,7 @@ year,month,geography_group,event_type,event_count
 2026,11,Haparanda kommun,Trafikbrott,1
 2026,11,Kalix kommun,Trafikolycka,4
 2026,11,Kalix kommun,Brand,1
+2026,11,Kalix kommun,"Mord/dråp,  försök",1
 2026,11,Kalix kommun,Olovlig körning,1
 2026,11,Kalix kommun,Rattfylleri,1
 2026,11,Kalix kommun,Trafikbrott,1
@@ -14536,10 +14537,11 @@ year,month,geography_group,event_type,event_count
 2026,11,Kiruna kommun,Övrigt,1
 2026,11,Kiruna kommun,Övrigt/oklassificerad,1
 2026,11,Luleå kommun,Misshandel,6
-2026,11,Luleå kommun,Trafikolycka,4
+2026,11,Luleå kommun,Trafikolycka,5
 2026,11,Luleå kommun,Trafikbrott,3
 2026,11,Luleå kommun,Trafikkontroll,3
 2026,11,Luleå kommun,Fylleri,2
+2026,11,Luleå kommun,Narkotikabrott,2
 2026,11,Luleå kommun,"Trafikolycka, vilt",2
 2026,11,Luleå kommun,Arbetsplatsolycka,1
 2026,11,Luleå kommun,Brand,1
@@ -14560,9 +14562,11 @@ year,month,geography_group,event_type,event_count
 2026,11,Piteå kommun,Misshandel,1
 2026,11,Piteå kommun,Sexualbrott,1
 2026,11,Piteå kommun,Trafikkontroll,1
+2026,11,Piteå kommun,Trafikolycka,1
 2026,11,Piteå kommun,"Trafikolycka,  singel",1
 2026,11,Piteå kommun,"Trafikolycka, vilt",1
 2026,11,Älvsbyns kommun,"Trafikolycka,  singel",1
 2026,11,Älvsbyns kommun,"Trafikolycka,  vilt",1
 2026,11,Överkalix kommun,"Trafikolycka,  vilt",1
 2026,11,Övertorneå kommun,Trafikbrott,3
+2026,11,Övertorneå kommun,"Trafikolycka,  vilt",1

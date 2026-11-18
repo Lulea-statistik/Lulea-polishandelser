@@ -6745,6 +6745,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,11,Kiruna kommun,"Trafikolycka,  vilt",1
 2026,11,Kiruna kommun,Övrigt/oklassificerad,1
 2026,11,Luleå kommun,Misshandel,6
+2026,11,Luleå kommun,Narkotikabrott,2
 2026,11,Luleå kommun,Trafikbrott,2
 2026,11,Luleå kommun,Trafikkontroll,2
 2026,11,Luleå kommun,"Trafikolycka, vilt",2
@@ -6760,3 +6761,4 @@ year,month,geography_group,event_type_extracted,event_count
 2026,11,Älvsbyns kommun,"Trafikolycka,  vilt",1
 2026,11,Överkalix kommun,"Trafikolycka,  vilt",1
 2026,11,Övertorneå kommun,Trafikbrott,1
+2026,11,Övertorneå kommun,"Trafikolycka,  vilt",1
