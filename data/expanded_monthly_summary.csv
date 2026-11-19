@@ -14507,8 +14507,8 @@ year,month,geography_group,event_type,event_count
 2026,11,Bodens kommun,Inbrott,1
 2026,11,Bodens kommun,Trafikbrott,1
 2026,11,Bodens kommun,"Trafikolycka, vilt",1
-2026,11,Flera kommuner i Norrbotten,Trafikkontroll,10
-2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",3
+2026,11,Flera kommuner i Norrbotten,Trafikkontroll,12
+2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",4
 2026,11,Gällivare kommun,Trafikkontroll,5
 2026,11,Gällivare kommun,Trafikolycka,2
 2026,11,Gällivare kommun,Rattfylleri,1
@@ -14517,16 +14517,16 @@ year,month,geography_group,event_type,event_count
 2026,11,Haparanda kommun,Rattfylleri,1
 2026,11,Haparanda kommun,Trafikbrott,1
 2026,11,Kalix kommun,Trafikolycka,4
+2026,11,Kalix kommun,Trafikbrott,2
 2026,11,Kalix kommun,Brand,1
 2026,11,Kalix kommun,"Mord/dråp,  försök",1
 2026,11,Kalix kommun,Olovlig körning,1
 2026,11,Kalix kommun,Rattfylleri,1
-2026,11,Kalix kommun,Trafikbrott,1
 2026,11,Kalix kommun,"Trafikolycka,  vilt",1
 2026,11,Kalix kommun,"Trafikolycka, vilt",1
 2026,11,Kiruna kommun,Rattfylleri,3
+2026,11,Kiruna kommun,Trafikolycka,3
 2026,11,Kiruna kommun,"Trafikolycka,  vilt",3
-2026,11,Kiruna kommun,Trafikolycka,2
 2026,11,Kiruna kommun,Arbetsplatsolycka,1
 2026,11,Kiruna kommun,Brand,1
 2026,11,Kiruna kommun,Narkotikabrott,1
@@ -14536,28 +14536,29 @@ year,month,geography_group,event_type,event_count
 2026,11,Kiruna kommun,Trafikbrott,1
 2026,11,Kiruna kommun,Övrigt,1
 2026,11,Kiruna kommun,Övrigt/oklassificerad,1
+2026,11,Luleå kommun,Trafikolycka,7
 2026,11,Luleå kommun,Misshandel,6
-2026,11,Luleå kommun,Trafikolycka,5
 2026,11,Luleå kommun,Trafikbrott,3
 2026,11,Luleå kommun,Trafikkontroll,3
 2026,11,Luleå kommun,Fylleri,2
 2026,11,Luleå kommun,Narkotikabrott,2
+2026,11,Luleå kommun,Rattfylleri,2
 2026,11,Luleå kommun,"Trafikolycka, vilt",2
 2026,11,Luleå kommun,Arbetsplatsolycka,1
 2026,11,Luleå kommun,Brand,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Mord/dråp,1
-2026,11,Luleå kommun,Rattfylleri,1
 2026,11,Luleå kommun,"Trafikolycka,  vilt",1
+2026,11,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
 2026,11,"Norrbotten, okänd kommun",Bedrägeri,1
 2026,11,"Norrbotten, okänd kommun",Trafikkontroll,1
-2026,11,"Norrbotten, okänd kommun","Trafikolycka, vilt",1
 2026,11,Pajala kommun,Trafikolycka,1
 2026,11,Pajala kommun,"Trafikolycka,  vilt",1
 2026,11,Pajala kommun,"Trafikolycka, vilt",1
-2026,11,Piteå kommun,Trafikbrott,3
+2026,11,Piteå kommun,Trafikbrott,4
 2026,11,Piteå kommun,"Trafikolycka,  vilt",2
 2026,11,Piteå kommun,Arbetsplatsolycka,1
+2026,11,Piteå kommun,Brand,1
 2026,11,Piteå kommun,Knivlagen,1
 2026,11,Piteå kommun,Misshandel,1
 2026,11,Piteå kommun,Sexualbrott,1

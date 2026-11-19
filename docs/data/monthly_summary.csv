@@ -11299,9 +11299,9 @@ year,month,geography_group,type_original,event_count
 2026,11,Bodens kommun,Rattfylleri,1
 2026,11,Bodens kommun,Trafikbrott,1
 2026,11,Bodens kommun,Trafikkontroll,1
-2026,11,Flera kommuner i Norrbotten,Trafikkontroll,10
+2026,11,Flera kommuner i Norrbotten,Trafikkontroll,12
 2026,11,Flera kommuner i Norrbotten,Sammanfattning natt,6
-2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",3
+2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",4
 2026,11,Gällivare kommun,Trafikolycka,2
 2026,11,Haparanda kommun,Trafikolycka,1
 2026,11,Kalix kommun,Trafikolycka,4
@@ -11309,20 +11309,20 @@ year,month,geography_group,type_original,event_count
 2026,11,Kalix kommun,Olovlig körning,1
 2026,11,Kalix kommun,Rattfylleri,1
 2026,11,Kalix kommun,Sammanfattning natt,1
+2026,11,Kiruna kommun,Trafikolycka,2
 2026,11,Kiruna kommun,"Trafikolycka,  vilt",2
 2026,11,Kiruna kommun,Arbetsplatsolycka,1
 2026,11,Kiruna kommun,Brand,1
 2026,11,Kiruna kommun,Sammanfattning natt,1
-2026,11,Kiruna kommun,Trafikolycka,1
 2026,11,Kiruna kommun,Övrigt,1
-2026,11,Luleå kommun,Trafikolycka,5
+2026,11,Luleå kommun,Trafikolycka,7
 2026,11,Luleå kommun,Fylleri,2
+2026,11,Luleå kommun,Sammanfattning natt,2
 2026,11,Luleå kommun,Arbetsplatsolycka,1
 2026,11,Luleå kommun,Brand,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Mord/dråp,1
 2026,11,Luleå kommun,Rattfylleri,1
-2026,11,Luleå kommun,Sammanfattning natt,1
 2026,11,Luleå kommun,Trafikbrott,1
 2026,11,Luleå kommun,Trafikkontroll,1
 2026,11,"Norrbotten, okänd kommun",Sammanfattning natt,5
@@ -11332,6 +11332,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Pajala kommun,Trafikolycka,1
 2026,11,Piteå kommun,Sammanfattning natt,2
 2026,11,Piteå kommun,Arbetsplatsolycka,1
+2026,11,Piteå kommun,Brand,1
 2026,11,Piteå kommun,Knivlagen,1
 2026,11,Piteå kommun,Trafikkontroll,1
 2026,11,Piteå kommun,Trafikolycka,1
