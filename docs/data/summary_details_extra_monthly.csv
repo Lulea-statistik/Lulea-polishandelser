@@ -6737,6 +6737,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,11,Kalix kommun,"Trafikolycka,  vilt",1
 2026,11,Kalix kommun,"Trafikolycka, vilt",1
 2026,11,Kiruna kommun,Rattfylleri,3
+2026,11,Kiruna kommun,Bedrägeri,1
 2026,11,Kiruna kommun,Narkotikabrott,1
 2026,11,Kiruna kommun,Ofredande/förargelse,1
 2026,11,Kiruna kommun,Olovlig körning,1
@@ -6752,6 +6753,7 @@ year,month,geography_group,event_type_extracted,event_count
 2026,11,Luleå kommun,Rattfylleri,1
 2026,11,Luleå kommun,"Trafikolycka,  vilt",1
 2026,11,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
+2026,11,Pajala kommun,Rattfylleri,1
 2026,11,Pajala kommun,"Trafikolycka,  vilt",1
 2026,11,Pajala kommun,"Trafikolycka, vilt",1
 2026,11,Piteå kommun,Trafikbrott,4

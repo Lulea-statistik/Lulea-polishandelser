@@ -4441,10 +4441,11 @@ year,month,geography_group,type_original,event_count
 2026,10,Sunderbyn,Trafikolycka,1
 2026,10,Sörbyarna,Sammanfattning natt,1
 2026,10,Sörbyarna,Trafikolycka,2
+2026,11,Bergnäset,Arbetsplatsolycka,1
 2026,11,Bergnäset,Trafikolycka,1
 2026,11,Centrum,Fylleri,1
 2026,11,Centrum,Inbrott,1
-2026,11,Centrum,Trafikolycka,1
+2026,11,Centrum,Trafikolycka,2
 2026,11,Flera stadsdelar i Luleå,Trafikkontroll,1
 2026,11,Flera stadsdelar i Luleå,Trafikolycka,2
 2026,11,Malmudden,Fylleri,1
@@ -4453,5 +4454,6 @@ year,month,geography_group,type_original,event_count
 2026,11,Okänt delområde,Mord/dråp,1
 2026,11,Okänt delområde,Rattfylleri,1
 2026,11,Okänt delområde,Sammanfattning natt,2
-2026,11,Okänt delområde,Trafikolycka,3
+2026,11,Okänt delområde,Trafikolycka,4
+2026,11,Sunderbyn,Trafikolycka,1
 2026,11,Sörbyarna,Trafikbrott,1
