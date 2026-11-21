@@ -7355,3 +7355,6 @@ date,year,weekday,geography_group,period,event_count,quiet_count,status
 2026-11-19,2026,3,Piteå kommun,Natt,1,0,Händelse
 2026-11-20,2026,4,Kiruna kommun,Natt,1,0,Händelse
 2026-11-20,2026,4,Pajala kommun,Kväll,1,0,Händelse
+2026-11-21,2026,5,Gällivare kommun,Natt,1,0,Händelse
+2026-11-21,2026,5,Haparanda kommun,Natt,1,0,Händelse
+2026-11-21,2026,5,Luleå kommun,Natt,2,0,Händelse

@@ -6844,10 +6844,12 @@ year,month,geography_group,event_type_extracted,event_count
 2026,11,Bodens kommun,"Trafikolycka, vilt",1
 2026,11,Gällivare kommun,Trafikkontroll,5
 2026,11,Gällivare kommun,Rattfylleri,1
+2026,11,Gällivare kommun,Trafikolycka,1
 2026,11,Gällivare kommun,"Trafikolycka, vilt",1
 2026,11,Haparanda kommun,Rattfylleri,1
 2026,11,Haparanda kommun,Trafikbrott,1
 2026,11,Haparanda kommun,Trafikolycka,1
+2026,11,Haparanda kommun,Övrigt/oklassificerad,1
 2026,11,Kalix kommun,Trafikbrott,2
 2026,11,Kalix kommun,Brand,1
 2026,11,Kalix kommun,"Trafikolycka,  vilt",1
@@ -6861,13 +6863,14 @@ year,month,geography_group,event_type_extracted,event_count
 2026,11,Kiruna kommun,Trafikolycka,1
 2026,11,Kiruna kommun,"Trafikolycka,  vilt",1
 2026,11,Kiruna kommun,Övrigt/oklassificerad,1
-2026,11,Luleå kommun,Misshandel,6
+2026,11,Luleå kommun,Misshandel,7
 2026,11,Luleå kommun,Narkotikabrott,2
 2026,11,Luleå kommun,Trafikbrott,2
 2026,11,Luleå kommun,Trafikkontroll,2
 2026,11,Luleå kommun,"Trafikolycka, vilt",2
 2026,11,Luleå kommun,Rattfylleri,1
 2026,11,Luleå kommun,"Trafikolycka,  vilt",1
+2026,11,Luleå kommun,Övrigt/oklassificerad,1
 2026,11,"Norrbotten, okänd kommun","Trafikolycka, vilt",4
 2026,11,Pajala kommun,Rattfylleri,1
 2026,11,Pajala kommun,"Trafikolycka,  vilt",1
