@@ -5588,6 +5588,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Centrum,Fylleri,3
 2026,11,Centrum,Inbrott,1
 2026,11,Centrum,Misshandel,1
+2026,11,Centrum,Stöld,1
 2026,11,Centrum,Trafikolycka,2
 2026,11,Flera stadsdelar i Luleå,Trafikkontroll,1
 2026,11,Flera stadsdelar i Luleå,Trafikolycka,2
@@ -5597,6 +5598,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Notviken,Rattfylleri,1
 2026,11,Okänt delområde,Arbetsplatsolycka,1
 2026,11,Okänt delområde,Brand,1
+2026,11,Okänt delområde,Fylleri/LOB,1
 2026,11,Okänt delområde,Misshandel,5
 2026,11,Okänt delområde,Mord/dråp,1
 2026,11,Okänt delområde,Narkotikabrott,2
@@ -5605,7 +5607,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Okänt delområde,Trafikkontroll,2
 2026,11,Okänt delområde,Trafikolycka,5
 2026,11,Okänt delområde,"Trafikolycka,  vilt",1
-2026,11,Okänt delområde,"Trafikolycka, vilt",1
+2026,11,Okänt delområde,"Trafikolycka, vilt",2
 2026,11,Okänt delområde,Övrigt/oklassificerad,1
 2026,11,Sunderbyn,Trafikolycka,1
 2026,11,Sörbyarna,Trafikbrott,1

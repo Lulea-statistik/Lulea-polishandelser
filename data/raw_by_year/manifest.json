@@ -1,6 +1,6 @@
 {
   "format": "raw-jsonl-year-month-chunks-v2",
-  "partition_record_count": 92838,
+  "partition_record_count": 93338,
   "partition_count": 21,
   "raw_source_rows_on_first_migration": 72838,
   "legacy_sha256": "712b7ccff3151747ecffc7849ddd386a1efba46bbe5a09eba0207a89ed6ac0fd",
@@ -74,20 +74,20 @@
       "sha256": "09b2b01b10aa2f2e90aa3f670710bfc1200e7746f9401ac60bdea379cd8570a4"
     },
     "2026-08": {
-      "records": 17659,
-      "sha256": "fd15b27db341704f44985ddc524c605e958fb57cb725bf9a788f49e479a5ea95"
+      "records": 17771,
+      "sha256": "60a51fc61caab4db39471d5cd93bfa7728f4a7ea3e872e7cdcebd677b742e83d"
     },
     "2026-09": {
-      "records": 17688,
-      "sha256": "e36cf7448c92215b1abf64b76ac037f8d2e3605bcd02c2c37f2e13d6013e3be9"
+      "records": 17820,
+      "sha256": "f26fc4a0d039dc93d544cf89fefddfc80ae8c56615af1adacaee5faf4f8bc9e6"
     },
     "2026-10": {
-      "records": 9478,
-      "sha256": "eda696f66e02cf044ba877997e329fc8a98cd8774ead1cef531e133188ade01b"
+      "records": 9618,
+      "sha256": "2d960e91a3373eb5691c94bdf033131c3a0e1f4d8be3a0ada70e62d90817a65f"
     },
     "2026-11": {
-      "records": 1173,
-      "sha256": "ebae47d61d266144a1025f217a7ddff919fe0913b122a4eb54e313be427e4548"
+      "records": 1289,
+      "sha256": "0751404a7975c6b5fe3d3d9465d4d3a395b9bb8729f4992af863654d4098d309"
     }
   }
 }
