@@ -13717,7 +13717,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Fylleri/LOB,6,0,1
 2026,Bodens kommun,Händelse,,Försvunnen person,3,0,1
 2026,Bodens kommun,Händelse,,Inbrott,5,0,1
-2026,Bodens kommun,Händelse,,Misshandel,0,0,2
+2026,Bodens kommun,Händelse,,Misshandel,0,0,3
 2026,Bodens kommun,Händelse,,Misshandel,4,0,3
 2026,Bodens kommun,Händelse,,"Motorfordon,  stöld",4,0,1
 2026,Bodens kommun,Händelse,,Narkotikabrott,0,0,2
@@ -13831,7 +13831,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,4,0,34
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,5,0,25
 2026,Flera kommuner i Norrbotten,Händelse,,Trafikkontroll,6,0,21
-2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",0,0,2
+2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",0,0,3
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",1,0,3
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",2,0,5
 2026,Flera kommuner i Norrbotten,Händelse,,"Trafikolycka,  vilt",3,0,5
@@ -13876,7 +13876,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Gällivare kommun,Händelse,,Trafikkontroll,3,0,1
 2026,Gällivare kommun,Händelse,,Trafikkontroll,4,0,3
 2026,Gällivare kommun,Händelse,,Trafikkontroll,5,0,1
-2026,Gällivare kommun,Händelse,,Trafikolycka,0,0,2
+2026,Gällivare kommun,Händelse,,Trafikolycka,0,0,3
 2026,Gällivare kommun,Händelse,,Trafikolycka,1,0,2
 2026,Gällivare kommun,Händelse,,Trafikolycka,2,0,2
 2026,Gällivare kommun,Händelse,,Trafikolycka,3,0,3
@@ -14023,6 +14023,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Jokkmokks kommun,Händelse,Natt,Övrigt/oklassificerad,4,1,2
 2026,Jokkmokks kommun,Händelse,Natt,Övrigt/oklassificerad,5,1,2
 2026,Kalix kommun,Händelse,,Arbetsplatsolycka,4,0,1
+2026,Kalix kommun,Händelse,,Bedrägeri,0,0,1
 2026,Kalix kommun,Händelse,,Bedrägeri,2,0,1
 2026,Kalix kommun,Händelse,,Brand,2,0,1
 2026,Kalix kommun,Händelse,,Brand,3,0,1
@@ -14273,7 +14274,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Fylleri,4,0,2
 2026,Luleå kommun,Händelse,,Fylleri,5,0,4
 2026,Luleå kommun,Händelse,,Fylleri/LOB,0,0,9
-2026,Luleå kommun,Händelse,,Fylleri/LOB,1,0,7
+2026,Luleå kommun,Händelse,,Fylleri/LOB,1,0,8
 2026,Luleå kommun,Händelse,,Fylleri/LOB,2,0,9
 2026,Luleå kommun,Händelse,,Fylleri/LOB,3,0,14
 2026,Luleå kommun,Händelse,,Fylleri/LOB,4,0,6
@@ -14315,7 +14316,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Olovlig körning,2,0,3
 2026,Luleå kommun,Händelse,,Ordningslagen,6,0,1
 2026,Luleå kommun,Händelse,,Rattfylleri,0,0,1
-2026,Luleå kommun,Händelse,,Rattfylleri,1,0,3
+2026,Luleå kommun,Händelse,,Rattfylleri,1,0,4
 2026,Luleå kommun,Händelse,,Rattfylleri,2,0,3
 2026,Luleå kommun,Händelse,,Rattfylleri,4,0,2
 2026,Luleå kommun,Händelse,,Rattfylleri,5,0,1
@@ -14340,7 +14341,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Stöld/inbrott,0,0,1
 2026,Luleå kommun,Händelse,,Stöld/inbrott,3,0,1
 2026,Luleå kommun,Händelse,,Trafikbrott,0,0,5
-2026,Luleå kommun,Händelse,,Trafikbrott,1,0,5
+2026,Luleå kommun,Händelse,,Trafikbrott,1,0,6
 2026,Luleå kommun,Händelse,,Trafikbrott,3,0,3
 2026,Luleå kommun,Händelse,,Trafikhinder,1,0,1
 2026,Luleå kommun,Händelse,,Trafikhinder,2,0,1
@@ -14477,7 +14478,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,5,1,1
 2026,Luleå kommun,Händelse,Natt,Övrigt/oklassificerad,6,1,2
 2026,Norrbotten / Övriga Sverige,Händelse,,Bedrägeri,4,0,1
-2026,"Norrbotten, okänd kommun",Händelse,,Bedrägeri,0,0,2
+2026,"Norrbotten, okänd kommun",Händelse,,Bedrägeri,0,0,3
 2026,"Norrbotten, okänd kommun",Händelse,,Polisinsats/kommendering,2,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",0,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",1,0,1
