@@ -5601,7 +5601,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Okänt delområde,Fylleri/LOB,2
 2026,11,Okänt delområde,Misshandel,5
 2026,11,Okänt delområde,Mord/dråp,1
-2026,11,Okänt delområde,Narkotikabrott,2
+2026,11,Okänt delområde,Narkotikabrott,3
 2026,11,Okänt delområde,Rattfylleri,3
 2026,11,Okänt delområde,Trafikbrott,2
 2026,11,Okänt delområde,Trafikkontroll,2
@@ -5610,5 +5610,6 @@ year,month,geography_group,type_original,event_count
 2026,11,Okänt delområde,"Trafikolycka, vilt",2
 2026,11,Okänt delområde,Övrigt/oklassificerad,1
 2026,11,Porsön,Trafikbrott,1
+2026,11,Sunderbyn,Trafikbrott,1
 2026,11,Sunderbyn,Trafikolycka,1
 2026,11,Sörbyarna,Trafikbrott,1

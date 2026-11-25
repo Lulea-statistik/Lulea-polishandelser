@@ -13702,6 +13702,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Bodens kommun,Händelse,,Arbetsplatsolycka,2,0,1
 2026,Bodens kommun,Händelse,,Arbetsplatsolycka,4,0,1
 2026,Bodens kommun,Händelse,,Arbetsplatsolycka,5,0,1
+2026,Bodens kommun,Händelse,,Bedrägeri,1,0,1
 2026,Bodens kommun,Händelse,,Brand,0,0,3
 2026,Bodens kommun,Händelse,,Brand,2,0,3
 2026,Bodens kommun,Händelse,,Brand,3,0,2
@@ -14300,7 +14301,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,"Motorfordon,  anträffat stulet",2,0,1
 2026,Luleå kommun,Händelse,,Narkotikabrott,0,0,7
 2026,Luleå kommun,Händelse,,Narkotikabrott,1,0,1
-2026,Luleå kommun,Händelse,,Narkotikabrott,2,0,3
+2026,Luleå kommun,Händelse,,Narkotikabrott,2,0,4
 2026,Luleå kommun,Händelse,,Narkotikabrott,3,0,4
 2026,Luleå kommun,Händelse,,Narkotikabrott,4,0,6
 2026,Luleå kommun,Händelse,,Narkotikabrott,5,0,8
@@ -14341,7 +14342,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Luleå kommun,Händelse,,Stöld/inbrott,0,0,1
 2026,Luleå kommun,Händelse,,Stöld/inbrott,3,0,1
 2026,Luleå kommun,Händelse,,Trafikbrott,0,0,5
-2026,Luleå kommun,Händelse,,Trafikbrott,1,0,6
+2026,Luleå kommun,Händelse,,Trafikbrott,1,0,7
 2026,Luleå kommun,Händelse,,Trafikbrott,3,0,3
 2026,Luleå kommun,Händelse,,Trafikhinder,1,0,1
 2026,Luleå kommun,Händelse,,Trafikhinder,2,0,1
@@ -14485,6 +14486,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",2,0,2
 2026,"Norrbotten, okänd kommun",Händelse,,"Sammanfattning, ej uppdelad",3,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,1,0,2
+2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,2,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,3,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,Trafikkontroll,6,0,1
 2026,"Norrbotten, okänd kommun",Händelse,,"Trafikolycka, vilt",0,0,13
@@ -14685,6 +14687,7 @@ year,geography_group,kind,period,event_type,weekday,time_known,event_count
 2026,Älvsbyns kommun,Händelse,,Rattfylleri,6,0,2
 2026,Älvsbyns kommun,Händelse,,Trafikbrott,0,0,1
 2026,Älvsbyns kommun,Händelse,,Trafikbrott,1,0,1
+2026,Älvsbyns kommun,Händelse,,Trafikbrott,2,0,1
 2026,Älvsbyns kommun,Händelse,,Trafikbrott,4,0,1
 2026,Älvsbyns kommun,Händelse,,Trafikkontroll,2,0,1
 2026,Älvsbyns kommun,Händelse,,Trafikkontroll,5,0,1

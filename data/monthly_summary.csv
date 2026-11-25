@@ -11296,6 +11296,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Bodens kommun,Stöld,3
 2026,11,Bodens kommun,Trafikolycka,3
 2026,11,Bodens kommun,Fylleri,2
+2026,11,Bodens kommun,Bedrägeri,1
 2026,11,Bodens kommun,Inbrott,1
 2026,11,Bodens kommun,Misshandel,1
 2026,11,Bodens kommun,Trafikbrott,1
@@ -11324,17 +11325,17 @@ year,month,geography_group,type_original,event_count
 2026,11,Luleå kommun,Trafikolycka,11
 2026,11,Luleå kommun,Fylleri,4
 2026,11,Luleå kommun,Sammanfattning natt,3
+2026,11,Luleå kommun,Trafikbrott,3
 2026,11,Luleå kommun,Arbetsplatsolycka,2
 2026,11,Luleå kommun,Rattfylleri,2
-2026,11,Luleå kommun,Trafikbrott,2
 2026,11,Luleå kommun,Brand,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Mord/dråp,1
 2026,11,Luleå kommun,Stöld,1
 2026,11,Luleå kommun,Trafikkontroll,1
-2026,11,"Norrbotten, okänd kommun",Sammanfattning natt,6
+2026,11,"Norrbotten, okänd kommun",Sammanfattning natt,7
 2026,11,"Norrbotten, okänd kommun",Bedrägeri,2
-2026,11,"Norrbotten, okänd kommun",Trafikkontroll,1
+2026,11,"Norrbotten, okänd kommun",Trafikkontroll,2
 2026,11,Pajala kommun,Sammanfattning natt,2
 2026,11,Pajala kommun,Trafikolycka,1
 2026,11,Piteå kommun,Sammanfattning natt,2
@@ -11344,7 +11345,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Piteå kommun,Knivlagen,1
 2026,11,Piteå kommun,Trafikkontroll,1
 2026,11,Piteå kommun,"Trafikolycka,  singel",1
-2026,11,Älvsbyns kommun,Trafikbrott,1
+2026,11,Älvsbyns kommun,Trafikbrott,2
 2026,11,Älvsbyns kommun,Trafikolycka,1
 2026,11,Älvsbyns kommun,"Trafikolycka,  singel",1
 2026,11,Övertorneå kommun,Trafikbrott,2
