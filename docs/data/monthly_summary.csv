@@ -11291,6 +11291,7 @@ year,month,geography_group,type_original,event_count
 2026,10,Övertorneå kommun,Trafikkontroll,1
 2026,10,Övertorneå kommun,Trafikolycka,1
 2026,11,Arjeplogs kommun,Trafikolycka,1
+2026,11,Arvidsjaurs kommun,Arbetsplatsolycka,1
 2026,11,Arvidsjaurs kommun,Trafikbrott,1
 2026,11,Bodens kommun,Rattfylleri,3
 2026,11,Bodens kommun,Stöld,3
@@ -11303,8 +11304,8 @@ year,month,geography_group,type_original,event_count
 2026,11,Bodens kommun,Trafikkontroll,1
 2026,11,Bodens kommun,"Trafikolycka,  smitning från",1
 2026,11,Flera kommuner i Norrbotten,Trafikkontroll,13
-2026,11,Flera kommuner i Norrbotten,Sammanfattning natt,8
-2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",6
+2026,11,Flera kommuner i Norrbotten,Sammanfattning natt,9
+2026,11,Flera kommuner i Norrbotten,"Trafikolycka,  vilt",7
 2026,11,Gällivare kommun,Trafikolycka,3
 2026,11,Haparanda kommun,Trafikolycka,1
 2026,11,Haparanda kommun,"Trafikolycka,  singel",1
@@ -11322,7 +11323,7 @@ year,month,geography_group,type_original,event_count
 2026,11,Kiruna kommun,Rattfylleri,1
 2026,11,Kiruna kommun,Sammanfattning natt,1
 2026,11,Kiruna kommun,Övrigt,1
-2026,11,Luleå kommun,Trafikolycka,11
+2026,11,Luleå kommun,Trafikolycka,12
 2026,11,Luleå kommun,Fylleri,4
 2026,11,Luleå kommun,Sammanfattning natt,3
 2026,11,Luleå kommun,Trafikbrott,3
@@ -11338,6 +11339,7 @@ year,month,geography_group,type_original,event_count
 2026,11,"Norrbotten, okänd kommun",Trafikkontroll,2
 2026,11,Pajala kommun,Sammanfattning natt,2
 2026,11,Pajala kommun,Trafikolycka,1
+2026,11,Pajala kommun,Vållande till kroppsskada,1
 2026,11,Piteå kommun,Sammanfattning natt,2
 2026,11,Piteå kommun,Trafikolycka,2
 2026,11,Piteå kommun,Arbetsplatsolycka,1
