@@ -116,6 +116,33 @@ def exact_locality(row):
  raw=unicodedata.normalize("NFC",narrative).casefold()
  if any(name!=target and re.search(r"(?<!\w)"+re.escape(name.casefold())+r"(?!\w)",raw) for name in EXACT_LOCALITIES):return UNKNOWN
  return target
+
+# Group 3, revision #6: explicit heading/lead location, not incidental mentions.
+CENTRUM_LABEL = r"(?:lulea\s+centrum|lulea\s+innerstad(?:en)?|innerstaden|centrala\s+lulea|centrum)"
+CENTRUM_PREFIX = re.compile(r"^\s*"+CENTRUM_LABEL+r"\s*[,;:–-]\s*(?:misstankt|man|kvinna|person|stold|brand|misshandel|rattfylleri|trafikolycka|kontroll|brott|skadegorelse|brak|inbrott|fylleri|olovlig|ran|polis)\b")
+CENTRUM_SUFFIX = re.compile(r"^\s*(?:misstankt\s+)?(?:ringa\s+)?(?:stold|snatteri|brand|misshandel|skadegorelse|inbrott|ran|brak|kontroll|rattfylleri|olovlig korning)\b[^.!?<>]{0,120},\s*"+CENTRUM_LABEL+r"\s*[.!]?\s*$")
+CENTRUM_EXPLICIT = re.compile(r"^\s*(?:misstankt\s+)?(?:stold|snatteri|brand|misshandel|skadegorelse|inbrott|ran|brak|kontroll|rattfylleri|olovlig korning)\b[^.!?<>]{0,100}\s+i\s+(?:centrala lulea|lulea innerstad(?:en)?|lulea centrum)\s*[.!]?\s*$")
+CENTRUM_OTHER = re.compile(r"(?<![a-z])(?:boden(?:s)?|pitea(?:s)?|kalix|alvsbyn|haparanda|kiruna|gallivare|arvidsjaur|arjeplog|jokkmokk|overkalix|overtornea|pajala|hertso(?:ns|s)?|hersto|orn(?:n)?aset(?:s)?|bjorkskatan(?:s)?|kyrkbyn|gammelstaden|nationella forensiska)(?![a-z])")
+CENTRUM_ROAD = re.compile(r"(?<![a-z0-9])(?:e\s*\d{1,3}|(?:riksvag|lansvag|vag(?:en)?|rv|lv)\s*(?:nr\.?\s*)?\d{1,4}|[a-z]{3,}(?:vagen|leden|gatan|bron|banken))(?![a-z0-9])")
+def centrum_rescue(row):
+ if str(row.get("is_summary") or "").strip().casefold() in ("true","1"):return UNKNOWN
+ # Only generic or empty own place fields; no override of explicit unknown place.
+ generic={"","lulea","lulea kommun","norrbotten","norrbottens lan","lulea, norrbottens lan","lulea, lulea, norrbottens lan"}
+ if any(normalize(row.get(k)).strip() not in generic for k in ("title_location","location_string")):return UNKNOWN
+ fields=[normalize(row.get(k)).strip() for k in ("headline","description","content")]
+ all_text=" ".join(fields)
+ if CENTRUM_OTHER.search(all_text):return UNKNOWN
+ if any(p.search(all_text) for name,pats in PATTERNS.items() if name!="Centrum" for p in pats):return UNKNOWN
+ if any(p.search(all_text) for p in ROAD_PATTERNS) or CENTRUM_ROAD.search(all_text):return UNKNOWN
+ raw=unicodedata.normalize("NFC"," ".join(str(row.get(k) or "") for k in ("headline","description","content"))).casefold()
+ if any(re.search(r"(?<!\w)"+re.escape(name.casefold())+r"(?!\w)",raw) for name in EXACT_LOCALITIES):return UNKNOWN
+ # Only headline or first sentence of description; not arbitrary later sentences.
+ for value in fields[:2]:
+  lead=re.split(r"(?<=[.!?])\s+|<",value,maxsplit=1)[0].strip()
+  if re.search(r"\b(?:till|fran|mot|via|mellan|fardades|korde)\b",lead):continue
+  if CENTRUM_PREFIX.search(lead) or CENTRUM_SUFFIX.fullmatch(lead) or CENTRUM_EXPLICIT.fullmatch(lead):return "Centrum"
+ return UNKNOWN
+
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
@@ -141,7 +168,9 @@ def district(row):
   others={name for name,pats in PATTERNS.items() if name!=selected and any(p.search(narrative) for p in pats)}
   if not others and not any(p.search(narrative) for p in ROAD_PATTERNS):
    return selected
- return exact_locality(row)
+ locality=exact_locality(row)
+ if locality!=UNKNOWN:return locality
+ return centrum_rescue(row)
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
  counts=defaultdict(int)
