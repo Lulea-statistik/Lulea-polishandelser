@@ -1,16 +1,16 @@
 platsord_normaliserat,unik_handelser_platsfalt,unik_handelser_loptext,unika_handelser_totalt_max_sum,indikativ_klass,vanligaste_handelsetyp,antal_av_den_typen
-innerstaden,13,714,714,Centrum,Stöld,193
-storheden,462,462,463,Storheden,Stöld,174
+innerstaden,13,719,719,Centrum,Stöld,193
+storheden,463,463,464,Storheden,Stöld,174
 hertson,257,258,258,Hertsön,Fylleri/LOB,23
 notviken,243,245,245,Notviken,Trafikolycka,48
-porson,204,208,208,Porsön,Trafikkontroll,27
-riksvag,0,206,206,Ej klassificerad/kandidat,Trafikkontroll,53
-bergnaset,198,199,199,Bergnäset,Trafikkontroll,78
+porson,205,209,209,Porsön,Trafikkontroll,27
+riksvag,0,208,208,Ej klassificerad/kandidat,Trafikkontroll,54
+bergnaset,201,202,202,Bergnäset,Trafikkontroll,79
 ornaset,193,196,196,Örnäset,Stöld,55
-gammelstad,168,170,170,Gammelstad,Trafikkontroll,36
-sunderbyn,140,167,167,Sunderbyn,Trafikkontroll,47
-centrum,6,146,146,Centrum,Stöld,24
-lansvag,0,141,141,Ej klassificerad/kandidat,Trafikkontroll,56
+gammelstad,169,171,171,Gammelstad,Trafikkontroll,37
+sunderbyn,142,169,169,Sunderbyn,Trafikkontroll,47
+centrum,6,149,149,Centrum,Stöld,25
+lansvag,0,146,146,Ej klassificerad/kandidat,Trafikkontroll,56
 ranea,139,141,141,Råneå,Trafikolycka,38
 bergviken,118,121,121,Bergviken,Trafikkontroll,36
 mjolkudden,95,96,96,Mjölkudden,Trafikkontroll,12
@@ -19,32 +19,32 @@ hertsovagen,17,83,87,Ej klassificerad/kandidat,Trafikkontroll,50
 skurholmen,86,87,87,Skurholmen,Trafikkontroll,15
 lulea mjolkudden,83,0,83,Ej klassificerad/kandidat,Trafikkontroll,9
 lulea hertsovagen,72,0,72,Ej klassificerad/kandidat,Trafikkontroll,46
-svartovagen,30,46,50,Ej klassificerad/kandidat,Trafikolycka,32
+svartovagen,30,48,52,Ej klassificerad/kandidat,Trafikolycka,34
 bodenvagen,19,46,49,Ej klassificerad/kandidat,Trafikolycka,32
 alvbrovagen,16,42,43,Ej klassificerad/kandidat,Trafikkontroll,28
+storgatan,39,41,41,Centrum,Fylleri/LOB,7
 ostermalm,40,40,40,Centrum,Trafikolycka,11
-storgatan,38,40,40,Centrum,Fylleri/LOB,7
-haparandavagen,15,33,37,Ej klassificerad/kandidat,Trafikkontroll,23
+haparandavagen,15,34,38,Ej klassificerad/kandidat,Trafikkontroll,24
+lulea malmudden,33,0,33,Ej klassificerad/kandidat,Stöld,11
+malmudden,1,33,33,Ej klassificerad/kandidat,Stöld,10
 lulea bergnasbron,32,0,32,Ej klassificerad/kandidat,Trafikhinder,14
-lulea malmudden,32,0,32,Ej klassificerad/kandidat,Stöld,11
-malmudden,1,32,32,Ej klassificerad/kandidat,Stöld,10
 storhedsvagen,12,30,32,Ej klassificerad/kandidat,Trafikkontroll,17
 bjorkskataleden,15,24,30,Ej klassificerad/kandidat,Trafikolycka,15
 lulea bodenvagen,29,0,29,Ej klassificerad/kandidat,Trafikolycka,21
+lulea storgatan,29,0,29,Ej klassificerad/kandidat,Fylleri/LOB,7
 bergnasbron,4,25,28,Ej klassificerad/kandidat,Trafikhinder,10
-lulea storgatan,28,0,28,Ej klassificerad/kandidat,Fylleri/LOB,7
+mariebergsvagen,12,23,28,Ej klassificerad/kandidat,Trafikkontroll,14
 olycksplatsen,0,28,28,Ej klassificerad/kandidat,Trafikolycka,17
 lulea alvbrovagen,27,0,27,Ej klassificerad/kandidat,Trafikkontroll,21
-mariebergsvagen,11,22,27,Ej klassificerad/kandidat,Trafikkontroll,13
-lulea svartovagen,25,0,25,Ej klassificerad/kandidat,Trafikolycka,15
+lulea svartovagen,27,0,27,Ej klassificerad/kandidat,Trafikolycka,17
+lulea haparandavagen,25,0,25,Ej klassificerad/kandidat,Trafikkontroll,15
 mjolkuddsvagen,8,20,25,Ej klassificerad/kandidat,Trafikkontroll,12
-lulea haparandavagen,24,0,24,Ej klassificerad/kandidat,Trafikkontroll,14
-lulea gammelstadsvagen,23,0,23,Ej klassificerad/kandidat,Trafikolycka,19
+lulea gammelstadsvagen,24,0,24,Ej klassificerad/kandidat,Trafikolycka,20
+brottsplatsen,0,22,22,Ej klassificerad/kandidat,Misshandel,5
 busstationen,2,22,22,Ej klassificerad/kandidat,Fylleri/LOB,17
 lerbacken,22,22,22,Lerbäcken,Trafikkontroll,6
 storsandsvagen,9,16,22,Ej klassificerad/kandidat,Trafikkontroll,14
 bensbyvagen,8,15,21,Ej klassificerad/kandidat,Trafikkontroll,11
-brottsplatsen,0,21,21,Ej klassificerad/kandidat,Misshandel,5
 med till polisstationen,0,20,20,Ej klassificerad/kandidat,Sammanfattning natt,6
 lulea storhedsvagen,19,0,19,Ej klassificerad/kandidat,Trafikkontroll,9
 lulea mjolkuddsvagen,18,0,18,Ej klassificerad/kandidat,Trafikkontroll,7
@@ -55,17 +55,17 @@ lulea bensbyvagen,17,0,17,Ej klassificerad/kandidat,Trafikolycka,7
 kallaxvagen,2,15,16,Ej klassificerad/kandidat,Trafikkontroll,7
 karlsvik,16,16,16,Karlsvik,Trafikkontroll,3
 lulea kallaxvagen,16,0,16,Ej klassificerad/kandidat,Trafikkontroll,8
+gammelstadsvagen,4,15,15,Ej klassificerad/kandidat,Trafikolycka,13
 lulea mariebergsvagen,15,0,15,Ej klassificerad/kandidat,Trafikkontroll,9
 fors till polisstationen,0,14,14,Ej klassificerad/kandidat,Fylleri/LOB,7
-gammelstadsvagen,4,14,14,Ej klassificerad/kandidat,Trafikolycka,12
 lulea bjorkskataleden,14,0,14,Ej klassificerad/kandidat,Trafikolycka,8
+sandviksgatan,2,14,14,Ej klassificerad/kandidat,Trafikolycka,6
 sodra hamnleden,7,14,14,Ej klassificerad/kandidat,Trafikolycka,6
+lulea sandviksgatan,13,0,13,Ej klassificerad/kandidat,Trafikolycka,5
 lulea smedjegatan,13,0,13,Ej klassificerad/kandidat,"Trafikolycka,  personskada",3
-sandviksgatan,2,13,13,Ej klassificerad/kandidat,Trafikolycka,5
 avaviksvagen,8,10,12,Ej klassificerad/kandidat,Trafikkontroll,6
 bensinstation,0,12,12,Ej klassificerad/kandidat,Olaga hot,2
 lulea kungsgatan,11,1,12,Ej klassificerad/kandidat,Trafikolycka,8
-lulea sandviksgatan,12,0,12,Ej klassificerad/kandidat,Trafikolycka,4
 porsovagen,7,12,12,Ej klassificerad/kandidat,Trafikkontroll,6
 stationsgatan,8,11,12,Ej klassificerad/kandidat,Trafikolycka,4
 delfingatan,4,10,11,Ej klassificerad/kandidat,Trafikkontroll,8
@@ -82,6 +82,7 @@ tunastigen,2,8,9,Ej klassificerad/kandidat,Rattfylleri,2
 alvsbyvagen,4,8,8,Ej klassificerad/kandidat,Trafikkontroll,3
 lulea skeppsbrogatan,8,0,8,Ej klassificerad/kandidat,Trafikkontroll,2
 lulea tunastigen,8,0,8,Ej klassificerad/kandidat,Rattfylleri,2
+lulviksvagen,5,8,8,Ej klassificerad/kandidat,Trafikkontroll,5
 polisstationen,0,8,8,Ej klassificerad/kandidat,Fylleri/LOB,3
 sorforsvagen,3,7,8,Ej klassificerad/kandidat,Trafikkontroll,8
 arcusvagen,2,5,7,Ej klassificerad/kandidat,Trafikkontroll,3
@@ -94,17 +95,18 @@ hummergatan,2,7,7,Ej klassificerad/kandidat,Trafikolycka,3
 lulea midgardsvagen,7,0,7,Ej klassificerad/kandidat,Trafikolycka,2
 lulea residensgatan,7,0,7,Ej klassificerad/kandidat,Rattfylleri,2
 lulevagen,1,7,7,Ej klassificerad/kandidat,Trafikkontroll,7
-lulviksvagen,4,7,7,Ej klassificerad/kandidat,Trafikkontroll,4
 professorsvagen,4,6,7,Ej klassificerad/kandidat,Sammanfattning förmiddag,1
 smedsbyvagen,0,7,7,Ej klassificerad/kandidat,Trafikkontroll,4
 universitetsvagen,2,7,7,Ej klassificerad/kandidat,Trafikkontroll,5
 backgatan,4,4,6,Ej klassificerad/kandidat,Trafikkontroll,3
 banvagen,2,6,6,Ej klassificerad/kandidat,Trafikkontroll,2
+centralstationen,0,6,6,Ej klassificerad/kandidat,Fylleri/LOB,3
 efter hastighetsovertradelse riksvag,0,6,6,Ej klassificerad/kandidat,Trafikbrott,6
 flygplatsen,1,6,6,Ej klassificerad/kandidat,Fylleri/LOB,3
 hostvagen,3,4,6,Ej klassificerad/kandidat,Trafikolycka,3
 lerbacksvagen,4,5,6,Ej klassificerad/kandidat,Trafikkontroll,4
 lulea delfingatan,6,0,6,Ej klassificerad/kandidat,Trafikkontroll,4
+lulea gamla gaddviksbron,6,0,6,Ej klassificerad/kandidat,"Trafikolycka,  singel",1
 lulea hummergatan,6,0,6,Ej klassificerad/kandidat,Trafikolycka,2
 lulea nya gaddviksbron,6,0,6,Ej klassificerad/kandidat,Trafikolycka,4
 lulea porsovagen,6,0,6,Ej klassificerad/kandidat,Trafikkontroll,3
@@ -118,19 +120,18 @@ balingevagen,2,4,5,Ej klassificerad/kandidat,Trafikkontroll,3
 bjorkgatan,4,3,5,Ej klassificerad/kandidat,Trafikkontroll,5
 bjorsbyvagen,1,5,5,Ej klassificerad/kandidat,Trafikkontroll,4
 blomgatan,1,4,5,Ej klassificerad/kandidat,Trafikkontroll,3
-centralstationen,0,5,5,Ej klassificerad/kandidat,Fylleri/LOB,3
 edeforsgatan,1,5,5,Ej klassificerad/kandidat,Trafikkontroll,3
 efter trafikkontroll lansvag,0,5,5,Ej klassificerad/kandidat,Trafikkontroll,5
 efter trafikkontroll riksvag,0,5,5,Ej klassificerad/kandidat,Trafikkontroll,5
 fiskehamnsvagen,1,5,5,Ej klassificerad/kandidat,Trafikkontroll,4
 fordes till polisstationen,0,5,5,Ej klassificerad/kandidat,Sammanfattning kväll,2
+gamla gaddviksbron,1,5,5,Ej klassificerad/kandidat,Trafikhinder,1
 granuddsvagen,2,5,5,Ej klassificerad/kandidat,Trafikkontroll,3
 gymnasievagen,3,4,5,Ej klassificerad/kandidat,"Våldtäkt,  försök",1
 har lamnat olycksplatsen,0,5,5,Ej klassificerad/kandidat,Trafikolycka,4
 korsningen gammelstadsvagen,0,5,5,Ej klassificerad/kandidat,Trafikolycka,5
 lulea arcusvagen,5,0,5,Ej klassificerad/kandidat,Trafikkontroll,2
 lulea bjorsbyvagen,5,0,5,Ej klassificerad/kandidat,Trafikkontroll,3
-lulea gamla gaddviksbron,5,0,5,Ej klassificerad/kandidat,"Trafikolycka,  singel",1
 lulea malmuddsvagen,5,0,5,Ej klassificerad/kandidat,Rattfylleri,1
 lulea radstugatan,5,0,5,Ej klassificerad/kandidat,Trafikolycka,3
 lulea sorforsvagen,5,0,5,Ej klassificerad/kandidat,Trafikkontroll,5
@@ -141,7 +142,6 @@ bergnasvagen,2,3,4,Ej klassificerad/kandidat,Trafikolycka,2
 bjorkskateleden,0,4,4,Ej klassificerad/kandidat,Trafikolycka,3
 brandplatsen,0,4,4,Ej klassificerad/kandidat,Brand,4
 foras till polisstationen,0,4,4,Ej klassificerad/kandidat,Trafikbrott,1
-gamla gaddviksbron,1,4,4,Ej klassificerad/kandidat,Trafikhinder,1
 gangvag,0,4,4,Ej klassificerad/kandidat,Övrigt,1
 jagarstigen,4,3,4,Ej klassificerad/kandidat,Trafikkontroll,3
 korsningen svartovagen,0,4,4,Ej klassificerad/kandidat,Trafikolycka,3
@@ -154,8 +154,10 @@ lulea edeforsgatan,4,0,4,Ej klassificerad/kandidat,Trafikkontroll,2
 lulea fiskehamnsvagen,4,0,4,Ej klassificerad/kandidat,Trafikkontroll,3
 lulea kronbacksvagen,4,0,4,Ej klassificerad/kandidat,"Trafikolycka,  vilt",2
 lulea lulevagen,4,0,4,Ej klassificerad/kandidat,Trafikkontroll,4
+lulea magasinsgatan,4,0,4,Ej klassificerad/kandidat,Trafikolycka,3
 lulea stationsgatan,4,0,4,Ej klassificerad/kandidat,Skottlossning,1
 lulsundsgatan,1,4,4,Ej klassificerad/kandidat,Trafikkontroll,2
+magasinsgatan,1,4,4,Ej klassificerad/kandidat,Trafikolycka,3
 norrbottens lan malmudden,4,0,4,Ej klassificerad/kandidat,Sammanfattning natt,3
 ornasvagen,4,3,4,Ej klassificerad/kandidat,Trafikkontroll,2
 robertsviksgatan,1,3,4,Ej klassificerad/kandidat,Trafikolycka,3
@@ -187,13 +189,11 @@ lulea gymnasievagen,3,0,3,Ej klassificerad/kandidat,"Våldtäkt,  försök",1
 lulea hostvagen,3,0,3,Ej klassificerad/kandidat,Trafikolycka,2
 lulea lulsundsgatan,3,0,3,Ej klassificerad/kandidat,Trafikkontroll,2
 lulea lulviksvagen,3,0,3,Ej klassificerad/kandidat,Trafikkontroll,2
-lulea magasinsgatan,3,0,3,Ej klassificerad/kandidat,Trafikolycka,2
 lulea robertsviksgatan,3,0,3,Ej klassificerad/kandidat,Trafikolycka,2
 lulea sodra smedjegatan,3,0,3,Ej klassificerad/kandidat,Trafikhinder,1
 lulea stadsparken,3,0,3,Ej klassificerad/kandidat,Fylleri/LOB,2
 lulea svartskatavagen,3,0,3,Ej klassificerad/kandidat,"Trafikolycka,  vilt",2
 lulea universitetsvagen,3,0,3,Ej klassificerad/kandidat,Trafikkontroll,3
-magasinsgatan,1,3,3,Ej klassificerad/kandidat,Trafikolycka,2
 maskinvagen,2,3,3,Ej klassificerad/kandidat,Trafikolycka,3
 mittracke riksvag,0,3,3,Ej klassificerad/kandidat,"Trafikolycka,  singel",3
 norra hamnen,3,3,3,Centrum,Räddningsinsats,1
@@ -208,6 +208,7 @@ sodra hamn,3,3,3,Centrum,"Trafikolycka,  smitning från",1
 sodra sunderbyn riksvag,0,3,3,Ej klassificerad/kandidat,Trafikbrott,2
 stadsovagen,0,3,3,Ej klassificerad/kandidat,Trafikolycka,2
 sunderbyvagen,3,3,3,Ej klassificerad/kandidat,Trafikkontroll,2
+sundomsvagen,1,3,3,Ej klassificerad/kandidat,Trafikolycka,1
 svedjevagen,3,1,3,Ej klassificerad/kandidat,Trafikolycka,3
 teknikergatan,2,2,3,Ej klassificerad/kandidat,Trafikkontroll,3
 till lulea busstation,0,3,3,Ej klassificerad/kandidat,Fylleri/LOB,2
@@ -320,11 +321,11 @@ ringgatan,2,1,2,Ej klassificerad/kandidat,Trafikolycka,1
 rutviksvagen,1,1,2,Ej klassificerad/kandidat,Rattfylleri,1
 sandnasetvagen,0,2,2,Ej klassificerad/kandidat,Trafikkontroll,2
 skepparegatan,0,2,2,Ej klassificerad/kandidat,Trafikolycka,1
+skomakargatan,2,2,2,Ej klassificerad/kandidat,Trafikolycka,2
 smabatsgatan,0,2,2,Ej klassificerad/kandidat,"Trafikolycka,  smitning från",1
 sodra smedjegatan,1,2,2,Ej klassificerad/kandidat,Trafikhinder,1
 stadsparken,0,2,2,Ej klassificerad/kandidat,Fylleri/LOB,2
 storstigen,2,2,2,Ej klassificerad/kandidat,Trafikolycka,2
-sundomsvagen,0,2,2,Ej klassificerad/kandidat,Trafikolycka,1
 svangleden,2,2,2,Ej klassificerad/kandidat,Sammanfattning natt,1
 svartoleden,0,2,2,Ej klassificerad/kandidat,Trafikolycka,2
 till lulea polisstation,0,2,2,Ej klassificerad/kandidat,Olaga hot,1
@@ -396,6 +397,7 @@ beordras till riksvag,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 beordras till seletvagen,0,1,1,Ej klassificerad/kandidat,Brand,1
 beordras till sjukhusvagen,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 bergsgatan,1,1,1,Ej klassificerad/kandidat,Trafikolycka,1
+bergsnasbron,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 bergviken langs gymnasievagen,0,1,1,Ej klassificerad/kandidat,Uppdatering,1
 berodras till malmuddsbron,0,1,1,Ej klassificerad/kandidat,Skadegörelse,1
 berusad kvinna malmudden,0,1,1,Ej klassificerad/kandidat,Fylleri/LOB,1
@@ -464,6 +466,7 @@ efter prastgatan,0,1,1,Ej klassificerad/kandidat,Rattfylleri,1
 efter sodra smedjegatan,0,1,1,Ej klassificerad/kandidat,Trafikbrott,1
 efter trafikbrott riksvag,0,1,1,Ej klassificerad/kandidat,Trafikbrott,1
 efter trafikkontroll rikvag,0,1,1,Ej klassificerad/kandidat,Trafikkontroll,1
+enkelfiligt vid olycksplatsen,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 ett radjur lansvag,0,1,1,Ej klassificerad/kandidat,"Trafikolycka,  vilt",1
 eventuellt misshandlad smedjegatan,0,1,1,Ej klassificerad/kandidat,Misshandel,1
 fallgatan,1,0,1,Ej klassificerad/kandidat,"Trafikolycka,  smitning från",1
@@ -502,6 +505,7 @@ for rattfylleri paddelvagen,0,1,1,Ej klassificerad/kandidat,Rattfylleri,1
 for rattfylleri stengatan,0,1,1,Ej klassificerad/kandidat,Rattfylleri,1
 for rattfylleri tunastigen,0,1,1,Ej klassificerad/kandidat,Rattfylleri,1
 for rattfylleri vaderleden,0,1,1,Ej klassificerad/kandidat,Rattfylleri,1
+for vajningsplikt gammelstadsvagen,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 forare tranbacksvagen,0,1,1,Ej klassificerad/kandidat,Bråk,1
 foraren lamna olycksplatsen,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 forarplatsen,0,1,1,Ej klassificerad/kandidat,Rattfylleri,1
@@ -634,6 +638,7 @@ karhusvagen,1,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 kattgrundsvagen,1,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 klapphallsstigen,0,1,1,Ej klassificerad/kandidat,Trafikkontroll,1
 klockarvagen,1,0,1,Ej klassificerad/kandidat,Trafikkontroll,1
+kniv beslagtagen malmudden,0,1,1,Ej klassificerad/kandidat,Fylleri,1
 kolliderat vid forellgrand,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 kolliderat vid gaddviksbron,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 kolliderat vid radstugatan,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
@@ -778,6 +783,7 @@ lulea kvarnbacksvagen,1,0,1,Ej klassificerad/kandidat,Trafikolycka,1
 lulea kyrkogatan,1,0,1,Ej klassificerad/kandidat,Olaga intrång/hemfridsbrott,1
 lulea kyrktorget,1,0,1,Ej klassificerad/kandidat,Trafikolycka,1
 lulea langbackavagen,1,0,1,Ej klassificerad/kandidat,Trafikkontroll,1
+lulea lansvag,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 lulea lingonstigen,1,0,1,Ej klassificerad/kandidat,Trafikkontroll,1
 lulea lovgatan,1,0,1,Ej klassificerad/kandidat,Bråk,1
 lulea lovskarsvagen,1,0,1,Ej klassificerad/kandidat,Trafikkontroll,1
@@ -975,6 +981,7 @@ personbil vid rutviksvagen,0,1,1,Ej klassificerad/kandidat,Brand,1
 personer drabbade bensbyvagen,0,1,1,Ej klassificerad/kandidat,"Trafikolycka,  personskada",1
 personer utanfor jarnvagsstationen,0,1,1,Ej klassificerad/kandidat,Fylleri/LOB,1
 personer vid busstation,0,1,1,Ej klassificerad/kandidat,Fylleri/LOB,1
+personskador svartovagen,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 polis dokumenterar olycksplatsen,0,1,1,Ej klassificerad/kandidat,Sammanfattning natt,1
 polis lamnade olycksplatsen,0,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 polis lansvag,0,1,1,Ej klassificerad/kandidat,Trafikbrott,1
@@ -1025,7 +1032,6 @@ skjutbanevagen,1,1,1,Ej klassificerad/kandidat,Trafikkontroll,1
 skola efter krakorvagen,0,1,1,Ej klassificerad/kandidat,Skadegörelse,1
 skola efter vaderleden,0,1,1,Ej klassificerad/kandidat,Trafikkontroll,1
 skolvagen,1,0,1,Ej klassificerad/kandidat,Trafikkontroll,1
-skomakargatan,1,1,1,Ej klassificerad/kandidat,Trafikolycka,1
 skutgatan,1,1,1,Ej klassificerad/kandidat,Rattfylleri,1
 skuthamn,1,1,1,Ej klassificerad/kandidat,Trafikkontroll,1
 skyddsobjekt vid flygplatsen,0,1,1,Ej klassificerad/kandidat,Skyddslagen,1
