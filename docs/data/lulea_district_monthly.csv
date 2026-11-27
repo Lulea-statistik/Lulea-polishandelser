@@ -455,7 +455,6 @@ year,month,geography_group,type_original,event_count
 2017,08,Okänt delområde,Misshandel,2
 2017,08,Okänt delområde,Rattfylleri,1
 2017,08,Okänt delområde,Sammanfattning natt,4
-2017,08,Okänt delområde,Skadegörelse,1
 2017,08,Okänt delområde,Stöld,1
 2017,08,Okänt delområde,"Trafikolycka,  personskada",1
 2017,08,Okänt delområde,Vållande till kroppsskada,1
@@ -465,6 +464,7 @@ year,month,geography_group,type_original,event_count
 2017,08,Råneå,Trafikkontroll,1
 2017,08,Storheden,Stöld,2
 2017,08,Storheden,Trafikkontroll,2
+2017,08,Sunderbyn,Skadegörelse,1
 2017,08,Sörbyarna,Rattfylleri,1
 2017,08,Sörbyarna,Sammanfattning natt,1
 2017,08,Sörbyarna,Skadegörelse,1
@@ -1007,6 +1007,7 @@ year,month,geography_group,type_original,event_count
 2018,09,Centrum,Knivlagen,1
 2018,09,Centrum,Våld/hot mot tjänsteman,1
 2018,09,Flera stadsdelar i Luleå,Trafikkontroll,2
+2018,09,Gammelstad,Skadegörelse,1
 2018,09,Hertsön,Stöld/inbrott,1
 2018,09,Lerbäcken,Trafikolycka,1
 2018,09,Mjölkudden,Trafikkontroll,2
@@ -1018,7 +1019,7 @@ year,month,geography_group,type_original,event_count
 2018,09,Okänt delområde,Försvunnen person,1
 2018,09,Okänt delområde,Rattfylleri,2
 2018,09,Okänt delområde,Sammanfattning natt,1
-2018,09,Okänt delområde,Skadegörelse,2
+2018,09,Okänt delområde,Skadegörelse,1
 2018,09,Okänt delområde,Stöld,2
 2018,09,Okänt delområde,Stöld/inbrott,2
 2018,09,Okänt delområde,Trafikbrott,2
@@ -2264,7 +2265,7 @@ year,month,geography_group,type_original,event_count
 2020,12,Notviken,Olovlig körning,1
 2020,12,Notviken,Trafikkontroll,1
 2020,12,Okänt delområde,Arbetsplatsolycka,1
-2020,12,Okänt delområde,Brand,2
+2020,12,Okänt delområde,Brand,1
 2020,12,Okänt delområde,Försvunnen person,1
 2020,12,Okänt delområde,Inbrott,1
 2020,12,Okänt delområde,Knivlagen,1
@@ -2280,6 +2281,7 @@ year,month,geography_group,type_original,event_count
 2020,12,Skurholmen,Trafikkontroll,1
 2020,12,Storheden,Rattfylleri,1
 2020,12,Storheden,Stöld,3
+2020,12,Sunderbyn,Brand,1
 2020,12,Sunderbyn,Trafikkontroll,1
 2020,12,Sörbyarna,Rån,1
 2020,12,Sörbyarna,Trafikolycka,3
@@ -3161,7 +3163,6 @@ year,month,geography_group,type_original,event_count
 2022,11,Okänt delområde,"Misshandel,  grov",1
 2022,11,Okänt delområde,Rattfylleri,4
 2022,11,Okänt delområde,Sammanfattning kväll och natt,1
-2022,11,Okänt delområde,Skadegörelse,1
 2022,11,Okänt delområde,Stöld,4
 2022,11,Okänt delområde,Trafikbrott,1
 2022,11,Okänt delområde,Trafikhinder,1
@@ -3177,6 +3178,7 @@ year,month,geography_group,type_original,event_count
 2022,11,Sunderbyn,Brand,1
 2022,11,Sunderbyn,Fylleri/LOB,1
 2022,11,Sunderbyn,Inbrott,1
+2022,11,Sunderbyn,Skadegörelse,1
 2022,11,Sunderbyn,Stöld/inbrott,1
 2022,11,Sunderbyn,Trafikolycka,2
 2022,11,Sörbyarna,Trafikkontroll,1
