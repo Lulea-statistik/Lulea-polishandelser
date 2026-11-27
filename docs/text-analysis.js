@@ -51,10 +51,18 @@ function renderOverview(match){
  let nodes=[],edges=[],nodeEls=new Map(),edgeEls=[];
  function highlight(){
   const neighbors=new Set([focus]);for(const l of edges)if(l.a.word===focus||l.b.word===focus){neighbors.add(l.a.word);neighbors.add(l.b.word);}
-  for(const [w,el] of nodeEls)el.setAttribute('opacity',!focus||neighbors.has(w)?1:.16);
+  for(const [w,el] of nodeEls){
+   const active=!!focus&&w===focus;
+   el.setAttribute('opacity',!focus||neighbors.has(w)?1:.16);
+   el.classList.toggle('overview-selected',active);
+   el.setAttribute('aria-pressed',String(active));
+   const ring=el.querySelector('.overview-selection-ring');
+   if(ring)ring.setAttribute('visibility',active?'visible':'hidden');
+  }
+  if(focus&&nodeEls.has(focus))graph.append(nodeEls.get(focus));
   for(const [l,el] of edgeEls)el.setAttribute('opacity',!focus ? .35 : (l.a.word===focus||l.b.word===focus ? .85 : .045));
   const selected=nodes.find(n=>n.word===focus);
-  e('overviewDetail').textContent=selected?focus+' – '+selected.degree+' direkt sammankopplade begrepp. Klicka på ett annat begrepp eller välj Visa hela nätverket.':'Välj ett begrepp för att framhäva dess direkta samband.';
+  e('overviewDetail').textContent=selected?focus+' – '+selected.degree+' direkt sammankopplade begrepp. Klicka på samma nod igen för att avmarkera och visa hela nätverket.':'Välj ett begrepp för att framhäva dess direkta samband.';
  }
  function choose(w){focus=w;picker.value=w;highlight();}
  function build(){
@@ -74,7 +82,7 @@ function renderOverview(match){
   graph.replaceChildren();nodeEls=new Map();edgeEls=[];
   const max=Math.max(1,...edges.map(l=>l.n));
   for(const l of edges){const el=svg('line',{x1:l.a.x,y1:l.a.y,x2:l.b.x,y2:l.b.y,stroke:'#647e99','stroke-width':.7+4*Math.sqrt(l.n/max)});el.append(svg('title',{},l.a.word+' / '+l.b.word+': minst '+fmt.format(l.n)+' notiser'));graph.append(el);edgeEls.push([l,el]);}
-  for(const n of nodes){const el=svg('g',{class:'overview-node',role:'button',tabindex:0,'aria-label':n.word+', '+n.degree+' samband'});el.append(svg('title',{},n.word+' – '+n.degree+' samband'),svg('circle',{cx:n.x,cy:n.y,r:n.radius,fill:'#0b5cab',stroke:'white','stroke-width':1.5}),svg('text',{x:n.x,y:n.y+n.radius+12,'text-anchor':'middle','font-size':11,fill:'#16202a',stroke:'#f8fafc','stroke-width':2.5,'paint-order':'stroke'},n.word));el.onclick=()=>choose(n.word);el.onkeydown=ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();choose(n.word);}};graph.append(el);nodeEls.set(n.word,el);}
+  for(const n of nodes){const el=svg('g',{class:'overview-node',role:'button',tabindex:0,'aria-label':n.word+', '+n.degree+' samband'});el.append(svg('title',{},n.word+' – '+n.degree+' samband'),svg('circle',{class:'overview-selection-ring',cx:n.x,cy:n.y,r:n.radius+5,fill:'none',stroke:'#b64135','stroke-width':3,visibility:'hidden','pointer-events':'none'}),svg('circle',{class:'overview-core',cx:n.x,cy:n.y,r:n.radius,fill:'#0b5cab',stroke:'white','stroke-width':1.5}),svg('text',{x:n.x,y:n.y+n.radius+12,'text-anchor':'middle','font-size':11,fill:'#16202a',stroke:'#f8fafc','stroke-width':2.5,'paint-order':'stroke'},n.word));el.onclick=()=>choose(focus===n.word?'':n.word);el.onkeydown=ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();choose(focus===n.word?'':n.word);}};graph.append(el);nodeEls.set(n.word,el);}
   if(!by.has(focus))focus='';
   picker.replaceChildren(new Option('Alla begrepp',''),...[...by.keys()].sort((a,b)=>a.localeCompare(b,'sv')).map(w=>new Option(w,w,false,w===focus)));picker.value=focus;picker.disabled=!nodes.length;
   e('overviewStatus').textContent=fmt.format(nodes.length)+' begrepp och '+fmt.format(edges.length)+' unika samband i urvalet'+(edges.length<all.length?' (av '+fmt.format(all.length)+' publicerbara samband)':'')+'.';
