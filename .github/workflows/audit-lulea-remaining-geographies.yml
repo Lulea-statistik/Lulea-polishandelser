@@ -7,6 +7,7 @@ on:
       - scripts/build_lulea_districts.py
       - scripts/test_lulea_exact_localities.py
       - scripts/test_lulea_centrum_rescue.py
+      - scripts/test_lulea_centrum_dispatch.py
       - .github/workflows/audit-lulea-remaining-geographies.yml
 permissions:
   contents: read
@@ -21,6 +22,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python scripts/test_lulea_exact_localities.py
       - run: python scripts/test_lulea_centrum_rescue.py
+      - run: python scripts/test_lulea_centrum_dispatch.py
       - name: Save baseline and rebuild locally
         run: |
           mkdir -p audit-output/before
