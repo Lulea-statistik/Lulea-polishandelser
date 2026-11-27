@@ -221,6 +221,46 @@ def district_dispatch_rescue(row):
  result=district_dispatch_evidence(row)
  return result[0] if result else UNKNOWN
 
+
+# User-reviewed road/locality links, not polygon intersections.
+# Use only explicit event-local references; never infer an area from a road alone.
+ROAD_LOCALITY_PAIRS={"Rutvik":"E4","Persön":"E4","Sunderbyn":"97","Strömsund":"E4","Jämtön":"E4","Börjelslandet":"E4","Smedsbyn":"383","Klöverträsk":"94","Bälinge":"616","Sinksundet":"596"}
+def road_locality_rescue(row):
+ if str(row.get("is_summary") or "").strip().casefold() in ("true","1"):return UNKNOWN
+ from html import unescape
+ def plain(v):return unicodedata.normalize("NFC",unescape(re.sub(r"<[^>]*>"," ",str(v or "")))).casefold().strip()
+ places=[plain(row.get(k)) for k in ("title_location","location_string")]
+ fields=[plain(row.get(k)) for k in ("headline","description","content")]
+ full=" ".join(places+fields)
+ n=normalize(full)
+ if _FOREIGN.search(n) or any(p.search(n) for p in ROAD_PATTERNS):return UNKNOWN
+ if re.search(r"\b(?:flera|två|tre|fyra|\d+)\s+(?:olika\s+)?(?:viltolyckor|trafikolyckor|händelser|olyckor|kontroller)\b",full):return UNKNOWN
+ if re.search(r"\b(?:norr|söder|öster|väster)\s+om\b|\b(?:i höjd med|i trakten av|i närheten av|utanför|mellan|mot|från|avstängning|omledning)\b",full):return UNKNOWN
+ found=set()
+ for name,number in ROAD_LOCALITY_PAIRS.items():
+  namepat=(r"(?:norra\s+|södra\s+)?"+re.escape(name.casefold()))
+  roadpat=r"e\s*4" if number=="E4" else r"(?:riksväg|länsväg|väg(?:en)?|rv|lv)\s*(?:nr\.?\s*)?"+number
+  pair=r"(?<!\w)(?:"+roadpat+r"(?!\d)\s*(?:,\s*|\s+)(?:i\s+)?"+namepat+r"|"+namepat+r"\s+(?:på\s+)?"+roadpat+r"(?!\d))(?!\w)"
+  if any(re.search(pair,x) for x in places+fields):found.add(name)
+ if len(found)!=1:return UNKNOWN
+ target=next(iter(found))
+ # Only exact/generic own place fields or a short exact road–locality label.
+ generic={"","luleå","luleå kommun","norrbotten","norrbottens län","luleå, norrbottens län","luleå, luleå, norrbottens län"}
+ name=re.escape(target.casefold())
+ road=ROAD_LOCALITY_PAIRS[target]
+ rp=r"e\s*4" if road=="E4" else r"(?:riksväg|länsväg|väg(?:en)?|rv|lv)\s*"+road
+ allowed=r"(?:(?:norra |södra )?"+name+r"|"+rp+r"\s*,?\s+(?:i\s+)?"+name+r"|"+name+r"\s+"+rp+r")(?:,\s*(?:luleå kommun,\s*)?luleå(?:,\s*norrbottens län)?)?"
+ if any(p not in generic and not re.fullmatch(allowed,p) for p in places):return UNKNOWN
+ # Reject all other numbered roads (including E45), named roads and competing areas.
+ numbers=set()
+ for m in re.finditer(r"(?<!\w)(?:e\s*(\d+)|(?:riksväg|länsväg|väg(?:en)?|rv|lv)\s*(?:nr\.?\s*)?(\d+))(?!\d)",full):
+  numbers.add("E"+m.group(1) if m.group(1) else m.group(2))
+ if numbers!={road}:return UNKNOWN
+ if re.search(r"(?<![a-z])[a-z]{3,}(?:vagen|leden|gatan|bron|banken)(?![a-z])",n):return UNKNOWN
+ if any(p.search(n) for k,pats in PATTERNS.items() if k!=target for p in pats):return UNKNOWN
+ if any(re.search(r"(?<!\w)"+re.escape(k.casefold())+r"(?!\w)",full) for k in set(ROAD_LOCALITY_PAIRS)|set(EXACT_LOCALITIES)|{"Ängesbyn","Niemisel","Orrbyn","Högsta","Örarna","Kallviken"} if k!=target):return UNKNOWN
+ return target
+
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
@@ -252,7 +292,9 @@ def district(row):
  if rescued!=UNKNOWN:return rescued
  rescued=centrum_dispatch_rescue(row)
  if rescued!=UNKNOWN:return rescued
- return district_dispatch_rescue(row)
+ rescued=district_dispatch_rescue(row)
+ if rescued!=UNKNOWN:return rescued
+ return road_locality_rescue(row)
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
  counts=defaultdict(int)
