@@ -1,12 +1,11 @@
 (async()=>{
-const e=id=>document.getElementById(id),fmt=new Intl.NumberFormat('sv-SE',{maximumFractionDigits:1}), charts={}, sum=a=>a.reduce((s,r)=>s+r.at(-1),0), colors=['#0b5cab','#b64135','#43876c','#8c68a6','#b78a36','#63788b'];
+const e=id=>document.getElementById(id),fmt=new Intl.NumberFormat('sv-SE',{maximumFractionDigits:1}), sum=a=>a.reduce((s,r)=>s+r.at(-1),0), colors=['#0b5cab','#b64135','#43876c','#8c68a6','#b78a36','#63788b'];
 const svg=(tag,attrs={},label)=>{let n=document.createElementNS('http://www.w3.org/2000/svg',tag);for(let [k,v] of Object.entries(attrs))n.setAttribute(k,v);if(label!==undefined)n.textContent=label;return n};
-function draw(id,type,data,options={}){const canvas=e(id);let msg=canvas.parentElement.querySelector('.chart-error');if(!msg){msg=document.createElement('p');msg.className='chart-error note';canvas.parentElement.append(msg);}try{charts[id]?.destroy();msg.textContent='';canvas.hidden=false;if(!data.datasets.some(ds=>ds.data.some(v=>v!==null&&v!==undefined))){canvas.hidden=true;msg.textContent='Inga publicerbara värden för urvalet.';return;}charts[id]=new Chart(canvas,{type,data,options:{responsive:true,maintainAspectRatio:false,...options}});}catch(err){canvas.hidden=true;msg.textContent='Diagrammet kunde inte ritas: '+err.message;console.error(id,err);}}
 function opts(id,values,def){e(id).replaceChildren(...values.map(v=>new Option(v,v,false,Array.isArray(def)?def.includes(v):v===def)))}
 try{
-let res=await fetch('data/text_analysis.json?v=20261127-fix1',{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);let d=await res.json();for(const k of ['totals','terms','pairs','features','flows','clusters','cluster_counts','contrasts'])if(!Array.isArray(d[k]))throw Error('Datafält saknas: '+k);
+let res=await fetch('data/text_analysis.json?v=20261127-fix1',{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);let d=await res.json();for(const k of ['totals','pairs','flows'])if(!Array.isArray(d[k]))throw Error('Datafält saknas: '+k);
 let unique=(a,i)=>[...new Set(a.map(r=>String(r[i])))].sort((a,b)=>a.localeCompare(b,'sv'));
-let years=unique(d.totals,1),terms=unique(d.terms,3);opts('taGeo',unique(d.totals,0),'Luleå kommun');opts('taYear',['Alla',...years.slice().reverse()],'Alla');opts('taType',['Alla',...unique(d.totals,2)],'Alla');opts('taTerm',terms,['trafikolycka','elcykel','bedrägeri'].filter(t=>terms.includes(t)));if(!e('taTerm').selectedOptions.length&&terms.length)e('taTerm').options[0].selected=true;opts('taGroup',unique(d.features,3),'Fordon');
+let years=unique(d.totals,1);opts('taGeo',unique(d.totals,0),'Luleå kommun');opts('taYear',['Alla',...years.slice().reverse()],'Alla');opts('taType',['Alla',...unique(d.totals,2)],'Alla');
 let networkRoot=null;
 function renderNetwork(match,selected){
  const picker=e('networkTerm'), net=e('taNetwork');
@@ -34,19 +33,14 @@ function renderNetwork(match,selected){
  }
 }
 function render(){
-let g=e('taGeo').value,y=e('taYear').value,t=e('taType').value,selected=[...e('taTerm').selectedOptions].map(o=>o.value).slice(0,6);
+let g=e('taGeo').value,y=e('taYear').value,t=e('taType').value,selected=['trafikolycka'];
 let match=(r,ignoreYear=false)=>r[0]===g&&(ignoreYear||y==='Alla'||String(r[1])===y)&&(t==='Alla'||r[2]===t);
-let denom=sum(d.totals.filter(r=>match(r)));e('taStatus').textContent='Urval: '+fmt.format(denom)+' originalnotiser med text. Data genererad '+d.generated+'. '+fmt.format(d.contrasts.length)+' jämförelser i källdata.';
-let comp=new Map();for(let r of d.contrasts){if(r[0]!==g||(y!=='Alla'&&String(r[1])!==y))continue;let a=comp.get(r[2])||[0,0,0,0];for(let i=0;i<4;i++)a[i]+=r[i+3];comp.set(r[2],a)}
-let ranked=[...comp].map(([w,[a,n,b,m]])=>[w,(a/n)/(b/m)]).filter(r=>Number.isFinite(r[1])).sort((a,b)=>Math.abs(Math.log(b[1]))-Math.abs(Math.log(a[1]))).slice(0,20);
-draw('taContrast','bar',{labels:ranked.map(r=>r[0]),datasets:[{label:'Kvot (1 = samma andel)',data:ranked.map(r=>r[1]),backgroundColor:ranked.map(r=>r[1]>=1?'#b64135':'#0b5cab')}]},{indexAxis:'y',scales:{x:{beginAtZero:true}},plugins:{legend:{display:true}}});
-draw('taTrend','line',{labels:years,datasets:selected.map((w,i)=>({label:w,borderColor:colors[i],data:years.map(yy=>{let a=d.terms.filter(r=>match(r,true)&&String(r[1])===yy&&r[3]===w),n=sum(d.totals.filter(r=>match(r,true)&&String(r[1])===yy));return a.length&&n?1000*sum(a)/n:null}),spanGaps:false}))},{scales:{y:{beginAtZero:true,title:{display:true,text:'Minst antal per 1 000 notiser'}}}});
-let features=new Map();for(let r of d.features){if(match(r)&&r[3]===e('taGroup').value)features.set(r[4],(features.get(r[4])||0)+r[5])}let ff=[...features].sort((a,b)=>b[1]-a[1]);draw('taFeatures','bar',{labels:ff.map(r=>r[0]),datasets:[{label:'Minst antal notiser med omnämnande',data:ff.map(r=>r[1]),backgroundColor:'#0b5cab'}]},{indexAxis:'y',scales:{x:{beginAtZero:true}}});
+let denom=sum(d.totals.filter(r=>match(r)));e('taStatus').textContent='Urval: '+fmt.format(denom)+' originalnotiser med text. Data genererad '+d.generated+'. '+fmt.format(d.pairs.length)+' samförekomstrader i källdata.';
 renderNetwork(match,selected);
 let paths=new Map();for(let r of d.flows){if(match(r)){let k=JSON.stringify(r.slice(3,6));paths.set(k,(paths.get(k)||0)+r[6])}}let flow=e('taFlow');flow.replaceChildren();if(!paths.size){flow.textContent='Inga publicerbara trafikflöden i urvalet.';return}let list=[...paths].map(([k,n])=>({p:JSON.parse(k),n})),total=list.reduce((a,r)=>a+r.n,0),groups=[0,1,2].map(i=>{let m=new Map();for(let r of list)m.set(r.p[i],(m.get(r.p[i])||0)+r.n);return [...m].sort((a,b)=>b[1]-a[1])}),height=Math.max(420,Math.max(...groups.map(a=>a.length))*45+80),scale=(height-65-12*Math.max(...groups.map(a=>a.length)))/total,xs=[165,440,715],pos=groups.map((a,i)=>{let yy=38,m=new Map();for(let [name,n] of a){m.set(name,{y:yy,h:n*scale,used:0,n});yy+=n*scale+12}return m}),s=svg('svg',{viewBox:'0 0 900 '+height,style:'width:100%;min-width:720px'});
 for(let r of list){let a=pos[0].get(r.p[0]),b=pos[1].get(r.p[1]),c=pos[2].get(r.p[2]),w=r.n*scale,yy=[a,b,c].map(n=>n.y+n.used+w/2);for(let j=0;j<2;j++){let x=xs[j]+12,X=xs[j+1],mid=(x+X)/2;let p=svg('path',{d:'M'+x+' '+yy[j]+' C'+mid+' '+yy[j]+' '+mid+' '+yy[j+1]+' '+X+' '+yy[j+1],stroke:colors[groups[0].findIndex(z=>z[0]===r.p[0])%colors.length],'stroke-opacity':.28,'stroke-width':w,fill:'none'});p.append(svg('title',{},r.p.join(' → ')+': '+r.n));s.append(p)}for(let n of [a,b,c])n.used+=w}
 for(let i=0;i<3;i++){s.append(svg('text',{x:xs[i],y:20,'font-weight':600,'font-size':14,fill:'#16202a'},['Fordon','Olyckstyp','Konsekvens'][i]));for(let [name,n] of pos[i]){s.append(svg('rect',{x:xs[i],y:n.y,width:12,height:n.h,fill:'#0b5cab'}),svg('text',{x:xs[i]-5,y:n.y+Math.max(10,n.h/2),'text-anchor':'end','font-size':11,fill:'#16202a'},name+' ('+n.n+')'))}}flow.append(s);let p=document.createElement('p');p.className='note';p.textContent='Publicerade flöden: minst '+fmt.format(total)+' notiser. Varje notis bidrar till en väg.';flow.append(p);
 }
-for(let id of ['taGeo','taYear','taType','taTerm','taGroup'])e(id).addEventListener('change',()=>{if(id==='taTerm')networkRoot=null;render();});render();
+for(let id of ['taGeo','taYear','taType'])e(id).addEventListener('change',render);render();
 }catch(err){e('taStatus').textContent='Textanalysen kunde inte läsas: '+err.message+'. Kör Update polishandelser efter merge.'}
 })();
