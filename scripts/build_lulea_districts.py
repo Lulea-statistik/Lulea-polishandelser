@@ -156,9 +156,9 @@ CENTRUM_OBJECTS = (
  "lulea stadshus","lulea stadsbibliotek","pontusbadet","lulea domkyrka"
 )
 _COBJ = r"(?:"+ "|".join(re.escape(x) for x in sorted(CENTRUM_OBJECTS,key=len,reverse=True))+r")(?![a-z])"
-_CDEPLOY = re.compile(r"\b(?:polis(?:en|patrull(?:en|er|erna)?)?|(?:en )?patrull(?:en|er|erna)?)\s+(?:har\s+)?(?:beordras|beordrades|beordrats|larmas|larmades|larmats|kallas|kallades|kallats|skickas|skickades|skickats|aker|akte|ak[t] )\s*(?:ut\s+)?till\s+(?:(?:en|ett)\s+(?:butik|adress|plats|bostad|restaurang)\s+(?:i|pa|vid)\s+)?"+_COBJ+r"(?=\s*(?:[,.:;!?]|$)|\s+(?:i lulea\b|med anledning av\b|efter\b|dar\b|pa grund av\b|for att\b))")
+_CDEPLOY = re.compile(r"\b(?:(?:en )?polis(?:en|patrull(?:en|er|erna)?)?|(?:en )?patrull(?:en|er|erna)?)\s+(?:har\s+)?(?:beordras|beordrades|beordrats|larmas|larmades|larmats|kallas|kallades|kallats|skickas|skickades|skickats|aker|akte|akt)\s*(?:ut\s+)?till\s+(?:(?:en|ett)\s+(?:butik|adress|plats|bostad|restaurang)\s+(?:i|pa|vid)\s+)?"+_COBJ+r"(?=\s*(?:[,.:;!?]|$)|\s+(?:i lulea\b|med anledning av\b|efter\b|dar\b|pa grund av\b|for att\b))")
 _CINCIDENT = re.compile(r"\b(?:larm om (?:brand|brak|inbrott)|(?:en )?(?:brand|stold|inbrott|misshandel|brak|skadegorelse|ran))\s+(?:i|pa|vid|intill|utanfor)\s+"+_COBJ+r"(?=\s*(?:[,.:;!?]|$)|\s+(?:i lulea\b|dar\b))")
-_COTHER_PLACES = ("jamton","stromsund","borjelslandet","niemisel","smedsbyn","sinksundet","kallviken","orrbyn","hogsta","orar na","orarna")
+_COTHER_PLACES = ("jamton","stromsund","borjelslandet","niemisel","smedsbyn","sinksundet","kallviken","orrbyn","hogsta","orarna")
 def centrum_dispatch_rescue(row):
  if str(row.get("is_summary") or "").strip().casefold() in ("true","1"):return UNKNOWN
  generic={"","lulea","lulea kommun","norrbotten","norrbottens lan","lulea, norrbottens lan","lulea, lulea, norrbottens lan"}
