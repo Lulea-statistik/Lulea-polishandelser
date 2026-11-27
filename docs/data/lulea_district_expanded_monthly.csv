@@ -534,6 +534,7 @@ year,month,geography_group,type_original,event_count
 2017,09,Centrum,Rattfylleri,1
 2017,09,Centrum,Skottlossning,1
 2017,09,Centrum,"Trafikolycka,  vilt",1
+2017,09,Centrum,Våld/hot mot tjänsteman,1
 2017,09,Flera stadsdelar i Luleå,Trafikolycka,1
 2017,09,Gammelstad,"Motorfordon,  stöld",1
 2017,09,Gammelstad,Rattfylleri,1
@@ -565,7 +566,6 @@ year,month,geography_group,type_original,event_count
 2017,09,Okänt delområde,Trafikolycka,2
 2017,09,Okänt delområde,"Trafikolycka,  vilt",3
 2017,09,Okänt delområde,Uppdatering,2
-2017,09,Okänt delområde,Våld/hot mot tjänsteman,1
 2017,09,Okänt delområde,Övrigt,1
 2017,09,Okänt delområde,Övrigt/oklassificerad,1
 2017,09,Porsön,Brand,1
@@ -856,6 +856,7 @@ year,month,geography_group,type_original,event_count
 2018,03,Centrum,Fylleri/LOB,1
 2018,03,Centrum,"Mord/dråp,  försök",1
 2018,03,Centrum,Rattfylleri,1
+2018,03,Centrum,"Stöld,  ringa",1
 2018,03,Flera stadsdelar i Luleå,Rattfylleri,1
 2018,03,Flera stadsdelar i Luleå,Övrigt,1
 2018,03,Hertsön,Rattfylleri,1
@@ -871,7 +872,7 @@ year,month,geography_group,type_original,event_count
 2018,03,Okänt delområde,Rattfylleri,2
 2018,03,Okänt delområde,Rån,1
 2018,03,Okänt delområde,Skadegörelse,2
-2018,03,Okänt delområde,"Stöld,  ringa",2
+2018,03,Okänt delområde,"Stöld,  ringa",1
 2018,03,Okänt delområde,Stöld/inbrott,2
 2018,03,Okänt delområde,Trafikbrott,1
 2018,03,Okänt delområde,Trafikkontroll,3
@@ -895,7 +896,7 @@ year,month,geography_group,type_original,event_count
 2018,04,Bergviken,Uppdatering,2
 2018,04,Bergviken,"Våldtäkt,  försök",1
 2018,04,Björkskatan,Trafikkontroll,1
-2018,04,Centrum,Fylleri/LOB,1
+2018,04,Centrum,Fylleri/LOB,2
 2018,04,Centrum,Misshandel,2
 2018,04,Centrum,Olovlig körning,1
 2018,04,Centrum,Rattfylleri,2
@@ -912,7 +913,7 @@ year,month,geography_group,type_original,event_count
 2018,04,Okänt delområde,Arbetsplatsolycka,1
 2018,04,Okänt delområde,Brand,2
 2018,04,Okänt delområde,Bråk,2
-2018,04,Okänt delområde,Fylleri/LOB,6
+2018,04,Okänt delområde,Fylleri/LOB,5
 2018,04,Okänt delområde,Misshandel,2
 2018,04,Okänt delområde,"Motorfordon,  stöld",1
 2018,04,Okänt delområde,Ofredande/förargelse,1
@@ -952,8 +953,8 @@ year,month,geography_group,type_original,event_count
 2018,05,Bergnäset,Vapenlagen,1
 2018,05,Bergviken,Uppdatering,1
 2018,05,Björkskatan,Trafikkontroll,1
-2018,05,Centrum,Fylleri/LOB,4
-2018,05,Centrum,Misshandel,1
+2018,05,Centrum,Fylleri/LOB,6
+2018,05,Centrum,Misshandel,3
 2018,05,Centrum,Skadegörelse,1
 2018,05,Centrum,Stöld,1
 2018,05,Centrum,"Stöld,  ringa",4
@@ -973,10 +974,10 @@ year,month,geography_group,type_original,event_count
 2018,05,Notviken,Rattfylleri,1
 2018,05,Notviken,Stöld,1
 2018,05,Notviken,Trafikbrott,1
-2018,05,Okänt delområde,Fylleri/LOB,5
+2018,05,Okänt delområde,Fylleri/LOB,3
 2018,05,Okänt delområde,Inbrott,1
 2018,05,Okänt delområde,Kontroll person/fordon,1
-2018,05,Okänt delområde,Misshandel,6
+2018,05,Okänt delområde,Misshandel,4
 2018,05,Okänt delområde,Ofredande/förargelse,1
 2018,05,Okänt delområde,Olaga hot,1
 2018,05,Okänt delområde,Rattfylleri,8
@@ -1126,7 +1127,7 @@ year,month,geography_group,type_original,event_count
 2018,08,Bergviken,Narkotikabrott,1
 2018,08,Bergviken,Trafikkontroll,3
 2018,08,Centrum,Fylleri/LOB,2
-2018,08,Centrum,Misshandel,3
+2018,08,Centrum,Misshandel,4
 2018,08,Centrum,Narkotikabrott,1
 2018,08,Centrum,Ofredande/förargelse,1
 2018,08,Centrum,Rattfylleri,2
@@ -1141,7 +1142,7 @@ year,month,geography_group,type_original,event_count
 2018,08,Okänt delområde,Brand,2
 2018,08,Okänt delområde,Fylleri/LOB,2
 2018,08,Okänt delområde,Inbrott,3
-2018,08,Okänt delområde,Misshandel,17
+2018,08,Okänt delområde,Misshandel,16
 2018,08,Okänt delområde,"Mord/dråp,  försök",1
 2018,08,Okänt delområde,Narkotikabrott,2
 2018,08,Okänt delområde,Ofredande/förargelse,1
@@ -1172,6 +1173,7 @@ year,month,geography_group,type_original,event_count
 2018,09,Björkskatan,Trafikkontroll,1
 2018,09,Centrum,Brand,1
 2018,09,Centrum,Fylleri/LOB,1
+2018,09,Centrum,Knivlagen,1
 2018,09,Centrum,Rån,1
 2018,09,Centrum,Våld/hot mot tjänsteman,1
 2018,09,Flera stadsdelar i Luleå,Trafikkontroll,2
@@ -1186,7 +1188,6 @@ year,month,geography_group,type_original,event_count
 2018,09,Okänt delområde,Fylleri/LOB,4
 2018,09,Okänt delområde,Försvunnen person,1
 2018,09,Okänt delområde,Inbrott,2
-2018,09,Okänt delområde,Knivlagen,1
 2018,09,Okänt delområde,Misshandel,3
 2018,09,Okänt delområde,Narkotikabrott,3
 2018,09,Okänt delområde,Ofredande/förargelse,1
@@ -1290,7 +1291,7 @@ year,month,geography_group,type_original,event_count
 2018,11,Bergviken,Trafikkontroll,1
 2018,11,Björkskatan,Rattfylleri,1
 2018,11,Björkskatan,Trafikkontroll,2
-2018,11,Centrum,Fylleri/LOB,4
+2018,11,Centrum,Fylleri/LOB,5
 2018,11,Centrum,Knivlagen,1
 2018,11,Centrum,Misshandel,1
 2018,11,Centrum,Narkotikabrott,3
@@ -1317,7 +1318,7 @@ year,month,geography_group,type_original,event_count
 2018,11,Notviken,Trafikkontroll,1
 2018,11,Okänt delområde,Anträffat gods,1
 2018,11,Okänt delområde,Brand,2
-2018,11,Okänt delområde,Fylleri/LOB,4
+2018,11,Okänt delområde,Fylleri/LOB,3
 2018,11,Okänt delområde,Knivlagen,1
 2018,11,Okänt delområde,Misshandel,5
 2018,11,Okänt delområde,"Motorfordon,  anträffat stulet",1
@@ -1363,9 +1364,10 @@ year,month,geography_group,type_original,event_count
 2018,12,Björkskatan,Brand,1
 2018,12,Björkskatan,Olaga hot,1
 2018,12,Björkskatan,Trafikkontroll,1
-2018,12,Centrum,Fylleri/LOB,5
+2018,12,Centrum,Fylleri/LOB,6
 2018,12,Centrum,Häleri,1
 2018,12,Centrum,Inbrott,1
+2018,12,Centrum,Misshandel,1
 2018,12,Centrum,Skadegörelse,2
 2018,12,Centrum,Stöld,4
 2018,12,Centrum,Trafikbrott,1
@@ -1398,8 +1400,8 @@ year,month,geography_group,type_original,event_count
 2018,12,Okänt delområde,Arbetsplatsolycka,1
 2018,12,Okänt delområde,Brand,1
 2018,12,Okänt delområde,Djur,1
-2018,12,Okänt delområde,Fylleri/LOB,5
-2018,12,Okänt delområde,Misshandel,5
+2018,12,Okänt delområde,Fylleri/LOB,4
+2018,12,Okänt delområde,Misshandel,4
 2018,12,Okänt delområde,Narkotikabrott,1
 2018,12,Okänt delområde,Rattfylleri,5
 2018,12,Okänt delområde,Stöld,1
@@ -1437,7 +1439,7 @@ year,month,geography_group,type_original,event_count
 2019,01,Centrum,Rattfylleri,1
 2019,01,Centrum,Rån,1
 2019,01,Centrum,Stöld,2
-2019,01,Centrum,Våld/hot mot tjänsteman,1
+2019,01,Centrum,Våld/hot mot tjänsteman,2
 2019,01,Flera stadsdelar i Luleå,Trafikkontroll,2
 2019,01,Flera stadsdelar i Luleå,Trafikolycka,1
 2019,01,Gammelstad,Trafikkontroll,1
@@ -1460,7 +1462,6 @@ year,month,geography_group,type_original,event_count
 2019,01,Okänt delområde,Trafikolycka,7
 2019,01,Okänt delområde,"Trafikolycka,  vilt",8
 2019,01,Okänt delområde,"Trafikolycka, vilt",13
-2019,01,Okänt delområde,Våld/hot mot tjänsteman,1
 2019,01,Porsön,Stöld,2
 2019,01,Rutvik,Anträffat gods,1
 2019,01,Råneå,Trafikkontroll,2
@@ -1488,7 +1489,7 @@ year,month,geography_group,type_original,event_count
 2019,02,Centrum,Fylleri/LOB,1
 2019,02,Centrum,Inbrott,1
 2019,02,Centrum,Larm Överfall,1
-2019,02,Centrum,Misshandel,2
+2019,02,Centrum,Misshandel,3
 2019,02,Centrum,Stöld,2
 2019,02,Centrum,Trafikbrott,2
 2019,02,Centrum,Trafikolycka,1
@@ -1509,7 +1510,7 @@ year,month,geography_group,type_original,event_count
 2019,02,Okänt delområde,Brand,1
 2019,02,Okänt delområde,Fylleri/LOB,5
 2019,02,Okänt delområde,Inbrott,3
-2019,02,Okänt delområde,Misshandel,5
+2019,02,Okänt delområde,Misshandel,4
 2019,02,Okänt delområde,Narkotikabrott,3
 2019,02,Okänt delområde,Rattfylleri,1
 2019,02,Okänt delområde,Stöld,1
@@ -1680,11 +1681,12 @@ year,month,geography_group,type_original,event_count
 2019,05,Centrum,Fylleri/LOB,1
 2019,05,Centrum,Misshandel,2
 2019,05,Centrum,Ofredande/förargelse,1
-2019,05,Centrum,Stöld,1
+2019,05,Centrum,Stöld,3
 2019,05,Centrum,Stöld/inbrott,1
 2019,05,Centrum,Trafikbrott,3
 2019,05,Centrum,Trafikkontroll,1
 2019,05,Centrum,Trafikolycka,1
+2019,05,Centrum,"Trafikolycka,  smitning från",1
 2019,05,Flera stadsdelar i Luleå,Trafikkontroll,1
 2019,05,Flera stadsdelar i Luleå,Trafikolycka,1
 2019,05,Gammelstad,Trafikbrott,3
@@ -1710,11 +1712,10 @@ year,month,geography_group,type_original,event_count
 2019,05,Okänt delområde,Rattfylleri,5
 2019,05,Okänt delområde,Rån,1
 2019,05,Okänt delområde,Skadegörelse,2
-2019,05,Okänt delområde,Stöld,6
+2019,05,Okänt delområde,Stöld,4
 2019,05,Okänt delområde,Trafikbrott,6
 2019,05,Okänt delområde,Trafikkontroll,4
 2019,05,Okänt delområde,Trafikolycka,2
-2019,05,Okänt delområde,"Trafikolycka,  smitning från",1
 2019,05,Okänt delområde,"Trafikolycka,  vilt",2
 2019,05,Okänt delområde,"Trafikolycka, vilt",11
 2019,05,Okänt delområde,Övrigt/oklassificerad,1
@@ -1793,7 +1794,9 @@ year,month,geography_group,type_original,event_count
 2019,07,Bergnäset,Rattfylleri,1
 2019,07,Bergviken,Knivlagen,1
 2019,07,Björkskatan,Narkotikabrott,1
+2019,07,Centrum,Bråk,1
 2019,07,Centrum,Fylleri/LOB,8
+2019,07,Centrum,Misshandel,1
 2019,07,Centrum,Rattfylleri,2
 2019,07,Centrum,Trafikkontroll,1
 2019,07,Centrum,Trafikolycka,1
@@ -1806,12 +1809,11 @@ year,month,geography_group,type_original,event_count
 2019,07,Notviken,Trafikbrott,1
 2019,07,Okänt delområde,Arbetsplatsolycka,1
 2019,07,Okänt delområde,Brand,3
-2019,07,Okänt delområde,Bråk,1
 2019,07,Okänt delområde,Fylleri/LOB,8
 2019,07,Okänt delområde,Försvunnen person,1
 2019,07,Okänt delområde,"Inbrott,  försök",2
 2019,07,Okänt delområde,Knivlagen,1
-2019,07,Okänt delområde,Misshandel,3
+2019,07,Okänt delområde,Misshandel,2
 2019,07,Okänt delområde,"Motorfordon,  anträffat stulet",2
 2019,07,Okänt delområde,Narkotikabrott,4
 2019,07,Okänt delområde,Ofredande/förargelse,1
@@ -1851,11 +1853,12 @@ year,month,geography_group,type_original,event_count
 2019,08,Bergnäset,"Trafikolycka,  vilt",1
 2019,08,Bergviken,Trafikkontroll,1
 2019,08,Björkskatan,Olovlig körning,1
-2019,08,Centrum,Fylleri/LOB,3
-2019,08,Centrum,Misshandel,1
+2019,08,Centrum,Fylleri/LOB,4
+2019,08,Centrum,Misshandel,2
 2019,08,Centrum,Rattfylleri,1
 2019,08,Centrum,Stöld,3
 2019,08,Centrum,Trafikbrott,2
+2019,08,Centrum,Våld/hot mot tjänsteman,1
 2019,08,Flera stadsdelar i Luleå,Trafikkontroll,1
 2019,08,Flera stadsdelar i Luleå,Trafikolycka,1
 2019,08,Hertsön,Brand,1
@@ -1863,9 +1866,8 @@ year,month,geography_group,type_original,event_count
 2019,08,Karlsvik,"Motorfordon,  anträffat stulet",1
 2019,08,Notviken,Trafikkontroll,1
 2019,08,Okänt delområde,Bedrägeri,1
-2019,08,Okänt delområde,Fylleri/LOB,3
+2019,08,Okänt delområde,Fylleri/LOB,2
 2019,08,Okänt delområde,Inbrott,3
-2019,08,Okänt delområde,Misshandel,1
 2019,08,Okänt delområde,"Motorfordon,  stöld",1
 2019,08,Okänt delområde,Narkotikabrott,2
 2019,08,Okänt delområde,Rattfylleri,4
@@ -1878,7 +1880,6 @@ year,month,geography_group,type_original,event_count
 2019,08,Okänt delområde,"Trafikolycka,  personskada",1
 2019,08,Okänt delområde,"Trafikolycka,  vilt",2
 2019,08,Okänt delområde,"Trafikolycka, vilt",10
-2019,08,Okänt delområde,Våld/hot mot tjänsteman,1
 2019,08,Okänt delområde,Övrigt/oklassificerad,1
 2019,08,Porsön,Bråk,1
 2019,08,Porsön,Skadegörelse,1
@@ -1966,6 +1967,7 @@ year,month,geography_group,type_original,event_count
 2019,10,Centrum,Brand,1
 2019,10,Centrum,Fylleri/LOB,5
 2019,10,Centrum,Misshandel,3
+2019,10,Centrum,Olaga intrång/hemfridsbrott,1
 2019,10,Centrum,"Stöld,  försök",1
 2019,10,Centrum,Trafikbrott,1
 2019,10,Centrum,Trafikkontroll,2
@@ -1986,7 +1988,7 @@ year,month,geography_group,type_original,event_count
 2019,10,Okänt delområde,Misshandel,7
 2019,10,Okänt delområde,"Mord/dråp,  försök",1
 2019,10,Okänt delområde,Narkotikabrott,1
-2019,10,Okänt delområde,Olaga intrång/hemfridsbrott,2
+2019,10,Okänt delområde,Olaga intrång/hemfridsbrott,1
 2019,10,Okänt delområde,Olovlig körning,1
 2019,10,Okänt delområde,Rattfylleri,6
 2019,10,Okänt delområde,Rån,1
@@ -2022,11 +2024,11 @@ year,month,geography_group,type_original,event_count
 2019,11,Bergviken,Rattfylleri,1
 2019,11,Bergviken,Trafikbrott,2
 2019,11,Centrum,Fylleri/LOB,1
-2019,11,Centrum,Misshandel,2
+2019,11,Centrum,Misshandel,3
 2019,11,Centrum,Narkotikabrott,1
 2019,11,Centrum,Rattfylleri,3
 2019,11,Centrum,Skadegörelse,1
-2019,11,Centrum,Stöld,2
+2019,11,Centrum,Stöld,3
 2019,11,Centrum,Trafikbrott,1
 2019,11,Hertsön,Fylleri/LOB,1
 2019,11,Hertsön,Rattfylleri,1
@@ -2041,14 +2043,14 @@ year,month,geography_group,type_original,event_count
 2019,11,Okänt delområde,Försvunnen person,2
 2019,11,Okänt delområde,Inbrott,2
 2019,11,Okänt delområde,Knivlagen,1
-2019,11,Okänt delområde,Misshandel,5
+2019,11,Okänt delområde,Misshandel,4
 2019,11,Okänt delområde,Narkotikabrott,3
 2019,11,Okänt delområde,Olaga hot,1
 2019,11,Okänt delområde,Olovlig körning,1
 2019,11,Okänt delområde,Rattfylleri,6
 2019,11,Okänt delområde,Rån,1
 2019,11,Okänt delområde,Skadegörelse,1
-2019,11,Okänt delområde,Stöld,5
+2019,11,Okänt delområde,Stöld,4
 2019,11,Okänt delområde,Stöld/inbrott,1
 2019,11,Okänt delområde,Trafikbrott,4
 2019,11,Okänt delområde,Trafikolycka,5
@@ -2070,6 +2072,7 @@ year,month,geography_group,type_original,event_count
 2019,12,Björkskatan,Rattfylleri,1
 2019,12,Centrum,Bedrägeri,1
 2019,12,Centrum,Fylleri/LOB,2
+2019,12,Centrum,Misshandel,1
 2019,12,Centrum,Rattfylleri,1
 2019,12,Centrum,Stöld,4
 2019,12,Centrum,Trafikbrott,2
@@ -2089,7 +2092,7 @@ year,month,geography_group,type_original,event_count
 2019,12,Okänt delområde,Fylleri/LOB,4
 2019,12,Okänt delområde,Försvunnen person,1
 2019,12,Okänt delområde,Inbrott,3
-2019,12,Okänt delområde,Misshandel,6
+2019,12,Okänt delområde,Misshandel,5
 2019,12,Okänt delområde,"Motorfordon,  anträffat stulet",1
 2019,12,Okänt delområde,Narkotikabrott,1
 2019,12,Okänt delområde,Olaga hot,1
@@ -2238,7 +2241,7 @@ year,month,geography_group,type_original,event_count
 2020,03,Centrum,Fylleri/LOB,2
 2020,03,Centrum,Rattfylleri,1
 2020,03,Centrum,Skadegörelse,1
-2020,03,Centrum,Stöld,2
+2020,03,Centrum,Stöld,3
 2020,03,Centrum,Trafikbrott,2
 2020,03,Centrum,Trafikkontroll,2
 2020,03,Flera stadsdelar i Luleå,Trafikbrott,1
@@ -2260,7 +2263,7 @@ year,month,geography_group,type_original,event_count
 2020,03,Okänt delområde,Rattfylleri,8
 2020,03,Okänt delområde,Sexualbrott,1
 2020,03,Okänt delområde,Skadegörelse,1
-2020,03,Okänt delområde,Stöld,4
+2020,03,Okänt delområde,Stöld,3
 2020,03,Okänt delområde,Stöld/inbrott,1
 2020,03,Okänt delområde,Trafikbrott,7
 2020,03,Okänt delområde,Trafikkontroll,1
@@ -2345,6 +2348,7 @@ year,month,geography_group,type_original,event_count
 2020,05,Centrum,"Motorfordon,  anträffat stulet",1
 2020,05,Centrum,Narkotikabrott,1
 2020,05,Centrum,Rattfylleri,1
+2020,05,Centrum,Rån,1
 2020,05,Centrum,Stöld,4
 2020,05,Centrum,Trafikbrott,2
 2020,05,Centrum,Trafikkontroll,1
@@ -2371,7 +2375,6 @@ year,month,geography_group,type_original,event_count
 2020,05,Okänt delområde,Ofredande/förargelse,1
 2020,05,Okänt delområde,Olovlig körning,2
 2020,05,Okänt delområde,Rattfylleri,4
-2020,05,Okänt delområde,Rån,1
 2020,05,Okänt delområde,Skadegörelse,2
 2020,05,Okänt delområde,Stöld,2
 2020,05,Okänt delområde,Trafikbrott,4
@@ -2399,8 +2402,8 @@ year,month,geography_group,type_original,event_count
 2020,06,Bergviken,Rattfylleri,1
 2020,06,Björkskatan,Försvunnen person,1
 2020,06,Björkskatan,"Trafikolycka,  singel",1
-2020,06,Centrum,Fylleri/LOB,2
-2020,06,Centrum,Misshandel,1
+2020,06,Centrum,Fylleri/LOB,3
+2020,06,Centrum,Misshandel,5
 2020,06,Centrum,Rattfylleri,1
 2020,06,Centrum,Skadegörelse,1
 2020,06,Centrum,Trafikbrott,1
@@ -2413,9 +2416,9 @@ year,month,geography_group,type_original,event_count
 2020,06,Mjölkudden,"Misshandel,  grov",1
 2020,06,Notviken,Trafikkontroll,1
 2020,06,Okänt delområde,Brand,1
-2020,06,Okänt delområde,Fylleri/LOB,3
+2020,06,Okänt delområde,Fylleri/LOB,2
 2020,06,Okänt delområde,Inbrott,3
-2020,06,Okänt delområde,Misshandel,10
+2020,06,Okänt delområde,Misshandel,6
 2020,06,Okänt delområde,Narkotikabrott,4
 2020,06,Okänt delområde,Olovlig körning,4
 2020,06,Okänt delområde,Rattfylleri,6
@@ -2449,7 +2452,8 @@ year,month,geography_group,type_original,event_count
 2020,07,Bergviken,Brand,1
 2020,07,Bergviken,Stöld/inbrott,1
 2020,07,Björkskatan,Skadegörelse,2
-2020,07,Centrum,Narkotikabrott,2
+2020,07,Centrum,Bedrägeri,1
+2020,07,Centrum,Narkotikabrott,4
 2020,07,Centrum,Ofredande/förargelse,1
 2020,07,Centrum,Olovlig körning,1
 2020,07,Centrum,Stöld,2
@@ -2465,12 +2469,11 @@ year,month,geography_group,type_original,event_count
 2020,07,Notviken,Trafikolycka,1
 2020,07,Notviken,"Trafikolycka,  singel",1
 2020,07,Okänt delområde,Arbetsplatsolycka,1
-2020,07,Okänt delområde,Bedrägeri,1
 2020,07,Okänt delområde,Djur,1
 2020,07,Okänt delområde,Inbrott,2
 2020,07,Okänt delområde,Misshandel,8
 2020,07,Okänt delområde,Mord/dråp,1
-2020,07,Okänt delområde,Narkotikabrott,3
+2020,07,Okänt delområde,Narkotikabrott,1
 2020,07,Okänt delområde,Ofredande/förargelse,1
 2020,07,Okänt delområde,Olovlig körning,2
 2020,07,Okänt delområde,Rattfylleri,1
@@ -2506,7 +2509,7 @@ year,month,geography_group,type_original,event_count
 2020,08,Björkskatan,Trafikkontroll,1
 2020,08,Centrum,Brand,1
 2020,08,Centrum,Fylleri/LOB,4
-2020,08,Centrum,Misshandel,2
+2020,08,Centrum,Misshandel,3
 2020,08,Centrum,Narkotikabrott,1
 2020,08,Centrum,Olaga hot,1
 2020,08,Centrum,Skadegörelse,2
@@ -2526,7 +2529,7 @@ year,month,geography_group,type_original,event_count
 2020,08,Okänt delområde,Brand,2
 2020,08,Okänt delområde,Fylleri/LOB,5
 2020,08,Okänt delområde,Försvunnen person,1
-2020,08,Okänt delområde,Misshandel,3
+2020,08,Okänt delområde,Misshandel,2
 2020,08,Okänt delområde,Mord/dråp,1
 2020,08,Okänt delområde,Narkotikabrott,3
 2020,08,Okänt delområde,Ofredande/förargelse,1
@@ -2563,10 +2566,11 @@ year,month,geography_group,type_original,event_count
 2020,09,Björkskatan,Olovlig körning,1
 2020,09,Björkskatan,Rattfylleri,1
 2020,09,Centrum,Brand,1
-2020,09,Centrum,Misshandel,1
+2020,09,Centrum,Misshandel,2
 2020,09,Centrum,Narkotikabrott,4
 2020,09,Centrum,Olovlig körning,1
 2020,09,Centrum,Rattfylleri,2
+2020,09,Centrum,Skadegörelse,2
 2020,09,Centrum,Stöld,1
 2020,09,Centrum,"Trafikolycka,  smitning från",1
 2020,09,Centrum,Våld/hot mot tjänsteman,1
@@ -2581,10 +2585,10 @@ year,month,geography_group,type_original,event_count
 2020,09,Okänt delområde,Fylleri/LOB,2
 2020,09,Okänt delområde,Inbrott,3
 2020,09,Okänt delområde,Knivlagen,1
-2020,09,Okänt delområde,Misshandel,2
+2020,09,Okänt delområde,Misshandel,1
 2020,09,Okänt delområde,Narkotikabrott,3
 2020,09,Okänt delområde,Rattfylleri,7
-2020,09,Okänt delområde,Skadegörelse,3
+2020,09,Okänt delområde,Skadegörelse,1
 2020,09,Okänt delområde,Trafikbrott,2
 2020,09,Okänt delområde,Trafikkontroll,7
 2020,09,Okänt delområde,Trafikolycka,5
@@ -2754,6 +2758,7 @@ year,month,geography_group,type_original,event_count
 2020,12,Örnäset,Trafikolycka,1
 2021,01,Bergnäset,Trafikkontroll,2
 2021,01,Bergviken,Trafikkontroll,1
+2021,01,Centrum,Brand,1
 2021,01,Centrum,Fylleri/LOB,3
 2021,01,Centrum,Stöld,2
 2021,01,Centrum,Trafikbrott,1
@@ -2768,7 +2773,7 @@ year,month,geography_group,type_original,event_count
 2021,01,Notviken,Rattfylleri,1
 2021,01,Notviken,Trafikkontroll,2
 2021,01,Okänt delområde,Anträffad död,1
-2021,01,Okänt delområde,Brand,4
+2021,01,Okänt delområde,Brand,3
 2021,01,Okänt delområde,Fylleri/LOB,2
 2021,01,Okänt delområde,Inbrott,1
 2021,01,Okänt delområde,Misshandel,4
@@ -2904,6 +2909,7 @@ year,month,geography_group,type_original,event_count
 2021,04,Centrum,Alkohollagen,2
 2021,04,Centrum,Fylleri/LOB,5
 2021,04,Centrum,Misshandel,1
+2021,04,Centrum,Olaga hot,1
 2021,04,Centrum,Rattfylleri,2
 2021,04,Centrum,Stöld,3
 2021,04,Centrum,Trafikolycka,1
@@ -2922,7 +2928,6 @@ year,month,geography_group,type_original,event_count
 2021,04,Okänt delområde,Misshandel,3
 2021,04,Okänt delområde,Mord/dråp,2
 2021,04,Okänt delområde,"Mord/dråp,  försök",1
-2021,04,Okänt delområde,Olaga hot,1
 2021,04,Okänt delområde,Olovlig körning,3
 2021,04,Okänt delområde,Rattfylleri,3
 2021,04,Okänt delområde,Sedlighetsbrott,1
@@ -3008,7 +3013,7 @@ year,month,geography_group,type_original,event_count
 2021,06,Bensbyn,Trafikkontroll,2
 2021,06,Bergnäset,Trafikolycka,1
 2021,06,Bergviken,Brand,1
-2021,06,Centrum,Fylleri/LOB,2
+2021,06,Centrum,Fylleri/LOB,3
 2021,06,Centrum,Misshandel,1
 2021,06,Centrum,Olovlig körning,1
 2021,06,Centrum,Rån,1
@@ -3033,7 +3038,7 @@ year,month,geography_group,type_original,event_count
 2021,06,Notviken,Stöld,1
 2021,06,Notviken,Trafikbrott,2
 2021,06,Okänt delområde,Brand,2
-2021,06,Okänt delområde,Fylleri/LOB,3
+2021,06,Okänt delområde,Fylleri/LOB,2
 2021,06,Okänt delområde,Misshandel,5
 2021,06,Okänt delområde,Narkotikabrott,2
 2021,06,Okänt delområde,Olovlig körning,2
@@ -3072,8 +3077,9 @@ year,month,geography_group,type_original,event_count
 2021,07,Bälinge,Trafikkontroll,1
 2021,07,Centrum,Fylleri/LOB,1
 2021,07,Centrum,Försvunnen person,1
+2021,07,Centrum,Misshandel,4
 2021,07,Centrum,Narkotikabrott,1
-2021,07,Centrum,Stöld,2
+2021,07,Centrum,Stöld,3
 2021,07,Centrum,Trafikbrott,1
 2021,07,Centrum,Trafikkontroll,1
 2021,07,Centrum,Trafikolycka,2
@@ -3087,12 +3093,12 @@ year,month,geography_group,type_original,event_count
 2021,07,Okänt delområde,Fylleri/LOB,1
 2021,07,Okänt delområde,Hemfridsbrott,1
 2021,07,Okänt delområde,Inbrott,3
-2021,07,Okänt delområde,Misshandel,6
+2021,07,Okänt delområde,Misshandel,2
 2021,07,Okänt delområde,Narkotikabrott,1
 2021,07,Okänt delområde,Olovlig körning,2
 2021,07,Okänt delområde,Rattfylleri,9
 2021,07,Okänt delområde,Skadegörelse,3
-2021,07,Okänt delområde,Stöld,3
+2021,07,Okänt delområde,Stöld,2
 2021,07,Okänt delområde,Trafikbrott,3
 2021,07,Okänt delområde,Trafikkontroll,1
 2021,07,Okänt delområde,Trafikolycka,1
@@ -3170,7 +3176,7 @@ year,month,geography_group,type_original,event_count
 2021,09,Centrum,Misshandel,2
 2021,09,Centrum,"Motorfordon,  anträffat stulet",1
 2021,09,Centrum,Olaga intrång,1
-2021,09,Centrum,Stöld,4
+2021,09,Centrum,Stöld,5
 2021,09,Centrum,Trafikolycka,2
 2021,09,Centrum,"Trafikolycka,  singel",1
 2021,09,Flera stadsdelar i Luleå,Trafikolycka,1
@@ -3195,7 +3201,7 @@ year,month,geography_group,type_original,event_count
 2021,09,Okänt delområde,Narkotikabrott,1
 2021,09,Okänt delområde,Olovlig körning,2
 2021,09,Okänt delområde,Rattfylleri,4
-2021,09,Okänt delområde,Stöld,7
+2021,09,Okänt delområde,Stöld,6
 2021,09,Okänt delområde,Trafikbrott,4
 2021,09,Okänt delområde,Trafikkontroll,2
 2021,09,Okänt delområde,Trafikolycka,6
@@ -3222,9 +3228,11 @@ year,month,geography_group,type_original,event_count
 2021,10,Bergnäset,Uppdatering,2
 2021,10,Bergviken,Skadegörelse,1
 2021,10,Bergviken,Trafikkontroll,1
+2021,10,Centrum,Misshandel,1
 2021,10,Centrum,Olovlig körning,1
 2021,10,Centrum,Skadegörelse,2
 2021,10,Centrum,Stöld,1
+2021,10,Centrum,"Stöld,  försök",1
 2021,10,Centrum,Stöld/inbrott,1
 2021,10,Flera stadsdelar i Luleå,Trafikhinder,1
 2021,10,Flera stadsdelar i Luleå,Trafikkontroll,2
@@ -3235,14 +3243,13 @@ year,month,geography_group,type_original,event_count
 2021,10,Notviken,Trafikkontroll,1
 2021,10,Okänt delområde,Brand,3
 2021,10,Okänt delområde,Fylleri/LOB,2
-2021,10,Okänt delområde,Misshandel,5
+2021,10,Okänt delområde,Misshandel,4
 2021,10,Okänt delområde,"Misshandel,  grov",2
 2021,10,Okänt delområde,Narkotikabrott,4
 2021,10,Okänt delområde,Rattfylleri,6
 2021,10,Okänt delområde,Rån,1
 2021,10,Okänt delområde,Skadegörelse,1
 2021,10,Okänt delområde,Stöld,2
-2021,10,Okänt delområde,"Stöld,  försök",1
 2021,10,Okänt delområde,Trafikbrott,6
 2021,10,Okänt delområde,Trafikkontroll,4
 2021,10,Okänt delområde,Trafikolycka,8
@@ -3318,7 +3325,7 @@ year,month,geography_group,type_original,event_count
 2021,12,Björkskatan,Knivlagen,1
 2021,12,Björkskatan,"Trafikolycka,  personskada",1
 2021,12,Centrum,Fylleri/LOB,1
-2021,12,Centrum,Misshandel,1
+2021,12,Centrum,Misshandel,2
 2021,12,Centrum,Narkotikabrott,1
 2021,12,Centrum,Skadegörelse,1
 2021,12,Centrum,Stöld,7
@@ -3335,7 +3342,7 @@ year,month,geography_group,type_original,event_count
 2021,12,Okänt delområde,Fylleri/LOB,7
 2021,12,Okänt delområde,Inbrott,2
 2021,12,Okänt delområde,Larm Överfall,1
-2021,12,Okänt delområde,Misshandel,6
+2021,12,Okänt delområde,Misshandel,5
 2021,12,Okänt delområde,"Motorfordon,  stöld",1
 2021,12,Okänt delområde,Narkotikabrott,7
 2021,12,Okänt delområde,Rattfylleri,2
@@ -3367,6 +3374,7 @@ year,month,geography_group,type_original,event_count
 2022,01,Bergviken,Olovlig körning,1
 2022,01,Bergviken,Skadegörelse,3
 2022,01,Bergviken,Trafikkontroll,1
+2022,01,Centrum,Misshandel,1
 2022,01,Centrum,Stöld,1
 2022,01,Centrum,Trafikbrott,1
 2022,01,Flera stadsdelar i Luleå,Trafikolycka,1
@@ -3382,7 +3390,7 @@ year,month,geography_group,type_original,event_count
 2022,01,Notviken,Trafikolycka,1
 2022,01,Notviken,"Trafikolycka,  smitning från",1
 2022,01,Okänt delområde,Fylleri/LOB,6
-2022,01,Okänt delområde,Misshandel,2
+2022,01,Okänt delområde,Misshandel,1
 2022,01,Okänt delområde,"Motorfordon,  anträffat stulet",1
 2022,01,Okänt delområde,"Motorfordon,  stöld",1
 2022,01,Okänt delområde,Narkotikabrott,3
@@ -3415,6 +3423,7 @@ year,month,geography_group,type_original,event_count
 2022,02,Centrum,Knivlagen,1
 2022,02,Centrum,Narkotikabrott,1
 2022,02,Centrum,Rattfylleri,2
+2022,02,Centrum,Stöld,1
 2022,02,Centrum,Trafikbrott,1
 2022,02,Centrum,Trafikhinder,1
 2022,02,Centrum,Trafikolycka,1
@@ -3440,7 +3449,7 @@ year,month,geography_group,type_original,event_count
 2022,02,Okänt delområde,Olovlig körning,1
 2022,02,Okänt delområde,Rattfylleri,5
 2022,02,Okänt delområde,Skadegörelse,1
-2022,02,Okänt delområde,Stöld,2
+2022,02,Okänt delområde,Stöld,1
 2022,02,Okänt delområde,Trafikbrott,5
 2022,02,Okänt delområde,Trafikkontroll,5
 2022,02,Okänt delområde,Trafikolycka,3
@@ -3501,10 +3510,10 @@ year,month,geography_group,type_original,event_count
 2022,04,Bergviken,Brand,1
 2022,04,Bergviken,Trafikbrott,1
 2022,04,Centrum,Brand,1
-2022,04,Centrum,Fylleri/LOB,2
-2022,04,Centrum,Misshandel,2
+2022,04,Centrum,Fylleri/LOB,3
+2022,04,Centrum,Misshandel,3
 2022,04,Centrum,Ofredande/förargelse,1
-2022,04,Centrum,Rattfylleri,1
+2022,04,Centrum,Rattfylleri,2
 2022,04,Centrum,Stöld,1
 2022,04,Flera stadsdelar i Luleå,"Motorfordon,  stöld",1
 2022,04,Flera stadsdelar i Luleå,Rattfylleri,1
@@ -3518,12 +3527,12 @@ year,month,geography_group,type_original,event_count
 2022,04,Notviken,Skadegörelse,1
 2022,04,Okänt delområde,Bombhot,1
 2022,04,Okänt delområde,Brand,2
-2022,04,Okänt delområde,Fylleri/LOB,4
+2022,04,Okänt delområde,Fylleri/LOB,3
 2022,04,Okänt delområde,Häleri,1
 2022,04,Okänt delområde,"Inbrott,  försök",1
-2022,04,Okänt delområde,Misshandel,4
+2022,04,Okänt delområde,Misshandel,3
 2022,04,Okänt delområde,Narkotikabrott,3
-2022,04,Okänt delområde,Rattfylleri,7
+2022,04,Okänt delområde,Rattfylleri,6
 2022,04,Okänt delområde,Skadegörelse,1
 2022,04,Okänt delområde,Stöld,1
 2022,04,Okänt delområde,Trafikbrott,3
@@ -3543,9 +3552,9 @@ year,month,geography_group,type_original,event_count
 2022,05,Bergviken,Brand,1
 2022,05,Centrum,Fylleri/LOB,3
 2022,05,Centrum,Häleri,1
-2022,05,Centrum,Misshandel,2
+2022,05,Centrum,Misshandel,3
 2022,05,Centrum,Sexualbrott,1
-2022,05,Centrum,Skadegörelse,2
+2022,05,Centrum,Skadegörelse,3
 2022,05,Centrum,Stöld,3
 2022,05,Centrum,Trafikbrott,1
 2022,05,Centrum,Övrigt/oklassificerad,1
@@ -3561,7 +3570,7 @@ year,month,geography_group,type_original,event_count
 2022,05,Okänt delområde,Fylleri/LOB,8
 2022,05,Okänt delområde,Inbrott,2
 2022,05,Okänt delområde,Knivlagen,1
-2022,05,Okänt delområde,Misshandel,4
+2022,05,Okänt delområde,Misshandel,3
 2022,05,Okänt delområde,"Motorfordon,  stöld",1
 2022,05,Okänt delområde,Narkotikabrott,2
 2022,05,Okänt delområde,Ofredande/förargelse,2
@@ -3569,7 +3578,6 @@ year,month,geography_group,type_original,event_count
 2022,05,Okänt delområde,Olaga intrång,1
 2022,05,Okänt delområde,Olovlig körning,1
 2022,05,Okänt delområde,Rattfylleri,9
-2022,05,Okänt delområde,Skadegörelse,1
 2022,05,Okänt delområde,Stöld,1
 2022,05,Okänt delområde,Trafikbrott,1
 2022,05,Okänt delområde,Trafikkontroll,5
@@ -3595,9 +3603,9 @@ year,month,geography_group,type_original,event_count
 2022,06,Bergnäset,Skadegörelse,1
 2022,06,Bergviken,Försvunnen person,1
 2022,06,Centrum,Fylleri/LOB,1
-2022,06,Centrum,Misshandel,1
+2022,06,Centrum,Misshandel,2
 2022,06,Centrum,"Motorfordon,  anträffat stulet",1
-2022,06,Centrum,Stöld,2
+2022,06,Centrum,Stöld,3
 2022,06,Centrum,Stöld/inbrott,1
 2022,06,Centrum,Trafikbrott,1
 2022,06,Centrum,Trafikkontroll,1
@@ -3613,13 +3621,12 @@ year,month,geography_group,type_original,event_count
 2022,06,Okänt delområde,Brand,2
 2022,06,Okänt delområde,Fylleri/LOB,5
 2022,06,Okänt delområde,Inbrott,1
-2022,06,Okänt delområde,Misshandel,9
+2022,06,Okänt delområde,Misshandel,8
 2022,06,Okänt delområde,Narkotikabrott,11
 2022,06,Okänt delområde,Olovlig körning,2
 2022,06,Okänt delområde,Rattfylleri,3
 2022,06,Okänt delområde,Rån,1
 2022,06,Okänt delområde,Skadegörelse,4
-2022,06,Okänt delområde,Stöld,1
 2022,06,Okänt delområde,Trafikbrott,3
 2022,06,Okänt delområde,Trafikkontroll,2
 2022,06,Okänt delområde,Trafikolycka,2
@@ -3648,7 +3655,7 @@ year,month,geography_group,type_original,event_count
 2022,07,Björkskatan,Trafikkontroll,1
 2022,07,Björkskatan,Trafikolycka,1
 2022,07,Centrum,Knivlagen,1
-2022,07,Centrum,Misshandel,1
+2022,07,Centrum,Misshandel,2
 2022,07,Centrum,Rattfylleri,2
 2022,07,Centrum,Trafikolycka,1
 2022,07,Hertsön,Stöld,1
@@ -3659,7 +3666,7 @@ year,month,geography_group,type_original,event_count
 2022,07,Okänt delområde,Fylleri/LOB,3
 2022,07,Okänt delområde,Häleri,1
 2022,07,Okänt delområde,Inbrott,3
-2022,07,Okänt delområde,Misshandel,3
+2022,07,Okänt delområde,Misshandel,2
 2022,07,Okänt delområde,"Mord/dråp,  försök",1
 2022,07,Okänt delområde,"Motorfordon,  anträffat stulet",1
 2022,07,Okänt delområde,Narkotikabrott,3
@@ -3688,8 +3695,9 @@ year,month,geography_group,type_original,event_count
 2022,08,Bergnäset,Arbetsplatsolycka,1
 2022,08,Bergviken,Olovlig körning,1
 2022,08,Centrum,Fylleri/LOB,3
+2022,08,Centrum,Misshandel,1
 2022,08,Centrum,Narkotikabrott,1
-2022,08,Centrum,Stöld,3
+2022,08,Centrum,Stöld,4
 2022,08,Centrum,Trafikkontroll,1
 2022,08,Centrum,Trafikolycka,1
 2022,08,Flera stadsdelar i Luleå,Anträffad död,1
@@ -3707,14 +3715,14 @@ year,month,geography_group,type_original,event_count
 2022,08,Okänt delområde,Fylleri/LOB,10
 2022,08,Okänt delområde,Försvunnen person,1
 2022,08,Okänt delområde,Inbrott,1
-2022,08,Okänt delområde,Misshandel,4
+2022,08,Okänt delområde,Misshandel,3
 2022,08,Okänt delområde,"Motorfordon,  stöld",1
 2022,08,Okänt delområde,Narkotikabrott,5
 2022,08,Okänt delområde,Ofredande/förargelse,1
 2022,08,Okänt delområde,Olaga hot,2
 2022,08,Okänt delområde,Rattfylleri,2
 2022,08,Okänt delområde,Skadegörelse,2
-2022,08,Okänt delområde,Stöld,2
+2022,08,Okänt delområde,Stöld,1
 2022,08,Okänt delområde,Trafikbrott,1
 2022,08,Okänt delområde,Trafikkontroll,2
 2022,08,Okänt delområde,"Trafikolycka,  vilt",1
@@ -3725,7 +3733,9 @@ year,month,geography_group,type_original,event_count
 2022,08,Örnäset,Trafikbrott,1
 2022,09,Bergnäset,Trafikkontroll,1
 2022,09,Centrum,Fylleri/LOB,5
+2022,09,Centrum,Misshandel,1
 2022,09,Centrum,"Motorfordon,  anträffat stulet",1
+2022,09,Centrum,Ofredande/förargelse,1
 2022,09,Centrum,Olaga intrång,1
 2022,09,Centrum,Rattfylleri,1
 2022,09,Centrum,Skadegörelse,2
@@ -3744,10 +3754,10 @@ year,month,geography_group,type_original,event_count
 2022,09,Okänt delområde,Fylleri/LOB,6
 2022,09,Okänt delområde,Inbrott,1
 2022,09,Okänt delområde,Knivlagen,2
-2022,09,Okänt delområde,Misshandel,4
+2022,09,Okänt delområde,Misshandel,3
 2022,09,Okänt delområde,"Mord/dråp,  försök",2
 2022,09,Okänt delområde,Narkotikabrott,1
-2022,09,Okänt delområde,Ofredande/förargelse,3
+2022,09,Okänt delområde,Ofredande/förargelse,2
 2022,09,Okänt delområde,Olaga hot,2
 2022,09,Okänt delområde,Rattfylleri,1
 2022,09,Okänt delområde,"Rån,  försök",1
@@ -3775,7 +3785,8 @@ year,month,geography_group,type_original,event_count
 2022,10,Bergviken,Skadegörelse,1
 2022,10,Björkskatan,Olaga intrång,1
 2022,10,Centrum,Fylleri/LOB,2
-2022,10,Centrum,Skadegörelse,1
+2022,10,Centrum,Misshandel,1
+2022,10,Centrum,Skadegörelse,2
 2022,10,Centrum,Stöld,2
 2022,10,Centrum,Stöld/inbrott,1
 2022,10,Centrum,Trafikbrott,1
@@ -3795,12 +3806,12 @@ year,month,geography_group,type_original,event_count
 2022,10,Okänt delområde,Brand,1
 2022,10,Okänt delområde,Fylleri/LOB,3
 2022,10,Okänt delområde,Häleri,1
-2022,10,Okänt delområde,Misshandel,6
+2022,10,Okänt delområde,Misshandel,5
 2022,10,Okänt delområde,Narkotikabrott,4
 2022,10,Okänt delområde,Ofredande/förargelse,1
 2022,10,Okänt delområde,Olaga hot,1
 2022,10,Okänt delområde,Rattfylleri,5
-2022,10,Okänt delområde,Skadegörelse,2
+2022,10,Okänt delområde,Skadegörelse,1
 2022,10,Okänt delområde,Stöld,2
 2022,10,Okänt delområde,Trafikkontroll,5
 2022,10,Okänt delområde,Trafikolycka,1
@@ -3822,6 +3833,7 @@ year,month,geography_group,type_original,event_count
 2022,11,Bergnäset,Stöld,1
 2022,11,Centrum,Fylleri/LOB,4
 2022,11,Centrum,Misshandel,2
+2022,11,Centrum,Skadegörelse,1
 2022,11,Centrum,Stöld,6
 2022,11,Centrum,Trafikolycka,1
 2022,11,Flera stadsdelar i Luleå,Rattfylleri,1
@@ -3847,7 +3859,7 @@ year,month,geography_group,type_original,event_count
 2022,11,Okänt delområde,Narkotikabrott,1
 2022,11,Okänt delområde,Olovlig körning,1
 2022,11,Okänt delområde,Rattfylleri,6
-2022,11,Okänt delområde,Skadegörelse,2
+2022,11,Okänt delområde,Skadegörelse,1
 2022,11,Okänt delområde,Stöld,5
 2022,11,Okänt delområde,Trafikbrott,1
 2022,11,Okänt delområde,Trafikhinder,1
@@ -3875,7 +3887,7 @@ year,month,geography_group,type_original,event_count
 2022,12,Centrum,Olovlig körning,2
 2022,12,Centrum,Rattfylleri,1
 2022,12,Centrum,Rån,1
-2022,12,Centrum,Stöld,4
+2022,12,Centrum,Stöld,5
 2022,12,Centrum,Trafikolycka,1
 2022,12,Centrum,Våld/hot mot tjänsteman,1
 2022,12,Centrum,Övrigt/oklassificerad,2
@@ -3893,7 +3905,7 @@ year,month,geography_group,type_original,event_count
 2022,12,Okänt delområde,Olovlig körning,1
 2022,12,Okänt delområde,Rattfylleri,3
 2022,12,Okänt delområde,Skadegörelse,2
-2022,12,Okänt delområde,Stöld,2
+2022,12,Okänt delområde,Stöld,1
 2022,12,Okänt delområde,Trafikbrott,2
 2022,12,Okänt delområde,Trafikkontroll,5
 2022,12,Okänt delområde,Trafikolycka,7
@@ -3920,7 +3932,7 @@ year,month,geography_group,type_original,event_count
 2023,01,Centrum,Misshandel,1
 2023,01,Centrum,Rattfylleri,1
 2023,01,Centrum,Skadegörelse,2
-2023,01,Centrum,Stöld,5
+2023,01,Centrum,Stöld,7
 2023,01,Centrum,Stöld/inbrott,1
 2023,01,Centrum,Trafikolycka,2
 2023,01,Centrum,Övrigt/oklassificerad,1
@@ -3939,7 +3951,7 @@ year,month,geography_group,type_original,event_count
 2023,01,Okänt delområde,Olaga hot,1
 2023,01,Okänt delområde,Olovlig körning,1
 2023,01,Okänt delområde,Rattfylleri,3
-2023,01,Okänt delområde,Stöld,6
+2023,01,Okänt delområde,Stöld,4
 2023,01,Okänt delområde,Trafikbrott,1
 2023,01,Okänt delområde,Trafikkontroll,5
 2023,01,Okänt delområde,Trafikolycka,7
@@ -4041,9 +4053,9 @@ year,month,geography_group,type_original,event_count
 2023,03,Örnäset,Trafikkontroll,1
 2023,04,Bergnäset,Trafikkontroll,1
 2023,04,Centrum,Fylleri/LOB,4
-2023,04,Centrum,Misshandel,2
+2023,04,Centrum,Misshandel,3
 2023,04,Centrum,Narkotikabrott,2
-2023,04,Centrum,Stöld,5
+2023,04,Centrum,Stöld,6
 2023,04,Flera stadsdelar i Luleå,Våld/hot mot tjänsteman,1
 2023,04,Gammelstad,Trafikkontroll,1
 2023,04,Hertsön,"Misshandel,  grov",1
@@ -4054,12 +4066,12 @@ year,month,geography_group,type_original,event_count
 2023,04,Notviken,Brand,1
 2023,04,Okänt delområde,Brand,1
 2023,04,Okänt delområde,Fylleri/LOB,13
-2023,04,Okänt delområde,Misshandel,4
+2023,04,Okänt delområde,Misshandel,3
 2023,04,Okänt delområde,Narkotikabrott,5
 2023,04,Okänt delområde,Olovlig körning,1
 2023,04,Okänt delområde,Rattfylleri,4
 2023,04,Okänt delområde,Skadegörelse,1
-2023,04,Okänt delområde,Stöld,6
+2023,04,Okänt delområde,Stöld,5
 2023,04,Okänt delområde,Stöld/inbrott,1
 2023,04,Okänt delområde,Trafikkontroll,5
 2023,04,Okänt delområde,Trafikolycka,5
@@ -4077,8 +4089,8 @@ year,month,geography_group,type_original,event_count
 2023,05,Bergnäset,Brand,1
 2023,05,Bergviken,Narkotikabrott,1
 2023,05,Bergviken,Olaga hot,1
-2023,05,Centrum,Fylleri/LOB,5
-2023,05,Centrum,Misshandel,4
+2023,05,Centrum,Fylleri/LOB,6
+2023,05,Centrum,Misshandel,5
 2023,05,Centrum,"Motorfordon,  stöld",1
 2023,05,Centrum,Narkotikabrott,1
 2023,05,Centrum,Ofredande/förargelse,1
@@ -4093,9 +4105,9 @@ year,month,geography_group,type_original,event_count
 2023,05,Notviken,"Trafikolycka,  vilt",1
 2023,05,Notviken,"Trafikolycka, vilt",1
 2023,05,Okänt delområde,Brand,2
-2023,05,Okänt delområde,Fylleri/LOB,12
+2023,05,Okänt delområde,Fylleri/LOB,11
 2023,05,Okänt delområde,Inbrott,1
-2023,05,Okänt delområde,Misshandel,5
+2023,05,Okänt delområde,Misshandel,4
 2023,05,Okänt delområde,Narkotikabrott,4
 2023,05,Okänt delområde,Ofredande/förargelse,2
 2023,05,Okänt delområde,Olaga hot,1
@@ -4124,7 +4136,8 @@ year,month,geography_group,type_original,event_count
 2023,06,Bergviken,Olovlig körning,1
 2023,06,Bergviken,Stöld,1
 2023,06,Bergviken,Stöld/inbrott,1
-2023,06,Centrum,Fylleri/LOB,5
+2023,06,Centrum,Fylleri/LOB,6
+2023,06,Centrum,Misshandel,2
 2023,06,Centrum,Skadegörelse,1
 2023,06,Centrum,Stöld,1
 2023,06,Centrum,Trafikbrott,2
@@ -4141,9 +4154,9 @@ year,month,geography_group,type_original,event_count
 2023,06,Mjölkudden,Skadegörelse,1
 2023,06,Okänt delområde,Brand,5
 2023,06,Okänt delområde,"Farligt föremål,  misstänkt",1
-2023,06,Okänt delområde,Fylleri/LOB,7
+2023,06,Okänt delområde,Fylleri/LOB,6
 2023,06,Okänt delområde,Inbrott,1
-2023,06,Okänt delområde,Misshandel,5
+2023,06,Okänt delområde,Misshandel,3
 2023,06,Okänt delområde,Narkotikabrott,9
 2023,06,Okänt delområde,Rattfylleri,2
 2023,06,Okänt delområde,Stöld,3
@@ -4158,7 +4171,7 @@ year,month,geography_group,type_original,event_count
 2023,06,Storheden,Brand,1
 2023,07,Björkskatan,Skadegörelse,1
 2023,07,Centrum,Fylleri/LOB,1
-2023,07,Centrum,Misshandel,1
+2023,07,Centrum,Misshandel,2
 2023,07,Centrum,Stöld,1
 2023,07,Centrum,Övrigt/oklassificerad,1
 2023,07,Flera stadsdelar i Luleå,Trafikkontroll,1
@@ -4168,7 +4181,7 @@ year,month,geography_group,type_original,event_count
 2023,07,Notviken,Försvunnen person,1
 2023,07,Notviken,"Trafikolycka,  singel",1
 2023,07,Okänt delområde,Fylleri/LOB,5
-2023,07,Okänt delområde,Misshandel,6
+2023,07,Okänt delområde,Misshandel,5
 2023,07,Okänt delområde,Mord/dråp,1
 2023,07,Okänt delområde,Narkotikabrott,3
 2023,07,Okänt delområde,Olaga intrång/hemfridsbrott,2
@@ -4191,9 +4204,10 @@ year,month,geography_group,type_original,event_count
 2023,08,Björkskatan,Rattfylleri,1
 2023,08,Björkskatan,Stöld,1
 2023,08,Björkskatan,Trafikkontroll,1
-2023,08,Centrum,Misshandel,3
+2023,08,Centrum,Hemfridsbrott,1
+2023,08,Centrum,Misshandel,4
 2023,08,Centrum,Olaga intrång/hemfridsbrott,1
-2023,08,Centrum,Stöld,2
+2023,08,Centrum,Stöld,3
 2023,08,Centrum,Trafikolycka,1
 2023,08,Flera stadsdelar i Luleå,Trafikkontroll,1
 2023,08,Flera stadsdelar i Luleå,Trafikolycka,1
@@ -4203,14 +4217,12 @@ year,month,geography_group,type_original,event_count
 2023,08,Okänt delområde,Brand,2
 2023,08,Okänt delområde,Fylleri/LOB,10
 2023,08,Okänt delområde,Försvunnen person,1
-2023,08,Okänt delområde,Hemfridsbrott,1
 2023,08,Okänt delområde,Inbrott,2
-2023,08,Okänt delområde,Misshandel,2
+2023,08,Okänt delområde,Misshandel,1
 2023,08,Okänt delområde,Narkotikabrott,5
 2023,08,Okänt delområde,Olaga intrång/hemfridsbrott,1
 2023,08,Okänt delområde,Olovlig körning,1
 2023,08,Okänt delområde,Skadegörelse,2
-2023,08,Okänt delområde,Stöld,1
 2023,08,Okänt delområde,Trafikbrott,1
 2023,08,Okänt delområde,Trafikkontroll,2
 2023,08,Okänt delområde,"Trafikolycka,  personskada",1
@@ -4229,7 +4241,7 @@ year,month,geography_group,type_original,event_count
 2023,09,Björkskatan,Stöld,1
 2023,09,Centrum,Fylleri/LOB,1
 2023,09,Centrum,Narkotikabrott,1
-2023,09,Centrum,Stöld,5
+2023,09,Centrum,Stöld,6
 2023,09,Centrum,Trafikolycka,3
 2023,09,Centrum,"Trafikolycka,  singel",1
 2023,09,Centrum,Vapenlagen,1
@@ -4247,7 +4259,7 @@ year,month,geography_group,type_original,event_count
 2023,09,Okänt delområde,Rattfylleri,7
 2023,09,Okänt delområde,Rån övrigt,1
 2023,09,Okänt delområde,Skadegörelse,1
-2023,09,Okänt delområde,Stöld,3
+2023,09,Okänt delområde,Stöld,2
 2023,09,Okänt delområde,Trafikkontroll,2
 2023,09,Okänt delområde,Trafikolycka,2
 2023,09,Okänt delområde,"Trafikolycka,  personskada",1
@@ -4272,8 +4284,10 @@ year,month,geography_group,type_original,event_count
 2023,10,Björkskatan,Försvunnen person,1
 2023,10,Centrum,Alkohollagen,1
 2023,10,Centrum,Djur,1
+2023,10,Centrum,Fylleri/LOB,1
 2023,10,Centrum,Olovlig körning,1
 2023,10,Centrum,Rattfylleri,1
+2023,10,Centrum,Skadegörelse,1
 2023,10,Centrum,Stöld,2
 2023,10,Centrum,Stöld/inbrott,1
 2023,10,Centrum,Trafikolycka,1
@@ -4285,7 +4299,7 @@ year,month,geography_group,type_original,event_count
 2023,10,Notviken,Trafikolycka,1
 2023,10,Okänt delområde,Bedrägeri,1
 2023,10,Okänt delområde,Brand,1
-2023,10,Okänt delområde,Fylleri/LOB,3
+2023,10,Okänt delområde,Fylleri/LOB,2
 2023,10,Okänt delområde,Misshandel,4
 2023,10,Okänt delområde,"Misshandel,  grov",1
 2023,10,Okänt delområde,Narkotikabrott,6
@@ -4293,7 +4307,7 @@ year,month,geography_group,type_original,event_count
 2023,10,Okänt delområde,Olovlig körning,1
 2023,10,Okänt delområde,Rattfylleri,5
 2023,10,Okänt delområde,Räddningsinsats,1
-2023,10,Okänt delområde,Skadegörelse,2
+2023,10,Okänt delområde,Skadegörelse,1
 2023,10,Okänt delområde,Trafikolycka,1
 2023,10,Okänt delområde,"Trafikolycka,  vilt",2
 2023,10,Okänt delområde,"Trafikolycka, vilt",1
@@ -4383,6 +4397,8 @@ year,month,geography_group,type_original,event_count
 2024,01,Björkskatan,Stöld,1
 2024,01,Centrum,Fylleri/LOB,1
 2024,01,Centrum,Hemfridsbrott,1
+2024,01,Centrum,Knivlagen,1
+2024,01,Centrum,Olaga hot,1
 2024,01,Centrum,Rattfylleri,1
 2024,01,Centrum,Skadegörelse,1
 2024,01,Centrum,Stöld,1
@@ -4391,12 +4407,12 @@ year,month,geography_group,type_original,event_count
 2024,01,Notviken,Trafikbrott,2
 2024,01,Okänt delområde,Brand,2
 2024,01,Okänt delområde,Fylleri/LOB,6
-2024,01,Okänt delområde,Knivlagen,2
+2024,01,Okänt delområde,Knivlagen,1
 2024,01,Okänt delområde,Misshandel,1
 2024,01,Okänt delområde,Mord/dråp,1
 2024,01,Okänt delområde,Narkotikabrott,6
 2024,01,Okänt delområde,Ofredande/förargelse,1
-2024,01,Okänt delområde,Olaga hot,2
+2024,01,Okänt delområde,Olaga hot,1
 2024,01,Okänt delområde,Olovlig körning,1
 2024,01,Okänt delområde,Rattfylleri,4
 2024,01,Okänt delområde,Rån,1
@@ -4419,7 +4435,7 @@ year,month,geography_group,type_original,event_count
 2024,02,Bergnäset,Trafikkontroll,1
 2024,02,Bergviken,Brand,1
 2024,02,Centrum,Knivlagen,1
-2024,02,Centrum,Misshandel,2
+2024,02,Centrum,Misshandel,3
 2024,02,Centrum,Narkotikabrott,1
 2024,02,Centrum,Stöld,2
 2024,02,Centrum,Trafikolycka,2
@@ -4435,7 +4451,7 @@ year,month,geography_group,type_original,event_count
 2024,02,Okänt delområde,Bedrägeri,1
 2024,02,Okänt delområde,Fylleri/LOB,7
 2024,02,Okänt delområde,Knivlagen,2
-2024,02,Okänt delområde,Misshandel,4
+2024,02,Okänt delområde,Misshandel,3
 2024,02,Okänt delområde,Narkotikabrott,5
 2024,02,Okänt delområde,Rattfylleri,1
 2024,02,Okänt delområde,Trafikbrott,1
@@ -4453,6 +4469,7 @@ year,month,geography_group,type_original,event_count
 2024,03,Centrum,Fylleri/LOB,6
 2024,03,Centrum,Misshandel,1
 2024,03,Centrum,Narkotikabrott,1
+2024,03,Centrum,Olaga hot,1
 2024,03,Centrum,Stöld,5
 2024,03,Centrum,Trafikkontroll,2
 2024,03,Gammelstad,Trafikolycka,1
@@ -4462,7 +4479,6 @@ year,month,geography_group,type_original,event_count
 2024,03,Okänt delområde,Fylleri/LOB,7
 2024,03,Okänt delområde,Misshandel,3
 2024,03,Okänt delområde,Narkotikabrott,6
-2024,03,Okänt delområde,Olaga hot,1
 2024,03,Okänt delområde,Rattfylleri,4
 2024,03,Okänt delområde,Stöld,5
 2024,03,Okänt delområde,Trafikbrott,4
@@ -4487,7 +4503,7 @@ year,month,geography_group,type_original,event_count
 2024,04,Centrum,Knivlagen,2
 2024,04,Centrum,Olaga intrång,1
 2024,04,Centrum,Olovlig körning,1
-2024,04,Centrum,Skadegörelse,1
+2024,04,Centrum,Skadegörelse,2
 2024,04,Centrum,Stöld,3
 2024,04,Centrum,Trafikkontroll,2
 2024,04,Centrum,Våld/hot mot tjänsteman,1
@@ -4503,7 +4519,7 @@ year,month,geography_group,type_original,event_count
 2024,04,Okänt delområde,Ofredande/förargelse,1
 2024,04,Okänt delområde,Olaga hot,2
 2024,04,Okänt delområde,Rattfylleri,1
-2024,04,Okänt delområde,Skadegörelse,2
+2024,04,Okänt delområde,Skadegörelse,1
 2024,04,Okänt delområde,Stöld,1
 2024,04,Okänt delområde,Stöld/inbrott,1
 2024,04,Okänt delområde,Trafikkontroll,3
@@ -4521,7 +4537,8 @@ year,month,geography_group,type_original,event_count
 2024,04,Örnäset,Trafikkontroll,1
 2024,05,Björkskatan,Fylleri/LOB,1
 2024,05,Centrum,Fylleri/LOB,7
-2024,05,Centrum,Misshandel,1
+2024,05,Centrum,Misshandel,2
+2024,05,Centrum,Ofredande/förargelse,1
 2024,05,Centrum,Olaga intrång/hemfridsbrott,1
 2024,05,Centrum,Olovlig körning,1
 2024,05,Centrum,Stöld,1
@@ -4535,9 +4552,9 @@ year,month,geography_group,type_original,event_count
 2024,05,Okänt delområde,Brand,3
 2024,05,Okänt delområde,Fylleri/LOB,6
 2024,05,Okänt delområde,Miljöbrott,1
-2024,05,Okänt delområde,Misshandel,6
+2024,05,Okänt delområde,Misshandel,5
 2024,05,Okänt delområde,Narkotikabrott,7
-2024,05,Okänt delområde,Ofredande/förargelse,2
+2024,05,Okänt delområde,Ofredande/förargelse,1
 2024,05,Okänt delområde,Olaga intrång/hemfridsbrott,1
 2024,05,Okänt delområde,Rattfylleri,2
 2024,05,Okänt delområde,Skyddslagen,1
@@ -4563,8 +4580,8 @@ year,month,geography_group,type_original,event_count
 2024,06,Björkskatan,Stöld,1
 2024,06,Centrum,Brand,1
 2024,06,Centrum,Fylleri/LOB,1
-2024,06,Centrum,Inbrott,1
-2024,06,Centrum,Misshandel,4
+2024,06,Centrum,Inbrott,2
+2024,06,Centrum,Misshandel,6
 2024,06,Centrum,Narkotikabrott,1
 2024,06,Centrum,Ofredande/förargelse,1
 2024,06,Centrum,Rattfylleri,1
@@ -4583,8 +4600,8 @@ year,month,geography_group,type_original,event_count
 2024,06,Okänt delområde,Brand,3
 2024,06,Okänt delområde,Fylleri/LOB,4
 2024,06,Okänt delområde,Försvunnen person,1
-2024,06,Okänt delområde,Inbrott,2
-2024,06,Okänt delområde,Misshandel,7
+2024,06,Okänt delområde,Inbrott,1
+2024,06,Okänt delområde,Misshandel,5
 2024,06,Okänt delområde,Narkotikabrott,3
 2024,06,Okänt delområde,Olaga intrång/hemfridsbrott,2
 2024,06,Okänt delområde,Olovlig körning,1
@@ -4609,10 +4626,11 @@ year,month,geography_group,type_original,event_count
 2024,07,Björkskatan,Trafikolycka,2
 2024,07,Centrum,Arbetsplatsolycka,1
 2024,07,Centrum,Fylleri/LOB,1
-2024,07,Centrum,Misshandel,1
+2024,07,Centrum,Misshandel,2
 2024,07,Centrum,Rattfylleri,2
 2024,07,Centrum,Skadegörelse,1
 2024,07,Centrum,Stöld,1
+2024,07,Centrum,Våld/hot mot tjänsteman,1
 2024,07,Karlsvik,Stöld,1
 2024,07,Klöverträsk,Brand,1
 2024,07,Mjölkudden,Brand,1
@@ -4620,7 +4638,7 @@ year,month,geography_group,type_original,event_count
 2024,07,Okänt delområde,Bedrägeri,2
 2024,07,Okänt delområde,Fylleri/LOB,6
 2024,07,Okänt delområde,Inbrott,1
-2024,07,Okänt delområde,Misshandel,7
+2024,07,Okänt delområde,Misshandel,6
 2024,07,Okänt delområde,"Mord/dråp,  försök",1
 2024,07,Okänt delområde,Narkotikabrott,3
 2024,07,Okänt delområde,Olovlig körning,1
@@ -4629,7 +4647,6 @@ year,month,geography_group,type_original,event_count
 2024,07,Okänt delområde,Trafikkontroll,3
 2024,07,Okänt delområde,Trafikolycka,3
 2024,07,Okänt delområde,"Trafikolycka, vilt",1
-2024,07,Okänt delområde,Våld/hot mot tjänsteman,1
 2024,07,Okänt delområde,Övrigt/oklassificerad,1
 2024,07,Porsön,Olaga intrång,1
 2024,07,Rutvik,Rattfylleri,1
@@ -4641,10 +4658,11 @@ year,month,geography_group,type_original,event_count
 2024,08,Björkskatan,Trafikolycka,1
 2024,08,Centrum,Fylleri/LOB,3
 2024,08,Centrum,Inbrott,1
-2024,08,Centrum,Misshandel,1
+2024,08,Centrum,Misshandel,2
 2024,08,Centrum,Narkotikabrott,1
 2024,08,Centrum,Rattfylleri,1
 2024,08,Centrum,Skadegörelse,1
+2024,08,Centrum,Stöld,1
 2024,08,Centrum,Trafikolycka,1
 2024,08,Gammelstad,Stöld,1
 2024,08,Gammelstad,Övrigt/oklassificerad,1
@@ -4657,10 +4675,10 @@ year,month,geography_group,type_original,event_count
 2024,08,Okänt delområde,Brand,1
 2024,08,Okänt delområde,Fylleri/LOB,1
 2024,08,Okänt delområde,Inbrott,1
-2024,08,Okänt delområde,Misshandel,4
+2024,08,Okänt delområde,Misshandel,3
 2024,08,Okänt delområde,Narkotikabrott,4
 2024,08,Okänt delområde,Olovlig körning,1
-2024,08,Okänt delområde,Stöld,3
+2024,08,Okänt delområde,Stöld,2
 2024,08,Okänt delområde,Trafikbrott,1
 2024,08,Okänt delområde,Trafikolycka,3
 2024,08,Okänt delområde,"Trafikolycka,  vilt",1
@@ -4674,9 +4692,10 @@ year,month,geography_group,type_original,event_count
 2024,08,Örnäset,Stöld,2
 2024,09,Bergviken,Rattfylleri,1
 2024,09,Centrum,Fylleri/LOB,1
-2024,09,Centrum,Misshandel,1
+2024,09,Centrum,Misshandel,4
 2024,09,Centrum,Narkotikabrott,1
 2024,09,Centrum,Ofredande/förargelse,1
+2024,09,Centrum,Skadegörelse,1
 2024,09,Centrum,Stöld,3
 2024,09,Centrum,Trafikolycka,1
 2024,09,Hertsön,Misshandel,2
@@ -4688,7 +4707,7 @@ year,month,geography_group,type_original,event_count
 2024,09,Notviken,Olovlig körning,1
 2024,09,Okänt delområde,Arbetsplatsolycka,1
 2024,09,Okänt delområde,Fylleri/LOB,7
-2024,09,Okänt delområde,Misshandel,7
+2024,09,Okänt delområde,Misshandel,4
 2024,09,Okänt delområde,"Misshandel,  grov",1
 2024,09,Okänt delområde,"Mord/dråp,  försök",1
 2024,09,Okänt delområde,Narkotikabrott,1
@@ -4696,7 +4715,6 @@ year,month,geography_group,type_original,event_count
 2024,09,Okänt delområde,Rattfylleri,2
 2024,09,Okänt delområde,Rån,1
 2024,09,Okänt delområde,"Sammanfattning, ej uppdelad",1
-2024,09,Okänt delområde,Skadegörelse,1
 2024,09,Okänt delområde,Stöld,1
 2024,09,Okänt delområde,Trafikbrott,2
 2024,09,Okänt delområde,Trafikolycka,4
@@ -4715,7 +4733,7 @@ year,month,geography_group,type_original,event_count
 2024,10,Bergviken,Skadegörelse,1
 2024,10,Björkskatan,Brand,1
 2024,10,Centrum,Brand,1
-2024,10,Centrum,Fylleri/LOB,2
+2024,10,Centrum,Fylleri/LOB,3
 2024,10,Centrum,Häleri,1
 2024,10,Centrum,Knivlagen,1
 2024,10,Centrum,Misshandel,3
@@ -4723,7 +4741,7 @@ year,month,geography_group,type_original,event_count
 2024,10,Centrum,Olovlig körning,1
 2024,10,Centrum,Rattfylleri,1
 2024,10,Centrum,Skadegörelse,1
-2024,10,Centrum,Stöld,5
+2024,10,Centrum,Stöld,6
 2024,10,Centrum,Trafikolycka,1
 2024,10,Flera stadsdelar i Luleå,Trafikolycka,1
 2024,10,Hertsön,Rattfylleri,1
@@ -4734,13 +4752,13 @@ year,month,geography_group,type_original,event_count
 2024,10,Okänt delområde,Arbetsplatsolycka,1
 2024,10,Okänt delområde,Brand,1
 2024,10,Okänt delområde,Explosion,1
-2024,10,Okänt delområde,Fylleri/LOB,5
+2024,10,Okänt delområde,Fylleri/LOB,4
 2024,10,Okänt delområde,Försvunnen person,1
 2024,10,Okänt delområde,Misshandel,1
 2024,10,Okänt delområde,"Motorfordon,  anträffat stulet",1
 2024,10,Okänt delområde,Narkotikabrott,6
 2024,10,Okänt delområde,Rattfylleri,4
-2024,10,Okänt delområde,Stöld,6
+2024,10,Okänt delområde,Stöld,5
 2024,10,Okänt delområde,Trafikolycka,5
 2024,10,Okänt delområde,"Trafikolycka,  vilt",1
 2024,10,Okänt delområde,Våld/hot mot tjänsteman,1
@@ -4757,6 +4775,7 @@ year,month,geography_group,type_original,event_count
 2024,11,Bergnäset,Fylleri/LOB,2
 2024,11,Bergnäset,Rattfylleri,1
 2024,11,Bergviken,Rattfylleri,1
+2024,11,Centrum,Fylleri/LOB,1
 2024,11,Centrum,Misshandel,3
 2024,11,Centrum,Narkotikabrott,3
 2024,11,Centrum,Olaga hot,1
@@ -4772,7 +4791,7 @@ year,month,geography_group,type_original,event_count
 2024,11,Hertsön,Trafikolycka,1
 2024,11,Notviken,Rattfylleri,1
 2024,11,Notviken,Trafikolycka,1
-2024,11,Okänt delområde,Fylleri/LOB,2
+2024,11,Okänt delområde,Fylleri/LOB,1
 2024,11,Okänt delområde,Misshandel,5
 2024,11,Okänt delområde,Narkotikabrott,1
 2024,11,Okänt delområde,Ofredande/förargelse,1
@@ -4793,6 +4812,7 @@ year,month,geography_group,type_original,event_count
 2024,11,Sörbyarna,Trafikolycka,1
 2024,11,Örnäset,Narkotikabrott,1
 2024,12,Bergnäset,Arbetsplatsolycka,1
+2024,12,Centrum,Bråk,1
 2024,12,Centrum,Fylleri/LOB,1
 2024,12,Centrum,Misshandel,1
 2024,12,Centrum,"Motorfordon,  stöld",1
@@ -4810,7 +4830,6 @@ year,month,geography_group,type_original,event_count
 2024,12,Notviken,Trafikolycka,4
 2024,12,Okänt delområde,Bedrägeri,1
 2024,12,Okänt delområde,Brand,2
-2024,12,Okänt delområde,Bråk,1
 2024,12,Okänt delområde,Fylleri/LOB,13
 2024,12,Okänt delområde,Hemfridsbrott,1
 2024,12,Okänt delområde,Knivlagen,1
@@ -4890,9 +4909,11 @@ year,month,geography_group,type_original,event_count
 2025,02,Sörbyarna,Arbetsplatsolycka,1
 2025,02,Örnäset,Misshandel,1
 2025,03,Bergnäset,Trafikolycka,1
-2025,03,Centrum,Fylleri/LOB,3
+2025,03,Centrum,Fylleri/LOB,4
+2025,03,Centrum,Inbrott,1
 2025,03,Centrum,Misshandel,1
 2025,03,Centrum,Narkotikabrott,2
+2025,03,Centrum,Olaga hot,1
 2025,03,Centrum,Rattfylleri,1
 2025,03,Centrum,Rån,1
 2025,03,Centrum,Stöld,3
@@ -4905,12 +4926,10 @@ year,month,geography_group,type_original,event_count
 2025,03,Notviken,Trafikkontroll,1
 2025,03,Okänt delområde,Bedrägeri,3
 2025,03,Okänt delområde,Brand,2
-2025,03,Okänt delområde,Fylleri/LOB,3
-2025,03,Okänt delområde,Inbrott,1
+2025,03,Okänt delområde,Fylleri/LOB,2
 2025,03,Okänt delområde,Misshandel,4
 2025,03,Okänt delområde,"Motorfordon,  stöld",1
 2025,03,Okänt delområde,Narkotikabrott,12
-2025,03,Okänt delområde,Olaga hot,1
 2025,03,Okänt delområde,Olovlig körning,1
 2025,03,Okänt delområde,Rattfylleri,1
 2025,03,Okänt delområde,Rån,1
@@ -4977,13 +4996,14 @@ year,month,geography_group,type_original,event_count
 2025,05,Bergnäset,Trafikkontroll,1
 2025,05,Centrum,"Inbrott,  försök",1
 2025,05,Centrum,Knivlagen,1
-2025,05,Centrum,Misshandel,2
+2025,05,Centrum,Misshandel,4
 2025,05,Centrum,Rattfylleri,1
 2025,05,Centrum,Rån,1
 2025,05,Centrum,Skadegörelse,1
-2025,05,Centrum,Stöld,1
+2025,05,Centrum,Stöld,2
 2025,05,Centrum,Trafikolycka,2
 2025,05,Centrum,Våld/hot mot tjänsteman,1
+2025,05,Centrum,Övrigt/oklassificerad,1
 2025,05,Gammelstad,Skadegörelse,1
 2025,05,Hertsön,Skadegörelse,1
 2025,05,Karlsvik,Vållande till kroppsskada,1
@@ -4993,20 +5013,19 @@ year,month,geography_group,type_original,event_count
 2025,05,Notviken,Trafikkontroll,1
 2025,05,Okänt delområde,Fylleri/LOB,4
 2025,05,Okänt delområde,Kontroll person/fordon,2
-2025,05,Okänt delområde,Misshandel,6
+2025,05,Okänt delområde,Misshandel,4
 2025,05,Okänt delområde,Narkotikabrott,4
 2025,05,Okänt delområde,Olaga hot,1
 2025,05,Okänt delområde,Olaga intrång,1
 2025,05,Okänt delområde,Rattfylleri,4
 2025,05,Okänt delområde,Skadegörelse,3
-2025,05,Okänt delområde,Stöld,5
+2025,05,Okänt delområde,Stöld,4
 2025,05,Okänt delområde,Trafikbrott,3
 2025,05,Okänt delområde,Trafikkontroll,2
 2025,05,Okänt delområde,Trafikolycka,1
 2025,05,Okänt delområde,"Trafikolycka,  vilt",1
 2025,05,Okänt delområde,Våld/hot mot tjänsteman,2
 2025,05,Okänt delområde,Våldtäkt,1
-2025,05,Okänt delområde,Övrigt/oklassificerad,1
 2025,05,Porsön,Trafikkontroll,1
 2025,05,Porsön,"Trafikolycka, vilt",1
 2025,05,Storheden,Stöld,3
@@ -5021,7 +5040,7 @@ year,month,geography_group,type_original,event_count
 2025,06,Centrum,Ofredande/förargelse,3
 2025,06,Centrum,Rattfylleri,3
 2025,06,Centrum,Rån,1
-2025,06,Centrum,Stöld,3
+2025,06,Centrum,Stöld,4
 2025,06,Centrum,Trafikbrott,1
 2025,06,Centrum,Trafikolycka,1
 2025,06,Centrum,Våld/hot mot tjänsteman,1
@@ -5038,7 +5057,7 @@ year,month,geography_group,type_original,event_count
 2025,06,Okänt delområde,Olaga intrång,1
 2025,06,Okänt delområde,Rattfylleri,1
 2025,06,Okänt delområde,Räddningsinsats,1
-2025,06,Okänt delområde,Stöld,6
+2025,06,Okänt delområde,Stöld,5
 2025,06,Okänt delområde,Trafikbrott,2
 2025,06,Okänt delområde,Trafikkontroll,2
 2025,06,Okänt delområde,Trafikolycka,2
@@ -5061,8 +5080,9 @@ year,month,geography_group,type_original,event_count
 2025,07,Bergnäset,Trafikkontroll,1
 2025,07,Centrum,Fylleri/LOB,1
 2025,07,Centrum,Försvunnen person,1
-2025,07,Centrum,Misshandel,4
+2025,07,Centrum,Misshandel,5
 2025,07,Centrum,Olaga intrång/hemfridsbrott,1
+2025,07,Centrum,Rattfylleri,1
 2025,07,Centrum,Trafikbrott,1
 2025,07,Gammelstad,Trafikolycka,1
 2025,07,Lerbäcken,Trafikolycka,1
@@ -5071,10 +5091,10 @@ year,month,geography_group,type_original,event_count
 2025,07,Okänt delområde,Fylleri/LOB,8
 2025,07,Okänt delområde,Försvunnen person,1
 2025,07,Okänt delområde,Inbrott,1
-2025,07,Okänt delområde,Misshandel,5
+2025,07,Okänt delområde,Misshandel,4
 2025,07,Okänt delområde,Olaga hot,1
 2025,07,Okänt delområde,Olovlig körning,2
-2025,07,Okänt delområde,Rattfylleri,3
+2025,07,Okänt delområde,Rattfylleri,2
 2025,07,Okänt delområde,Räddningsinsats,1
 2025,07,Okänt delområde,Stöld,1
 2025,07,Okänt delområde,Trafikbrott,2
@@ -5095,7 +5115,7 @@ year,month,geography_group,type_original,event_count
 2025,08,Bälinge,Övrigt,1
 2025,08,Centrum,Brand,2
 2025,08,Centrum,Knivlagen,1
-2025,08,Centrum,Misshandel,3
+2025,08,Centrum,Misshandel,4
 2025,08,Centrum,Ofredande/förargelse,1
 2025,08,Centrum,Rån,1
 2025,08,Centrum,Trafikbrott,1
@@ -5107,7 +5127,7 @@ year,month,geography_group,type_original,event_count
 2025,08,Notviken,Stöld,1
 2025,08,Notviken,Trafikolycka,1
 2025,08,Okänt delområde,Fylleri/LOB,2
-2025,08,Okänt delområde,Misshandel,5
+2025,08,Okänt delområde,Misshandel,4
 2025,08,Okänt delområde,"Misshandel,  grov",1
 2025,08,Okänt delområde,Narkotikabrott,2
 2025,08,Okänt delområde,Ofredande/förargelse,1
@@ -5133,7 +5153,7 @@ year,month,geography_group,type_original,event_count
 2025,09,Centrum,Fylleri/LOB,5
 2025,09,Centrum,Häleri,1
 2025,09,Centrum,Knivlagen,2
-2025,09,Centrum,Misshandel,1
+2025,09,Centrum,Misshandel,2
 2025,09,Centrum,Skadegörelse,2
 2025,09,Centrum,Stöld,3
 2025,09,Centrum,Trafikbrott,1
@@ -5144,7 +5164,7 @@ year,month,geography_group,type_original,event_count
 2025,09,Okänt delområde,Arbetsplatsolycka,2
 2025,09,Okänt delområde,Bedrägeri,2
 2025,09,Okänt delområde,Fylleri/LOB,4
-2025,09,Okänt delområde,Misshandel,2
+2025,09,Okänt delområde,Misshandel,1
 2025,09,Okänt delområde,Narkotikabrott,3
 2025,09,Okänt delområde,Olaga hot,1
 2025,09,Okänt delområde,Olovlig körning,1
@@ -5170,7 +5190,7 @@ year,month,geography_group,type_original,event_count
 2025,10,Bergviken,Trafikolycka,1
 2025,10,Centrum,Bråk,1
 2025,10,Centrum,Fylleri/LOB,2
-2025,10,Centrum,Misshandel,2
+2025,10,Centrum,Misshandel,5
 2025,10,Centrum,Narkotikabrott,1
 2025,10,Centrum,Ofredande/förargelse,1
 2025,10,Centrum,Olovlig körning,1
@@ -5190,7 +5210,7 @@ year,month,geography_group,type_original,event_count
 2025,10,Okänt delområde,Fylleri/LOB,1
 2025,10,Okänt delområde,Försvunnen person,1
 2025,10,Okänt delområde,Inbrott,1
-2025,10,Okänt delområde,Misshandel,5
+2025,10,Okänt delområde,Misshandel,2
 2025,10,Okänt delområde,"Motorfordon,  anträffat stulet",1
 2025,10,Okänt delområde,Narkotikabrott,1
 2025,10,Okänt delområde,Olaga intrång/hemfridsbrott,1
@@ -5219,7 +5239,8 @@ year,month,geography_group,type_original,event_count
 2025,11,Bergnäset,Narkotikabrott,1
 2025,11,Bergnäset,Stöld/inbrott,1
 2025,11,Centrum,Fylleri/LOB,2
-2025,11,Centrum,Misshandel,3
+2025,11,Centrum,Inbrott,1
+2025,11,Centrum,Misshandel,4
 2025,11,Centrum,Narkotikabrott,1
 2025,11,Centrum,Olovlig körning,1
 2025,11,Centrum,Stöld,1
@@ -5234,9 +5255,8 @@ year,month,geography_group,type_original,event_count
 2025,11,Notviken,Misshandel,1
 2025,11,Okänt delområde,Bråk,1
 2025,11,Okänt delområde,Fylleri/LOB,3
-2025,11,Okänt delområde,Inbrott,1
 2025,11,Okänt delområde,Information,1
-2025,11,Okänt delområde,Misshandel,10
+2025,11,Okänt delområde,Misshandel,9
 2025,11,Okänt delområde,Narkotikabrott,3
 2025,11,Okänt delområde,Olaga hot,1
 2025,11,Okänt delområde,Rattfylleri,2
@@ -5261,6 +5281,7 @@ year,month,geography_group,type_original,event_count
 2025,12,Centrum,Fylleri/LOB,2
 2025,12,Centrum,Kontroll,1
 2025,12,Centrum,Rattfylleri,1
+2025,12,Centrum,Stöld,1
 2025,12,Centrum,Trafikkontroll,1
 2025,12,Centrum,Trafikolycka,1
 2025,12,Flera stadsdelar i Luleå,Trafikhinder,1
@@ -5278,7 +5299,7 @@ year,month,geography_group,type_original,event_count
 2025,12,Okänt delområde,Narkotikabrott,3
 2025,12,Okänt delområde,Olaga intrång/hemfridsbrott,1
 2025,12,Okänt delområde,Rattfylleri,3
-2025,12,Okänt delområde,Stöld,3
+2025,12,Okänt delområde,Stöld,2
 2025,12,Okänt delområde,Trafikkontroll,1
 2025,12,Okänt delområde,Trafikolycka,6
 2025,12,Okänt delområde,"Trafikolycka,  vilt",2
@@ -5297,9 +5318,10 @@ year,month,geography_group,type_original,event_count
 2026,01,Bergviken,Brand,1
 2026,01,Björkskatan,Fylleri/LOB,1
 2026,01,Björkskatan,Stöld,1
+2026,01,Centrum,Fylleri/LOB,1
 2026,01,Centrum,Misshandel,2
 2026,01,Centrum,Olaga intrång,1
-2026,01,Centrum,Stöld,1
+2026,01,Centrum,Stöld,2
 2026,01,Centrum,Trafikkontroll,1
 2026,01,Centrum,"Trafikolycka,  smitning från",1
 2026,01,Gammelstad,Stöld,1
@@ -5309,11 +5331,11 @@ year,month,geography_group,type_original,event_count
 2026,01,Okänt delområde,Arbetsplatsolycka,1
 2026,01,Okänt delområde,Bedrägeri,1
 2026,01,Okänt delområde,Brand,2
-2026,01,Okänt delområde,Fylleri/LOB,4
+2026,01,Okänt delområde,Fylleri/LOB,3
 2026,01,Okänt delområde,Misshandel,3
 2026,01,Okänt delområde,Narkotikabrott,3
 2026,01,Okänt delområde,Rattfylleri,5
-2026,01,Okänt delområde,Stöld,2
+2026,01,Okänt delområde,Stöld,1
 2026,01,Okänt delområde,Trafikkontroll,4
 2026,01,Okänt delområde,Trafikolycka,3
 2026,01,Okänt delområde,"Trafikolycka,  vilt",1
@@ -5439,10 +5461,13 @@ year,month,geography_group,type_original,event_count
 2026,05,Bergviken,Fylleri,1
 2026,05,Bergviken,Trafikbrott,1
 2026,05,Centrum,Fylleri,2
-2026,05,Centrum,Misshandel,3
+2026,05,Centrum,Misshandel,6
+2026,05,Centrum,Narkotikabrott,1
 2026,05,Centrum,Stöld,2
 2026,05,Centrum,Trafikkontroll,2
+2026,05,Centrum,Trafikolycka,1
 2026,05,Centrum,Vapenlagen,1
+2026,05,Centrum,Övrigt/oklassificerad,1
 2026,05,Flera stadsdelar i Luleå,Trafikolycka,1
 2026,05,Gammelstad,Inbrott,1
 2026,05,Lerbäcken,Arbetsplatsolycka,1
@@ -5453,8 +5478,8 @@ year,month,geography_group,type_original,event_count
 2026,05,Okänt delområde,Fylleri,1
 2026,05,Okänt delområde,Fylleri/LOB,1
 2026,05,Okänt delområde,Knivlagen,1
-2026,05,Okänt delområde,Misshandel,6
-2026,05,Okänt delområde,Narkotikabrott,6
+2026,05,Okänt delområde,Misshandel,3
+2026,05,Okänt delområde,Narkotikabrott,5
 2026,05,Okänt delområde,Ofredande/förargelse,1
 2026,05,Okänt delområde,Olovlig körning,1
 2026,05,Okänt delområde,Rattfylleri,4
@@ -5464,10 +5489,9 @@ year,month,geography_group,type_original,event_count
 2026,05,Okänt delområde,Stöld/inbrott,1
 2026,05,Okänt delområde,Trafikbrott,4
 2026,05,Okänt delområde,Trafikkontroll,4
-2026,05,Okänt delområde,Trafikolycka,5
+2026,05,Okänt delområde,Trafikolycka,4
 2026,05,Okänt delområde,"Trafikolycka,  vilt",3
 2026,05,Okänt delområde,"Trafikolycka, vilt",1
-2026,05,Okänt delområde,Övrigt/oklassificerad,1
 2026,05,Porsön,Inbrott,1
 2026,05,Porsön,Trafikolycka,1
 2026,05,Råneå,Rån,1
@@ -5516,6 +5540,7 @@ year,month,geography_group,type_original,event_count
 2026,06,Sörbyarna,Trafikolycka,3
 2026,07,Bergnäset,Arbetsplatsolycka,1
 2026,07,Centrum,Knivlagen,1
+2026,07,Centrum,Misshandel,1
 2026,07,Centrum,Narkotikabrott,1
 2026,07,Centrum,Trafikolycka,1
 2026,07,Flera stadsdelar i Luleå,Trafikolycka,1
@@ -5526,7 +5551,7 @@ year,month,geography_group,type_original,event_count
 2026,07,Okänt delområde,Fylleri/LOB,17
 2026,07,Okänt delområde,Inbrott,1
 2026,07,Okänt delområde,Knivlagen,3
-2026,07,Okänt delområde,Misshandel,4
+2026,07,Okänt delområde,Misshandel,3
 2026,07,Okänt delområde,Narkotikabrott,2
 2026,07,Okänt delområde,Ofredande/förargelse,1
 2026,07,Okänt delområde,Olovlig körning,1
@@ -5546,7 +5571,7 @@ year,month,geography_group,type_original,event_count
 2026,08,Brändön,Rattfylleri,1
 2026,08,Centrum,Brand,1
 2026,08,Centrum,Fylleri/LOB,1
-2026,08,Centrum,Misshandel,1
+2026,08,Centrum,Misshandel,3
 2026,08,Centrum,Narkotikabrott,1
 2026,08,Centrum,Ofredande/förargelse,1
 2026,08,Centrum,Rattfylleri,1
@@ -5557,7 +5582,7 @@ year,month,geography_group,type_original,event_count
 2026,08,Okänt delområde,Fylleri,1
 2026,08,Okänt delområde,Fylleri/LOB,7
 2026,08,Okänt delområde,Knivlagen,1
-2026,08,Okänt delområde,Misshandel,5
+2026,08,Okänt delområde,Misshandel,3
 2026,08,Okänt delområde,Ofredande/förargelse,1
 2026,08,Okänt delområde,Olaga intrång,1
 2026,08,Okänt delområde,Olovlig körning,1
@@ -5613,8 +5638,8 @@ year,month,geography_group,type_original,event_count
 2026,09,Örnäset,Olaga hot,1
 2026,10,Centrum,Fylleri,1
 2026,10,Centrum,Försvunnen person,1
-2026,10,Centrum,Misshandel,4
-2026,10,Centrum,Skadegörelse,1
+2026,10,Centrum,Misshandel,7
+2026,10,Centrum,Skadegörelse,2
 2026,10,Centrum,Stöld,3
 2026,10,Centrum,Trafikbrott,1
 2026,10,Centrum,Trafikkontroll,1
@@ -5622,10 +5647,10 @@ year,month,geography_group,type_original,event_count
 2026,10,Centrum,Våld/hot mot tjänsteman,1
 2026,10,Gammelstad,Stöld,1
 2026,10,Okänt delområde,Fylleri/LOB,3
-2026,10,Okänt delområde,Misshandel,4
+2026,10,Okänt delområde,Misshandel,1
 2026,10,Okänt delområde,Narkotikabrott,2
 2026,10,Okänt delområde,Olovlig körning,1
-2026,10,Okänt delområde,Skadegörelse,2
+2026,10,Okänt delområde,Skadegörelse,1
 2026,10,Okänt delområde,Trafikkontroll,2
 2026,10,Okänt delområde,Trafikolycka,2
 2026,10,Okänt delområde,"Trafikolycka,  smitning från",1
