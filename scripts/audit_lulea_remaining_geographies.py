@@ -98,11 +98,59 @@ def group3(series,kind,eid,location,narrative,rp,rt,ap,at):
         # No automatic assignment; excerpt is for source review only.
         context_rows.append(dict(series=series,event_id=eid,source=kind,group=group,role=context_role(sentence),roads=serialize(rs),areas=serialize(ars),new_names=serialize(ns),excerpt=sentence[:500]))
 
+
+# Co-occurrence is not a verified conflict. Preserve evidence separately from
+# geographic decisions, including already classified events.
+from build_lulea_districts import EXACT_LOCALITIES, NARRATIVE_DISTRICT_NAMES, CENTRUM_OBJECTS
+named_areas={name:{name} for name in NARRATIVE_DISTRICT_NAMES}
+named_areas["Centrum"]={x for x in CENTRUM_OBJECTS if x not in ("centrum","busstation","busstationen","jarnvagsstation","jarnvagsstationen")}
+for name in EXACT_LOCALITIES:named_areas[name]={name}
+# Use exact Unicode for actual place names; normalized variants only for
+# Centrum labels defined in the existing normalized vocabulary.
+def independent_areas(s):
+    raw=unicodedata.normalize("NFC",s or "").casefold()
+    result=set(new_names(s))
+    for name,names in named_areas.items():
+        hay=clean(s) if name=="Centrum" else raw
+        for alias in names:
+            needle=clean(alias) if name=="Centrum" else alias.casefold()
+            if re.search(r"(?<!\w)"+re.escape(needle)+r"(?!\w)",hay):
+                result.add(name)
+                break
+    return result
+def numbered(s):
+    return {x for x in roads(s) if re.fullmatch(r"(?:E\d+|Väg \d+)",x)}
+pair_events=[]
+pair_counts=Counter()
+def pair_audit(series,kind,eid,geo,location,narrative):
+    if kind=="ej uppdelad sammanfattning":return
+    rp,rt=numbered(location),numbered(narrative)
+    ap,at=independent_areas(location),independent_areas(narrative)
+    if not (rp|rt) or not (ap|at):return
+    # The pairs are review hypotheses, not all asserted event locations.
+    sentences=[" ".join(x.split()) for x in re.split(r"(?<=[.!?])\s+|\r?\n+",narrative) if x.strip()]
+    for road in sorted(rp|rt):
+        for area in sorted(ap|at):
+            same=[x for x in sentences if road in numbered(x) and area in independent_areas(x)]
+            if road in rp and area in ap: evidence="båda i eget platsfält"
+            elif same:evidence="samma mening"
+            elif road in rp or area in ap:evidence="platsfält och text"
+            else:evidence="separata textomnämnanden"
+            # Rutvik/97 is explicitly raised by the user, not a GIS-verified
+            # incompatibility; prioritize review rather than silently recode.
+            priority="särskild kontroll: Rutvik/väg 97" if (road,area)==("Väg 97","Rutvik") else "granska"
+            context=" | ".join(dict.fromkeys(same))[:600]
+            if not context:
+                context=" | ".join(dict.fromkeys(x for x in sentences if road in numbered(x) or area in independent_areas(x)))[:600]
+            pair_events.append(dict(series=series,source=kind,event_id=eid,current_area=geo,road=road,area=area,evidence=evidence,priority=priority,location=location,excerpt=context))
+            pair_counts[(series,road,area,evidence,geo!=UNKNOWN)]+=1
+
 rows=[]
 dispatch_review=[]
 baseline=Counter()
 def audit(series,kind,eid,r,geo,location,narrative):
     baseline[(series,"total")]+=1
+    if not yes(r.get("is_summary")):pair_audit(series,kind,eid,geo,location,narrative)
     if geo!=UNKNOWN:
         candidate=dict(r) if kind=="notis" else {"title_location":location,"description":narrative}
         evidence=district_dispatch_evidence(candidate) if kind!="ej uppdelad sammanfattning" else None
@@ -177,3 +225,15 @@ for series in ("original","expanded"):
 print("\n".join(report))
 
 export("dispatch_review.csv",dispatch_review,["series","event_id","source","area","excerpt"])
+
+export("road_area_pairs.csv",pair_events,["series","source","event_id","current_area","road","area","evidence","priority","location","excerpt"])
+export("road_area_pair_counts.csv",[dict(series=s,road=r,area=a,evidence=e,already_area_classified=k,count=n) for (s,r,a,e,k),n in sorted(pair_counts.items())],["series","road","area","evidence","already_area_classified","count"])
+summary=["# Väg och område – samexistensrevision","","Inga klassificeringar ändrade. Samförekomst är inte bevis för konflikt eller geografisk förenlighet. Endast vägnummer och självständiga områdesomnämnanden; inga gatunamnsinferenser. Osplittrade sammanfattningar undantas.",""]
+for series in ("original","expanded"):
+    subset=[x for x in pair_events if x["series"]==series]
+    unique={(x["source"],x["event_id"]) for x in subset}
+    known={(x["source"],x["event_id"]) for x in subset if x["current_area"]!=UNKNOWN}
+    combos=Counter((x["road"],x["area"]) for x in subset)
+    summary += [f"## {series}",f"- Unika kandidathändelser: {len(unique)}",f"- Redan områdesklassificerade: {len(known)}",f"- Okänt delområde: {len(unique-known)}",f"- Unika väg/områdespar: {len(combos)}",f"- Rutvik/väg 97: {combos[('Väg 97','Rutvik')]}", "", "Vanligaste kombinationer:", *[f"- {r} / {a}: {n}" for (r,a),n in combos.most_common(30)],""]
+(OUT/"road_area_summary.md").write_text("\n".join(summary),encoding="utf-8")
+print("\n".join(summary))
