@@ -257,3 +257,35 @@ for series in ("original","expanded"):
     seg += [f"## {series}",f"- Händelser före: {len(ids(kept+dropped))}; efter: {len(ids(kept))}",f"- Händelse/par-rader före: {len(kept)+len(dropped)}; efter: {len(kept)}",f"- E45/Råneå före: {sum(r['road']=='E45' and r['area']=='Råneå' for r in kept+dropped)}; efter: {sum(r['road']=='E45' and r['area']=='Råneå' for r in kept)}",*[f"- Uteslutna par: {reason}: {n}" for reason,n in Counter(r["reason"] for r in dropped).most_common()],""]
 (OUT/"road_area_segment_summary.md").write_text("\n".join(seg),encoding="utf-8")
 print("\n".join(seg))
+
+
+# User-reviewed shortlist, not an authoritative polygon intersection table.
+REVIEWED_PAIRS={("E4","Rutvik"),("E4","Persön"),("Väg 97","Sunderbyn"),("E4","Jämtön"),("E4","Strömsund"),("Väg 94","Klöverträsk"),("Väg 383","Smedsbyn"),("E4","Börjelslandet"),("Väg 596","Sinksundet"),("Väg 616","Bälinge")}
+def placement_review(row):
+    text=clean(row["location"]+" "+row["excerpt"])
+    area=clean(row["area"])
+    # Retain proximity and direction separately from an explicit location.
+    if re.search(r"\b(?:\d+(?:[.,]\d+)?\s*(?:km|mil|meter|m)\s+)?(?:norr|soder|oster|vaster)\s+om\s+(?:norra |sodra )?"+re.escape(area)+r"\b",text) or re.search(r"\b(?:mellan|mot|fran|strax fore|strax efter)\b[^.!?]{0,80}\b"+re.escape(area)+r"\b",text):
+        return "riktning eller avstand – ej områdestilldelning"
+    if re.search(r"\b(?:i hojd med|i trakten av|i narheten av|utanfor|vid)\s+(?:norra |sodra )?"+re.escape(area)+r"\b",text):
+        return "närhet – ej verifierad områdesgräns"
+    if re.search(r"\b(?:tidigare|senare|fordes|transporterades|avstangd|avstangning|omledning|avakningarna|flera olyckor)\b",text):
+        return "övrig kontext – manuell kontroll"
+    road=(r"e\s*"+row["road"][1:] if row["road"].startswith("E") else r"(?:riksvag|lansvag|vag(?:en)?|rv|lv)\s*(?:nr\.?\s*)?"+row["road"].split()[-1])
+    name=r"(?:norra |sodra )?"+re.escape(area)
+    direct=re.compile(r"(?<![a-z0-9])"+road+r"(?![0-9])\s*(?:,\s*|\s+)(?:i\s+)?"+name+r"(?![a-z])")
+    reverse=re.compile(r"(?<![a-z])"+name+r"(?![a-z])\s+(?:pa\s+)?"+road+r"(?![0-9])")
+    if direct.search(text) or reverse.search(text):
+        return "explicit väg–ort – granska händelseplats"
+    return "övrig kontext – manuell kontroll"
+placement=[]
+for row in pair_events:
+    if row["series"]!="expanded" or (row["road"],row["area"]) not in REVIEWED_PAIRS:continue
+    placement.append(dict(row,placement=placement_review(row)))
+export("road_area_placement_review.csv",placement,["series","source","event_id","current_area","road","area","evidence","priority","location","excerpt","placement"])
+report=["# Väg–ort: individuell platsbedömning","","Användarbedömd lista med tio väg–ortskopplingar. Automatisk språklig prioritering, inte bevis för stadsdelstillhörighet. Ingen ändring av klassificeringar.",""]
+for state in ("okänt","befintligt"):
+    subset=[r for r in placement if (r["current_area"]==UNKNOWN)==(state=="okänt")]
+    report += [f"## {state}: {len(subset)} händelser",*[f"- {k}: {n}" for k,n in Counter(r["placement"] for r in subset).most_common()],""]
+(OUT/"road_area_placement_summary.md").write_text("\n".join(report),encoding="utf-8")
+print("\n".join(report))
