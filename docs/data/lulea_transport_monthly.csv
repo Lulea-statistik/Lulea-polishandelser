@@ -2310,6 +2310,7 @@ year,month,geography_group,location_precision,road_reference,junction_reference,
 2026,11,Flera stadsdelar i Luleå,Områdesanknuten – ej punktverifierad,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Högre träffsäkerhet,2
 2026,11,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Godstransporter,Annan/oklar,Överlappande trafikslag – kontroll krävs,1
 2026,11,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Högre träffsäkerhet,2
+2026,11,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Kontextträff – kontroll krävs,1
 2026,11,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Annan/oklar,Överlappande trafikslag – kontroll krävs,1
 2026,11,Okänt delområde,Plats ej fastställd,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Trafikbrott,Högre träffsäkerhet,3
 2026,11,Porsön,Områdesanknuten – ej punktverifierad,Väg ej angiven,Trafikplats ej angiven,Hållplats ej angiven,Vägtrafik,Trafikbrott,Högre träffsäkerhet,1
