@@ -58,7 +58,7 @@ jobs:
               with Path("audit-output/before-after.txt").open("a",encoding="utf-8") as f:f.write(line+"\n")
           PY
       - run: python scripts/audit_lulea_remaining_geographies.py
-      - run: cat audit-output/summary.md audit-output/group3_summary.md audit-output/road_area_summary.md audit-output/road_area_segment_summary.md >> "$GITHUB_STEP_SUMMARY"
+      - run: cat audit-output/summary.md audit-output/group3_summary.md audit-output/road_area_summary.md audit-output/road_area_segment_summary.md audit-output/road_area_placement_summary.md >> "$GITHUB_STEP_SUMMARY"
       - uses: actions/upload-artifact@v4
         with:
           name: remaining-lulea-geography-audit
