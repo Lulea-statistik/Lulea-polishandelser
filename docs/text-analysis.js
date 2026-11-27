@@ -5,7 +5,7 @@ function opts(id,values,def){e(id).replaceChildren(...values.map(v=>new Option(v
 try{
 let res=await fetch('data/text_analysis.json?v=20261127-fix1',{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);let d=await res.json();for(const k of ['totals','pairs'])if(!Array.isArray(d[k]))throw Error('Datafält saknas: '+k);
 let unique=(a,i)=>[...new Set(a.map(r=>String(r[i])))].sort((a,b)=>a.localeCompare(b,'sv'));
-let years=unique(d.totals,1);opts('taGeo',unique(d.totals,0),'Luleå kommun');opts('taYear',['Alla',...years.slice().reverse()],'Alla');opts('taType',['Alla',...unique(d.totals,2)],'Alla');
+let years=unique(d.totals,1);opts('taGeo',['Alla',...unique(d.pairs,0)],'Luleå kommun');opts('taYear',['Alla',...years.slice().reverse()],'Alla');opts('taType',['Alla',...unique(d.totals,2)],'Alla');
 function renderOverview(match){
  const graph=e('overviewGraph'),picker=e('overviewTerm'),threshold=e('overviewMin');
  const pairs=new Map();
@@ -67,7 +67,7 @@ function renderOverview(match){
 
 function render(){
 let g=e('taGeo').value,y=e('taYear').value,t=e('taType').value;
-let match=(r,ignoreYear=false)=>r[0]===g&&(ignoreYear||y==='Alla'||String(r[1])===y)&&(t==='Alla'||r[2]===t);
+let match=(r,ignoreYear=false)=>(g==='Alla'||r[0]===g)&&(ignoreYear||y==='Alla'||String(r[1])===y)&&(t==='Alla'||r[2]===t);
 let denom=sum(d.totals.filter(r=>match(r)));e('taStatus').textContent='Urval: '+fmt.format(denom)+' originalnotiser med text. Data genererad '+d.generated+'. '+fmt.format(d.pairs.length)+' samförekomstrader i källdata.';
 try{renderOverview(match);}catch(err){e('overviewStatus').textContent='Nätverksöversikten kunde inte ritas: '+err.message;console.error(err);}
 
