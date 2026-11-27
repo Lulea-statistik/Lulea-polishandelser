@@ -1,6 +1,6 @@
 platsord,okanda_handelser_platsfalt,okanda_handelser_loptext,unika_okanda_handelser,vanligaste_handelsetyp,händelser_av_typen
-lansvag,0,101,101,"Trafikolycka,  vilt",35
-riksvag,0,55,55,Trafikolycka,12
+lansvag,0,88,88,"Trafikolycka,  vilt",31
+riksvag,0,52,52,Trafikolycka,12
 centrum,0,25,25,Stöld,5
 innerstaden,0,21,21,Sammanfattning natt,8
 bodenvagen,3,16,16,Trafikolycka,13
@@ -16,12 +16,12 @@ bjorkskataleden,2,11,11,Trafikolycka,4
 lulea bensbyvagen,11,0,11,Trafikolycka,6
 lulea storhedsvagen,11,0,11,Trafikkontroll,5
 med till polisstationen,0,11,11,Sammanfattning natt,4
-sunderbyn,0,11,11,Trafikkontroll,5
 brottsplatsen,0,10,10,Misshandel,3
 lulea gammelstadsvagen,10,0,10,Trafikolycka,7
 bensbyvagen,1,8,9,Trafikkontroll,5
 bensinstation,0,9,9,Olaga hot,2
 mariebergsvagen,2,9,9,Trafikkontroll,4
+sunderbyn,0,9,9,Trafikkontroll,4
 gammelstadsvagen,4,8,8,Trafikolycka,6
 haparandavagen,1,7,8,Trafikkontroll,3
 lulea bjorkskataleden,8,0,8,Trafikolycka,3
@@ -37,7 +37,6 @@ storsandsvagen,0,6,6,Trafikkontroll,4
 alvbrovagen,2,5,5,Trafikolycka,3
 bjorsbyvagen,1,5,5,Trafikkontroll,4
 efter hastighetsovertradelse riksvag,0,5,5,Trafikbrott,5
-efter trafikkontroll lansvag,0,5,5,Trafikkontroll,5
 ford till polisstationen,0,5,5,Fylleri/LOB,2
 fordes till polisstationen,0,5,5,Sammanfattning kväll,2
 gamla gaddviksbron,1,5,5,Trafikhinder,1
@@ -99,7 +98,6 @@ honom till polisstationen,0,2,2,Fylleri/LOB,1
 industrivagen industrivagen,0,2,2,Ofog barn/ungdom,1
 jarnvagsstationen,0,2,2,Fylleri/LOB,1
 klingsbovagen,0,2,2,Rattfylleri,1
-klovertrask riksvag,0,2,2,"Trafikolycka,  vilt",2
 korsningen bensbyvagen,0,2,2,Trafikbrott,1
 langs gamla lovskarsgatan,0,2,2,"Inbrott,  försök",2
 lulea alviksvagen,2,0,2,Trafikkontroll,1
@@ -141,7 +139,6 @@ vid gamla gaddviksbron,0,2,2,"Trafikolycka,  singel",1
 adressen vastra brogatan,0,1,1,Bråk,1
 aker fran bensinstationen,0,1,1,Stöld,1
 aker till flygplatsen,0,1,1,Övrigt,1
-alg riksvag,0,1,1,"Trafikolycka,  vilt",1
 anlant till professorsvagen,0,1,1,Vapenlagen,1
 anslutning till brottsplatsen,0,1,1,Mord/dråp,1
 anslutning till flygplatsen,0,1,1,Olaga hot,1
@@ -150,7 +147,6 @@ arbetsplatsen,0,1,1,Arbetsplatsolycka,1
 assistentvagen,0,1,1,Trafikbrott,1
 atervandsgrand,0,1,1,Olovlig körning,1
 att dokumentera olycksplatsen,0,1,1,"Trafikolycka,  vilt",1
-att passera olycksplatsen,0,1,1,Trafikolycka,1
 avlossats vid tunastigen,0,1,1,"Mord/dråp,  försök",1
 avvek fran olycksplatsen,0,1,1,"Trafikolycka,  personskada",1
 backgatan,0,1,1,Trafikkontroll,1
@@ -196,7 +192,7 @@ dokumenterar ocksa olycksplatsen,0,1,1,Rattfylleri,1
 domarvagen,0,1,1,Rattfylleri,1
 dvarggrand,0,1,1,Skadegörelse,1
 edeforsgatan,0,1,1,Trafikkontroll,1
-enkelfiligt vid olycksplatsen,0,1,1,Trafikolycka,1
+efter trafikkontroll lansvag,0,1,1,Trafikkontroll,1
 ett flygplan,0,1,1,Övrigt,1
 ett radjur lansvag,0,1,1,"Trafikolycka,  vilt",1
 fallgatan,1,0,1,"Trafikolycka,  smitning från",1
@@ -223,7 +219,6 @@ for vajningsplikt gammelstadsvagen,0,1,1,Trafikolycka,1
 forare tranbacksvagen,0,1,1,Bråk,1
 foraren lamna olycksplatsen,0,1,1,Trafikolycka,1
 foras till polisstationen,0,1,1,Fylleri/LOB,1
-forbi olycksplatsen,0,1,1,Trafikolycka,1
 fordon inblandade riksvag,0,1,1,Trafikolycka,1
 foretagslokaler langs bjorsbyvagen,0,1,1,Stöld/inbrott,1
 forrad angesbyvagen,0,1,1,Stöld/inbrott,1
@@ -292,6 +287,7 @@ kammenvagen,1,0,1,Trafikkontroll,1
 kapellgrand,0,1,1,Misshandel,1
 karlsviksvagen,0,1,1,Trafikolycka,1
 klintvagen,1,1,1,Trafikolycka,1
+klovertrask riksvag,0,1,1,"Trafikolycka,  vilt",1
 knoppelasvagen,0,1,1,Trafikkontroll,1
 kolliderat vid gaddviksbron,0,1,1,Trafikolycka,1
 kompanivagen,0,1,1,Trafikkontroll,1
@@ -471,7 +467,6 @@ ostra malmgatan,0,1,1,Skadegörelse,1
 paddelvagen,0,1,1,Rattfylleri,1
 parkeringen vid bathamnen,0,1,1,"Trafikolycka,  personskada",1
 patraffad efter lansvag,0,1,1,"Motorfordon,  anträffat stulet",1
-patrullen dokumenterar olycksplatsen,0,1,1,Trafikolycka,1
 perrongen vid jarnvagsstationen,0,1,1,Fylleri/LOB,1
 personbil forskarvagen,0,1,1,"Motorfordon,  stöld",1
 personbil vid rutviksvagen,0,1,1,Brand,1
