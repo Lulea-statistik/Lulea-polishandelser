@@ -8,6 +8,7 @@ on:
       - scripts/test_lulea_exact_localities.py
       - scripts/test_lulea_centrum_rescue.py
       - scripts/test_lulea_centrum_dispatch.py
+      - scripts/test_lulea_district_dispatch.py
       - .github/workflows/audit-lulea-remaining-geographies.yml
 permissions:
   contents: read
@@ -23,6 +24,7 @@ jobs:
       - run: python scripts/test_lulea_exact_localities.py
       - run: python scripts/test_lulea_centrum_rescue.py
       - run: python scripts/test_lulea_centrum_dispatch.py
+      - run: python scripts/test_lulea_district_dispatch.py
       - name: Save baseline and rebuild locally
         run: |
           mkdir -p audit-output/before
@@ -45,9 +47,9 @@ jobs:
               assert sum(old.values())==sum(new.values()), "Total changed"
               delta=old["Okänt delområde"]-new["Okänt delområde"]
               assert delta>=0
-              assert all(new[k]==v for k,v in old.items() if k not in ("Okänt delområde","Centrum")), "Existing area changed"
-              assert new["Centrum"]-old["Centrum"]==delta, "Unexpected redistribution"
-              assert all(k in old or k=="Centrum" for k in new), "Unexpected new geography"
+              assert all(new[k]>=v for k,v in old.items() if k!="Okänt delområde"), "Existing area decreased"
+              assert sum(v for k,v in (new-old).items() if k!="Okänt delområde")==delta, "Unexpected redistribution"
+              assert new["Centrum"]==old["Centrum"], "Centrum changed"
               line=f"{before.name}: unknown {old['Okänt delområde']} -> {new['Okänt delområde']}; improvement {delta}; total {sum(new.values())}; new areas {dict(new-old)}"
               print(line)
               with Path("audit-output/before-after.txt").open("a",encoding="utf-8") as f:f.write(line+"\n")
