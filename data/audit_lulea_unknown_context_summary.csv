@@ -1,7 +1,7 @@
 clue_type,matched_text,source_field,occurrences,recommendation
-ort_eller_by,person,content,403,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-ort_eller_by,person,description,117,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
-ort_eller_by,person,headline,115,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,content,382,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,description,109,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
+ort_eller_by,person,headline,107,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,rutvik,location_string,71,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,rutvik,headline,60,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad
 ort_eller_by,rutvik,description,60,Granska platsrelation och extern adresskalla; ej automatiskt klassificerad

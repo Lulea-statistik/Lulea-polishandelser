@@ -110,16 +110,12 @@ Enligt de första uppgifterna s"
 Polisen Norrbotten"
 5923,2016,content,platsbeskrivning,trafikplats,"En bil har kört i diket strax söder om trafikplats Persön. Det ska enligt uppgift vara väldigt långa trafikköer på platsen.
 Polisen Norrbotten"
-6113,2016,content,ort_eller_by,person,"En person är gripen misstänkt för stöld/häleri. Personen greps efter att polisen kontrollerat ett misstänkt fordon. Det är oklart vad som stulits. 
-Polisen Norrbotten"
 6150,2016,location_string,ort_eller_by,rutvik,"Rutvik, Skedet, Luleå, Norrbottens län"
 6150,2016,headline,ort_eller_by,rutvik,"Rutvik, i höjd med skolan, påverkad man som stoppar bilar"
 6150,2016,description,ort_eller_by,rutvik,"Rutvik, i höjd med skolan, påverkad man som stoppar bilar"
 6305,2016,headline,ort_eller_by,avan,"Avan, bil har kört av vägen"
 6305,2016,description,ort_eller_by,avan,"Avan, bil har kört av vägen"
 6363,2016,content,ort_eller_by,person,"Okänd person har tagit sig in på ett inhägnat området och tillgripit gods från företaget. /
-Polisen Norrbotten"
-6808,2016,content,ort_eller_by,person,"En person har omhändertagits enligt lagen om omhändertagande av berusade personer. Personen ska ha uppträtt berusad och varit otrevlig mot kunder i en butik.
 Polisen Norrbotten"
 7180,2016,headline,ort_eller_by,smedsbyn,Skoter som tillgripits ur garage i Smedsbyn under natten.
 7180,2016,description,ort_eller_by,smedsbyn,Skoter som tillgripits ur garage i Smedsbyn under natten.
@@ -552,8 +548,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 <p>En person förd till sjukhus, frågor om h"
 70072,2018,headline,adressfragment,forskarvagen 198,"Forskarvägen 198, stöld av personbil"
 70072,2018,description,adressfragment,forskarvagen 198,"Forskarvägen 198, stöld av personbil"
-73502,2018,headline,ort_eller_by,person,Person omhändertagen med stöd av LOB.
-73502,2018,description,ort_eller_by,person,Person omhändertagen med stöd av LOB.
 74228,2018,content,ort_eller_by,person,"<p>Strax före kl 05 på morgonen fick polisen kännedom om att ett brott begåtts mot en person.</p>
 <p>I nuläget finns en del oklarheter kring vad som hänt. Förhör kommer att hållas under dagen.</p>
 <p>Ett område utomhus, "
@@ -841,7 +835,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 120123,2019,location_string,ort_eller_by,bjorsbyn,"Björsbyvägen, Björsbyn, Luleå, Norrbottens län"
 120123,2019,headline,ort_eller_by,bjorsbyn,"Trafikkontroll på Björsbyvägen, Björsbyn."
 120123,2019,description,ort_eller_by,bjorsbyn,"Trafikkontroll på Björsbyvägen, Björsbyn."
-120572,2019,content,ort_eller_by,person,"<p>Väktare envarsgriper en person som misstänks för en ringa stöld i centrala Luleå. Polisen åker dit, en anmälan om ringa stöld upprättas och personen omhändertas enligt LOB, lagen om omhändertagande av berusade persone"
 121062,2019,content,ort_eller_by,person,<p>En person har bötfällts för att ha pratat i mobiltelefon under färd i fordon. Mobil och annan kommunikatoinsutrustning i motordrivna fordon får bara användas om det inte påverkar körningen på ett trafikfarligt sätt. F
 121386,2019,content,ort_eller_by,person,"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p>Hä"
@@ -943,7 +936,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 140139,2019,content,ort_eller_by,person,"<p>Enligt initiala uppgifter har en personbil kört in i mitträcket i norrgående körfält. Det är oklart hur många personer som är inblandade i olyckan. Det finns uppgifter om att en person klagar på nacksmärtor.</p>
 <p>Ol"
 140349,2019,content,ort_eller_by,person,<p>Polisen har omhändertagit en person enligt lagen om omhändertagande av berusade personer. Personen förd till polisstationen för att sova ruset av sig. Det finns ingen misstanke om brott.</p>
-141220,2019,content,ort_eller_by,person,"<p>En patrull beordras till en butik i centrala Luleå. En person, en man i 60-65-årsåldern, misstänks ha stulit där. Efter förhör upprättas en anmälan om stöld.</p>"
 141481,2019,headline,ort_eller_by,person,Berusad person i centrala Luleå omhändertas.
 141481,2019,description,ort_eller_by,person,Berusad person i centrala Luleå omhändertas.
 141481,2019,content,ort_eller_by,person,<p>Polisen har omhändertagit en person enligt lagen om omhändertagande av berusade personer. Personen förd till polisstationen för att sova ruset av sig.</p>
@@ -1119,7 +1111,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 166808,2020,description,ort_eller_by,smedsbyn,"Trafikolycka i Smedsbyn, Luleå."
 166808,2020,content,ort_eller_by,smedsbyn,"<p>Tidigare i morse larmades polisen om en singelolycka i Smedsbyn, Luleå. En personbil med släp har kört in i en skylt. Lasten hamnade i diket. </p>
 <p>Polisen har varit på plats. I samtal med föraren framkom uppgifter "
-167131,2020,content,ort_eller_by,person,"<p>Polis kallas till Innerstaden med anledning av en person som uppträder påverkad. Personen, en man i 30-årsåldern, tas med för provtagning. En anmälan gällande ringa narkotikabrott, eget bruk upprättas.</p>"
 168348,2020,location_string,ort_eller_by,brandon,"Brändön, Luleå, Arnemark, Norrbottens län"
 168348,2020,content,ort_eller_by,brandon,"<p>Det har varit en natt med normal arbetsbelastning. Två personer har omhändertagits för fylleri. Polisen har även utfört ett flertal kontroller av personer och fordon som inte resulterat i någon brottsmisstanke.</p>
 <p"
@@ -1234,10 +1225,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 185463,2021,description,ort_eller_by,prastholm,"Personbil kolliderar med rådjur på länsväg 687, Prästholm."
 185463,2021,content,ort_eller_by,person,"<p>Ingen person skadades vid olyckan.</p>
 <p>Det är oklart hur det gick för rådjuret och en eftersöksjägare kallas ut.</p>"
-185483,2021,content,ort_eller_by,person,"<p>En person har själv tagit sig ut ur lägenheten.</p>
-<p>Räddningstjänst släcker en brand på en spis.</p>
-<p>Patrullen håller förhör och dokumenterar platsen.</p>
-<p>En anmälan gällande ringa allmänfarlig vårdslöshet up"
 185531,2021,content,platsbeskrivning,bron,"<p>Olyckan ska ha inträffat i norrgående körfält, söder om bron.</p>
 <p>Oklart om någon skadats i olyckan.</p>
 <p>Olyckan påverkar trafiken på sträckan. Bilen måste bärgas från platsen.</p>
@@ -1322,8 +1309,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 197539,2021,content,ort_eller_by,person,"<p>Enligt initiala uppgifter har en personbil voltat och en person ska vara ute ur bilen.</p>
 <p>Framkomligheten påverkas av olyckan. Se Trafikverkets hemsida för mer information gällande trafikläget.</p>
 <p>Polis kallas"
-197606,2021,content,ort_eller_by,person,"<p>Polispatrull beordras till butiken där personal stoppat en minderårig person som misstänks ha stulit.</p>
-<p>En anmälan gällande ringa stöld upprättas och personen överlämnas till vårdnadshavare.</p>"
 197906,2021,location_string,ort_eller_by,person,"Persön, Luleå, Norrbottens län"
 197906,2021,headline,ort_eller_by,person,Polispatrull beordras till Persön med anledning av en trafikolycka på E4.
 197906,2021,description,ort_eller_by,person,Polispatrull beordras till Persön med anledning av en trafikolycka på E4.
@@ -1388,10 +1373,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 205689,2021,description,ort_eller_by,person,Trafikolycka på E4 vid Persön.
 205906,2021,content,ort_eller_by,person,"<p>Det har varit en natt med normal arbetsbelastning. Polisen har hanterat flera ärenden kopplat till fester på olika platser, berusningsgraden har i många fall varit hög och många unga samt minderåriga har befunnit sig "
 205906,2021,content,platsbeskrivning,parkeringen,"<p>Det har varit en natt med normal arbetsbelastning. Polisen har hanterat flera ärenden kopplat till fester på olika platser, berusningsgraden har i många fall varit hög och många unga samt minderåriga har befunnit sig "
-206927,2021,content,ort_eller_by,person,"<p>Polis beordras till Innerstaden efter samtal från flera inringare. En man ska ha tillfogats skador med ett tillhygge av en annan man.</p>
-<p>Den skadade mannen förs med ambulans till sjukhus. I nuläget är ingen person"
-206927,2021,content,ort_eller_by,person,"<p>Polis beordras till Innerstaden efter samtal från flera inringare. En man ska ha tillfogats skador med ett tillhygge av en annan man.</p>
-<p>Den skadade mannen förs med ambulans till sjukhus. I nuläget är ingen person"
 207121,2021,content,ort_eller_by,person,<p>På måndagsförmiddagen beordrades polisen till en arbetsplats i Luleå med anledning av en arbetsplatsolycka. En person ska enligt initiala uppgifter ha skurit sig i samband med arbete. Personen fördes med ambulans till
 207464,2021,location_string,ort_eller_by,lulsundet,"Bensbyvägen, Lulsundet, Luleå, Norrbottens län"
 207464,2021,headline,ort_eller_by,lulsundet,"Polispatrull beordras till en rondell vid Bensbyvägen/Kronanvägn, Lulsundet, med anledning av en trafikolycka."
@@ -1505,8 +1486,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 <p>En person klagar på nacksmärta. Ambulans finns på plats.</p>
 <p><strong>Uppdatering 16:22:</strong></p>
 <p>En "
-223432,2022,headline,ort_eller_by,person,Polispatruller beordras till Innerstaden med anledning av en misstänkt misshandel av en person.
-223432,2022,description,ort_eller_by,person,Polispatruller beordras till Innerstaden med anledning av en misstänkt misshandel av en person.
 223669,2022,location_string,ort_eller_by,rutvik,"Rutvik, Persön, Luleå, Norrbottens län"
 223669,2022,location_string,ort_eller_by,person,"Rutvik, Persön, Luleå, Norrbottens län"
 223669,2022,headline,ort_eller_by,rutvik,Singelolycka på E4 mellan Rutvik och Persön.
@@ -1589,8 +1568,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 232128,2022,content,ort_eller_by,person,"<p>Det har varit en natt med normal arbetsbelastning. En person har omhändertagits för fylleri.</p>
 <p>Polisen har även utfört kontroller av personer och fordon vilka inte resulterat i någon brottsmisstanke.</p>
 <p>Här f"
-233237,2022,headline,ort_eller_by,person,"Luleå, person omhändertagen."
-233237,2022,description,ort_eller_by,person,"Luleå, person omhändertagen."
 233394,2022,content,ort_eller_by,person,<p>Under kvällen den 2022-04-28 kontaktades Polisen av rektorn på Tunaskolan i Luleå efter att en elev hotat att spränga skolan vid en angiven tidpunkt. Utredningspersonal vid Polisen har hållit förhör med personer som k
 233394,2022,content,ort_eller_by,person,<p>Under kvällen den 2022-04-28 kontaktades Polisen av rektorn på Tunaskolan i Luleå efter att en elev hotat att spränga skolan vid en angiven tidpunkt. Utredningspersonal vid Polisen har hållit förhör med personer som k
 233680,2022,content,ort_eller_by,person,"<p>En person har omhändertagits för fylleri.  </p>
@@ -1609,9 +1586,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 235073,2022,content,ort_eller_by,person,"<p>Polisen larmas om en brand i produktionslokaler tillhörande ett företag på Svartön, Luleå.</p>
 <p>Det finns i nuläget inga uppgifter om eventuella personskador.</p>
 <p>Polisen är på plats för att biträda räddningstjän"
-235528,2022,content,ort_eller_by,person,"<p>Polispatrull beordras till butiken där en person som misstänks ha stulit har stoppats.</p>
-<p>Då personen är minderårig kontaktas vårdnadshavare.</p>
-<p>Förhör hålls och en anmälan gällande ringa stöld upprättas.</p>"
 235902,2022,location_string,ort_eller_by,niemisel,"Niemisel, Luleå, Norrbottens län"
 235902,2022,headline,ort_eller_by,niemisel,"Polisen får in en anmälan om att en personbil kolliderat med en ren på länsväg 761, Niemisel."
 235902,2022,description,ort_eller_by,niemisel,"Polisen får in en anmälan om att en personbil kolliderat med en ren på länsväg 761, Niemisel."
@@ -1688,8 +1662,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 <p>03:"
 242567,2022,headline,ort_eller_by,person,"Luleå, person anmäld försvunnen."
 242567,2022,description,ort_eller_by,person,"Luleå, person anmäld försvunnen."
-243434,2022,content,ort_eller_by,person,"<p>Polispatrull beordras till Innerstaden med anledning av bråk mellan personer som är bekanta med varandra.</p>
-<p>När patrullen kommer till platsen är det lugnt. En man i 40-årsåldern grips, misstänkt för misshandel. H"
 243967,2022,headline,platsbeskrivning,trafikplats,Polisen får in en anmälan om en viltolycka på länsväg 968 vid trafikplats Gäddvik Södra.
 243967,2022,description,platsbeskrivning,trafikplats,Polisen får in en anmälan om en viltolycka på länsväg 968 vid trafikplats Gäddvik Södra.
 244073,2022,content,ort_eller_by,person,"<p>Under förmiddagen anträffades en avliden man utomhus norr om Nordmaling. Det rör sig sannolikt om en man i 60-årsåldern, hemmahörande i Luleå, som varit anmäld försvunnen sedan augusti.</p>
@@ -1758,9 +1730,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 251885,2022,location_string,ort_eller_by,lulsundet,"Lulsundet, Luleå, Norrbottens län"
 251885,2022,headline,ort_eller_by,lulsundet,"Lulsundet, två bilister har kolliderat"
 251885,2022,description,ort_eller_by,lulsundet,"Lulsundet, två bilister har kolliderat"
-252039,2022,content,ort_eller_by,person,"<p>Polispatrull beordras till butiken där en minderårig person som misstänks ha stulit har stoppats.</p>
-<p>En anmälan gällande ringa stöld upprättas.</p>
-<p>Vårdnadshavare kontaktas.</p>"
 252264,2022,location_string,ort_eller_by,stromsund,"Strömsund, Luleå, Norrbottens län"
 252264,2022,headline,ort_eller_by,stromsund,"Strömsund, singelolycka med lastbil"
 252264,2022,description,ort_eller_by,stromsund,"Strömsund, singelolycka med lastbil"
@@ -1856,7 +1825,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 <p>Olyckan uppges påverka trafiken. </p>
 <p><strong>Uppdatering 10:47:</strong></p>
 <p>Ingen person uppg"
-262094,2023,content,ort_eller_by,person,<p>Polis kallas till centrala Luleå där en minderårig person gripits misstänkt för ringa stöld i en butik i centrala Luleå. En polisanmälan har upprättats och likaså en anmälan till socialtjänsten. Personens vårdnadshava
 262179,2023,content,ort_eller_by,person,"<p>Polis beordras till en adress i Luleå med anledning av misshandel.</p>
 <p>Två personer förs till sjukvård med ambulans. Eventuella frågor om skadeläget hänvisas till sjukvården.</p>
 <p>Ingen person är frihetsberövad i"
@@ -1876,9 +1844,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 264365,2023,content,ort_eller_by,avan,"<p>Olyckan har inträffat på länsväg 691 mellan Jämtö-Avan och Tjärdalarna.</p>
 <p>Inga personskador rapporteras.</p>
 <p>Det är oklart hur det gick för renen. Berörd sameby underrättas om olyckan.</p>"
-265131,2023,headline,ort_eller_by,person,"Luleå, person omhändertagen."
-265131,2023,description,ort_eller_by,person,"Luleå, person omhändertagen."
-265131,2023,content,ort_eller_by,person,<p>Polis beordras till Innerstaden med anledning av en påverkad person som är utåtagerande. Personen anträffas och omhändertas med stöd av lagen om omhändertagande av berusade personer (LOB).</p>
 265298,2023,location_string,ort_eller_by,borjelslandet,"Börjelslandet, Luleå, Norrbottens län"
 265298,2023,headline,ort_eller_by,borjelslandet,"Polispatrull på E4, Börjelslandet, uppmärksammar en personbil som kört in i mitträcket."
 265298,2023,description,ort_eller_by,borjelslandet,"Polispatrull på E4, Börjelslandet, uppmärksammar en personbil som kört in i mitträcket."
@@ -1888,10 +1853,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 <p>Föraren kontrolleras och är nykter.</p>
 <p>Bilen är bärgad.</p>
 <p>Det finns inga "
-266436,2023,headline,ort_eller_by,person,"Luleå, person omhändertagen."
-266436,2023,description,ort_eller_by,person,"Luleå, person omhändertagen."
-266436,2023,content,ort_eller_by,person,"<p>Polis beordras till busstationen i Luleå med anledning av uppgifter om högljudd person som ska kontrolleras.</p>
-<p>Personen anträffas och omhändertas med stöd av lagen om omhändertagande av berusade personer (LOB).</"
 266555,2023,location_string,ort_eller_by,jamton,"Jämtön, Luleå, Norrbottens län"
 266555,2023,headline,ort_eller_by,jamton,Larm om trafikolycka på E4 i höjd med Jämtön.
 266555,2023,description,ort_eller_by,jamton,Larm om trafikolycka på E4 i höjd med Jämtön.
@@ -1913,9 +1874,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 270687,2023,headline,ort_eller_by,person,Eftersök av försvunnen person avbrutet.
 270687,2023,description,ort_eller_by,person,Eftersök av försvunnen person avbrutet.
 270687,2023,content,ort_eller_by,person,<p>Polisen har haft en kortare sökinsats efter en försvunnen person i Luleå under förmiddagen. Personen är nu återfunnen och vid god vigör. Det finns ingen misstanke om brott kopplat till sökinsatsen.</p>
-271697,2023,content,ort_eller_by,person,"<p>Polispatrull beordras till butiken där en minderårig person som misstänks ha stulit har stoppats.</p>
-<p>Vårdnadshavare kontaktas.</p>
-<p>En anmälan gällande ringa stöld upprättas.</p>"
 271796,2023,location_string,ort_eller_by,vita,"Vitå, Luleå, Norrbottens län"
 271796,2023,content,ort_eller_by,vita,"<p>Olyckan har inträffat i Vitå.</p>
 <p>Inga personskador rapporteras.</p>
@@ -1938,8 +1896,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 275667,2023,location_string,ort_eller_by,orarna,"Örarna, Luleå, Norrbottens län"
 275667,2023,headline,ort_eller_by,orarna,"Örarna, en lastbil har vält"
 275667,2023,description,ort_eller_by,orarna,"Örarna, en lastbil har vält"
-275692,2023,content,ort_eller_by,person,"<p>Polispatrull beordras till butiken där en minderårig person som misstänks ha stulit har stoppats. </p>
-<p>Vittnesförhör hålls och en anmälan gällande ringa stöld upprättas.</p>"
 275893,2023,location_string,ort_eller_by,bensbyn,"Bensbyn, Luleå, Norrbottens län"
 275893,2023,headline,ort_eller_by,bensbyn,"Likskärsvägen, Bensbyn, Luleå. Under kort tid har två personer gått genom isen"
 275893,2023,description,ort_eller_by,bensbyn,"Likskärsvägen, Bensbyn, Luleå. Under kort tid har två personer gått genom isen"
@@ -2060,8 +2016,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 <p>En avliden person har anträffats.</p>
 <p>Identiteten är okänd och polisen ska arbeta för att ta reda på vem det är.</p>
 <p>I nuläget finns inte mer inform"
-295829,2024,content,ort_eller_by,person,"<p>Polis åker till Innerstaden i Luleå med anledning av att en person misstänks ha tagit något en butik.</p>
-<p>En anmälan gällande ringa stöld ska upprättas.</p>"
 296833,2024,location_string,ort_eller_by,avan,"Klöverträsk, Avan, Luleå, Norrbottens län"
 296833,2024,headline,ort_eller_by,avan,Trafikolycka mellan Klöverträsk och Avan
 296833,2024,description,ort_eller_by,avan,Trafikolycka mellan Klöverträsk och Avan
@@ -2083,9 +2037,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 299614,2024,description,ort_eller_by,person,"Svartöstaden, under lördagsmorgonen larmas polisen om att en person ska befinna sig i vattnet"
 299614,2024,content,ort_eller_by,person,"<p>Polis och ambulans åker till platsen. Man påträffar en avliden person, en ung man. Han identifieras och hans anhöriga är underrättade.</p>
 <p>Polisen ska utreda dödsfallet. I nuläget misstänks inget brott i samband me"
-299791,2024,headline,ort_eller_by,person,"Luleå, person omhändertagen."
-299791,2024,description,ort_eller_by,person,"Luleå, person omhändertagen."
-299791,2024,content,ort_eller_by,person,"<p>Polis åker till busstationen i Luleå där en väktare står med en berusad person, som enligt initiala uppgifter beter sig stökigt. Polisen omhändertar personen med stöd av lagen om omhändertagande av berusade personer ("
 299989,2024,location_string,ort_eller_by,orarna,"Örarna, Luleå, Norrbottens län"
 299989,2024,headline,ort_eller_by,orarna,Trafikolycka på länsväg 596/länsväg 599 Örarna i Luleå.
 299989,2024,description,ort_eller_by,orarna,Trafikolycka på länsväg 596/länsväg 599 Örarna i Luleå.
@@ -2100,8 +2051,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 301928,2024,content,ort_eller_by,stromsund,"<p>Mellan klockan 16:19 och klockan 16:33 har fyra viltolyckor anmälts till polisen. Det finns inga uppgifter om personskador vid någon av olyckorna.</p>
 <p>Olyckorna har inträffat på länsväg 922 vid Renviken, Arvidsjaur"
 302297,2024,content,ort_eller_by,person,<p>Under förmiddagen beordrades polisen till en adress i Luleå med anledning av ett bråk inomhus i ett flerfamiljshus. Två personer ska ha varit inblandade. Polisen tar upp en anmälan om ofredande och en person omhändert
-302723,2024,headline,ort_eller_by,person,"Luleå, en person omhändertagen."
-302723,2024,description,ort_eller_by,person,"Luleå, en person omhändertagen."
 304404,2024,content,ort_eller_by,person,"<p>En personbil med en person uppges ha körts in i vajerräcket. Olyckan har skett i norrgående körfält.</p>
 <p>Polispatrull beordras till platsen.</p>
 <p><strong>Uppdatering 07.58:</strong></p>
@@ -2144,10 +2093,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 311117,2025,location_string,ort_eller_by,bensbyn,"Bensbyn, Luleå, Norrbottens län"
 311117,2025,headline,ort_eller_by,bensbyn,"Länsväg 596, Bensbyn. En personbil har voltat."
 311117,2025,description,ort_eller_by,bensbyn,"Länsväg 596, Bensbyn. En personbil har voltat."
-311278,2025,headline,ort_eller_by,person,"Luleå, person omhändertagen."
-311278,2025,description,ort_eller_by,person,"Luleå, person omhändertagen."
-311278,2025,content,ort_eller_by,person,"<p>Polis åker till Innerstaden i Luleå på grund av uppgifter om en berusad person.</p>
-<p>Personen anträffas och och omhändertas med stöd av lagen om omhändertagande av berusade personer (LOB).</p>"
 311621,2025,headline,ort_eller_by,person,"Luleå, person omhändertagen."
 311621,2025,description,ort_eller_by,person,"Luleå, person omhändertagen."
 311621,2025,content,ort_eller_by,person,"<p>Polis åker till en matbutik i Luleå på grund av en utåtagerande person. </p>
@@ -2276,8 +2221,6 @@ Väktare grep en man för ringa stöld. Rubriceringen blir ringa stöld då vär
 437971,2025,headline,platsbeskrivning,trafikplats,"Trafikolyckor på E4 trafikplats Jämtön, Luleå."
 437971,2025,description,ort_eller_by,jamton,"Trafikolyckor på E4 trafikplats Jämtön, Luleå."
 437971,2025,description,platsbeskrivning,trafikplats,"Trafikolyckor på E4 trafikplats Jämtön, Luleå."
-438216,2025,content,ort_eller_by,person,"<p>Polis åker till Innerstaden i Luleå med anledning av uppgifter om att en person misstänks ha stulit på en butik.</p>
-<p>Personen omhändertas med stöd av lagen om omhändertagande av berusade personer (LOB). En anmälan "
 443172,2025,headline,ort_eller_by,person,"Försvunnen person, Luleå"
 443172,2025,description,ort_eller_by,person,"Försvunnen person, Luleå"
 443172,2025,content,ort_eller_by,person,"<p>Polisen söker efter en försvunnen person som senast sågs i centrala Luleå vid 20:00-21:00-tiden.</p>

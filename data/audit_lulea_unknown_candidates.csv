@@ -1,8 +1,8 @@
 platsord,okanda_handelser_platsfalt,okanda_handelser_loptext,unika_okanda_handelser,vanligaste_handelsetyp,händelser_av_typen
 lansvag,0,101,101,"Trafikolycka,  vilt",35
-innerstaden,0,75,75,Stöld,29
 riksvag,0,55,55,Trafikolycka,12
-centrum,0,34,34,Stöld,8
+centrum,0,25,25,Stöld,5
+innerstaden,0,21,21,Sammanfattning natt,8
 bodenvagen,3,16,16,Trafikolycka,13
 lulea mjolkuddsvagen,16,0,16,Trafikkontroll,5
 mjolkuddsvagen,1,16,16,Trafikkontroll,6
@@ -10,7 +10,6 @@ lulea kallaxvagen,15,0,15,Trafikkontroll,7
 kallaxvagen,1,13,14,Trafikkontroll,6
 storhedsvagen,2,14,14,Trafikkontroll,6
 olycksplatsen,0,13,13,Trafikolycka,7
-brottsplatsen,0,12,12,Misshandel,4
 lulea bodenvagen,12,0,12,Trafikolycka,9
 svartostaden,0,12,12,Arbetsplatsolycka,2
 bjorkskataleden,2,11,11,Trafikolycka,4
@@ -18,6 +17,7 @@ lulea bensbyvagen,11,0,11,Trafikolycka,6
 lulea storhedsvagen,11,0,11,Trafikkontroll,5
 med till polisstationen,0,11,11,Sammanfattning natt,4
 sunderbyn,0,11,11,Trafikkontroll,5
+brottsplatsen,0,10,10,Misshandel,3
 lulea gammelstadsvagen,10,0,10,Trafikolycka,7
 bensbyvagen,1,8,9,Trafikkontroll,5
 bensinstation,0,9,9,Olaga hot,2
@@ -35,7 +35,6 @@ lulea nya gaddviksbron,6,0,6,Trafikolycka,4
 nya gaddviksbron,1,5,6,Trafikolycka,4
 storsandsvagen,0,6,6,Trafikkontroll,4
 alvbrovagen,2,5,5,Trafikolycka,3
-beordras till busstationen,0,5,5,Fylleri/LOB,3
 bjorsbyvagen,1,5,5,Trafikkontroll,4
 efter hastighetsovertradelse riksvag,0,5,5,Trafikbrott,5
 efter trafikkontroll lansvag,0,5,5,Trafikkontroll,5
@@ -90,7 +89,6 @@ avaviksvagen,0,2,2,Trafikkontroll,1
 banvagen,1,2,2,"Inbrott,  försök",1
 bargas fran olycksplatsen,0,2,2,Trafikolycka,2
 beordras till flygplatsen,0,2,2,Misshandel,1
-bit fran brottsplatsen,0,2,2,Skadegörelse,1
 bjorksgatan,1,2,2,Uppdatering,1
 bolidenvagen,0,2,2,Trafikolycka,2
 for drograttfylleri haparandavagen,0,2,2,Rattfylleri,2
@@ -100,7 +98,6 @@ hjortstigen,0,2,2,Fylleri/LOB,1
 honom till polisstationen,0,2,2,Fylleri/LOB,1
 industrivagen industrivagen,0,2,2,Ofog barn/ungdom,1
 jarnvagsstationen,0,2,2,Fylleri/LOB,1
-kallas till busstationen,0,2,2,Fylleri/LOB,1
 klingsbovagen,0,2,2,Rattfylleri,1
 klovertrask riksvag,0,2,2,"Trafikolycka,  vilt",2
 korsningen bensbyvagen,0,2,2,Trafikbrott,1
@@ -143,7 +140,6 @@ varvsleden,0,2,2,Trafikolycka,2
 vid gamla gaddviksbron,0,2,2,"Trafikolycka,  singel",1
 adressen vastra brogatan,0,1,1,Bråk,1
 aker fran bensinstationen,0,1,1,Stöld,1
-aker till busstationen,0,1,1,Fylleri/LOB,1
 aker till flygplatsen,0,1,1,Övrigt,1
 alg riksvag,0,1,1,"Trafikolycka,  vilt",1
 anlant till professorsvagen,0,1,1,Vapenlagen,1
@@ -178,10 +174,10 @@ bil malmuddsvagen,0,1,1,Stöld,1
 bil nya gaddviksbron,0,1,1,Trafikolycka,1
 bilbrand vid rutviksvagen,0,1,1,Brand,1
 bistar vid brandplatsen,0,1,1,Brand,1
+bit fran brottsplatsen,0,1,1,Skadegörelse,1
 bjorbyvagen,0,1,1,Trafikolycka,1
 bjorkskatavagen,1,1,1,Trafikolycka,1
 bragegatan,0,1,1,Trafikolycka,1
-brak utanfor polisstationen,0,1,1,Bråk,1
 brak vid centralstationen,0,1,1,Bråk,1
 brandovagen,0,1,1,Trafikolycka,1
 burstromsvagen,0,1,1,Brand,1

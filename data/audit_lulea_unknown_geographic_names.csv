@@ -1,6 +1,6 @@
 platsnamn,antal_okanda_platsfalt,antal_okanda_loptext,unika_okanda,foreslagen_stadsdel,status
-innerstaden,0,75,75,Centrum,Endast löptext - osäkert
-centrum,0,34,34,Centrum,Endast löptext - osäkert
+centrum,0,25,25,Centrum,Endast löptext - osäkert
+innerstaden,0,21,21,Centrum,Endast löptext - osäkert
 bodenvagen,3,16,16,,Verifiera händelseplats
 lulea mjolkuddsvagen,16,0,16,,Verifiera händelseplats
 mjolkuddsvagen,1,16,16,,Verifiera händelseplats
