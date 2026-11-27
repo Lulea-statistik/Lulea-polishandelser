@@ -59,6 +59,45 @@ def subdistrict(r):
     n=clean(desc)
     if any(k!=target and any(p.search(n) for p in pats) for k,pats in PATTERNS.items()) or any(p.search(n) for p in ROAD_PATTERNS):return UNKNOWN
     return target
+
+# Group 3: new names are hypotheses, not a verified locality registry.
+NEW_NAMES=("Jämtön","Strömsund","Börjelslandet","Niemisel","Smedsbyn","Sinksundet","Kallviken","Orrbyn","Högsta","Örarna")
+def new_names(text):
+    raw=unicodedata.normalize("NFC",text or "").casefold()
+    return {name for name in NEW_NAMES if re.search(r"(?<!\w)"+re.escape(name.casefold())+r"(?!\w)",raw)}
+def context_role(sentence):
+    n=clean(sentence)
+    # These are linguistic review tags, not proof of event location.
+    if re.search(r"\b(?:till|fran|mot|mellan|via|i riktning mot|pa vag till|pa vag fran)\b",n):return "fardvag eller riktning – granska"
+    if re.search(r"\b(?:sjukhus|fors till|fordes till|hemadress|bosatt|anmalare|tidigare|senare)\b",n):return "annan kontext – granska"
+    if re.search(r"\b(?:larm|olycka|kollision|kontroll|brand|inbrott|misshandel|stold|stopp|patrull|paf(f)?ades)\w*\b",n) and re.search(r"\b(?:i|pa|vid|intill|utanfor|kring|langs)\b",n):return "mojlig handelseplats – granska"
+    return "oklar kontext – granska"
+context_rows=[]
+group3_rows=[]
+def group3(series,kind,eid,location,narrative,rp,rt,ap,at):
+    # Use one row per candidate event, several context rows per event.
+    # Keep excerpts in restricted-lifetime Actions artifacts, never Pages.
+    extra_place=new_names(location)
+    extra_text=new_names(narrative)
+    if extra_place: group="1 nya ortnamn i eget platsfalt"
+    elif "Centrum" in at: group="2 Centrum i text"
+    elif any(re.fullmatch(r"(?:E\d+|Väg \d+)",v) for v in rt):group="3 vagnummer i text"
+    elif at and not rt:group="4 andra omraden i text"
+    elif (rp or rt) and (ap or at):group="5 vag och omrade"
+    else:group="6 ovriga konflikter"
+    group3_rows.append(dict(series=series,source=kind,event_id=eid,group=group,new_place=serialize(extra_place),new_text=serialize(extra_text),road_place=serialize(rp),road_text=serialize(rt),area_place=serialize(ap),area_text=serialize(at)))
+    # Split conservatively; punctuation and times can break sentence boundaries.
+    # Limit to distinct snippets and retain source identity.
+    seen_sentences=set()
+    for sentence in re.split(r"(?<=[.!?])\s+|\r?\n+",narrative):
+        sentence=" ".join(sentence.split())
+        if not sentence or sentence in seen_sentences:continue
+        seen_sentences.add(sentence)
+        rs,ars,ns=roads(sentence),areas(sentence),new_names(sentence)
+        if not (rs or ars or ns):continue
+        # No automatic assignment; excerpt is for source review only.
+        context_rows.append(dict(series=series,event_id=eid,source=kind,group=group,role=context_role(sentence),roads=serialize(rs),areas=serialize(ars),new_names=serialize(ns),excerpt=sentence[:500]))
+
 rows=[]
 baseline=Counter()
 def audit(series,kind,eid,r,geo,location,narrative):
@@ -73,6 +112,7 @@ def audit(series,kind,eid,r,geo,location,narrative):
     elif len(ap)==1 and not (at-ap) and not rp and not rt: status="ett område i eget platsfält"
     elif rp or rt or ap or at: status="textledtråd eller konflikt – granska"
     else: status="inga matchade ledtrådar"
+    if status=="textledtråd eller konflikt – granska":group3(series,kind,eid,location,narrative,rp,rt,ap,at)
     rows.append(dict(series=series,source=kind,event_id=eid,year=r.get("year"),month=r.get("month"),event_type=r.get("event_type_extracted") or r.get("type_original"),status=status,road_place=serialize(rp),road_text=serialize(rt),area_place=serialize(ap),area_text=serialize(at),location=location))
 seen=set()
 for r in events:
@@ -113,3 +153,19 @@ for series in ("original","expanded"):
     lines += [f"## {series}",f"Totalt: {baseline[(series,'total')]}; okänt delområde: {baseline[(series,'unknown')]}",* [f"- {status}: {n}" for (s,status),n in counts.items() if s==series],""]
 (OUT/"summary.md").write_text("\n".join(lines),encoding="utf-8")
 print("\n".join(lines))
+
+# All group 3 events accounted for, without changing classifications.
+assert len(group3_rows)==sum(n for (series,status),n in counts.items() if status=="textledtråd eller konflikt – granska")
+def export(name,records,fields):
+    with (OUT/name).open("w",encoding="utf-8-sig",newline="") as f:
+        w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(records)
+export("group3_events.csv",group3_rows,["series","source","event_id","group","new_place","new_text","road_place","road_text","area_place","area_text"])
+export("group3_context.csv",context_rows,["series","event_id","source","group","role","roads","areas","new_names","excerpt"])
+freq=Counter((r["series"],r["group"]) for r in group3_rows)
+roles=Counter((r["series"],r["group"],r["role"]) for r in context_rows)
+newfreq=Counter((r["series"],name) for r in group3_rows for name in r["new_place"].split(" | ") if name)
+report=["# Grupp 3 – kontextrevision","","Prioriteringsgrupper är ömsesidigt uteslutande. Meningsroller är heuristiska och kan överlappa per händelse. Nya ortnamn är ej verifierade.",""]
+for series in ("original","expanded"):
+    report += [f"## {series}", *[f"- {group}: {n}" for (ss,group),n in sorted(freq.items()) if ss==series], "", "Nya ortnamn i eget platsfält:", *[f"- {name}: {n}" for (ss,name),n in newfreq.most_common() if ss==series], "", "Kontextroller (meningar, ej unika händelser):", *[f"- {group} / {role}: {n}" for (ss,group,role),n in sorted(roles.items()) if ss==series], ""]
+(OUT/"group3_summary.md").write_text("\n".join(report),encoding="utf-8")
+print("\n".join(report))
