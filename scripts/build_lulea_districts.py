@@ -94,6 +94,28 @@ NARRATIVE_DISTRICT_PATTERNS={
  district:re.compile(r"(?<![a-z])(?:i|pa|vid|intill|utanfor|kring)\s+(?:lulea\s+)?(?:"+"|".join(names)+r")(?![a-z])")
  for district,names in NARRATIVE_DISTRICT_NAMES.items()
 }
+# SCB tätorter 2023, verified in data/norrbotten_place_to_municipality.csv.
+# Separate locality labels; no inference of administrative district boundaries.
+EXACT_LOCALITIES = ("Kallax", "Rutvik", "Bensbyn", "Bälinge", "Klöverträsk", "Brändön", "Avan", "Sundom", "Persön")
+def exact_locality(row):
+ if str(row.get("is_summary") or "").strip().casefold() in ("true","1"):return UNKNOWN
+ fields=[unicodedata.normalize("NFC",str(row.get(k) or "")).strip().casefold() for k in ("title_location","location_string")]
+ candidates=set()
+ for field in fields:
+  if field in ("","luleå","luleå kommun","norrbotten","norrbottens län"):continue
+  matches={name for name in EXACT_LOCALITIES if re.fullmatch(re.escape(name.casefold())+r"(?:,\s*luleå(?:,\s*norrbottens län)?)?",field)}
+  if not matches:return UNKNOWN
+  candidates.update(matches)
+ if len(candidates)!=1:return UNKNOWN
+ target=next(iter(candidates))
+ narrative=" ".join(str(row.get(k) or "") for k in ("headline","description","content"))
+ n=normalize(narrative)
+ if any(p.search(n) for pats in PATTERNS.values() for p in pats):return UNKNOWN
+ if any(p.search(n) for p in ROAD_PATTERNS):return UNKNOWN
+ if re.search(r"(?<![a-z0-9])(?:e\s*\d{1,3}|(?:riksvag|lansvag|vag(?:en)?|rv|lv)\s*(?:nr\.?\s*)?\d{1,4}|[a-z]{3,}(?:vagen|leden|gatan|bron|banken))(?![a-z0-9])",n):return UNKNOWN
+ raw=unicodedata.normalize("NFC",narrative).casefold()
+ if any(name!=target and re.search(r"(?<!\w)"+re.escape(name.casefold())+r"(?!\w)",raw) for name in EXACT_LOCALITIES):return UNKNOWN
+ return target
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
@@ -119,7 +141,7 @@ def district(row):
   others={name for name,pats in PATTERNS.items() if name!=selected and any(p.search(narrative) for p in pats)}
   if not others and not any(p.search(narrative) for p in ROAD_PATTERNS):
    return selected
- return UNKNOWN
+ return exact_locality(row)
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
  counts=defaultdict(int)

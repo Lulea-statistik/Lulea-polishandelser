@@ -2,6 +2,7 @@
 """Read-only candidate audit; no changes to published classifications."""
 import csv
 import re
+import unicodedata
 from collections import Counter
 from pathlib import Path
 from build_lulea_districts import district, normalize, UNKNOWN, PATTERNS
@@ -20,22 +21,27 @@ def valid(r):
 def clean(s):
     return normalize(s).strip()
 # Only the event's own location fields and its own text.
-ROAD = re.compile(r"(?<![a-z0-9])(?:e\s*\d{1,3}|(?:riksva[g]|lansva[g]|vag(?:en)?|rv)\s*(?:nr\.?\s*)?\d{1,4}|[a-z]{3,}(?:vagen|leden|gatan|bron|banken))(?![a-z0-9])")
+ROAD = re.compile(r"(?<![a-z0-9])(?:e\s*\d{1,3}|(?:riksva[g]|lansva[g]|vag(?:en)?|rv|lv)\s*(?:nr\.?\s*)?\d{1,4}|[a-z]{3,}(?:vagen|leden|gatan|bron|banken))(?![a-z0-9])")
 GENERIC = {"motorvagen","landsvagen","grusvagen","cykelvagen","gangvagen","ater vandsgatan","atervandsgatan","huvudleden","riksvagen","lansvagen","bilvagen","omvagen","vagen","gatan","bron","trottoaren"}
-places = {clean(r["place_name"]):r["place_name"] for r in read("data/norrbotten_place_to_municipality.csv") if r.get("municipality")=="Luleå" and clean(r["place_name"])!="lulea"}
-place_patterns = {p:re.compile(r"(?<![a-z])"+re.escape(p)+r"(?![a-z])") for p in places}
+places = {unicodedata.normalize("NFC",r["place_name"]).casefold():r["place_name"] for r in read("data/norrbotten_place_to_municipality.csv") if r.get("municipality")=="Luleå" and clean(r["place_name"])!="lulea"}
+place_patterns = {p:re.compile(r"(?<!\w)"+re.escape(p)+r"(?!\w)") for p in places}
 def roads(s):
     found=set()
     for m in ROAD.finditer(clean(s)):
         v=m.group()
+        if v=="gaddviksbron":
+            prefix=clean(s)[:m.start()]
+            qualifier=re.search(r"\b(gamla|nya)\s+$",prefix)
+            if qualifier:v=qualifier.group(1)+" "+v
         if v in GENERIC: continue
         if re.fullmatch(r"e\s*\d+",v): v=v.replace(" ","").upper()
         elif re.search(r"\d+$",v): v="Väg "+re.search(r"\d+$",v).group()
         found.add(v)
     return found
 def areas(s):
+    raw=unicodedata.normalize("NFC",s or "").casefold()
     s=clean(s)
-    return {name for name,pats in PATTERNS.items() if any(p.search(s) for p in pats)} | {places[p] for p,pat in place_patterns.items() if pat.search(s)}
+    return {name for name,pats in PATTERNS.items() if any(p.search(s) for p in pats)} | {places[p] for p,pat in place_patterns.items() if pat.search(raw)}
 def serialize(s): return " | ".join(sorted(s))
 events=read("data/events.csv")
 details=read("data/summary_details_dedup.csv")
