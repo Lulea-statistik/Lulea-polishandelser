@@ -120,13 +120,18 @@ def independent_areas(s):
     return result
 def numbered(s):
     return {x for x in roads(s) if re.fullmatch(r"(?:E\d+|Väg \d+)",x)}
+from road_area_segment_gate import segment_reason, local_evidence
 pair_events=[]
 pair_counts=Counter()
+rejected_pairs=[]
+shared_places=Counter((str(r.get('parent_event_id','')).strip(),clean(r.get('place_text') or '')) for r in details if (r.get('place_text') or '').strip())
 def pair_audit(series,kind,eid,geo,location,narrative):
     if kind=="ej uppdelad sammanfattning":return
     rp,rt=numbered(location),numbered(narrative)
     ap,at=independent_areas(location),independent_areas(narrative)
     if not (rp|rt) or not (ap|at):return
+    parent=eid.split(':',1)[0] if kind=='underhändelse' else eid
+    reason=segment_reason(location,narrative,numbered,independent_areas,shared_place=(kind=='underhändelse' and shared_places[(parent,clean(location))]>1 and len(location)>120),parsed_parent=(kind=='notis' and eid in parsed))
     # The pairs are review hypotheses, not all asserted event locations.
     sentences=[" ".join(x.split()) for x in re.split(r"(?<=[.!?])\s+|\r?\n+",narrative) if x.strip()]
     for road in sorted(rp|rt):
@@ -142,7 +147,12 @@ def pair_audit(series,kind,eid,geo,location,narrative):
             context=" | ".join(dict.fromkeys(same))[:600]
             if not context:
                 context=" | ".join(dict.fromkeys(x for x in sentences if road in numbered(x) or area in independent_areas(x)))[:600]
-            pair_events.append(dict(series=series,source=kind,event_id=eid,current_area=geo,road=road,area=area,evidence=evidence,priority=priority,location=location,excerpt=context))
+            record=dict(series=series,source=kind,event_id=eid,current_area=geo,road=road,area=area,evidence=evidence,priority=priority,location=location,excerpt=context)
+            reject=reason or ('' if local_evidence(location,narrative,road,area,numbered,independent_areas) else 'ingen lokal gemensam platsuppgift')
+            if reject:
+                rejected_pairs.append(dict(record,reason=reject))
+                continue
+            pair_events.append(record)
             pair_counts[(series,road,area,evidence,geo!=UNKNOWN)]+=1
 
 rows=[]
@@ -237,3 +247,13 @@ for series in ("original","expanded"):
     summary += [f"## {series}",f"- Unika kandidathändelser: {len(unique)}",f"- Redan områdesklassificerade: {len(known)}",f"- Okänt delområde: {len(unique-known)}",f"- Unika väg/områdespar: {len(combos)}",f"- Rutvik/väg 97: {combos[('Väg 97','Rutvik')]}", "", "Vanligaste kombinationer:", *[f"- {r} / {a}: {n}" for (r,a),n in combos.most_common(30)],""]
 (OUT/"road_area_summary.md").write_text("\n".join(summary),encoding="utf-8")
 print("\n".join(summary))
+
+export("road_area_segment_excluded.csv",rejected_pairs,["series","source","event_id","current_area","road","area","evidence","priority","location","excerpt","reason"])
+seg=["# Segmentkontroll – före och efter","","Före = samma underlag med tidigare samförekomstmetod. Efter = konservativ granskningskö, inte verifierade geografier. Uteslutna kandidater sparas separat; ingen publicerad statistik ändras.",""]
+for series in ("original","expanded"):
+    kept=[r for r in pair_events if r["series"]==series]
+    dropped=[r for r in rejected_pairs if r["series"]==series]
+    ids=lambda rr:{(r["source"],r["event_id"]) for r in rr}
+    seg += [f"## {series}",f"- Händelser före: {len(ids(kept+dropped))}; efter: {len(ids(kept))}",f"- Händelse/par-rader före: {len(kept)+len(dropped)}; efter: {len(kept)}",f"- E45/Råneå före: {sum(r['road']=='E45' and r['area']=='Råneå' for r in kept+dropped)}; efter: {sum(r['road']=='E45' and r['area']=='Råneå' for r in kept)}",*[f"- Uteslutna par: {reason}: {n}" for reason,n in Counter(r["reason"] for r in dropped).most_common()],""]
+(OUT/"road_area_segment_summary.md").write_text("\n".join(seg),encoding="utf-8")
+print("\n".join(seg))
