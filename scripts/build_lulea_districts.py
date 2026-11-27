@@ -179,6 +179,48 @@ def centrum_dispatch_rescue(row):
    if _CDEPLOY.search(sentence) or _CINCIDENT.search(sentence):return "Centrum"
  return UNKNOWN
 
+
+# Use only existing unambiguous area names and selected established objects.
+# Preserve accents (e.g. person != Persön), and never infer street boundaries.
+_DISPATCH_NAMES={name:{name} for name in NARRATIVE_DISTRICT_NAMES if name!="Munksund"}
+_DISPATCH_NAMES.update({"Sörbyarna":{"Sörbyarna","Antnäs","Alvik","Ersnäs","Måttsund","Alhamn","Långnäs","Kallax by"},
+ "Porsön":{"Porsön","Teknikens hus","Luleå tekniska universitet","Luleå science park"},
+ "Skutviken":{"Skutviken","Coop arena","Coop Norrbotten arena"},
+ "Storheden":{"Storheden","ICA Maxi Storheden"},
+ "Sunderbyn":{"Sunderbyn","Sunderby sjukhus","Sunderbyns sjukhus"},
+ "Gammelstad":{"Gammelstad","Gammelstaden"}})
+_DISPATCH_NAMES.pop("Kronan",None) # ambiguous common noun; review separately
+for _name in EXACT_LOCALITIES:_DISPATCH_NAMES[_name]={_name}
+def _unicode(s):return unicodedata.normalize("NFC",s).casefold()
+_DISPATCH_PATTERNS={name:re.compile(r"(?<!\w)(?:"+ "|".join(re.escape(_unicode(x)) for x in sorted(names,key=len,reverse=True))+r")(?!\w)") for name,names in _DISPATCH_NAMES.items()}
+_DOBJ=r"(?:"+ "|".join(re.escape(_unicode(x)) for x in sorted({x for names in _DISPATCH_NAMES.values() for x in names},key=len,reverse=True))+r")(?!\w)"
+_DDEPLOY=re.compile(r"\b(?:polis(?:en|patrull(?:en|er|erna)?)?|patrull(?:en|er|erna)?)\s+(?:har\s+)?(?:beordras|beordrades|beordrats|larmas|larmades|larmats|kallas|kallades|kallats|skickas|skickades|skickats|åker|åkte|åkt)\s+(?:ut\s+)?till\s+(?:(?:en|ett)\s+(?:butik|adress|plats|bostad|restaurang)\s+(?:i|på|vid)\s+)?(?P<place>"+_DOBJ+r")(?=\s*(?:[,.:;!?]|$)|\s+(?:i luleå\b|med anledning av\b|efter\b|där\b|på grund av\b|för att\b))")
+_DINCIDENT=re.compile(r"\b(?:larm om (?:brand|bråk|inbrott)|(?:en )?(?:brand|stöld|inbrott|misshandel|bråk|skadegörelse|rån))\s+(?:i|på|vid|intill|utanför)\s+(?P<place>"+_DOBJ+r")(?=\s*(?:[,.:;!?]|$)|\s+(?:i luleå\b|där\b))")
+_FOREIGN=re.compile(r"(?<![a-z])(?:boden(?:s)?|pitea(?:s)?|kalix|alvsbyn|haparanda|kiruna|gallivare|arvidsjaur|arjeplog|jokkmokk|overkalix|overtornea|pajala)(?![a-z])")
+def district_dispatch_evidence(row):
+ if str(row.get("is_summary") or "").strip().casefold() in ("true","1"):return None
+ generic={"","lulea","lulea kommun","norrbotten","norrbottens lan","lulea, norrbottens lan","lulea, lulea, norrbottens lan"}
+ if any(normalize(row.get(k)).strip() not in generic for k in ("title_location","location_string")):return None
+ from html import unescape
+ fields=[unescape(re.sub(r"<[^>]*>"," ",str(row.get(k) or ""))) for k in ("headline","description","content")]
+ raw=_unicode(" ".join(fields))
+ n=normalize(raw)
+ if _FOREIGN.search(n) or CENTRUM_ROAD.search(n) or any(p.search(n) for p in ROAD_PATTERNS):return None
+ if any(re.search(r"(?<![a-z])"+re.escape(x)+r"(?![a-z])",n) for x in _COTHER_PLACES):return None
+ seen={name for name,p in _DISPATCH_PATTERNS.items() if p.search(raw)}
+ if len(seen)!=1:return None
+ target=next(iter(seen))
+ # Existing aliases may reveal a second geography even if not eligible for rescue.
+ if any(p.search(n) for name,pats in PATTERNS.items() if name!=target for p in pats):return None
+ for field in fields:
+  for sentence in re.split(r"(?<=[.!?])\s+|\n+",field)[:2]:
+   if re.search(r"\b(?:inte|aldrig|tidigare|felaktigt|i stallet|ovning|transport|fordes|skjutsades)\b",normalize(sentence)):continue
+   if _DDEPLOY.search(_unicode(sentence)) or _DINCIDENT.search(_unicode(sentence)):return (target,sentence[:500])
+ return None
+def district_dispatch_rescue(row):
+ result=district_dispatch_evidence(row)
+ return result[0] if result else UNKNOWN
+
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
@@ -208,7 +250,9 @@ def district(row):
  if locality!=UNKNOWN:return locality
  rescued=centrum_rescue(row)
  if rescued!=UNKNOWN:return rescued
- return centrum_dispatch_rescue(row)
+ rescued=centrum_dispatch_rescue(row)
+ if rescued!=UNKNOWN:return rescued
+ return district_dispatch_rescue(row)
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
  counts=defaultdict(int)
