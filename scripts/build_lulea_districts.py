@@ -143,6 +143,42 @@ def centrum_rescue(row):
   if CENTRUM_PREFIX.search(lead) or CENTRUM_SUFFIX.fullmatch(lead) or CENTRUM_EXPLICIT.fullmatch(lead):return "Centrum"
  return UNKNOWN
 
+
+# Restrict the new narrative rule to explicit police deployment or incident
+# location; a person's destination, transport or mere mention is not enough.
+CENTRUM_OBJECTS = (
+ "lulea centrum","centrala lulea","lulea innerstad","innerstaden","centrum",
+ "ostermalm","norra hamnen","norra hamn","sodra hamnen","sodra hamn",
+ "gultzauudden","vastra stranden","oscarsvarv","stadsviken","charlottendal",
+ "lulea busstation","busstationen","busstation","lulea centralstation",
+ "jarnvagsstationen","jarnvagsstation","gymnasiebyn","stadsparken",
+ "hermelinsparken","jarnvagsparken","residensparken","kulturens hus",
+ "lulea stadshus","lulea stadsbibliotek","pontusbadet","lulea domkyrka"
+)
+_COBJ = r"(?:"+ "|".join(re.escape(x) for x in sorted(CENTRUM_OBJECTS,key=len,reverse=True))+r")(?![a-z])"
+_CDEPLOY = re.compile(r"\b(?:(?:en )?polis(?:en|patrull(?:en|er|erna)?)?|(?:en )?patrull(?:en|er|erna)?)\s+(?:har\s+)?(?:beordras|beordrades|beordrats|larmas|larmades|larmats|kallas|kallades|kallats|skickas|skickades|skickats|aker|akte|akt)\s*(?:ut\s+)?till\s+(?:(?:en|ett)\s+(?:butik|adress|plats|bostad|restaurang)\s+(?:i|pa|vid)\s+)?"+_COBJ+r"(?=\s*(?:[,.:;!?]|$)|\s+(?:i lulea\b|med anledning av\b|efter\b|dar\b|pa grund av\b|for att\b))")
+_CINCIDENT = re.compile(r"\b(?:larm om (?:brand|brak|inbrott)|(?:en )?(?:brand|stold|inbrott|misshandel|brak|skadegorelse|ran))\s+(?:i|pa|vid|intill|utanfor)\s+"+_COBJ+r"(?=\s*(?:[,.:;!?]|$)|\s+(?:i lulea\b|dar\b))")
+_COTHER_PLACES = ("jamton","stromsund","borjelslandet","niemisel","smedsbyn","sinksundet","kallviken","orrbyn","hogsta","orarna")
+def centrum_dispatch_rescue(row):
+ if str(row.get("is_summary") or "").strip().casefold() in ("true","1"):return UNKNOWN
+ generic={"","lulea","lulea kommun","norrbotten","norrbottens lan","lulea, norrbottens lan","lulea, lulea, norrbottens lan"}
+ if any(normalize(row.get(k)).strip() not in generic for k in ("title_location","location_string")):return UNKNOWN
+ from html import unescape
+ raw_fields=[unescape(re.sub(r"<[^>]*>"," ",str(row.get(k) or ""))) for k in ("headline","description","content")]
+ raw=" ".join(raw_fields)
+ n=normalize(raw)
+ if CENTRUM_OTHER.search(n) or CENTRUM_ROAD.search(n) or any(p.search(n) for p in ROAD_PATTERNS):return UNKNOWN
+ if any(p.search(n) for name,pats in PATTERNS.items() if name!="Centrum" for p in pats):return UNKNOWN
+ if any(re.search(r"(?<![a-z])"+re.escape(x)+r"(?![a-z])",n) for x in _COTHER_PLACES):return UNKNOWN
+ if any(re.search(r"(?<!\w)"+re.escape(name.casefold())+r"(?!\w)",unicodedata.normalize("NFC",raw).casefold()) for name in EXACT_LOCALITIES):return UNKNOWN
+ for field in raw_fields:
+  # Limit the rule to the first two sentences per source field.
+  for sentence in re.split(r"(?<=[.!?])\s+|\n+",field)[:2]:
+   sentence=normalize(sentence).strip()
+   if re.search(r"\b(?:inte|aldrig|tidigare|felaktigt|i stallet|ovning|transport|fordes|skjutsades)\b",sentence):continue
+   if _CDEPLOY.search(sentence) or _CINCIDENT.search(sentence):return "Centrum"
+ return UNKNOWN
+
 def district(row):
  text=normalize(" ".join((row.get("title_location") or "",row.get("location_string") or "")))
  matches={name for name,pats in PATTERNS.items() if any(p.search(text) for p in pats)}
@@ -170,7 +206,9 @@ def district(row):
    return selected
  locality=exact_locality(row)
  if locality!=UNKNOWN:return locality
- return centrum_rescue(row)
+ rescued=centrum_rescue(row)
+ if rescued!=UNKNOWN:return rescued
+ return centrum_dispatch_rescue(row)
 def main():
  if not SOURCE.exists(): raise SystemExit("Missing events.csv")
  counts=defaultdict(int)
