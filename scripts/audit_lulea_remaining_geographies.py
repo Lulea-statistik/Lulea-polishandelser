@@ -48,7 +48,7 @@ details=read("data/summary_details_dedup.csv")
 parsed={str(r.get("parent_event_id","")).strip() for r in details}
 # Importing expanded builder would rewrite published files; reproduce only its
 # narrow explicit-place exceptions and inclusion criteria.
-from build_lulea_districts import ROAD_PATTERNS
+from build_lulea_districts import ROAD_PATTERNS, district_dispatch_evidence
 def subdistrict(r):
     place=r.get("place_text") or ""
     desc=r.get("description") or ""
@@ -99,10 +99,16 @@ def group3(series,kind,eid,location,narrative,rp,rt,ap,at):
         context_rows.append(dict(series=series,event_id=eid,source=kind,group=group,role=context_role(sentence),roads=serialize(rs),areas=serialize(ars),new_names=serialize(ns),excerpt=sentence[:500]))
 
 rows=[]
+dispatch_review=[]
 baseline=Counter()
 def audit(series,kind,eid,r,geo,location,narrative):
     baseline[(series,"total")]+=1
-    if geo!=UNKNOWN:return
+    if geo!=UNKNOWN:
+        candidate=dict(r) if kind=="notis" else {"title_location":location,"description":narrative}
+        evidence=district_dispatch_evidence(candidate) if kind!="ej uppdelad sammanfattning" else None
+        if evidence and evidence[0]==geo:
+            dispatch_review.append(dict(series=series,event_id=eid,source=kind,area=geo,excerpt=evidence[1]))
+        return
     baseline[(series,"unknown")]+=1
     rp,rt=roads(location),roads(narrative)
     ap,at=areas(location),areas(narrative)
@@ -169,3 +175,5 @@ for series in ("original","expanded"):
     report += [f"## {series}", *[f"- {group}: {n}" for (ss,group),n in sorted(freq.items()) if ss==series], "", "Nya ortnamn i eget platsfält:", *[f"- {name}: {n}" for (ss,name),n in newfreq.most_common() if ss==series], "", "Kontextroller (meningar, ej unika händelser):", *[f"- {group} / {role}: {n}" for (ss,group,role),n in sorted(roles.items()) if ss==series], ""]
 (OUT/"group3_summary.md").write_text("\n".join(report),encoding="utf-8")
 print("\n".join(report))
+
+export("dispatch_review.csv",dispatch_review,["series","event_id","source","area","excerpt"])
