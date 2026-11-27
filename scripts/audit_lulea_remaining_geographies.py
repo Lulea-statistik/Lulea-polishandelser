@@ -21,7 +21,7 @@ def valid(r):
 def clean(s):
     return normalize(s).strip()
 # Only the event's own location fields and its own text.
-ROAD = re.compile(r"(?<![a-z0-9])(?:e\s*\d{1,3}|(?:riksva[g]|lansva[g]|vag(?:en)?|rv)\s*(?:nr\.?\s*)?\d{1,4}|[a-z]{3,}(?:vagen|leden|gatan|bron|banken))(?![a-z0-9])")
+ROAD = re.compile(r"(?<![a-z0-9])(?:e\s*\d{1,3}|(?:riksva[g]|lansva[g]|vag(?:en)?|rv|lv)\s*(?:nr\.?\s*)?\d{1,4}|[a-z]{3,}(?:vagen|leden|gatan|bron|banken))(?![a-z0-9])")
 GENERIC = {"motorvagen","landsvagen","grusvagen","cykelvagen","gangvagen","ater vandsgatan","atervandsgatan","huvudleden","riksvagen","lansvagen","bilvagen","omvagen","vagen","gatan","bron","trottoaren"}
 places = {unicodedata.normalize("NFC",r["place_name"]).casefold():r["place_name"] for r in read("data/norrbotten_place_to_municipality.csv") if r.get("municipality")=="Luleå" and clean(r["place_name"])!="lulea"}
 place_patterns = {p:re.compile(r"(?<!\w)"+re.escape(p)+r"(?!\w)") for p in places}
