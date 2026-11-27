@@ -16,6 +16,8 @@ on:
       - "scripts/build_weekday_period.py"
       - "scripts/build_theft_mentions.py"
       - "scripts/build_wordcloud.py"
+      - "scripts/build_text_analysis.py"
+      - "requirements.txt"
       - "scripts/build_municipality_pairs.py"
       - "scripts/build_lpo_pairs_monthly.py"
       - "scripts/build_lulea_districts.py"
@@ -68,6 +70,7 @@ jobs:
       - run: python scripts/build_weekday_period.py
       - run: python scripts/build_theft_mentions.py
       - run: python scripts/build_wordcloud.py
+      - run: python scripts/build_text_analysis.py
       - run: python scripts/build_municipality_pairs.py
       - run: python scripts/build_lpo_pairs_monthly.py
       - run: python scripts/build_lulea_districts.py
@@ -113,7 +116,7 @@ jobs:
             python -c 'import json, pathlib, hashlib; p=pathlib.Path("data/events_raw.jsonl"); m=json.loads(pathlib.Path("data/raw_by_year/manifest.json").read_text()); actual=hashlib.file_digest(p.open("rb"), "sha256").hexdigest(); assert m.get("legacy_sha256")==actual and m.get("raw_source_rows_on_first_migration",0)>0, "Legacy raw file not fully migrated"; print("Verified legacy backup checksum and row count")'
             git rm -- data/events_raw.jsonl
           fi
-          git add -A -- data/ docs/data/wordcloud.json docs/data/lulea_district_monthly.csv docs/data/lulea_district_expanded_monthly.csv docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/local_police_area_pairs_monthly.csv docs/data/weekday_period_observations.csv docs/data/weekday_period_calendar.csv docs/data/theft_object_mentions.csv
+          git add -A -- data/ docs/data/text_analysis.json docs/data/wordcloud.json docs/data/lulea_district_monthly.csv docs/data/lulea_district_expanded_monthly.csv docs/data/monthly_summary.csv docs/data/summary_details_monthly.csv docs/data/summary_details_extra_monthly.csv docs/data/expanded_monthly_summary.csv docs/data/quiet_summaries_monthly.csv docs/data/norrbotten_municipality_pairs.csv docs/data/local_police_area_pairs_monthly.csv docs/data/weekday_period_observations.csv docs/data/weekday_period_calendar.csv docs/data/theft_object_mentions.csv
           if git diff --cached --quiet; then
             echo "No data changes"
           else
