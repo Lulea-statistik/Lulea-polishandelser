@@ -1,0 +1,25 @@
+name: Audit remaining Lulea geographies
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - scripts/audit_lulea_remaining_geographies.py
+      - .github/workflows/audit-lulea-remaining-geographies.yml
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - run: python scripts/audit_lulea_remaining_geographies.py
+      - run: cat audit-output/summary.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: remaining-lulea-geography-audit
+          path: audit-output/
+          retention-days: 14
