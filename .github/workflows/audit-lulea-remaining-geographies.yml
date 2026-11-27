@@ -6,6 +6,7 @@ on:
       - scripts/audit_lulea_remaining_geographies.py
       - scripts/road_area_segment_gate.py
       - scripts/test_road_area_segment_gate.py
+      - scripts/test_lulea_road_locality.py
       - scripts/build_lulea_districts.py
       - scripts/test_lulea_exact_localities.py
       - scripts/test_lulea_centrum_rescue.py
@@ -28,6 +29,7 @@ jobs:
       - run: python scripts/test_lulea_centrum_dispatch.py
       - run: python scripts/test_lulea_district_dispatch.py
       - run: python scripts/test_road_area_segment_gate.py
+      - run: python scripts/test_lulea_road_locality.py
       - name: Save baseline and rebuild locally
         run: |
           mkdir -p audit-output/before
