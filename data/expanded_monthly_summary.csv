@@ -14518,6 +14518,7 @@ year,month,geography_group,event_type,event_count
 2026,11,Gällivare kommun,"Trafikolycka, vilt",2
 2026,11,Gällivare kommun,Rattfylleri,1
 2026,11,Haparanda kommun,Trafikolycka,2
+2026,11,Haparanda kommun,Misshandel,1
 2026,11,Haparanda kommun,Rattfylleri,1
 2026,11,Haparanda kommun,Trafikbrott,1
 2026,11,Haparanda kommun,"Trafikolycka,  singel",1
@@ -14552,18 +14553,18 @@ year,month,geography_group,event_type,event_count
 2026,11,Luleå kommun,Misshandel,7
 2026,11,Luleå kommun,Trafikbrott,5
 2026,11,Luleå kommun,Fylleri,4
+2026,11,Luleå kommun,Fylleri/LOB,4
 2026,11,Luleå kommun,Narkotikabrott,4
 2026,11,Luleå kommun,Rattfylleri,4
-2026,11,Luleå kommun,Trafikkontroll,3
+2026,11,Luleå kommun,Trafikkontroll,4
 2026,11,Luleå kommun,"Trafikolycka, vilt",3
 2026,11,Luleå kommun,Arbetsplatsolycka,2
-2026,11,Luleå kommun,Fylleri/LOB,2
+2026,11,Luleå kommun,"Trafikolycka,  vilt",2
 2026,11,Luleå kommun,Övrigt/oklassificerad,2
 2026,11,Luleå kommun,Brand,1
 2026,11,Luleå kommun,Inbrott,1
 2026,11,Luleå kommun,Mord/dråp,1
 2026,11,Luleå kommun,Stöld,1
-2026,11,Luleå kommun,"Trafikolycka,  vilt",1
 2026,11,"Norrbotten, okänd kommun","Trafikolycka, vilt",8
 2026,11,"Norrbotten, okänd kommun",Bedrägeri,2
 2026,11,"Norrbotten, okänd kommun",Trafikkontroll,2
